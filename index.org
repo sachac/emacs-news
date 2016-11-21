@@ -1,3 +1,58 @@
+* 2016-11-21 Emacs News
+  :PROPERTIES:
+  :ID:       o2b:f4f88ad2-9ec1-4514-96b9-63c636f4c6b0
+  :POST_DATE: [2016-11-21 Mon 14:48]
+  :POSTID:   28829
+  :BLOG:     sacha
+  :END:
+
+- Navigation:
+  - [[https://www.reddit.com/r/emacs/comments/5dgp2u/moving_around_faster_in_emacs/][Moving around faster in Emacs]]
+  - [[https://www.reddit.com/r/emacs/comments/5d414w/how_do_i_keep_my_buffers_list_clean/][How do I keep my buffers list clean?]]
+- Org Mode:
+  - [[http://karl-voit.at/2016/11/18/lazyblorg-setup-improvements/][Improvements to lazyblorg: blogging with org-mode improved with easier setup and upgrade]]
+  - [[https://www.reddit.com/r/emacs/comments/5dbn1g/easier_way_to_convert_text_to_ordered_list_in_org/][Easier way to convert text to ordered list in org mode?]]
+  - [[https://www.reddit.com/r/emacs/comments/5d4hqq/using_babel_to_put_your_init_file_in_org/][using babel to put your init file in org]]
+  - [[https://pbs.twimg.com/media/CxpssmrXEAQ3EoD.jpg][I just received my custom org-mode stickers!!]] ([[https://www.reddit.com/r/orgmode/comments/5dujem/i_just_received_my_custom_orgmode_stickers/][Reddit]])
+  - [[https://www.reddit.com/r/orgmode/comments/5d1xz1/scientific_paper_management_with_orgmode/][scientific paper management with orgmode; autotag,full text search, read out cross refs?]]
+- Emacs Lisp:
+  - [[http://mbork.pl/2016-11-19_format-spec][format-spec]]
+  - [[http://lunaryorn.com/posts/read-and-write-files-in-emacs-lisp.html][Read and write files in Emacs Lisp]]
+  - [[https://www.youtube.com/watch?v=74kmEI92ru8][Debug a function in Emacs with Spacemacs]] (0:14)
+- Coding:
+  - [[https://youtu.be/pKzIxtR0ElU][Refactor clojure code like a champ!]] (16:43)
+  - [[https://github.com/omouse/emacs-flow-jsx][emacs-flow-jsx: Emacs mode for Flow type annotations and React JSX syntax]] ([[https://www.reddit.com/r/emacs/comments/5dw83d/emacsflowjsx_emacs_mode_for_flow_type_annotations/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/5dmlun/emacs_compiling_your_js_and_css_on_save/][Emacs compiling your js and CSS on save]]
+  - [[https://www.reddit.com/r/emacs/comments/5dbz3f/configure_whitespace_mode_to_show_only_trailing/][configure whitespace mode to show only trailing whitespaces]]
+  - [[http://cestlaz.github.io/posts/using-emacs-21-web-mode/#.WCyx4DMxr00.reddit][Using Emacs - 21 - web mode]]
+- Emacs development:
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=36b99556dea23f17d5598bbed366e7201eec9fbb][New option --new-daemon runs in foreground, doesn't fork]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=22946702b4296c0e42e4baf6221e205b52d05cbf][New function file-local-name]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=b81bb485eaaa42f93f36988b8b17576f489b988d][New specifier for format-time-string: calendar quarter is %q]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=e8efa66e01933b8ae7ac9abf530a3818551c1343][New input method cyrillic-tuvan]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2016-11/msg00403.html][Discussion about truncated backtraces and the ability to expand ... at point]]
+- Other:
+  - [[http://emacspeak.blogspot.com/2016/11/emacspeak-450-idealdog-unleashed.html][Emacspeak 45.0 (IdealDog) Unleashed!]]
+  - [[http://cestlaz.github.io/posts/using-emacs-22-emacsclient/#.WDBRJk5XCjY.reddit][Using Emacs - 22 - emacsclient]] ([[https://www.reddit.com/r/emacs/comments/5dseb1/using_emacs_22_emacsclient/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/5drxs6/new_faster_testbuild_of_emacs_251_for_windows/][New (faster) test-build of Emacs 25.1 for Windows]]
+  - [[https://github.com/waymondo/apropospriate-theme][GitHub - waymondo/apropospriate-theme: A colorful, low-contrast, light &amp;amp; dark theme set for Emacs with a fun name]] ([[https://www.reddit.com/r/emacs/comments/5dgk6c/github_waymondoapropospriatetheme_a_colorful/][Reddit]])
+  - [[https://github.com/tty-tourist/emacs-console-keys-hack][TIP: Get all keys working in the Linux Console]] ([[https://www.reddit.com/r/emacs/comments/5dfetk/tip_get_all_keys_working_in_the_linux_console/][Reddit]])
+  - [[https://www.topbug.net/blog/2016/11/16/prevent-browser-processes-started-by-emacs-from-being-killed-when-emacs-exits-on-gnulinux/][Prevent Browser Processes Started by Emacs from Being Killed When Emacs Exits on GNU/Linux - Top Bug Net]]
+  - [[https://www.youtube.com/watch?v=nCD61qEnmgo][Andrea Crotti Emacs and shell as your best friends]] (50:07)
+- New packages:
+  - [[package:dashboard][dashboard]]: A startup screen extracted from Spacemacs
+  - [[package:flycheck-scala-sbt][flycheck-scala-sbt]]: sbt-mode checker for Scala
+  - [[package:language-detection][language-detection]]: Automatic language detection from code snippets
+  - [[package:org-babel-eval-in-repl][org-babel-eval-in-repl]]: Eval org-mode babel code blocks in various REPLs.
+  - [[package:projectile-ripgrep][projectile-ripgrep]]: Run ripgrep with Projectile
+  - [[package:pygen][pygen]]: Python code generation using Elpy and Python-mode.
+  - [[package:region-convert][region-convert]]: Convert string in region by Lisp function
+
+Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][Youtube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2016-11][emacs-devel]].
+
+[[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
+
+
 * 2016-11-14 Emacs News
   :PROPERTIES:
   :ID:       o2b:270d0094-2162-4f35-a54c-32c9501a4187
