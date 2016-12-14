@@ -1,3 +1,115 @@
+* 2016-12-12 Emacs News
+  :PROPERTIES:
+  :ID:       o2b:68dfda7b-a5ed-4c22-b254-70eab1e86bb3
+  :POST_DATE: [2016-12-14 Wed 07:41]
+  :POSTID:   28839
+  :BLOG:     sacha
+  :END:
+
+- Org Mode:
+  - [[https://www.reddit.com/r/emacs/comments/5hsmbp/how_can_i_show_only_two_levels_at_startup_in_org/][How can I show only two levels at startup in org?]]
+  - [[https://www.reddit.com/r/emacs/comments/5h6weh/serious_knowledge_management_concept_networks/][Serious knowledge management / concept networks with Org-mode?]]
+- Mail:
+  - [[https://www.reddit.com/r/emacs/comments/5h0ujg/how_to_send_mail_from_2nd_gmail_address/][How to send mail from 2nd gmail address?]]
+  - [[https://www.topbug.net/blog/2016/12/09/attachment-reminder-in-emacs-message-mode/][Attachment Reminder in Emacs message-mode - Top Bug Net]]
+  - [[https://www.reddit.com/r/emacs/comments/5gvtr1/mu_0918_released/][mu 0.9.18 released]]
+  - [[http://pragmaticemacs.com/emacs/cycle-through-query-history-in-mu4e/][Cycle through query history in mu4e]]
+- Coding:
+  - [[https://alexschroeder.ch/wiki/2016-12-08_Cider_Woes][Cider Woes]]
+  - [[https://www.youtube.com/watch?v=aoTbtGhSHkE][Emacs CL Intro v2]] (32:10, with more parts following)
+- Emacs Lisp:
+  - [[http://nullprogram.com/blog/2016/12/11/][Faster Elfeed Search Through JIT Byte-code Compilation]]
+  - [[http://irreal.org/blog/?p=5781][List of Emacs Configurations]]
+  - [[https://www.reddit.com/r/emacs/comments/5hqobu/tripoli_configure_emacs_without_writing_a_single/][Tripoli: Configure Emacs without writing a single line of elisp]]
+  - [[https://www.reddit.com/r/emacs/comments/5hldn5/identifying_the_initial_frame/][Identifying the initial frame?]] 
+- Emacs development:
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2016-12/msg00316.html][Call for testing: concurrency in Emacs]] ([[https://www.reddit.com/r/emacs/comments/5hj1d7/call_for_testing_concurrency_in_emacs/][Reddit]], [[https://news.ycombinator.com/item?id=13151871][Hacker News]], [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=2412a1fc05fe9f89b171d0781c2d530923f48adc][Changelog]])
+  - [[https://www.reddit.com/r/emacs/comments/5hp8bh/emacs_internals_documentation/][Emacs internals documentation]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=57a77f833e37abe2f7936585e9915b6947e3564a][New functions file-name-quote, file-name-unquote, file-name-quoted-p]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=27cada035a79b633e856a437dd0e037acc1d61c6][New function mapbacktrace]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2016-12/msg00503.html][Discussion of block_input]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2016-12/msg00504.html][RFC for string interpolation improvements]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2016-12/msg00419.html][Debugging Emacs with threads]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2016-12/msg00410.html][Tramp and concurrency]]
+- Other:
+  - [[https://www.reddit.com/r/emacs/comments/5hdfwn/browsers_or_extensions_with_emacs_workflow/][Browsers or extensions with Emacs workflow?]]
+  - [[https://matthaffner.wordpress.com/2016/12/07/why-i-switched-from-vim-to-emacs/][Why I switched from Vim to Emacs]] ([[https://www.reddit.com/r/emacs/comments/5h4915/why_i_switched_from_vim_to_emacs/][Reddit]], [[https://news.ycombinator.com/item?id=13130775][Hacker News]])
+  - [[http://blog.aaronbieber.com/2015/05/24/from-vim-to-emacs-in-fourteen-days.html][From Vim to Emacs in 14 days]]
+  - [[https://ilikewhenit.works/blog/6][Beginner - Setting up a simple Emacs configuration. C+C welcome]] 
+  - [[https://www.reddit.com/r/emacs/comments/5h1z8j/i_want_to_try_emacs_please_enlighten_me/][I want to try Emacs. Please, enlighten me.]]
+  - [[http://heikkil.github.io/blog/2016/12/11/fix-text-in-emacs-after-wrong-keyboard-layout/][Fix text in emacs after wrong keyboard layout]] ([[https://www.reddit.com/r/emacs/comments/5hpmau/fix_text_in_emacs_after_wrong_keyboard_layout/][Reddit]])
+- New packages:
+  - [[package:apib-mode][apib-mode]]: Major mode for API Blueprint files
+  - [[package:bln-mode][bln-mode]]: binary line navigation minor mode
+  - [[package:company-statistics][company-statistics]]: Sort candidates using completion history
+  - [[package:copy-as-format][copy-as-format]]: Copy buffer locations as GitHub/Slack/JIRA/HipChat/... formatted text
+  - [[package:csgo-conf-mode][csgo-conf-mode]]: CS:GO Configuration files syntax highlighting
+  - [[package:importmagic][importmagic]]: Fix Python imports using importmagic.
+  - [[package:malyon][malyon]]: mode to execute Z-code files version 3, 5, 8
+  - [[package:temporary-persistent][temporary-persistent]]: Keep temp notes buffers persistent
+  - [[package:tf2-conf-mode][tf2-conf-mode]]: TF2 Configuration files syntax highlighting
+  - [[package:yang-mode][yang-mode]]: major mode for editing YANG files
+
+Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][Youtube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2016-12][emacs-devel]].
+
+[[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
+
+* 2016-12-05 Emacs News
+  :PROPERTIES:
+  :ID:       o2b:266759df-a92d-45c9-ab1e-c2e137177ed7
+  :POST_DATE: [2016-12-07 Wed 18:05]
+  :POSTID:   28838
+  :BLOG:     sacha
+  :END:
+
+- Org Mode:
+  - [[http://pragmaticemacs.com/emacs/use-org-mode-tables-and-structures-in-emails-and-elsewhere/][Use org-mode tables and structures in emails and elsewhere]]
+  - [[http://cestlaz.github.io/posts/using-emacs-23-capture-1/#.WD4A0qWSsFY.reddit][Using Emacs - 23 - Org Capture 1]]
+  - [[http://cestlaz.github.io/posts/using-emacs-24-capture-2/#.WEM2gh0a9xA.reddit][Using Emacs - 24 - Org Capture 2]] 
+- Coding:
+  - [[https://www.youtube.com/watch?v=f6fENfjB4kc][Emacs CL intro]] (29:13)
+  - [[http://blog.binchen.org/posts/use-perforce-inside-emacs.html][Use Perforce inside Emacs]] ([[https://www.reddit.com/r/emacs/comments/5gllku/use_perforce_inside_emacs/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/5gx5yy/magit_v29_released/][Magit v2.9 released]]
+  - [[https://gitlab.com/emacs-stuff/git-commit-insert-issue/tree/master][Gitlab integration: get and insert an issue on "Fixes #"]] ([[https://www.reddit.com/r/emacs/comments/5guo27/gitlab_integration_get_and_insert_an_issue_on/][Reddit]])
+  - [[https://gitlab.com/vindarel/redbaron4emacs/tags][RedBaron4Emacs v0.2 python FST manipulation: add a decorator, add and toggle args on multilines, unit tests - and still very experimental !]] ([[https://www.reddit.com/r/emacs/comments/5fqxyg/redbaron4emacs_v02_python_fst_manipulation_add_a/][Reddit]])
+- Emacs Lisp:
+  - [[http://emacs-bootstrap.com/][Show HN: Emacs Bootstrap]] ([[https://news.ycombinator.com/item?id=13074515][Hacker News]])
+  - [[http://manuel-uberti.github.io/emacs/2016/12/03/xmllint/][Format XML in Emacs]] - demonstrates how to call a shell command with parameters on a region
+  - [[https://alexschroeder.ch/wiki/2016-12-01_Emacs_Advent_of_Code][Emacs Advent of Code]]
+  - [[http://emacshorrors.com/posts/when-data-becomes-code.html][When Data Becomes Code]]
+  - [[https://www.reddit.com/r/emacs/comments/5gpaxc/when_to_use_alist_vs_plist/][When to use alist vs plist?]]
+  - [[https://github.com/ellisadigvom/rig.el][Rig: config file loader]] ([[https://www.reddit.com/r/emacs/comments/5gj4se/rig_config_file_loader/][Reddit]])
+  - [[http://zck.me/emacs-move-file][Move files in Emacs]] ([[https://www.reddit.com/r/emacs/comments/5gk6la/move_files_in_emacs_oc/][Reddit]])
+  - [[http://benaiah.me/posts/bootstrapping-emacs-config-quelpa-use-package/][Bootstrapping an Emacs config with quelpa-use-package]] ([[https://www.reddit.com/r/emacs/comments/5g8wt8/bootstrapping_an_emacs_config_with/][Reddit]])
+- Emacs development:
+  - [[https://www.reddit.com/r/emacs/comments/5fq5vn/first_pretest_for_emacs_252_is_out/][First pretest for Emacs 25.2 is out!]]
+  - [[https://github.com/burtonsamograd/emacs-jit][emacs-jit: Emacs with an Emacs Lisp JIT Compiler]] ([[https://www.reddit.com/r/emacs/comments/5g7w9t/emacsjit_emacs_with_an_emacs_lisp_jit_compiler/][Reddit]], [[https://news.ycombinator.com/item?id=13094770][Hacker News]])
+  - [[https://www.reddit.com/r/emacs/comments/5fy0cf/no_im_not_forking_right_now/][No, I'm not forking right now]]
+  - [[https://www.reddit.com/r/emacs/comments/5fxrb6/website_for_creating_emacs/][Website for creating. emacs]]
+  - [[https://lwn.net/SubscriberLink/707615/286fbe1405669d74/][The Emacs dumper dispute]] ([[https://www.reddit.com/r/emacs/comments/5frpp4/the_emacs_dumper_dispute/][Reddit]], [[https://news.ycombinator.com/item?id=13073566][Hacker News]], [[http://lists.gnu.org/archive/html/emacs-devel/2016-11/msg00625.html][emacs-devel]])
+  - [[https://lists.ourproject.org/pipermail/implementations-list/2016-December/002248.html][Evil needs a new maintainer]] ([[https://www.reddit.com/r/emacs/comments/5g9d53/evil_needs_a_new_maintainer/][Reddit]])
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=35a86f0b6fe5634e94212964657c538739743d72][New: file name quoting]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=56c817837bff3ffef587a9c80d619b9fe4886159][New function add-variable-watcher, debug command debug-on-variable-change]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=50b9ddfc132ead94a932e55ac39211b483109592][New variable dired-omit-case-fold]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2016-11/msg00792.html][New website for GNU ELPA - elpa.gnu.org]]
+- Other:
+  - [[https://www.miskatonic.org/2016/12/01/emacs-in-conforguration/][Emacs in Conforguration]]
+  - [[http://nullprogram.com/blog/2016/12/01/][A Showerthoughts Fortune File]]
+  - [[http://emacspeak.blogspot.com/2016/11/follow-up-soundscapes-on-emacspeak.html][Follow-Up: Soundscapes On The Emacspeak Audio Desktop]]
+  - [[http://pragmaticemacs.com/emacs/scroll-other-window/][Scroll other window]] - C-M-v and C-M-V
+  - [[https://github.com/tarsius/keychain-environment/blob/master/keychain-environment.el][Use Keychain and ssh-agent with Tramp for passwordless remote editing]] ([[https://www.reddit.com/r/emacs/comments/5gugl4/use_keychain_and_sshagent_with_tramp_for/][Reddit]])
+  - [[https://github.com/cmpitg/wand][Wand - Execute actions based on text patterns]] 
+  - [[http://media.bemyapp.com/stupid-emacs-tricks][Stupid Emacs Tricks]]
+  - [[http://mbork.pl/2016-12-04_Making_C-c_C-j_in_AUCTeX_do_something_more_useful][Making C-c C-j in AUCTeX do something more useful]]
+- New packages:
+  - [[package:edit-indirect-region-latex][edit-indirect-region-latex]]: Edit LaTeX regions in separate buffers, e.g. for English grammar checks
+  - [[package:helm-rdefs][helm-rdefs]]: rdefs with helm interface
+  - [[package:sdlang-mode][sdlang-mode]]: Major mode for Simple Declarative Language files.
+
+Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][Youtube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2016-12][emacs-devel]].
+
+[[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
+
 * 2016-11-28 Emacs News
   :PROPERTIES:
   :ID:       o2b:9b93708f-c678-474d-bbc1-842a72f318e5
