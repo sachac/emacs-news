@@ -1,3 +1,123 @@
+* 2016-12-26 Emacs News
+  :PROPERTIES:
+  :ID:       o2b:d956b955-19ef-452b-aefb-31b773e47567
+  :POST_DATE: [2016-12-26 Mon 20:45]
+  :POSTID:   28859
+  :BLOG:     sacha
+  :END:
+
+- Org Mode:
+  - [[http://www.theproductiveprogrammer.blog/do_today.el.php][A Quick Guide to Org-Mode TODO's]] ([[https://www.reddit.com/r/emacs/comments/5jdb7q/a_quick_guide_to_orgmode_todos/][Reddit]])
+  - [[http://karl-voit.at/2016/12/23/my-org-region-to-property/][Easy Entering Values for Org-mode Properties]] ([[https://www.reddit.com/r/orgmode/comments/5jy5ah/easy_entering_values_for_orgmode_properties/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/5jhwlu/getting_things_from_outside_emacs_into/][Getting things from outside Emacs into org-mode/Emacs]]
+  - [[https://turbomack.github.io/posts/2016-12-21-org-mode-in-hakyll.html][Org Mode in Hakyll]] ([[https://www.reddit.com/r/emacs/comments/5jjnri/org_mode_in_hakyll/][Reddit]])
+  - [[http://karl-voit.at/2016/12/23/email-to-orgmode/][Getting Emails into Org-Mode via procmail/mailfilter]]
+  - [[http://kitchingroup.cheme.cmu.edu/blog/2016/12/22/Context-specific-org-mode-speed-keys/][Context-specific org-mode speed keys]]
+- Emacs Lisp:
+  - [[http://nullprogram.com/blog/2016/12/22/][Some Performance Advantages of Lexical Scope]]
+  - [[https://www.reddit.com/r/emacs/comments/5j9qgz/lexicalbinding_t_vs_lexicallet/][lexical-binding: t vs lexical-let?]]
+  - [[https://www.reddit.com/r/emacs/comments/5k3uk1/include_defun_context_in_git_hunk_headers/][Include defun context in git hunk headers]]
+- Coding:
+  - [[https://www.reddit.com/r/emacs/comments/5k34bw/git_is_there_a_way_to_quickly_commit_changes_in/][git: is there a way to quickly commit changes in open buffers?]]
+  - [[https://www.reddit.com/r/emacs/comments/5jxbgx/best_package_for_highlighting_indentation/][Best package for highlighting indentation]] - recommends highlight-indent-guides
+  - [[https://www.reddit.com/r/emacs/comments/5jvr5i/is_it_possible_to_realtime_preview_markdown_in/][Is it possible to real-time preview markdown in Emacs]]
+  - [[https://www.reddit.com/r/emacs/comments/5jvawj/select_the_company_completion_candidate_by/][Select the company completion candidate by pressing 0-9]]
+  - [[https://www.reddit.com/r/emacs/comments/5jh7rx/solved_using_emacs_to_minify_js_and_css/][Solved: Using Emacs to minify js and css]]
+  - [[http://yonatankoren.com/post/4-emacs-cider-and-me][Emacs, CIDER, and clojure-pretty-lambda-mode]] (2015)
+- Emacs development:
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=7ca4396f855799e3c6b3b88eea9181ee7ad602d4][Added luatex and xetex commands]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=a6063ffe5ae395655cb55ba5823c83e306b3161b][Removed make-variable-frame-local]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=8661313efd5fd5b0a27fe82f276a1ff862646424][Removed gateway methods in Tramp]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2016-12/msg00807.html][Continued discussion of big elc]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2016-12/msg00895.html][The current state of the comment-cache branch]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2016-12/msg00742.html][Continued discussion of linking to javascript code]]
+- Other:
+  - [[http://pragmaticemacs.com/emacs/whizz-between-windows-with-windmove/][Whizz between windows with windmove]]
+  - [[https://www.reddit.com/r/emacs/comments/5kg6gv/chocolatey_easily_obtaining_a_functional_emacs_on/][chocolatey: Easily obtaining a functional emacs on windows]]
+  - [[http://cestlaz.github.io/posts/using-emacs-25-tramp/#.WGFUGhajAuc.reddit][Using Emacs - 25 - Tramp]]
+  - [[https://www.reddit.com/r/emacs/comments/5k3rda/evil_vs_default_keybindings_comparison/][Evil vs default keybindings comparison.]]
+  - [[https://www.reddit.com/r/emacs/comments/5jusqo/solution_explorer_style_windowtab_in_emacs/]["solution explorer" style window/tab in emacs.]] - emacs-neotree
+  - [[https://www.reddit.com/r/emacs/comments/5jr0kk/email_with_gnus_and_docker/][Email with Gnus and Docker]]
+  - [[http://oremacs.com/2015/01/06/rushing-headlong/][Fastest way to jump to bookmarks]] ([[https://www.reddit.com/r/emacs/comments/5jpyeu/fastest_way_to_jump_to_bookmarks/][Reddit]]) (2015)
+  - [[https://news.ycombinator.com/item?id=13237019][Ask HN: Vim/Emacs users, how do you deal with non-qwerty layouts? | Hacker News]]
+  - [[http://cachestocaches.com/2016/12/vim-within-emacs-anecdotal-guide/][Vim Within Emacs: An Anecdotal Guide]]
+- New packages:
+  - [[package:autothemer][autothemer]]: Conveniently define themes.
+  - [[package:company-erlang][company-erlang]]: company backend based on ivy-erlang-complete
+  - [[package:eros][eros]]: Evaluation Result OverlayS for Emacs Lisp
+  - [[package:lsp-mode][lsp-mode]]: No description available.
+  - [[package:python-switch-quotes][python-switch-quotes]]: cycle between ' and " quotes in python strings
+  - [[package:rebecca-theme][rebecca-theme]]: Rebecca Purple Theme
+  - [[package:xah-reformat-code][xah-reformat-code]]: commands to reformat source code.
+
+Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][Youtube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2016-12][emacs-devel]].
+
+[[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
+
+
+* 2016-12-19 Emacs News
+  :PROPERTIES:
+  :ID:       o2b:b78b4c80-f764-40c8-9ea6-2e6e271d3552
+  :POST_DATE: [2016-12-21 Wed 02:37]
+  :POSTID:   28855
+  :BLOG:     sacha
+  :END:
+
+- Org Mode:
+  - [[http://pragmaticemacs.com/emacs/sorting-an-org-mode-table/][Sorting an org-mode table]]
+  - [[http://sachachua.com/blog/2016/12/using-categories-organize-org-agenda/][Using categories to organize your Org agenda]]
+  - [[https://www.reddit.com/r/emacs/comments/5j8rxw/rails_remote_console_in_emacs_and_orgmode/][Rails remote console in emacs and org-mode]]
+  - [[https://www.reddit.com/r/emacs/comments/5ig6bc/open_a_section_in_orgfile_programmatically/][Open a section in org-file programmatically]]
+  - [[https://www.reddit.com/r/orgmode/comments/5j9rmv/change_the_color_of_the_todo_keyword_you_use_to/][Change the color of the TODO keyword you use to mark tasks that are in progress.]]
+  - [[http://karl-voit.at/2016/12/18/org-depend/][Advanced Usage of Dependencies Between Tasks Using org-depend.el]] ([[https://www.reddit.com/r/orgmode/comments/5izzmz/advanced_usage_of_dependencies_between_tasks/][Reddit]])
+  - [[http://anbasile.github.io/2016/12/02/org-babel-is-cool/][Org-mode babel is cool]]
+- Coding:
+  - [[https://gitlab.com/emacs-stuff/indent-tools][indent-tools: navigate in yaml, indent python etc by blocks of indentation]]
+  - [[https://github.com/tarsius/git-elisp-overview][git-elisp-overview: Git-related Emacs packages]] ([[https://www.reddit.com/r/emacs/comments/5iy64s/gitelispoverview_gitrelated_emacs_packages/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/5ivkpt/some_react_es6_yasnippets/][Some react es6 yasnippets]]
+  - [[https://www.reddit.com/r/emacs/comments/5ic7yl/browse_stackoverflow_in_emacs/][Browse stackoverflow in Emacs]]
+  - [[https://www.reddit.com/r/emacs/comments/5i1vzt/jscomint_v100/][js-comint v1.0.0]]
+  - [[http://gergely.polonkai.eu/2016/11/30/add-python-docstring-to-the-beginning-of-anything/][Add Python docstring to the beginning of anything in Emacs]]
+- Emacs Lisp:
+  - [[http://mbork.pl/2016-12-12_momentary-string-display][momentary-string-display]]
+  - [[http://blog.jorgenschaefer.de/2014/05/race-conditions-in-emacs-process-filter.html][Race conditions in Emacs' process filter functions]]
+  - [[https://www.reddit.com/r/emacs/comments/5j9qgz/lexicalbinding_t_vs_lexicallet/][lexical-binding: t vs lexical-let?]]
+  - [[https://hexmode.com/2016/12/how-i-chased-down-a-php-mode-indention-bug-in-emacs/][How I chased down a PHP mode indention bug in Emacs]] ([[https://www.reddit.com/r/emacs/comments/5j4i07/how_i_chased_down_a_php_mode_indention_bug_in/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/5iw5ml/eros_evaluation_result_overlays_for_emacs_lisp/][eros: Evaluation Result OverlayS for Emacs Lisp]]
+  - [[http://pragmaticemacs.com/emacs/dont-kill-buffer-kill-this-buffer-instead/][Don’t kill-buffer, kill-this-buffer instead]] ([[https://www.reddit.com/r/emacs/comments/5it2gc/dont_killbuffer_killthisbuffer_instead/][Reddit]])
+  - [[https://github.com/OmniSharp/omnisharp-emacs/issues/265][New maintainer for omnisharp-emacs is needed]] ([[https://www.reddit.com/r/emacs/comments/5ip1bl/new_maintainer_for_omnisharpemacs_is_needed/][Reddit]])
+- Emacs development:
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2016-12/msg00378.html][Concurrency has landed]] ([[https://www.reddit.com/r/emacs/comments/5hw4ne/concurrency_has_landed/][Reddit]])
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=35aaa6b6aa9a2e7b42465603fb32355a009c510f][ibuffer: new filters and commands]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=f8072cd5c16f855505f6a0ce6a6b30309735705d][Image-Dired improvements]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=cdf5340f51d4346c276102331e3ed29561753b26][New commands image-scroll-left and image-scroll-right]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2016-12/msg00605.html][Discussion of linking to Javascript libraries within Emacs core]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2016-12/msg00783.html][Discussion of event handling]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2016-12/msg00702.html][Continued discussion about narrowing and widening]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2016-12/msg00622.html][Regular expression libraries]]
+- Other:
+  - [[http://mbork.pl/2016-12-18_Generating_links_to_info_buffers][Generating links to info buffers]]
+  - [[http://www.lonecpluspluscoder.com/2016/12/13/converting-files-from-dos-to-unix-file-formats-using-emacs/][Converting files from DOS to UNIX file formats using Emacs]]
+  - [[https://www.reddit.com/r/emacs/comments/5j89xn/tmux_emacs/][Tmux + Emacs]]
+  - [[https://github.com/kzar/davemail][Nice email configuration using Emacs, mbsync, notmuch, msmtp, msmtpq, pgp, and gnus-alias]] ([[https://www.reddit.com/r/emacs/comments/5iievm/nice_email_configuration_using_emacs_mbsync/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/5i3x91/breaking_the_dependency_on_the_terminal/][Breaking the dependency on the terminal]]
+  - [[http://tychoish.com/post/running-multiple-emacs-daemons-on-a-single-system/][Running Multiple Emacs Daemons on a Single System · tychoish]] ([[https://www.reddit.com/r/emacs/comments/5hwtal/running_multiple_emacs_daemons_on_a_single_system/][Reddit]])
+- New packages:
+  - [[package:blackboard-theme][blackboard-theme]]: TextMate Blackboard Theme
+  - [[package:flycheck-objc-clang][flycheck-objc-clang]]: Flycheck: Objective-C support using Clang
+  - [[package:flycheck-swift3][flycheck-swift3]]: Flycheck: Swift support for Apple swift-mode
+  - [[package:indent-tools][indent-tools]]: Indent, navigate (and more) by blocks of indentation: yaml, python etc.
+  - [[package:ivy-rich][ivy-rich]]: More friendly display transformer for ivy.
+  - [[package:jastadd-ast-mode][jastadd-ast-mode]]: Major mode for editing JastAdd AST files
+  - [[package:js-format][js-format]]: Format or transform code style using NodeJS server with different javascript formatter
+  - [[package:org-seek][org-seek]]: Searching Org-mode files with search tools.
+  - [[package:syntactic-close][syntactic-close]]: Insert closing delimiter
+  - [[package:winum][winum]]: Navigate windows and frames using numbers.
+
+Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][Youtube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2016-12][emacs-devel]].
+
+[[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
+
 * 2016-12-12 Emacs News
   :PROPERTIES:
   :ID:       o2b:68dfda7b-a5ed-4c22-b254-70eab1e86bb3
