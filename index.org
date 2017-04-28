@@ -1,3 +1,464 @@
+* 2017-04-24 Emacs news
+  :PROPERTIES:
+  :ID:       o2b:213752c3-d7f6-4a82-836e-bd68bf0e38d8
+  :POST_DATE: [2017-04-24 Mon 23:28]
+  :POSTID:   28976
+  :BLOG:     sacha
+  :END:
+
+- Emacs development:
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2017-04/msg00619.html][Emacs 25.2 released]] ([[https://www.reddit.com/r/emacs/comments/66q9wx/emacs_252_released/][Reddit]], [[https://news.ycombinator.com/item?id=14173332][HN]], [[https://news.ycombinator.com/item?id=14169797][HN also]])
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2017-04/msg00520.html][Continued work on libnettle/libhogweed WIP]]
+- Emacs Lisp:
+  - [[https://www.reddit.com/r/emacs/comments/673wek/emacs_bankruptcy_and_structure/][.emacs bankruptcy and structure]]
+  - [[https://www.reddit.com/r/emacs/comments/66gh2q/elisp_for_scripting/][elisp for scripting]]
+- Org Mode:
+  - [[https://github.com/alphapapa/helm-org-rifle#changelog][helm-org-rifle 1.4.0 released]]
+  - [[http://github.com/alphapapa/org-sticky-header][org-sticky-header: Show off-screen Org heading in header line]]
+  - [[https://github.com/scallywag/org-board][org board]]
+  - [[https://www.reddit.com/r/emacs/comments/66w75c/monospace_font_for_calendar_in_orgmode/][Monospace font for Calendar in org-mode, proportional font in main buffer]]
+  - [[https://www.reddit.com/r/emacs/comments/66v3zs/agenda_view_with_random_sorting_of_the_entries/][Agenda view with random sorting of the entries]]
+  - [[https://www.reddit.com/r/emacs/comments/66b82k/some_questions_about_a_songwriting_workflow_in/][Some questions about a songwriting workflow in emacs.]]
+  - [[http://www.accidentalrebel.com/blog/2017/04/19/converting-org-journal-entry-to-org-page-post/][Converting org-journal entry to org-page post]]
+- Coding:
+  - [[https://magit.vc/manual/magit/MacOS-Performance.html][Patch Emacs to speedup Magit on macOS]] ([[https://www.reddit.com/r/emacs/comments/66o45w/patch_emacs_to_speedup_magit_on_macos/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/66sj2z/n00b_question_how_do_i_get_a_shebang_copied_into/][Inserting shebangs in files]]
+  - [[https://www.reddit.com/r/emacs/comments/66qvir/can_i_have_line_numbers_only_show_up_in_the/][Can I have line numbers only show up in the active (focused) window?]]
+  - [[https://www.youtube.com/watch?v=T1WBsI3gdDE][Productive Emacs: Paredit]] (19:03, from 2016) - hat-tip to [[http://irreal.org/blog/?p=6158][Irreal]] for the link
+- Other:
+  - [[https://spacemacs.org][Try Spacemacs directly in the browser!]] ([[https://www.reddit.com/r/emacs/comments/66locu/try_spacemacs_directly_in_the_browser/][Reddit]])
+  - [[http://emacspeak.blogspot.com/2017/04/mail-on-emacspeak-audio-desktop.html][Mail On The emacspeak Audio Desktop]]
+  - [[https://www.reddit.com/r/emacs/comments/66y6xg/how_to_rebind_the_meta_key_for_emacs_only/][How to rebind the meta key for emacs only?]]
+  - [[https://www.reddit.com/r/emacs/comments/66ubv8/tmuxlike_behavior_in_emacs/][tmux-like behavior in Emacs]]
+  - [[https://www.reddit.com/r/emacs/comments/66ln5d/copying_large_files_in_dired/][Copying large files in dired]]
+  - [[https://www.reddit.com/r/emacs/comments/66kdfb/state_of_spell_checking_in_emacs_for_non_english/][State of spell checking in emacs for non English writers]]
+  - [[https://www.reddit.com/r/emacs/comments/66fs1e/i_want_to_try_using_a_foot_pedal_for_pressing_the/][Foot pedal recommendations]]
+- New packages:
+  - [[package:binclock][binclock]]: Display the current time using a binary clock.
+  - [[package:exsqlaim-mode][exsqlaim-mode]]: Use variables inside sql queries
+  - [[package:flatui-dark-theme][flatui-dark-theme]]: Dark color theme with colors from https://flatuicolors.com/
+  - [[package:flow-minor-mode][flow-minor-mode]]: Flow type mode based on web-mode.
+  - [[package:frame-mode][frame-mode]]: Use frames instead of windows
+  - [[package:lsp-go][lsp-go]]: Go support for lsp-mode
+  - [[package:lsp-haskell][lsp-haskell]]: Haskell support for lsp-mode
+  - [[package:lsp-java][lsp-java]]: Java support for lsp-mode
+  - [[package:lsp-python][lsp-python]]: Python support for lsp-mode
+  - [[package:lsp-rust][lsp-rust]]: Rust support for lsp-mode"
+
+Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][Youtube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2017-04][emacs-devel]].
+
+[[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
+
+* 2017-04-17 Emacs news
+  :PROPERTIES:
+  :ID:       o2b:7aeb1e6c-2b18-44d5-8fff-6dd3df707d4a
+  :POST_DATE: [2017-04-17 Mon 01:55]
+  :POSTID:   28968
+  :BLOG:     sacha
+  :END:
+
+- Emacs Lisp:
+  - [[http://mp.vv.si/blog/emacs/emacs-symbolism/][Emacs symbolism]]
+  - [[https://www.youtube.com/watch?v=hrCTolWO_sA][Move The Buffer Contents And Cursor Up Or Down By One Line]] (0:32)
+  - [[https://www.reddit.com/r/emacs/comments/65ggm4/execute_macro_as_and_emacsscript_help/][Execute macro as and EmacsScript Help]] - see comments for tips on scripting
+  - [[https://www.reddit.com/r/emacs/comments/64pt41/idea_a_standard_set_of_async_hooks_for_keyboard/][Idea: a standard set of async hooks for keyboard macros]] - work around it with executing-kbd-macro
+  - [[https://www.reddit.com/r/emacs/comments/64pgfr/how_to_ignore_whitespaceonly_killring_entries/][How to ignore whitespace-only kill-ring entries?]] - filter-buffer-substring-function
+  - [[https://www.reddit.com/r/emacs/comments/6558wp/running_elisp_commands_in_vim_buffers/][Running elisp commands in vim buffers?]]
+- Emacs development:
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=a61fa4af2802a47defe61543eb97276d74ba60bd][Lots of frame and window changes]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=88f43dc30cb8d71830e409973cafbaca13a66a45][Scroll right and left with the mouse wheel, touchpad, or tracker]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=695eacc21ea08b7fa080a232eadae881b5295bef][New variable package-gnupghome-dir]]
+- Org Mode:
+  - [[https://www.reddit.com/r/emacs/comments/64tzsb/changing_the_date_rollover_time_for_orgmode/][Changing the date roll-over time for org-mode]] - org-extend-today-until
+  - [[https://www.reddit.com/r/emacs/comments/64qwq5/emacs_orgbable_mysql_no_longer_working/][Emacs Org-Babel MySQL no longer working]] - note about incompatible change (org-babel-get-header)
+- Coding:
+  - [[https://petton.fr/git/nico/Indium#indium----][Indium – JavaScript REPL w/Object Inspection, stepping debugger ++]] ([[https://www.reddit.com/r/emacs/comments/65lftj/indium_javascript_repl_wobject_inspection/][Reddit]]) - formerly known as jade
+  - [[https://github.com/davidshepherd7/terminal-here][Announcing terminal-here: Cross-platform package to open an external terminal in the directory of the current buffer]] ([[https://www.reddit.com/r/emacs/comments/65id4r/announcing_terminalhere_crossplatform_package_to/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/64x6xw/interact_with_an_oracle_db_from_elisp/][Interact with an Oracle DB from elisp]]
+- Other:
+  - [[https://www.reddit.com/r/emacs/comments/64nl7g/sticking_with_emacs_as_a_newbie_ideassuggestions/][Sticking with emacs as a newbie: Ideas/suggestions?]]
+  - [[https://www.reddit.com/r/emacs/comments/64pblw/impressive_emacs_plugins/][Impressive emacs plugins]]
+  - [[https://www.reddit.com/r/emacs/comments/65lf9y/show_manpages_always_in_the_same_window/][Show manpages always in the same window]] - major-mode-dedication
+  - [[https://www.reddit.com/r/emacs/comments/64sdyi/emacsel_episode_7/][Emacs.el Episode 7]] - collecting questions for Charles Lowell, frontside.io
+  - [[https://www.reddit.com/r/emacs/comments/65pjtv/a_short_rant_on_other_applications/][A short rant on other applications]]
+  - [[http://irreal.org/blog/?p=6141][I Stand Corrected...]] - enjoying mu4e
+  - [[https://github.com/AdrieanKhisbe/spacemacs-anki-deck][Anki Deck to learn Spacemacs Bindings]]
+- New packages:
+  - [[package:add-hooks][add-hooks]]: Functions for setting multiple hooks
+  - [[package:arch-packer][arch-packer]]: Arch Linux package management frontend
+  - [[package:bitbucket][bitbucket]]: Bitbucket API wrapper
+  - [[package:flycheck-joker][flycheck-joker]]: Add Clojure syntax checker (via Joker) to flycheck
+  - [[package:hierarchy][hierarchy]]: Library to create and display hierarchy structures
+  - [[package:html2org][html2org]]: Convert html to org format text
+  - [[package:indium][indium]]: JavaScript Awesome Development Environment
+  - [[package:password-mode][password-mode]]: Hide password text using overlays
+  - [[package:playerctl][playerctl]]: Control your music player (e.g. Spotify) with playerctl
+  - [[package:smart-hungry-delete][smart-hungry-delete]]: smart hungry deletion of whitespace
+  - [[package:sourcetrail][sourcetrail]]: Communication with Sourcetrail
+  - [[package:spaceline-all-the-icons][spaceline-all-the-icons]]: A Spaceline theme using All The Icons
+  - [[package:web-narrow-mode][web-narrow-mode]]: quick narrow code block in web-mode
+  - [[package:zig-mode][zig-mode]]: A major mode for the Zig programming language
+
+Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][Youtube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2017-04][emacs-devel]].
+
+[[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
+
+* 2017-04-10 Emacs news
+  :PROPERTIES:
+  :ID:       o2b:26ecfe1a-1759-41f5-97f5-7c2736e69477
+  :POST_DATE: [2017-04-12 Wed 01:23]
+  :POSTID:   28965
+  :BLOG:     sacha
+  :END:
+
+- Emacs Lisp:
+  - [[http://mbork.pl/2017-04-09_Quickly_loading_and_finding_your_elisp_files][Quickly loading and finding your elisp files]]
+  - [[http://lists.gnu.org/archive/html/emacs-diffs/2017-04/msg00025.html][cl-defstruct and defclass now makes new types]] ([[https://www.reddit.com/r/emacs/comments/63cvnd/cldefstruct_and_defclass_now_makes_new_types/][Reddit]])
+  - [[https://www.emacswiki.org/emacs/HippieExpand#toc8][Fuzzy matching for hippie-expand]] ([[https://www.reddit.com/r/emacs/comments/64f0hc/fuzzy_matching_for_hippieexpand/][Reddit]])
+  - [[https://www.youtube.com/watch?v=IWxCj5cr8rY&amp;t=5s][Object-oriented font-lock in Emacs]] ([[https://www.reddit.com/r/emacs/comments/649sxv/objectoriented_fontlock_in_emacs/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/643dkt/use_package_vs_require_and_maybe_some_sorrowful/][use package vs require]]
+  - [[https://www.reddit.com/r/emacs/comments/63e8hu/are_emacs_package_repositories_a_security_risk/][Are emacs package repositories a security risk?]]
+- Emacs development:
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2017-04/msg00082.html][Continued work on continuous integration]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2017-04/msg00135.html][Discussion on package security auditing and isolation]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=9e1f45d98f82278845b57fce9796142c8e3bf778][New tramp-change-syntax command]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=a2b3fea957440b8358d3632a4a05e41dee964b5d][copy-record deprecated in favor of copy-sequence]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=cd0a7951fb762570c4b9c2cdbb43c94cb68910d4][write-region, append-to-file, etc. now output number of characters added]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=b3b9b258c4026baa1cad3f2e617f1a637fc8d205][Unicode special casing]] and [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=c1fa07222e9c76964d1261c31b50f1e399554fa2][special sigma casing rule]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=335174ee5037a2751c31bfd9ecb87cedb4bc3cda][mhtml-mode is now default mode for *.html files]]
+- Navigation:
+  - [[https://oremacs.com/2017/04/09/ivy-0.9.0/][Ivy 0.9.0 is Out]] ([[https://www.reddit.com/r/emacs/comments/64eqsw/ivy_090_is_out/][Reddit]])
+  - [[https://github.com/Kungsgeten/selected.el][How do you use the select.el package? Share some examples.]] ([[https://www.reddit.com/r/emacs/comments/63mx6f/how_do_you_use_the_selectel_package_share_some/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/63i9mg/dragging_a_line/]["Dragging" a line]]
+- Org Mode:
+  - [[http://kitchingroup.cheme.cmu.edu/blog/2017/04/09/A-better-return-in-org-mode/][A better return in org-mode]]
+  - [[http://anbasile.github.io/writing/2017/04/08/orgleanpub.html][Writing a book with emacs org-mode and Leanpub]] - hat-tip to [[http://irreal.org/blog/?p=6128][Irreal]] for the link
+  - [[https://www.reddit.com/r/emacs/comments/64f1jn/good_collection_of_themes_for_an_org_based_blog/][Good collection of themes for an org based blog?]]
+  - [[https://www.reddit.com/r/emacs/comments/63z6yj/org_mode_and_anki/][Org mode and Anki]] - see also org-drill or pamparam
+- Coding:
+  - [[https://www.reddit.com/r/emacs/comments/641749/using_dired_magit_and_some_elisp_for_a_dropboxgit/][Using dired, magit, and some elisp for a Dropbox+git workflow]]
+  - [[https://www.youtube.com/watch?v=vwKmuH65hHg][How to grab "bootstrap glyphicon list" using mozilla/firefox and emacs/multiple-cursors]] (1:27)
+- Other:
+  - [[http://pragmaticemacs.com/emacs/make-emacs-a-bit-quieter/][Make Emacs a bit quieter]]
+  - [[http://sachachua.com/blog/2017/04/emacs-pasting-with-the-mouse-without-moving-the-point-mouse-yank-at-point/][Pasting with the mouse without moving the point - mouse-yank-at-point]]
+  - [[http://pragmaticemacs.com/emacs/automatically-revert-buffers/][Automatically revert buffers]]
+  - [[https://skillsmatter.com/meetups/9379-emacs-april-meetup][Emacs April 2017 Meetup @ Skills Matter]] ([[https://www.reddit.com/r/emacs/comments/64c8xs/emacs_april_2017_meetup_skills_matter/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/63mwvo/spreadsheets_is_there_a_de_facto_good_one_or_what/][Spreadsheets: is there a de facto "good one", or what are the pros/cons?]]
+  - [[https://www.reddit.com/r/emacs/comments/63ckc8/how_can_i_create_a_screencast_of_an_emacs_session/][How Can I Create a Screencast of an Emacs Session?]]
+  - [[https://github.com/storvik/emacs-lastpass][Lastpass command wrapper for Emacs with interactive manager and auth-source]] ([[https://www.reddit.com/r/emacs/comments/63983p/lastpass_command_wrapper_for_emacs_with/][Reddit]])
+  - [[https://www.youtube.com/watch?v=WPvonNGG_J4][Playing around in Emacs and Helm]] (4:26)
+- New packages:
+  - [[package:ac-rtags][ac-rtags]]: auto-complete back-end for RTags
+  - [[package:challenger-deep-theme][challenger-deep-theme]]: Orbit Theme
+  - [[package:company-rtags][company-rtags]]: RTags back-end for company
+  - [[package:flycheck-rtags][flycheck-rtags]]: RTags Flycheck integration.
+  - [[package:helm-rtags][helm-rtags]]: A front-end for rtags
+  - [[package:ivy-rtags][ivy-rtags]]: RTags completion back-end for ivy
+  - [[package:kubernetes-evil][kubernetes-evil]]: Kubernetes keybindings for evil-mode.
+  - [[package:meson-mode][meson-mode]]: Major mode for the Meson build system files
+  - [[package:symbol-overlay][symbol-overlay]]: Highlighting symbols with keymap-enabled overlays
+  - [[package:terminal-here][terminal-here]]: Run an external terminal in current directory
+  - [[package:waf-mode][waf-mode]]: Waf integration for Emacs
+
+Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][Youtube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2017-04][emacs-devel]].
+
+[[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
+
+* 2017-04-03 Emacs news
+  :PROPERTIES:
+  :ID:       o2b:2aa7e8aa-6a24-44fd-89b2-0acd03845e10
+  :POST_DATE: [2017-04-03 Mon 22:38]
+  :POSTID:   28958
+  :BLOG:     sacha
+  :END:
+
+- Beginner:
+  - [[http://mickael.kerjean.me/2017/03/19/emacs-tutorial-series-episode-1/][Emacs tutorial series]]
+- Emacs Lisp:
+  - [[http://blog.binchen.org/posts/auto-complete-word-in-emacs-mini-buffer-when-using-evil.html][Auto-complete word in Emacs mini-buffer when using Evil]]
+  - [[http://mbork.pl/2017-04-01_compilation-in-progress][compilation-in-progress]]
+  - [[http://francismurillo.github.io/2017-03-30-Exploring-Emacs-rx-Macro/][Exploring Emacs rx Macro]] ([[https://www.reddit.com/r/emacs/comments/62idax/exploring_emacs_rx_macro/][Reddit]])
+  - [[https://github.com/hying-caritas/comint-intercept][Comint-intercept: Run eshell command or run command in ansi-term from a shell buffer]]
+- Emacs development:
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=3887c54544bc2e5f8c2e7c12973887f9b2b88c4][New error user-search-failed]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=1da9a207669a3cf5d27ac1dd61543c1492e05360][dired-mark-extension prepends '.'; new command dired-mark-suffix doesn't]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2017-04/msg00041.html][Discussion of changes to Tramp syntax]]
+- Navigation:
+  - [[http://mbork.pl/2017-03-27_Moving_to_a_certain_line_on_the_screen][Moving to a certain line on the screen]]
+  - [[https://github.com/syl20bnr/spacemacs/releases/tag/v0.200.8][Spacemacs 0.200.8 is here]] ([[https://www.reddit.com/r/spacemacs/comments/62ybnk/spacemacs_02008_is_here/][Reddit]])
+  - [[https://www.youtube.com/watch?v=qx4Y2dlOYko][Emacs 24.5 Replace word or letter]] (9:59)
+- Org Mode:
+  - [[https://vimvalley.com/replacing-scrivener-with-emacs-and-vim/][Replacing Scrivener with Emacs and Vim]] ([[https://www.reddit.com/r/emacs/comments/62sy6c/replacing_scrivener_with_emacs_and_vim/][Reddit]])
+  - [[http://irreal.org/blog/?p=6113][Updating save-receipt-link]]
+  - [[https://kungsgeten.github.io/org-brain.html][org-brain now on Melpa]] ([[https://www.reddit.com/r/emacs/comments/630j3q/orgbrain_now_on_melpa/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/61smge/memacs_what_did_i_do_on_february_14th_2007/][Memacs: What did I do on February 14th 2007? Visualize your (digital) life in Org-mode]]
+  - [[http://karl-voit.at/2017/03/27/org-du/][org-du: Visualizing Org-mode Heading Sizes]]
+  - [[https://www.reddit.com/r/orgmode/comments/62rpnz/orgmode_paperpen_for_creative_writing/][Org-mode + paper/pen + ? for creative writing]]
+  - [[https://www.reddit.com/r/orgmode/comments/628vzs/how_do_you_align_your_daily_todos_with_your_long/][How do you align your daily todos with your long term goals?]]
+- Coding:
+  - [[http://blog.binchen.org/posts/indent-jsx-in-emacs.html][Indent JSX in Emacs]] ([[https://www.reddit.com/r/emacs/comments/61yvu0/indent_jsx_in_emacs/][Reddit]])
+  - [[https://oremacs.com/2017/03/28/emacs-cpp-ide/][Using Emacs as a C++ IDE]] ([[https://www.reddit.com/r/emacs/comments/622liq/using_emacs_as_a_c_ide_or_emacs/][Reddit]])
+- Other:
+  - [[http://nullprogram.com/blog/2017/04/01/][My Journey with Touch Typing and Vim]] - modal editing
+  - [[https://www.reddit.com/r/emacs/comments/62ue4p/which_emacs_wiki_should_i_contribute_to/][Which Emacs wiki should I contribute to?]]
+  - [[https://www.reddit.com/r/emacs/comments/62jc14/life_changing_as_emacs/][Life changing as emacs?]]
+  - [[http://nicros.com/training/training-articles/essential-forearm-stretches/][These rock climbing stretches erased my emacs pinky]] ([[https://www.reddit.com/r/emacs/comments/62ey7r/these_rock_climbing_stretches_erased_my_emacs/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/62eg4y/im_just_getting_started/][I'm just getting started..]] - more tips
+- New packages:
+  - [[package:helm-navi][helm-navi]]: Helm for navi-mode
+  - [[package:kubernetes][kubernetes]]: Emacs porcelain for Kubernetes.
+  - [[package:nord-theme][nord-theme]]: An arctic, north-bluish clean and elegant theme
+  - [[package:org-brain][org-brain]]: Org-mode concept mapping
+  - [[package:popup-edit-menu][popup-edit-menu]]: a popup context edit menu package
+  - [[package:protocols][protocols]]: Protocol database access functions.
+  - [[package:quick-peek][quick-peek]]: Inline quick-peek windows
+  - [[package:services][services]]: Services database access functions.
+  - [[package:timonier][timonier]]: Manage Kubernetes Applications
+  - [[package:tql-mode][tql-mode]]: TQL mode
+
+Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][Youtube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2017-04][emacs-devel]].
+
+[[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
+
+* 2017-03-27 Emacs news
+  :PROPERTIES:
+  :ID:       o2b:389ee11b-d6ff-41ad-9810-8ed1508f1c5c
+  :POST_DATE: [2017-03-27 Mon 00:50]
+  :POSTID:   28949
+  :BLOG:     sacha
+  :END:
+
+- Emacs Lisp:
+  - [[https://github.com/emacscollective/borg][Borg: Manage packages as Git submodules]] ([[https://www.reddit.com/r/emacs/comments/60uy4a/borg_manage_packages_as_git_submodules/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/60tl6o/tips_on_reading_dense_emacs_lisp_code/][Tips on reading dense Emacs Lisp code?]]
+  - [[https://www.reddit.com/r/emacs/comments/60rgvc/centralized_windowslinux_emacs_directory_on_a/][Centralized Windows/Linux Emacs directory on a NTFS partition]]
+  - [[https://github.com/manuel-uberti/helm-company/issues/10][helm-company looking for a new maintainer]]
+- Navigation:
+  - [[https://github.com/jacktasia/dumb-jump/releases/tag/v0.5.0][Dumb Jump v0.5 Released]] ([[https://www.reddit.com/r/emacs/comments/60xra4/dumb_jump_v05_released/][Reddit]])
+- Org Mode:
+  - [[https://github.com/abrochard/org-sync-snippets][org-sync-snippets: export snippets to org-mode and vice versa]] ([[https://www.reddit.com/r/emacs/comments/61m0qj/orgsyncsnippets_export_snippets_to_orgmode_and/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/61cfdp/org_auto_capture_todos_from_code_comments/][org - auto capture TODOs from code comments?]]
+  - [[https://github.com/Kungsgeten/org-brain][org-brain -- Concept mapping using org-mode]] ([[https://www.reddit.com/r/emacs/comments/60g4eg/orgbrain_concept_mapping_using_orgmode/][Reddit]])
+  - [[https://github.com/et2010/org-edit-latex][My first package: org-edit-latex - edit embedded LaTeX in a dedicated buffer]] ([[https://www.reddit.com/r/orgmode/comments/61pejf/my_first_package_orgeditlatex_edit_embedded_latex/][Reddit]])
+- Coding:
+  - [[https://gist.github.com/mookid/6c149993042d699c4e037747c46722cf][My solution to untabification]] ([[https://www.reddit.com/r/emacs/comments/61gsba/my_solution_to_untabification/][Reddit]])
+  - [[https://github.com/ptol/oczor][A simple statically typed language that compiles to JavaScript, Lua, Ruby and "Emacs Lisp"]] ([[https://www.reddit.com/r/emacs/comments/61a064/a_simple_statically_typed_language_that_compiles/][Reddit]])
+  - [[https://github.com/brotzeitmacher/pippel][My first package: pippel - manage your python packages easily]] ([[https://www.reddit.com/r/emacs/comments/612g59/my_first_package_pippel_manage_your_python/][Reddit]])
+  - [[https://github.com/edkolev/evil-lion][evil-lion -- align operator for evil-mode, port of vim-lion]] ([[https://www.reddit.com/r/emacs/comments/60ta18/evillion_align_operator_for_evilmode_port_of/][Reddit]])
+- Other:
+  - [[http://www.mostlymaths.net/2010/12/emacs-30-day-challenge-using-gnus-to.html][The emacs 30 Day Challenge: Using 'gnus' to read mail]]
+  - [[http://pragmaticemacs.com/emacs/speedy-sorting-in-dired-with-dired-quick-sort/][Speedy sorting in dired with dired-quick-sort]]
+  - [[https://www.reddit.com/r/emacs/comments/61fu70/name_three_useful_packages_you_recently_started/][Name Three Useful Packages You Recently Started Using]]
+  - [[https://www.reddit.com/r/emacs/comments/61dank/what_are_some_advanced_editing_techniques_that/][What are some advanced editing techniques that save you a lot of time?]]
+- New packages:
+  - [[package:easy-hugo][easy-hugo]]: Package for writing blogs made with hugo
+  - [[package:evil-lion][evil-lion]]: Evil align operator, port of vim-lion
+  - [[package:flycheck-yamllint][flycheck-yamllint]]: Flycheck integration for YAMLLint
+  - [[package:helm-books][helm-books]]: Helm interface for searching books
+  - [[package:helm-sql-connect][helm-sql-connect]]: Choose a database to connect to via Helm.
+  - [[package:ido-flex-with-migemo][ido-flex-with-migemo]]: use ido with flex and migemo
+  - [[package:monokai-alt-theme][monokai-alt-theme]]: Theme with a dark background. Based on sublime monokai theme.
+  - [[package:obfusurl][obfusurl]]: Obfuscate URLs so they aren't spoilers
+  - [[package:org-edit-latex][org-edit-latex]]: Edit embedded LaTeX in a dedicated buffer
+  - [[package:org-sync-snippets][org-sync-snippets]]: Export snippets to org-mode and vice versa
+  - [[package:ox-minutes][ox-minutes]]: Plain text backend for Org for Meeting Minutes
+  - [[package:thinks][thinks]]: Insert text in a think bubble.
+  - [[package:uptimes][uptimes]]: Track and display emacs session uptimes.
+  - [[package:wotd][wotd]]: Fetch word-of-the-day from multiple online sources
+
+Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][Youtube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2017-03][emacs-devel]].
+
+[[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
+
+
+* 2017-03-20 Emacs news
+  :PROPERTIES:
+  :ID:       o2b:9cb0695e-c685-42a2-8dc9-b2a1ae9d76b0
+  :POST_DATE: [2017-03-23 Thu 01:48]
+  :POSTID:   28945
+  :BLOG:     sacha
+  :END:
+
+- Emacs Lisp:
+  - [[http://jr0cket.co.uk/2017/03/spacemacs-managing-broken-emacs-packages.html][Spacemacs - Managing Broken Emacs Packages]]
+  - [[http://www.wilfred.me.uk/blog/2017/03/19/pattern-matching-in-emacs-lisp/][Pattern Matching in Emacs Lisp]]
+- Emacs development:
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=9f771f6440a61433d34f14aee4046cf2fa6ba391][New configure option --with-mailutils]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=0f3d1b782353fd1fc0ab5f89d47d9e790f44e6b2][New option ediff-show-ancestor and new toggle ediff-toggle-show-ancestor]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2017-03/msg00420.html][master has switched from Automake to GNU Make]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2017-03/msg00338.html][Discussion of user-defined record types]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2017-03/msg00356.html][Bug report statistics on OS and arch]], now with graphs
+- Navigation:
+  - [[http://mbork.pl/2017-03-13_Ibuffer][Ibuffer]]
+  - [[https://www.masteringemacs.org/article/shell-comint-secrets-history-commands][Shell & Comint Secrets: History commands]] ([[https://www.reddit.com/r/emacs/comments/5z847v/shell_comint_secrets_history_commands/][Reddit]])
+  - [[https://oremacs.com/2017/03/18/dired-ediff/][Quickly ediff files from dired]]
+  - [[https://www.reddit.com/r/emacs/comments/5zxmcz/ediff_with_a_predicate/][ediff with a predicate]] - narrowing helps
+  - [[https://github.com/tumashu/exwm-x][Package of the day: exwm-x, another window manager]] ([[https://www.reddit.com/r/emacs/comments/5zb7yo/package_of_the_day_exwmx_another_window_manager/][Reddit]])
+  - [[http://irreal.org/blog/?p=6008][The Silver Searcher, Ivy-occur, and Swiper]]
+  - [[https://www.reddit.com/r/spacemacs/comments/5ztqc1/some_windows_style_defaults_in_a_spacemacs_layer/][Some "Windows style" defaults in a Spacemacs layer]]
+- Appearance:
+  - [[https://www.reddit.com/r/emacs/comments/5zrgh9/hlline_and_wrapprefix/][hl-line and wrap-prefix]]
+- Org Mode:
+  - [[http://pragmaticemacs.com/emacs/export-org-mode-headlines-to-separate-files/][Export org-mode headlines to separate files]]
+  - [[http://samflint.com/capture-with-email.html][Capturing Data for Org Via Email]] ([[https://www.reddit.com/r/emacs/comments/5zvk5q/capturing_data_for_org_via_email/][Reddit]])
+  - [[https://github.com/Kungsgeten/ivy-todo][ivy-todo -- Manage org-mode TODO lists with ivy]] ([[https://www.reddit.com/r/emacs/comments/5zqn50/ivytodo_manage_orgmode_todo_lists_with_ivy/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/5zc0fc/org_for_collecting_bookmarks_with_content/][org for collecting bookmarks (with content)]]
+- Coding:
+  - [[http://puntoblogspot.blogspot.com/2017/03/browsing-allegro-lisp-docs-inside-emacs.html][Browsing allegro lisp docs inside emacs]]
+  - [[https://www.reddit.com/r/emacs/comments/60913e/i_wrote_a_bit_of_code_for_a_dwim/][dwim python-send-to-shell function that behaves much like it might in ESS mode]]
+  - [[https://www.reddit.com/r/emacs/comments/6052md/emacs_for_htmlcssphpjavascript/][emacs for html+css+php+javascript]]
+  - [[https://github.com/hying-caritas/project-shells][Project Shells: Manage multiple shell (or terminal, eshell) buffers for each project]] ([[https://www.reddit.com/r/emacs/comments/5zwc40/project_shells_manage_multiple_shell_or_terminal/][Reddit]])
+  - [[https://lists.gnu.org/archive/html/guile-devel/2017-03/msg00095.html][GNU Guile 2.2.0 released - "Guile's Elisp implementation is now fully Emacs-compatible"]] ([[https://www.reddit.com/r/emacs/comments/5zqnrm/gnu_guile_220_released_guiles_elisp/][Reddit]])
+  - [[https://github.com/gdrte/go-bimenu][A better imenu for go-mode in emacs]] ([[https://www.reddit.com/r/emacs/comments/5zoavh/a_better_imenu_for_gomode_in_emacs/][Reddit]])
+- Other:
+  - [[http://irreal.org/blog/?p=6010][Stein's Emacs Productivity Series]]
+  - [[http://mbork.pl/2017-03-18_Deleting_all_instances_of_a_LaTeX_environment][Deleting all instances of a LaTeX environment]]
+  - [[https://notmuchmail.org/news/][New version of Notmuch (0.24) is out.]] ([[https://www.reddit.com/r/emacs/comments/5zqqup/new_version_of_notmuch_024_is_out/][Reddit]])
+- New packages:
+  - [[package:auto-read-only][auto-read-only]]: Automatically make the buffer to read-only
+  - [[package:comint-intercept][comint-intercept]]: Intercept input in comint-mode
+  - [[package:dired-hide-dotfiles][dired-hide-dotfiles]]: Hide dotfiles in dired
+  - [[package:el2org][el2org]]: Convert elisp file to org file
+  - [[package:hack-time-mode][hack-time-mode]]: Forge time
+  - [[package:ivy-todo][ivy-todo]]: Manage org-mode TODOs with ivy
+  - [[package:lastpass][lastpass]]: LastPass command wrapper
+  - [[package:nimbus-theme][nimbus-theme]]: An Awesome Dark Theme
+  - [[package:org-mru-clock][org-mru-clock]]: load most recently used clocks into history
+  - [[package:persp-mode-projectile-bridge][persp-mode-projectile-bridge]]: persp-mode + projectile integration.
+  - [[package:pippel][pippel]]: Emacs frontend to python package manager pip
+  - [[package:pocket-mode][pocket-mode]]: Manage your pocket
+
+Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][Youtube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2017-03][emacs-devel]].
+
+[[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
+
+
+* 2017-03-13 Emacs news
+  :PROPERTIES:
+  :ID:       o2b:37e06044-d2db-457a-8f37-d13d8c97b5f8
+  :POST_DATE: [2017-03-13 Mon 01:13]
+  :POSTID:   28941
+  :BLOG:     sacha
+  :END:
+
+- Emacs Lisp:
+  - [[https://github.com/cpitclaudel/easy-escape][easy-escape - syntax highlighting and composition to make ELisp regular expressions more readable]] ([[https://www.reddit.com/r/emacs/comments/5yrj1y/easyescape_syntax_highlighting_and_composition_to/][Reddit]])
+- Emacs development:
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2017-03/msg00222.html][GNU Emacs bug report statistics, by OS and architecture]] ([[https://www.reddit.com/r/emacs/comments/5yq6jp/gnu_emacs_bug_report_statistics_by_os_and/][Reddit]])
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=995be66f0f0d26d1a96cbb8dfb429c3941157771][Now installs update-game-score only on request]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=550c23d326da983af082ad8f0227ace16c652021][New 'switch' bytecode]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2017-03/msg00285.html][Tramp syntax changing]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2017-03/msg00276.html][Continued work on skipping unexec via big .elc]]
+- Coding:
+  - [[http://cestlaz.github.io/posts/using-emacs-32-cpp/#.WMYt-rkrK00][Using Emacs - 32 - C++]]
+- Org Mode:
+  - [[https://www.inkandben.com/org-mode-resources][Org Mode Resources]]
+  - [[http://ehneilsen.net/notebook/orgExamples/org-examples.html][Emacs org-mode examples and cookbook]] ([[https://news.ycombinator.com/item?id=1382873][HN]])
+  - [[https://github.com/publicus/emacs-org-mode-for-the-laity][Show HN: Emacs' org-mode for non-Emacs users, within Emacs]]
+  - [[http://jr0cket.co.uk/2017/03/org-mode-driven-presentations-with-org-reveal-spacemacs.html][Org-Mode Driven Presentations With Org-Reveal & Spacemacs]]
+  - [[https://github.com/tuhdo/org-recipes][A code snippet navigator and collector with Org]] ([[https://www.reddit.com/r/emacs/comments/5yzga2/a_code_snippet_navigator_and_collector_with_org/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/5yhk1m/gantt_charts_for_orgmode/][Gantt Charts for Org-Mode]]
+  - [[http://scripter.co/installing-bleeding-edge-hugo-goorgeous/][Installing bleeding edge Hugo + Goorgeous (org-mode)]] ([[https://www.reddit.com/r/emacs/comments/5y612k/installing_bleeding_edge_hugo_goorgeous_orgmode/][Reddit]])
+  - [[http://fasciism.com/2017/01/25/batch-jekyll-publishing/][Batch Jekyll publishing]]
+- Eshell:
+  - [[http://fasciism.com/2017/02/27/failure-to-launch/][Eshell - warn about non-zero exit status]]
+  - [[http://fasciism.com/2017/01/29/hobo-code/][Tramp, Eshell, and finding files with sudo]]
+  - [[http://fasciism.com/2017/01/27/eshell-kill-previous-output/][Eshell - kill previous output]]
+  - [[http://fasciism.com/2017/01/26/eshell-customizations/][Eshell customizations]]
+- Other:
+  - [[https://vxlabs.com/2017/02/07/mu4e-0-9-18-e-mailing-with-emacs-now-even-better/][mu4e 0.9.18: E-Mailing with Emacs now even better]] - hat-tip to [[http://irreal.org/blog/?p=5995][Irreal]] for the link
+  - [[http://jr0cket.co.uk/2017/03/spacemacs-managing-broken-emacs-packages.html][Spacemacs - Managing Broken Emacs Packages]]
+  - [[https://www.reddit.com/r/emacs/comments/5z2s75/take_elfeed_everywhere_mobile_rss_reading/][Take Elfeed everywhere: Mobile rss reading Emacs-style (for free/cheap)]]
+  - [[https://www.reddit.com/r/emacs/comments/5yzi26/control_spotify_search_and_select_music_with_helm/][Control Spotify search and select music with HELM (plus-version)]]
+  - [[https://github.com/tttuuu888/korean-holidays][Simple package for korean emacs users. korean-holidays.el]] ([[https://www.reddit.com/r/emacs/comments/5xzt14/simple_package_for_korean_emacs_users/][Reddit]])
+  - [[https://news.ycombinator.com/item?id=13853647][Ask HN: Emacs Users, what's in your .emacs file? (2017)]]
+  - [[http://dustycloud.org/blog/wireworld-in-emacs/][Wireworld in Emacs -- DustyCloud Brainstorms]]
+  - [[http://fasciism.com/2017/02/15/dired-limiting/][Dired limiting]]
+- New packages:
+  - [[package:auto-virtualenvwrapper][auto-virtualenvwrapper]]: Auto activate python virtualenvs
+  - [[package:elisp-docstring-mode][elisp-docstring-mode]]: Major mode for editing elisp docstrings.
+  - [[package:gtk-pomodoro-indicator][gtk-pomodoro-indicator]]: A pomodoro indicator for the GTK tray
+  - [[package:helm-spotify-plus][helm-spotify-plus]]: Control Spotify, search and select music with Helm.
+  - [[package:highlight-context-line][highlight-context-line]]: Improve orientation when scrolling
+  - [[package:historian][historian]]: Persistently store selected minibuffer candidates
+  - [[package:ivy-historian][ivy-historian]]: Persistently store selected minibuffer candidates
+  - [[package:literal-string][literal-string]]: edit string literals in a dedicated buffer
+  - [[package:magit-lfs][magit-lfs]]: Magit plugin for Git LFS
+  - [[package:org-notebook][org-notebook]]: Ease the use of org-mode as a notebook
+  - [[package:ox-epub][ox-epub]]: Export org mode projects to EPUB
+  - [[package:pomidor][pomidor]]: Simple and cool pomodoro timer
+  - [[package:project-shells][project-shells]]: Manage the shell buffers of each project
+  - [[package:ssass-mode][ssass-mode]]: Edit Sass without a Turing Machine
+
+Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][Youtube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2017-03][emacs-devel]].
+
+[[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
+
+
+* 2017-03-06 Emacs news
+  CLOSED: [2017-03-07 Tue 01:19]
+  :PROPERTIES:
+  :ID:       o2b:9621cb42-c81f-4de8-8a12-eb38a75b0b5d
+  :POSTID:   28936
+  :BLOG:     sacha
+  :END:
+  :LOGBOOK:
+  - State "DONE"       from              [2017-03-07 Tue 01:19]
+  :END:
+
+- Navigation:
+  - [[http://pragmaticemacs.com/emacs/add-multiple-cursors-with-mouse-clicks/][Add multiple cursors with mouse clicks]]
+  - [[http://mbork.pl/2017-03-04_Bookmarking_directories_in_Eshell][Bookmarking directories in Eshell]]
+  - [[https://www.reddit.com/r/emacs/comments/5xi92h/a_scroll_wheel_mapped_to_send_a_stream_undo_and/]["A scroll wheel mapped to send a stream 'undo' and 'redo' events could be kind of cool."]]
+  - [[http://cestlaz.github.io/posts/using-emacs-31-elfeed-3/#.WLbpLi0jPoo.reddit][Using Emacs - 31 - elfeed part 3 - macros]] ([[https://www.reddit.com/r/emacs/comments/5wwkg6/using_emacs_31_elfeed_part_3_macros/][Reddit]])
+- Appearance:
+  - [[http://emacsninja.com/posts/making-emacs-more-presentable.html][Making Emacs More Presentable]]
+  - [[http://mp.vv.si/blog/emacs/show-long-filenames-in-ibuffer/][Show long filenames in ibuffer]]
+  - [[https://ekaschalk.github.io/post/prettify-mode/][Mathematical Notation in Emacs]] 
+- Emacs Lisp:
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2017-03/msg00081.html][How to blacklist packages from being auto-installed]] - for overriding dependencies
+  - [[http://emacspeak.blogspot.com/2017/03/emacs-check-interactive-call-for.html][Emacs: Check Interactive Call For Emacspeak]]
+- Emacs development:
+  - Rounding-related fixes: [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=44e7ee2e356452139156e8175c46f646835d27ff][format "%f"]], [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=4e2622bf0d63c40f447d44e6401ea054ef55b261][comparisons]]
+  - Floating point fixes: [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=53f3dd66f12660a47018fc03d50d460787ab6f64][ffloor, fceiling, ftruncate, fround]], [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=0d55c44a9a00da3b8542e92586654adeb2bcf228][error signals]],  [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=37940b347052418f0589bd52b06e56fffb594ea2][min and max]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=74f87fd111904e5156727c72590d6fc4f67e8366][logb now works correctly on large integers]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2017-03/msg00008.html][May need to follow up on patches so they don't fall through the cracks]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2017-03/msg00089.html][Manual suggestions for quit-restore documentation]]
+- Org Mode:
+  - [[http://whyarethingsthewaytheyare.com/setting-up-the-blog/#workflow][Setting up the blog]] - Org Mode and Hugo, hat-tip to [[http://irreal.org/blog/?p=5976][Irreal]] for the link
+  - [[https://github.com/thiefuniverse/blog-minimal][A Simple Static Site Generator for Emacs]] ([[https://www.reddit.com/r/emacs/comments/5x2fni/a_simple_static_site_generator_for_emacs_yeah/][Reddit]])
+  - [[https://www.youtube.com/watch?v=e9sjhbxWJNE][Taking notes for a Juniper lab with Emacs and Org mode]] (5:58)
+  - [[https://www.youtube.com/watch?v=L0G72g7R-xY][Network cookbook using Emacs and Org mode]] (1:22) and [[https://www.youtube.com/watch?v=jCH-gO7RfFE][applying changes, too]] (4:27)
+- Coding:
+  - [[https://www.reddit.com/r/emacs/comments/5xoa8t/python_experiment_mode_new_package_around/][Python Experiment Mode - new package around]]
+  - [[https://www.reddit.com/r/emacs/comments/5xmg4e/evilnerdcommenter_v300/][evil-nerd-commenter v3.0.0]]
+  - [[http://cestlaz.github.io/posts/using-emacs-32-cpp/#.WLsidOM-u7o.reddit][Using Emacs - 32 - C]]
+  - [[https://www.reddit.com/r/emacs/comments/5xgo5o/switch_python_interpreter/][Switch python interpreter]]
+- Other:
+  - [[http://mp.vv.si/blog/emacs/copying-files-between-dired-buffers/][Copying files between dired buffers]]
+  - [[https://github.com/TatriX/pomidor/][Pomidor is a simple and cool pomodoro technique timer.]] ([[https://www.reddit.com/r/emacs/comments/5xovh0/pomidor_is_a_simple_and_cool_pomodoro_technique/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/5xoga4/what_is_the_current_best_way_to_set_up_emacs_on/][What is the current best way to set up emacs on Windows?]]
+  - [[https://www.reddit.com/r/emacs/comments/5xhpht/newsticker_vs_elfeed/][Newsticker vs Elfeed]]
+  - [[https://i.redd.it/zmhuvnbmy6jy.jpg][Steven Pinker mentions Emacs in his "The Language Instinct"]] ([[https://www.reddit.com/r/emacs/comments/5xa7or/steven_pinker_mentions_emacs_in_his_the_language/][Reddit]])
+  - [[http://cachestocaches.com/2017/3/complete-guide-email-emacs-using-mu-and-/][A Complete Guide to Email in Emacs using Mu and Mu4e]] ([[https://www.reddit.com/r/emacs/comments/5x3qy9/a_complete_guide_to_email_in_emacs_using_mu_and/][Reddit]])
+- New packages:
+  - [[package:apiwrap][apiwrap]]: api-wrapping tools
+  - [[package:blog-minimal][blog-minimal]]: a very simple static site generator based on org mode
+  - [[package:elquery][elquery]]: The HTML library for elisp.
+  - [[package:exiftool][exiftool]]: Elisp wrapper around ExifTool
+  - [[package:flow-mode][flow-mode]]: Flow type mode based on web-mode.
+  - [[package:helm-ext][helm-ext]]: A few extensions to Helm
+  - [[package:korean-holidays][korean-holidays]]: Korean holidays for calendar.
+  - [[package:luarocks][luarocks]]: luarocks tools
+  - [[package:mandm-theme][mandm-theme]]: An M&M color theme.
+  - [[package:nikola][nikola]]: Simple wrapper for nikola
+  - [[package:remember-last-theme][remember-last-theme]]: Remember the last used theme between sessions.
+  - [[package:sayid][sayid]]: sayid nREPL middleware client
+
+Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][Youtube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2017-03][emacs-devel]].
+
+[[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
+
 * 2017-02-27 Emacs News
   :PROPERTIES:
   :ID:       o2b:de20a75f-5e45-49b9-a7af-80834d7d649b
