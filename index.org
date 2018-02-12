@@ -1,5 +1,118 @@
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2018-01][emacs-devel]].
 
+* 2018-02-05 Emacs news
+  :PROPERTIES:
+  :ID:       o2b:19e7a370-8c1e-47ef-bd5f-498036da58f7
+  :POST_DATE: [2018-02-05 Mon 11:09]
+  :POSTID:   29155
+  :BLOG:     sacha
+  :END:
+
+- Emacs Lisp:
+  - [[https://eclectic614387068.wordpress.com/2018/01/26/emacs-lisp-is-fun/][Emacs Lisp is Fun?]]
+  - [[https://www.reddit.com/r/emacs/comments/7v9uwt/elcontext/][elcontext]]
+- Emacs development:
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=0443411f5ce2594a6ec092cd96b92d0b920372f5][Properly integrate modules into the loading process]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=8fbf28536ee1169f59206523e2af050916befbf6][Fix handling of modifier keys on macOS]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2018-02/msg00125.html][Discussion about confusable characters in Emacs Lisp]]
+- Appearance:
+  - [[https://i.redd.it/juswr842mmd01.png][Custom truncation bitmaps I made]] ([[https://reddit.com/r/emacs/comments/7ujwbz/custom_truncation_bitmaps_i_made/][Reddit]])
+- Navigation:
+  - [[https://www.reddit.com/r/emacs/comments/7vcrwo/helm_vs_ivy_what_are_the_differences_what_are_the/][Helm vs Ivy: What are the differences, what are the advantages?]]
+- Org Mode:
+  - [[http://sachachua.com/blog/2018/01/org-mode-inserting-a-function-definition/][Org Mode: Inserting a function definition]]
+  - [[https://www.reddit.com/r/emacs/comments/7tjesk/import_firefox_bookmarks_to_org_mode_file/][Import Firefox bookmarks to Org mode file?]]
+  - [[https://scripter.co/converting-org-keywords-to-lower-case/][Converting Org keywords to lower-case]]
+  - [[https://www.reddit.com/r/emacs/comments/7v7ovn/add_projects_as_a_concept_to_org_with_orgproject/][Add projects as a concept to org with org-project]] (note project name conflict)
+  - [[https://www.reddit.com/r/emacs/comments/7txqh8/longtime_gtd_users_what_works_for_you_in_being/][Long-time GTD users, what works for you in being productive? What doesn't?]]
+  - [[https://github.com/weirdNox/org-noter][Org-noter - A synchronized, Org-mode, document annotator]] ([[https://reddit.com/r/emacs/comments/7tvz89/orgnoter_a_synchronized_orgmode_document_annotator/][Reddit]])
+- Coding:
+  - [[https://github.com/tumashu/company-childframe][company-childframe - a company extension, which let company use child frame as its candidate menu.]] ([[https://reddit.com/r/emacs/comments/7uhv1y/companychildframe_a_company_extension_which_let/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/7v623c/change_management_for_text_modes/][Change management for text modes?]]
+  - [[https://www.youtube.com/watch?v=wtVF5cMhBjg][Python Interactive (PYNT) - Emacs Python to Jupyter Notebook Converter Feature Demo]] (3:36)
+- Mail:
+  - [[https://groups.google.com/d/msg/mu-discuss/ZLGqO1t0guw/-x63h_ylAQAJ][Mu has now reached version 1.0]] ([[https://reddit.com/r/emacs/comments/7v99ah/mu_has_now_reached_version_10/][Reddit]])
+- Other:
+  - [[https://www.reddit.com/r/emacs/comments/7usz5q/youtube_subscriptions_using_elfeed_mpv_no_browser/][Youtube subscriptions using elfeed & mpv - no browser!]]
+  - [[https://www.reddit.com/r/emacs/comments/7v19uk/emacs_chromebook_keymap_swap_ctrl_alt_overlay/][Emacs Chromebook Keymap: Swap Ctrl, Alt, Overlay]]
+  - [[http://cestlaz.github.io/posts/using-emacs-40-atomic-chrome/#.WnHARGjgZX8.reddit][Using Emacs 40 - Atomic Chrome]] ([[https://reddit.com/r/emacs/comments/7u9rpa/using_emacs_40_atomic_chrome/][Reddit]])
+  - [[http://www.bartuka.com/emacs/2018/02/03/editing-in-emacs-from-terminal-to-gui.html][Editing in Emacs from Terminal to GUI]] ([[https://reddit.com/r/emacs/comments/7uyxc8/editing_in_emacs_from_terminal_to_gui/][Reddit]])
+  - [[http://members.iinet.net.au/~ideasman42/dotemacs/init.html][emacs2rst (Sphinx from emacs dotfiles utility)]] ([[https://reddit.com/r/emacs/comments/7v6jvr/emacs2rst_sphinx_from_emacs_dotfiles_utility/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/7u3v9f/what_packages_can_you_not_live_without/][What packages can you not live without?]]
+  - [[https://github.com/abo-abo?tab=overview&amp;from=2014-12-01&amp;to=2014-12-31][Abo-abo hasn't gone a day without committing to GitHub in over 3 years]] ([[https://reddit.com/r/emacs/comments/7udg64/aboabo_hasnt_gone_a_day_without_committing_to/][Reddit]])
+- New packages:
+  - [[package:aws-snippets][aws-snippets]]: Yasnippets for AWS
+  - [[package:bart-mode][bart-mode]]: Real time BART departures info.
+  - [[package:centered-window][centered-window]]: Center the text when there's only one window
+  - [[package:company-solidity][company-solidity]]: Company-mode back-end for solidity-mode
+  - [[package:elcontext][elcontext]]: Create context specific actions
+  - [[package:extmap][extmap]]: Externally-stored constant mapping for Elisp
+  - [[package:feebleline][feebleline]]: Replace modeline with a slimmer proxy
+  - [[package:git-attr][git-attr]]: Git attributes of buffer file
+  - [[package:info-colors][info-colors]]: Extra colors for Info-mode
+  - [[package:lcr][lcr]]: lightweight coroutines
+  - [[package:monotropic-theme][monotropic-theme]]: Monotropic Theme
+  - [[package:multi-run][multi-run]]: Manage multiple terminals and run commands on them
+  - [[package:nordless-theme][nordless-theme]]: A mostly colorless theme
+  - [[package:panda-theme][panda-theme]]: Panda Theme
+  - [[package:pipenv][pipenv]]: A Pipenv porcelain.
+  - [[package:playground][playground]]: Manage sandboxes for alternative configurations
+  - [[package:posframe][posframe]]: Pop a posframe (just a frame) at point
+  - [[package:prog-fill][prog-fill]]: Smartly format lines to use vertical space.
+  - [[package:pynt][pynt]]: Generate and scroll EIN buffers from python code
+  - [[package:recentf-remove-sudo-tramp-prefix][recentf-remove-sudo-tramp-prefix]]: Normalise recentf history
+  - [[package:rum-mode][rum-mode]]: Major mode for Rum programming language
+  - [[package:s3ed][s3ed]]: No description available.
+  - [[package:usql][usql]]: U-SQL support for sql-mode
+  - [[package:rbit][rbit]]: Red-black persistent interval trees
+
+Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2018-02][emacs-devel]].
+
+* 2018-01-29 Emacs news
+  :PROPERTIES:
+  :ID:       o2b:0b2a0cfd-5f1d-4216-89dd-628f9e8f762c
+  :POST_DATE: [2018-01-29 Mon 17:44]
+  :POSTID:   29149
+  :BLOG:     sacha
+  :END:
+
+- Emacs Lisp:
+  - [[https://www.youtube.com/watch?v=ns0rsKrG-Mc][ihsec - Switching emacs configs on the fly]] (11:11)
+  - [[http://puntoblogspot.blogspot.com/2018/01/2-ways-to-anchor-regex-in-elisp.html][2 ways to anchor a regex in elisp]]
+  - [[http://muublog.blogspot.com/2018/01/for-various-reasons-i-needed-to-sync.html][Make a copy of saved files to another directory]]
+  - [[https://emacs.stackexchange.com/questions/38368/how-can-i-improve-startup-time-despite-many-packages][How can I improve startup time despite many packages?]] ([[https://reddit.com/r/emacs/comments/7t4kxw/how_can_i_improve_startup_time_despite_many/][Reddit]], [[http://lists.gnu.org/archive/html/emacs-devel/2018-01/msg00795.html][emacs-devel]])
+  - [[https://www.reddit.com/r/emacs/comments/7tevrn/improving_the_portability_of_my_emacs/][Improving the portability of my .emacs]]
+- Emacs development:
+  - [[https://www.reddit.com/r/emacs/comments/7tqnux/another_call_for_help_proofreading_the_upcoming/][Another call for help proofreading the upcoming Emacs 26 Manual]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=9a747b3554515135d5acadfcb5c2b1b8240d8f84][Prevent name clashes between CL structures and builtin types]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=36c8128e740ce91af10769bef46a21a72dafc56c][Fix round tripping of read->print for symbols with strange quotes]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=9824885fabea53f8c4461d038f4c1edad1b8f591][New function assoc-delete-all]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=559f1606166822394df3988c18c0ad02984ac675][Raise limit of regexp repetition]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=96de0503cd04f3cba7c4db94789b958e9775e2c6][New function 'fill-polish-nobreak-p']]
+- Navigation:
+  - [[https://www.reddit.com/r/emacs/comments/7tf1ln/incremental_search_with_multiple_files/][Incremental search with multiple files?]]
+  - [[https://github.com/ahungry/prog-fill][prog-fill - Smartly format lines to use vertical space]]
+- Org Mode:
+  - [[http://www.usrsb.in/org-mode.html][Org-mode: An integrated language and editor]] (hat-tip to [[http://irreal.org/blog/?p=6922][Irreal]] for the link)
+  - [[https://www.reddit.com/r/emacs/comments/7sl2tu/syncing_google_calendar_and_emacs/][Syncing Google Calendar and Emacs]]
+  - [[http://karl-voit.at/orgmode][Organize Your Life With Org-Mode]] ([[https://reddit.com/r/emacs/comments/7tc4nc/organize_your_life_with_orgmode/][Reddit]])
+- Other:
+  - [[http://dsdshcym.github.io/blog/2018/01/22/compare-doom-emacs-spacemacs-vanilla-emacs/][Compare Doom-emacs, Spacemacs, and vanilla Emacs]] ([[https://reddit.com/r/emacs/comments/7svwsc/compare_doomemacs_spacemacs_and_vanilla_emacs/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/7t11us/impressing_someone_who_doesnt_know_much_in_emacs/][Impressing someone who doesn't know much in Emacs]]
+  - [[http://irreal.org/blog/?p=6924][Making Things Easier]]
+  - [[https://www.reddit.com/r/emacs/comments/7tcfoq/mbsync_and_notmuch_on_a_raspberry_pi_and/][mbsync and notmuch on a Raspberry Pi, and remote-emacs on Windows? (And: What other email client options do I have on Windows?)]]
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2018-01/msg00696.html][Suggestion for a witty Emacs command for a mug?]] ([[https://reddit.com/r/emacs/comments/7sqejq/suggestion_for_a_witty_emacs_command_for_a_mug/][Reddit]], [[http://lists.gnu.org/archive/html/emacs-devel/2018-01/msg00696.html][emacs-devel]])
+- Package management:
+  - [[https://github.com/melpa/melpa/pull/5008][MELPA has stopped distributing insecure Emacswiki packages]] ([[https://reddit.com/r/emacs/comments/7suq6d/melpa_has_stopped_distributing_insecure_emacswiki/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/7tv4sr/helm_system_packages_an_overpowered_companion_to/][Helm System Packages: An overpowered companion to dpkg/apt, pacman, portage/emerge and more to come]]
+- New packages:
+  - [[package:lcr][lcr]]: lightweight coroutines
+  - [[package:prog-fill][prog-fill]]: Smartly format lines to use vertical space.
+  - [[package:rbit][rbit]]: Red-black persistent interval trees
+
+
+Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2018-01][emacs-devel]].
+
 * 2018-01-23 Emacs news
   :PROPERTIES:
   :ID:       o2b:a3451cdb-7648-4ef5-9a6e-4bd38dd91c8d
