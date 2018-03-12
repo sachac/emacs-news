@@ -265,10 +265,20 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[file:~/code/emacs-news/index.org][index.org]]
 
+https://www.zcl.space/tools/my-blog-workflow/
+github.com/emacsun/ZHugo
+
 #+begin_src emacs-lisp :results raw
 (let ((date (org-read-date nil nil "-mon")))
     (concat
-    "**** " (org-read-date nil nil ".") " Emacs news\n\n"     
+    "** " (org-read-date nil nil "-mon") " Emacs news\n\n"
+    "- Emacs Lisp:
+- Emacs development:
+- Navigation:
+- Org Mode:
+- Coding:
+- Other:
+"
      (my/org-list-from-rss "http://planet.emacsen.org/atom.xml" date) "\n"
 ;     (my/org-list-from-rss "https://ogbe.net/blog.xml" date) "\n"
 ;     (my/org-list-from-rss "http://howardism.org/index.xml" date) "\n"
@@ -295,10 +305,187 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 "http://fasciism.com/feed.xml") "\n") "\n"
      "- New packages:\n"
      (my/list-new-packages) 
-     "\n"))
+     "\n
+links"))
 #+end_src
 
 #+RESULTS:
+** 2018-03-12 Emacs news
+   :PROPERTIES:
+   :ID:       o2b:e89ab164-858a-4da0-a6dc-08c894f0127d
+   :POST_DATE: [2018-03-12 Mon 03:00]
+   :POSTID:   29178
+   :BLOG:     sacha
+   :END:
+
+- Emacs development:
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2018-03/msg00089.html][RMS on which improvements to Emacs would be "truly useful"]] ([[https://reddit.com/r/emacs/comments/82l16v/rms_on_which_improvements_to_emacs_would_be_truly/][Reddit]])
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2018-03/msg00098.html][Long discussion on variable-width font indentation]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=0965d94ca426765382f366bf48f88ba5f9500afd][Allow toggling Grep command abbreviation, and rename related symbols]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=a8be860e17e2a737bda7a4c5075b71f0fb627a92][Improve support for desktop restoration in daemon mode]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=80e145fc96765cc0a0f48ae2425294c8c92bce56][Avoid losing info when formatting integers]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=136e1d23e936598a1c988cfa4b1d81ea7f7cb1f9][uniqify -> uniquify]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=0e10b6fce7568077797c5a16cd2a584a8dcba46e][Spelling fixes in gnus, htmlfontify]]
+- Beginner:
+  - [[https://www.reddit.com/r/emacs/comments/83qfxp/learning_emacs_guide/][Learning Emacs Guide]] ([[https://reddit.com/r/emacs/comments/83qfxp/learning_emacs_guide/][Reddit]])
+- Appearance:
+  - [[http://manuel-uberti.github.io/emacs/2018/03/10/moody-and-minions/][Beauty lies in the segments of the mode line]]
+- Navigation:
+  - [[https://www.wisdomandwonder.com/article/10748/emacsorg-mode-abo-abos-hydra-makes-you-a-lightweight-literate-programmer-hyper-boosting-your-productivity-with-about-ten-of-minutes-effort-for-learning-it][(Emacs+Org-Mode) abo-abo's Hydra Makes You A Lightweight-Literate Programmer]]
+  - [[http://mbork.pl/2018-03-10_A_tip_on_yanking][Marcin Borkowski: A tip on yanking]]
+  - [[https://www.youtube.com/watch?v=oSzxZWB9Qkg][Emacs Tutorial 18 - Mark multiple and a few other things!]]
+- Org Mode:
+  - [[https://fuco1.github.io/2018-03-11-Use-org-radiobutton-to-select-an-option-from-a-list.html][Use org-radiobutton to select an option from a list]]
+  - [[https://www.youtube.com/watch?v=3EGOwfWok5s][org-brain: Concept mapping in Emacs - Introduction]] ([[https://reddit.com/r/emacs/comments/836o1r/orgbrain_concept_mapping_in_emacs_introduction/][Reddit]])
+  - [[https://scripter.co/field-formatters-in-org-table/][Field Formatters in Org table]]
+  - [[http://sachachua.com/blog/2018/03/using-org-mode-latex-beamer-and-medibang-paint-to-make-a-childrens-book/][sachachua: Using Org Mode, LaTeX, Beamer, and Medibang Paint to make a children's book]]
+  - [[https://www.reddit.com/r/emacs/comments/837pdj/building_an_org_modecompatible_web_app_with/][Building an Org mode-compatible web app with human-friendly UI. Would you share your input?]] ([[https://reddit.com/r/emacs/comments/837pdj/building_an_org_modecompatible_web_app_with/][Reddit]])
+  - [[http://howardism.org/Technical/Emacs/literate-devops.html][Literate Devops with org-mode (2014)]] ([[https://reddit.com/r/emacs/comments/839v6f/literate_devops_with_orgmode/][Reddit]], [[https://news.ycombinator.com/item?id=16559004][long HN discussion]])
+  - [[https://jamiecollinson.com/blog/my-emacs-config/][My Emacs Config]] (another literate config)
+- Yasnippet:
+  - [[https://github.com/abo-abo/auto-yasnippet][auto-yasnippet - quickly create disposable yasnippets]] ([[https://reddit.com/r/emacs/comments/83mqpw/autoyasnippet_quickly_create_disposable_yasnippets/][Reddit]])
+  - [[https://www.youtube.com/watch?v=39u8K12rXHE][Emacs Tutorial 20 - Yasnippet!]] (11:53)
+- Coding:
+  - [[https://www.youtube.com/watch?v=XeWZfruRu6k][Emacs Tutorial 19 - Completion - Company for C/C++]] (15:50)
+  - [[http://cestlaz.github.io/posts/using-emacs-45-company][Using Emacs 45 - Company or Autocomplete]] ([[https://reddit.com/r/emacs/comments/83p6ft/using_emacs_45_company_or_autocomplete/][Reddit]])
+- Other:
+  - [[https://www.reddit.com/r/emacs/comments/83frxm/reading_managing_annotating_and_highlighting/][Reading, managing, annotating, and highlighting articles inside Emacs, while manually importing them (not RSS)?]] ([[https://reddit.com/r/emacs/comments/83frxm/reading_managing_annotating_and_highlighting/][Reddit]])
+  - [[https://github.com/mpdel/mpdel][MPDel - Emacs client for Music Player Daemon (MPD)]] ([[https://reddit.com/r/emacs/comments/8357i1/mpdel_emacs_client_for_music_player_daemon_mpd/][Reddit]])
+  - [[https://gist.github.com/rollacaster/7ea2eb29c1e88834b40a4117ae6d7bfd][Get wiser with each Emacs startup]] ([[https://reddit.com/r/emacs/comments/826dic/get_wiser_with_each_emacs_startup_ರ/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/82ywfz/what_emacs_has_to_offer_over_over_vim_besides/][What emacs has to offer over over vim, besides evil and elisp]] ([[https://reddit.com/r/emacs/comments/82ywfz/what_emacs_has_to_offer_over_over_vim_besides/][Reddit]])
+  - [[https://news.ycombinator.com/item?id=16566358][Ask HN: I Need Your Help in the Vi vs. Emacs vs. Others Dataset]]
+  - [[https://twitter.com/bzg2/status/970281120880300033][If you ever considered making a donation for emacs orgmode but didn't take the time, now is your chance]] ([[https://reddit.com/r/emacs/comments/82dj2g/if_you_ever_considered_making_a_donation_for/][Reddit]])
+  - [[https://github.com/tareefdev/lets-support-emacs][Support your favorite editor and packages]] ([[https://reddit.com/r/emacs/comments/83ehc1/support_your_favorite_editor_and_packages/][Reddit]])
+  - [[https://github.com/zachcurry/emacs-anywhere/blob/master/README.md][Emacs Anywhere (almost): added support for Linux]] ([[https://reddit.com/r/emacs/comments/83llpg/emacs_anywhere_almost_added_support_for_linux/][Reddit]])
+- New packages:
+  - [[package:backup-each-save][backup-each-save]]: backup each savepoint of a file
+  - [[package:gitlab-ci-mode-flycheck][gitlab-ci-mode-flycheck]]: Flycheck support for gitlab-ci-mode
+  - [[package:org-kanban][org-kanban]]: kanban dynamic block for org-mode.
+  - [[package:wolfram-mode][wolfram-mode]]: Mathematica editing and inferior mode.
+- EXWM:
+  - [[https://www.reddit.com/r/unixporn/comments/83q4o2/exwm_emacs_windows_manager_gruvbox/][EXWM - Emacs Windows Manager (Gruvbox) - r/unixporn]]
+  - [[http://orys.us/exwm][Got exwm going and fully integrated with all those little laptop things you forget you need]] ([[https://reddit.com/r/emacs/comments/83i692/got_exwm_going_and_fully_integrated_with_all/][Reddit]])
+
+Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2018-03][emacs-devel]].
+
+** 2018-03-04 Emacs news
+  :PROPERTIES:
+  :ID:       o2b:05b111fc-79f0-461f-af4b-32b1231e6d09
+  :POST_DATE: [2018-03-04 Sun 19:16]
+  :POSTID:   29173
+  :BLOG:     sacha
+  :END:
+
+- Emacs Lisp:
+  - [[https://github.com/Wilfred/elisp-def][elisp-def finds local and global elisp definitions, even with macros!]] ([[https://reddit.com/r/emacs/comments/81cucg/elispdef_finds_local_and_global_elisp_definitions/][Reddit]])
+  - [[https://alexschroeder.ch/wiki/2018-02-27_Emacs_Packages][Alex Schroeder: Emacs Packages]]
+- Emacs development:
+  - [[http://tromey.com/blog/?p=999][Emacs JIT Calling Convention - further adventures in Emacs JIT]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2018-03/msg00014.html][Let's make the GC safe and iterative (Was: Re: bug#30626)]] ([[https://reddit.com/r/emacs/comments/81kbnj/lets_make_the_gc_safe_and_iterative_was_re/][Reddit]], [[https://news.ycombinator.com/item?id=16504776][HN]])
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=90ca83d4bf17a334902321e93fa89ccb1f4a5a4e][lisp/isearch.el (search-exit-option): Add options 'shift-move' and 'move'.]]
+- Appearance:
+  - [[https://muto.ca/beautifying-emacs.html][Short article on beautifying Emacs - Missing anything important?]] ([[https://reddit.com/r/emacs/comments/811nce/short_article_on_beautifying_emacs_missing/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/81ogys/minions/][Minions]] ([[https://reddit.com/r/emacs/comments/81ogys/minions/][Reddit]])
+- Navigation:
+  - [[https://emacs.stackexchange.com/questions/28736/emacs-pointcursor-movement-lag/28746][How to speed up cursor movement by 10x]] ([[https://reddit.com/r/emacs/comments/819v0h/how_to_speed_up_cursor_movement_by_10x/][Reddit]])
+  - [[https://github.com/jacktasia/dumb-jump/releases/tag/v0.5.2][Dumb Jump v0.5.2 adds basic support for SCSS, Crystal, Scheme, SML, Erlang, LaTex, VHDL]] ([[https://reddit.com/r/emacs/comments/813cip/dumb_jump_v052_adds_basic_support_for_scss/][Reddit]])
+- Org Mode:
+  - [[https://www.wisdomandwonder.com/article/10747/emacsorg-mode-is-there-a-single-person-out-there-who-can-remember-all-of-the-features-they-have-configured-in-their-emacs][(Emacs+Org-Mode) Is There A Single Person Out There Who Can Remember All Of The Features They Have Configured In Their Emacs?]]
+  - [[http://cestlaz.github.io/posts/using-emacs-44-pdf/#.WpqtV1RsPY0.reddit][Using Emacs 44 - An org-mode workflow for application processing]] ([[https://reddit.com/r/emacs/comments/81qc75/using_emacs_44_an_orgmode_workflow_for/][Reddit]])
+  - [[https://github.com/harrybournis/org-fancy-priorities][org-fancy-priorities: Display org mode priorities as custom strings]] ([[https://reddit.com/r/emacs/comments/81tn7w/orgfancypriorities_display_org_mode_priorities_as/][Reddit]])
+  - [[http://pragmaticemacs.com/emacs/reorder-todo-items-in-your-org-mode-agenda/][Reorder TODO items in your org-mode agenda]] ([[https://reddit.com/r/emacs/comments/81ejuq/reorder_todo_items_in_your_orgmode_agenda/][Reddit]])
+  - [[http://irreal.org/blog/?p=6987][Irreal: A Reproducible Research Toolkit]]
+  - [[https://github.com/Chobbes/org-chef][Org-Chef: manage and extract recipes with org-mode]] ([[https://reddit.com/r/emacs/comments/81tgzh/orgchef_manage_and_extract_recipes_with_orgmode/][Reddit]])
+  - [[http://acidwords.com/posts/2018-03-02-extending-org-mode-easy-templates.html][Sanel Zukan: Extending org-mode Easy Templates]]
+- Coding:
+  - [[https://www.reddit.com/r/emacs/comments/81cfu8/intellijlspserver_exposes_intellij_idea_features/][intellij-lsp-server: Exposes IntelliJ IDEA features to Emacs through the Language Server Protocol]] ([[https://reddit.com/r/emacs/comments/81cfu8/intellijlspserver_exposes_intellij_idea_features/][Reddit]])
+  - [[https://medium.com/@chris.shellenbarger/developing-in-clojure-with-emacs-mastering-the-keyboard-6cb9bef7f760][Developing in Clojure with Emacs: Mastering the Keyboard]]
+- Other:
+  - [[https://www.reddit.com/r/emacs/comments/81ct5u/emax6420180302_released/][emax64-20180302 released]] ([[https://reddit.com/r/emacs/comments/81ct5u/emax6420180302_released/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/819qn6/emacs_tables_not_orgtables/][Emacs tables (not org-tables)]] ([[https://reddit.com/r/emacs/comments/819qn6/emacs_tables_not_orgtables/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/80sm7t/exwm_version_017_looks_like_things_have_been/][exwm version 0.17 - looks like things have been happening]] ([[https://reddit.com/r/emacs/comments/80sm7t/exwm_version_017_looks_like_things_have_been/][Reddit]])
+  - [[http://irreal.org/blog/?p=6989][Irreal: Reasons to Switch to Emacs]]
+  - [[http://mbork.pl/2018-03-03_pdf-annot-print-annotation-functions_and_Windows_newlines][Marcin Borkowski: pdf-annot-print-annotation-functions and Windows newlines]]
+  - [[https://youtu.be/Vrx_EcOTlTc][Shaping sound with Emacs]] (4:10)
+  - [[https://github.com/zachcurry/emacs-anywhere][Show HN: Emacs Anywhere]] (lots of [[https://news.ycombinator.com/item?id=16513916][HN comments]])
+- New packages:
+  - [[package:chyla-theme][chyla-theme]]: chyla.org - green color theme.
+  - [[package:conllu-mode][conllu-mode]]: editing mode for CoNLL-U files
+  - [[package:counsel-css][counsel-css]]: stylesheet-selector-aware swiper
+  - [[package:daemons][daemons]]: UI for managing init system daemons (services)
+  - [[package:elgrep][elgrep]]: Searching files for regular expressions
+  - [[package:elisp-def][elisp-def]]: macro-aware go-to-definition for elisp
+  - [[package:flycheck-dtrace][flycheck-dtrace]]: Flycheck: DTrace support
+  - [[package:flycheck-jest][flycheck-jest]]: Flycheck extension for Jest.
+  - [[package:flycheck-posframe][flycheck-posframe]]: Show flycheck error messages using posframe.el
+  - [[package:frameshot][frameshot]]: Take screenshots of a frame
+  - [[package:fuo][fuo]]: feeluown client.
+  - [[package:git-io][git-io]]: git.io integration
+  - [[package:gitlab-ci-mode][gitlab-ci-mode]]: mode for editing GitLab CI files
+  - [[package:helm-lib-babel][helm-lib-babel]]: helm insertion of babel function references
+  - [[package:hide-mode-line][hide-mode-line]]: minor mode that hides/masks your modeline
+  - [[package:ivy-mpdel][ivy-mpdel]]: Ivy interface to navigate MPD
+  - [[package:ivy-phpunit][ivy-phpunit]]: Ivy integration for phpunit.el
+  - [[package:keycast][keycast]]: Show current command and its key in the mode line
+  - [[package:libmpdel][libmpdel]]: Communication with an MPD server
+  - [[package:mgmtconfig-mode][mgmtconfig-mode]]: mgmt configuration management language
+  - [[package:minions][minions]]: A minor-mode menu for the mode line
+  - [[package:moody][moody]]: Tabs and ribbons for the mode line
+  - [[package:mpdel][mpdel]]: Play and control your MPD music
+  - [[package:mpmc-queue][mpmc-queue]]: a multiple-producer-multiple-consumer queue
+  - [[package:nofrils-acme-theme][nofrils-acme-theme]]: Port of "No Frils Acme" Vim theme.
+  - [[package:org-chef][org-chef]]: Cookbook and recipe management with org-mode.
+  - [[package:org-fancy-priorities][org-fancy-priorities]]: Display org priorities as custom strings
+  - [[package:overcast-theme][overcast-theme]]: A dark but vibrant color theme for Emacs
+  - [[package:parseclj][parseclj]]: Clojure/EDN parser
+  - [[package:sql-clickhouse][sql-clickhouse]]: support ClickHouse as SQL interpreter
+- delete
+  - [[http://manuel-uberti.github.io/emacs/2018/03/03/winner-undo/][Refactoring my windows restoring solution]]
+  - [[http://sachachua.com/blog/2018/02/2018-02-26-emacs-news/][sachachua: 2018-02-26 Emacs news]]
+  - [[http://puntoblogspot.blogspot.com/2018/02/sf-emacs-meetup.html][Raimon Grau: SF emacs meetup]]
+
+Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2018-03][emacs-devel]].
+
+** 2018-02-26 Emacs news
+   :PROPERTIES:
+   :ID:       o2b:289e0917-eaf2-4641-ada6-13a917bc5d98
+   :POST_DATE: [2018-02-26 Mon 10:19]
+   :POSTID:   29168
+   :BLOG:     sacha
+   :END:
+
+- Emacs Lisp:
+  - [[https://www.reddit.com/r/emacs/comments/803az3/navigate_yaml_using_emacslibyaml_dynamic_module/][Navigate yaml using emacs-libyaml dynamic module]] ([[https://reddit.com/r/emacs/comments/803az3/navigate_yaml_using_emacslibyaml_dynamic_module/][Reddit]])
+  - [[http://nullprogram.com/blog/2018/02/22/][Emacs Lisp Lambda Expressions Are Not Self-Evaluating]] ([[http://nullprogram.com/blog/2018/02/22/][HN]])
+- Emacs development:
+  - [[https://www.reddit.com/r/emacs/comments/806mgw/recent_improvement_of_cquery_and_emacscquery/][Recent improvement of cquery and emacs-cquery]] ([[https://reddit.com/r/emacs/comments/806mgw/recent_improvement_of_cquery_and_emacscquery/][Reddit]])
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=d48e07aaed0baf81baf377a9f2745678c9a5d41b][New customizable variable next-error-find-buffer-function]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=8ba61ffd8cebb0ff9f7a219022f3c1f3eac2f6d0][New option 'grep-find-hide']]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=b9d414e77c4f6396e202069fdd233b6687e6da64][Add isearch-yank-symbol-or-char]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2018-02/msg00597.html][Continued work on portable dumper]]
+- Navigation:
+  - [[https://github.com/tumashu/ivy-posframe][Using a posframe to show ivy's candidate menu.]] ([[https://reddit.com/r/emacs/comments/80bdck/using_a_posframe_to_show_ivys_candidate_menu/][Reddit]])
+  - [[https://github.com/sebastiencs/sidebar.el][Package of the day - Sidebar, a customizable file explorer with git integration]] ([[https://reddit.com/r/emacs/comments/807lew/package_of_the_day_sidebar_a_customizable_file/][Reddit]])
+  - [[http://irreal.org/blog/?p=6978][Video on Searching with Swiper]]
+- Org Mode:
+  - [[https://www.reddit.com/r/emacs/comments/7zqc7b/share_your_org_capture_templates/][Share your Org Capture Templates!]] ([[https://reddit.com/r/emacs/comments/7zqc7b/share_your_org_capture_templates/][Reddit]])
+  - [[https://github.com/unhammer/org-mru-clock][org-mru-clock - easily clock in to recent tasks, even after restarting Emacs]] ([[https://reddit.com/r/emacs/comments/7yusvd/orgmruclock_easily_clock_in_to_recent_tasks_even/][Reddit]])
+  - [[http://mbork.pl/2018-02-25_Simple_way_of_assigning_formulas_to_fields_and_columns_in_Org_tables][Simple way of assigning formulas to fields and columns in Org tables]]
+- Coding:
+  - [[https://youtu.be/9RhY8CnyapA][Emacs SMerge tutorial]] (22:37)
+  - [[https://youtu.be/F-7BtbgxaV8][psc-ide-emacs]] (1:15)
+  - [[https://github.com/jyp/attrap][Attrap: Emacs mode to fix the flycheck error at point]] ([[https://reddit.com/r/emacs/comments/7yubyh/attrap_emacs_mode_to_fix_the_flycheck_error_at/][Reddit]])
+  - [[https://www.bennee.com/~alex/blog/2018/02/21/workbooks-for-benchmarking/][Workbooks for Benchmarking]]
+- Other:
+  - [[https://www.reddit.com/r/spacemacs/comments/7zzy3v/spacemacs_for_the_impatient_enough_spacemacs_to/][Spacemacs for the impatient / Enough Spacemacs to be useful / Quick & dirty Spacemacs]]
+  - [[https://github.com/prathik/emacs-anywhere][Emacs Anywhere - Load emacs from anywhere on OSX, save and have the contents on clipboard]] ([[https://reddit.com/r/emacs/comments/7yxana/emacs_anywhere_load_emacs_from_anywhere_on_osx/][Reddit]])
+  - [[http://cestlaz.github.io/posts/using-emacs-43-music/][Using Emacs 43 - Music with MPD]] ([[https://reddit.com/r/emacs/comments/7yz1k2/using_emacs_43_music_with_mpd/][Reddit]])
+  - [[https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-en.org][Master Emacs in one year]] ([[https://reddit.com/r/emacs/comments/7z6pjb/master_emacs_in_one_year/][Reddit]])
+  - [[http://puntoblogspot.blogspot.com/2018/02/sf-emacs-meetup.html][SF emacs meetup]]
+- New package:
+  - [[package:line-up-words][line-up-words]]: Align words in an intelligent way
+
+Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2018-01][emacs-devel]].
 
 ** 2018-02-19 Emacs news
   :PROPERTIES:
