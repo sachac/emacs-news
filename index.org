@@ -1,3 +1,5 @@
+#+STARTUP: showall
+
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2018-01][emacs-devel]].
 
 * STARTED [#A] Do another Emacs News review   
@@ -14,10 +16,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
   :CATEGORY: emacs-news
   :END:
 
-[[file:~/code/emacs-news/index.org][index.org]]
-
-https://framaforms.org/expression-of-interest-expanding-software-heritage-1589195728
-
 No feed available: http://ul.io/nb/, https://www.onwebsecurity.com/tag/emacs.html
 
 #+begin_src emacs-lisp :results raw
@@ -32,6 +30,105 @@ refresh-packages
 #+End_src
 
 #+RESULTS:
+** 2020-10-19 Emacs news
+   :PROPERTIES:
+   :ID:       o2b:f1f46a1a-24fc-4ed7-905a-9e9d7a6319af
+   :POST_DATE: [2020-10-20 Tue 00:04]
+   :POSTID:   29633
+   :BLOG:     sacha
+   :END:
+
+- [[https://www.reddit.com/r/emacs/comments/je3eht/emacs_user_survey_2020_is_open/][Emacs User Survey 2020 is open!]] ([[https://reddit.com/r/emacs/comments/jb2yuy/the_emacs_user_survey_2020_will_open_on_oct_19th/][Reddit]])
+- Emacs configuration:
+  - [[https://www.reddit.com/r/emacs/comments/jeenx4/til_how_to_load_file_or_dirlocals_before_a_minor/][TIL how to load file- or dir-locals before a minor mode like lsp-mode]]
+  - [[https://zzamboni.org/post/my-doom-emacs-configuration-with-commentary/][Diego Zamboni: My Doom Emacs configuration, with commentary]]
+  - [[https://youtu.be/kkqVTDbfYp4][LIVE: Emacs From Scratch #7 - Configure Everything with Org Babel (10/16, 9:15am PDT)]] ([[https://reddit.com/r/emacs/comments/jc9gtf/live_emacs_from_scratch_7_configure_everything/][Reddit]])
+- Emacs Lisp:
+  - [[https://github.com/p3r7/awesome-elisp][Awesome Elisp, a list of resources about Emacs Lisp]] ([[https://reddit.com/r/emacs/comments/jdcqc9/awesome_elisp_a_list_of_resources_about_emacs_lisp/][Reddit]])
+  - [[https://emacsnotes.wordpress.com/2020/10/18/xr-a-new-weapon-for-your-regex-arsenal/][xr: A new weapon for your regex arsenal]]
+  - [[https://gist.github.com/trishume/40bf7045a23412d4c016f5e8533437db][Emacs Latency Tracing for the Chromium Catapult Trace Event Format]]
+- Emacs development:
+  - [[http://puntoblogspot.blogspot.com/2020/10/an-emacs-feature-development.html][Raimon Grau: An emacs' Feature Development]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=8c96c720fa5ee67b902778199ee35991779300dc][Add command package-menu-filter-upgradable]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=34eb99d7ba63761ba12acff2b01dc900bbccc720][Add new choice 'keep' to next-error-message-highlight (bug#32676)]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=282f35083c02ace9b287dc311bef1d16721e6c0c][; * etc/NEWS: Call out the new variable 'shr-offer-extend-specpdl'.]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=a10a3d48e8cb6ff4e52838ccfb2a0d270ec7b470][Document the new smiley value]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=990791262433923748047d3bec0161cbcfca5b59][Add support for emojis i smiley.el]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=e569efb15f3a642376c5d45afb449a302d99da47][* etc/NEWS: Mention new lexical binding conversion aid.]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=61e51fee9ca353c1cea4b68ef7225f374fee9839][Base bookmark-bmenu-mode on tabulated-list-mode (Bug#39293)]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=f532e0c32ac379700c36ec23e2d33085152d0b3d][; * etc/NEWS: Move 'narrow-to-prompt' entry to "Shell" section.]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=9eb61be2dafcb4159888e90449091927cbad508a][New shell-mode command to narrow to the command under point]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=41d220dc6085cb8cd96cfcf65248eb83015c1b90][Add a new variable to control Gnus Agent caching]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=5f53a49d48df8c637904fdc2b5e58ab900a1a327][Search harder for file name matches in *compilation* buffers]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=c6ecf6428e8d4848a633782ed0605ddbacfcebee][Make `C-x C-e' work more like `C-M-x' on defvar etc]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=4bf9bb56b56b4acacd5d9430a19db32291bd078b][Highlight regexp sub-expressions in query-replace]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=1ee5a4cb1afe5a55d78e35cab2ad8651196c8967][Add option to highlight the 'next-error' error message]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=64c8511664420498b9769b098a31300e2ab58c2d][Add a new variable tab-first-completion]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=db0c016dc5c2441048076a3c7d9d1914e4a41bd6][* etc/NEWS (Calc): Note new precedence of '/' in TeX input mode.]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=993116eec9a09555c0e725c4672863a1776bbd0f][Fix documentation of Outline cycling commands]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=60845174eb59271e85041389a57c266e69309d75][* etc/NEWS: Mention 'make_unibyte_string'; reformat modules entries.]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=cf407958886e46881216a510efebb8bc029de50c][Calc: allow infinite binary word size (bug#43764)]]
+- Appearance:
+  - [[https://github.com/rougier/svg-tag-mode][SVG tag minor mode]] ([[https://reddit.com/r/emacs/comments/jc4uou/tags_everywhere/][Reddit]], [[https://reddit.com/r/emacs/comments/jczet6/svg_tag_minor_mode/][Reddit]])
+  - [[https://v.redd.it/reqa494wlwt51][Smooth scrolling over images]] ([[https://reddit.com/r/emacs/comments/jdmeyv/smooth_scrolling_over_images/][Reddit]])
+  - [[https://github.com/dalanicolai/pdf-continuous-scroll-mode.el][pdf-continuous-scroll-mode.el: A minor mode for Emacs that implements a two-buffer hack to provide continuous scrolling in pdf-tools]]
+- Org Mode:
+  - [[https://www.reddit.com/r/emacs/comments/jbot9l/orgsuperstarmode_upcoming_version_20/][org-superstar-mode: Upcoming version 2.0]]
+  - [[https://www.youtube.com/watch?v=xdHX1Z8jciw&feature=share][Full introduction to Gkroam, up to version v2.3.7, no voice]] ([[https://reddit.com/r/orgmode/comments/jc8lku/full_introduction_to_gkroam_up_to_version_v237_no/][Reddit]])
+  - [[https://christiantietze.de/posts/2020/10/export-day-one-journal-to-org-mode/][Export Day One (macOS) Journals to Emacs org-mode Diary Entries • Christian Tietze]]
+  - [[https://github.com/dantecatalfamo/ox-ssh][SSH config export for org-mode]] ([[https://reddit.com/r/emacs/comments/jealeo/ssh_config_export_for_orgmode/][Reddit]])
+  - [[https://brettgilio.com/posts/2020-10-18-emacsconf-2020.html][EmacsConf 2020 & My Submission - org-webring]]
+  - [[http://xenodium.com/emacs-edit-after-org-block-completion/][Alvaro Ramirez: Emacs: org block complete and edit]]
+  - [[https://www.reddit.com/r/emacs/comments/jdball/ann_orginlinevideothumbnails_allow_org_to_show/][{ANN} org-inline-video-thumbnails: allow Org to show video thumbnails inline like regular images]]
+  - [[https://www.reddit.com/r/emacs/comments/jczcv0/paste_an_image_into_an_org_file_windows/][Paste an image into an org file (Windows)]]
+  - [[https://zaiste.net/courses/emacs-doom/emacs-doom-24-journaling-org-journal/][Journaling with org-journal · zaiste.net]]
+  - [[https://perlancar.wordpress.com/2020/10/14/org-stuffs-001-moving-removing-done-todo-items/][Org with Perl: 001: Moving/removing done todo items]] ([[https://reddit.com/r/orgmode/comments/jbdjpl/blog_post_org_with_perl_001_movingremoving_done/][Reddit]])
+- Coding:
+  - [[https://mullikine.github.io/posts/semi-automated-stream-editing-piping-through-expect-and-emacs/][semi-automated interactive stream editing: piping through expect and emacs]] ([[https://reddit.com/r/emacs/comments/jdiimt/semiautomated_interactive_stream_editing_piping/][Reddit]])
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/?id=3b3274a85c2f5df21d76d82e0d7740005aa84fdf][Python's f-string syntax highlighting now supported thanks to Stefan Monnier]] ([[https://reddit.com/r/emacs/comments/jcko6d/pythons_fstring_syntax_highlighting_now_supported/][Reddit]])
+  - [[https://ag91.github.io/blog/2020/10/16/my-emacs-setup-for-scala-development/][Andrea: My Emacs setup for Scala development]]
+  - [[https://www.manueluberti.eu//emacs/2020/10/16/repl-switching/][Manuel Uberti: Reliable REPL switching and buffer loading with CIDER]]
+  - [[http://ag91.github.io/blog/2020/10/16/my-emacs-setup-for-scala-development][Andrea: My Emacs setup for Scala development]]
+- Math:
+  - [[https://vimeo.com/14742598][Emacs-Calc: The Poor Man’s Mathematica]] (2010)
+  - [[https://www.reddit.com/r/emacs/comments/jdrcer/calc_is_fun/][calc is fun]]
+- Mail and news:
+  - [[https://gitlab.com/voidyourwarranty/mu4e-helm-attachments][mu4e-helm-attachments : Replaces some attachments functions of the Emacs email client mu4e with functions based on helm]] ([[https://reddit.com/r/planetemacs/comments/jawhi3/mu4ehelmattachments_replaces_some_attachments/][Reddit]])
+  - [[https://gitlab.com/voidyourwarranty/mu4e-helm-folders][mu4e-helm-folders : Folder selection for some functions of the Emacs email client mu4e using helm]]
+- EXWM:
+  - [[https://tech.toryanderson.com/2020/10/13/love-lost-when-exwm-falls-short/][Love lost: when exwm falls short]] ([[https://reddit.com/r/emacs/comments/jaf7t9/love_lost_when_exwm_falls_short/][Reddit]])
+  - [[https://orys.us/tR][Emacs in Emacs: A triumph for EXWM]] ([[https://reddit.com/r/emacs/comments/je9328/emacs_in_emacs_a_triumph_for_exwm/][Reddit]])
+  - [[https://tech.toryanderson.com/2020/10/19/emacs-in-emacs-a-triumph-for-exwm/][Tory Anderson: Emacs in Emacs: A triumph for EXWM]]
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/ja97xs/weekly_tipstricketc_thread/][Weekly tips/trick/etc/ thread]]
+  - [[https://takeonrules.com/2020/10/18/why-i-chose-emacs-as-my-new-text-editor/][Why I Chose Emacs as My New Text Editor // Take on Rules]] ([[https://reddit.com/r/emacs/comments/jdodby/why_i_chose_emacs_as_my_new_text_editor_take_on/][Reddit]])
+  - [[https://i.redd.it/19va8sd5ent51.jpg][Emacs was mentioned inside my lexicography textbook]] ([[https://reddit.com/r/emacs/comments/jcubuu/emacs_was_mentioned_inside_my_lexicography/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/jdz9bq/what_builtins_do_you_use_above_popular_external/][What builtins do you use above popular external packages?]]
+  - [[https://www.reddit.com/r/emacs/comments/jcuwrj/what_does_emacs_do_that_makes_it_irreplaceable/][What does emacs do that makes it irreplaceable for you?]]
+  - [[https://github.com/novoid/org-contacts2vcard][org-contacts2vcard: Converting Emacs Org-mode org-contacts contact information to VCard format suitable for importing to Android 4.4]]
+  - [[https://www.twitch.tv/videos/539651349?filter=highlights&sort=time][Highlight: Why Emacs?]] (24:39)
+- Other:
+  - [[https://directory.fsf.org/wiki/Dungeon-mode][Dungeon-mode - Free Software Directory]] ([[https://reddit.com/r/emacs/comments/jar7tz/dungeonmode_free_software_directory/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/jbccpy/real_time_collaborative_editing_in_emacs/][Real time collaborative editing in Emacs]]
+  - [[https://github.com/wandersoncferreira/oblique-strategies][wandersoncferreira/oblique-strategies]] ([[https://reddit.com/r/emacs/comments/jdffux/wandersoncferreiraobliquestrategies/][Reddit]])
+  - [[http://blog.binchen.org/posts/hardcore-spell-checking-in-emacs/][Hardcore spell checking in Emacs]] ([[https://reddit.com/r/emacs/comments/jb1im4/hardcore_spell_checking_in_emacs/][Reddit]])
+  - [[https://emacsninja.com/posts/worst-reverse-shell-ever.html][emacsninja: Worst Reverse Shell Ever]]
+  - [[https://www.reddit.com/r/emacs/comments/ja1nyd/accord_interact_with_discord_via_emacs/][Accord: Interact with Discord via Emacs]]
+  - [[https://tech.toryanderson.com/2020/10/16/how-to-send-an-interrupt-without-c-c-c-c/][Tory Anderson: How to send an interrupt without C-c C-c?]]
+  - [[https://www.youtube.com/watch?v=2LzDgaen1cQ][The Different Shells Available In Emacs]] (17:20, [[https://irreal.org/blog/?p=9220][Irreal]])
+- New packages:
+  - [[package:greenbar][greenbar]]: Mark comint output with "greenbar" background
+  - [[package:etherpad][etherpad]]: Interface to the Etherpad API
+  - [[package:kana][kana]]: Learn Japanese hiragana and katakana
+  - [[package:maxima][maxima]]: Major modes for writing Maxima code
+  - [[package:nntwitter][nntwitter]]: Gnus Backend For Twitter
+  - [[package:ob-deno][ob-deno]]: Babel Functions for Javascript/TypeScript with Deno
+  - [[package:ocamlformat][ocamlformat]]: Utility functions to format ocaml code
+  - [[package:ox-ssh][ox-ssh]]: SSH Config Backend for Org Export Engine
+  - [[package:teletext-yle][teletext-yle]]: Teletext provider for Finnish national network YLE
+
+Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-10][emacs-devel]].
+
 ** 2020-10-12 Emacs news
    :PROPERTIES:
    :ID:       o2b:1b7fdaec-c4a6-4bfb-8fd6-390b22b4946a
