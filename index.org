@@ -33,6 +33,68 @@ refresh-packages
 #+End_src
 
 #+RESULTS:
+** 2020-11-16 Emacs news
+
+- [[https://lists.gnu.org/r/emacsconf-discuss/2020-11/msg00000.html][EmacsConf 2020 schedule, poster, watching, and participating]] ([[https://www.reddit.com/r/emacs/comments/jrmabk/emacsconf_2020_schedule_poster_how_to_watch_and/][Reddit]]) - Nov 28, 29
+- Emacs configuration:
+  - [[https://tech.toryanderson.com/2020/11/13/migrating-to-a-custom-file-less-setup/][Tory Anderson: Migrating to a custom-file-less setup]]
+  - [[https://github.com/mohkale/spaceleader][spaceleader: emacs leader-key implementation from spacemacs]]
+- Emacs development:
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=29eff32307494eabed5c0160ad1713d832e65f74][Add new user option bibtex-unify-case-convert]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=81588748bd85827468e297d3e44a72844438e807][New user options 'copy-region-blink-delay' and 'delete-pair-blink-delay']]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=ad29bc74ca9d4e1768698d4002b49c234624e359][* lisp/progmodes/xref.el (xref-goto-xref): Prefix arg quits the *xref* buffer.]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=ca023e69e2d9ea79814a6c5f92c6e31c8f1efa70][Make Calc windows dedicated by default]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=17894ef565214c17d19304d9ce6a976c2588fd53][In dired-query use read-char-from-minibuffer with bound help-char (bug#42708)]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=b0f6b83357eb8e301cab2060c7fe2c8d580c2504][* lisp/leim/quail/compose.el ("iso-transl"): New input method.]]
+- Appearance:
+  - [[https://takeonrules.com/2020/11/11/synchronizing-osx-terminal-and-emacs-dark-light-appearance/][Synchronizing OSX, Terminal, and Emacs Dark/Light Appearance // Take on Rules]]
+- Navigation:
+  - [[https://www.manueluberti.eu//emacs/2020/11/14/extending-project/][Manuel Uberti: Extending project.el]]
+  - [[https://vxlabs.com/2020/11/15/fix-ivy-rich-switch-buffer-directories-display-in-emacs/][Fix non-display of ivy-rich switch buffer directories in Emacs - vxlabs]]
+- Org Mode:
+  - [[https://ag91.github.io/blog/2020/11/12/write-org-roam-notes-via-elisp/][Andrea: Write org-roam notes via Elisp]] ([[https://reddit.com/r/planetemacs/comments/jt4g3w/andrea_write_orgroam_notes_via_elisp/][Reddit]])
+  - [[https://gitlab.com/ideasman42/emacs-utimeclock][emacs-utimeclock : Time tracking utilities for Emacs.]] ([[https://www.reddit.com/r/emacs/comments/jv1hyx/rfc_micro_timeclock_utility/][Reddit]])
+  - [[https://i.imgur.com/84zA7xi.png][Who needs GitHub to manage a project when you have Emacs and Org]] ([[https://reddit.com/r/emacs/comments/jtydiy/who_needs_github_to_manage_a_project_when_you/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/jrh6il/ann_orgql_dynamic_blocks_and_links/][{ANN} org-ql: Dynamic Blocks and Links]]
+  - [[https://github.com/volhovm/orgstat][orgstat -- visualize org clocked time]] ([[https://reddit.com/r/emacs/comments/jrpucp/orgstat_visualize_org_clocked_time/][Reddit]])
+  - [[https://endlessparentheses.com/use-org-mode-links-for-absolutely-anything.html][Use Org-Mode Links for Absolutely Anything · Endless Parentheses]] (2014)
+  - [[https://www.youtube.com/watch?v=hz92vaO8IgQ&feature=share][Org-transclusion demo (alpha v0.0.5) Demo #5]] ([[https://reddit.com/r/emacs/comments/juka0j/orttransclusion_demo_alpha_v005_demo_5/][Reddit]])
+  - Org export:
+    - [[https://cyberthal-ghost.nfshost.com/the-standard-org-document-export-three-formats-org-markdown-html/][Cyberthal - Org document export | best practice | Org -> Markdown -> HTML]]
+    - [[https://git.sr.ht/~abrahms/ox-gemini][ox-gemini: Export org files to gemini format]]
+    - [[https://git.umaneti.net/fronde][fronde: A static website generator for Emacs Org mode]]
+- Coding:
+  - [[https://emacs-lsp.github.io/lsp-mode/tutorials/reactjs-tutorial/][Configuring Emacs as Javascript (ReactJS) IDE]] ([[https://reddit.com/r/emacs/comments/jvbq1d/configuring_emacs_as_javascript_reactjs_ide/][Reddit]])
+  - [[http://mbork.pl/2020-11-16_Putting_punctuation_after_closing_parens_automatically][Marcin Borkowski: Putting punctuation after closing parens automatically]]
+  - [[https://youtu.be/0bilcQVSlbM][Emacs IDE - How to Debug Your Code with dap-mode]] ([[https://reddit.com/r/emacs/comments/jsdrgx/emacs_ide_how_to_debug_your_code_with_dapmode/][Reddit]])
+  - [[https://shiftingbalance.org/?p=1886][Setting up my Emacs Elpy Python coding environment with Jupyter and Pyenv | The Shifting Balance of Factors]]
+  - [[https://dawranliou.com/blog/my-emacs-clojure-dev-env-overview/][My Emacs Clojure Development Environment Overview]]
+  - [[https://jakemccrary.com/blog/2020/11/14/speeding-up-magit/][Speeding up magit - Jake McCrary]]
+  - [[https://github.com/xuchunyang/emacs-syntax-highlighting-as-a-service][emacs-syntax-highlighting-as-a-service: A website to add syntax highlighting using Emacs]] ([[https://www.reddit.com/r/emacs/comments/jtcs0r/made_a_website_to_try_out_emacs_syntax_highlight/][Reddit]])
+- Mail and news:
+  - [[https://www.reddit.com/r/emacs/comments/jreehr/imap_and_smtp_oauth2_configuration_for_office_365/][IMAP and SMTP OAuth2 configuration for Office 365]]
+  - [[https://www.youtube.com/watch?v=YgIORrMaFTc&feature=youtu.be][Fighting with Emacs Rmail - YouTube]]
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/jrh7sf/weekly_tipstricketc_thread/][Weekly tips/trick/etc/ thread]]
+  - [[https://news.ycombinator.com/item?id=25108697][Emacs in odd places | Hacker News]]
+  - [[https://opencollective.com/emacs-lsp][emacs-lsp is now part of opencollective. Opencollective makes your community sustainable.]]
+- Other:
+  - [[https://pmiddend.github.io/posts/named-terminals/][Quick tip: named terminals with vterm]] ([[https://reddit.com/r/emacs/comments/jrm8bd/quick_tip_named_terminals_with_vterm/][Reddit]])
+  - [[https://github.com/Dewdrops/evil-exchange][evil-exchange: Port of vim-exchange]]
+  - [[https://dawranliou.com/blog/on-learning-emacs/][On Learning Emacs]]
+  - [[https://github.com/r0man/docopt.el][{ANN} r0man/docopt.el: Run Docopt-compatible shell commands in Emacs with Transient-style UI automatically]] ([[https://reddit.com/r/emacs/comments/jux8c1/ann_r0mandocoptel_run_docoptcompatible_shell/][Reddit]])
+  - [[https://youtu.be/f7xB2fFk1tQ][Emacs Desktop Environment #1 - Getting Started with EXWM (LIVE 11/13, 9:15 am PST)]] ([[https://reddit.com/r/emacs/comments/jthkz4/emacs_desktop_environment_1_getting_started_with/][Reddit]])
+  - [[https://github.com/mjlbach/emacs-pgtk-nativecomp-overlay][emacs-pgtk-nativecomp-overlay: nix overlay for emacs with native compilation and pgtk, based on emacs-overlay and cachix templates]]
+  - [[https://github.com/tmalsburg/txl.el][tmalsburg/txl.el: Emacs extension providing direct access to DeepL's machine translation API.]]
+- New packages:
+  - [[package:rec-mode][rec-mode]]: Major mode for viewing/editing rec files ([[https://reddit.com/r/emacs/comments/juiii9/elpa_new_package_recmode_a_major_mode_for_editing/][Reddit]])
+  - [[package:docopt][docopt]]: A Docopt implementation in Elisp
+  - [[package:flymake-grammarly][flymake-grammarly]]: Flymake support for Grammarly
+  - [[package:key-assist][key-assist]]: Minibuffer keybinding cheatsheet and launcher
+  - [[package:ptemplate-templates][ptemplate-templates]]: Official templates
+
+Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-11][emacs-devel]].
+
 ** 2020-11-09 Emacs news
    :PROPERTIES:
    :ID:       o2b:bfb71375-ef5e-4504-a770-85f3e58e418e
