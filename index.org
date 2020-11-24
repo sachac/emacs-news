@@ -22,7 +22,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 No feed available: http://ul.io/nb/, https://www.onwebsecurity.com/tag/emacs.html
 
 #+begin_src emacs-lisp :results raw
-(my/prepare-emacs-news (org-read-date nil nil "-mon")
+(my/prepare-emacs-news (org-read-date nil nil "-2mon")
   '(
 refresh-packages
     reddit
@@ -33,6 +33,81 @@ refresh-packages
 #+End_src
 
 #+RESULTS:
+** 2020-11-23 Emacs news
+   :PROPERTIES:
+   :ID:       o2b:d6391745-da60-400b-90e6-50a9648e8e75
+   :POST_DATE: [2020-11-24 Tue 01:12]
+   :POSTID:   29639
+   :BLOG:     sacha
+   :END:
+
+- [[https://lists.gnu.org/r/emacsconf-discuss/2020-11/msg00000.html][EmacsConf 2020 schedule]] ([[https://www.reddit.com/r/emacs/comments/jrmabk/emacsconf_2020_schedule_poster_how_to_watch_and/][Reddit]]) - Nov 28, 29 (this weekend)
+- [[https://emacssurvey.org/][{Reminder} Last week to fill out the Emacs User Survey!]] ([[https://reddit.com/r/emacs/comments/jzizuv/reminder_last_week_to_fill_out_the_emacs_user/][Reddit]])
+- Emacs configuration:
+  - [[https://github.com/alphapapa/unpackaged.el#reload-a-packages-features][{ANN} unpackaged/reload-package: Command to reload a package's features after upgrading (so restarting Emacs isn't necessary)]] ([[https://reddit.com/r/emacs/comments/jy9wa1/ann_unpackagedreloadpackage_command_to_reload_a/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/jzjtv0/doom_emacs_vs_vanilla_emacs/][Doom emacs vs vanilla emacs]]
+  - [[http://emacsredux.com/blog/2020/11/21/disable-global-hl-line-mode-for-specific-modes/][Emacs Redux: Disable global-hl-line-mode for Specific Modes]]
+- Emacs Lisp:
+  - [[https://benwindsorcode.github.io/Getting-Started-With-Emacs-Lisp/][Getting Started With Emacs Lisp Hands On - A Practical Beginners Tutorial]] ([[https://reddit.com/r/emacs/comments/jyf42j/getting_started_with_emacs_lisp_hands_on_a/][Reddit]])
+  - [[https://caiorss.github.io/Emacs-Elisp-Programming/Elisp_Programming.html][Emacs Elisp Programming]]
+- Emacs development:
+  - [[https://debbugs.gnu.org/cgi/bugreport.cgi?bug=43725][Andrea Corallo is preparing native-comp to be mergeable with master]] ([[https://reddit.com/r/emacs/comments/jw4ezf/andrea_corallo_is_preparing_nativecomp_to_be/][Reddit]])
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=0a8cd0116204354e95fbb4ebde64c58123502aa2][Handle help-form in y-or-n-p and use this in find-file-noselect (bug#5423)]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=789ee3e1d55a86b9ce38d1374c0e01d04f97eb7d][Handle connection-local null-device and path-separator variables]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=b4b1bd6e03d739871dd3ba51e8de0be2d272b766][Hide obsolete options in most customize commands]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=74a35d16e25bdb07d847b980008fc4d25ab9404e][* etc/NEWS: Restore entries accidentally removed by previous commit.]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=6e469709c550ba18d9d5a34f6bb89908472f0eb2][In attempted recursive minibuffer use, display error message in correct frame]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=0a7ec10ac621c210fbf87e4465cb05e378b79889][Add command to filter package menu by name or description]]
+- Appearance:
+  - [[https://blog.meain.io/2020/emacs-highlight-yanked/][Highlighting yanked region using pulse.el]] ([[https://reddit.com/r/emacs/comments/jxlsms/highlighting_yanked_region_using_pulseel/][Reddit]])
+- Navigation:
+  - [[https://github.com/alphapapa/burly.el][{ANN} Burly.el 0.1 released (also on MELPA): Save and restore frames, windows, and their buffer contents using Emacs bookmarks (like a lightweight workspace manager)]] ([[https://reddit.com/r/emacs/comments/jweqpk/ann_burlyel_01_released_also_on_melpa_save_and/][Reddit]])
+  - [[https://github.com/blue0513/point-history][point-history: Show the history of points you visited before]]
+- Org Mode:
+  - [[https://www.youtube.com/watch?v=vz9aLmxYJB0][Emacs Tips - How to Give Presentations with Org Mode - YouTube]] (31:38)  
+  - [[https://www.reddit.com/r/orgmode/comments/jysnrf/why_does_the_recent_zettelkasten_craze_use_one/][Why does the recent zettelkasten craze use one file per note rather than one headline per note?]]
+  - [[http://gretzuni.com/articles/let-s-get-digital][Gretzuni: Let's get digital]] - mentions org-reveal and teaching
+  - [[https://github.com/alphapapa/org-super-agenda#changelog][{ANN} org-super-agenda 1.2 released]] ([[https://reddit.com/r/emacs/comments/jy87i3/ann_orgsuperagenda_12_released/][Reddit]])
+  - [[https://github.com/p-kolacz/org-linkz][org-linkz: Managing browser links in org file.]]
+  - [[https://andinus.nand.sh/draco][Draco - Reddit thread to Org document]] ([[https://reddit.com/r/emacs/comments/jx11x5/draco_reddit_thread_to_org_document/][Reddit]])
+  - [[https://github.com/mldoc/mldoc][mldoc: Another Emacs Org-mode and Markdown parser.]]
+  - [[https://www.youtube.com/watch?v=3O3fMVNqOJ0&feature=youtu.be][Publish a website with Org Mode and host it for free on GitLab - YouTube]] (15:57, April 2020, [[https://irreal.org/blog/?p=9299][Irreal]])
+  - [[http://ag91.github.io/blog/2020/11/19/org-crypt-do-not-forget-my-point][Andrea: Org crypt do not forget my point!]]
+  - [[https://github.com/tpeacock19/org-ql-config][org-ql configuration example]] ([[https://reddit.com/r/orgmode/comments/jzkwax/orgql_configuration_example/][Reddit]])
+  - [[https://github.com/alphapapa/org-ql#05][{ANN} org-ql 0.5 released]]
+- Coding:
+  - [[https://notxor.nueva-actitud.org/2020/11/20/material-difuso-y-correccion-gamma.html][How I have Emacs configured to work with erlang (in spanish)]]
+  - [[https://www.manueluberti.eu//emacs/2020/11/21/flymake-projects/][Manuel Uberti: Restricting Flymake to my projects]]
+- Math:
+  - [[https://gitlab.com/matsievskiysv/math-preview][math-preview : Emacs preview math inline]]
+- Mail and news:
+  - [[https://i.redd.it/ht7fzugysqz51.png][Mu4e dashboard using org-mode (with mu4e: links)]] ([[https://reddit.com/r/emacs/comments/jvnzxl/mu4e_dashboard_using_orgmode_with_mu4e_links/][Reddit]])
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/jvpccf/weekly_tipstricketc_thread/][Weekly tips/trick/etc/ thread]]
+- EXWM:
+  - [[https://youtu.be/9gfKrrTtyOk][Emacs Desktop Environment #2 - Improving the EXWM Experience (LIVE 11/20, 9:15 am PST)]] ([[https://reddit.com/r/emacs/comments/jxqvgp/emacs_desktop_environment_2_improving_the_exwm/][Reddit]])
+  - [[https://www.youtube.com/watch?v=GJjjflU67tE][Doom Emacs And EXWM Are My New Window Manager - YouTube]]
+- Other:
+  - [[https://karthinks.com/software/batteries-included-with-emacs/][Batteries included with Emacs]] ([[https://reddit.com/r/emacs/comments/jwhr6g/batteries_included_with_emacs/][Reddit]])
+  - [[http://mbork.pl/2020-11-23_Emacs_and_the_X_selection][Marcin Borkowski: Emacs and the X selection]]
+  - [[https://www.philnewton.net/blog/leanpub-with-emacs/][Writing a Leanpub book with Emacs - philnewton.net]] ([[https://irreal.org/blog/?p=9287][Irreal]])
+  - [[https://github.com/CyberShadow/term-keys][term-keys: Lossless keyboard input for Emacs]] (2017)
+  - [[https://copr.fedorainfracloud.org/coprs/robot/emacs-git/][All the Emacs packages that Fedora normally provides, but compiled from master dev branch rather than a point release]]
+  - [[https://wandersoncferreira.github.io/blog/emacs-on-terminal/][Emacs on terminal]] ([[https://reddit.com/r/emacs/comments/jyf16y/emacs_on_terminal/][Reddit]])
+  - [[https://emacspeak.blogspot.com/2020/11/emacspeak-530-efficientdog-unleashed.html][T. V. Raman: Emacspeak 53.0 EfficientDog Unleashed!]]
+  - [[https://i.redd.it/htpfdfdaqp061.gif][Introducing emacs-webkit - A successor to xwidget-webkit]] ([[https://reddit.com/r/emacs/comments/jyowe0/introducing_emacswebkit_a_successor_to/][Reddit]], [[https://lists.gnu.org/archive/html/emacs-devel/2020-11/msg01011.html][emacs-devel]])
+- New packages:
+  - [[package:helm-org-recent-headings][helm-org-recent-headings]]: Helm source for org-recent-headings
+  - [[package:insert-char-preview][insert-char-preview]]: Insert Unicode char
+  - [[package:leo][leo]]: Interface for dict.leo.org
+  - [[package:mpdmacs][mpdmacs]]: A lightweight MPD client
+  - [[package:ob-ess-julia][ob-ess-julia]]: Org babel support for Julia language
+  - [[package:tr-ime][tr-ime]]: Emulator of IME patch for Windows
+  - [[package:vc-defer][vc-defer]]: Defer non-essential vc.el work
+  - [[package:zenscript-mode][zenscript-mode]]: Major mode for ZenScript
+
+Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-11][emacs-devel]].
+
 ** 2020-11-16 Emacs news
    :PROPERTIES:
    :ID:       o2b:7582f2a3-51bf-45c4-a4c1-c7e99ae092c3
