@@ -21,18 +21,127 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 No feed available: http://ul.io/nb/, https://www.onwebsecurity.com/tag/emacs.html
 
-#+begin_src emacs-lisp :results raw
-(my/prepare-emacs-news (org-read-date nil nil "-mon")
-  '(
-refresh-packages
-    reddit
-    rss
-
- git
-))
+#+begin_src emacs-lisp :results raw :noweb yes
+  <<menu>>
+  <<packages>>
+  <<reddit>>
+  <<sort>>
+  <<link-description>>
+  <<git-news>>
+  <<share-news>>
+  <<prepare-news>>
+  <<collect-news>>
+  <<detect-dupes>>
+  (my/prepare-emacs-news (org-read-date nil nil "-mon")
+                         '(
+                           refresh-packages
+                           reddit
+                           rss
+                           rss-es
+                           git
+                           ))
 #+End_src
 
 #+RESULTS:
+** 2020-12-07 Emacs news
+   :PROPERTIES:
+   :ID:       o2b:4c95392e-ffde-41e6-b50e-0ef7decd204e
+   :POST_DATE: [2020-12-07 Mon 23:36]
+   :BLOG:     sacha
+   :POSTID:   29643
+   :END:
+
+- [[https://www.reddit.com/r/emacs/comments/k7i20b/emacsconf_2020_videos_are_out/][EmacsConf 2020: Videos are out!]] ([[https://news.ycombinator.com/item?id=25324311][HN]])
+- Emacs configuration:
+  - [[https://www.reddit.com/r/emacs/comments/k4kemb/share_vanilla_emacs_config_examples_with_a_small/][Share vanilla emacs config examples (with a small number of external packages)]]
+  - [[https://github.com/daviwil/emacs-from-scratch][emacs-from-scratch: An example of a fully custom Emacs configuration developed live on YouTube!]]
+  - [[http://www.nextpoint.se/?p=830][Faster Emacs Startup with Custom Configuration]] ([[https://reddit.com/r/emacs/comments/k4nwp1/faster_emacs_startup_with_custom_configuration/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/k5bicm/quick_commits_to_become_evil/][Quick commits to become evil]]
+  - [[https://cloudnine.github.io/science/2020-02-17-emacs-posframe-which-key/][Emacs Configuration Posframe and Which Key, Some Key Bindings]]
+  - [[https://github.com/positron-solutions/posimacs][posimacs: Emacs + tools in home manager module distribution format]]
+  - [[https://github.com/karthink/popup-buffers][popup-buffers: A minor-mode to handle annoying windows in Emacs. Works well with shackle.el]]
+  - [[https://emacsredux.com/blog/2020/12/04/maximize-the-emacs-frame-on-startup/][Maximize the Emacs Frame on Startup]] ([[https://reddit.com/r/emacs/comments/k6r7gt/maximize_the_emacs_frame_on_startup/][Reddit]])
+  - [[https://github.com/erjoalgo/emacs-buttons][emacs-buttons - Key binding DSL]] ([[https://reddit.com/r/emacs/comments/k4kv3r/emacsbuttons_key_binding_dsl/][Reddit]])
+  - [[http://emacsredux.com/blog/2020/12/04/maximize-the-emacs-frame-on-startup/][Emacs Redux: Maximize the Emacs Frame on Startup]]
+- Emacs Lisp:
+  - [[https://github.com/okamsn/loopy][loopy: A looping and iteration macro.]] ([[https://www.reddit.com/r/emacs/comments/k47h7z/new_package_a_loopingiteration_macro_like_clloop/][Reddit]])
+  - [[http://mbork.pl/2020-11-30_Repeating_complex_commands][Marcin Borkowski: Repeating complex commands]]
+- Emacs development:
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=6e0080e755b460adc7a1fda74e26f83cb342b6dc][Add commands xref-next-group and xref-prev-group]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=b218c8b6b587d4f0629cbe81bf2dba95d07844d0][Allow shutting down Emacs even if there are errors in kill-emacs-hook]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=ff5a3c74fc45c80f2c8c272f259dbba84b7c3f66][Allow inhibiting the instructions on how to close emacsclient frames]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=3970f4ac405516ad3d1aba5079c0754ec1dc5da1][Add new variable to selectively suppress backtraces in batch mode.]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=40e11743ca3803bdc2c6c612f35ab695efb3eb8b][Print a backtrace on unhandled errors in batch mode (Bug#44942).]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=39915c708435cefd1c3eaddeec54d3b365d36515][* src/alloc.c (Fgarbage_collect_maybe): New function]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=f365eb2e055c05e8dbd76aca6b6d10b0a888d5da][Preload iso-trans.el]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=f2a3d6e28d81dc2890e99afd550b59ff01fac5d9][Support using ripgrep in project-find-regexp and friends]] ([[https://www.reddit.com/r/emacs/comments/k851vp/nice_options_that_was_added_in_emacs_master/][Reddit]])
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=eff6f0c7f123a79d376f5b06c3a946efb797bb03][Allow bibtex-unify-case-function as file-local variable]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=3d712d50d65a89d56bc937c5d001ac450c9c947f][* etc/NEWS: Add user option 'tramp-debug-to-file'.]]
+- Appearance:
+  - [[https://www.reddit.com/r/emacs/comments/k5253b/what_are_your_favorite_low_contrast_emacs_themes/][What are your favorite "Low Contrast Emacs Themes"]]
+  - [[https://gitlab.com/ideasman42/emacs-default-font-presets][[ANN]: default-font-presets, cycle between font presets, scale font size]] ([[https://reddit.com/r/emacs/comments/k6dxor/ann_defaultfontpresets_cycle_between_font_presets/][Reddit]])
+  - [[https://www.reddit.com/gallery/k4pgt1][Custom toolbar on Big Sur, inspired by the recent post about SVG toolbar]]
+  - [[https://protesilaos.com/codelog/2020-12-05-modus-themes-1-0-0/][Protesilaos Stavrou: Modus themes 1.0.0 (backward-incompatible changes)]]
+- Navigation:
+  - [[https://www.rousette.org.uk/archives/switching-to-selectrum-for-incremental-narrowing-in-emacs/][But She's a Girl: Switching to Selectrum for incremental narrowing in Emacs]] ([[https://reddit.com/r/planetemacs/comments/k7yp9y/but_shes_a_girl_switching_to_selectrum_for/][Reddit]])
+  - [[https://github.com/ashton314/gilded-select][gilded-select: Minor enhancements to the excellent Selectrum package]]
+  - [[https://v.redd.it/kn8oe3cqsn361][[ANN] Scroll-on-jump package to recenter and optionally animate any action that moves the point]] ([[https://reddit.com/r/emacs/comments/k85nwi/ann_scrollonjump_package_to_recenter_and/][Reddit]])
+  - [[http://metaredux.com/posts/2020/12/06/semantic-clojure-formatting.html][Meta Redux: Semantic Clojure Formatting]]
+  - [[https://www.youtube.com/watch?v=Saw0WZFbLT0][Emacs Through Macros - 11 - Narrowing - YouTube]] (9:02)
+  - [[https://notxor.nueva-actitud.org/2020/11/25/organizacion-del-espacio-de-trabajo-en-emacs.html][Organización del espacio de trabajo en Emacs]]
+- Org Mode:
+  - [[https://www.reddit.com/r/orgmode/comments/k6f5fx/ann_experimental_orgmode_branch_improving/][[ANN] Experimental org-mode branch improving performance on large files]]
+  - [[http://ag91.github.io/blog/2020/11/30/emacsconf2020-lead-your-future-with-org][Andrea: EmacsConf2020: Lead your future with Org]]
+  - [[https://daryl.wakatara.com/a-better-gtd-and-crm-flow-for-emacs-org-mode/][Daryl Manning | A better GTD and CRM flow for emacs org-mode]]
+  - [[https://www.reddit.com/r/emacs/comments/k63ry6/wiprfc_orgmode_visual_outline_hierarchy/][[WIP/RFC] orgmode visual outline hierarchy]]
+  - [[https://www.reddit.com/r/orgmode/comments/k4ma7f/easy_instructions_on_how_to_set_up_odt_export_of/][Easy instructions on how to set up ODT export of Emacs/org-mode files in Windows 10]]
+  - [[https://www.huxiaoxing.com/building-a-website-with-org-mode-files][Building websites with org-mode was never this easy.]] ([[https://reddit.com/r/emacs/comments/k4aktr/building_websites_with_orgmode_was_never_this_easy/][Reddit]])
+  - [[https://zzamboni.org/post/new-release-of-publishing-with-emacs-org-mode-and-leanpub/][Diego Zamboni: New release of Publishing with Emacs, Org-mode and Leanpub]]
+  - [[https://www.aidanscannell.com/post/org-mode-resume/][Creating a CV/Resume in Org-Mode using Latex templates]] ([[https://reddit.com/r/orgmode/comments/k5iybg/creating_a_cvresume_in_orgmode_using_latex/][Reddit]])
+  - [[https://titan-c.gitlab.io/org-cv/][Org CV: Org-mode backend exporters for Curriculum Vita]]
+  - [[https://org-babel.readthedocs.io/en/latest/header-args/][Header arguments - Org Babel reference card]]
+  - [[https://github.com/egh/org-mode-zettelkasten][org-mode-zettelkasten: Zettelkasten for pure emacs Org mode]]
+  - [[https://takeonrules.com/2020/12/06/adding-hydra-menu-for-org-roam-lookup-in-emacs/][Adding Hydra Menu for Org Roam Lookup in Emacs // Take on Rules]] ([[https://reddit.com/r/emacs/comments/k86qgw/adding_hydra_menu_for_org_roam_lookup_in_emacs/][Reddit]])
+  - [[https://zzamboni.org/post/how-to-easily-create-and-use-human-readable-ids-in-org-mode-and-doom-emacs/][Diego Zamboni: How to easily create and use human-readable IDs in Org mode and Doom Emacs]]
+  - [[https://www.youtube.com/watch?v=nXQXLz-rsDk&feature=share][Org-transclusion (alpha v0.0.6) Demo #6]] ([[https://reddit.com/r/emacs/comments/k7wgmw/orgtransclusion_alpha_v006_demo_6/][Reddit]])
+- Completion:
+  - [[https://gitlab.com/ideasman42/emacs-recomplete][(re)complete, immediate correction/completion without a prompt]] ([[https://reddit.com/r/emacs/comments/k4egfd/ann_recomplete_immediate_correctioncompletion/][Reddit]])
+- Coding:
+  - [[https://youtu.be/jPXIP46BnNA][[ANN]: Emacs IDE - Python Development Configuration (LIVE 12/2, 9:15 am PST)]] ([[https://reddit.com/r/emacs/comments/k5cqwb/emacs_ide_python_development_configuration_live/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/k67vlx/not_my_normal_emacs_video_but_using_emacs_to/][Not my normal Emacs video but using Emacs to solve AOC day 3 in Clojure]]
+  - [[https://jakemccrary.com/blog/2020/11/14/speeding-up-magit/][Speeding up magit]] ([[https://reddit.com/r/emacs/comments/k3xfa1/speeding_up_magit/][Reddit]])
+  - [[https://200ok.ch/posts/2020-11-30_emacsconf_traverse_complex_json_structures_with_live_feedback_with_counseljq.html][Alain M. Lafon: EmacsConf: Traverse complex JSON structures with live feedback with counsel-jq]]
+  - [[https://www.youtube.com/watch?v=5yPLf7_U3c4][Emacs: working with virtual machines - YouTube]] (8:44)
+- Math:
+  - [[https://v.redd.it/civile4028361][Display equations inline with math-preview]] ([[https://reddit.com/r/emacs/comments/k6rq84/display_equations_inline_with_mathpreview/][Reddit]])
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/k4gv0x/weekly_tipstricketc_thread/][Weekly tips/trick/etc/ thread]]
+  - [[https://www.reddit.com/r/emacs/comments/k77k6a/what_are_your_favourite_emacsconf_2020_talks/][What are your favourite EmacsConf 2020 talks?]]
+- Other:
+  - [[https://opensource.com/article/20/12/emacs][Why I love Emacs | Opensource.com]]
+  - [[https://goykhman.ca/gene/blog/2020/2020-12-06-emacs-27-multi-tty-patch.html][Multi-TTY support in Emacs 27 on MacOSX]]
+  - [[https://github.com/jpablobr/emacs-monkeytype][emacs-monkeytype: Typing game/tutor for Emacs inspired by github.com/Miodec/monkeytype]]
+  - [[https://github.com/konstare/emacs-gcc][emacs-gcc - Dockerfile for building emacs.deb with native-comp]]
+  - [[https://hkvim.com/post/windows-setup/][The ultimate Emacs hacking tutorial in Windows 10 WSL 2 | Damon Chan's Blog]]
+  - [[https://sgrove.essay.dev/post/25/essaydev-a-real-time-blog-from-emacs-magit-forge-based-on-github-issues][essay.dev: A real-time blog from emacs magit-forge based on GitHub issues - Sean Grove]]
+  - [[https://www.reddit.com/r/emacs/comments/k5zrlb/somehow_eshell_is_working_perfectly/][Somehow Eshell is working perfectly]]
+  - [[http://xenodium.com/emacs-rotate-my-macos-display/][Alvaro Ramirez: Emacs: Rotate my macOS display]]
+  - [[https://youtu.be/HGGU5Zvljj8][Optimizing Window Placement in EXWM - Emacs Desktop Environment #3 (LIVE 12/4, 9:15 am PST)]] ([[https://reddit.com/r/emacs/comments/k6o0el/optimizing_window_placement_in_exwm_emacs_desktop/][Reddit]])
+  - [[https://www.youtube.com/watch?v=HK_f8KTuR0s&feature=share][EmacsConf2020 - Extend Emacs to Modern GUI Applications with EAF]] ([[https://reddit.com/r/emacs/comments/k6v6ju/emacsconf2020_extend_emacs_to_modern_gui/][Reddit]])
+  - [[https://github.com/wakatime/wakatime-mode][wakatime-mode: Emacs plugin for automatic time tracking and metrics generated from your programming activity.]]
+  - [[https://github.com/papis/papis.el][Announcing `papis.el`, an emacs package for papis, a highly extensible command line bibliography manager]] ([[https://reddit.com/r/emacs/comments/k44stt/announcing_papisel_an_emacs_package_for_papis_a/][Reddit]])
+  - [[http://amitp.blogspot.com/2020/11/building-emacs-27-on-apple-arm-m1.html][Amit Patel: Building Emacs 27 on Apple ARM M1]]
+  - [[https://www.youtube.com/watch?v=ELPKpIa0ZjI][Writing Update + Emacs! - YouTube]] (15:58, Emacs starts around 12:50)
+- New packages:
+  - [[package:goggles][goggles]]: Pulse modified regions
+  - [[package:license-snippets][license-snippets]]: LICENSE templates for yasnippet
+  - [[package:modus-themes][modus-themes]]: Highly accessible themes (WCAG AAA)
+  - [[package:robot-mode][robot-mode]]: Major-mode for Robot Framework files
+  - [[package:solo-jazz-theme][solo-jazz-theme]]: The Solo-Jazz color theme
+  - [[package:valign][valign]]: Visually align tables
+
+Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-12][emacs-devel]].
+
 ** 2020-11-30 Emacs news
    :PROPERTIES:
    :ID:       o2b:c03777e3-064f-4218-9a1a-8218b7bd48c4
@@ -17043,4 +17152,676 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][Youtube]], the [[http://git.savannah.gnu.org/cgit/emacs.git/log/?showmsg=1][Emacs commit log]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2016-03][emacs-devel]].
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
+
+* Code
+
+** Package links
+
+#+NAME: packages
+#+begin_src emacs-lisp 
+  (defun my/org-package-open (package-name)
+    (interactive "MPackage name: ")
+    (describe-package (intern package-name)))
+
+  (ert-deftest my/org-package-export ()
+    (should
+     (string=
+      (my/org-package-export "transcribe" "transcribe" 'html)
+      "<a target=\"_blank\" href=\"https://elpa.gnu.org/packages/transcribe.html\">transcribe</a>"
+      ))
+    (should
+     (string=
+      (my/org-package-export "fireplace" "fireplace" 'html)
+      "<a target=\"_blank\" href=\"http://melpa.org/#/fireplace\">fireplace</a>"
+      )))
+  (defun my/org-package-export (link description format)
+    (let* ((package-info (car (assoc-default (intern link) package-archive-contents)))
+           (package-source (package-desc-archive package-info))
+           (path (format
+                  (cond
+                   ((string= package-source "gnu") "https://elpa.gnu.org/packages/%s.html")
+                   ((string= package-source "melpa") "http://melpa.org/#/%s")
+                   (t (throw 'unknown-source)))
+                  link))
+           (desc (or description link)))
+      (cond
+       ((eq format 'html) (format "<a target=\"_blank\" href=\"%s\">%s</a>" path desc))
+       ((eq format 'wp) (format "<a target=\"_blank\" href=\"%s\">%s</a>" path desc))
+       ((eq format 'latex) (format "\\href{%s}{%s}" path desc))
+       ((eq format 'texinfo) (format "@uref{%s,%s}" path desc))
+       ((eq format 'ascii) (format "%s <%s>" desc path))
+       (t path))))
+
+  (org-link-set-parameters "package" :follow 'my/org-package-open :export 'my/org-package-export)
+#+end_src
+
+** ASCII export
+
+This setting puts Org ASCII export links right after the text instead of in a separate section:
+
+#+NAME: export-ascii
+#+begin_src emacs-lisp 
+(setq org-ascii-links-to-notes nil)
+#+end_src
+
+** Reddit
+
+This one exports links from my secret =my/reddit-upvoted-json=. You
+can get your Reddit upvoted JSON URL at
+https://www.reddit.com/prefs/feeds/ .
+
+#+NAME: reddit
+#+begin_src emacs-lisp 
+  (defun my/reddit-list-upvoted (date)
+    (interactive (list (org-read-date)))
+    (let ((threshold (org-read-date nil t (concat (substring date 0 (min (length date) 10)) " 0:00")))
+          (url my/reddit-upvoted-json)
+          results)
+      (while url
+        (with-current-buffer (url-retrieve-synchronously url)
+          (goto-char (point-min))
+          (re-search-forward "^$")
+          (let* ((data (json-read))
+                 (items (assoc-default 'children (assoc-default 'data data)))
+                 (after (assoc-default 'after (assoc-default 'data data)))
+                 (result
+                  (mapconcat
+                   (lambda (item)
+                     (let* ((o (assoc-default 'data item))
+                            (title (assoc-default 'title o))
+                            (url (helm-html-decode-entities-string (assoc-default 'url o)))
+                            (date (seconds-to-time (assoc-default 'created_utc o)))
+                            (permalink (concat "https://reddit.com" (assoc-default 'permalink o)))
+                            (num-comments (assoc-default 'num_comments o 'eq 0)))
+                       (when (time-less-p threshold date)
+                         (if (and (> num-comments 0) (not (string-match "reddit\\.com" url)))
+                             (format "- %s (%s)\n"
+                                     (org-link-make-string (url-unhex-string url) title)
+                                     (org-link-make-string (url-unhex-string permalink) "Reddit"))
+                           (format "- %s\n" (org-link-make-string (url-unhex-string url) title))))))
+                   items "")))
+
+            (setq results (concat result "\n" results))
+            (setq url
+                  (if (and after (> (length result) 0))
+                      (concat my/reddit-upvoted-json "&after=" after)
+                    nil)))))
+      results))
+  ;;  (my/reddit-list-upvoted "-mon")
+#+end_src
+
+** Sorting Org Mode lists using a sequence of regular expressions :emacs:org:
+   :PROPERTIES:
+   :ID:       o2b:ab84dc77-bea4-4e71-ae7f-e91fb34bfa28
+   :POST_DATE: [2017-12-21 Thu 12:08]
+   :POSTID:   29132
+   :BLOG:     sacha
+   :END:
+
+I manually categorize Emacs News links into an Org unordered list, and
+then I reorganize the list by using M-S-up (org-shiftmetaup) and
+M-S-down (org-shiftmetadown). I decide to combine or split categories
+depending on the number of links. I have a pretty consistent order.
+John Wiegley suggested promoting Emacs Lisp and Emacs development
+links at the top of the list. I like to sort the rest of the list
+roughly by interest: general links first, then Org, then coding, then
+other links at the bottom. 
+
+Here's some code that sorts Org lists in a custom sequence, with
+unknown items at the bottom for easy re-ordering. It will take a list like:
+
+#+begin_example
+- Other:
+  - Link A
+  - Link B
+- Emacs development:
+  - Link A
+  - Link B
+- Emacs Lisp:
+  - Link A
+  - Link B
+#+end_example
+
+and turn it into:
+
+#+begin_example
+- Emacs Lisp:
+  - Link A
+  - Link B
+- Emacs development:
+  - Link A
+  - Link B
+- Other:
+  - Link A
+  - Link B
+#+end_example
+
+#+NAME: sort
+#+begin_src emacs-lisp 
+  (defun my/org-sort-list-in-custom-order (order)
+    "Sort the current Org list so that items are in the specified order.
+  ORDER is a list of regexps."
+    (org-sort-list
+     nil ?f
+     (lambda ()
+       (let ((case-fold-search t)
+             (item
+              (when (looking-at "[ \t]*[-+*0-9.)]+\\([ \t]+\\[[- X]\\]\\)?[ \t]+")
+                (org-sort-remove-invisible (buffer-substring (match-end 0) (point-at-eol))))))
+         (or (cl-position item order :test (lambda (a b) (string-match b a))) (1+ (length order)))))
+     '<))
+
+  (defvar my/emacs-news-sort-order  '("Beginner"
+       "Emacs configuration"
+       "Emacs Lisp"
+       "Emacs development"
+       "Appearance"
+       "Navigation"
+       "Dired"
+       "Org Mode"
+       "Completion"
+       "Coding"
+       "Math"
+       "Mail and news"
+       "Spacemacs"
+       "Doom Emacs"
+       "Music"
+       "EXWM"
+       "Community"
+       "Other"
+       "Discussion"
+       "Outside Emacs"
+       "New packages"))
+  (defun my/emacs-news-sort-list ()
+    (interactive)
+    (goto-char (org-list-get-top-point (org-list-struct)))
+    (my/org-sort-list-in-custom-order my/emacs-news-sort-order))
+#+end_src
+
+One more little thing automated...
+
+** Other functions
+
+#+NAME: link-description
+#+begin_src emacs-lisp 
+  (defun my/emacs-news-escape-link-description (s)
+    (let ((replace-map '(("\\[" . "")
+                         ("\\]" . ":"))))
+      (mapc (lambda (rule)
+              (setq s (replace-regexp-in-string (car rule) (cdr rule) s)))
+            replace-map)
+      s))
+  (use-package xml-rpc)
+  (defun my/org-list-from-rss (url from-date &optional to-date)
+    "Convert URL to an Org list"
+    (with-current-buffer (url-retrieve-synchronously url)
+      (goto-char (point-min))  
+      (re-search-forward "<\\?xml")
+      (goto-char (match-beginning 0))
+      (let* ((feed (xml-parse-region (point) (point-max)))
+            (from-time (org-read-date nil t from-date))
+            (to-time (if to-date (org-read-date nil t to-date)))
+            (is-rss (> (length (xml-get-children (car feed) 'entry)) 0)))
+        (mapconcat (lambda (link)
+                     (format "- %s\n" 
+                             (org-link-make-string (car link) (cdr link))))
+                   (if is-rss
+                       (mapcar
+                        (lambda (entry)
+                          (cons
+                           (xml-get-attribute (car
+                                               (or
+                                                (seq-filter (lambda (x) (string= (xml-get-attribute x 'rel) "alternate"))
+                                                            (xml-get-children entry 'link))
+                                                (xml-get-children entry 'link))) 'href)
+                           (elt (car (xml-get-children entry 'title)) 2)))
+                        (-filter (lambda (entry)
+                                   (let ((entry-date (elt (car (xml-get-children entry 'updated)) 2)))
+                                     (and
+                                      (org-string<= from-date entry-date)
+                                      (or (null to-date) (string< entry-date to-date)))))
+                                 (xml-get-children (car feed) 'entry)))
+                     (mapcar (lambda (entry)
+                               (cons
+                                (caddr (car (xml-get-children entry 'link)))
+                                (caddr (car (xml-get-children entry 'title)))))
+                             (-filter (lambda (entry)
+                                        (let ((entry-time (date-to-time (elt (car (xml-get-children entry 'pubDate)) 2))))
+                                          (and
+                                           (not (time-less-p entry-time from-time))
+                                           (or (null to-time) (time-less-p entry-time to-time)))))
+                                      (xml-get-children (car (xml-get-children (car feed) 'channel)) 'item))))
+                   ""))))
+
+  (defun my/describe-packages (list)
+    "Return an Org list of package descriptions for LIST."
+    (mapconcat
+     (lambda (symbol)
+       (let ((package-desc (assoc symbol package-archive-contents)))
+         (if package-desc
+             (format "  - %s: %s"
+                     (org-link-make-string (concat "package:" (symbol-name symbol))
+                                           (symbol-name symbol))
+                     (package-desc-summary (cadr package-desc)))
+           "")))
+     list
+     "\n"))
+
+  (defun my/list-new-packages (&optional date)
+    (interactive)
+    (let ((packages
+           (with-temp-buffer
+             (insert-file-contents "~/.emacs-news/package-list.el")
+             (goto-char (point-min))
+             (my/describe-packages
+              (reverse (-difference (mapcar 'car package-archive-contents)
+                           (mapcar 'car
+                                   (seq-filter (lambda (o)
+                                                 (or (null date) (string< (cdr o) date)))
+                                               (read (current-buffer))))))))))
+      (if (called-interactively-p 'any)
+          (insert packages)
+        packages)))
+
+  (defun my/save-new-packages ()
+    (interactive)
+    (require 'dash)
+    (when package-archive-contents
+      (with-temp-buffer
+        (find-file "~/.emacs-news/package-list.el")
+        (goto-char (point-min))
+        (git-auto-commit-mode 1)
+        (let* ((old-list (read (current-buffer)))
+               (date (format-time-string "%Y-%m-%d"))
+               (new-packages (seq-difference (mapcar 'car package-archive-contents)
+                                             (mapcar 'car old-list))))
+          (erase-buffer)
+          (insert "("
+                  (mapconcat 'prin1-to-string
+                             (append (mapcar (lambda (o) (cons o date))
+                                             new-packages)
+                                     old-list)
+                             "\n")
+           ")")
+          (save-buffer))
+        nil)))
+#+end_src
+
+** Get info from the Emacs NEWS file in the git repository
+
+#+NAME: git-news
+#+begin_src emacs-lisp 
+  (defun my/insert-emacs-news-from-git (date)
+    (interactive (list (org-read-date)))
+    (let ((result 
+           (shell-command-to-string (format "cd ~/vendor/emacs; git pull > /dev/null; git log --pretty=oneline --after=%s etc/NEWS" (substring date 0 10)))))
+      (with-temp-buffer
+        (insert result)
+        (goto-char (point-min))
+        (while (re-search-forward "^\\([0-9a-f]+\\) \\(.+\\)$" nil t)
+          (replace-match "  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=\\1][\\2]]"))
+        (setq result (buffer-string)))
+      (if (called-interactively-p 'any) (insert result) result)))
+#+end_src
+
+** DONE Publishing Emacs News as plain text, HTML, and attached Org file
+   :PROPERTIES:
+   :ID:       o2b:0a59c00b-7c40-48d5-a8c4-7a0d67e6e479
+   :POST_DATE: [2016-02-01 Mon 21:25]
+   :POSTID:   28599
+   :BLOG:     sacha
+   :END:
+
+I've been publishing these weekly summaries of Emacs-related links on
+my blog and to the [[https://lists.gnu.org/mailman/listinfo/emacs-tangents][emacs-tangents mailing list]] / [[http://news.gmane.org/gmane.emacs.tangents][newsgroup]]. I started
+by posting plain text from Org Mode's ASCII export, and people asked
+for Org Mode and HTML formats. So here's some code that prepares
+things for pasting into a Gnus message buffer.
+
+It turns out that order matters for multipart/alternative - start with
+plain text, then include richer alternatives. First time around, I put
+the HTML version first, so people didn't end up seeing it. Anyway,
+here's something that shows up properly now: text/plain, then
+text/html, with text/x-org attached. The heavy lifting is done with
+=org-export-string-as=, which exports into different formats.
+
+#+NAME: share-news
+#+begin_src emacs-lisp 
+    (defun my/share-emacs-news ()
+      "Prepare current subtree for yanking into post."
+      (interactive)
+      ;; Draft Gnus article
+      (save-restriction
+        (org-narrow-to-subtree)
+        (let ((org-export-html-preamble nil)
+              (org-html-toplevel-hlevel 3)
+              (title (org-get-heading))
+              output)
+          (setq output
+                (apply
+                 'format
+                 "<#multipart type=alternative>
+  <#part type=\"text/plain\" disposition=inline>
+  %s
+
+  You're receiving this message via the Emacs Tangents mailing list.
+  View list info/unsubscribe: https://lists.gnu.org/mailman/listinfo/emacs-tangents
+  <#/part>
+  <#part type=\"text/html\" disposition=inline>
+  %s
+
+  <p>You're receiving this message via the Emacs Tangents mailing list.<br />
+  <a href=\"https://lists.gnu.org/mailman/listinfo/emacs-tangents\">View list info/unsubscribe</a></p>
+
+  <#/part>
+  <#/multipart>
+  <#part type=\"text/x-org\" disposition=attachment name=\"emacs-news.org\">
+  %s
+
+  You're receiving this message via the Emacs Tangents mailing list.
+  [[https://lists.gnu.org/mailman/listinfo/emacs-tangents][View list info/unsubscribe]]
+  <#/part>
+  "
+                 (mapcar
+                  (lambda (format)
+                    (org-export-string-as (buffer-substring (point-min) (point-max)) format t))
+                  '(ascii html org))))
+          (kill-new output)
+          (gnus)
+          (let ((gnus-newsgroup-name "nntp+news.gmane.io:gmane.emacs.tangents"))
+            (gnus-summary-post-news)
+                    (insert title)
+          (message-goto-body)
+          (insert output)))))
+#+end_src
+
+For cleaning things up:
+#+begin_src emacs-lisp :eval no :tangle no
+(replace-regexp "    - \\[\\|[][()]" "")
+#+end_src
+
+
+[[http://howardism.org][Howard Abrams]] showed me something like this in [[http://sachachua.com/blog/2015/06/emacs-hangout-june-2015/][June 2015's Emacs
+Hangout]] ([[https://www.youtube.com/watch?v=jzFI8knL5BY&t=1h18m26s][~1:18:26]]) using [[http://orgmode.org/worg/org-contrib/org-mime.html][org-mime-org-buffer-htmlize]], which probably
+does the job in a much cooler way. =) I thought he had a blog post
+about it, but I can't seem to find it. Anyway, there's my little hack
+above!
+
+** TODO Prepare Emacs News
+
+#+NAME: prepare-news
+#+begin_src emacs-lisp 
+  (defun my/prepare-emacs-news (date parts)
+    (interactive (list (org-read-date nil nil "-mon 0:00") '(refresh-packages reddit rss)))
+    (setq date (substring date 0 10))
+    (when (member 'refresh-packages parts)
+      (my/save-new-packages)
+      (package-refresh-contents))
+    (concat
+     "** " (substring (org-read-date nil nil "++1" nil (org-read-date nil t "-sun 0:00")) 0 10) " Emacs news\n\n"
+     (if (member 'git parts)
+         (concat
+          "- Emacs development:\n"
+          (my/insert-emacs-news-from-git date)
+          "\n"
+          )) 
+     "- Other:\n"
+     (if (member 'rss parts)
+         (my/org-list-from-rss "https://planet.emacslife.com/atom.xml" (substring date 0 10))
+       "")
+     (if (member 'rss-es parts)
+         (my/org-list-from-rss "https://planet.emacs-es.org/atom.xml" (substring date 0 10))
+       "")
+     "\n"
+     (if (member 'reddit parts) (my/reddit-list-upvoted (substring date 0 10)) "")
+     "- New packages:\n"
+     (my/list-new-packages date) 
+     "\n\nLinks from "
+     (mapconcat (lambda (x) (org-link-make-string (car x) (cdr x)))
+                '(("http://reddit.com/r/emacs" . "reddit.com/r/emacs")
+                  ("http://reddit.com/r/orgmode" . "r/orgmode")
+                  ("http://reddit.com/r/spacemacs" . "r/spacemacs")
+                  ("http://reddit.com/r/planetemacs" . "r/planetemacs")
+                  ("https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story" . "Hacker News")
+                  ("https://planet.emacslife.com" . "planet.emacslife.com")
+                  ("https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded" . "YouTube")
+                  ("http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS" . "the Emacs NEWS file"))
+                ", ")
+     " and "
+     (org-link-make-string (concat "http://lists.gnu.org/archive/html/emacs-devel/" (format-time-string "%Y-%m"))
+                           "emacs-devel")
+     "."))
+#+end_src
+
+** Collect Emacs News
+
+#+NAME: collect-news
+#+begin_src emacs-lisp
+  (defun my/emacs-news-collect-entries ()
+    "Collect Emacs News by category and put them in another buffer."
+    (interactive)
+    (let ((parsed (org-element-parse-buffer))
+          category
+          result)
+      (setq result
+            (mapconcat
+             (lambda (x)
+               (concat "* " (car x) "\n\n"
+                       (mapconcat (lambda (y) (concat "- " (cdr y))) (cdr x) "")
+                       "\n"))
+             (sort (seq-group-by
+                    'car
+                    (delq nil
+                          (org-element-map parsed '(paragraph)
+                            (lambda (x)
+                              (let ((contents (org-element-interpret-data x)))
+                                (cond
+                                 ((string-match "^\\(.*\\):[ \t\n]*$" contents)
+                                  (setq category (match-string-no-properties 1 contents))
+                                  nil)
+                                 ((string-match "^\\[" contents)
+                                  (cons category (substring-no-properties contents)))))))))
+                   (lambda (a b) (string< (car a) (car b))))
+             ""))
+      (switch-to-buffer (get-buffer-create "*Emacs News*"))
+      (erase-buffer)
+      (insert result)
+      (org-mode)
+      (goto-char (point-min))))
+#+end_src
+
+** DONE Detect duplicates
+   CLOSED: [2019-05-29 Wed 11:42]
+     :LOGBOOK:
+     - State "DONE"       from "TODO"       [2019-05-29 Wed 11:42]
+     :END:
+
+#+NAME: detect-dupes
+#+begin_src emacs-lisp
+  (defun my/emacs-news-check-duplicates ()
+    (interactive)
+    (let ((end (save-excursion (org-end-of-subtree)))
+          description
+          (search-fn (lambda (point search description)
+                       (save-excursion
+                         (goto-char point)
+                         (let (found)
+                           (if (re-search-forward (regexp-quote search) nil t)
+                               (setq found (point))
+                             ;; Does this look like a package name?
+                             (let ((case-fold-search nil))
+                               (when (string-match "^\\([-\\.a-z0-9]+?\\)\\(:\\|\\.el\\) " description)
+                                 (when (re-search-forward (concat "\\W" (regexp-quote (match-string 1 description))) nil t)
+                                   (setq found (point))))))
+                           found))))
+          search start
+          found
+          done
+          context)
+      (while (and (not done) (re-search-forward "- \\[\\[\\([^[]+\\)\\]\\[\\([^[]+\\)\\]" end t) )
+        (setq found nil search (match-string 1) start (match-beginning 0) description (match-string 2))
+        (goto-char (match-end 0))
+        (let ((p (point)))
+          ;; Search for the URL
+          (setq found (funcall search-fn (match-end 0) search description))
+          (while found
+            (goto-char found)
+            (setq context
+                  (concat
+                   (string-join (org-get-outline-path t) " > ") "\n"
+                   (buffer-substring (line-beginning-position) (line-end-position))))
+            (push-mark found)
+            (goto-char start)
+            (let ((input (read-char (concat context "\n(d)elete, (k)eep, (z)ap next one, e(x)change mark, (n)ext match, (q)quit?"))))
+              (cond
+               ((eq input ?k)
+                (forward-line 1)
+                (setq found nil))
+               ((eq input ?x)
+                (goto-char found)
+                (setq done t found nil))
+               ((eq input ?z)
+                (goto-char found)
+                (delete-region (point-at-bol)
+                               (progn (forward-line 1) (point)))
+                (goto-char start)
+                (setq found nil))
+               ((eq input ?d)
+                (delete-region (point-at-bol)
+                               (progn (forward-line 1) (point)))
+                (setq found nil))
+               ((eq input ?n)
+                ;; Look for the next match
+                (setq found (funcall search-fn (save-excursion (goto-char found) (line-end-position))
+                                     search description)))
+               ((eq input ?q)
+                (setq done t found nil)))))))))
+#+end_src
+
+** Making a numpad-based hydra for organizing Emacs News
+   :PROPERTIES:
+   :ID:       o2b:04eca1e8-ed55-4aec-bc0b-ba4547a1a655
+   :POST_DATE: [2019-06-04 Tue 23:54]
+   :POSTID:   29420
+   :BLOG:     sacha
+   :CUSTOM_ID: emacs-news-hydra
+   :END:
+
+I like to categorize links for Emacs News so that it's not an
+overwhelmingly long wall of text. After I've deleted duplicate links,
+there are around a hundred links left to categorize. I used to use
+Helm and some custom code to simplify moving Org list items into
+different categories in the same list. Then I can type "org" to move
+something to the Org Mode category and "dev" to move something to the
+Emacs development category.
+
+When I don't have a lot of computer time, I usually do this
+categorization by SSHing into my server from my phone. It's hard to
+type on my phone, though. I thought a numpad-based Hydra might be
+better for quick entry, like a phone system. I wanted to be able to
+use the numeric keypad to sort items into the most common categories,
+with a few shortcuts for making it easier to organize. Here's a list
+of shortcuts:
+
+| 0-9 | Select options from the list, with 0 for other.      |
+| \/  | Opens the URL in a web browser                       |
+| ,   | Selects a category by name, creating as needed       |
+| \*  | Shows the URL in the messages buffer, and toggles it |
+| -   | Deletes the item                                     |
+| .   | Quits                                                |
+
+Here's what the Helm version looked like on the left, and here's the new
+numpad-powered one on the right. I liked how fewer buttons made it easier to hit
+the right one when I'm sorting on my phone. I can add new categories
+with completion. Because I assigned numbers to specific categories
+instead of having them automatically calculated based on the headings
+in the list, it was easy to get into the rhythm of tapping 6 for Org,
+7 for coding, and so on.
+
+#+begin_export html
+<figure class="wp-block-image"><img src="https://sachachua.com/blog/wp-content/uploads/2019/06/output.jpg" alt="" class="wp-image-29423" srcset="https://sachachua.com/blog/wp-content/uploads/2019/06/output.jpg 2200w, https://sachachua.com/blog/wp-content/uploads/2019/06/output-196x200.jpg 196w, https://sachachua.com/blog/wp-content/uploads/2019/06/output-640x652.jpg 640w, https://sachachua.com/blog/wp-content/uploads/2019/06/output-768x782.jpg 768w" sizes="(max-width: 2200px) 100vw, 2200px"><figcaption>Comparison of Helm and Hydra approaches</figcaption></figure>
+#+end_export
+
+Here's the code that makes it happen. I experimented with dynamically
+defining a hydra using =eval= and =defmacro= so that I could more
+easily define the menu in a variable. It seems to work fine so far.
+
+#+NAME: menu
+#+begin_src emacs-lisp
+  (defvar my/org-categorize-emacs-news-menu 
+    '(("0" . "Other")
+      ("1" . "Emacs Lisp")
+      ("2" . "Emacs development")
+      ("3" . "Emacs configuration")
+      ("4" . "Appearance")
+      ("5" . "Navigation")
+      ("6" . "Org Mode")
+      ("7" . "Coding")
+      ("8" . "Community")
+      ("9" . "Spacemacs")))
+
+  (defun my/org-move-current-item-to-category (category)
+    "Move current list item under CATEGORY earlier in the list.
+  CATEGORY can be a string or a list of the form (text indent regexp).
+  Point should be on the next line to process, even if a new category
+  has been inserted."
+    (interactive (list (completing-read "Category: " (my/org-get-list-categories))))
+    (when category
+      (let* ((beg (line-beginning-position))
+             (end (line-end-position))
+             (string (org-trim (buffer-substring-no-properties beg end)))
+             (category-text (if (stringp category) category (elt category 0)))
+             (category-indent (if (stringp category) 2 (+ 2 (elt category 1))))
+             (category-regexp (if (stringp category) category (elt category 2)))
+             (pos (point))
+             s)
+        (delete-region beg (min (1+ end) (point-max)))
+        (unless (string= category-text "x")
+          (if (re-search-backward category-regexp nil t)
+              (forward-line 1)
+            (setq s (concat "- " category-text "\n"))
+            (insert s)
+            (setq pos (+ (length s) pos)))
+          (insert (make-string category-indent ?\ )
+                  string "\n")
+          (goto-char (+ pos (length string) category-indent 1))        
+          (recenter)))))
+
+  (eval 
+   `(defhydra my/org-categorize-emacs-news (global-map "C-c e" :foreign-keys nil)  
+      ,@(mapcar
+         (lambda (x)
+           `(,(car x)
+             (lambda () (interactive) (my/org-move-current-item-to-category ,(concat (cdr x) ":")))
+             ,(cdr x)))
+         my/org-categorize-emacs-news-menu)
+      (","
+       (lambda () (interactive)
+         (my/org-move-current-item-to-category 
+          (completing-read
+           "Category: "
+           (append (mapcar (lambda (o) (concat o ":")) my/emacs-news-sort-order)
+                   (mapcar 'car (my/org-get-list-categories))))))
+       "By string")
+      ("/" (lambda () (interactive)
+             (save-excursion
+               (re-search-forward "\\[\\[")
+               (org-open-at-point)))
+       "Open")
+      ("*"
+       (lambda () (interactive)
+         (if (string= (buffer-name) "*Messages*")
+             (bury-buffer)
+           (save-excursion
+             (re-search-forward org-link-bracket-re)
+             (message (match-string 1)))
+           (switch-to-buffer "*Messages*")))
+       "Show URL")
+      ("-" kill-whole-line "Kill")
+      ("p" org-next-link "Previous link")
+      ("n" org-next-link "Next link")
+      ("h" (lambda () (interactive) (my/org-update-link-description "HN")) "Link HN")
+      ("i" (lambda () (interactive) (my/org-update-link-description "Irreal")) "Link Irreal")
+      ("." nil "Done")))
+#+end_src
 
