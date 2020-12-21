@@ -43,6 +43,99 @@ No feed available: http://ul.io/nb/, https://www.onwebsecurity.com/tag/emacs.htm
 #+End_src
 
 #+RESULTS:
+** 2020-12-21 Emacs news
+   :PROPERTIES:
+   :ID:       o2b:af4b0bba-68bb-4a84-8197-c9d597a99479
+   :POST_DATE: [2020-12-21 Mon 01:45]
+   :BLOG:     sacha
+   :POSTID:   29655
+   :END:
+
+- Emacs configuration:
+  - [[http://www.nextpoint.se/?p=845][Byte-compile the `Quickstart’ File for Faster Startup]] ([[https://reddit.com/r/emacs/comments/keznwq/bytecompile_the_quickstart_file_for_faster_startup/][Reddit]], [[https://reddit.com/r/emacs/comments/kficy9/for_the_fun_60_packages_in_002_secs_024_for/][Reddit]])
+  - [[https://www.nextpoint.se/?p=834][BreakPoint : An Unorthodox Emacs Setup with a Static Init File Generator]]
+  - [[https://github.com/jjuliano/sensible.emacs.d][jjuliano/sensible.emacs.d: Sensible and minimal starting Emacs configuration]]
+  - [[https://www.reddit.com/r/emacs/comments/kfq4vz/modularizing_posimacs/][Modularizing Posimacs]]
+  - [[https://github.com/link0ff/emacs-init][link0ff's Emacs init configuration]]
+  - [[https://gitlab.com/gSwag/emacs-configuration][gSwag's emacs-configuration]]
+  - [[https://config.phundrak.com/emacs.html][phundrak's Emacs config]]
+  - [[https://takeonrules.com/2020/12/18/toggling-keyboard-mapping-for-org-roam/][Toggling Keyboard Mapping for Org Roam // Take on Rules]] - overriding keyboard shortcut for a project
+  - [[https://www.youtube.com/watch?v=hG4Zuqrx7J0][Looking At My Doom Emacs Config - DT LIVE - YouTube]]
+- Emacs development:
+  - [[https://www.reddit.com/r/emacs/comments/kev7o8/aur_arch_linux_package_delivering_emacs_binaries/][AUR (Arch Linux) package delivering Emacs binaries with native-comp and Wayland support enabled]]
+  - [[https://github.com/geza-herman/emacs/tree/fast-emacs][fast-emacs branch: Emacs branch based on native-comp branchwith improvements to process IO and rendering]]
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2020-12/msg00501.html][Discussion on NonGNU ELPA issue tracking]] 
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2020-12/msg01120.html][Emacs 27.1.90 is out]] ([[ [[https://irreal.org/blog/?p=9359][Irreal]]) - first pretest for 27.2
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=ecb5ebf156280be1859f181208306e4c55af3e80][Improve make-process in Tramp]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=1a0a11f7d2d1dbecb9f754b1e129d50e489058e6][Inhibit buffer hooks in temporary buffers]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=9f7e0a3e7d33d79f7f0319cd0fc64920988b0039][bibtex-mode: Permit user-defined schemes for sorting entries.]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=c0c6cd2d5d7af82ddfd4d8d080d0aa8d7882d293][Add 'remote-file-error' for Tramp]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=0dd8d53344a822842660d2ac75108f40ba9ff0f4][Make goto-char offer the number at point as default]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=252366866b5691965c8c752aa103ab157a6f3aaa][Add a new recursively bound `current-minibuffer-command' variable]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=c42965745daa607ac434c56ce19a37a94fb9a2c7][Merge branch 'feature/integration-of-dictionary-el']]
+- Appearance:
+  - [[https://christiantietze.de/posts/2020/12/emacs-pulse-highlight-yanked-text/][Christian Tietze: Pulse to Highlight Yanked Text in Vanilla Emacs]]
+  - [[https://i.redd.it/6cyuoc0l7j561.png][marginalia.el - Rich annotations in the minibuffer]] ([[https://reddit.com/r/emacs/comments/ke7bsd/marginaliael_rich_annotations_in_the_minibuffer/][Reddit]])
+  - [[https://github.com/ROCKTAKEY/tab-bar-display][tab-bar-display: Display strings on tab-bar in Emacs.]]
+  - [[http://endlessparentheses.com/using-prettify-symbols-in-clojure-and-elisp-without-breaking-indentation.html][Using prettify-symbols in Clojure and Elisp without breaking indentation · Endless Parentheses]]
+  - [[http://www.modernemacs.com/post/lig-spacing/][Solving ligature spacing in Emacs - proof of concept | Modern Emacs]] (2017)
+  - [[https://github.com/io12/good-scroll.el][good-scroll.el - Attempt at good pixel-based smooth scrolling in Emacs]] ([[https://reddit.com/r/emacs/comments/kgr3uz/goodscrollel_attempt_at_good_pixelbased_smooth/][Reddit]])
+  - [[https://i.redd.it/2lojsc0a5d661.png][Experimental command prompt in the header line]] ([[https://reddit.com/r/emacs/comments/kgw96j/experimental_command_prompt_in_the_header_line/][Reddit]])
+- Navigation:
+  - [[https://youtu.be/C7ZlNRbWdVI][Organize Your Windows with the Tab Bar in Emacs 27]] ([[https://reddit.com/r/emacs/comments/kcz8n3/organize_your_windows_with_the_tab_bar_in_emacs_27/][Reddit]])
+- Org Mode:
+  - [[https://github.com/jjuliano/practical.org.el][jjuliano/practical.org.el: Practical GTD and Zettelkasten workflow system for Emacs]]
+  - [[https://takeonrules.com/2020/12/18/directory-structure-for-my-org-instance/][Directory Structure for my Org Instance // Take on Rules]] ([[https://reddit.com/r/orgmode/comments/kfnwd9/directory_structure_for_my_org_instance_take_on/][Reddit]])
+  - [[https://youtu.be/RhwCClMdaps][Inside Emacs #6 (part 2) ▫ org-mode ▫ moving inside/between fields ▫ smartparens ▫ emacs-lisp]] ([[https://reddit.com/r/emacs/comments/kgdvke/thank_you_elisp_and_c_programmers_emacs_gives_me/][Reddit]])
+  - [[https://github.com/lchausmann/goodreads-to-org][goodreads-to-org: Small utility to convert goodreads csv to org-mode file]]
+  - [[https://github.com/isamert/marks][A search engine like command line tool for org-mode and markdown]] ([[https://reddit.com/r/orgmode/comments/kdxq9m/a_search_engine_like_command_line_tool_for/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/kguuag/ann_emacs_lsp_community_channel_migration_gitter/][[ANN] Emacs LSP community channel migration Gitter -> Discord]]
+  - [[https://code.orgmode.org/bzg/org-mode/raw/master/contrib/lisp/org-learn.el][org-learn.el --- Implements SuperMemo's incremental learning algorithm]] ([[https://reddit.com/r/planetemacs/comments/kgp7tw/orglearnel_implements_supermemos_incremental/][Reddit]])
+  - [[https://www.youtube.com/watch?v=VcgjTEa0kU4&feature=youtu.be][Emacs from Scratch #5: Org mode basics]]
+  - [[https://pjs64.wordpress.com/2020/12/07/worgsheet-calc-intro/][WorgSheet Calc Intro – Dj Pj]] ([[https://irreal.org/blog/?p=9357][Irreal]])
+- Coding:
+  - [[https://ag91.github.io/blog/2020/12/18/emacs-as-your-code-compass-finding-code-hotspots/][Andrea: Emacs as your code-compass: finding code hotspots]]
+  - [[https://github.com/susam/emacs4cl][[Package of the day] Emacs4CL: 35 line .emacs to turn Emacs into Common Lisp dev environment]] ([[https://reddit.com/r/emacs/comments/keg5hx/package_of_the_day_emacs4cl_35_line_emacs_to_turn/][Reddit]], [[https://news.ycombinator.com/item?id=25440690][HN]])
+  - [[http://ham-and-eggs-from-frgo.blogspot.com/2010/01/slime-lisp-editing-lost-slime-close.html][SLIME, Lisp, Editing - the lost slime-close-parens-at-point]]
+  - [[https://groups.csail.mit.edu/mac/users/gjs/6.945/dont-panic/][mit.edu: basic guide to MIT/GNU Scheme and either edwin or emacs]]
+  - [[https://github.com/benma/go-dlv.el/][go-dlv.el: Go Delve - Debug Go programs interactively with the GUD.]]
+  - [[https://github.com/osv/company-web][company-web: Emacs company backend for html, jade, slim]]
+  - [[https://www.bennee.com/~alex/blog/2020/12/14/magit-file-dispatch/][Alex Bennée: magit-file-dispatch]]
+- Mail and news:
+  - [[https://bostonenginerd.com/posts/notmuch-of-a-mail-setup-part-1-mbsync-msmtp-and-systemd/][Notmuch of a mail setup Part 1- mbsync, msmtp and systemd | Assorted Nerdery]]
+  - [[https://bostonenginerd.com/posts/notmuch-of-a-mail-setup-part-2-notmuch-and-emacs/][Notmuch of a mail setup Part 2 - notmuch and Emacs]]
+  - [[https://www.youtube.com/watch?v=LKp3hQP2VxQ][(3) Setting Up The Mu4e Email Client In Doom Emacs - YouTube]]
+  - [[https://alexschroeder.ch/wiki/2020-12-17_Rmail][Alex Schroeder: Rmail]]
+  - [[https://www.reddit.com/r/emacs/comments/keiij7/listening_to_podcasts_with_elfeed/][Listening to Podcasts with Elfeed]]
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/kdgv43/weekly_tipstricketc_thread/][Weekly tips/trick/etc/ thread]]
+  - [[https://github.com/dickmao/emacs-survey/blob/main/2020/commentary.ipynb]["State of Emacs Survey" Commentary]] ([[https://reddit.com/r/emacs/comments/kdneon/state_of_emacs_survey_commentary/][Reddit]])
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2020-12/msg00739.html][Emacs Survey: Toolbars]] 
+  - [[https://www.linux.com/news/30-linux-kernel-developers-30-weeks-steven-rostedt/][30 Linux Kernel Developers in 30 Weeks: Steven Rostedt. Steven uses Emacs]]
+  - [[https://lists.gnu.org/mailman/listinfo/emacs-humanities][New emacs-humanities mailing list]], [[https://lists.gnu.org/archive/html/emacs-humanities/2020-12/msg00005.html][introduction]]
+- Other:
+  - [[http://www.modernemacs.com/post/custom-eshell/][Making eshell your own | Modern Emacs]]
+  - [[https://takeonrules.com/2020/12/20/many-small-tools-make-light-work-in-emacs/][Many Small Tools Make Light Work (in Emacs) // Take on Rules]] - yasnippet, Hugo shortcodes
+  - [[https://www.reddit.com/r/emacs/comments/kgoyjn/emacs_as_a_checksum_utility/][Emacs as a checksum utility]]
+  - [[https://christiantietze.de/posts/2020/12/markdown-mode-imenu-fix/][Christian Tietze: Markdown Mode Fixes Imenu Tag Generator]]
+  - [[https://youtu.be/usCfMstCZ7E][The Perfect Panel: Integrating Polybar with Emacs (LIVE 12/18, 9:15 am PST)]] ([[https://reddit.com/r/emacs/comments/kfmjee/the_perfect_panel_integrating_polybar_with_emacs/][Reddit]]) - EXWM
+  - [[https://www.youtube.com/watch?v=_qXZNfRcNnw][Dynamic Tiling Windows like dwm in Emacs with Edwina]] ([[https://reddit.com/r/emacs/comments/keitl7/dynamic_tiling_windows_like_dwm_in_emacs_with/][Reddit]])
+- New packages:
+  - [[package:company-maxima][company-maxima]]: Maxima company integration
+  - [[package:diredc][diredc]]: Extensions for dired
+  - [[package:embark][embark]]: Conveniently act on minibuffer completions
+  - [[package:helm-switch-to-repl][helm-switch-to-repl]]: Helm action to switch directory in REPLs
+  - [[package:ispc-mode][ispc-mode]]: Syntax coloring for ispc programs
+  - [[package:ivy-migemo][ivy-migemo]]: Use migemo on ivy
+  - [[package:metal-archives-shopping-list][metal-archives-shopping-list]]: Add shopping list generation support to metal archives
+  - [[package:org-anki][org-anki]]: Synchronize org-mode entries to Anki
+  - [[package:org-tree-slide-pauses][org-tree-slide-pauses]]: Bring the pause command from Beamer to org-tree-slide
+  - [[package:peertube][peertube]]: Query and download PeerTube videos
+  - [[package:planemo-mode][planemo-mode]]: Minor mode for editing Galaxy XML files
+  - [[package:recomplete][recomplete]]: Immediately (re)complete actions
+  - [[package:spdx][spdx]]: Insert SPDX license and copyright headers
+
+Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-12][emacs-devel]].
 ** 2020-12-14 Emacs news
    :PROPERTIES:
    :ID:       o2b:056b6201-efb1-4abd-ae05-b0d04e1ab6a0
