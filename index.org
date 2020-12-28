@@ -43,6 +43,100 @@ No feed available: http://ul.io/nb/, https://www.onwebsecurity.com/tag/emacs.htm
 #+End_src
 
 #+RESULTS:
+** 2020-12-28 Emacs news
+   :PROPERTIES:
+   :ID:       o2b:a11d3727-29ef-4ebf-bcfe-18ce73d05656
+   :POST_DATE: [2020-12-28 Mon 01:18]
+   :BLOG:     sacha
+   :POSTID:   29656
+   :END:
+
+- Beginner:
+  - [[https://github.com/AbstProcDo/Master-Emacs-From-Scratch-with-Solid-Procedures][Master Emacs From Scratch with Solid Procedures: 帮你精通 Emacs]]
+- Emacs configuration:
+  - [[https://countvajhula.com/2020/12/27/turn-your-emacs-d-into-an-emacs-distribution-with-straight-el/][Turn your .emacs.d Into an Emacs Distribution (with Straight.el) – Terminally Undead]] ([[https://www.reddit.com/r/emacs/comments/kkzyht/turn_your_emacsd_into_an_emacs_distribution_with/][Reddit]])
+  - [[https://github.com/zcaudate/eta][Eta - multi dispatch keybindings]] ([[https://reddit.com/r/emacs/comments/ki44je/eta_multi_dispatch_keybindings/][Reddit]])
+  - [[https://github.com/kinnala/diy-emacs][A template for straight.el based configuration]] ([[https://reddit.com/r/emacs/comments/kl81gc/a_template_for_straightel_based_configuration/][Reddit]])
+  - [[https://github.com/zcaudate/etude][etude: use-package based emacs.d config]]
+- Emacs Lisp:
+  - [[https://randomgeekery.org/post/2020/12/learning-a-little-elisp/][Learning a little elisp | Random Geekery]]
+  - [[https://www.reddit.com/r/emacs/comments/kklv3k/making_task_wizards_easily_with_eieio/][Making task wizards easily with EIEIO]]
+  - [[https://github.com/magit/magit/issues/4279#issuecomment-751532998][Demonstrating how font-lock-studio makes debugging font-lock-keywords easy]] ([[https://reddit.com/r/emacs/comments/klez7y/demonstrating_how_fontlockstudio_makes_debugging/][Reddit]])
+  - [[https://christiantietze.de/posts/2020/12/emacs-scroll-performance-projectile/][Christian Tietze: How to Profile Slow Scrolling (And Other Performance Bottlenecks) in Emacs]]
+- Emacs development:
+  - [[https://nullprogram.com/blog/2017/09/07/][Gap Buffers Are Not Optimized for Multiple Cursors]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=0ebea8ffbfb7b9b1bd92f30011df0875b54eb663][Make byte-compiler warn about wide docstrings]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=8c383456291185b029b469061338b5b797a49747][Rename and document the built-in xref-show-definitions-function's]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=8d5a6c9ef5272b2a98c2faa0a9308ab69f011570][* lisp/emacs-lisp/package.el (package-archives): Add NonGNU ELPA]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=80420faf4921ffe5e9d4c4f9595941acf3156e50][Improve "find definition" in *Help* buffers]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=0f790464d547dd57a857d88dab309b286067ac45][Add new predicates for sequence lengths]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=fd658b810056d41fad9edeba8bdba0594fc87867][Rename Tramp method "media" to "mtp" (Bug#45402)]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=3649160f618e7ec36dcca7be3212b3572c03de38][New coding-systems for EBCDIC variants]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=174327cefa7b2982722ed5b33248cc6adc5b31bc][Make `remove-hook' interactive]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=269cec13a2fc6ac18b675d0dadd07a3d4e074a72][Remove `string-slice' -- it's not very well defined]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=3be0dc659fd1a5bc976a545c0bdeda9a3d39e084][authinfo-mode: add option to not hide any elements (and add font-lock)]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=33210c8dc07fe8e1aed302aff09cac9ba798a221][* lisp/tab-line.el: New options, faces, and functions]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=3cbd4169d6dd370b4fa8180fc2adfbf426f57837][Reject filenames containing NUL bytes.]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=9920929e7b538f8bf8fb1dd7a9ae7cd1fe5d2b31][Re-order the items in `profiler-report' output.]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=f329a3180ead740bb85e1edfc48ae360a56f7ffd][Add string-chop-newline]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=cf2e8321850f81d9eb0ebc23a4887f12dc3dbfac][Rename slice-string to string-slice]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=b3dec3176673fa99e57e3916b36ea4367d47c0fa][Add `string-pad']]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=87e422f1044068a4d27e5e4bfdbc664d9e4bbc43][Beef up the Emacs string utility set a bit]]: string-clean-whitespace, string-fill, string-limit
+- Appearance:
+  - [[https://v.redd.it/ip710nlv14761][Let it snow in Emacs! (now with wind, varying intensity, and accumulation on terrain)]] ([[https://reddit.com/r/emacs/comments/kjd2z2/let_it_snow_in_emacs_now_with_wind_varying/][Reddit]])
+  - [[https://github.com/rougier/emacs-svg-icon][[ANN] A small package to create (SVG) icons on the fly (from online collections) that fit exactly 2x1 characters.]] ([[https://reddit.com/r/emacs/comments/kiywvi/ann_a_small_package_to_create_svg_icons_on_the/][Reddit]])
+  - [[https://git.sr.ht/~wklew/golden][golden: Modern derivative of golden-ratio.el for automatic window sizing]]
+  - [[https://github.com/zkry/solar-viz.el][solar-viz.el: a package to visualize sunrise/sunset data]]
+  - [[https://www.reddit.com/r/emacs/comments/klcjlw/logically_nested_fruit_salad/][Logically nested fruit salad]] - prism.el, syntax highlighting
+  - [[https://github.com/legalnonsense/number-separator.el][number-separator.el: Automatically separate groups of three (or four) numbers with commas (or periods)]]
+  - [[https://protesilaos.com/codelog/2020-12-27-modus-themes-review-rainbow-delimiters/][Protesilaos Stavrou: Modus themes: review rainbow-delimiters faces]] ([[https://reddit.com/r/emacs/comments/kl58or/protesilaos_stavrou_modus_themes_review/][Reddit]])
+  - [[https://codeberg.org/if/visions][visions: An emacs theme]]
+- Org Mode:
+  - [[https://yannherklotz.com/blog/2020-12-21-introduction-to-luhmanns-zettelkasten.html][Introduction to Luhmann's Zettelkasten in pure Org]] ([[https://reddit.com/r/orgmode/comments/khnfbc/introduction_to_luhmanns_zettelkasten_in_pure_org/][r/orgmode]], [[https://reddit.com/r/emacs/comments/khnh7u/introduction_to_luhmanns_zettelkasten_in_pure_org/][r/emacs]])
+  - [[https://youtu.be/0fbrVArRxUo][Inside Emacs #6 (part 4) - org-mode - org-table-sort-lines - copy/paste region - insert hlines]]
+  - [[https://i.redd.it/3nds2ax5d5761.png][Org-marginalia to write margin notes for your text files]] ([[https://reddit.com/r/emacs/comments/kjgjlr/orgmarginalia_to_write_margin_notes_for_your_text/][Reddit]])
+  - [[https://github.com/toshism/org-linker][org-linker: Utility package for linking org headings in various ways.]]
+  - [[https://tecosaur.github.io/emacs-config/config.html#nicer-generated-heading][Stability of Org TOC links: A function for producing nice short links, like an inferior version of reftex-label.]]
+  - [[https://i.redd.it/nlhm2vdzhn661.png][org-special-block-extras v2 released ;; Pretty HTML & LaTeX]] ([[https://reddit.com/r/emacs/comments/khw9ns/orgspecialblockextras_v2_released_pretty_html/][Reddit]])
+  - [[https://youtu.be/tGgat6XJ2tk][using Emacs org-mode as rest client replacement]] ([[https://reddit.com/r/emacs/comments/kl54j3/using_emacs_orgmode_as_rest_client_replacement/][Reddit]])
+  - [[https://colekillian.com/posts/org-pomodoro-and-polybar/][Org Pomodoro and Polybar]]
+  - [[https://github.com/wakatara/rofi-org-todo][rofi-org-todo: A rofi script to allow easy hotkey adding of org-mode TODOs to an inbox.org file for later processing.]]
+  - [[https://lists.gnu.org/archive/html/emacs-orgmode/2020-12/msg00679.html][Yet another browser extension for capturing notes]]
+- Completion:
+  - [[https://youtu.be/T9kygXveEz0][Give Emacs Psychic Completion Powers with prescient.el]] ([[https://reddit.com/r/emacs/comments/kitzsc/give_emacs_psychic_completion_powers_with/][Reddit]])
+  - [[https://www.manueluberti.eu//emacs/2020/12/25/embark/][Embarking in a new affair with completions]] ([[https://reddit.com/r/emacs/comments/kk89rs/embarking_in_a_new_affair_with_completions/][Reddit]])
+  - [[https://github.com/Fuco1/sallet/blob/master/dev-notes.org][sallet: Developer notes. Sallet is a new completion framework]]
+- Coding:
+  - [[https://ag91.github.io/blog/2020/12/27/emacs-as-your-code-compass-how-complex-is-this-code/][Emacs as your code-compass: how complex is this code?]] ([[https://reddit.com/r/emacs/comments/kl3glz/emacs_as_your_codecompass_how_complex_is_this_code/][Reddit]])
+  - [[http://ag91.github.io/blog/2020/12/24/emacs-as-your-code-compass-looking-at-hotspots-evolution][Andrea: Emacs as your code-compass: looking at hotspots evolution]]
+  - [[https://github.com/zcaudate/etude/blob/master/automation/Ubuntu.org][Emacs org-mode build document for self containerisation.]] ([[https://reddit.com/r/emacs/comments/ki46xz/emacs_orgmode_build_document_for_self/][Reddit]])
+  - [[https://notxor.nueva-actitud.org/2020/12/23/slime-lisp-y-emacs.html][lisp, slime y emacs]]
+- Mail and news:
+  - [[http://juanjose.garciaripoll.com/blog/emacs-wanderlust-email/index.html][Handling email with Emacs' Wanderlust]] ([[https://reddit.com/r/planetemacs/comments/kj4z27/handling_email_with_emacs_wanderlust/][Reddit]])
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/ki09cm/weekly_tipstricketc_thread/][Weekly tips/trick/etc/ thread]]
+  - [[http://hongchao.me/cli-and-emacs/][Emacs is the two dimensional Command-line Interface]] ([[https://reddit.com/r/emacs/comments/kk1voo/emacs_is_the_two_dimensional_commandline_interface/][Reddit]])
+  - [[http://ag91.github.io/blog/2020/12/22/mastering-emacs-is-a-slow-process-an-archeological-tour-of-my-(archived)-beginnings][Andrea: Mastering Emacs is a slow process: an archeological tour of my (archived) beginnings]]
+  - [[https://discord.com/invite/swuxy5AAgT][Discord Channel for Emacs LSP]]
+- Other:
+  - [[https://www.reddit.com/r/emacs/comments/kixjtt/easy_pretty_screenshots/][Easy (pretty) screenshots]]
+  - [[https://github.com/xuchunyang/eshell-git-prompt][eshell-git-prompt: Some Eshell prompts for Git users]]
+  - [[https://www.reddit.com/r/emacs/comments/kkaqyj/some_templatebased_functions_of_eev_that_are_not/][Some template-based functions of eev that are not five-minute hacks]] (also [[http://angg.twu.net/2020-some-template-based.html][blog post]] and [[http://angg.twu.net/eev-videos/2020_some_template-based_functions.mp4][MP4]])
+  - [[https://www.reddit.com/r/emacs/comments/kjwo7o/library_for_scraping_training_data_from_polar/][Library for scraping training data from Polar website]]
+  - [[https://youtu.be/ZjCRxAMPdNc][Unlock the Power of the Daemon with emacsclient]] ([[https://reddit.com/r/emacs/comments/khotr7/unlock_the_power_of_the_daemon_with_emacsclient/][Reddit]])
+  - [[https://www.bennee.com/~alex/blog/2020/12/24/dired-rsync-06-released/][Alex Bennée: dired-rsync 0.6 released]]
+  - [[https://www.bennee.com/~alex/blog/2020/12/24/edit-with-emacs-v116-released/][Alex Bennée: Edit with Emacs v1.16 released]]
+  - [[https://irreal.org/blog/?p=9366][Irreal: Finding Pangrams in the NYT Spelling Bee Puzzle]]
+  - [[https://github.com/juanjosegarciaripoll/emacs-build][emacs-build: Scripts to build a distribution of Emacs from sources, using MSYS2 and Mingw64(32)]] ([[https://www.reddit.com/r/emacs/comments/kjpz4i/windows_emacs_pdftools_mu_mbsync_hunspell/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/kk3ep0/guide_compile_emacs_with_nativecomp_on_windows_10/][Guide - Compile emacs with nativecomp on Windows 10 with MSYS2]]
+  - [[https://github.com/olopost/windows-utils][windows-utils: Launch directly emacs from Windows with wsl2 and x410 window manager]]
+  - [[https://www.ucl.ac.uk/~ucecesf/remarkable/#org788b61f][Software for the reMarkable tablet]] (2019)
+- New packages:
+  - [[package:default-font-presets][default-font-presets]]: Support selecting fonts from a list of presets
+  - [[package:snow][snow]]: Let it snow in Emacs!
+
+Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-12][emacs-devel]].
+
 ** 2020-12-21 Emacs news
    :PROPERTIES:
    :ID:       o2b:af4b0bba-68bb-4a84-8197-c9d597a99479
@@ -65,7 +159,7 @@ No feed available: http://ul.io/nb/, https://www.onwebsecurity.com/tag/emacs.htm
   - [[https://www.reddit.com/r/emacs/comments/kev7o8/aur_arch_linux_package_delivering_emacs_binaries/][AUR (Arch Linux) package delivering Emacs binaries with native-comp and Wayland support enabled]]
   - [[https://github.com/geza-herman/emacs/tree/fast-emacs][fast-emacs branch: Emacs branch based on native-comp branchwith improvements to process IO and rendering]]
   - [[https://lists.gnu.org/archive/html/emacs-devel/2020-12/msg00501.html][Discussion on NonGNU ELPA issue tracking]] 
-  - [[https://lists.gnu.org/archive/html/emacs-devel/2020-12/msg01120.html][Emacs 27.1.90 is out]] ([[ [[https://irreal.org/blog/?p=9359][Irreal]]) - first pretest for 27.2
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2020-12/msg01120.html][Emacs 27.1.90 is out]] ([[https://irreal.org/blog/?p=9359][Irreal]]) - first pretest for 27.2
   - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=ecb5ebf156280be1859f181208306e4c55af3e80][Improve make-process in Tramp]]
   - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=1a0a11f7d2d1dbecb9f754b1e129d50e489058e6][Inhibit buffer hooks in temporary buffers]]
   - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=9f7e0a3e7d33d79f7f0319cd0fc64920988b0039][bibtex-mode: Permit user-defined schemes for sorting entries.]]
@@ -17630,7 +17724,7 @@ One more little thing automated...
     (interactive)
     (let ((packages
            (with-temp-buffer
-             (insert-file-contents "~/.emacs-news/package-list.el")
+             (insert-file-contents "package-list.el")
              (goto-char (point-min))
              (my/describe-packages
               (reverse (-difference (mapcar 'car package-archive-contents)
@@ -17646,8 +17740,7 @@ One more little thing automated...
     (interactive)
     (require 'dash)
     (when package-archive-contents
-      (with-temp-buffer
-        (find-file "~/.emacs-news/package-list.el")
+      (with-current-buffer (find-file-noselect "package-list.el")
         (goto-char (point-min))
         (git-auto-commit-mode 1)
         (let* ((old-list (read (current-buffer)))
