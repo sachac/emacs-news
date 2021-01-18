@@ -2,7 +2,10 @@
 
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2018-01][emacs-devel]].
 
-[[~/code/emacs-calendar/README.org]]
+- [[*Code][Jump to code section]]
+
+[[::code][~/code/emacs-calendar/README.org]]
+
 * STARTED [#A] Do another Emacs News review   
   SCHEDULED: <2020-11-16 Mon .+1w>
   :PROPERTIES:
@@ -44,12 +47,95 @@ No feed available: http://ul.io/nb/, https://www.onwebsecurity.com/tag/emacs.htm
 #+End_src
 
 #+RESULTS:
+** 2021-01-18 Emacs news
+   :PROPERTIES:
+   :ID:       o2b:2ccb8430-1ed6-4e45-a305-89855aaedd9d
+   :POST_DATE: [2021-01-18 Mon 01:29]
+   :POSTID:   29661
+   :BLOG:     sacha
+   :END:
+
+- Upcoming events:
+  - [[https://www.meetup.com/emacs-ffm/events/275226261/][Jan 20, 2021 8pm-10pm GMT+1: Emacs Frankfurt (virtual)]]
+  - [[https://emacs-apac.gitlab.io/announcements/january-2021/][Jan 23, 2021 14:00 IST: Emacs APAC (virtual, in English)]]
+- Emacs configuration:
+  - [[https://www.reddit.com/r/emacs/comments/kz347f/what_parts_of_your_config_do_you_like_best/][What parts of your config do you like best?]]
+  - [[https://www.reddit.com/r/emacs/comments/kxxkg9/how_do_guys_include_secrets_in_their_initel/][How do guys include secrets in their init.el?]]
+  - [[https://youtu.be/nZ_T7Q49B8Y][How to Encrypt Your Passwords with Emacs]] ([[https://reddit.com/r/emacs/comments/kv2ziq/how_to_encrypt_your_passwords_with_emacs/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/kxd9z4/grouped_bindings_in_whichkey/][Grouped bindings in which-key]]
+  - [[https://www.taingram.org/blog/emacs-client.html][Emacsclient Setup with Desktop Integration]] ([[https://reddit.com/r/emacs/comments/ky9jzh/emacsclient_setup_with_desktop_integration/][Reddit]])
+  - [[https://github.com/lijigang/config-orgmode-within-doom][Emacs configuration created for heavy Orgmode users among non-programmers.]]
+- Emacs Lisp:
+  - [[https://youtu.be/XXpgzyeYh_4][Types, Conditionals, and Loops - Learning Emacs Lisp #2 (LIVE 1/15, 9:30 am PST)]] ([[https://reddit.com/r/emacs/comments/kxyfg1/types_conditionals_and_loops_learning_emacs_lisp/][Reddit]])
+  - [[https://tech.toryanderson.com/2021/01/11/applying-a-replacement-map-to-characters-in-emacs/][Tory Anderson: Applying a replacement map to characters in emacs]]
+  - [[https://www.murilopereira.com/a-rabbit-hole-full-of-lisp/][A rabbit hole full of Lisp]] ([[https://reddit.com/r/emacs/comments/kx2jrc/a_rabbit_hole_full_of_lisp/][Reddit]])
+  - [[https://irreal.org/blog/?p=9418][Irreal: Yesterday's Date]]
+  - [[https://github.com/flashcode/impostman][flashcode/impostman – Import of Postman collections in Emacs]] ([[https://reddit.com/r/emacs/comments/kuzt8q/flashcodeimpostman_import_of_postman_collections/][Reddit]])
+- Emacs development:
+  - [[https://github.com/emacs-ng/emacs-ng][emacs-ng: Deno's Javascript and Async I/O environment, Mozilla's Webrender (experimental opt-in feature), and others]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=b215e83a784be1118bb5d729f17597c4f1c62b52][Improve support for the Cham script and languages]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=0ab56a4e935b3aa759229923804ba33c841f425c][* lisp/emacs-lisp/pcase.el: Add support for `not` to `pred`]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=792ba7196ff1171f44571d9ba9b88b96d5be85ad][Add a new function 'buffer-line-statistics']]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=ca024b0575c4ea754c4c6e6dbf21ed610e0d1fb8][Add a new variable `inhibit-interaction']]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=00908e052a48ed8006485069ce2b2b761f040b67][Mark previous erc-services change as not needing documentation]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=42e72f4adee8809ed754a14e11e058f40b337f78][Support using auth-source for NickServ passwords in ERC]]
+- Appearance:
+  - [[https://notes.neeasade.net/color-spaces.html][reasoning about colors]] ([[https://reddit.com/r/planetemacs/comments/kzbvj7/reasoning_about_colors/][Reddit]])
+  - [[https://protesilaos.com/codelog/2021-01-11-modus-themes-review-select-faint-colours/][Protesilaos Stavrou: Modus themes: review of select "faint" colours]]
+  - [[https://www.reddit.com/r/emacs/comments/ky0ol6/rfc_theme_emacs_with_a_6color_palette_with/][RFC: theme emacs with a 6-color palette with semantics theming]]
+  - [[http://xelf.me/gunmetal-theme.el][gunmetal-theme.el]] ([[https://reddit.com/r/planetemacs/comments/kw4rgh/gunmetalthemeel/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/kyupp7/ann_blight_a_library_to_control_display/][[ANN] Blight, a library to control display backlighting]]
+- Navigation:
+  - [[https://www.youtube.com/watch?v=XCIMd9Ndvbw&feature=youtu.be][Emacs xref-rst package demo]]
+  - [[https://github.com/justinweiss/fuzzy-find-in-project][fuzzy-find-in-project: Emacs bindings to the fuzzy_file_finder gem]]
+- Org Mode:
+  - [[https://blog.lambda.cx/posts/org-agenda-new-tab/][Org Agenda As My New Tab Page]] ([[https://reddit.com/r/orgmode/comments/kxj2vp/org_agenda_as_my_new_tab_page/][Reddit]])
+  - [[https://www.alexeyshmalko.com/2020/literate-config/][4 Years with Literate Configuration]] ([[https://reddit.com/r/emacs/comments/kw9dlp/4_years_with_literate_configuration/][Reddit]])
+  - [[https://i.redd.it/v2bsud9jvcb61.png][“Programming ≈ Proving” - Org-mode lists as proof trees]] ([[https://reddit.com/r/emacs/comments/kxdr7x/programming_proving_orgmode_lists_as_proof_trees/][Reddit]])
+  - [[https://www.reddit.com/r/orgmode/comments/kwmmqq/accircuits_solver/][AC-Circuits solver]]
+  - [[https://github.com/DogLooksGood/org-html-themify][org-html-themify: Themify org-mode HTML export with installed color theme.]]
+  - [[https://www.reddit.com/r/emacs/comments/kypsi8/orglinguisticsel_wip_convenience_stuff_for/][org-linguistics.el: WIP convenience stuff for linguistics (for now three special blocks for simple trees, glosses and enumerated sentences w/o touching LaTeX)]]
+  - [[https://notxor.nueva-actitud.org/2021/01/13/publicar-html-con-org-mode.html][Publicar html con org-mode]]
+- Coding:
+  - [[http://ag91.github.io/blog/2021/01/12/emacs-as-your-code-compass-let-history-show-you-which-files-to-edit-next][Andrea: Emacs as your code-compass: let history show you which files to edit next]]
+  - [[https://emacs-lsp.github.io/lsp-mode/page/remote/][Remote LSP Mode]]
+  - [[https://www.reddit.com/r/emacs/comments/kz3rfb/ann_codecells_open_jupyter_notebooks_directly_in/][[ANN] code-cells: Open Jupyter notebooks directly in Emacs]]
+  - [[https://gitlab.com/nathanfurnal/dotemacs/-/snippets/2060535][I created a gist with a full python config with Emacs]] ([[https://reddit.com/r/emacs/comments/kwldon/i_created_a_gist_with_a_full_python_config_with/][Reddit]])
+  - [[https://github.com/thisch/gerrit.el][gerrit.el: Interact with the gerrit code review service from emacs]] ([[https://reddit.com/r/emacs/comments/ky4y23/gerritel_interact_with_the_gerrit_code_review/][Reddit]])
+  - [[http://ag91.github.io/blog/2021/01/11/coverlay-for-scala-or-how-to-produce-lcov-from-cobertura][Andrea: Coverlay for Scala, or how to produce lcov from cobertura]]
+- Mail and news:
+  - [[https://github.com/enphysoft/search-gmail-using-message-id][search-gmail-using-message-id: The emacs-lisp function is to search gmail using a Message ID.]]
+  - [[https://irreal.org/blog/?p=9411][Irreal: Setting Up Mu4e]]
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/kvmmq3/weekly_tipstricketc_thread/][Weekly tips/trick/etc/ thread]]
+  - [[https://www.murilopereira.com/the-values-of-emacs-the-neovim-revolution-and-the-vscode-gorilla/][The values of Emacs, the Neovim revolution, and the VSCode gorilla]] ([[https://reddit.com/r/emacs/comments/kzfazl/the_values_of_emacs_the_neovim_revolution_and_the/][Reddit]], [[https://news.ycombinator.com/item?id=25810427][HN]])
+  - [[https://tecosaur.com/public/figures/EmacsSurveyAnalysis2020/tm_emacs_do_one_thing_differently_top_responses.txt][What is the one thing that Emacs should do differently? Top responses from Emacs Survey Analysis 2020.]]
+- Other:
+  - [[https://acidwords.com/posts/2021-01-12-edit-files-in-remote-docker-container.html][Sanel Zukan: Edit files in (remote) Docker containers]]
+  - [[https://github.com/mpsq/emacs-gcc-wayland-devel-builder][emacs-gcc-wayland-devel-builder: Emacs with native compilation ("gcc") + Wayland support]] ([[https://reddit.com/r/planetemacs/comments/kvzdny/emacsgccwaylanddevelbuilder_emacs_with_native/][Reddit]])
+  - [[http://mbork.pl/2021-01-11_Deleting_last_entry_from_the_kill_ring][Marcin Borkowski: Deleting last entry from the kill ring]]
+  - [[https://github.com/jcaw/voicemacs][voicemacs: 🗣️ Utilities for controlling Emacs with your voice. Not production-ready, but you can use it as a reference.]]
+  - [[https://www.youtube.com/watch?v=pW9OhtNc5LA][SchemeMosaic demo video with EIEIO Wizards, Beatboxing, Beat slicing, and Neural Networks]] ([[https://reddit.com/r/emacs/comments/kwvcwe/schememosaic_demo_video_with_eieio_wizards/][Reddit]])
+  - [[https://github.com/hubisan/emacs-wsl][Emacs with the Windows Subsystem for Linux (WSL)]]
+- New packages:
+  - [[package:avy-embark-collect][avy-embark-collect]]: Use avy to jump to Embark Collect entries
+  - [[package:code-cells][code-cells]]: Work with code split into cells and Jupyter notebooks
+  - [[package:counsel-edit-mode][counsel-edit-mode]]: Edit results of counsel commands in-place
+  - [[package:embark-consult][embark-consult]]: Consult integration for Embark
+  - [[package:flycheck-hledger][flycheck-hledger]]: Flycheck module to check hledger journals
+  - [[package:holy-books][holy-books]]: Org-mode links/tooltips/lookups for Quran & Bible
+  - [[package:indent-control][indent-control]]: Management for indentation level
+  - [[package:virtual-comment][virtual-comment]]: Virtual Comments
+
+Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2021-01][emacs-devel]].
+
 ** 2021-01-11 Emacs news
    :PROPERTIES:
    :ID:       o2b:fcf89dcf-e918-4b4c-87c7-4917203b8b49
    :POST_DATE: [2021-01-11 Mon 01:20]
    :BLOG:     sacha
    :POSTID:   29660
+   :Effort:   1:30
    :END:
 
 - Upcoming events:
@@ -11548,7 +11634,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 - [[https://www.wisdomandwonder.com/article/10756/emacsorg-mode-two-ways-to-reload-file-variables-in-a-hydra][Two Ways To Reload File Variables Using A Hydra]]
 
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2018-04][emacs-devel]].
-** [#A] 2018-04-02 Emacs news
+** 2018-04-02 Emacs news
    :PROPERTIES:
    :ID:       o2b:2df86197-bd9a-41fe-aa80-e3ce0f21fd04
    :POST_DATE: [2018-04-02 Mon 02:22]
@@ -12429,7 +12515,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 
 
-* 2018-02-12 Emacs news
+** 2018-02-12 Emacs news
   :PROPERTIES:
   :ID:       o2b:f8fbcff4-30d9-4365-8d61-eda82aa4d86a
   :POST_DATE: [2018-02-12 Mon 18:35]
@@ -12468,7 +12554,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2018-01][emacs-devel]].
 
-* 2018-02-05 Emacs news
+** 2018-02-05 Emacs news
   :PROPERTIES:
   :ID:       o2b:19e7a370-8c1e-47ef-bd5f-498036da58f7
   :POST_DATE: [2018-02-05 Mon 11:09]
@@ -12536,7 +12622,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2018-02][emacs-devel]].
 
-* 2018-01-29 Emacs news
+** 2018-01-29 Emacs news
   :PROPERTIES:
   :ID:       o2b:0b2a0cfd-5f1d-4216-89dd-628f9e8f762c
   :POST_DATE: [2018-01-29 Mon 17:44]
@@ -12581,7 +12667,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2018-01][emacs-devel]].
 
-* 2018-01-23 Emacs news
+** 2018-01-23 Emacs news
   :PROPERTIES:
   :ID:       o2b:a3451cdb-7648-4ef5-9a6e-4bd38dd91c8d
   :POST_DATE: [2018-01-23 Tue 00:20]
@@ -12648,7 +12734,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2018-01][emacs-devel]].
 
-* 2018-01-15 Emacs news
+** 2018-01-15 Emacs news
   :PROPERTIES:
   :ID:       o2b:efeca511-1949-408b-8a7a-615b7047911c
   :POST_DATE: [2018-01-16 Tue 00:51]
@@ -12684,7 +12770,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2018-01][emacs-devel]].
 
 
-* 2018-01-09 Emacs news
+** 2018-01-09 Emacs news
   :PROPERTIES:
   :ID:       o2b:4034de4c-6b6e-4885-b9e7-9de58248903c
   :POST_DATE: [2018-01-09 Tue 23:43]
@@ -12732,7 +12818,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2018-01][emacs-devel]].
 
-* 2018-01-01 Emacs news
+** 2018-01-01 Emacs news
   :PROPERTIES:
   :ID:       o2b:991b45fa-49b0-49ac-8c78-45f044987522
   :POST_DATE: [2018-01-02 Tue 09:57]
@@ -12773,7 +12859,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2017-12][emacs-devel]].
 
-* 2017-12-26 Emacs news
+** 2017-12-26 Emacs news
   :PROPERTIES:
   :ID:       o2b:c3b75a42-50e0-4a35-88e6-556903e9fe17
   :POST_DATE: [2017-12-26 Tue 00:55]
@@ -12820,7 +12906,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2017-12][emacs-devel]].
 
-* 2017-12-19 Emacs news
+** 2017-12-19 Emacs news
   :PROPERTIES:
   :ID:       o2b:8998b8b3-d111-4b89-a9f9-344173c02703
   :POST_DATE: [2017-12-21 Thu 04:58]
@@ -12869,7 +12955,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2017-12][emacs-devel]].
 
 
-* 2017-12-11 Emacs news
+** 2017-12-11 Emacs news
   :PROPERTIES:
   :ID:       o2b:2f65244e-836d-4802-80f8-be468fd02f98
   :POST_DATE: [2017-12-11 Mon 04:24]
@@ -12907,7 +12993,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2017-12][emacs-devel]].
 
-* 2017-12-04 Emacs news
+** 2017-12-04 Emacs news
   :PROPERTIES:
   :ID:       o2b:b0caa99b-a789-43ea-aedf-0dfd404f7aa5
   :POST_DATE: [2017-12-04 Mon 12:00]
@@ -12966,7 +13052,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2017-12][emacs-devel]].
 
-* 2017-11-27 Emacs news
+** 2017-11-27 Emacs news
   :PROPERTIES:
   :ID:       o2b:262c12c9-3f8e-471c-ad70-b043e77a3190
   :POST_DATE: [2017-11-27 Mon 03:59]
@@ -13005,7 +13091,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 [[https://github.com/DamienCassou/json-navigator][json-navigator: View and navigate JSON structures]]
 [[https://github.com/fourier/ztree][ztree: Directory tree comparison mode for Emacs]]
 
-* 2017-11-20 Emacs news
+** 2017-11-20 Emacs news
   :PROPERTIES:
   :ID:       o2b:5529e0d3-0934-4b51-a724-b3a2d616607a
   :POST_DATE: [2017-11-20 Mon 02:48]
@@ -13056,7 +13142,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2017-11][emacs-devel]].
 
-* 2017-11-13 Emacs news
+** 2017-11-13 Emacs news
   :PROPERTIES:
   :ID:       o2b:7921f338-1f2a-433e-b300-f6ef0f1f5049
   :POST_DATE: [2017-11-14 Tue 01:48]
@@ -13111,7 +13197,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2017-10][emacs-devel]].
 
-* 2017-11-06 Emacs news
+** 2017-11-06 Emacs news
   :PROPERTIES:
   :ID:       o2b:e0e599f5-1dfb-433d-807f-fb3d0031ccca
   :POST_DATE: [2017-11-06 Mon 03:50]
@@ -13165,7 +13251,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2017-11][emacs-devel]].
 
-* 2017-10-30 Emacs news
+** 2017-10-30 Emacs news
   :PROPERTIES:
   :ID:       o2b:5b8535a4-b30a-464b-b64f-1800d16807c6
   :POST_DATE: [2017-10-30 Mon 03:58]
@@ -13212,7 +13298,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2017-10][emacs-devel]].
 
-* 2017-10-23 Emacs news
+** 2017-10-23 Emacs news
   :PROPERTIES:
   :ID:       o2b:2650d022-0b0e-43c6-9ed5-c9bdb486c81f
   :POST_DATE: [2017-10-23 Mon 02:14]
@@ -13259,7 +13345,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 Thanks for your patience!
 
-* 2017-08-21 Emacs news
+** 2017-08-21 Emacs news
   :PROPERTIES:
   :ID:       o2b:819dcb67-0805-4574-998d-fb0ce495dfe4
   :POST_DATE: [2017-08-21 Mon 03:16]
@@ -13321,7 +13407,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
 
-* 2017-08-14 Emacs news
+** 2017-08-14 Emacs news
   :PROPERTIES:
   :ID:       o2b:3bde8fec-99e8-450c-8816-16b1efae4be6
   :POST_DATE: [2017-08-14 Mon 02:33]
@@ -13397,7 +13483,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2017-08-07 Emacs news
+** 2017-08-07 Emacs news
   :PROPERTIES:
   :ID:       o2b:865d2d78-3987-421b-bb11-038f17fb5942
   :POST_DATE: [2017-08-10 Thu 02:05]
@@ -13446,7 +13532,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2017-07-31 Emacs news
+** 2017-07-31 Emacs news
   :PROPERTIES:
   :ID:       o2b:0f6d3979-5847-42d7-bef1-ffedd2e63430
   :POST_DATE: [2017-07-31 Mon 02:37]
@@ -13523,7 +13609,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2017-07-24 Emacs news
+** 2017-07-24 Emacs news
   :PROPERTIES:
   :ID:       o2b:1e57d387-555f-4199-9273-843821ad068e
   :POST_DATE: [2017-07-24 Mon 01:59]
@@ -13595,7 +13681,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2017-07-17 Emacs news
+** 2017-07-17 Emacs news
   :PROPERTIES:
   :ID:       o2b:e672011a-f373-4162-b559-efeff1a413b6
   :POST_DATE: [2017-07-17 Mon 03:27]
@@ -13672,7 +13758,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2017-07-10 Emacs news
+** 2017-07-10 Emacs news
   :PROPERTIES:
   :ID:       o2b:8c0fb889-4291-4196-ba26-405ef6e69c27
   :POST_DATE: [2017-07-10 Mon 02:45]
@@ -13742,7 +13828,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2017-07-03 Emacs news
+** 2017-07-03 Emacs news
   :PROPERTIES:
   :ID:       o2b:7f38e0be-76b3-4d6c-9bf0-587c32019fb3
   :POST_DATE: [2017-07-03 Mon 02:25]
@@ -13798,7 +13884,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2017-06-26 Emacs news
+** 2017-06-26 Emacs news
   :PROPERTIES:
   :ID:       o2b:ff94b8fd-5ac5-483f-a06f-c793403a3c7c
   :POST_DATE: [2017-06-26 Mon 01:53]
@@ -13872,7 +13958,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2017-06-19 Emacs news
+** 2017-06-19 Emacs news
   :PROPERTIES:
   :ID:       o2b:b608e014-547e-4c0e-ac6c-441f82acf99b
   :POST_DATE: [2017-06-19 Mon 01:24]
@@ -13913,7 +13999,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2017-06-12 Emacs news
+** 2017-06-12 Emacs news
   :PROPERTIES:
   :ID:       o2b:c0db2e81-90f3-4c79-a86b-a57637b88b6e
   :POST_DATE: [2017-06-12 Mon 02:21]
@@ -13957,7 +14043,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
 
-* 2017-06-05 Emacs news
+** 2017-06-05 Emacs news
   :PROPERTIES:
   :ID:       o2b:80168f46-4aa6-4a5f-9cc1-029282359317
   :POST_DATE: [2017-06-10 Sat 02:14]
@@ -14011,7 +14097,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
     
-* 2017-05-29 Emacs news
+** 2017-05-29 Emacs news
   :PROPERTIES:
   :ID:       o2b:62e07738-376d-410e-aae2-9d515d7af0ae
   :POST_DATE: [2017-05-29 Mon 02:01]
@@ -14064,7 +14150,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
 
-* 2017-05-22 Emacs news
+** 2017-05-22 Emacs news
   :PROPERTIES:
   :ID:       o2b:c259c62a-d576-422d-a05c-13fe2c85e21c
   :POST_DATE: [2017-05-22 Mon 03:49]
@@ -14119,7 +14205,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2017-05-15 Emacs news
+** 2017-05-15 Emacs news
   :PROPERTIES:
   :ID:       o2b:7350b9bf-6c29-4824-b9d1-5758a2d34718
   :POST_DATE: [2017-05-15 Mon 02:35]
@@ -14176,7 +14262,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2017-05-08 Emacs news
+** 2017-05-08 Emacs news
   :PROPERTIES:
   :ID:       o2b:04eb5414-2444-4d73-b64a-aa10437e9407
   :POST_DATE: [2017-05-08 Mon 02:00]
@@ -14237,7 +14323,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2017-05-01 Emacs news
+** 2017-05-01 Emacs news
   :PROPERTIES:
   :ID:       o2b:20590a2a-bba8-4c81-a6d6-c5ac77781257
   :POST_DATE: [2017-05-02 Tue 00:35]
@@ -14291,7 +14377,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2017-04-24 Emacs news
+** 2017-04-24 Emacs news
   :PROPERTIES:
   :ID:       o2b:213752c3-d7f6-4a82-836e-bd68bf0e38d8
   :POST_DATE: [2017-04-24 Mon 23:28]
@@ -14342,7 +14428,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2017-04-17 Emacs news
+** 2017-04-17 Emacs news
   :PROPERTIES:
   :ID:       o2b:7aeb1e6c-2b18-44d5-8fff-6dd3df707d4a
   :POST_DATE: [2017-04-17 Mon 01:55]
@@ -14396,7 +14482,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2017-04-10 Emacs news
+** 2017-04-10 Emacs news
   :PROPERTIES:
   :ID:       o2b:26ecfe1a-1759-41f5-97f5-7c2736e69477
   :POST_DATE: [2017-04-12 Wed 01:23]
@@ -14457,7 +14543,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2017-04-03 Emacs news
+** 2017-04-03 Emacs news
   :PROPERTIES:
   :ID:       o2b:2aa7e8aa-6a24-44fd-89b2-0acd03845e10
   :POST_DATE: [2017-04-03 Mon 22:38]
@@ -14513,7 +14599,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2017-03-27 Emacs news
+** 2017-03-27 Emacs news
   :PROPERTIES:
   :ID:       o2b:389ee11b-d6ff-41ad-9810-8ed1508f1c5c
   :POST_DATE: [2017-03-27 Mon 00:50]
@@ -14564,7 +14650,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
 
-* 2017-03-20 Emacs news
+** 2017-03-20 Emacs news
   :PROPERTIES:
   :ID:       o2b:9cb0695e-c685-42a2-8dc9-b2a1ae9d76b0
   :POST_DATE: [2017-03-23 Thu 01:48]
@@ -14626,7 +14712,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
 
-* 2017-03-13 Emacs news
+** 2017-03-13 Emacs news
   :PROPERTIES:
   :ID:       o2b:37e06044-d2db-457a-8f37-d13d8c97b5f8
   :POST_DATE: [2017-03-13 Mon 01:13]
@@ -14688,7 +14774,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
 
-* 2017-03-06 Emacs news
+** 2017-03-06 Emacs news
   CLOSED: [2017-03-07 Tue 01:19]
   :PROPERTIES:
   :ID:       o2b:9621cb42-c81f-4de8-8a12-eb38a75b0b5d
@@ -14752,7 +14838,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2017-02-27 Emacs News
+** 2017-02-27 Emacs News
   :PROPERTIES:
   :ID:       o2b:de20a75f-5e45-49b9-a7af-80834d7d649b
   :POST_DATE: [2017-03-01 Wed 02:46]
@@ -14818,7 +14904,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2017-02-20 Emacs news
+** 2017-02-20 Emacs news
   :PROPERTIES:
   :ID:       o2b:41eefaff-c5a1-4881-a25c-af3e717867bc
   :POST_DATE: [2017-02-20 Mon 22:11]
@@ -14873,7 +14959,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2017-01-13 Emacs News
+** 2017-01-13 Emacs News
   :PROPERTIES:
   :ID:       o2b:b1e74277-71ea-4522-a6de-92d118bb0844
   :POST_DATE: [2017-02-15 Wed 02:21]
@@ -14947,7 +15033,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2017-02-06 Emacs News
+** 2017-02-06 Emacs News
   :PROPERTIES:
   :ID:       o2b:5aae07fb-55b3-4855-8a37-89c3e6456177
   :POST_DATE: [2017-02-07 Tue 00:49]
@@ -14991,7 +15077,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
 
-* 2017-01-30 Emacs News
+** 2017-01-30 Emacs News
   :PROPERTIES:
   :ID:       o2b:85959f39-8faf-4b52-b89e-c1c33c636828
   :POST_DATE: [2017-01-30 Mon 23:13]
@@ -15043,7 +15129,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2017-01-23 Emacs News
+** 2017-01-23 Emacs News
   :PROPERTIES:
   :ID:       o2b:6710839b-f4ee-49dc-b34f-fd2c2b247ec7
   :POST_DATE: [2017-01-24 Tue 07:22]
@@ -15107,7 +15193,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2017-01-16 Emacs News
+** 2017-01-16 Emacs News
   :PROPERTIES:
   :ID:       o2b:090a71b7-66ff-424e-9063-8f433652d759
   :POST_DATE: [2017-01-16 Mon 01:09]
@@ -15158,7 +15244,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
 
-* 2017-01-09 Emacs News
+** 2017-01-09 Emacs News
   :PROPERTIES:
   :ID:       o2b:6efba43a-21f1-4a68-8d2a-390d93012db3
   :POST_DATE: [2017-01-10 Tue 14:15]
@@ -15212,7 +15298,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2017-01-02 Emacs News
+** 2017-01-02 Emacs News
   :PROPERTIES:
   :ID:       o2b:a202a906-9bf9-4ee2-bd31-286636a4b96a
   :POST_DATE: [2017-01-03 Tue 02:21]
@@ -15257,7 +15343,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
 
-* 2016-12-26 Emacs News
+** 2016-12-26 Emacs News
   :PROPERTIES:
   :ID:       o2b:d956b955-19ef-452b-aefb-31b773e47567
   :POST_DATE: [2016-12-26 Mon 20:45]
@@ -15314,7 +15400,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
 
-* 2016-12-19 Emacs News
+** 2016-12-19 Emacs News
   :PROPERTIES:
   :ID:       o2b:b78b4c80-f764-40c8-9ea6-2e6e271d3552
   :POST_DATE: [2016-12-21 Wed 02:37]
@@ -15377,7 +15463,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-12-12 Emacs News
+** 2016-12-12 Emacs News
   :PROPERTIES:
   :ID:       o2b:68dfda7b-a5ed-4c22-b254-70eab1e86bb3
   :POST_DATE: [2016-12-14 Wed 07:41]
@@ -15433,7 +15519,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-12-05 Emacs News
+** 2016-12-05 Emacs News
   :PROPERTIES:
   :ID:       o2b:266759df-a92d-45c9-ab1e-c2e137177ed7
   :POST_DATE: [2016-12-07 Wed 18:05]
@@ -15489,7 +15575,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-11-28 Emacs News
+** 2016-11-28 Emacs News
   :PROPERTIES:
   :ID:       o2b:9b93708f-c678-474d-bbc1-842a72f318e5
   :POST_DATE: [2016-11-28 Mon 13:24]
@@ -15537,7 +15623,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
 
-* 2016-11-21 Emacs News
+** 2016-11-21 Emacs News
   :PROPERTIES:
   :ID:       o2b:f4f88ad2-9ec1-4514-96b9-63c636f4c6b0
   :POST_DATE: [2016-11-21 Mon 14:48]
@@ -15592,7 +15678,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
 
-* 2016-11-14 Emacs News
+** 2016-11-14 Emacs News
   :PROPERTIES:
   :ID:       o2b:270d0094-2162-4f35-a54c-32c9501a4187
   :POST_DATE: [2016-11-14 Mon 21:58]
@@ -15663,7 +15749,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-11-07 Emacs News
+** 2016-11-07 Emacs News
   :PROPERTIES:
   :ID:       o2b:86e41677-0437-4f50-9b59-5dfbef8a82ba
   :POST_DATE: [2016-11-07 Mon 23:51]
@@ -15721,7 +15807,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-10-31 Emacs News
+** 2016-10-31 Emacs News
   :PROPERTIES:
   :ID:       o2b:e25d5cb0-f5ab-427f-8962-a946546b6a68
   :POST_DATE: [2016-11-01 Tue 21:52]
@@ -15774,7 +15860,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-10-24 Emacs News
+** 2016-10-24 Emacs News
   :PROPERTIES:
   :ID:       o2b:cbb031c7-8170-4d24-9ce5-4adbe4884e86
   :POST_DATE: [2016-10-24 Mon 01:32]
@@ -15828,7 +15914,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-10-17 Emacs News
+** 2016-10-17 Emacs News
   :PROPERTIES:
   :ID:       o2b:1f714cad-fd9a-4991-b170-c26925fa9c82
   :POST_DATE: [2016-10-17 Mon 01:10]
@@ -15881,7 +15967,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-10-10 Emacs News
+** 2016-10-10 Emacs News
   :PROPERTIES:
   :ID:       o2b:b36309d9-53e1-46b0-b78c-631736d2cfd4
   :POST_DATE: [2016-10-10 Mon 01:20]
@@ -15932,7 +16018,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-09-26 Emacs News
+** 2016-09-26 Emacs News
   :PROPERTIES:
   :ID:       o2b:c36fb219-4ce8-421c-b3db-d82ed683e312
   :POST_DATE: [2016-09-26 Mon 23:13]
@@ -15983,7 +16069,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-10-03 Emacs News
+** 2016-10-03 Emacs News
   :PROPERTIES:
   :ID:       o2b:f03e457c-eb27-4d9a-999d-d5febedd2f21
   :POST_DATE: [2016-10-03 Mon 01:50]
@@ -16043,7 +16129,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
 
-* 2016-09-19 Emacs News
+** 2016-09-19 Emacs News
   :PROPERTIES:
   :ID:       o2b:47c92e19-f115-49d8-b275-c8ae9c736ca0
   :POST_DATE: [2016-09-19 Mon 23:34]
@@ -16102,7 +16188,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-09-12 Emacs News
+** 2016-09-12 Emacs News
   :PROPERTIES:
   :ID:       o2b:ce8e08e5-89aa-4a29-b607-55e26a492c0a
   :POST_DATE: [2016-09-12 Mon 01:18]
@@ -16146,7 +16232,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-09-05 Emacs News
+** 2016-09-05 Emacs News
   :PROPERTIES:
   :ID:       o2b:e75df4b0-2049-489b-bdf5-715db4640940
   :POST_DATE: [2016-09-05 Mon 22:12]
@@ -16196,7 +16282,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
 
-* 2016-08-29 Emacs News
+** 2016-08-29 Emacs News
   :PROPERTIES:
   :ID:       o2b:45a373fb-d932-422f-8d99-23280493f643
   :POST_DATE: [2016-08-29 Mon 23:14]
@@ -16292,7 +16378,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-08-22 Emacs News
+** 2016-08-22 Emacs News
 
 - Navigation:
   - [[https://github.com/IvanMalison/flimenu][flimenu - automatically flatten imenu buffers]]
@@ -16323,7 +16409,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-08-15 Emacs News
+** 2016-08-15 Emacs News
   :PROPERTIES:
   :ID:       o2b:ccbb479e-6c5a-4bba-8297-e50c00d95aaa
   :POST_DATE: [2016-08-15 Mon 11:57]
@@ -16357,7 +16443,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-08-08 Emacs News
+** 2016-08-08 Emacs News
   :PROPERTIES:
   :ID:       o2b:af8e7666-7ab0-4180-bc79-eb0c8450232e
   :POST_DATE: [2016-08-08 Mon 23:18]
@@ -16393,7 +16479,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-08-01 Emacs News
+** 2016-08-01 Emacs News
   :PROPERTIES:
   :ID:       o2b:80b54afb-2435-495b-9222-044a75d71400
   :POST_DATE: [2016-08-01 Mon 16:24]
@@ -16443,7 +16529,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-07-25 Emacs News
+** 2016-07-25 Emacs News
   :PROPERTIES:
   :ID:       o2b:b92871da-57bf-4fed-b253-368819fbcf32
   :POST_DATE: [2016-07-25 Mon 19:57]
@@ -16495,7 +16581,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-07-18 Emacs News
+** 2016-07-18 Emacs News
   :PROPERTIES:
   :ID:       o2b:c699dca8-5e04-4c9f-8ce5-2afb9cebaf67
   :POST_DATE: [2016-07-18 Mon 11:43]
@@ -16540,7 +16626,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
 
-* 2016-07-10 Emacs News
+** 2016-07-10 Emacs News
   :PROPERTIES:
   :ID:       o2b:db86cee9-7954-4585-8062-61a60c8e4dd2
   :POST_DATE: [2016-07-11 Mon 12:19]
@@ -16589,7 +16675,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-07-04 Emacs News
+** 2016-07-04 Emacs News
   :PROPERTIES:
   :ID:       o2b:36df931e-9382-4910-9efd-22c3ab98161f
   :POST_DATE: [2016-07-04 Mon 17:53]
@@ -16657,7 +16743,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-06-27 Emacs News
+** 2016-06-27 Emacs News
   :PROPERTIES:
   :ID:       o2b:eae60e75-e689-46b9-a75d-166a6bee1e12
   :POST_DATE: [2016-06-27 Mon 11:15]
@@ -16709,7 +16795,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-06-20 Emacs News 
+** 2016-06-20 Emacs News 
   :PROPERTIES:
   :ID:       o2b:314eb6c5-a553-4b1c-8181-a5170c71c79c
   :POST_DATE: [2016-06-20 Mon 17:44]
@@ -16760,7 +16846,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
 
-* 2016-06-13 Emacs News
+** 2016-06-13 Emacs News
   :PROPERTIES:
   :ID:       o2b:c9abd34b-d51d-401c-9c22-70f6190364b9
   :POST_DATE: [2016-06-13 Mon 15:44]
@@ -16812,7 +16898,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-06-06 Emacs News
+** 2016-06-06 Emacs News
   :PROPERTIES:
   :ID:       o2b:397c3de5-5ccf-4638-869d-1e1f7a3a07af
   :POST_DATE: [2016-06-06 Mon 12:04]
@@ -16857,7 +16943,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-05-30 Emacs News
+** 2016-05-30 Emacs News
   :PROPERTIES:
   :ID:       o2b:352cfddf-d94f-4b5f-b70f-f9586771116e
   :POST_DATE: [2016-05-30 Mon 09:52]
@@ -16914,7 +17000,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-05-23 Emacs News
+** 2016-05-23 Emacs News
   :PROPERTIES:
   :ID:       o2b:8cf07afb-ee9b-403e-9e00-74a0b6fda4ab
   :POST_DATE: [2016-05-23 Mon 12:41]
@@ -16978,7 +17064,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-05-16 Emacs News
+** 2016-05-16 Emacs News
   :PROPERTIES:
   :ID:       o2b:da1bb4f3-e281-4f1f-a730-0fa176886d23
   :POST_DATE: [2016-05-16 Mon 12:34]
@@ -17042,7 +17128,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-05-09 Emacs News
+** 2016-05-09 Emacs News
   :PROPERTIES:
   :ID:       o2b:1fd4d5a1-540c-40c4-8bb3-dd6b41b9f1e3
   :POST_DATE: [2016-05-09 Mon 11:41]
@@ -17120,7 +17206,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-05-02 Emacs News
+** 2016-05-02 Emacs News
   :PROPERTIES:
   :ID:       o2b:dc1f8e41-9e56-4d8a-b5e9-3d2118e1d7e0
   :POST_DATE: [2016-05-02 Mon 10:48]
@@ -17187,7 +17273,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-04-25 Emacs News
+** 2016-04-25 Emacs News
   :PROPERTIES:
   :ID:       o2b:7f7974c0-8331-407e-9a2b-bdfef7d83261
   :POST_DATE: [2016-04-25 Mon 10:28]
@@ -17247,7 +17333,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-04-18 Emacs News                                               :emacs:
+** 2016-04-18 Emacs News                                               :emacs:
   :PROPERTIES:
   :ID:       o2b:b5d06ac6-ac46-429f-869d-1b6bd5489082
   :POST_DATE: [2016-04-18 Mon 11:07]
@@ -17300,7 +17386,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-04-11 Emacs News
+** 2016-04-11 Emacs News
   :PROPERTIES:
   :ID:       o2b:6d8966ea-1344-4f54-a4f8-90a41b0f4977
   :POST_DATE: [2016-04-11 Mon 12:54]
@@ -17360,7 +17446,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
 
-* 2016-04-04 Emacs News
+** 2016-04-04 Emacs News
   :PROPERTIES:
   :ID:       o2b:e410912e-61b6-4069-b546-217f635c3d1a
   :POST_DATE: [2016-04-04 Mon 11:20]
@@ -17423,7 +17509,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
 
-* 2016-03-28 Emacs News
+** 2016-03-28 Emacs News
   :PROPERTIES:
   :ID:       o2b:6ba62443-5279-4088-a6ad-32811ca4d165
   :POST_DATE: [2016-03-28 Mon 15:26]
@@ -17491,7 +17577,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
-* 2016-03-21 Emacs News
+** 2016-03-21 Emacs News
   :PROPERTIES:
   :ID:       o2b:9e9d242f-f16f-4f9b-b7d8-d9261c6fc84b
   :POST_DATE: [2016-03-21 Mon 11:39]
@@ -17550,7 +17636,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][Youtube]], the [[http://git.savannah.gnu.org/cgit/emacs.git/log/?showmsg=1][Emacs commit log]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2016-03][emacs-devel]].
 
-* 2016-03-14 Emacs News
+** 2016-03-14 Emacs News
   :PROPERTIES:
   :ID:       o2b:81fa0741-5614-4c75-8a07-34402537b9c8
   :POST_DATE: [2016-03-14 Mon 08:24]
@@ -17660,6 +17746,444 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
   - [[package:zenity-color-picker][zenity-color-picker]]: Insert and adjust colors using Zenity
 
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][Youtube]], the [[http://git.savannah.gnu.org/cgit/emacs.git/log/?showmsg=1][Emacs commit log]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2016-03][emacs-devel]].
+
+[[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
+
+** 2016-02-15 Emacs News
+  :PROPERTIES:
+  :ID:       o2b:6d4ddb2e-c573-48ae-bacf-6efc04b7a544
+  :POST_DATE: [2016-02-15 Mon 13:07]
+  :POSTID:   28622
+  :BLOG:     sacha
+  :END:
+
+- Beginner tips:
+  - [[https://www.youtube.com/watch?v=48-6Z-v_o0c][GNU Emacs: Intro - YouTube (Spanish; 7:47)]]
+  - [[http://emacsredux.com/blog/2016/02/14/look-up-the-keybindings-for-some-command/][Look up the keybindings for some command]]
+- Navigation:
+  - [[http://pragmaticemacs.com/emacs/open-a-recent-directory-in-dired-revisited/][Pragmatic Emacs: Open a recent directory in dired: revisited]]
+  - [[http://mbork.pl/2016-02-13_Looking_for_keywords][Marcin Borkowski: Looking for keywords]]
+  - [[http://puntoblogspot.blogspot.com/2016/02/with-this-little-trick-helm-dash-gets.html][With this trick, Helm-dash gets find-as-you-type for free, developers hate it...]]
+- Configuration:
+  - [[https://www.reddit.com/r/emacs/comments/452sfx/running_two_instances_simultaneously_with/][Running two instances simultaneously, with different dotfiles. Is it possible?]] env
+  - [[https://www.youtube.com/watch?v=fhI_riv_6HM][Autocorrecting typos in Emacs (2:46)]]
+  - [[http://emacsredux.com/blog/2016/02/14/disable-annoying-audio-notifications/][Disable annoying audio notifications]]
+  - [[http://emacs.stackexchange.com/a/14828/7093][Great tip to reduce init-time (workaround for TRAMP's bug)]] ([[https://www.reddit.com/r/emacs/comments/45lx14/great_tip_to_reduce_inittime_workaround_for/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/4586eq/quick_emacs_snippet_to_automatically_use/][Quick .emacs snippet to automatically use emacsclient if Emacs is already running]]
+  - [[https://github.com/Alexander-Miller/company-shell][Dedicated company completion for your shell]] ([[https://www.reddit.com/r/emacs/comments/44wc5r/dedicated_company_completion_for_your_shell/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/44wek4/how_to_transfer_my_emacs_setup_to_a_different/][How to transfer my emacs setup to a different workstation? (specifically the plugins)]]
+  - [[https://www.emacswiki.org/emacs/FrequentlyEnabledPackages_Emacs244_Survey_Results][Learnt some new modes from this page ...]] ([[https://www.reddit.com/r/emacs/comments/457308/learnt_some_new_modes_from_this_page/][Reddit]])
+  - [[https://www.youtube.com/watch?v=jPZn_kCuaLg][solving Emacs pinky problem on the macbook (2:00)]]
+- Org Mode:
+  - [[https://zhangda.wordpress.com/2016/02/15/configurations-for-beautifying-emacs-org-mode/][Configurations for beautifying Emacs org mode]]
+  - [[http://pragmaticemacs.com/emacs/org-mode-start-a-numbered-list-from-any-number/][Org-mode: Start a numbered list from any number]]
+  - [[https://www.wisdomandwonder.com/article/10068/switch-to-nlinum-immediately-2][Switch to nlinum Immediately]] - good for Org Mode and large files
+  - [[https://gist.github.com/zot/0dd34b50acf81416dd88][Small hack to let orgmode babel JS blocks use skewer if it's currently connected]]
+  - [[https://www.reddit.com/r/emacs/comments/457iiz/get_orgmode_on_ios_with_editorial_app_functions/][Get org-mode on iOs with Editorial app: functions linked]]
+  - [[https://www.reddit.com/r/emacs/comments/44y2p0/how_to_specify_which_tex_engine_for_org_latex/][How to specify which tex engine for org latex export]]
+- Coding:
+  - [[https://zhangda.wordpress.com/2016/02/12/implementing-pwdw-pwdc-a-summary-of-manipulating-directory-name-strings-in-emacs-lisp/][Implementing pwdw pwdc, a summary of manipulating directory name strings in Emacs lisp]]
+  - [[https://www.reddit.com/r/emacs/comments/45fy88/whats_your_workflow_running_a_shell_with/][What's your workflow; running a shell with localhost server for development?]]
+  - [[https://www.reddit.com/r/emacs/comments/451wn7/smartparens_for_clike_modes/][Smartparens for C-like modes?]]
+  - [[https://github.com/oakmac/parinfer-elisp][Parinfer in Emacs Lisp]] ([[https://news.ycombinator.com/item?id=11078190][Hacker News]])
+  - [[https://www.youtube.com/watch?v=nVQ3kVXRGdc][Emacs Aggressive Indent Demo (0:53)]]
+  - [[https://www.youtube.com/watch?v=5OrvqYuESYw][{EN} Hacking Emacs and Brains — Morning Tsoding #24 (1:02:29)]] Developing a brainfuck compiler to Emacs Lisp
+- Emacs development:
+  - [[http://endlessparentheses.com/new-in-emacs-25-1-eww-improvements.html?source=rss][New in Emacs 25.1: EWW improvements]]
+  - [[https://www.reddit.com/r/emacs/comments/45nn3g/whats_the_state_of_concurrency_support_in_emacs/][State of concurrency in Emacs]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=f7405a094b5f2ef642f920a17ce8e30ff81f6f35][More commands for inserted images]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=fdc2da4ef44b32e2dd360defc9bd64d644ed1783][New commands for mpc media player]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=54b198af77449135980ce36fcfb42a5eea18c5c4][New timer-list]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2016-02/msg00784.html][Continued discussion of character folding]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2016-02/msg00713.html][Borderless frames]]
+- Other:
+  - [[http://elephly.net/posts/2016-02-14-ilovefs-emacs.html][#ilovefs: Why GNU Emacs?]] ([[https://www.reddit.com/r/emacs/comments/45t2ex/ilovefs_why_gnu_emacs/][Reddit]], [[https://news.ycombinator.com/item?id=11099972][Hacker News]])
+  - [[http://prodissues.com/2016/02/adding-mu4e-support-to-emacs.html][Adding mu4e Support To Emacs (the hard way)]] ([[https://www.reddit.com/r/emacs/comments/45lx1s/adding_mu4e_support_to_emacs_the_hard_way/][Reddit]])
+  - [[http://unconj.ca/blog/linting-prose-in-emacs.html][Linting prose in Emacs]] ([[https://www.reddit.com/r/emacs/comments/459ckp/linting_prose_in_emacs/][Reddit]])
+  - [[https://alexschroeder.ch/wiki/2016-02-08_New_Look_for_Emacs_Wiki][Alex Schroeder: New Look for Emacs Wiki]]
+  - [[https://www.reddit.com/r/emacs/comments/44tr5a/an_emacs_qr_encoder_no_external_tools/][An Emacs QR encoder (no external tools)]]
+  - [[https://www.reddit.com/r/emacs/comments/44yxsq/pdf_tools/][Pdf Tools]] - faster than docview
+  - [[https://www.reddit.com/r/emacs/comments/455n6g/end_of_an_era_magits_maintainer_is_taking_a_break/][End of an era? (Magit's maintainer is taking a "break")]]
+  - [[http://hashnuke.com/2016/01/31/my-path-to-emacs.html][My path to emacs]]
+  - [[https://www.youtube.com/watch?v=puHMpEgojkA][How to Order Salads From Inside Emacs (40:33)]]
+  - [[https://www.youtube.com/watch?v=i03_VzOmDko][emacs glass demo (5:42)]]
+  - [[https://www.youtube.com/watch?v=K0Rw08es0Hs][Emacs Keyboard Macro Demo 1 (1:58)]]
+- New packages:
+  - [[package:alda-mode][alda-mode]]: A simple major mode for the musical programming language Alda
+  - [[package:auto-virtualenv][auto-virtualenv]]: Auto activate python virtualenvs
+  - [[package:company-shell][company-shell]]: Company mode backend for shell functions
+  - [[package:ebf][ebf]]: brainfuck language transpiler to Emacs Lisp
+  - [[package:erc-hipchatify][erc-hipchatify]]: Provide emoticons and html rendering for HipChat
+  - [[package:foggy-night-theme][foggy-night-theme]]: Dark low contrast theme with soft and muted colors.
+  - [[package:helm-describe-modes][helm-describe-modes]]: Helm interface to major and minor modes.
+  - [[package:ob-go][ob-go]]: org-babel functions for go evaluation
+  - [[package:ob-scala][ob-scala]]: org-babel functions for scala evaluation
+  - [[package:pov-mode][pov-mode]]: Major mode for editing POV-Ray scene files.
+  - [[package:sly-repl-ansi-color][sly-repl-ansi-color]]: Add ANSI colors support to the sly mrepl.
+
+Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][Youtube]], [[http://www.emacswiki.org/emacs/RecentChanges][EmacsWiki:RecentChanges]], the [[http://git.savannah.gnu.org/cgit/emacs.git/log/?showmsg=1][Emacs commit log]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2016-02][emacs-devel]].
+
+[[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
+
+** 2016-02-08 Emacs News
+  :PROPERTIES:
+  :ID:       o2b:d100bb15-52d1-4a0d-b2e9-634bdcdc2ceb
+  :POST_DATE: [2016-02-08 Mon 12:04]
+  :POSTID:   28619
+  :BLOG:     sacha
+  :END:
+
+- Beginners:
+  - [[http://emacs.link/][Get Emacs - http://emacs.link - Aaron Schumacher's cross-platform, how-to-get-emacs website]] ([[https://www.reddit.com/r/emacs/comments/43ro8h/get_emacs_httpemacslink_aaron_schumachers/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/43xkrb/tips_for_a_beginner_moving_away_from_gui_ides/][Tips for a beginner moving away from GUI IDEs?]]
+  - [[https://www.youtube.com/watch?v=NRWbEc-Jd30][Emacs Installation 0 (2:53)]] - Mac OS X
+- Configuration:
+  - [[https://www.reddit.com/r/emacs/comments/445w6s/whats_some_small_thing_in_your_dotemacs_that_you/][What's some small thing in your dotemacs that you couldn't live without?]]
+  - [[https://www.reddit.com/r/emacs/comments/44gln5/how_to_make_emacs_stop_splitscreen_when_mx/][How to make emacs stop split-screen when M-x shell'ing?]] - display-buffer-alist
+  - [[https://www.reddit.com/r/emacs/comments/44eckb/managing_spacemacs_settings_in_git/][Managing Spacemacs settings in git?]]
+  - [[https://www.reddit.com/r/emacs/comments/44c0ed/emacs_pinky/][Emacs pinky....]]
+  - [[https://www.reddit.com/r/emacs/comments/44b90v/changing_basic_keybinds_in_evil/][Changing basic key-binds in Evil?]] - evil-normal-state-map 
+  - [[https://www.reddit.com/r/emacs/comments/4460iv/changing_behaviour_on_select_current_line_function/][Changing behaviour on select current line function]]
+  - [[https://www.reddit.com/r/emacs/comments/4416iu/is_there_a_way_to_change_the_initel_location_on/][Is there a way to change the init.el location on startup?]]
+  - [[https://www.reddit.com/r/emacs/comments/43wh2c/how_to_keep_region_marked_after_copying/][How to keep region marked after copying?]]
+- Org Mode:
+  - [[https://www.reddit.com/r/emacs/comments/44kriz/how_to_use_orgmode_with_evernote_as_storage/][How to use org-mode with evernote as storage?]] - Syncthing, Dropbox, Git, Google Drive, etc.
+  - [[https://www.reddit.com/r/emacs/comments/449ems/is_there_any_way_to_integrate_evernote_into_my/][Is there any way to integrate Evernote into my Emacs GTD workflow?]] - emacs-geeknote
+  - [[https://www.reddit.com/r/emacs/comments/43vfl1/enable_wordwrap_in_orgmode/][Enable wordwrap in org-mode?]]
+  - [[https://ogbe.net/blog/blogging_with_org.html][Blogging using org-mode (and nothing else)]]
+- Email:
+  - [[http://pragmaticemacs.com/emacs/email-attachment-reminders-in-mu4e/][Email attachment reminders in mu4e]]
+  - [[http://mbork.pl/2016-02-06_An_attachment_reminder_in_mu4e][An attachment reminder in mu4e]] - should also work for Gnus; more interactive
+  - [[http://feedproxy.google.com/~r/GotEmacs/~3/63fqOV9WgVs/ma-gnus-v016-is-released.html][Ma Gnus v0.16 is released]]
+  - [[http://sachachua.com/blog/2016/02/publishing-emacs-news-plain-text-html-attached-org-file/][Publishing Emacs News as plain text, HTML, and attached Org file]]
+  - [[http://blog.binchen.org/posts/grab-email-address-in-gnus.html][Grab email address in Gnus]]
+- Coding:
+  - [[http://emacsredux.com/blog/2016/02/07/auto-indent-your-code-with-aggressive-indent-mode/][Auto-indent your code with aggressive-indent-mode]]
+  - [[http://irreal.org/blog/?p=4953][A Magit Tip]] - ! to run git commands
+  - [[https://github.com/d125q/gruvbox-dark-emacs][gruvbox dark ported to GNU Emacs with better support for various modes]] ([[https://www.reddit.com/r/emacs/comments/44oby0/gruvbox_dark_ported_to_gnu_emacs_with_better/][Reddit]])
+  - [[http://exercism.io/languages/elisp][Solve practice problems in elisp (among others)]] ([[https://www.reddit.com/r/emacs/comments/44n8xy/solve_practice_problems_in_elisp_among_others/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/44jwh3/better_compile_buffer/][Better compile buffer?]] - auto-close, multi-compile, dedicated window
+  - [[https://www.reddit.com/r/emacs/comments/440qb2/how_to_normalize_indentation_for_different/][How to normalize indentation for different projects?]]
+  - [[http://xkcd.com/1638/][Today's xkcd reminds me of Emacs Lisp regexes]] ([[https://www.reddit.com/r/emacs/comments/43zov2/todays_xkcd_reminds_me_of_emacs_lisp_regexes/][Reddit]]) - see Reddit thread for regexp tips
+- Emacs development:
+  - [[http://endlessparentheses.com/new-in-emacs-25-1-easily-search-non-ascii-characters.html?source=rss][New in Emacs 25.1: Easily search for non-ASCII characters]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/?id=857c5c24d6e57ac593e000198b644a0a88f54915][Automatically scale images up on high-density screens]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/?id=357ae5dba5faac5ff48ebb971cb29500f87f02a6][Allow various Gnus and Message address variables to be functions]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/?id=4531b03ec98b50fc61baad2b75f6faf439894583][New function read-multiple-choice]]
+  - Discussions:
+    - [[http://lists.gnu.org/archive/html/emacs-devel/2016-02/msg00089.html][Long discussion of character folding]]
+    - [[http://lists.gnu.org/archive/html/emacs-devel/2016-02/msg00413.html][Improving the presentation of Emacs user documentation]]
+    - [[http://lists.gnu.org/archive/html/emacs-devel/2016-02/msg00296.html][Entering Unicode characters]]
+    - [[http://lists.gnu.org/archive/html/emacs-devel/2016-02/msg00416.html][Continued discussion of asynchronicity]]
+    - [[http://lists.gnu.org/archive/html/emacs-devel/2016-02/msg00358.html][Customizing universal argument (C-u), instead of hardcoding 4?]]
+- Other:
+  - [[http://irreal.org/blog/?p=4957][Ogbe on Why He Uses Emacs]] - TRAMP, dired, Org Mode, mu4e, MATLAB
+  - [[https://www.reddit.com/r/emacs/comments/44p5t9/new_helmdescribemodes_package/][New `helm-describe-modes` package]]
+  - [[https://www.reddit.com/r/emacs/comments/44n8z2/just_had_a_wow_emacs_is_smart_moment/][Just had a "wow, Emacs is smart" moment]] - kill-compilation
+  - [[http://www.saltycrane.com/blog/2015/12/switching-emacs-vim-actually-spacemacs/][Switching from Emacs to Vim (actually Spacemacs)]]
+  - [[https://www.reddit.com/r/emacs/comments/446wc4/vim_to_emacsevil_users_thoughts_on_neovim/][Vim to Emacs+Evil Users, thoughts on Neovim?]]
+  - [[https://www.reddit.com/r/emacs/comments/4446k1/emacsel_episode_4_interview_with_john_w_is_out/][Emacs.el Episode 4 Interview with John W. is out!]] also, [[https://www.youtube.com/watch?v=udNb4E4smbM][Youtube - 35:30]]
+  - [[https://www.youtube.com/watch?v=cgavi6T7IcY][Role-playing with Emacs - Episode 02 (11:14)]] - more of a presentation
+  - [[https://www.youtube.com/watch?v=grN4TDBaL9I][The Touch of Emacs (2:41)]] - an Emacs jukebox on a touch screen
+  - [[https://www.youtube.com/watch?v=Lv7cB8ISnCg][emacs-friends: an emacs package to open the current file with other applications (5:33)]]
+- New packages:
+  - [[package:blog-admin][blog-admin]]: Blog admin for emacs with hexo/org-page supported
+  - [[package:cabledolphin][cabledolphin]]: capture Emacs network traffic
+  - [[package:dired-atool][dired-atool]]: Pack/unpack files with atool on dired.
+  - [[package:dumb-jump][dumb-jump]]: Dumb jumping to variable and function definitions
+  - [[package:evalator-clojure][evalator-clojure]]: Clojure evaluation context for evalator via CIDER.
+  - [[package:latex-unicode-math-mode][latex-unicode-math-mode]]: Input method for Unicode math symbols
+  - [[package:mu-cite][mu-cite]]: A library to provide MIME features.
+  - [[package:omtose-phellack-theme][omtose-phellack-theme]]: A dark, soothing theme with a cold bluish touch.
+  - [[package:org-dp][org-dp]]: Declarative Local Programming with Org Elements
+  - [[package:org-random-todo][org-random-todo]]: notify of random TODO's
+  - [[package:replace-pairs][replace-pairs]]: Query-replace pairs of things
+  - [[package:xml+][xml+]]: Utilities for xml and html trees
+
+Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][Youtube]], [[http://www.emacswiki.org/emacs/RecentChanges][EmacsWiki:RecentChanges]], the [[http://git.savannah.gnu.org/cgit/emacs.git/log/?showmsg=1][Emacs commit log]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2016-02][emacs-devel]].
+
+[[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
+
+** 2016-02-01 Emacs News
+  :PROPERTIES:
+  :ID:       o2b:e893effd-30a8-4cae-93b9-1a5138ca0efe
+  :POST_DATE: [2016-02-01 Mon 13:01]
+  :POSTID:   28598
+  :BLOG:     sacha
+  :END:
+
+Update 2016-02-02: Added Hacker News links.
+
+- Configuration:
+  - [[https://www.reddit.com/r/emacs/comments/43a3uq/how_do_you_get_window_system_init_code_to_run/][How do you get window system init code to run when using a emacs daemon/client?]]
+  - [[https://www.reddit.com/r/emacs/comments/43jk55/tried_spacemacs_but_i_dont_like_how_its_phoning/][Tried Spacemacs but I don't like how it's phoning back several hosts when I run it]]: dotspacemacs-check-for-update
+- Org Mode:
+  - [[http://irreal.org/blog/?p=4936][Inserting an Org Date Quickly]]
+  - [[https://zhangda.wordpress.com/2016/01/28/how-to-achieve-auto-compilation-for-the-org-latex-pdf-publishing-chain-configurations-around-latexmk/][How to achieve auto-compilation for the org->latex->pdf publishing chain - configurations around latexmk]]
+  - [[http://pragmaticemacs.com/emacs/speed-up-pdf-export-from-org-mode-with-latexmk/][Speed up pdf export from org-mode with latexmk]]
+  - [[http://puntoblogspot.blogspot.com/2016/01/pointy-org-bullets.html][Pointy org-bullets]]
+  - [[https://github.com/CodeFalling/blog-admin][Awesome way to write blog in emacs]] ([[https://www.reddit.com/r/emacs/comments/43i2yj/awesome_way_to_write_blog_in_emacs/][Reddit]]) - blog-admin for hexo or org-page
+  - [[https://www.reddit.com/r/emacs/comments/4366f9/how_do_orgrefiletargets_work/][How do org-refile-targets work?]]
+  - [[https://www.reddit.com/r/emacs/comments/42sle2/how_to_autopublish_orgmode_publish_projects/][How to auto-publish org-mode publish projects ?]] after-save-hook
+  - [[https://www.reddit.com/r/emacs/comments/42qr9h/orgmode_for_gtd/][Org-mode for GTD?]] org-query
+- Coding:
+  - [[http://emacsredux.com/blog/2016/01/31/use-tab-to-indent-or-complete/][Use Tab to Indent or Complete]]
+  - [[http://blog.binchen.org/posts/diff-regions-in-emacs.html][Diff regions in Emacs]] ([[https://www.reddit.com/r/emacs/comments/42xiv1/diff_regions_in_emacs/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/43eh4m/magit_v25_released/][Magit v2.5 released]]
+  - [[http://blog.jorgenschaefer.de/2016/01/elpy-1110-released.html][Elpy 1.11.0 released]]
+  - [[https://news.ycombinator.com/item?id=10973406][Emacs vs. WebStorm for Node.js Development | Hacker News]]
+  - [[https://www.reddit.com/r/emacs/comments/438vf5/is_there_a_way_to_choose_compilation_command_from/][Is there a way to choose compilation command from a list?]] helm-make, multi-compile
+  - [[https://youtu.be/mNO-vgq3Avg][On-the-fly evaluation of forms/code in Emacs! (2013, 1:37)]] ([[https://www.reddit.com/r/emacs/comments/433cha/onthefly_evaluation_of_formscode_in_emacs/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/42yi77/any_solution_for_editing_a_region_in_a_different/][Any solution for editing a region in a different major mode?]] fence-edit, org-mode, poporg, edit-indirect
+  - [[https://www.reddit.com/r/emacs/comments/42wsb4/emacs_equivalent_of_dbext/][Emacs equivalent of dbext?]]
+  - [[https://github.com/nicklanasa/xcode-mode][Updated xcode-mode to support xctool]]
+  - [[http://killring.org/2016/01/23/effective-restclient-in-emacs/][Organize restclient files with outline-minor-mode]] ([[https://www.reddit.com/r/emacs/comments/42s0iv/organize_restclient_files_with_outlineminormode/][Reddit]])
+  - [[https://www.youtube.com/watch?v=R4nIXMJHsgI][Emacs magic - преобразование ifelse в switch (0:43)]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=40a85fba441aa69d47ef9efd645df3411e43ae21][Go support added to etags]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=25b79d7bc71079cd6ebb2700623e7e3b76b03287][Ruby support improved in etags]]
+- Emacs development:
+  - [[http://emacsredux.com/blog/2016/02/01/display-the-keybinding-for-a-command-with-substitute-command-keys/][Display the Keybinding for a Command with substitute-command-keys]]
+  - [[http://endlessparentheses.com/new-in-emacs-25-1-round-quotes-in-help-buffers.html?source=rss][New in Emacs 25.1: Round quotes in Help buffers]]
+  - [[https://www.reddit.com/r/emacs/comments/43nh3h/whats_the_best_practice_to_write_emacslispat_2016/][What's the best practice to write emacs-lisp(at 2016)?]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2016-01/msg01745.html][First Emacs 25 pretest is out]] ([[https://www.reddit.com/r/emacs/comments/43im8y/first_emacs_25_pretest_is_out/][Reddit]])
+  - [[https://lwn.net/SubscriberLink/673724/d9809e674cde21df/][Removing support for Emacs unexec from Glibc]] ([[https://www.reddit.com/r/emacs/comments/43f4qd/removing_support_for_emacs_unexec_from_glibc/][Reddit]], [[https://news.ycombinator.com/item?id=11001796][Hacker News]])
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2016-01/msg01811.html][Async DNS progress]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2016-01/msg01636.html][Discussion of how to make project--find-in-file generic]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=da976cff352bdea6adc2667582a56eb4061bb5f6][Fixed filename for second dir-locals file]]
+- Other:
+  - [[https://www.reddit.com/r/emacs/comments/43lt35/what_is_a_good_way_to_highlight_and_navigate_all/][Highlight and navigate all instances of a regex in current region]] occur, helm-swoop, loccur
+  - [[http://irreal.org/blog/?p=4934][Praising the Command Line]]
+  - [[http://mbork.pl/2016-01-30_Dimming_out_tildes_in_AUCTeX][Dimming out tildes in AUCTeX]]
+  - [[https://www.reddit.com/r/emacs/comments/43b42y/i_just_realized_emacs_has_a_fast_infix_calculator/][Emacs has a fast infix calculator that's not calc or quick-calc...]] - calculator, helm-calcul-expression
+  - [[https://www.reddit.com/r/emacs/comments/43adfm/is_there_a_emacs_vim_transition_guide/][Is there a emacs -> vim transition guide?]]
+  - [[https://github.com/kawabata/zone-sl][Zone out with steam locomotives (just for fun)]] ([[https://www.reddit.com/r/emacs/comments/43a4la/zone_out_with_steam_locomotives_just_for_fun/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/42y1rf/evalatoran_emacs_package_for_interactive/][Evalator-An Emacs package for interactive evaluation and transformation of data]]
+  - [[http://www.lunaryorn.com/2016/01/26/why-spacemacs.html][Why Spacemacs?]] ([[https://www.reddit.com/r/emacs/comments/42rp0l/why_spacemacs/][Reddit]])
+  - [[https://www.youtube.com/watch?v=VMKEsV63O8o][Emacs打滴 4th x h4 (2:16:01)]]
+- New packages:
+  - [[package:chapel-mode][chapel-mode]]: a CC Mode for Chapel derived from derived-mode-ex.el
+  - [[package:char-menu][char-menu]]: Create your own menu for fast insertion of arbitrary symbols
+  - [[package:commenter][commenter]]: multiline-comment support package
+  - [[package:contextual][contextual]]: Contextual profile management system
+  - [[package:evalator][evalator]]: Package for interactive transformation of data with helm
+  - [[package:flycheck-cstyle][flycheck-cstyle]]: Integrate cstyle with flycheck
+  - [[package:govc][govc]]: Interface to govc for managing VMware ESXi and vCenter
+  - [[package:litecoin-ticker][litecoin-ticker]]: No description available.
+  - [[package:metafmt][metafmt]]: Emacs interface for metafmt
+  - [[package:mocha][mocha]]: Run Mocha or Jasmine tests
+  - [[package:org-tfl][org-tfl]]: Transport for London meets Orgmode
+  - [[package:pony-snippets][pony-snippets]]: Yasnippets for Pony
+  - [[package:suscolors-theme][suscolors-theme]]: Colorful theme, inspired by Gruvbox.
+  - [[package:zone-sl][zone-sl]]: Zone out with steam locomotives.
+
+Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][Youtube]], the [[http://git.savannah.gnu.org/cgit/emacs.git/log/?showmsg=1][Emacs commit log]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2016-01][emacs-devel]].
+
+[[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
+
+** 2016-01-25 Emacs News
+  :PROPERTIES:
+  :ID:       o2b:98ff5caf-c90c-49dc-88b7-84f224a30ecc
+  :POST_DATE: [2016-01-25 Mon 12:25]
+  :POSTID:   28587
+  :BLOG:     sacha
+  :END:
+
+- Navigation
+  - [[http://blog.binchen.org/posts/use-ivy-mode-to-search-bash-history.html][Use ivy-mode to search bash history]]
+  - [[http://oremacs.com/2016/01/23/avy-0.4.0/][(or emacs: avy 0.4.0 is out]]: avy-goto-char-timer, switch action, avy-pop-mark
+  - [[http://endlessparentheses.com/quickly-search-for-occurrences-of-the-symbol-at-point.html?source=rss][Quickly search for occurrences of the symbol at point]]
+  - [[http://www.ict4g.net/adolfo/notes/2014/11/16/DirTree.html][Comparison of file managers for Emacs]] ([[https://www.reddit.com/r/emacs/comments/427i6p/comparison_of_file_managers_for_emacs/][Reddit]])
+- Configuration:
+  - [[https://www.reddit.com/r/emacs/comments/421vt3/how_to_automatically_execute_commands_when/][How to automatically execute commands when launching interactive Emacs sessions?]]
+  - [[http://www.jefftk.com/p/shortcuts-in-emacs][Defining shortcuts that apply only to files with a specific name]] ([[https://www.reddit.com/r/emacs/comments/421r94/defining_shortcuts_that_apply_only_to_files_with/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/41vicb/emacs_os_x_smooth_scroll/][emacs OS X smooth scroll]]
+  - [[https://www.reddit.com/r/emacs/comments/41sazw/associate_major_mode_with_files_without_extensions/][Associate major mode with files without extensions]]
+  - [[https://www.reddit.com/r/emacs/comments/41r7hr/theme_recommendations_for_a_projector/][Theme recommendations for a projector]]
+- Org Mode:
+  - [[http://clubctrl.com/org/prog/howto.html][Org-mode with the ox-twbs package]]: Better HTML export ([[https://www.reddit.com/r/emacs/comments/41o2xq/quick_intro_to_produce_nice_html_docs_with_org/][Reddit]], [[http://irreal.org/blog/?p=4899][Irreal]] summary)
+  - [[https://www.reddit.com/r/emacs/comments/42imkk/london_public_transportation_with_helm_and_org/][London Public Transportation with helm and org]]
+  - [[https://www.reddit.com/r/emacs/comments/42gkl6/version_control_or_persistent_undo_for_org_files/][Version control or persistent undo for org files?]] gitwatch, git gc
+  - [[https://www.youtube.com/watch?v=0YyYljtnMwM][Tracking time on tasks in Emacs org-mode (6:45)]]
+- Mail:
+  - [[https://www.reddit.com/r/emacs/comments/429bai/help_with_save_sent_messages_with_gnus/][Help with save sent messages with Gnus, Offlineimap and office365]] - gnus-message-archive-group
+  - [[https://alexschroeder.ch/wiki/2016-01-23_Testing_Encrypted_Mail_Setup][Testing Encrypted Mail Setup]] - update to [[https://github.com/kensanata/ggg][Gmail Gnus GPG guide]]
+  - [[https://www.reddit.com/r/emacs/comments/421xgw/mumu4e_0916_released/][mu/mu4e 0.9.16 released]], context, UI, indexing
+- Coding:
+  - [[https://www.reddit.com/r/emacs/comments/42kppm/auto_insertion_of_a_function_header_when_i_write/][auto insertion of a function header when I write a function.]] yasnippet
+  - [[https://github.com/haskell/haskell-mode/wiki/Haskell-Mode-2015-retrospective][Haskell Mode 2015 retrospective]] ([[https://www.reddit.com/r/emacs/comments/427han/xpost_rhaskell_haskell_mode_2015_retrospective/][Reddit]])
+  - [[http://yann.hodique.info/blog/how-modern-languages-save-the-text-editor/][How modern languages will save the text editor]] ([[https://www.reddit.com/r/emacs/comments/41pf5j/how_modern_languages_will_save_the_text_editor/][Reddit]])
+- Emacs development:
+  - [[http://irreal.org/blog/?p=4903][Xwidget Branch Merged Into Emacs 25.1]] ([[https://www.reddit.com/r/emacs/comments/4241oy/xwidget_branch_has_been_merged_into_emacs_251/][Reddit]])
+  - [[http://www.newartisans.com/2016/01/pattern-matching-with-pcase/][About how to use the pcase macro in Emacs]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/?id=badcd38aa86ed7973f2be2743c405710973a0bdd][Spreadsheet-related bug fixes]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/?id=140016558bcb462692d8b9f2f3f866e0f337d218][Merges from emacs-25 to master]] 
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2016-01/msg01348.html][Discussion of asynchronous DNS]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2016-01/msg01371.html][Discussion of options.el]]
+- Other:
+  - [[http://whatthefuck.computer/blog/2016/01/18/matrix-client.el-0.3.0/][Matrix-Client.el 0.3.0]]
+  - [[https://www.reddit.com/r/emacs/comments/42g6u9/what_are_some_lesserknown_packages_that_you_love/][What are some lesser-known packages that you love?]]
+  - [[https://www.reddit.com/r/emacs/comments/42dqdg/emacswiki_theme_v2/][EmacsWiki theme v2]]
+  - [[https://www.reddit.com/r/emacs/comments/4298ll/handfinger_placement/][Hand/Finger placement]]
+  - [[https://www.reddit.com/r/emacs/comments/428scj/emacs_for_a_crossplatform_usera_few_questions/][Emacs for a cross-platform user--a few questions.]]
+  - [[http://pasoev.github.io/programming/2015/10/31/jekyll-posts-emacs-capture/][Emacs Shortcuts for Writing Posts Using Jekyll]] ([[https://www.reddit.com/r/emacs/comments/41ho08/emacs_shortcuts_for_writing_posts_using_jekyll/][Reddit]])
+  - [[https://www.youtube.com/watch?v=rPfBGNo_9ts][Emacs demonstration (3:06)]]
+  - [[https://www.youtube.com/watch?v=WYSzbilGMFY][AWS - How to edit using Emacs (6:44)]]
+- New packages:
+  - [[package:avy-menu][avy-menu]]: Library providing avy-powered popup menu
+  - [[package:doom][doom]]: DOM implementation and manipulation library
+  - [[package:evil-ediff][evil-ediff]]: Make ediff a little evil
+  - [[package:faust-mode][faust-mode]]: Basic faust syntax colorizer for emacs.
+  - [[package:fix-input][fix-input]]: Make input methods play nicely with alternative keyboard layout on OS level
+  - [[package:flycheck-purescript][flycheck-purescript]]: Flycheck: PureScript support
+  - [[package:hamburg-theme][hamburg-theme]]: Color Theme with a dark blue background.
+  - [[package:helm-safari][helm-safari]]: Helm interface for Safari Bookmarks and History
+  - [[package:html-check-frag][html-check-frag]]: Check html-fragments
+  - [[package:kaomoji][kaomoji]]: Input kaomoji superb easily
+  - [[package:mutant][mutant]]: An interface for the Mutant testing tool
+  - [[package:org-rtm][org-rtm]]: Simple import/export from rememberthemilk to org-mode
+  - [[package:org-themis][org-themis]]: Experimental project management mode for org-mode
+  - [[package:psysh][psysh]]: PsySH, PHP interactive shell (REPL)
+  - [[package:pyenv-mode-auto][pyenv-mode-auto]]: Automatically activates pyenv version if .python-version file exists.
+  - [[package:rtm][rtm]]: An elisp implementation of the Remember The Milk API
+  - [[package:slirm][slirm]]: Systematic Literature Review Mode for Emacs.
+  - [[package:sly-hello-world][sly-hello-world]]: A template SLY contrib
+  - [[package:sly-macrostep][sly-macrostep]]: fancy macro-expansion via macrostep.el
+  - [[package:zone-rainbow][zone-rainbow]]: Zone out with rainbow.
+  - [[package:zone-select][zone-select]]: Select zone programs.
+  - [[package:gnome-c-style][gnome-c-style]]: minor mode for editing GNOME-style C source code
+
+Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][Youtube]], the [[http://git.savannah.gnu.org/cgit/emacs.git/log/?showmsg=1][Emacs commit log]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2016-01][emacs-devel]].
+
+[[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
+
+** 2016-01-18 Emacs News
+  :PROPERTIES:
+  :ID:       o2b:d4262192-3b84-49e6-9c7b-0dbb1f469fd2
+  :POST_DATE: [2016-01-18 Mon 14:09]
+  :POSTID:   28571
+  :BLOG:     sacha
+  :END:
+
+- Emacs configuration:
+  - [[https://www.reddit.com/r/emacs/comments/419zj1/emacs_bankruptcy_and_starter_kits/][Emacs bankruptcy and starter kits]]
+  - [[https://www.reddit.com/r/emacs/comments/40yzb8/smoothscrolling_always_keeps_n_lines_of_context/][Smooth-scrolling - always keeps n lines of context at top and bottom of screen]]
+  - [[https://www.youtube.com/watch?v=dyWn30HMgQg][Emacs Tutorial - Git Your First Init File (13:11)]]
+  - [[http://irreal.org/blog/?p=4887][Running Emacs as a Daemon]]
+- Text:
+  - [[http://pragmaticemacs.com/emacs/aligning-text/][Aligning text]]
+  - [[http://pragmaticemacs.com/emacs/email-templates-in-mu4e-with-yasnippet/][Email templates in mu4e with yasnippet]]
+  - [[http://endlessparentheses.com/an-improvement-to-emacs-auto-correct.html?source=rss][An improvement to Emacs auto-correct]]
+  - [[https://www.reddit.com/r/emacs/comments/41jkuf/emacs_autocorrect_mode/][Emacs autocorrect mode]]
+  - [[https://github.com/xuchunyang/region-state.el][region-state - A global minor-mode that shows the number of chars/lines or rows/columns in the region (aka. selection).]] ([[https://www.reddit.com/r/emacs/comments/41i6mg/regionstate_a_global_minormode_that_shows_the/][Reddit]])
+  - [[http://pasoev.github.io/programming/2015/10/31/jekyll-posts-emacs-capture/][Emacs Shortcuts for Writing Posts Using Jekyll]]
+- Web:
+  - [[https://www.reddit.com/r/emacs/comments/40sol0/emacs_user_agent/][Emacs user agent?]] Also, notes about proxies
+  - [[https://www.reddit.com/r/emacs/comments/40nte5/emacs_for_landing_pages_simple_websites/][Emacs for landing pages / simple websites?]]
+  - [[https://www.reddit.com/r/emacs/comments/40u8fx/new_emacswiki_theme/][New EmacsWiki theme]]
+- Org Mode:
+  - [[https://thraxys.wordpress.com/2016/01/14/pimp-up-your-org-agenda/][Pimp Up Your Org-mode Files]] ([[https://www.reddit.com/r/emacs/comments/40zrny/pimp_up_your_orgmode_files/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/418rzk/how_to_use_orgmode_to_write_documentation_for/][How to use org-mode to write documentation for general audience?]]
+  - [[https://www.reddit.com/r/emacs/comments/415imd/prettier_orgmode_source_code_blocks/][Prettier org-mode source code blocks?]]
+  - [[https://www.reddit.com/r/emacs/comments/40hzjt/whats_your_todo_workflow_within_emacs_at_work/][What's your todo workflow within Emacs at work?]]
+- Coding:
+  - [[https://www.reddit.com/r/emacs/comments/41i156/using_smartquotes_with_the_electric_pair_mode/][Using smart-quotes with the electric pair mode]]
+  - [[http://mbork.pl/2016-01-16_save-excursion_changed_semantics][save-excursion changed semantics]]
+  - [[https://www.reddit.com/r/emacs/comments/41gd3h/magit_v24_released/][Magit v2.4 released]]
+  - [[https://www.reddit.com/r/emacs/comments/41dt4d/how_hard_itd_be_to_migrate_a_helm_to_ivy/][How hard it'd be to migrate a helm-* to ivy-* ?]]
+  - [[https://www.youtube.com/watch?v=TSZJBLNCv4Q][Emacs elm-mode TAGS demo (2:14)]]
+  - [[https://www.youtube.com/watch?v=wZ9uvU0lZ-E][Emacs elm-mode demo (9:01)]]
+  - [[https://www.youtube.com/watch?v=XaeAaj7Kf9Q][List comprehend refactor in Emacs (0:10)]]
+- Other:
+  - [[http://sachachua.com/blog/2016/01/2016-01-16-emacs-hangout/][2016-01-16 Emacs Hangout]]
+  - [[https://www.reddit.com/r/emacs/comments/40xq0s/encrypted_backups/][Encrypted backups]]
+  - [[https://www.reddit.com/r/emacs/comments/40w7fh/practical_guide_for_gnus_updated/]["Practical Guide for Gnus" updated]]
+  - [[https://www.reddit.com/r/emacs/comments/40w1xq/erc_messages_read_aloud/][ERC Messages Read Aloud]]
+- New packages:
+  - [[package:haxor-mode][haxor-mode]]: Major mode for exiting .hax files
+  - [[package:markdown-preview-eww][markdown-preview-eww]]: Realtime preview by eww
+  - [[package:markdown-preview-mode][markdown-preview-mode]]: markdown realtime preview minor mode.
+  - [[package:repo][repo]]: Running repo from Emacs
+  - [[package:sisyphus][sisyphus]]: Support for ERT (Emacs Regression Test)
+  - [[package:yahoo-weather][yahoo-weather]]: Displays weather information in mode-line
+  - [[package:html5-schema][html5-schema]]: Add HTML5 schemas for use by nXML
+- Emacs development:
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/?id=d7896a6f773dc4ae4e1b56c34b6708fe2bc5610a][nxml now uses standard completion]], [[http://git.savannah.gnu.org/cgit/emacs.git/commit/?id=930f8e8377e40ba161bd16ea4d612cb4c570ee1b][Unicode and lexical-binding]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/?id=a600f4c69309bf37f67c02cbcc9a9e4ba1e69c76][New Tramp method: sg]] (edit as different group)
+
+Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][Youtube]], the [[http://git.savannah.gnu.org/cgit/emacs.git/log/?showmsg=1][Emacs commit log]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2016-01][emacs-devel]].
+
+[[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
+
+** 2016-01-11 Emacs News
+  :PROPERTIES:
+  :ID:       o2b:c32e4198-ad59-4978-b33e-0b6ebd15105d
+  :POST_DATE: [2016-01-11 Mon 09:33]
+  :POSTID:   28564
+  :BLOG:     sacha
+  :END:
+
+- Configuration:
+  - [[http://irreal.org/blog/?p=4867][Doing Away with Autosave Files]]
+  - [[http://endlessparentheses.com/define-context-aware-keys-in-emacs.html?source=rss][Define context-aware keys in Emacs]]
+  - [[http://pragmaticemacs.com/emacs/smart-text-templates-with-yasnippet/][Smart text templates with yasnippet]]
+  - [[https://www.reddit.com/r/emacs/comments/3zrvd7/disable_treeification_of_ctrl_leftclick_menu/][Disable tree-ification of Ctrl Left-Click Menu]]
+  - [[https://mswift42.github.io/themecreator/#][ThemeCreator]]
+- Navigation:
+  - [[http://oremacs.com/2016/01/06/ivy-flx/][Better fuzzy matching support in Ivy]]
+  - [[https://www.reddit.com/r/emacs/comments/40g130/make_emacs_remember_position_where_last/][Make emacs remember position where last self-insert-command happened]]: consider save-place or goto-chg
+  - [[https://www.reddit.com/r/emacs/comments/407q2c/ivy_is_now_available_in_spacemacs/][Ivy is now available in Spacemacs]]
+- Org:
+  - [[https://github.com/dfeich/org-clock-convenience][Changing clock timestamps from org mode's agenda view (org-clock-convenience.el)]] ([[https://www.reddit.com/r/emacs/comments/407z54/changing_clock_timestamps_from_org_modes_agenda/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/3zcr43/nooborgmode_custom_latexpdf_export_custom_style/][noob: org-mode custom Latex/PDF export custom style.]]
+  - [[https://www.reddit.com/r/emacs/comments/3zb362/plugin_for_bidirectional_orgmode_sync_with_rtm/][Plugin for bidirectional org-mode sync with RTM - anyone working on it?]]
+- Coding:
+  - [[http://blog.binchen.org/posts/git-gutter-tip.html][Git gutter tip]]
+  - [[http://puntoblogspot.blogspot.com/2016/01/til-ediff-revision.html][TIL: ediff-revision]]
+  - [[https://github.com/edt-devel/compilation-bookmarks][Store your compile calls for immediate retrieval: compilation-bookmarks]] ([[https://www.reddit.com/r/emacs/comments/40awsw/store_your_compile_calls_for_immediate_retrieval/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/402hbk/setup_for_javascript_development/][Setup for JavaScript development]]
+  - [[https://www.reddit.com/r/emacs/comments/3zvtxo/list_of_projects_in_initial_buffer/][List of projects in initial buffer]]
+  - [[https://www.reddit.com/r/emacs/comments/3zvezh/narrow_to_embedded_css_and_javascript_of_a_html/][Narrow to embedded CSS and JavaScript of a HTML file]]
+- Emacs Lisp:
+  - [[http://mbork.pl/2016-01-09_mrr-auto-replace][mrr-auto-replace]]: multi-replace regex
+  - [[http://blog.jorgenschaefer.de/2016/01/buttercup-13-released.html][Buttercup 1.3 released]]: Emacs Lisp behaviour-driven tests
+- Emacs development:
+  - [[https://github.com/codygman/figure-out-emacs-long-lines-issue][Attempting to figure emacs long lines issues]] ([[https://www.reddit.com/r/emacs/comments/405a2l/attempting_to_figure_emacs_long_lines_issues/][Reddit]])
+  - [[https://news.ycombinator.com/item?id=10878618][A proposal for removing obsolete Emacs packages | Hacker News]]
+  - [[https://news.ycombinator.com/item?id=10839146][Please do not delete this commented-out version | Hacker News]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/?id=989bcc77ab576d7a83cb0194a9fc73ce51939042][Let users disable unsafe signal handling code]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2016-01/msg00563.html][Discussion about possibly filtering M-x]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2016-01/msg00689.html][Changing the default keybinding for tags-loop-continue]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2016-01/msg00542.html][Proposal for emacsclient and opening a file at a specific line]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2016-01/msg00486.html][Continuing discussion of new Emacs homepage]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2016-01/msg00387.html][find-file-project]]
+  - [[http://lists.gnu.org/archive/html/emacs-devel/2016-01/msg00361.html][Overriding MS Windows key combination]]
+- Conversion:
+  - [[https://www.reddit.com/r/emacs/comments/3zo645/pitfalls_moving_from_vim_to_evil/][Pitfalls moving from Vim to Evil?]]
+  - [[https://www.reddit.com/r/emacs/comments/3zhf1l/would_you_recommend_spacemacs_to_a_nonvim_user/][Would you recommend spacemacs to a non-vim user?]]
+  - [[https://www.reddit.com/r/emacs/comments/3zh6uz/would_you_tell_20_year_old_you_now_to_pick_up_and/][Would you tell 20 year old you now to pick up and learn Emacs?]]
+- Other:
+  - [[http://blog.binchen.org/posts/how-to-use-gnus-group-topics-efficiently.html][How to use Gnus Group Topics efficiently]]
+  - [[https://github.com/niku/realtime-preview.el][Realtime markdown preview as you type with Eww]] ([[https://www.reddit.com/r/emacs/comments/40bj5c/realtime_markdown_preview_as_you_type_with_eww/][Reddit]])
+  - [[https://github.com/lujun9972/el-start-menu][Emacs goes Windows: get a start menu with all your packages]] ([[https://www.reddit.com/r/emacs/comments/408la4/emacs_goes_windows_get_a_start_menu_with_all_your/][Reddit]])
+  - [[https://github.com/mswift42/reykjavik-theme][reykjavik theme, a theme with low saturated colors and a dark green background.]] ([[https://www.reddit.com/r/emacs/comments/406y90/reykjavik_theme_a_theme_with_low_saturated_colors/][Reddit]])
+  - [[https://github.com/showcases/text-editors][Now Emacs Lisp is represented in the Github Showcase pages!]] ([[https://www.reddit.com/r/emacs/comments/3zsdu1/now_emacs_lisp_is_represented_in_the_github/][Reddit]])
+  - [[http://mjwall.com/blog/2013/10/04/how-i-use-emacs/][How I use Emacs (by MJ Wall)]] ([[https://www.reddit.com/r/emacs/comments/3zoejt/how_i_use_emacs_by_mj_wall/][Reddit]])
+  - [[https://www.youtube.com/watch?v=qp2b3-Guej0][Just a guy showing of his GNU/Linux-fu and having fun with emacs (2:04:44)]] ([[https://www.reddit.com/r/emacs/comments/3zfwwb/just_a_guy_showing_of_his_gnulinuxfu_and_having/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/3ze6gf/spacemacs_0105_released_new_website_and_layouts/][Spacemacs 0.105 released: new website and layouts system]]
+- New packages:
+  - [[package:anybar][anybar]]: Control AnyBar from Emacs
+  - [[package:bitbake][bitbake]]: Running bitbake from emacs
+  - [[package:caseformat][caseformat]]: Format based letter case converter
+  - [[package:config-parser][config-parser]]: a library for parsing config file
+  - [[package:elscreen-buffer-group][elscreen-buffer-group]]: elscreen buffer group
+  - [[package:mexican-holidays][mexican-holidays]]: Mexico holidays for Emacs calendar.
+  - [[package:multishell][multishell]]: manage interaction with multiple local and remote shells
+  - [[package:projectile-sift][projectile-sift]]: Run a sift with Projectile
+  - [[package:prompt-text][prompt-text]]: Various information in minibuffer prompt
+  - [[package:reykjavik-theme][reykjavik-theme]]: Theme with a dark background.
+  - [[package:tldr][tldr]]: tldr client for Emacs
+
+Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][Youtube]], the [[http://git.savannah.gnu.org/cgit/emacs.git/log/?showmsg=1][Emacs commit log]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2016-01][emacs-devel]].
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
@@ -17942,7 +18466,6 @@ One more little thing automated...
     (when package-archive-contents
       (with-current-buffer (find-file-noselect "package-list.el")
         (goto-char (point-min))
-        (git-auto-commit-mode 1)
         (let* ((old-list (read (current-buffer)))
                (date (format-time-string "%Y-%m-%d"))
                (new-packages (seq-difference (mapcar 'car package-archive-contents)
