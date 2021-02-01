@@ -7,7 +7,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 [[::code][~/code/emacs-calendar/README.org]]
 
 * STARTED [#A] Do another Emacs News review   
-  SCHEDULED: <2020-11-16 Mon .+1w>
+  SCHEDULED: <2021-02-08 Mon .+1w>
   :PROPERTIES:
   :Effort:   1:30
   :QUANTIFIED: Emacs
@@ -15,17 +15,18 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
   :POSTID:   28441
   :POST_DATE: 20151026T17:18:00+0000
   :Published: No
-  :LAST_REPEAT: [2020-11-09 Mon 23:16]
+  :LAST_REPEAT: [2021-02-01 Mon 16:29]
   :ID:       o2b:ef27b244-48a5-4227-9a01-30228a81ebee
   :CATEGORY: emacs-news
   :END:
   :LOGBOOK:
+  - State "DONE"       from "STARTED"    [2021-02-01 Mon 16:29]
   - State "DONE"       from "STARTED"    [2020-11-09 Mon 23:16]
   :END:
 
 No feed available: http://ul.io/nb/, https://www.onwebsecurity.com/tag/emacs.html
 
-#+begin_src emacs-lisp :results raw :noweb yes
+#+begin_src emacs-lisp :results none :noweb yes
   <<menu>>
   <<packages>>
   <<reddit>>
@@ -36,6 +37,11 @@ No feed available: http://ul.io/nb/, https://www.onwebsecurity.com/tag/emacs.htm
   <<prepare-news>>
   <<collect-news>>
   <<detect-dupes>>
+#+end_src
+
+Actually generate the section:
+
+#+begin_src emacs-lisp :results raw :noweb yes
   (my/prepare-emacs-news (org-read-date nil nil "-mon")
                          '(
                            refresh-packages
@@ -47,6 +53,108 @@ No feed available: http://ul.io/nb/, https://www.onwebsecurity.com/tag/emacs.htm
 #+End_src
 
 #+RESULTS:
+** 2021-02-01 Emacs news
+   :PROPERTIES:
+   :ID:       o2b:4ac2a914-0e6a-4ef4-8423-4191de35309a
+   :POST_DATE: [2021-02-01 Mon 16:20]
+   :BLOG:     sacha
+   :POSTID:   29665
+   :END:
+
+- Upcoming events:
+  - EmacsNYC: Lightning Talks - Mon Feb 1 1600H PST / 1900H EST / Tue Feb 2 0000H UTC / 0100H CET / 0530H IST / 0800H +08 - https://emacsnyc.org/2021/01/23/monthly-online-meetup-lightning-talks.html
+  - [[https://mobilizon.fr/events/1ca5bfd2-44bd-4af2-87b6-87cf9ab0168d][Atelier Emacs Paris en visio-conférence]] (virtual, in French) - Tue Feb 2 1130H EST / 1630H UTC / 1730H CET / 2200H IST / Wed Feb 3 0030H +08
+- Beginner:
+  - [[https://www.bytesized.xyz/10-emacs/][How to start using Emacs, the programmer's editor]]
+  - [[http://pragmaticemacs.com/emacs/paste-history/][Emacs Paste history | Pragmatic Emacs]]
+- Emacs configuration:
+  - [[https://www.reddit.com/r/emacs/comments/l4v1ux/one_of_the_most_useful_small_lisp_functions_in_my/][make-toggle-function]]
+  - [[https://www.reddit.com/r/emacs/comments/l51ocx/what_is_the_most_useful_part_of_your_emacs_config/][What is the most useful part of your Emacs config?]]
+- Emacs Lisp:
+  - [[https://emacsair.me/2021/01/28/llama-0.1/][Llama – Anonymous function literals for Emacs-Lisp]] ([[https://reddit.com/r/emacs/comments/l6qzf2/llama_anonymous_function_literals_for_emacslisp/][Reddit]])
+  - [[https://youtu.be/tq4kTNL1VD8][Defining Variables and Scopes - Learning Emacs Lisp #4 (LIVE 1/29, 9:15 am PST)]] ([[https://reddit.com/r/emacs/comments/l7ufqn/defining_variables_and_scopes_learning_emacs_lisp/][Reddit]])
+- Emacs development:
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2021-01/msg01361.html][Emacs 27.1.91 is out]]
+  - [[https://copr.fedorainfracloud.org/coprs/bhavin192/emacs-pretest/][Pretest version builds of GNU Emacs for Fedora]]  
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=a8b8d220b4fccaa812e85f9b2b3715593dc285ac][Merge remote-tracking branch 'savannah/master' into native-comp]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=bb652f68fd4e996d58f731a0dba1be18fd4e03d7][New Rmail option 'rmail-show-message-set-modified']]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=cc2d3a62c2a1f5be7907eda55d3c678e1149eb7b][Fix interaction between two dired cleanup variables]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=d4e9d191aeba9076db06857a90649f6fcddc7f3b][Add a command for redisplay during keyboard macros]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=8992f8abf348b5b4eb2b2074d00b9c9aaaa6df17][Make the default `whitespace-enable-predicate' use `derived-mode-p']]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=3131a989118722d5ba7ff3f1aea7d9f30881ffe8][Fix typos and punctuation]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=ff7b1a133bfa7f2614650f8551824ffaef13fadc][Add distinct controls for child frames' borders (Bug#45620)]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=b4b6a2684062d4470143b6ea460b5e82012554a1][Use `lexical-binding` in all `lisp/international` files]]
+- Appearance:
+  - [[https://amitp.blogspot.com/2020/06/emacs-prettier-tab-line.html][Prettier tab-line]]
+  - [[https://github.com/jkitchin/ov-highlight][ov-highlight: A persistent highlighter for Emacs]]
+  - [[https://github.com/DogLooksGood/joker-theme][joker-theme: Joker Theme A simple dark theme for coding in the night]]
+- Navigation:
+  - [[https://umarahmad.xyz/blog/improved-ranking-for-projectile-find-file/][Improve ranking of files in projectile]] ([[https://reddit.com/r/emacs/comments/l7chte/improve_ranking_of_files_in_projectile/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/l6jpxf/how_do_emacs_users_usually_have_multiple_files/][How do emacs users usually have multiple files open at once.]]
+- Dired:
+  - [[https://www.reddit.com/r/emacs/comments/l786s4/a_humble_advice_on_dired_and_projectile_for_elisp/][A humble advice on dired and projectile for elisp practice :)]]
+- Org Mode:
+  - [[https://dev.to/seshaljain/using-emacs-for-college-assignments-3ji5][Using Emacs for college assignment]]
+  - [[https://paul-nameless.com/emacs-org-mode-100-books.html][Emacs, org-mode and 100 books in a year]] ([[https://reddit.com/r/emacs/comments/l8mb8a/emacs_orgmode_and_100_books_in_a_year/][Reddit]])
+  - [[https://helpdeskheadesk.net/help-desk-head-desk/2021-01-29/][More org improvements]] - agenda, structure templates
+  - [[https://www.reddit.com/r/emacs/comments/l6c4wj/organize_your_org_files_anywhere_in_your/][Organize your org files anywhere in your filesystem with org-ql and helm-find.]]
+  - [[https://youtu.be/aml36yZ-ANc][Enhance Your Email with Org Mode]] ([[https://reddit.com/r/emacs/comments/l4odm8/enhance_your_email_with_org_mode/][Reddit]])
+  - [[https://www.reddit.com/r/orgmode/comments/l94grw/orgappear_autotoggle_emphasis_markers_links_and/][org-appear -- Auto-toggle emphasis markers, links, and sub/superscripts]]
+  - [[https://www.reddit.com/r/emacs/comments/l90noj/quick_utility_function_for_inserting/][Quick utility function for inserting library-of-babel reference]]
+  - [[https://www.reddit.com/r/orgmode/comments/l5cuzf/useful_function_to_search_through_refile_targets/][Useful function to search through refile targets and create a link to the match.]]
+  - [[https://notxor.nueva-actitud.org/2020/10/02/cambiando-el-blog-a-org-static-blog.html][Cambiando el blog a org-static-blog]]
+  - [[https://www.reddit.com/r/emacs/comments/l9ohho/weblorg_a_static_html_generator_for_emacs_orgmode/][Weblorg: A static HTML generator for Emacs & Org-Mode]]
+  - [[https://jcodev.eu/posts/adding-chess-diagrams-to-org-mode-documents/][Adding chess diagrams to org-mode documents]]
+  - [[https://github.com/mrlee23/readtheorg][readtheorg: Org Mode theme like Read The Docs]] ([[https://reddit.com/r/planetemacs/comments/l5001t/readtheorg_org_mode_theme_like_read_the_docs/][Reddit]])
+  - [[https://blog.siddharthkannan.in/org-mode/emacs/editors/vim/markdown/2020/10/25/discovering-org-mode/][Discovering Org Mode]]
+  - [[https://irreal.org/blog/?p=9439][Irreal: Editing Anki Cards with Org Mode]]
+- Completion:
+  - [[https://www.reddit.com/r/emacs/comments/l99xc8/consult_got_support_for_multiple_candidate_sources/][Consult got support for multiple candidate sources]]
+  - [[https://www.reddit.com/r/emacs/comments/l5mj0r/companywordfreqel_a_new_company_backend_for_human/][company-wordfreq.el – a new company backend for human language words according to their frequency]]
+- Coding:
+  - [[https://github.com/tuhdo/semantic-refactor][semantic-refactor: Semantic Refactor is a refactoring tool based on Semantic parser framework]]
+  - [[https://protesilaos.com/codelog/2021-01-26-git-diff-hunk-elisp-org/][Protesilaos Stavrou: Informative diff hunks for Emacs Lisp and Org]]
+  - [[https://ag91.github.io/blog/2021/01/28/emacs-as-your-code-compass-who-can-i-ask-for-help/][Emacs as your code-compass: who can I ask for help?]] ([[https://reddit.com/r/emacs/comments/l799ig/emacs_as_your_codecompass_who_can_i_ask_for_help/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/l7ocmb/gnu_emacs_as_a_lightweight_ide_autosuggest_data/][GNU Emacs as a lightweight IDE (Auto-suggest data structure)]]
+  - [[https://www.reddit.com/r/emacs/comments/l4qdkx/emacs_dbi_emacs_as_sql_client_works_pretty_well/][emacs DBI - Emacs as SQL client - works pretty well!]]
+  - [[https://github.com/tkf/python-epc][python-epc: EPC (RPC stack for Emacs Lisp) for Python]]
+- Mail and news:
+  - [[https://www.reddit.com/r/emacs/comments/l60p6a/howto_mu4e_and_reading_html_mails_with_xwidget/][HOWTO: mu4e and reading html mails with XWidget inside emacs]]
+- Shell:
+  - [[http://xenodium.com/recognize-new-password-prompts-in-emacs-shell/][Recognize new password prompts in Emacs shell]]
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/l58iih/weekly_tipstricketc_thread/][Weekly tips/trick/etc/ thread]]
+  - [[https://www.reddit.com/r/emacs/comments/l85o5h/anouncement_blog_emacs_fragments/][[Anouncement, Blog] Emacs Fragments]]
+  - [[https://www.reddit.com/r/emacs/comments/l6xued/emacs_fomo/][Emacs & FOMO]]
+  - [[https://irreal.org/blog/?p=9442][Irreal: Modernizing Emacs (Again)]]
+- emacs-ng:
+  - [[https://github.com/DavidDeSimone/ng-async-files][ng-async-files: emacs-ng module for async file operations]]
+  - [[https://github.com/DavidDeSimone/ng-fuzzy-search][ng-fuzzy-search: Fuzzy-search tool built for emacs-ng]]
+  - [[https://djddesimone.medium.com/writing-emacs-apps-in-javascript-9feb8c077a50][Writing Emacs Apps in JavaScript]] ([[https://reddit.com/r/planetemacs/comments/l5er36/writing_emacs_apps_in_javascript/][Reddit]])
+  - [[https://www.reddit.com/r/emacsng][Emacs-ng has a subreddit]]
+- Other:
+  - [[https://www.youtube.com/watch?v=LPwr8WeE8jU]["Teaching an old Bovine Gnu Tricks: What's next for Emacs?" - Jeffrey Walsh (LCA 2021 Online)]] ([[https://lwn.net/SubscriberLink/843896/7dd66ed99f04c6e9/][LWN]])
+  - [[https://www.murilopereira.com/emacs-from-catching-up-to-getting-ahead/][Emacs: from catching up to getting ahead: an Emacs wishlist]]
+  - [[https://www.youtube.com/watch?v=xmBovJvQ3KU&feature=youtu.be][Supercharge your Emacs / Spacemacs / Doom with Yasnippets!]]
+  - [[https://mina86.com/2021/emacs-remote/][Emacs remote file editing over TRAMP]] ([[https://reddit.com/r/emacs/comments/l95h2e/emacs_remote_file_editing_over_tramp/][Reddit]])
+  - [[https://gitlab.com/tsc25/undo-tree][undo-tree repository's new home (Gitlab)]] ([[https://reddit.com/r/emacs/comments/l6rcqh/undotree_repositorys_new_home_gitlab/][Reddit]])
+  - [[https://umarahmad.xyz/blog/using-emacs-to-port-my-blog/][Porting my blog to Hugo from inside Emacs]] ([[https://reddit.com/r/emacs/comments/l4lgly/porting_my_blog_to_hugo_from_inside_emacs/][Reddit]])
+  - [[http://ag91.github.io/blog/2021/01/25/vlc-via-emacs-how-to-open-a-youtube-link][Andrea: VLC via Emacs: how to open a YouTube link]]
+  - [[https://marcowahl.gitlab.io/emacs-blog-mw/2021/20210126.html][Marco Wahl: Open Firefox URL in eww]]
+  - [[https://marcowahl.gitlab.io/emacs-blog-mw/2021/20210127.html][Marco Wahl: Convert Time in Region to Local Timezone]]
+  - [[https://marcowahl.gitlab.io/emacs-blog-mw/2021/20210129.html][Marco Wahl: Redisplay at Keyboard Macro Execution]]
+  - [[https://github.com/tecosaur/lexic][lexic: Fancy Emacs integration with the Console Version of StarDict]]
+  - [[https://github.com/jdormit/homebrew.el][homebrew.el - simple, completion-drive interface to the Homebrew package manager]] ([[https://reddit.com/r/emacs/comments/l75rwy/homebrewel_simple_completiondrive_interface_to/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/l4pdmp/what_are_the_best_or_more_interesting_forks_of/][What are the best or more interesting forks of emacs to try?]]
+  - [[https://www.srid.ca/vanilla-emacs-nixos.html][Vanilla Emacs on NixOS]] ([[https://reddit.com/r/emacs/comments/l4tb3q/vanilla_emacs_on_nixos/][Reddit]])
+- New packages:
+  - [[package:find-dupes-dired][find-dupes-dired]]: Find dupes and handle in dired
+  - [[package:inheritenv][inheritenv]]: Make temp buffers inherit buffer-local environment variables
+  - [[package:llama][llama]]: Anonymous function literals
+  - [[package:lsp-tailwindcss][lsp-tailwindcss]]: A lsp-mode client for tailwindcss
+
+Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2021-02][emacs-devel]].
+
 ** 2021-01-25 Emacs news
    :PROPERTIES:
    :ID:       o2b:b1d5bfb6-57a8-4be1-997d-6379242836a6
@@ -18898,6 +19006,55 @@ easily define the menu in a variable. It seems to work fine so far.
       ("8" . "Community")
       ("9" . "Spacemacs")))
 
+(defun my/org-get-list-categories ()
+  "Return a list of (category indent matching-regexp sample).
+        List categories are items that don't contain links."
+  (let ((list (org-list-struct)) last-category results)
+    (save-excursion
+      (mapc
+       (lambda (x)
+         (goto-char (car x))
+         (let ((current-item
+                (buffer-substring-no-properties
+                 (+ (point)
+                    (elt x 1)
+                    (length (elt x 2)))
+                 (line-end-position))))
+           (if (string-match
+                org-bracket-link-regexp
+                (buffer-substring-no-properties
+                 (point)
+                 (line-end-position)))
+               ;; Link - update the last category
+               (when last-category
+                 (if (< (elt x 1) (elt last-category 1))
+                     (setq results
+                           (cons (append last-category
+                                         (list
+                                          (match-string-no-properties
+                                           3
+                                           (buffer-substring-no-properties
+                                            (point)
+                                            (line-end-position)))))
+                                 (cdr results))))
+                 (setq last-category nil))
+             ;; Category
+             (setq results
+                   (cons
+                    (setq last-category
+                          (list
+                           current-item
+                           (elt x 1)
+                           (concat "^"
+                                   (make-string (elt x 1) ?\ )
+                                   (regexp-quote
+                                    (concat (elt x 2)
+                                            current-item))
+                                   "$")))
+                    results)))))
+       list))
+    (append '(("x" 2 "^$" nil)) results)))
+
   (defun my/org-move-current-item-to-category (category)
     "Move current list item under CATEGORY earlier in the list.
   CATEGORY can be a string or a list of the form (text indent regexp).
@@ -18962,4 +19119,7 @@ easily define the menu in a variable. It seems to work fine so far.
       ("i" (lambda () (interactive) (my/org-update-link-description "Irreal")) "Link Irreal")
       ("." nil "Done")))
 #+end_src
+
+#+RESULTS: menu
+: my/org-categorize-emacs-news/body
 
