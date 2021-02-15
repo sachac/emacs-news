@@ -55,6 +55,133 @@ Actually generate the section:
 #+End_src
 
 #+RESULTS:
+** 2021-02-15 Emacs news
+   :PROPERTIES:
+   :ID:       o2b:d0316c31-14fe-4eca-ae6c-48f57110ec75
+   :POST_DATE: [2021-02-15 Mon 00:29]
+   :BLOG:     sacha
+   :POSTID:   29675
+   :POST_TAGS: emacs, emacs-news
+   :END:
+
+- Upcoming events:
+  - EmacsFFM: Creating our own major mode (virtual) https://www.meetup.com/emacs-ffm/events/275881281/ Wed Feb 17 1100 Vancouver / 1300 Chicago / 1400 Toronto / 1900 GMT / 2000 Berlin // Thu Feb 18 0030 Kolkata / 0300 Singapore
+  - Emacs Berlin (virtual, in English) https://emacs-berlin.org/ Wed Feb 24 0930 Vancouver / 1130 Chicago / 1230 Toronto / 1730 GMT / 1830 Berlin / 2300 Kolkata // Thu Feb 25 0130 Singapore
+  - [[https://emacs-apac.gitlab.io/announcements/february-2021/][Emacs APAC: Announcing Emacs Asia-Pacific (APAC) virtual meetup, Saturday, February 27, 2021]]
+- Beginner:
+  - [[https://www.reddit.com/r/emacs/comments/lj4wbh/where_shall_i_go_next_please_give_me_some/][Where shall I go next? Please give me some guidance you Yodas of emacs.]]
+- Emacs configuration:
+  - [[https://youtu.be/dtjq68F2dXw][Keeping Your Emacs Packages Up to Date - Emacs From Scratch #11]] ([[https://reddit.com/r/emacs/comments/lfdedp/keeping_your_emacs_packages_up_to_date_emacs_from/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/ljlznn/ann_packageutils_functionality_to_recompile_all/][[ANN] package-utils functionality to recompile all byte-code!]]
+  - [[https://www.reddit.com/r/emacs/comments/lix3b9/sublima_sublime_like_scratches_for_emacs/][sublima - Sublime like scratches for emacs]] ([[https://www.youtube.com/watch?v=Yta9cUUnnyA][Youtube]], 7:39)
+  - [[https://git.sr.ht/~zge/setup][setup: A macro for configuring Emacs]]
+  - [[https://e17i.github.io/articles-emacs-display-1/][Configuring the Emacs display system]] ([[https://reddit.com/r/emacs/comments/lg4ugv/configuring_the_emacs_display_system/][Reddit]])
+  - [[https://korewanetadesu.com/emacs-on-os-x.html][Configuring Emacs on Mac OS X]] ([[https://reddit.com/r/planetemacs/comments/lf8b2d/configuring_emacs_on_mac_os_x/][Reddit]])
+  - [[https://github.com/Atreyagaurav/emacs-modules][emacs-modules: Modules I coded myself for emacs]]
+- Emacs Lisp:
+  - [[https://ambrevar.xyz/lisp-repl-shell/index.html][Guide-article: A Lisp REPL as my main shell]] ([[https://reddit.com/r/emacs/comments/lfaow3/guidearticle_a_lisp_repl_as_my_main_shell/][Reddit]])
+  - [[https://github.com/tali713/esxml][esxml: An elisp library for working with xml, esxml and sxml.]]
+  - [[http://ergoemacs.org/misc/elisp_point_minimum_vs_1.html][Elisp: (goto-char 1) vs (goto-char (point-min))]] ([[https://irreal.org/blog/?p=9478][Irreal]])
+- Emacs Lisp:
+  - [[https://www.reddit.com/r/emacs/comments/ljmkwi/preview_user_session_simulator_for_automated/][[PREVIEW] User session simulator for automated testing and scripted demos]]
+- Emacs development:
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2021-02/msg00665.html][Discussion about an "M-x"-type command that filters by mode]]
+  - [[https://www.reddit.com/r/emacs/comments/liwghh/nativecomp_review_stuck_for_6_months/][native-comp review stuck for 6 months?!]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=b939f7ad359807e846831a9854e0d94260d9f084][* Edebug: Generalize `&lookup`, use it for `cl-macrolet` and `cl-generic`]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=0334ac671c228bc967cff6a37c335f04491dd0e7][Also mention `M-o M-o' removal]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=40f7804ecb299a7f7c3accd19d27e2898d3b8374][Allow define-minor-mode to take an :interactive keyword]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=c1ef7adeb649aa99a10c4bd3b6ce988b309da3cc][Add 'read-extended-command-predicate']]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=9291e7316f98ab0858b323f72047ffd5a23d9ac9][Add new 'declare' forms for command completion predicates]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=58e0c8ee86e2c36245f1c5a1483f1c73600b4914][Extend the syntax of `interactive' to list applicable modes]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=43ecde85786ccbf4c07d535f08fd74c82a0af31b][Introduce an :interactive keyword for `defined-derived-mode']]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=760910f4917ad8ff5e1cd1bf0bfec443b02f0e44][Add a new buffer-local variable `minor-modes']]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=39a401ddae154b94e4c0e9c8ced1b27d9dc56daa][* lisp/emacs-lisp/edebug.el (edebug-match-lambda-expr): Delete function]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=2007afd21b5f6c72a7a9c15fd7c4785331f2700f][* lisp/emacs-lisp/edebug.el (edebug--handle-&-spec-op <&name>): New method]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=e81cf63be15f907fbe9de6b6c9eb1a021d4e2fe2][* etc/NEWS: Document new JSON behavior.]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=d1be48fdedabb451d5c6cf315fd5f09a632e771f][Edebug: Overload `edebug-form-spec` even less]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=c7b35ea3060b90ed68a933eed29e85dd2d567e3e][* lisp/emacs-lisp/edebug.el (edebug--handle-&-spec-op) <&lookup>: New method]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=1d2487b1fc5f0648deb80507be8c713d4482fd8d][* lisp/emacs-lisp/edebug.el: Misc cleanups.]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=db237850abc240e2c3e765e9cc7e15ee5681dcaf][Remove Motif support]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=21ec45c10727403421c41c8c67a752458790afbb][Fix Octave double-quoted string line continuations]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=21e475ea0c0d04ae7634f377ed64fe179388b133][Remove the 'M-o' ('facemap-keymap') binding experimentally]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=d0826e592ae40d05217e69f28bbf2d1dfe4b9085][Update NEWS entry for vc-dir faces]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=7020fce353b3e836c03703683e447a9ddf209b6a][New options read-char-by-name-sort and read-char-by-name-group (bug#46240)]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=0161c9df6edc02db6bd8871b00df522dd0699157][Load all generic-x.el modes unconditionally]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=627a02467508140d213a68c9eed6cb78a5e94860][Note that the `values' variable is now obsolete]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=1c326dfc1ce79bcbcfe9d7ad904e2184d4a691c4][; Finish customize-changed-options obsoletion]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=5131e3accccc7bb3d59ab03cbb990eb3261ee9da][Make pcomplete-ignore-case obsolete]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=9a698da7dea51a59aa9ddfb71887ac6b865883dc][Enriched mode:  'C-a' is by default no longer bound to 'beginning-of-line-text']]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=9fdc753e1450d1b2eb610ef4fc55460d63688799][Add vc-dir faces; also apply them to vc-git]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=657641fb83b927a8da18bccfcf843b0a3b720755][Bind clone-buffer to C-x x n]]
+- Appearance:
+  - [[https://gitlab.com/ideasman42/emacs-mode-line-idle][[ANN] mode-line-idle now available on melpa]] ([[https://reddit.com/r/emacs/comments/ljhrl3/ann_modelineidle_now_available_on_melpa/][Reddit]])
+- Org Mode:
+  - [[https://thewanderingcoder.com/2015/02/beginning-emacs-org-mode-i/][Beginning Emacs Org-mode: Tasks, Todos and Timings]]
+  - [[https://matthieu.io/blog/2016/10/22/org-mode-phd/][org-mode for PhD students - matthieu.io]]
+  - [[https://www.youtube.com/watch?v=N8ziAuls-wE&feature=youtu.be][Time tracking with Org Mode]] ([[https://reddit.com/r/planetemacs/comments/lgkwxk/time_tracking_with_org_mode/][Reddit]])
+  - [[https://irreal.org/blog/?p=9473][Irreal: Video Demonstration of Org-roam]]
+  - [[https://www.youtube.com/watch?v=-RdPlYKFouc][How I created Plain Text Bibles in Emacs (links in description)]] (16:18) - org, org-roam
+  - [[https://github.com/integral-dw/superstar-kit][superstar-kit: A simple template for org-superstar like minor modes for other modes]]
+  - [[https://www.reddit.com/r/orgmode/comments/lhbv1c/ann_orgmedianote_taking_notes_when_watching/][[ANN] org-media-note: Taking notes when watching videos or listening to audios in org-mode.]]
+  - [[https://github.com/mtekman/org-treescope.el][org-treescope.el: Provides a time and priority based sparse tree interaction mode]] ([[https://reddit.com/r/planetemacs/comments/litoqd/orgtreescopeel_provides_a_time_and_priority_based/][Reddit]])
+  - [[https://matthew.hashnode.dev/org-mode-clocking-in-the-menu-bar-with-hammerspoon-ck440qpef01clu3s119w5dqqx?guid=none&deviceId=2254bce9-51db-403c-9db6-83c63aac1537][Org mode clocking in the menu bar with Hammerspoon]]
+  - [[https://www.reddit.com/r/emacs/comments/ljurwx/org_habits_ios_app_want_to_try_it/][Org habits iOS app (want to try it?)]]
+  - [[https://i.redd.it/x6udx5yq6wg61.png][Interactive year view of an org agenda in the terminal]] ([[https://reddit.com/r/emacs/comments/lhr8es/interactive_year_view_of_an_org_agenda_in_the/][Reddit]])
+  - [[https://christiantietze.de/posts/2021/02/emacs-org-mode-zettel-link/][Christian Tietze: Create Custom Org-Mode Links to Open My External Zettelkasten App]]
+  - Org export and import:
+    - [[https://www.youtube.com/watch?v=8Gw4Y2EpcOY][Export Emacs Org Mode to HTML, basic to beautiful]] ([[https://reddit.com/r/emacs/comments/lk16v0/export_emacs_org_mode_to_html_basic_to_beautiful/][Reddit]])
+    - [[https://github.com/novoid/github-orgmode-tests][github-orgmode-tests: This is a test project where you can explore how github interprets Org-mode files]]
+    - [[https://github.com/tomalexander/orgmode-mediawiki][orgmode-mediawiki: A mediawiki export for Emacs org-mode]]
+    - [[https://github.com/mgmart/EverOrg][EverOrg: Evernote to Org mode migration tool]]
+    - [[https://blog.lambda.cx/posts/org-agenda-eink/][Creating an Always On E-Ink Org Agenda]] ([[https://reddit.com/r/orgmode/comments/li9nfn/creating_an_always_on_eink_org_agenda/][Reddit]])
+- Coding:
+  - [[https://davidvujic.blogspot.com/2021/02/test-driven-development-deluxe.html][Agile & Coding: Test Driven Development Deluxe]] ([[https://irreal.org/blog/?p=9485][Irreal]])
+  - [[https://www.reddit.com/r/emacs/comments/lfo5wi/elescope_02_getting_better_all_the_time/][Elescope 0.2: getting better all the time]] - clone Github repos
+  - [[https://notxor.nueva-actitud.org/2021/02/09/en-que-ando-estos-dias.html][En qué ando estos días]] - httpd, Rust, GDB
+- Coding:
+  - [[https://github.com/tslilc/siege-mode][siege-mode: An emacs minor mode to surround the region with smart delimiters interactively.]]
+  - [[https://www.youtube.com/watch?v=0YlYX_UjH5Q][Emacs: workflow with VC for Git]] (28:50)
+  - [[https://protesilaos.com/codelog/2021-02-08-emacs-vc-workflow/][Protesilaos Stavrou: My workflow with VC for Git projects (Emacs)]]
+- Web:
+  - [[https://www.olivertaylor.net/notes/20210207_emacs-extending-bookmarks.html][Extending Emacs Bookmarks to Work With EWW]] ([[https://reddit.com/r/emacs/comments/liiepu/extending_emacs_bookmarks_to_work_with_eww/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/limazh/set_nyxt_ast_default_external_browser_usepackage/][Set Nyxt as default external browser. Use-package snippet.]]
+- Mail and news:
+  - [[https://git.sr.ht/~tarsius/tray][Transient menus for a wide variety of things.]] - mostly mail, GPG
+  - [[https://www.reddit.com/r/emacs/comments/ljvm00/so_i_managed_to_make_emacs_work_for_my_email/][So I managed to make emacs work for my email]]
+  - [[https://gist.github.com/chmouel/c8a901ce7739d63854be3bf314bd596a][Gnus inbox groups in the Gnome menubar via Argos]]
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/lfww57/weekly_tipstricketc_thread/][Weekly tips/trick/etc/ thread]]
+  - [[https://www.youtube.com/watch?v=xKv5ohsILf8][System Crafters Live! - Emacs Future in Danger?, Config Hacking, Q&A]] (1:57:58)
+- Other:
+  - [[https://www.youtube.com/watch?v=eyYxuIGF8-g&feature=youtu.be][Getting Started with Emacs & Doom in 2021 · Emacs Doomcasts 27]] ([[https://reddit.com/r/emacs/comments/lffmg9/getting_started_with_emacs_doom_in_2021_emacs/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/lfgjbd/ann_exwmfloatel_a_minormode_to_easily_placeresize/][[ANN] exwm-float.el -- A minor-mode to easily place/resize floating frames in EXWM.]]
+  - [[https://www.root.cz/clanky/spacemacs-to-nejlepsi-z-editoru-emacs-a-vim/][Spacemacs: to nejlepší z editorů Emacs a Vim (a great and thorough new article in Czech about Spacemacs on the biggest Czech Linux website)]] ([[https://reddit.com/r/spacemacs/comments/lhqld0/spacemacs_to_nejlepší_z_editorů_emacs_a_vim_a/][Reddit]])
+  - [[http://mbork.pl/2021-02-13_Copying_to_clipboard_with_single_spaces][Marcin Borkowski: Copying to clipboard with single spaces]]
+  - [[https://formulae.brew.sh/formula/emacs][emacs — Homebrew Formulae]]
+  - [[https://www.reddit.com/r/emacs/comments/librjq/esperanto_support_in_emacs/][Esperanto support in emacs]]
+  - [[https://thelambdalab.xyz/elpher/][Elpher Gopher Client]] ([[https://reddit.com/r/planetemacs/comments/lhz73n/elpher_gopher_client/][Reddit]])
+- New packages:
+  - [[package:aas][aas]]: Snippet expansions mid-typing
+  - [[package:consult-notmuch][consult-notmuch]]: Notmuch search using consult
+  - [[package:edebug-inline-result][edebug-inline-result]]: Show Edebug result inline
+  - [[package:flycheck-google-cpplint][flycheck-google-cpplint]]: Help to comply with the Google C++ Style Guide
+  - [[package:git-assembler-mode][git-assembler-mode]]: git-assembler major mode
+  - [[package:helm-shell-history][helm-shell-history]]: Find shell history from helm
+  - [[package:hiccup-cli][hiccup-cli]]: Convert HTML to Hiccup syntax
+  - [[package:hiddenquote][hiddenquote]]: Major mode for doing hidden quote puzzles
+  - [[package:inf-elixir][inf-elixir]]: Run an interactive Elixir shell
+  - [[package:l][l]]: Compact syntax for short lambda
+  - [[package:mode-line-idle][mode-line-idle]]: Evaluate mode line content when idle
+  - [[package:nikki][nikki]]: A simple diary mode
+  - [[package:oauth2-request][oauth2-request]]: OAuth2 request package interface
+  - [[package:shades-of-purple-theme][shades-of-purple-theme]]: A theme with bold shades of purple
+  - [[package:tab-bar-echo-area][tab-bar-echo-area]]: Display tab names of the tab bar in the echo area
+  - [[package:tab-bar-groups][tab-bar-groups]]: Tab groups for the tab bar
+  - [[package:tray][tray]]: Various transient menus
+  - [[package:ytdious][ytdious]]: Query / Preview YouTube via Invidious
+
+Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2021-02][emacs-devel]].
+
 ** 2021-02-08 Emacs news  :emacs:
    :PROPERTIES:
    :ID:       o2b:3ba056c5-5870-4e93-b33b-fa4ea70cdf6d
@@ -72,8 +199,8 @@ Actually generate the section:
   - [[https://www.reddit.com/r/emacs/comments/lcbejk/how_do_you_manage_to_find_time_on_emacs/][How do you manage to find time on Emacs configuration?]]
   - [[https://www.youtube.com/watch?v=bF84mQMmfa8][System Crafters Live! - Emacs Startup Speed, Emacs News, Q&A]] (1:58:0)
 - Emacs Lisp:
-  - [[https://github.com/tecosaur/engrave-faces][engrave-faces: Convert font-lock faces to other formats]]
   - [[https://youtu.be/BverGxP41cE][Edit LISP structurally with Emacs package lispy]] (2014)
+  - [[https://github.com/tecosaur/engrave-faces][engrave-faces: Convert font-lock faces to other formats]]
   - [[https://www.emacswiki.org/emacs/ElispCookbook][EmacsWiki: Elisp Cookbook]] ([[https://reddit.com/r/emacs/comments/lcmsdc/emacswiki_elisp_cookbook/][Reddit]])
 - Emacs development:
   - [[https://lists.gnu.org/archive/html/emacs-devel/2021-02/msg00053.html][Long discussion about default key bindings]]
@@ -18685,45 +18812,66 @@ and turn it into:
 
 #+NAME: sort
 #+begin_src emacs-lisp 
-  (defun my/org-sort-list-in-custom-order (order)
-    "Sort the current Org list so that items are in the specified order.
+(defun my/org-sort-list-in-custom-order (order)
+  "Sort the current Org list so that items are in the specified order.
   ORDER is a list of regexps."
-    (org-sort-list
-     nil ?f
-     (lambda ()
-       (let ((case-fold-search t)
-             (item
-              (when (looking-at "[ \t]*[-+*0-9.)]+\\([ \t]+\\[[- X]\\]\\)?[ \t]+")
-                (org-sort-remove-invisible (buffer-substring (match-end 0) (point-at-eol))))))
-         (or (cl-position item order :test (lambda (a b) (string-match b a))) (1+ (length order)))))
-     '<))
+  (org-sort-list
+   nil ?f
+   (lambda ()
+     (let ((case-fold-search t)
+           (item
+            (when (looking-at "[ \t]*[-+*0-9.)]+\\([ \t]+\\[[- X]\\]\\)?[ \t]+")
+              (org-sort-remove-invisible (buffer-substring (match-end 0) (point-at-eol))))))
+       (or (cl-position item order :test (lambda (a b) (string-match b a))) (1+ (length order)))))
+   '<))
 
-  (defvar my/emacs-news-sort-order  '("Upcoming events" 
-                                      "Beginner"
-       "Emacs configuration"
-       "Emacs Lisp"
-       "Emacs development"
-       "Appearance"
-       "Navigation"
-       "Dired"
-       "Org Mode"
-       "Completion"
-       "Coding"
-       "Math"
-       "Mail and news"
-       "Spacemacs"
-       "Doom Emacs"
-       "Music"
-       "EXWM"
-       "Community"
-       "Other"
-       "Discussion"
-       "Outside Emacs"
-       "New packages"))
-  (defun my/emacs-news-sort-list ()
-    (interactive)
-    (goto-char (org-list-get-top-point (org-list-struct)))
-    (my/org-sort-list-in-custom-order my/emacs-news-sort-order))
+(defvar my/emacs-news-sort-order  
+  '(("Upcoming events" "meetup") 
+    ("Beginner" "beginner")
+    ("Emacs configuration" "config")
+    ("Emacs Lisp" "emacs lisp")
+    "Emacs development"
+    ("Appearance" "theme\\|theming")
+    ("Navigation" "search\\|tab bar")
+    ("Dired" "dired")
+    ("Org Mode" "org[ -]?mode\\|\\<org\\>")
+    ("Completion" "company\\|helm\\|selectrum")
+    ("Coding" "java\\|php\\|sql\\|cider\\|magit")
+    "Math"
+    ("Mail and news" "gnus\\|rmail\\|mail\\|notmuch")
+    ("Spacemacs" "spacemacs")
+    ("Doom Emacs" "doom")
+    "Music"
+    ("EXWM" "exwm")
+    ("Community" "Weekly tips")
+    "Other"
+    "Discussion"
+    "Outside Emacs"
+    "New packages"))
+(defun my/emacs-news-sort-order-headings ()
+  (mapcar (lambda (o) (if (stringp o) o (car o))) my/emacs-news-sort-order))
+(defun my/emacs-news-sort-list ()
+  (interactive)
+  (goto-char (org-list-get-top-point (org-list-struct)))
+  (my/org-sort-list-in-custom-order (my/emacs-news-sort-order-headings)))
+
+(defun my/emacs-news-guess-category ()
+  (save-excursion
+    (when (re-search-forward org-any-link-re (line-end-position) t)
+      (let* ((link (org-element-context))
+             (description (buffer-substring-no-properties (org-element-property :contents-begin link)
+                                                          (org-element-property :contents-end link))))
+        (car (seq-find (lambda (o)
+                          (and (listp o)
+                               (string-match (cadr o) description)))
+                       my/emacs-news-sort-order))))))
+(defun my/emacs-news-auto-categorize ()
+  (interactive)
+  (while (and (looking-at "^- \\[\\[") (not (looking-at "^- New package")))
+    (let ((category (my/emacs-news-guess-category)))
+      (if category
+          (my/org-move-current-item-to-category (concat category ":"))
+        (forward-line 1)))))
 #+end_src
 
 One more little thing automated...
@@ -19237,7 +19385,7 @@ easily define the menu in a variable. It seems to work fine so far.
          (my/org-move-current-item-to-category 
           (completing-read
            "Category: "
-           (append (mapcar (lambda (o) (concat o ":")) my/emacs-news-sort-order)
+           (append (mapcar (lambda (o) (concat o ":")) (my/emacs-news-sort-order-headings))
                    (mapcar 'car (my/org-get-list-categories))))))
        "By string")
       ("/" (lambda () (interactive)
