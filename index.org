@@ -1,8 +1,8 @@
 #+STARTUP: showall
 
-Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2018-01][emacs-devel]].
-
 - [[*Code][Jump to code section]]
+
+Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2018-01][emacs-devel]].
 
 [[~/code/emacs-calendar/README.org][~/code/emacs-calendar/README.org]]
 
@@ -20,6 +20,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
   :CATEGORY: emacs-news
   :END:
   :LOGBOOK:
+  CLOCK: [2021-02-22 Mon 23:14]
   - State "DONE"       from "STARTED"    [2021-02-01 Mon 16:29]
   - State "DONE"       from "STARTED"    [2020-11-09 Mon 23:16]
   :END:
@@ -45,6 +46,7 @@ Actually generate the section:
 #+begin_src emacs-lisp :results raw :noweb yes
   (my/prepare-emacs-news (org-read-date nil nil "-mon")
                          '(
+                           events
                            refresh-packages
                            reddit
                            rss
@@ -55,6 +57,123 @@ Actually generate the section:
 #+End_src
 
 #+RESULTS:
+** 2021-02-22 Emacs news
+   :PROPERTIES:
+   :ID:       o2b:3ff9ecc9-02c8-461f-aee9-b20b532a35b6
+   :POST_DATE: [2021-02-22 Mon 23:47]
+   :BLOG:     sacha
+   :POSTID:   29677
+   :POST_TAGS: emacs, emacs-news
+   :END:
+
+- Upcoming events:
+  - Emacs Berlin (virtual, in English) https://emacs-berlin.org/ Wed Feb 24 0930 Vancouver / 1130 Chicago / 1230 Toronto / 1730 GMT / 1830 Berlin / 2300 Kolkata // Thu Feb 25 0130 Singapore
+  - Emacs APAC (virtual, in English) https://emacs-apac.gitlab.io/ Sat Feb 27 0030 Vancouver / 0230 Chicago / 0330 Toronto / 0830 GMT / 0930 Berlin / 1400 Kolkata / 1630 Singapore
+  - EmacsNYC: Mail Month https://emacsnyc.org/2021/02/03/monthly-online-meetup-mail-month.html Mon Mar 1 1600 Vancouver / 1800 Chicago / 1900 Toronto // Tue Mar 2 0000 GMT / 0100 Berlin / 0530 Kolkata / 0800 Singapore
+  - M-x Research (virtual) - Avoiding Emacs Pinky https://m-x-research.github.io/ Thu Mar 4 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1500 GMT / 1600 Berlin / 2030 Kolkata / 2300 Singapore
+  - Emacs Paris (virtual) https://www.emacs-doctor.com/emacs-paris-user-group/  Thu Mar 4 0830 Vancouver / 1030 Chicago / 1130 Toronto / 1630 GMT / 1730 Berlin / 2200 Kolkata // Fri Mar 5 0030 Singapore
+- Emacs configuration:
+  - [[https://i.redd.it/9ffs4dbhvpi61.png][Self-compiling .emacs]] ([[https://reddit.com/r/emacs/comments/lojk14/selfcompiling_emacs/][Reddit]])
+  - [[https://github.com/raxod502/radian][radian: 🍉 Dotfiles that marry elegance and practicality.]]
+  - [[https://www.reddit.com/r/emacs/comments/ll82o1/tip_menu_and_functions_to_open_shell_remote_or/][Tip: Menu and functions to open shell (remote or local) with automatic login]]
+  - [[https://youtu.be/9i_9hse_Y08][How to Cut Emacs Start Up Time in Half! - Emacs From Scratch #12]] ([[https://reddit.com/r/emacs/comments/lkfuk5/how_to_cut_emacs_start_up_time_in_half_emacs_from/][Reddit]])
+  - [[http://www.dr-qubit.org/Evil_cursor_model.html][Toby 'qubit' Cubitt: Evil cursor model]]
+  - [[https://lccambiaghi.github.io/vanilla-emacs/readme.html][Luca's literate Emacs config]] ([[https://reddit.com/r/planetemacs/comments/lph3kb/lucas_literate_emacs_config/][Reddit]])
+  - [[https://github.com/rjray/emacs-config][rjray"s emacs configuration]]
+  - [[https://www.reddit.com/r/emacs/comments/lnt9d1/spartan_emacs_a_new_minimal_emacs_configuration/][Spartan Emacs (A New Minimal Emacs Configuration Framework)]]
+  - [[https://www.reddit.com/r/emacs/comments/ll8mlz/share_your_fontrelated_config/][Share your font-related config]]
+  - [[https://irreal.org/blog/?p=9501][Irreal: Configuring Mbsync to Work with Gmail]]
+- Emacs Lisp:
+  - [[https://www.reddit.com/r/emacs/comments/lpa7d0/transient_03_released/][Transient 0.3 released]]
+  - [[https://www.reddit.com/r/emacs/comments/lly7po/do_you_use_emacs_lisp_as_a_general_purpose][Do you use Emacs Lisp as a general purpose programming language?]] 
+  - [[https://youtu.be/-H2nU0rsUMY][Hey Emacs! Don't Move My Windows! - Customizing display-buffer's behavior]] ([[https://reddit.com/r/emacs/comments/llvyxe/hey_emacs_dont_move_my_windows_customizing/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/lp4x7o/discussion_testing_in_emacs_testing_emacs_lisp/][Discussion: Testing in Emacs. Testing Emacs Lisp code itself and testing in other languages]]
+- Emacs development:
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=58e0c8ee86e2c36245f1c5a1483f1c73600b4914][The 'interactive' syntax has been extended to allow listing applicable modes]] ([[https://reddit.com/r/emacs/comments/lkpzo0/the_interactive_syntax_has_been_extended_to_allow/][Reddit]])
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2021-02/msg01410.html][A different way to pass options to commands - discussion on emacs-devel]] ([[https://reddit.com/r/emacs/comments/lor7zj/a_different_way_to_pass_options_to_commands/][Reddit]])
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2021-02/msg01695.html][Proposal for an improved `help-for-help']] 
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=8933cf86a1c64fc3302188629356084bcbfc65dc][* lisp/tab-bar.el: 'C-x t N' bound to tab-new-to supports a negative argument]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=6e90768143ff47e96a70d91534344161a1d85f46][* lisp/tab-bar.el: 'C-x t M' bound to tab-move-to supports a negative argument]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=ffdb91c6b344b6b341e75ae981ebdb3e66b94130]['Mod-9' bound to 'tab-last' now switches to the last tab like in web browsers]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=e3e3133f800cf4395dc4594b791276498e426c34][Add a new command for mode-specific commands]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=825aed11d267f7879ca8915eb2b0d154e0beb2d4][Add the `always' function]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=fbc9c59b9eb02d49f426341ee32334784d224ce4][Make goto-line-history buffer local only when so customized]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=12409c9064c386a496dcbdca76b790108f6c1cad][New transient mode 'repeat-mode' to allow shorter key sequences (bug#46515)]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=734396aa04cd57173f1a604397244ed84f3f56a8][New command 'tab-duplicate' like in web browsers]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=927b88571cebb4f64aca360fbfa5d15a1f922ad6][Disable filtering of commands in M-x completion]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=62cda6acd61f6de2698674391a26ce0a8672fc93][* lisp/emacs-lisp/bindat.el: Add 64bit int support]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=83d9fbe3bb8ffdf9e4719842e2510a8dbde86f78][* lisp/emacs-lisp/bindat.el (bindat-spec): New macro.]]
+- Appearance:
+  - [[https://github.com/arturovm/shades-of-purple-emacs][shades-of-purple-emacs: A Shades of Purple theme port for Emacs]]
+  - [[https://protesilaos.com/codelog/2021-02-22-modus-themes-exporter/][Protesilaos Stavrou: Introducing the Modus themes exporter (Emacs library)]]
+- Org Mode:
+  - [[https://www.youtube.com/watch?v=34zODp_lhqg&feature=youtu.be][Org Mode Basics In Doom Emacs]]
+  - [[https://www.youtube.com/watch?v=hnMntOQjs7Q&feature=youtu.be][Emacs Org Mode Demo 2021]]
+  - [[https://www.reddit.com/r/orgmode/comments/lly8j3/getting_started_with_emacs_and_org_mode/][Getting started with Emacs and Org Mode]]
+  - [[https://helpdeskheadesk.net/help-desk-head-desk/20200123/][How I Tackle Projects With org-mode]]
+  - [[https://www.reddit.com/r/emacs/comments/ll3c57/how_do_you_backup_your_org_directory/][How do you backup your org directory?]]
+  - [[https://www.reddit.com/r/orgmode/comments/lnujx7/a_little_orgmode_links_demonstration/][A little org-mode links demonstration]]
+  - [[https://www.youtube.com/watch?v=4iO7SbGhXoQ&feature=youtu.be][Emacs org-attach basics]]
+  - [[https://christiantietze.de/posts/2021/02/emacs-org-todo-doing-done-checkbox-cycling/][Automatic TODO/DOING/DONE State Transitions on Checkbox Changes]] ([[https://reddit.com/r/orgmode/comments/lo2g5q/automatic_tododoingdone_state_transitions_on/][Reddit]])
+  - [[https://d12frosted.io/posts/2021-01-16-task-management-with-roam-vol5.html][Task management with org-roam Vol. 5: Dynamic and fast agenda]] ([[https://reddit.com/r/planetemacs/comments/lpmwby/task_management_with_orgroam_vol_5_dynamic_and/][Reddit]])
+  - [[https://github.com/mskorzhinskiy/org-ir][org-ir: Introspection reports for org-mode]] - clock table, closed tasks, worked items
+  - [[https://github.com/calvinwyoung/org-autolist][org-autolist: Making it even easier to edit lists in org-mode!]]
+  - Appearance:
+    - [[https://zzamboni.org/post/beautifying-org-mode-in-emacs/][Beautifying Org Mode in Emacs]] (2018)
+  - Exporting and tangling:
+    - [[https://www.youtube.com/watch?v=8Gw4Y2EpcOY&feature=youtu.be][Export Emacs Org Mode to HTML – Straightforward Emacs]]
+    - [[https://www.reddit.com/r/emacs/comments/lmz748/org_html_theme_collection/][Org HTML theme collection]]
+    - [[https://www.reddit.com/r/emacs/comments/lo9ov0/latex_export_with_inkscape_images_and_drawio/][Latex export with Inkscape Images and Draw.io Graphs in org mode]]
+    - [[https://github.com/DarkBuffalo/ox-time][ox-time]] ([[https://reddit.com/r/orgmode/comments/lm112v/oxtime/][Reddit]])
+    - [[https://www.reddit.com/r/emacs/comments/ln0j2k/automatically_tangle_org_files_on_save/][Automatically tangle org files on save.]]
+    - [[https://github.com/marketplace/actions/org-knit][Github Action Org knit: Let someone else take care of keeping up to date tangled/woven versions of your Org files for public consumption]]
+  - Interacting with other things:
+    - [[https://www.reddit.com/r/emacs/comments/lmxq8a/ann_superstarkit_a_template_to_bring_org/][[ANN] superstar-kit: A Template to bring Org Superstar to Other Outline Modes]]
+    - [[https://github.com/thanhvg/emacs-reddigg][[ANN] reddigg: browse reddit in emacs org-mode.]] ([[https://reddit.com/r/emacs/comments/lp4c2y/ann_reddigg_browse_reddit_in_emacs_orgmode/][Reddit]])
+    - [[https://v.redd.it/0ly053nj6wi61][Org habits iOS app follow-up (two-way edit)]] ([[https://reddit.com/r/emacs/comments/lp62vn/org_habits_ios_app_followup_twoway_edit/][Reddit]])
+    - [[https://blog.librebits.info/emacs-imagenes-y-portapapeles/][Emacs, imágenes y portapapeles]] - Emacs, images, and clipboards in Org Mode
+    - [[https://www.monotux.tech/posts/2021/02/bug-reference-mode/][bug-reference-mode: How I manage support tickets at work with Org mode]]
+    - [[https://github.com/farynaio/org-link-archive][org-link-archive: Replace org-mode link at point with archivised link produced by archive.org]]
+- Coding:
+  - [[https://www.reddit.com/r/emacs/comments/lnu7xo/great_oneliner_for_controlling_indentation_in/][Great one-liner for controlling indentation in programming modes]]
+  - [[http://ag91.github.io/blog/2021/02/20/emacs-as-your-code-compass-what-is-this-text-about----without-me-reading-it][Andrea: Emacs as your code-compass: what is this text about -- without me reading it?]]
+  - [[https://github.com/anachronic/importmagic.el][importmagic.el: An Emacs package that resolves unimported Python symbols]]
+  - [[https://github.com/anticomputer/gh-notify][gh-notify: a Magit/Forge veneer]] ([[https://reddit.com/r/emacs/comments/lo1scv/ghnotify_a_magitforge_veneer/][Reddit]])
+- Mail and news:
+  - [[https://i.redd.it/8pwub3qezuh61.png][mu4e thread folding (with colors and markers).]] ([[https://reddit.com/r/emacs/comments/ll6aca/mu4e_thread_folding_with_colors_and_markers/][Reddit]])
+  - [[https://www.gerg.ca/hacks/mb2md/][mb2md: convert mailbox to maildir]]
+- Doom Emacs:
+  - [[https://www.youtube.com/watch?v=E_NP40OsxZk&feature=youtu.be][Just a beginner's guide for Doom Emacs | 그냥 기본적인 편집 가이드]]
+  - [[https://github.com/skyler544/doom-nano-testing][doom-nano-testing:Make Nano Emacs (by Nicolas Rougier) and Doom Emacs (by Henrik Lissner) to play nice together.]] ([[https://www.reddit.com/r/emacs/comments/lncawq/getting_doom_emacs_and_nano_emacs_to_work_together/][Reddit]])
+  - [[https://github.com/AloisJanicek/.doom.d-2nd/tree/master/lisp][AloisJanicek''s much improved .doom.d]]
+- Completion:
+  - [[https://www.reddit.com/r/emacs/comments/lo0kps/icicles_basics_emacs_completion_at_its_best/][icicles basics - Emacs completion at its best]]
+  - [[https://github.com/ymarco/auto-activating-snippets][auto-activating-snippets: Snippets for Emacs that expand as you type]]
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/lkyadp/weekly_tipstricketc_thread/][Weekly tips/trick/etc/ thread]]
+  - [[https://www.reddit.com/r/emacs/comments/lly7po/do_you_use_emacs_lisp_as_a_general_purpose/gnvzisy][In the 90s part of Germany's air traffic control software ran on Emacs]] ([[https://news.ycombinator.com/item?id=26202517][HN]])
+- Other:
+  - [[https://mina86.com/2021/emacs-remote-sshfs/][Emacs remote file editing over SSHFS ― mina86.com]]
+  - [[http://mbork.pl/2021-02-20_Using_keyboard_macros_to_emulate_query_replace][Marcin Borkowski: Using keyboard macros to emulate query replace]]
+  - [[https://blogs.dgplug.org/sandeepk/emacs-and-financial-journaling][Emacs & Financial Journaling — sandeepk]]
+  - [[https://www.youtube.com/channel/UCe5excZqMeG1CIW-YhMTCEQ][Emacs Videos by 'Emacs Elements']]
+- New packages:
+  - [[package:blox][blox]]: Interaction with Roblox tooling
+  - [[package:consult-spotify][consult-spotify]]: Spotify queries using consult
+  - [[package:docstr][docstr]]: A document string minor mode
+  - [[package:emacs-everywhere][emacs-everywhere]]: System-wide popup windows for quick edits
+  - [[package:enlightened-theme][enlightened-theme]]: A theme based on enlightened
+  - [[package:erc-yank][erc-yank]]: Automagically create a Gist if pasting more than 5 lines
+  - [[package:espotify][espotify]]: Spotify access library
+  - [[package:macrostep-geiser][macrostep-geiser]]: Macrostep for `geiser'
+  - [[package:ob-reticulate][ob-reticulate]]: Babel Functions for reticulate
+  - [[package:ox-bb][ox-bb]]: BBCode Back-End for Org Export Engine
+  - [[package:reddigg][reddigg]]: A reader for redditt
+  - [[package:sketch-themes][sketch-themes]]: Sketch color themes
+  - [[package:tab-bar-lost-commands][tab-bar-lost-commands]]: The "lost commands" of the tab bar
+
+Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2021-02][emacs-devel]].
+
 ** 2021-02-15 Emacs news
    :PROPERTIES:
    :ID:       o2b:d0316c31-14fe-4eca-ae6c-48f57110ec75
@@ -92,7 +211,6 @@ Actually generate the section:
   - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=40f7804ecb299a7f7c3accd19d27e2898d3b8374][Allow define-minor-mode to take an :interactive keyword]]
   - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=c1ef7adeb649aa99a10c4bd3b6ce988b309da3cc][Add 'read-extended-command-predicate']]
   - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=9291e7316f98ab0858b323f72047ffd5a23d9ac9][Add new 'declare' forms for command completion predicates]]
-  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=58e0c8ee86e2c36245f1c5a1483f1c73600b4914][Extend the syntax of `interactive' to list applicable modes]]
   - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=43ecde85786ccbf4c07d535f08fd74c82a0af31b][Introduce an :interactive keyword for `defined-derived-mode']]
   - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=760910f4917ad8ff5e1cd1bf0bfec443b02f0e44][Add a new buffer-local variable `minor-modes']]
   - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=39a401ddae154b94e4c0e9c8ced1b27d9dc56daa][* lisp/emacs-lisp/edebug.el (edebug-match-lambda-expr): Delete function]]
@@ -18750,16 +18868,44 @@ This one exports links from https://www.reddit.com/user/emacsnews/upvoted.json .
                "]")
        :object-type 'plist))
 
-(defun my/emacs-news-youtube-playlist (playlist)
-  (mapconcat
-   (lambda (o)
-     (format "- %s (%s)\n"
-             (org-link-make-string
-              (concat "https://www.youtube.com/watch?v=" (plist-get o :id))
-              (plist-get o :title))
-             (format-seconds "%h:%m:%s%z" (plist-get o :duration))))
-   (my/emacs-news-get-videos playlist)
-   ""))
+(defun my/save-new-items (file alist)
+  (with-current-buffer (find-file-noselect file)
+    (goto-char (point-min))
+    (let* ((old-list (read (current-buffer)))
+           (date (format-time-string "%Y-%m-%d"))
+           (new-items (seq-difference (mapcar 'car alist)
+                                      (mapcar 'car old-list)))
+           (combined (append (mapcar (lambda (o) (append (list o date) (cdr (assoc o alist))))
+                                     new-items)
+                             old-list)))
+      (erase-buffer)
+      (insert "("
+              (mapconcat 'prin1-to-string
+                          combined
+                          "\n")
+              ")")
+      (save-buffer)
+      combined)))
+
+(defun my/emacs-news-youtube-playlist (playlist start-date end-date)
+  (let* ((videos (my/emacs-news-get-videos playlist))
+         (combined (my/save-new-items "video-list.el"
+                                      (mapcar (lambda (o) (cons (plist-get o :id) o))
+                                              videos))))
+    (mapconcat
+     (lambda (o)
+       (format "- %s (%s)\n"
+               (org-link-make-string
+                (concat "https://www.youtube.com/watch?v=" (plist-get o :id))
+                (plist-get o :title))
+               (format-seconds "%h:%m:%s%z" (plist-get o :duration))))
+     (mapcar 'cddr
+              (seq-filter (lambda (o) (and
+                                       (or (null start-date) (not (string< (cadr o) start-date)))
+                                       (or (null end-date) (string< (cadr o) end-date))))
+                          combined))
+     "")))
+
 #+end_src
 
 
@@ -18880,105 +19026,104 @@ One more little thing automated...
 
 #+NAME: link-description
 #+begin_src emacs-lisp 
-  (defun my/emacs-news-escape-link-description (s)
-    (let ((replace-map '(("\\[" . "")
-                         ("\\]" . ":"))))
-      (mapc (lambda (rule)
-              (setq s (replace-regexp-in-string (car rule) (cdr rule) s)))
-            replace-map)
-      s))
-  (use-package xml-rpc)
-  (defun my/org-list-from-rss (url from-date &optional to-date)
-    "Convert URL to an Org list"
-    (with-current-buffer (url-retrieve-synchronously url)
-      (goto-char (point-min))  
-      (re-search-forward "<\\?xml")
-      (goto-char (match-beginning 0))
-      (let* ((feed (xml-parse-region (point) (point-max)))
-            (from-time (org-read-date nil t from-date))
-            (to-time (if to-date (org-read-date nil t to-date)))
-            (is-rss (> (length (xml-get-children (car feed) 'entry)) 0)))
-        (mapconcat (lambda (link)
-                     (format "- %s\n" 
-                             (org-link-make-string (car link) (cdr link))))
-                   (if is-rss
-                       (mapcar
-                        (lambda (entry)
-                          (cons
-                           (xml-get-attribute (car
-                                               (or
-                                                (seq-filter (lambda (x) (string= (xml-get-attribute x 'rel) "alternate"))
-                                                            (xml-get-children entry 'link))
-                                                (xml-get-children entry 'link))) 'href)
-                           (elt (car (xml-get-children entry 'title)) 2)))
-                        (-filter (lambda (entry)
-                                   (let ((entry-date (elt (car (xml-get-children entry 'updated)) 2)))
-                                     (and
-                                      (org-string<= from-date entry-date)
-                                      (or (null to-date) (string< entry-date to-date)))))
-                                 (xml-get-children (car feed) 'entry)))
-                     (mapcar (lambda (entry)
-                               (cons
-                                (caddr (car (xml-get-children entry 'link)))
-                                (caddr (car (xml-get-children entry 'title)))))
-                             (-filter (lambda (entry)
-                                        (let ((entry-time (date-to-time (elt (car (xml-get-children entry 'pubDate)) 2))))
-                                          (and
-                                           (not (time-less-p entry-time from-time))
-                                           (or (null to-time) (time-less-p entry-time to-time)))))
-                                      (xml-get-children (car (xml-get-children (car feed) 'channel)) 'item))))
-                   ""))))
+(defun my/emacs-news-escape-link-description (s)
+  (let ((replace-map '(("\\[" . "")
+                       ("\\]" . ":"))))
+    (mapc (lambda (rule)
+            (setq s (replace-regexp-in-string (car rule) (cdr rule) s)))
+          replace-map)
+    s))
+(use-package xml-rpc)
+(defun my/org-list-from-rss (url from-date &optional to-date)
+  "Convert URL to an Org list"
+  (with-current-buffer (url-retrieve-synchronously url)
+    (goto-char (point-min))  
+    (re-search-forward "<\\?xml")
+    (goto-char (match-beginning 0))
+    (let* ((feed (xml-parse-region (point) (point-max)))
+           (from-time (org-read-date nil t from-date))
+           (to-time (if to-date (org-read-date nil t to-date)))
+           (is-rss (> (length (xml-get-children (car feed) 'entry)) 0)))
+      (mapconcat (lambda (link)
+                   (format "- %s\n" 
+                           (org-link-make-string (car link) (cdr link))))
+                 (if is-rss
+                     (mapcar
+                      (lambda (entry)
+                        (cons
+                         (xml-get-attribute (car
+                                             (or
+                                              (seq-filter (lambda (x) (string= (xml-get-attribute x 'rel) "alternate"))
+                                                          (xml-get-children entry 'link))
+                                              (xml-get-children entry 'link))) 'href)
+                         (elt (car (xml-get-children entry 'title)) 2)))
+                      (-filter (lambda (entry)
+                                 (let ((entry-date (elt (car (xml-get-children entry 'updated)) 2)))
+                                   (and
+                                    (org-string<= from-date entry-date)
+                                    (or (null to-date) (string< entry-date to-date)))))
+                               (xml-get-children (car feed) 'entry)))
+                   (mapcar (lambda (entry)
+                             (cons
+                              (caddr (car (xml-get-children entry 'link)))
+                              (caddr (car (xml-get-children entry 'title)))))
+                           (-filter (lambda (entry)
+                                      (let ((entry-time (date-to-time (elt (car (xml-get-children entry 'pubDate)) 2))))
+                                        (and
+                                         (not (time-less-p entry-time from-time))
+                                         (or (null to-time) (time-less-p entry-time to-time)))))
+                                    (xml-get-children (car (xml-get-children (car feed) 'channel)) 'item))))
+                 ""))))
 
-  (defun my/describe-packages (list)
-    "Return an Org list of package descriptions for LIST."
-    (mapconcat
-     (lambda (symbol)
-       (let ((package-desc (assoc symbol package-archive-contents)))
-         (if package-desc
-             (format "  - %s: %s"
-                     (org-link-make-string (concat "package:" (symbol-name symbol))
-                                           (symbol-name symbol))
-                     (package-desc-summary (cadr package-desc)))
-           "")))
-     list
-     "\n"))
+(defun my/describe-packages (list)
+  "Return an Org list of package descriptions for LIST."
+  (mapconcat
+   (lambda (symbol)
+     (let ((package-desc (assoc symbol package-archive-contents)))
+       (if package-desc
+           (format "  - %s: %s"
+                   (org-link-make-string (concat "package:" (symbol-name symbol))
+                                         (symbol-name symbol))
+                   (package-desc-summary (cadr package-desc)))
+         "")))
+   list
+   "\n"))
 
-  (defun my/list-new-packages (&optional date)
-    (interactive)
-    (let ((packages
-           (with-temp-buffer
-             (insert-file-contents "package-list.el")
-             (goto-char (point-min))
-             (my/describe-packages
-              (reverse (-difference (mapcar 'car package-archive-contents)
-                           (mapcar 'car
-                                   (seq-filter (lambda (o)
-                                                 (or (null date) (string< (cdr o) date)))
-                                               (read (current-buffer))))))))))
-      (if (called-interactively-p 'any)
-          (insert packages)
-        packages)))
+(defun my/list-new-packages (&optional date)
+  (interactive)
+  (let ((packages
+         (with-temp-buffer
+           (insert-file-contents "package-list.el")
+           (goto-char (point-min))
+           (my/describe-packages
+            (reverse (-difference (mapcar 'car package-archive-contents)
+                                  (mapcar 'car
+                                          (seq-filter (lambda (o)
+                                                        (or (null date) (string< (cdr o) date)))
+                                                      (read (current-buffer))))))))))
+    (if (called-interactively-p 'any)
+        (insert packages)
+      packages)))
 
-  (defun my/save-new-packages ()
-    (interactive)
-    (require 'dash)
-    (when package-archive-contents
-      (with-current-buffer (find-file-noselect "package-list.el")
-        (goto-char (point-min))
-        (let* ((old-list (read (current-buffer)))
-               (date (format-time-string "%Y-%m-%d"))
-               (new-packages (seq-difference (mapcar 'car package-archive-contents)
-                                             (mapcar 'car old-list))))
-          (erase-buffer)
-          (insert "("
-                  (mapconcat 'prin1-to-string
-                             (append (mapcar (lambda (o) (cons o date))
-                                             new-packages)
-                                     old-list)
-                             "\n")
-           ")")
-          (save-buffer))
-        nil)))
+(defun my/save-new-packages ()
+  (interactive)
+  (when package-archive-contents
+    (with-current-buffer (find-file-noselect "package-list.el")
+      (goto-char (point-min))
+      (let* ((old-list (read (current-buffer)))
+             (date (format-time-string "%Y-%m-%d"))
+             (new-packages (seq-difference (mapcar 'car package-archive-contents)
+                                           (mapcar 'car old-list))))
+        (erase-buffer)
+        (insert "("
+                (mapconcat 'prin1-to-string
+                           (append (mapcar (lambda (o) (cons o date))
+                                           new-packages)
+                                   old-list)
+                           "\n")
+                ")")
+        (save-buffer))
+      nil)))
 #+end_src
 
 ** Get info from the Emacs NEWS file in the git repository
@@ -19088,45 +19233,52 @@ above!
   (defun my/prepare-emacs-news (date parts)
     (interactive (list (org-read-date nil nil "-mon 0:00") '(refresh-packages reddit rss)))
     (setq date (substring date 0 10))
-    (when (member 'refresh-packages parts)
-      (my/save-new-packages)
-      (package-refresh-contents))
-    (concat
-     "** " (substring (org-read-date nil nil "++1" nil (org-read-date nil t "-sun 0:00")) 0 10) " Emacs news\n\n"
-     (if (member 'git parts)
-         (concat
-          "- Emacs development:\n"
-          (my/insert-emacs-news-from-git date)
-          "\n"
-          )) 
-     "- Other:\n"
-     (if (member 'rss parts)
-         (my/org-list-from-rss "https://planet.emacslife.com/atom.xml" (substring date 0 10))
-       "")
-     (if (member 'rss-es parts)
-         (my/org-list-from-rss "https://planet.emacs-es.org/atom.xml" (substring date 0 10))
-       "")
-     "\n"
-     (if (member 'reddit parts) (my/reddit-list-upvoted (substring date 0 10)) "")
-     (if (member 'youtube parts)
-         (my/emacs-news-youtube-playlist my/emacs-news-playlist))
-     "- New packages:\n"
-     (my/list-new-packages date) 
-     "\n\nLinks from "
-     (mapconcat (lambda (x) (org-link-make-string (car x) (cdr x)))
-                '(("http://reddit.com/r/emacs" . "reddit.com/r/emacs")
-                  ("http://reddit.com/r/orgmode" . "r/orgmode")
-                  ("http://reddit.com/r/spacemacs" . "r/spacemacs")
-                  ("http://reddit.com/r/planetemacs" . "r/planetemacs")
-                  ("https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story" . "Hacker News")
-                  ("https://planet.emacslife.com" . "planet.emacslife.com")
-                  ("https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded" . "YouTube")
-                  ("http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS" . "the Emacs NEWS file"))
-                ", ")
-     " and "
-     (org-link-make-string (concat "http://lists.gnu.org/archive/html/emacs-devel/" (format-time-string "%Y-%m"))
-                           "emacs-devel")
-     "."))
+    (let ((start-date date)
+          (end-date (substring (org-read-date nil nil "++1" nil (org-read-date nil t "-sun 0:00")) 0 10)))
+      (when (member 'refresh-packages parts)
+        (my/save-new-packages)
+        (package-refresh-contents))
+      (concat
+       "** " end-date " Emacs news\n\n"
+       (if (member 'events parts)
+           (concat
+            "- Upcoming events:\n"
+            (replace-regexp-in-string "^" "  " (shell-command-to-string "python3 ~/code/emacs-calendar/update.py"))
+            "\n"))
+       (if (member 'git parts)
+           (concat
+            "- Emacs development:\n"
+            (my/insert-emacs-news-from-git date)
+            "\n"
+            )) 
+       "- Other:\n"
+       (if (member 'rss parts)
+           (my/org-list-from-rss "https://planet.emacslife.com/atom.xml" (substring date 0 10))
+         "")
+       (if (member 'rss-es parts)
+           (my/org-list-from-rss "https://planet.emacs-es.org/atom.xml" (substring date 0 10))
+         "")
+       "\n"
+       (if (member 'reddit parts) (my/reddit-list-upvoted (substring date 0 10)) "")
+       (if (member 'youtube parts)
+           (my/emacs-news-youtube-playlist my/emacs-news-playlist start-date end-date))
+       "- New packages:\n"
+       (my/list-new-packages date) 
+       "\n\nLinks from "
+       (mapconcat (lambda (x) (org-link-make-string (car x) (cdr x)))
+                  '(("http://reddit.com/r/emacs" . "reddit.com/r/emacs")
+                    ("http://reddit.com/r/orgmode" . "r/orgmode")
+                    ("http://reddit.com/r/spacemacs" . "r/spacemacs")
+                    ("http://reddit.com/r/planetemacs" . "r/planetemacs")
+                    ("https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story" . "Hacker News")
+                    ("https://planet.emacslife.com" . "planet.emacslife.com")
+                    ("https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded" . "YouTube")
+                    ("http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS" . "the Emacs NEWS file"))
+                  ", ")
+       " and "
+       (org-link-make-string (concat "http://lists.gnu.org/archive/html/emacs-devel/" (format-time-string "%Y-%m"))
+                             "emacs-devel")
+       ".")))
 #+end_src
 
 ** Collect Emacs News
