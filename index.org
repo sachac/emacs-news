@@ -7,7 +7,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 [[~/code/emacs-calendar/README.org][~/code/emacs-calendar/README.org]]
 
 * STARTED [#A] Do another Emacs News review   
-  SCHEDULED: <2021-02-08 Mon .+1w>
+  SCHEDULED: <2021-03-02 Tue .+1w>
   :PROPERTIES:
   :Effort:   1:30
   :QUANTIFIED: Emacs
@@ -15,12 +15,13 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
   :POSTID:   28441
   :POST_DATE: 20151026T17:18:00+0000
   :Published: No
-  :LAST_REPEAT: [2021-02-01 Mon 16:29]
+  :LAST_REPEAT: [2021-02-23 Tue 00:18]
   :ID:       o2b:ef27b244-48a5-4227-9a01-30228a81ebee
   :CATEGORY: emacs-news
   :END:
   :LOGBOOK:
-  CLOCK: [2021-02-22 Mon 23:14]
+  - State "DONE"       from "STARTED"    [2021-02-23 Tue 00:18]
+  CLOCK: [2021-02-22 Mon 23:14]--[2021-02-23 Tue 00:18] =>  1:04
   - State "DONE"       from "STARTED"    [2021-02-01 Mon 16:29]
   - State "DONE"       from "STARTED"    [2020-11-09 Mon 23:16]
   :END:
@@ -57,6 +58,90 @@ Actually generate the section:
 #+End_src
 
 #+RESULTS:
+** 2021-03-01 Emacs news
+   :PROPERTIES:
+   :ID:       o2b:0bc6c7b8-fb09-4959-9d8d-a90a5ba2a114
+   :POST_DATE: [2021-03-01 Mon 09:24]
+   :BLOG:     sacha
+   :POSTID:   29679
+   :END:
+
+- Upcoming events:
+  - EmacsNYC: Mail Month https://emacsnyc.org/2021/02/03/monthly-online-meetup-mail-month.html Mon Mar 1 1600 Vancouver / 1800 Chicago / 1900 Toronto // Tue Mar 2 0000 GMT / 0100 Berlin / 0530 Kolkata / 0800 Singapore
+  - M-x Research (virtual) - Avoiding Emacs Pinky https://m-x-research.github.io/ Thu Mar 4 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1500 GMT / 1600 Berlin / 2030 Kolkata / 2300 Singapore
+  - Emacs Paris (virtual) https://www.emacs-doctor.com/emacs-paris-user-group/  Thu Mar 4 0830 Vancouver / 1030 Chicago / 1130 Toronto / 1630 GMT / 1730 Berlin / 2200 Kolkata // Fri Mar 5 0030 Singapore
+- Emacs configuration:
+  - [[https://github.com/ashton314/emacs-writer][emacs-writer: An elegant Emacs setup optimized for non-technical writers]] ([[https://reddit.com/r/planetemacs/comments/lu6xjv/emacswriter_an_elegant_emacs_setup_optimized_for/][Reddit]])
+  - [[https://luca.cambiaghi.me/vanilla-emacs/readme.html][Luca's literate Emacs config]]
+  - [[https://github.com/grandfoobah/spartan-emacs][spartan-emacs: Emacs for Spartans]]
+  - [[https://www.reddit.com/r/emacs/comments/ls13rj/ergus_mini_dotemacs/][Ergus mini dotemacs]]
+  - [[http://mbork.pl/2021-02-27_Visible_bell_in_Emacs][Marcin Borkowski: Visible bell in Emacs]]
+- Emacs Lisp:
+  - [[https://www.reddit.com/r/emacs/comments/lqg9np/directorel_simulate_emacs_user_sessions_for/][director.el: Simulate Emacs user sessions. For end-to-end testing, hands-free screencast recording, probably more]]
+  - [[https://www.youtube.com/watch?v=lU1T2mqipN8][GNU Emacs IELM, Interactive Emacs Lisp Mode]] (1:43)
+  - [[https://www.youtube.com/watch?v=iqNhJsVmVUg][System Crafters Live! - Is Lisp a dead language? • Emacs Lisp Hacking • Q&A]] (1:55:6)
+- Emacs development:
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=3b3b16ea17a6ce3169e32acf4aa4c020f4db71d7][* lisp/tab-bar.el: Support displaying global-mode-string in the tab bar.]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=b34d39170b67a7a285f7c8c2ea1b4128b531aad9][Minor fixes after preloading easymenu]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=a350ae058caedcb7be7d332564817954e3624e60][* lisp/emacs-lisp/cconv.el: Improve line-nb info of unused var warnings]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=6bf56a3614ccd23a31e34ae997b2a6bb0d158489][Fix documentation of a recent change]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=297c0e0306f111c1e7564b2bb49a7e1a925a55bb][New variable 'use-short-answers' to use 'y-or-n-p' instead of 'yes-or-no-p']]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=2766f9fdb95a1a4418020d32ce3f0cbd262f7cee][* lisp/emacs-lisp/macroexp.el (macroexp-file-name): New function.]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=7c48c83dabeabc807acf4b84d1a0fc6a2ee5ae87][Use named faces in shortdoc]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=29c0b640ba7bd076345d654fc5c393062eab83af][* lisp/tab-line.el (tab-line-tab-name-format-function): New defcustom.]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=0b9fda1fd92e92b65836cbb2f3dd0761ab837d55][* lisp/tab-bar.el (tab-prefix-map): Bind "n" to 'tab-duplicate'.]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=7788129c3adb328ce838282ebc303368e2392d5d][Make message-mailto work for emacsclient]]
+- Appearance:
+  - [[https://tychoish.com/post/editor-themes/][Editor Themes]]
+  - [[https://protesilaos.com/codelog/2021-02-25-modus-themes-diffs-deuteranopia/][Protesilaos Stavrou: The Modus themes now cover deuteranopia in diffs]]
+- Navigation:
+  - [[https://erick.navarro.io/til/find-file-under-cursor-in-emacs/][Find file under cursor in emacs]] ([[https://reddit.com/r/emacs/comments/lttkjz/find_file_under_cursor_in_emacs/][Reddit]])
+  - [[https://www.youtube.com/watch?v=-sFTkCQ774o&feature=youtu.be][Using Emacs 48 - silversearcher]]
+- Org Mode:
+  - [[https://www.reddit.com/r/emacs/comments/lrn59w/a_short_write_up_on_orgmode/][A short write up on org-mode]]
+  - [[https://www.reddit.com/r/emacs/comments/ltpx5i/master_recurring_appointments_in_orgmode/][Master recurring appointments in orgmode]]
+  - [[https://org-roam.discourse.group/t/zero-to-emacs-and-org-roam-a-step-by-step-guide-on-windows-10/400][Tutorial for setting up Org-roam on Windows 10]]
+  - [[https://www.reddit.com/r/emacs/comments/lttvwh/orgpopup_take_notes_in_cool_way/][org-popup - Take notes in cool way]]
+  - [[https://macoy.me/code/macoy/home-life-display][home-life-display: Make an E-Ink screen show daily info - home including your Org agenda]]
+  - Export:
+    - [[https://dilzeem.github.io/posts/blogging-with-org/][Blogging with just Org Mode]] ([[https://reddit.com/r/emacs/comments/lpvfkh/blogging_with_just_org_mode/][Reddit]])
+    - [[https://www.youtube.com/watch?v=2SNN-WEU2mM][I Made a Video Talking About clarete's New Weblorg Generator]] ([[https://reddit.com/r/emacs/comments/lpz7k6/i_made_a_video_talking_about_claretes_new_weblorg/][Reddit]])
+    - [[https://www.youtube.com/watch?v=OcR-Ke2CiPo&feature=youtu.be][Using Emacs 73 - Ripgrep and updating my blog]] - ox-hugo
+    - [[https://jao.io/blog/2021-02-26-simplicity-pays-off.html][jao: simplicity pays off]] - org-static-blog and tag RSS
+    - [[https://oer.gitlab.io/emacs-reveal-howto/howto.html][How to create presentations with emacs-reveal]]
+    - [[https://github.com/aidanscannell/my-org-resume][Resume written in Org-mode with the LaTeX AltaCV template.]] ([[https://reddit.com/r/planetemacs/comments/lq2llj/resume_written_in_orgmode_with_the_latex_altacv/][Reddit]])
+  - Org-roam:
+    - [[https://www.reddit.com/r/OrgRoam/][New subreddit for those of you who use Org-roam]]
+    - [[https://org-roam.discourse.group/t/org-roam-major-redesign/1198][Org-roam is planned to have a major redesign]] ([[https://reddit.com/r/OrgRoam/comments/ltf02w/orgroam_is_planned_to_have_a_major_redesign/][Reddit]])
+- Completion:
+  - [[https://www.youtube.com/watch?v=AeH6TeJT5OY&feature=youtu.be][The main navigational features of icicles (for Emacs)]] ([[https://reddit.com/r/planetemacs/comments/lubv6h/the_main_navigational_features_of_icicles_for/][Reddit]])
+  - [[https://github.com/osv/ac-html-csswatcher][ac-html-csswatcher: HTML Class and ID completion for emacs by using ac-html.el and csswatcher projects]] ([[https://reddit.com/r/planetemacs/comments/lr488n/achtmlcsswatcher_html_class_and_id_completion_for/][Reddit]])
+- Coding:
+  - [[https://www.youtube.com/watch?v=ELOmzi0RW_8][Setting up Emacs for Typescript React projects with lsp-mode and prettier]] (18:13)
+  - [[https://idiomdrottning.org/magit-transients][How to put an end to Magit and its wonderful popups]]
+  - [[https://www.reddit.com/r/emacs/comments/lt1v1g/async_git_modeline_prototype/][Async git modeline prototype]]
+  - [[https://github.com/johannes-mueller/test-cockpit.el][test-cockpit.el: Run tests for multiple languages from emacs.]]
+- Mail and news:
+  - [[https://www.reddit.com/r/emacs/comments/lsq8h9/ann_elfeedscore_07/][[ANN] elfeed-score 0.7]]
+  - [[https://github.com/thanhvg/emacs-hnreader][emacs-hnreader: Read Hacker News inside Emacs]]
+  - [[https://www.reddit.com/r/emacs/comments/ls5p8h/elfeed_writeup/][Elfeed writeup]]
+  - [[https://sqrtminusone.xyz/posts/2021-02-27-gmail/][Multiple Gmail accounts & labels with Emacs]] ([[https://reddit.com/r/emacs/comments/ltnk9a/multiple_gmail_accounts_labels_with_emacs/][Reddit]])
+  - [[https://mostlymaths.net/2012/08/adding-notes-to-emails-in-gnus-in.html/][Adding Notes to Emails in Gnus in Summary View (2012)]] ([[https://reddit.com/r/emacs/comments/ls9hwk/adding_notes_to_emails_in_gnus_in_summary_view/][Reddit]])
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/lqbx2l/weekly_tipstricketc_thread/][Weekly tips/trick/etc/ thread]]
+- Other:
+  - [[https://www.youtube.com/watch?v=o2zZeTMGzvA][Use Emacs Calendar to work out the date of Easter]] (6:54)
+  - [[https://tech.toryanderson.com/2021/02/27/best-features-for-text-editing-in-emacs/][Tory Anderson: Best features for text-editing in emacs]]
+  - [[https://jao.io/blog/2020-02-23-signel.html][signel: A barebones signal chat on top of signal-cli]]
+- New packages:
+  - [[package:cascading-dir-locals][cascading-dir-locals]]: Apply all (!) .dir-locals.el from root to current directory
+  - [[package:company-ipa][company-ipa]]: Ipa backend for company
+  - [[package:desktop-mail-user-agent][desktop-mail-user-agent]]: Call OS default mail program to compose mail
+  - [[package:lsp-grammarly][lsp-grammarly]]: LSP Clients for Grammarly
+  - [[package:numpydoc][numpydoc]]: NumPy style docstring insertion
+
+Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2021-03][emacs-devel]].
+
 ** 2021-02-22 Emacs news
    :PROPERTIES:
    :ID:       o2b:3ff9ecc9-02c8-461f-aee9-b20b532a35b6
@@ -18980,11 +19065,11 @@ and turn it into:
     ("Appearance" "theme\\|theming")
     ("Navigation" "search\\|tab bar")
     ("Dired" "dired")
-    ("Org Mode" "org[ -]?mode\\|\\<org\\>")
-    ("Completion" "company\\|helm\\|selectrum")
-    ("Coding" "java\\|php\\|sql\\|cider\\|git")
+    ("Org Mode" "org[ -]?mode\\|\\<org\\>\\|\\<ox-")
+    ("Completion" "company\\|helm\\|selectrum\\|completion")
+    ("Coding" "java\\|php\\|sql\\|cider\\|git\\|programming\\|scala\\|python")
     "Math"
-    ("Mail and news" "gnus\\|rmail\\|mail\\|notmuch")
+    ("Mail and news" "gnus\\|rmail\\|mail\\|notmuch\\|mu4e")
     ("Spacemacs" "spacemacs")
     ("Doom Emacs" "doom")
     "Music"
@@ -19017,7 +19102,8 @@ and turn it into:
     (let ((category (my/emacs-news-guess-category)))
       (if category
           (my/org-move-current-item-to-category (concat category ":"))
-        (forward-line 1)))))
+        (forward-line 1)
+        (goto-char (line-beginning-position))))))
 #+end_src
 
 One more little thing automated...
@@ -19243,7 +19329,7 @@ above!
        (if (member 'events parts)
            (concat
             "- Upcoming events:\n"
-            (replace-regexp-in-string "^" "  " (shell-command-to-string "python3 ~/code/emacs-calendar/update.py"))
+            (replace-regexp-in-string "^" "  " (shell-command-to-string "cd ~/code/emacs-calendar; python3 ~/code/emacs-calendar/update.py"))
             "\n"))
        (if (member 'git parts)
            (concat
