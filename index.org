@@ -18,6 +18,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
   :LAST_REPEAT: [2021-02-23 Tue 00:18]
   :ID:       o2b:ef27b244-48a5-4227-9a01-30228a81ebee
   :CATEGORY: emacs-news
+  :POST_TAGS: emacs, emacs-news
   :END:
   :LOGBOOK:
   - State "DONE"       from "STARTED"    [2021-02-23 Tue 00:18]
@@ -58,12 +59,117 @@ Actually generate the section:
 #+End_src
 
 #+RESULTS:
+** 2021-03-08 Emacs news
+:PROPERTIES:
+:POST_TAGS: emacs, emacs-news
+:ID:       o2b:61402fd9-1201-4f49-b5ab-45c33d2651de
+:POST_DATE: [2021-03-08 Mon 10:44]
+:BLOG:     sacha
+:POSTID:   29682
+:END:
+
+- Upcoming events:
+  - M-x Research (virtual, contact them for passcode) https://m-x-research.github.io/ Thu Mar 18 0800 Vancouver / 1000 Chicago / 1100 Toronto / 1500 GMT / 1600 Berlin / 2030 Kolkata / 2300 Singapore
+  - Emacs APAC (virtual, in English) https://emacs-apac.gitlab.io/ Sat Mar 27 0130 Vancouver / 0330 Chicago / 0430 Toronto / 0830 GMT / 0930 Berlin / 1400 Kolkata / 1630 Singapore
+  - Emacs Berlin (virtual, in English) https://emacs-berlin.org/ Wed Mar 31 0930 Vancouver / 1130 Chicago / 1230 Toronto / 1630 GMT / 1830 Berlin / 2200 Kolkata // Thu Apr 1 0030 Singapore
+  - M-x Research (virtual, contact them for passcode) https://m-x-research.github.io/ Thu Apr 1 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore
+  - Emacs Paris (virtual) https://www.emacs-doctor.com/emacs-paris-user-group/ Tue Apr 6 0830 Vancouver / 1030 Chicago / 1130 Toronto / 1530 GMT / 1730 Berlin / 2100 Kolkata / 2330 Singapore
+- Emacs configuration:
+  - [[https://www.reddit.com/r/emacs/comments/lya7sb/my_nuke_whitespace_on_save_setup/][My nuke whitespace on save setup]]
+  - [[https://www.manueluberti.eu//emacs/2021/03/08/package/][Manuel Uberti: Quick starting is a bendy road]]
+  - [[https://www.linuxlinks.com/best-free-configuration-frameworks-emacs/][5 Best Free Configuration Frameworks for Emacs - LinuxLinks]] ([[https://reddit.com/r/planetemacs/comments/lyt1vi/5_best_free_configuration_frameworks_for_emacs/][Reddit]])
+  - [[https://github.com/purepani/emacs-config][purepani's emacs-config]]
+  - [[https://hristos.co/blog/my-custom-emacs-setup/][Hristos N. Triantafillou: My Custom Emacs Setup]] ([[https://news.ycombinator.com/item?id=26373802][HN]])
+  - [[https://writequit.org/eos/eos.html][dakrone/eos - Emacs Operating System]]
+- Emacs Lisp:
+  - [[https://www.reddit.com/r/emacs/comments/lyepr1/interactive_function_to_convert_time_between_two/][Interactive function to convert time between two different time zones]]
+  - [[https://youtu.be/J7d2LmivyyM][Reading and Writing Buffers in Practice - Learning Emacs Lisp #5]] ([[https://reddit.com/r/emacs/comments/lvau4h/reading_and_writing_buffers_in_practice_learning/][Reddit]])
+  - [[http://ag91.github.io/blog/2021/03/01/preview-post-set-your-editing-goals][Andrea: Preview post: set your editing goals]]
+- Emacs development:
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=11d3af3c7b9dc5a2910807d311168fb82d962d0d][Add Tramp sshfs method]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=a190bc9f3067d9c35fc4344248222eb6ff2a0fc6][Delete two more items obsoleted in Emacs 23.1]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=4a112fd7a6f0dcbd1b99b811b324123f5699bdfb][Add new face 'help-key-binding' for keybindings in help]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=c63d2ef59c511c1c48c69a202907b7edfcbb19b3][Remove outline-cycle-minor-mode and outline-cycle-highlight-minor-mode]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=856a0a913a1932e1bad8e44d34944ce7504b23ff][Remove additional items obsolete since Emacs 22/23]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=98533555de42f2bded824130466cf0aefc648292][Remove some items obsolete since Emacs 22/23 from Gnus]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=c3cf99f53714ce1227ab508c9e359910a963659e][Remove the --without-makeinfo configure option (bug#46837)]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=428339e2316a552713b265193d6648125042cc98][Speed up json.el encoding]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=d925121b1e1cdf953705a5da43f8092f2a6e1d8c][Various map.el improvements]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=16a98c39ffa0eaa9e9753b96a1fcf2e921a31301][Improve documentation of Bindat]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=533c659b6c73fd381231f25d0644c69729dd0aed][Bindat: new macro-expansion based data layout language]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=0981712e5764c9e553d2160139cca6c83afb0946][Add a command in package mode for opening home pages directly]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=8e759d60cc234d4beb471dbb46f91d8ca3a20066][Decouple require-theme from load-theme]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=6458e16f3381cbd076316d4f228369e31a328cc2][New mode outline-cycle-minor-mode with Orgmode-like TAB cycling on headings]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=356636c6a1ebba3e95d0e6609ae0401992008ccf][Make inversion.el obsolete (Bug#46841)]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=165353674e5fe7109ba9cbf526de0333902b7851][* lisp/emacs-lisp/pcase.el: Bind all the vars in `or` patterns]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=59e1867a1f2b6938cdabac8e3f52acc9e61e9e32][Add 'require-theme' function]]
+- Appearance:
+  - [[https://protesilaos.com/codelog/2021-03-04-modus-themes-1-2-0/][Modus themes 1.2.0 for GNU Emacs]] ([[https://reddit.com/r/emacs/comments/lzhkl8/modus_themes_120_for_gnu_emacs/][Reddit]])
+- Navigation:
+  - [[https://martin.baillie.id/wrote/evil-motion-training-for-emacs/][Evil Motion Training]] ([[https://reddit.com/r/emacs/comments/lzh86b/evil_motion_training/][Reddit]])
+  - [[https://www.youtube.com/watch?v=Im8taRkzYAc&feature=youtu.be][Enhance your Emacs experience with Bookmark Plus]]
+  - [[https://gitlab.com/ganserla/emacs/-/commit/6458e16f3381cbd076316d4f228369e31a328cc2][New mode outline-cycle-minor-mode with Orgmode-like TAB cycling on headings]]
+- Writing:
+  - [[https://www.reddit.com/r/emacs/comments/lvv8hf/my_emacs_latex_insert_inkscape_figure/][My Emacs LaTeX Insert Inkscape Figure]]
+- Org Mode:
+  - Workflow:
+    - [[https://karl-voit.at/2021/03/06/task-lifecycle/][UOMF: My Current Life-Cycle of an Org Mode Task]] ([[https://reddit.com/r/emacs/comments/lz6z58/uomf_my_current_lifecycle_of_an_org_mode_task/][Reddit]])
+    - [[https://cyberthal-ghost.nfshost.com/textmind-case-study-fixing-a-technical-problem-that-has-exploding-dependencies-3dashboard-heading-stack/][Cyberthal: Textmind case study | fixing a technical problem that has exploding dependencies | '3dashboard heading stack]]
+    - [[https://www.reddit.com/r/orgmode/comments/lz9y1g/ann_helpers_for_navigation_agenda_repeated_tasks/][[ANN] Helpers for navigation, agenda, repeated tasks, file attachments and appearance]] - org-clone-property, org-ql-planning, org-evil-navigation, org-clock-helpers, org-attach-file-capture, org-margin-bullet
+  - Export:
+    - [[https://joseph8th.github.io/][Publishing with Nikola in Emacs]]
+    - [[https://lists.gnu.org/archive/html/emacs-orgmode/2021-03/msg00073.html][Org as a book publisher]]
+    - [[https://www.youtube.com/watch?v=0qHloGTT8XE][Perfect Org Mode Exports to LaTeX, easy, extensible, customizable]] ([[https://reddit.com/r/orgmode/comments/lzsygs/perfect_org_mode_exports_to_latex_easy_extensible/][r/orgmode]], [[https://reddit.com/r/emacs/comments/lzsx1q/perfect_emacs_org_mode_exports_to_latex_easy_and/][r/emacs]])
+    - [[https://github.com/ifree/org-onenote][org-onenote: Post org file to onenote]]
+    - [[https://github.com/legalnonsense/org-clock-export][org-clock-export: Export org-clock data to a CSV file]]
+    - [[https://maxxcan.com/2021-01-27-introducci%C3%B3n-a-org-static-blog.html][Introducción a org-static-blog]]
+    - [[https://notxor.nueva-actitud.org/2021/03/03/publicar-con-org-mode.html][Publicar con org-mode II]]
+  - [[https://lists.gnu.org/archive/html/emacs-orgmode/2021-03/msg00056.html][[emacs-devel] Dendron supports Org markup]]
+  - [[https://youtu.be/KctY8FCXgi8][org-gamedb - A game API client to work with org-mode]] (1:04, [[https://reddit.com/r/orgmode/comments/lv4qi3/orggamedb_a_game_api_client_to_work_with_orgmode/][Reddit]])
+  - [[https://github.com/exp2exp/ob-servant][ob-servant: Code for interacting with longrunning processes from inside Org Mode]] ([[https://reddit.com/r/planetemacs/comments/lxtpl6/observant_code_for_interacting_with_longrunning/][Reddit]])
+  - [[https://www.reddit.com/r/orgmode/comments/lx6159/anki_deck_for_orgagenda_key_bindings/][Anki deck for org-agenda key bindings]]
+- Coding:
+  - [[http://ag91.github.io/blog/2021/03/04/emacs-as-your-code-compass-what-files-do-i-need-to-change-next][Andrea: Emacs as your code-compass: what files do I need to change next?]]
+  - [[https://www.youtube.com/watch?v=jPXIP46BnNA&feature=youtu.be][Emacs IDE - Python Development Configuration]] ([[https://reddit.com/r/planetemacs/comments/ly5w0f/emacs_ide_python_development_configuration/][Reddit]])
+  - [[https://github.com/daviwil/emacs-from-scratch/wiki/LSP-Python-(pyright)-config-in-emacs-from-scratch][LSP Python (pyright) config in emacs from scratch]]
+  - [[http://blog.binchen.org/posts/use-magit-to-commit-efficiently-and-correctly/][Chen Bin (redguardtoo): Use Magit to commit efficiently and correctly]]
+  - [[https://github.com/omar-polo/vc-got/][vc-got: Emacs VC backend for 'Game of Tree' version control system]]
+- Mail and news:
+  - [[https://github.com/lassik/emacs-desktop-mail-user-agent][Mac mail program to send mail from Emacs]]
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/lvw44q/weekly_tipstricketc_thread/][Weekly tips/trick/etc/ thread]]
+  - [[https://www.reddit.com/r/emacs/comments/lv5buz/new_remacs_moderators/][New r/emacs moderators]]
+  - [[https://www.reddit.com/r/emacs/comments/lvg9hc/emacs_tales_a_collection_of_unexpected_stories/][Emacs Tales: A collection of unexpected stories involving emacs]]
+- Fun:
+  - [[https://www.reddit.com/r/emacs/comments/lyusnl/emacs_attacks_because_you_needed_a_wargame_for/][Emacs Attacks! .. because you needed a wargame for Emacs]]
+- Other:
+  - [[https://christiantietze.de/posts/2021/03/change-case-of-word-at-point/][Christian Tietze: Change Case of Word at Point in Emacs, But for Real This Time]] ([[https://reddit.com/r/planetemacs/comments/lyxwzo/christian_tietze_change_case_of_word_at_point_in/][Reddit]])
+  - [[https://www.youtube.com/watch?v=bzRF8TlKQhY][System Crafters Live! - Should you do everything in Emacs? • Becoming a Lisp Ninja • Q&A]] (2:01:52)
+  - [[https://yewtu.be/watch?v=i8OLg-f9EHk][System Crafters Live! - Emacs Native Comp will change *everything* • Trying out Eglot • Q&A - Invidious]]
+  - [[https://gitlab.com/ideasman42/emacs-run-stuff][[ANN] run-stuff package, now with customizable handlers]]
+  - [[https://protesilaos.com/codelog/2021-03-03-emacs-query-replace-downcase/][Protesilaos Stavrou: Use ‘M-x query-replace-regexp’ to downcase matches]] ([[https://reddit.com/r/planetemacs/comments/lx0gg0/protesilaos_stavrou_use_mx_queryreplaceregexp_to/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/lxabxs/outline_of_how_to_compile_emacs28_with_nativecomp/][Outline of how to compile emacs28 with native-comp under msys2]]
+- New packages:
+  - [[package:ob-haxe][ob-haxe]]: org-babel functions for haxe evaluation
+  - [[package:current-word-highlight][current-word-highlight]]: Highlight the current word minor mode
+  - [[package:diffpdf][diffpdf]]: Transient diffpdf
+  - [[package:just-mode][just-mode]]: Justfile editing mode
+  - [[package:laas][laas]]: A bundle of as-you-type LaTeX snippets
+  - [[package:leaf-defaults][leaf-defaults]]: Awesome leaf config collections
+  - [[package:ligo-mode][ligo-mode]]: A major mode for editing LIGO source code
+  - [[package:seen-mode][seen-mode]]: A syntax highlighting package for text/kepago
+  - [[package:sequed][sequed]]: Major mode for FASTA format DNA alignments
+  - [[package:vulpea][vulpea]]: A collection of org-roam note-taking functions
+
+Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2021-03][emacs-devel]].
+
 ** 2021-03-01 Emacs news
    :PROPERTIES:
    :ID:       o2b:0bc6c7b8-fb09-4959-9d8d-a90a5ba2a114
    :POST_DATE: [2021-03-01 Mon 09:24]
    :BLOG:     sacha
    :POSTID:   29679
+   :POST_TAGS: emacs, emacs-news
    :END:
 
 - Upcoming events:
@@ -19326,6 +19432,7 @@ above!
         (package-refresh-contents))
       (concat
        "** " end-date " Emacs news\n\n"
+       ":PROPERTIES:\n:POST_TAGS: emacs, emacs-news\n:END:\n\n"
        (if (member 'events parts)
            (concat
             "- Upcoming events:\n"
