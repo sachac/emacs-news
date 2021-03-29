@@ -58,6 +58,107 @@ Actually generate the section:
 #+End_src
 
 #+RESULTS:
+** 2021-03-29 Emacs news
+:PROPERTIES:
+:POST_TAGS: emacs, emacs-news
+:ID:       o2b:16ed4d89-5c32-42e1-a7aa-ffe7ad4bbd26
+:POST_DATE: [2021-03-29 Mon 01:01]
+:BLOG:     sacha
+:POSTID:   29702
+:END:
+
+- Upcoming events:
+  - Emacs Berlin (virtual, in English) https://emacs-berlin.org/ Wed Mar 31 0930 Vancouver / 1130 Chicago / 1230 Toronto / 1630 GMT / 1830 Berlin / 2200 Kolkata -- Thu Apr 1 0030 Singapore
+  - M-x Research (virtual, contact them for passcode) https://m-x-research.github.io/ Thu Apr 1 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore
+  - EmacsSF: Emacs Lisp - Coding a minor mode; lispy mode; Lightning Talks and Discussion https://www.meetup.com/Emacs-SF/events/276954899/ Thu Apr 1 1000 Vancouver / 1200 Chicago / 1300 Toronto / 1700 GMT / 1900 Berlin / 2230 Kolkata -- Fri Apr 2 0100 Singapore
+  - Emacs Paris (virtual) https://www.emacs-doctor.com/emacs-paris-user-group/ Tue Apr 6 0830 Vancouver / 1030 Chicago / 1130 Toronto / 1530 GMT / 1730 Berlin / 2100 Kolkata / 2330 Singapore
+  - EmacsATX: Emacs as a Spreadsheet and Emacs Social https://www.meetup.com/EmacsATX/events/277079765/ Wed Apr 7 1630 Vancouver / 1830 Chicago / 1930 Toronto / 2330 GMT -- Thu Apr 8 0130 Berlin / 0500 Kolkata / 0730 Singapore
+- Beginner:
+  - [[https://github.com/AbstProcDo/Master-Emacs-From-Scratch-with-Solid-Procedures/blob/master/01.semantic-keybinding-en.org][[Emacs Tutorial] With semantic binding, we memorize key-bindings effortlessly]]
+  - [[https://github.com/AbstProcDo/Master-Emacs-From-Scratch-with-Solid-Procedures/blob/master/00.prelude.org][Emacs Tutorial: From M-x, Emacs' Universe Big Bang]] ([[https://reddit.com/r/emacs/comments/medqxn/emacs_tutorial_from_mx_emacs_universe_big_bang/][Reddit]])
+  - [[https://www.youtube.com/watch?v=Ap8n70DkVOw][Introduction to Emacs]] (01:06:01)
+- Emacs configuration:
+  - [[https://github.com/ChillarAnand/real-auto-save][real-auto-save: Automatically save your all your buffers/files at regular intervals in Emacs!]]
+  - [[https://github.com/aldrichtr/tangld][tangld: A literate config system built on emacs and org-mode]]
+  - [[https://github.com/daviwil/dotcrafter.el][dotcrafter.el: Manage your dotfiles with Emacs!]] ([[https://reddit.com/r/planetemacs/comments/mdjn27/dotcrafterel_manage_your_dotfiles_with_emacs/][Reddit]])
+  - [[https://www.youtube.com/watch?v=boqxh--KQlU][The basics of the Straight Package Manager for Emacs]] (14:00)
+  - [[http://www.pffr.online/blog/emacs/emacs-init-performance-analysis/][Emacs init performance analysis]]
+  - [[https://github.com/GChristensen/rho-emacs][rho-emacs - a preconfigured distribution of Emacs for Windows]] ([[https://reddit.com/r/emacs/comments/mav9un/rhoemacs_a_preconfigured_distribution_of_emacs/][Reddit]])
+  - [[http://muto.ca/posts/my-emacs-configuration.html][I Just Did an Overhaul of My Old Emacs Configuration Article]] ([[https://reddit.com/r/emacs/comments/mdq7g1/i_just_did_an_overhaul_of_my_old_emacs/][Reddit]])
+  - [[https://youtu.be/q6eGcMniDSc][Cleaning up my emacs config (emacs, elisp, & org mode)]] ([[https://reddit.com/r/emacs/comments/meje80/cleaning_up_my_emacs_config_emacs_elisp_org_mode/][Reddit]])
+- Emacs Lisp:
+  - [[http://mbork.pl/2021-03-27_The_interactive_clause_and_modes][Marcin Borkowski: The interactive clause and modes]]
+  - [[https://github.com/AbstProcDo/Master-Emacs-Lisp-with-Solid-Procedures/blob/master/04.elisp-is-easy-from-dash-list-methods.org][Elisp Tutorial: equipped with dash.el, elisp so nice to apply]] ([[https://reddit.com/r/orgmode/comments/mdzx6f/elisp_tutorial_equipped_with_dashel_elisp_so_nice/][Reddit]])
+  - [[https://youtu.be/nq-gqNGmayI][Managing Files and Directories in Practice - Learning Emacs Lisp #6]] ([[https://reddit.com/r/emacs/comments/mbh4yu/managing_files_and_directories_in_practice/][Reddit]])
+  - [[https://www.youtube.com/watch?v=IV39wLgmSmQ][Emacs Lisp programming with JavaScript Canvas API in Termux on Android smartphone]] (01:12)
+  - [[https://github.com/doublep/eldev/][Eldev (Elisp Development Tool) is an Emacs-based build tool, targeted solely at Elisp projects. It is an alternative to Cask]]
+- Emacs development:
+  - [[https://lists.gnu.org/archive/html/info-gnu/2021-03/msg00008.html][Emacs 27.2 is released]] ([[https://reddit.com/r/emacs/comments/md1jeq/emacs_272_is_released/][Reddit]], [[https://news.ycombinator.com/item?id=26579653][HN]], [[https://irreal.org/blog/?p=9575][Irreal]])
+  - [[https://ubuntuhandbook.org/index.php/2021/03/gnu-emacs-27-2-released/][GNU Emacs 27.2 Released! How to Install it in Ubuntu | UbuntuHandbook]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=c4ab173df3ea4c37165c011c515928da1783a9ae][File unlock errors now issue warnings (Bug#46397)]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=275be44dd44de4b7413490ffad912935fe2e1763][Add command project-remove-known-project]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=3bacf74adb4223e3dded46d63d5743554afd7c94][* lisp/tab-bar.el (tab-bar-tab-post-change-group-functions): New hook.]]
+- Appearance:
+  - [[http://www.mycpu.org/emacs-relative-linum/][Emacs Relative Line Numbering]] ([[https://reddit.com/r/planetemacs/comments/mf6rys/emacs_relative_line_numbering/][Reddit]])
+- Writing:
+  - [[https://github.com/ag91/writer-word-goals][writer-word-goals: A countdown for your writing word goals]]
+  - [[https://www.reddit.com/r/emacs/comments/mev0pp/ann_spellfu_03_affix_expansion_utf8_fixes/][[ANN] spell-fu 0.3, affix expansion & utf-8 fixes]]
+- Org Mode:
+  - [[http://pragmaticemacs.com/org-mode-tutorials/][Org Mode Tutorials]]
+  - [[https://lists.gnu.org/archive/html/emacs-orgmode/2021-03/msg00410.html][Shutting down Org ELPA: No new release of Org on Org ELPA after Org 9.5]]
+  - [[https://irreal.org/blog/?p=9584][Irreal: Org Mode 9.4.5 Released]]
+  - [[https://www.youtube.com/watch?v=DiZ9eGTVfjg][Tips on Organizing a Reading List With Emacs]] (13:43)
+  - [[https://www.reddit.com/r/orgmode/comments/mbs4ia/my_agendatime_grid_segmented_by_3_hours/][My agenda-time grid segmented by 3 hours]]
+  - Org Roam:
+    - [[https://github.com/codygman/tech-roam][tech-roam: my org-roam tech files]]
+    - [[https://www.badykov.com/common/2021/03/28/org-roam/][My take on zettelkasten and org-roam]] ([[https://reddit.com/r/emacs/comments/mf71fi/my_take_on_zettelkasten_and_orgroam/][Reddit]])
+  - Exporting:
+    - [[https://www.youtube.com/watch?v=618uCFTNNpE][System Crafters Live! - Static Websites with Emacs, Org Mode, and Sourcehut • Episode planning • Q&A]] (02:05:29)
+    - [[https://gitlab.com/pages/org-mode][Publishing org-mode projects on Gitlab Pages]]
+    - [[https://sachachua.com/blog/2021/03/org2blog-add-a-note-to-the-bottom-of-blog-posts-exported-from-my-config-file/][Sacha Chua: Org2blog: Add a note to the bottom of blog posts exported from my config file]]
+    - [[https://github.com/orgapp/gatsby-orga][gatsby-orga: Gatsby starter website with org-mode]]
+    - [[https://github.com/ettomatic/organised-exchange][organised-exchange: A script to import Exchange ics calendars into Emacs Org Mode]]
+  - [[http://xenodium.com/flat-habits-v101-org-import-menu][Alvaro Ramirez: Flat Habits v1.0.1 (org import menu)]]
+  - [[https://www.gibiris.org/eo-blog/posts/2021/03/08_spoken-org-mode-entries.html][Capturing an org-mode entry using speech to text]] - Android phone, Termux
+- Completion:
+  - [[https://www.youtube.com/watch?v=lfgQC540sNM][orderless, selectrum, prescient, and consult -- basic setup]] (09:01)
+  - [[https://www.reddit.com/r/emacs/comments/mdjrza/consult_key_features_and_some_tweaks/][Consult -- Key features and some tweaks]]
+  - [[https://www.youtube.com/watch?v=2G8slPWtdQI&feature=youtu.be][Selectrum -- Key features and some tweaks]] ([[https://reddit.com/r/planetemacs/comments/mbz8ao/selectrum_key_features_and_some_tweaks/][Reddit]])
+- Coding:
+  - [[https://blog.lambda.cx/posts/wip-emacs-align-columns/][Aligning columns in Emacs]] ([[https://reddit.com/r/emacs/comments/mdvxq9/aligning_columns_in_emacs/][Reddit]])
+  - [[https://ag91.github.io/blog/2021/03/26/emacs-as-your-code-compass-a-gentle-trigger-for-maintenance/][Emacs as your code-compass: a gentle trigger for maintenance]] ([[https://reddit.com/r/emacs/comments/mdyaqc/emacs_as_your_codecompass_a_gentle_trigger_for/][Reddit]])
+  - [[https://www.youtube.com/watch?v=D97vDu_BhwA][Emacs being used as SQL client]] (01:25)
+  - [[https://emacsredux.com/blog/2021/03/23/deleting-git-branches-with-magit/][Deleting Git Branches with Magit]] ([[https://reddit.com/r/emacs/comments/mbj1l9/deleting_git_branches_with_magit/][Reddit]])
+- Web:
+  - [[https://protesilaos.com/codelog/2021-03-25-emacs-eww/][Protesilaos Stavrou: EWW and my extras (text-based Emacs web browser)]] ([[https://reddit.com/r/planetemacs/comments/mcutlx/protesilaos_stavrou_eww_and_my_extras_textbased/][Reddit]])
+- Mail and news:
+  - [[https://www.reddit.com/r/emacs/comments/me9r8k/the_road_to_mumu4e_version_16/][The road to mu/mu4e version 1.6]]
+- Doom Emacs:
+  - [[https://www.youtube.com/watch?v=ZU33ejJPvDc][【Emacs】Linux Zoomer Discovers Doom Emacs]] (03:14:01)
+  - [[https://www.youtube.com/watch?v=3qDoHd-6NOQ][Xah Talk Show 2021-03-17 Xah Tries Doom Emacs]] (01:12:20)
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/mb8u1m/weekly_tipstricketc_thread/][Weekly tips/trick/etc/ thread]]
+  - [[https://www.reddit.com/r/emacs/comments/md8swe/who_wants_to_be_my_emacs_buddy/][Who wants to be my emacs buddy?]]
+  - [[https://www.youtube.com/watch?v=cCSe8NqLYOs][Emacs channels that formed my Emacs experience]] (06:56)
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2021-03/msg01351.html][Fermin volunteering to become CEDET maintainer]]
+- Other:
+  - [[https://www.reddit.com/r/emacs/comments/mdjd29/why_do_we_trust_packageel/][Why do we trust package.el?]]
+  - [[https://www.reddit.com/r/emacs/comments/mffr7o/gnu_hyperbole_video_of_talk_and_demo_with_quick/][GNU Hyperbole video of talk and demo with quick per topic access]]
+  - [[https://www.reddit.com/r/emacs/comments/metphb/announcing_dyncloze_an_app_for_language_learning/][Announcing dyncloze, an app for language learning practice in emacs]]
+- New packages:
+  - [[package:consult-recoll][consult-recoll]]: Recoll queries using consult
+  - [[package:geiser-racket][geiser-racket]]: Support for Racket in Geiser
+  - [[package:ivy-spotify][ivy-spotify]]: Search spotify with ivy
+  - [[package:molar-mass][molar-mass]]: Calculates molar mass of a molecule
+  - [[package:nroam][nroam]]: Org-roam backlinks within org-mode buffers
+  - [[package:rii][rii]]: Reversible input interface for multiple input
+  - [[package:stimmung-themes][stimmung-themes]]: Themes tuned to inner harmonies
+  - [[package:yaml][yaml]]: YAML parser for Elisp
+  - [[package:zotero][zotero]]: Library for the Zotero API
+
+Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2021-03][emacs-devel]].
+
+#+RESULTS:
 ** 2021-03-22 Emacs news
 :PROPERTIES:
 :POST_TAGS: emacs, emacs-news
