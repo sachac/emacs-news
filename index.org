@@ -58,6 +58,110 @@ Actually generate the section:
 #+End_src
 
 #+RESULTS:
+** 2021-04-05 Emacs news
+:PROPERTIES:
+:POST_TAGS: emacs, emacs-news
+:ID:       o2b:e8160c78-f9a9-4d72-a640-ff177527c518
+:POST_DATE: [2021-04-05 Mon 22:22]
+:BLOG:     sacha
+:POSTID:   29709
+:END:
+
+- Upcoming events:
+  - Emacs Paris (virtual) https://www.emacs-doctor.com/emacs-paris-user-group/ Tue Apr 6 0830 Vancouver / 1030 Chicago / 1130 Toronto / 1530 GMT / 1730 Berlin / 2100 Kolkata / 2330 Singapore
+  - EmacsATX: Emacs as a Spreadsheet and Emacs Social https://www.meetup.com/EmacsATX/events/277079765/ Wed Apr 7 1630 Vancouver / 1830 Chicago / 1930 Toronto / 2330 GMT -- Thu Apr 8 0130 Berlin / 0500 Kolkata / 0730 Singapore
+  - Emacs Org mode features you may not know https://pretalx.linuxtage.at/glt21/talk/ZKEXNW/ Sat Apr 10 0800 Vancouver / 1000 Chicago / 1100 Toronto / 1500 GMT / 1700 Berlin / 2030 Kolkata / 2300 Singapore
+  - M-x Research (virtual, contact them for passcode) https://m-x-research.github.io/ Thu Apr 15 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore
+  - EmacsSF: Some early Emacs history, Lightning talks, and General Discussion https://www.meetup.com/Emacs-SF/events/277309406/ Thu Apr 15 1000 Vancouver / 1200 Chicago / 1300 Toronto / 1700 GMT / 1900 Berlin / 2230 Kolkata -- Fri Apr 16 0100 Singapore
+- Emacs configuration:
+  - [[https://www.reddit.com/r/emacs/comments/mjcjlu/psa_shmelpa/][[PSA] shmelpa]] - like MELPA, but with correct versions
+  - [[https://cosine.blue/emacs-with-package.html][Declarative Package Configuration In 5 Lines of Emacs Lisp]] ([[https://reddit.com/r/emacs/comments/mj712t/declarative_package_configuration_in_5_lines_of/][Reddit]])
+  - [[https://tech.toryanderson.com/2021/04/03/selected-for-brilliant-emacs-selections/][Tory Anderson: selected for brilliant emacs selections]]
+  - [[https://www.srijn.net/running-multiple-emacs-daemons/][Run multiple emacs daemons with different config based on daemon name]] ([[https://reddit.com/r/emacs/comments/miky1h/run_multiple_emacs_daemons_with_different_config/][Reddit]])
+- Emacs Lisp:
+  - [[https://www.youtube.com/watch?v=BnN_cs02f_E][Elisp Tutorial Part 8 - Backquote and Splice Operator]] (08:05)
+  - [[https://www.reddit.com/r/emacs/comments/mgx6in/i_wrote_my_first_elisp_function_and_am_looking/][I Wrote My First ELisp Function and Am Looking for Critique.]] (open-current-file-with-associated-program)
+  - [[https://web.archive.org/web/20201109035847/http://ebzzry.io/en/emacs-pairs/][A quick introduction to editing with smartparens]]
+  - [[https://www.youtube.com/watch?v=4TGq4RrU5Jk][Demonstration movie of eval-last-sexp of Emacs Lisp mode in GNU Emacs]] (49)
+  - [[https://www.youtube.com/watch?v=nq-gqNGmayI][Managing Files and Directories in Practice - Learning Emacs Lisp #6]] (01:22:52)
+- Emacs development:
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2021-04/msg00080.html][Discussion about isearch behavior]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=1733fa0cab766bd3d2c725b31bc1e51d9b41ead7][* etc/NEWS: Add entry for new SVG icons in customize.]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=1fdbeffe3a65cb23abb43a4ea59df9553c9246f9][Set CSS for SVG files]]
+- Appearance:
+  - [[https://www.reddit.com/r/emacs/comments/mjzq1p/shoutout_to_smooth_scrolling_experience_with/][Shout-out to SMOOTH scrolling experience with good-scroll.el]]
+  - [[https://www.reddit.com/r/emacs/comments/mhxipp/material_gruvbox_theme_for_emacs/][Material gruvbox theme for Emacs.]]
+  - [[https://www.reddit.com/gallery/mfre5z][v2.0.0 VSCode-dark-plus theme for Emacs released! (Link in comments)]]
+- Navigation:
+  - [[https://www.reddit.com/r/emacs/comments/mgkbsk/complex_undo_local_history_gif_demo_inside/][Complex Undo (local history) - gif demo inside]]
+  - [[https://youtu.be/wT_jUtEGfeg][Efficient Movement with Emacs Key Bindings - Emacs Essentials #2]] ([[https://reddit.com/r/emacs/comments/mfvlui/efficient_movement_with_emacs_key_bindings_emacs/][Reddit]])
+- Dired:
+  - [[https://www.reddit.com/r/emacs/comments/mkew8h/its_super_handy_to_manipulate_directories_after/][It's super handy to manipulate directories after set `(dired-hide-details-mode)`]]
+- Writing:
+  - [[https://ag91.github.io/blog/2021/04/04/have-you-editing-to-do-edit-a-little-edit-every-day-and-let-emacs-be-your-coach/][Have you editing to do? Edit a little, edit every day, and let Emacs be your coach!]] ([[https://reddit.com/r/emacs/comments/mk3rni/have_you_editing_to_do_edit_a_little_edit_every/][Reddit]])
+- Org Mode:
+  - [[https://www.reddit.com/r/emacs/comments/mfpwcp/my_simple_org_mode_system/][My simple org mode system]]
+  - [[https://www.youtube.com/watch?v=odOKnNDKSIs&feature=youtu.be][OrgMode - A third approach to goal setting & tracking]]
+  - [[https://www.youtube.com/watch?v=tFt6plDQm58][Introduction to Org Capture]] ([[https://reddit.com/r/emacs/comments/mifz9z/introduction_to_org_capture/][Reddit]])
+  - [[https://irreal.org/blog/?p=6297][Make M-RET better in Org Mode | Irreal]]
+  - [[https://erick.navarro.io/blog/auto-build-and-publish-emacs-org-configuration-as-a-website/][Auto build and publish emacs org configuration as a website]]
+  - [[https://www.youtube.com/watch?v=Bd6cXpsuZCs&feature=youtu.be][Org-roam (with Md-roam) demo with 10,000 markdown files]]
+  - [[https://sachachua.com/blog/2021/04/org-mode-insert-youtube-video-with-separate-captions/][Sacha Chua: Org Mode: Insert YouTube video with separate captions]]
+  - [[https://lists.gnu.org/archive/html/emacs-orgmode/2021-04/msg00108.html][A formal grammar for Org]]
+  - [[https://www.youtube.com/watch?v=q6eGcMniDSc][Computer Stuff - emacs, lisp, & org mode]] (01:12:42)
+  - [[https://www.youtube.com/watch?v=u0xsa2gQU2g][Appunti di Machine Learning con Emacs, Org-Mode e LaTeX]] (01:11:57)
+- Completion:
+  - [[https://www.youtube.com/watch?v=Af6ymyKyN4o][Selectrum --  Key features and some tweaks (Revised)]] (11:30)
+  - [[https://www.reddit.com/r/emacs/comments/mg6kx2/embark_key_features_and_tweaks/][Embark -- Key features and tweaks]]
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2021-04/msg00088.html][[GNU ELPA] New package proposal: aggressive-completion.el]]
+- Coding:
+  - [[https://www.youtube.com/watch?v=oWOSpvOi6UQ&feature=youtu.be][GNU Emacs as a lightweight IDE (Basics)]]
+  - [[https://erick.navarro.io/blog/using-compilation-mode-to-run-all-the-things/][Using compilation mode to run all the things]] ([[https://reddit.com/r/emacs/comments/mie93c/using_compilation_mode_to_run_all_the_things/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/mgbejx/webmacs_new_emacs_configuration_for_web/][Webmacs - New Emacs configuration for web development]]
+  - [[https://www.youtube.com/watch?v=OFlDexa8MO8][lldb debugging in Emacs]] (0:52)
+  - [[https://github.com/isamert/jsdoc.el][jsdoc.el: Inserts JSDoc function comments/typedefs easily]]
+  - [[https://i.redd.it/rg003282x6q61.png][Outline view for Java using speedbar]] ([[https://reddit.com/r/emacs/comments/mgjmlh/outline_view_for_java_using_speedbar/][Reddit]])
+  - [[https://dev.to/viglioni/emacs-as-sql-client-with-lsp-143l][Emacs as SQL client with LSP]]
+  - [[https://irreal.org/blog/?p=9589][Irreal: Deleting Git Branches]]
+- Mail and news:
+  - [[https://www.youtube.com/watch?v=rkSZbzGpQuM][Is The Best RSS Reader An Emacs Package?]] (13:24)
+  - [[https://irreal.org/blog/?p=9587][Irreal: A New Version of Mu/Mu4e Is Coming]]
+- Web:
+  - [[https://www.youtube.com/watch?v=1lyGegcYxTI][Emacs: EWW and my extras (text-based browser)]] (24:45)
+- Music:
+  - [[https://git.sr.ht/~amk/subsonic.el][New Package: subsonic.el an emacs subsonic client]] ([[https://reddit.com/r/emacs/comments/mfvzi8/new_package_subsonicel_an_emacs_subsonic_client/][Reddit]])
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/mg98ki/weekly_tipstricketc_thread/][Weekly tips/trick/etc/ thread]]
+  - [[https://www.reddit.com/r/emacs/comments/mg2r56/blog_post_my_emacs_journey/][[blog post] My Emacs Journey]]
+  - [[https://emacs-apac.gitlab.io/notes/march-2021/][Emacs APAC: Notes from Emacs Asia-Pacific (APAC) virtual meetup, March 2021]]
+  - [[https://www.reddit.com/r/emacs/comments/mj734k/what_enlighten_your_path_to_emacs/][What enlighten your path to Emacs?]]
+  - [[https://www.reddit.com/r/emacs/comments/mjmtqe/are_there_extensible_environments_in_the_manner/][Are there extensible environments in the manner of Emacs outside of text editors and developer tools generally?]]
+  - [[https://www.reddit.com/r/emacs/comments/mgunb9/good_places_to_discuss_creating_new_packages/][Good places to discuss creating new packages?]]
+  - [[https://www.reddit.com/r/emacs/comments/mh0mor/what_are_the_most_useful_vscode_extensions_you/][What are the most useful VSCode extensions you know which could be reimplemented in Emacs?]]
+- Other:
+  - [[https://i.redd.it/hlq2013fprq61.png][Use visual-replace-regexp + lisp functions to do complicated text manipulation 5x faster and more reliably]] ([[https://reddit.com/r/emacs/comments/mil5to/use_visualreplaceregexp_lisp_functions_to_do/][Reddit]])
+  - [[https://www.youtube.com/watch?v=gauZzNETnKE][Handling PDF files in Emacs with DocView Mode]] (17:51)
+  - [[https://www.reddit.com/r/orgmode/comments/mgv34x/apply_numberregister_to_record_scores_when/][Apply number-register to record scores when succeed to delay gratifications]]
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2021-03/msg01431.html][[NonGNU ELPA] submission of new package: dw.el]] - diceware, generates passphrases
+  - [[https://www.youtube.com/watch?v=1XgdQ1CaqaI][System Crafters Live! - Dotfile Detective: tecosaur • Emacs News • Q&A]] (02:06:57)
+  - [[https://www.youtube.com/watch?v=nY64e1SqrbU][Xah Talk Show 2021-03-27 Emacs Undo Drama, Emacs Lore, Lisp Warr, rms, and Who's Who in Gnu Emacs]] (01:19:26)
+  - [[https://www.fosskers.ca/en/blog/wayland][Yes, Emacs can be ran purely in Wayland.]]
+  - [[https://www.reddit.com/r/emacs/comments/mhdjxb/macos_emacs_with_metal_support/][macOS Emacs with Metal Support]]
+  - [[https://www.reddit.com/r/emacsng/comments/mjzt58/auto_generated_release_deb_package/][emacs-ng auto-generated release deb package]]
+- New packages:
+  - [[package:aggressive-completion][aggressive-completion]]: Automatic minibuffer completion
+  - [[package:bibtex-actions][bibtex-actions]]: Description
+  - [[package:flymake-flycheck][flymake-flycheck]]: Use flycheck checkers as flymake backends
+  - [[package:geiser-chez][geiser-chez]]: Chez Scheme's implementation of the geiser protocols
+  - [[package:geiser-chibi][geiser-chibi]]: Chibi Scheme's implementation of the geiser protocols
+  - [[package:geiser-chicken][geiser-chicken]]: Chicken's implementation of the geiser protocols
+  - [[package:geiser-gambit][geiser-gambit]]: Gambit's implementation of the geiser protocols
+  - [[package:geiser-guile][geiser-guile]]: Guile's implementation of the geiser protocols
+  - [[package:smudge][smudge]]: Control the Spotify app
+  - [[package:sniem][sniem]]: Simple united editing method
+
+Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2021-04][emacs-devel]].
+
 ** 2021-03-29 Emacs news
 :PROPERTIES:
 :POST_TAGS: emacs, emacs-news
@@ -19283,8 +19387,9 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
            (path (format
                   (cond
                    ((string= package-source "gnu") "https://elpa.gnu.org/packages/%s.html")
+                   ((string= package-source "nongnu") "https://elpa.nongnu.org/nongnu/%s.html")
                    ((string= package-source "melpa") "http://melpa.org/#/%s")
-                   (t (throw 'unknown-source)))
+                   (t (throw 'unknown-source nil)))
                   link))
            (desc (or description link)))
       (cond
@@ -19394,7 +19499,7 @@ This one exports links from https://www.reddit.com/user/emacsnews/upvoted.json .
       (save-buffer)
       combined)))
 
-(defun my/emacs-news-youtube-playlist (playlist start-date end-date)
+(defun my/emacs-news-youtube-playlist (playlist &optional start-date end-date)
   (let* ((videos (my/emacs-news-get-videos playlist))
          (combined (my/save-new-items "video-list.el"
                                       (mapcar (lambda (o) (cons (plist-get o :id) o))
@@ -19405,12 +19510,12 @@ This one exports links from https://www.reddit.com/user/emacsnews/upvoted.json .
                (org-link-make-string
                 (concat "https://www.youtube.com/watch?v=" (plist-get o :id))
                 (plist-get o :title))
-               (format-seconds "%.2h:%.2m:%.2s%z" (plist-get o :duration))))
+               (format-seconds "%.2h:%z%.2m:%.2s" (plist-get o :duration))))
      (mapcar 'cddr
-              (seq-filter (lambda (o) (and
-                                       (or (null start-date) (not (string< (cadr o) start-date)))
-                                       (or (null end-date) (string< (cadr o) end-date))))
-                          combined))
+             (seq-filter (lambda (o) (and
+                                      (or (null start-date) (not (string< (cadr o) start-date)))
+                                      (or (null end-date) (string< (cadr o) end-date))))
+                         combined))
      "")))
 
 #+end_src
@@ -19728,8 +19833,7 @@ For cleaning things up:
 #+end_src
 
 
-[[http://howardism.org][Howard Abrams]] showed me something like this in [[http://sachachua.com/blog/2015/06/emacs-hangout-june-2015/][June 2015's Emacs
-Hangout]] ([[https://www.youtube.com/watch?v=jzFI8knL5BY&t=1h18m26s][~1:18:26]]) using [[http://orgmode.org/worg/org-contrib/org-mime.html][org-mime-org-buffer-htmlize]], which probably
+[[http://howardism.org][Howard Abrams]] showed me something like this in [[http://sachachua.com/blog/2015/06/emacs-hangout-june-2015/][June 2015's Emacs Hangout]] ([[https://www.youtube.com/watch?v=jzFI8knL5BY&t=1h18m26s][~1:18:26]]) using [[http://orgmode.org/worg/org-contrib/org-mime.html][org-mime-org-buffer-htmlize]], which probably
 does the job in a much cooler way. =) I thought he had a blog post
 about it, but I can't seem to find it. Anyway, there's my little hack
 above!
