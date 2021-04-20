@@ -1,4 +1,8 @@
 #+STARTUP: showall
+#+ELEVENTY_COLLECTIONS: _posts
+#+ELEVENTY_BASE_DIR: ~/code/static-blog/content/posts/
+#+ELEVENTY_CATEGORIES: emacs emacs-news
+#+TITLE: Emacs News
 
 - [[*Code][Jump to code section]]
 
@@ -59,6 +63,119 @@ Actually generate the section:
 #+End_src
 
 #+RESULTS:
+** 2021-04-19 Emacs news
+:PROPERTIES:
+:EXPORT_ELEVENTY_PERMALINK: /blog/2021/04/2021-04-19-emacs-news/
+:EXPORT_ELEVENTY_FILE_NAME: 2021/04/2021-04-19-emacs-news
+:EXPORT_DATE: 2021-04-19
+:END:
+
+- Upcoming events:
+  - Emacs APAC (virtual, in English) https://emacs-apac.gitlab.io/ Sat
+    Apr 24 0130 Vancouver / 0330 Chicago / 0430 Toronto / 0830 GMT /
+    1030 Berlin / 1400 Kolkata / 1630 Singapore
+  - Emacs Berlin (virtual, in English) https://emacs-berlin.org/ Wed
+    Apr 28 0930 Vancouver / 1130 Chicago / 1230 Toronto / 1630 GMT /
+    1830 Berlin / 2200 Kolkata -- Thu Apr 29 0030 Singapore
+  - EmacsNYC: Monthly Online Meetup - Lightning Talks
+    https://www.meetup.com/New-York-Emacs-Meetup/events/277390026/ Mon
+    May 3 1600 Vancouver / 1800 Chicago / 1900 Toronto / 2300 GMT --
+    Tue May 4 0100 Berlin / 0430 Kolkata / 0700 Singapore
+- Beginner:
+  - [[https://www.youtube.com/watch?v=1VPHA2Lc2zQ][Installing Doom Emacs for the non-programmers (Windows & Linux)]] (20:48)
+  - [[https://www.youtube.com/watch?v=H3yvl86LbAc][GNU Emacs. Часть 1. Введение]] (05:56) - introduction
+- Emacs configuration:
+  - [[https://www.reddit.com/r/emacs/comments/mte0zx/a_simple_way_to_organize_the_initel_file/][A simple way to organize the init.el file]]
+  - [[https://www.reddit.com/r/emacs/comments/mtb05k/emacs_init_time_decreased_65_after_i_realized_the/][Emacs init time decreased %65 after I realized the stupid mistake I have done with straight.el]]
+  - [[https://tech.toryanderson.com/2021/04/19/a-cautionary-tale-on-modelines-and-on-updating-your-emacs-config/][Tory Anderson: a cautionary tale on modelines and on updating your emacs config]]
+  - [[https://git.sr.ht/~codygman/emacs-config/tree/master/item/emacs-config.org][codygman's emacs-config.org]]
+- Emacs Lisp:
+  - [[https://systemcrafters.cc/learning-emacs-lisp/creating-minor-modes][Creating a Custom Minor Mode - System Crafters]] ([[https://reddit.com/r/emacs/comments/mqtwzx/creating_custom_minor_modes_learning_emacs_lisp_7/][Reddit]])
+  - [[https://sachachua.com/blog/2021/04/emacs-making-a-hydra-cheatsheet-for-lispy/][Sacha Chua: Emacs: Making a hydra cheatsheet for Lispy]]
+  - [[https://www.youtube.com/watch?v=ikt-Ha4CaY4][Let's write some Emacs Lisp - Github helper functions]] (47:31)
+  - [[https://www.youtube.com/watch?v=5HlImNxPEAE][Let's refactor some Emacs Lisp]] (01:12:40)
+  - [[https://www.youtube.com/watch?v=FJq3ItWvZ0o][Xah Talk Show 2021-04-09 beginner emacs lisp tutorial. xah-html-copy-change-relative-link]] (59:40)
+  - [[https://www.youtube.com/watch?v=FC5qzH0yxyk][Xah Talk Show 2021-04-18 emacs lisp. Fuzzy matching. Explore ido and helm source code]] (01:24:20)
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2021-04/msg00901.html][Converting BNFs to skeletons: An example implementation for LOOP and cl-]]
+- Emacs development:
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=c2372096433e6a7ab173e5f1993f0c65b85f353e][Allow use of em in image spec sizes]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=7893945cc8f9421d0be5b07b9ed404bdf25ce140][Add condition-case success handler (bug#47677)]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=d1559ede54684513b79025ade2b4677447c7a487][Add two optional arguments to 'string-width']]
+- Appearance:
+  - [[https://www.reddit.com/r/emacs/comments/mqjdow/rfc_hlprogextra_context_sensitive_highlighting/][[RFC] hl-prog-extra - context sensitive highlighting package]]
+  - [[https://github.com/veera-sivarajan/minc-mode][minc-mode: Modest and easy on the eyes syntax highlighting for C source code]]
+  - [[https://protesilaos.com/codelog/2021-04-17-modus-themes-1-3-0/][Protesilaos Stavrou: Modus themes 1.3.0 for GNU Emacs]] ([[https://reddit.com/r/planetemacs/comments/msuns7/protesilaos_stavrou_modus_themes_130_for_gnu_emacs/][Reddit]])
+- Navigation:
+  - [[https://www.youtube.com/watch?v=zxS3zXwV0PU&feature=youtu.be][Emacs: use "occur" in practice]]
+  - [[http://mbork.pl/2021-04-17_Multiple_Help_buffers][Marcin Borkowski: Multiple Help buffers]]
+  - [[https://github.com/enisozgen/open-conf][open-conf: Open conf files via M-x buffer]]
+- Org Mode:
+  - [[https://www.philnewton.net/blog/how-i-get-work-done-with-emacs/][How I get work done with Emacs and org-mode]] ([[https://reddit.com/r/emacs/comments/mrlbf0/how_i_get_work_done_with_emacs_and_orgmode/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/mt51h4/strike_through_orgdone_tasks_in_agenda_to/][Strike through org-done tasks in agenda to intensify the sense of achievement]]
+  - Export:
+    - [[https://alpha2phi.medium.com/writing-technical-documentation-with-emacs-276f13284e54][Writing Technical Documentation with Emacs | by alpha2phi | Apr, 2021 | Medium]] ([[https://irreal.org/blog/?p=9635][Irreal]])
+    - [[https://www.youtube.com/watch?v=K6S-AKm5snc][Create Beautiful Websites Using Emacs Org Mode]] (15:51)
+    - [[https://github.com/bzg/org-mode/commit/962690ef6ad8b9d1c5a70215eec2ca2b8a7bd9c7][ORG-NEWS: Mention DOI links export]]
+    - [[http://amitp.blogspot.com/2021/04/automatically-generate-ids-for-emacs.html][Amit Patel: Automatically generate IDs for emacs org-mode headings]]
+    - [[https://sachachua.com/blog/2021/04/this-is-a-test/][Sacha Chua: This is a test post from Org Mode to 11ty]]
+- Completion:
+  - [[https://emacsredux.com/blog/2021/04/19/configuring-minibuffer-completion-in-projectile/][Configuring Minibuffer Completion in Projectile]] ([[https://reddit.com/r/emacs/comments/mu01e3/configuring_minibuffer_completion_in_projectile/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/mu3lpl/psa_icompleteverticalmode_is_available_since/][PSA: icomplete-vertical-mode is available since commit 5761e90]]
+  - [[https://www.manueluberti.eu//emacs/2021/04/12/vertico/][Manuel Uberti: Would Alfred Hitchcock use Emacs?]] - about vertico, vertical interactive completion
+  - [[https://i.redd.it/9g4h1bfzast61.png][[ELPA] Corfu (Completion Overlay Region FUnction)]] ([[https://reddit.com/r/emacs/comments/msx6s1/elpa_corfu_completion_overlay_region_function/][Reddit]])
+- Coding:
+  - [[https://github.com/tangentstorm/freepascal-mode][freepascal-mode: emacs mode for the free pascal compiler]]
+  - [[https://github.com/purcell/dune-format-el][dune-format-el: Reformat dune files from within Emacs]] ([[https://reddit.com/r/planetemacs/comments/mqr5wz/duneformatel_reformat_dune_files_from_within_emacs/][Reddit]])
+  - [[http://ag91.github.io/blog/2021/04/18/emacs-as-your-code-compass-quietly-show-who-can-help][Andrea: Emacs as your code-compass: quietly show who can help]]
+  - [[https://www.youtube.com/watch?v=bhNvwxFV5vU][Using Emacs for Literate Programming with Clojure]] (23:19)
+- Mail and news:
+  - [[https://muto.ca/posts/the-big-comparison-of-emacs-mail-clients.html][The BIG Comparison of Emacs Mail Clients | Muto]]
+  - [[https://idiomdrottning.org/svolternet][Re: SV: Re: SV: Re: SV: Your misbehaved email]]
+  - [[https://www.reddit.com/r/emacs/comments/mq2ff7/mu4e_imapserverpush_with_imapfilter/][mu4e: IMAP-server-push with imap-filter]]
+- Web:
+  - [[https://www.reddit.com/r/emacs/comments/mptr7f/an_emacs_wallabag_client_the_emacser_way_to/][An Emacs wallabag client - the Emacser way to manage web pages!]]
+  - [[https://ugeek.github.io/blog/post/2021-04-15-wallabag-en-emacs.html][Wallabag en Emacs]] - for saving webpages
+- Chat:
+  - [[https://tube.tchncs.de/videos/watch/ffdb18b0-d9e0-4c70-91d4-cce54113dd3d][Mastodon in emacs - tchncs]] (17:42)
+- Diary:
+  - [[https://protesilaos.com/codelog/2021-04-14-emacs-diary-calendar/][Protesilaos Stavrou: Emacs Diary and Calendar for tracking appointments]] (34:44, [[https://reddit.com/r/emacs/comments/mqyysd/emacs_diary_and_calendar/][Reddit]])
+  - [[https://protesilaos.com/codelog/2021-04-15-emacs-diary-outline-minor-mode/][Protesilaos Stavrou: Make the Emacs Diary work as an Outline (outline-minor-mode)]]
+  - [[https://www.youtube.com/watch?v=n8o66i08fzs&feature=youtu.be][Add file paths and URLs to the Emacs Diary]]
+- Community:
+  - [[https://tychoish.com/post/the-org-mode-product/][tycho garen: The Org Mode Product]]
+  - [[https://www.youtube.com/watch?v=gwT5PoXrLVs][Moral lessons from free software and GNU Emacs]] (47:08, [[https://reddit.com/r/emacs/comments/msnphh/moral_lessons_from_free_software_and_gnu_emacs/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/mtuvyw/people_should_not_bombard_newbies_with_messages/][People should not bombard newbies with messages with subtle messages containing warning of emacs pinky]]
+  - [[https://protesilaos.com/codelog/2021-04-16-emacs-moral-lessons/][Protesilaos Stavrou: Moral lessons from free software and GNU Emacs]]
+  - [[https://gretzuni.com/articles/free-lunches-and-the-burden-of-responsibility][Gretzuni: Free lunches and the burden of responsibility]]
+  - [[https://www.reddit.com/r/emacs/comments/mpwapo/weekly_tipstricketc_thread/][Weekly tips/trick/etc/ thread]]
+- Other:
+  - [[https://github.com/mineo/yatemplate][yatemplate: Simple file templates for Emacs with YASnippet]]
+  - [[https://www.youtube.com/watch?v=2ONNXDlN3RU][Using abbrev-mode - create and expand abbreviations in Emacs]] (19:37)
+  - [[https://www.youtube.com/watch?v=b9gzO9nCnWI&feature=youtu.be][Automatic saving of modes, scratch buffer, and registers in Emacs]]
+  - [[https://blogs.dgplug.org/sandeepk/emacs-building-ledger-reports][Emacs: Building Ledger Reports — sandeepk]]
+  - [[https://www.youtube.com/watch?v=hoP4I9ounyQ][Leaving Doom Emacs For GNU Emacs?  - DT Live!]] (01:33:40)
+  - [[https://www.reddit.com/r/emacs/comments/mtjn8f/swayel_sway_integration_for_emacs/][Sway.el]] - controls creation of Emacs frames in the Sway window manager
+  - Building/installing:
+    - [[https://chaoticlab.io/posts/emacs-27-2-msi/][MSI Installer for GNU Emacs 27.2 for Windows]] ([[https://reddit.com/r/emacs/comments/mq758x/msi_installer_for_gnu_emacs_272_for_windows/][Reddit]])
+    - [[https://tube.tchncs.de/videos/watch/c6c1bbea-f5a6-4c2d-87aa-167b6aef3ae0][Building emacs on Cent OS - tchncs]]
+    - [[https://github.com/probonopd/Emacs.AppImage][Emacs.AppImage: This repository builds GNU Emacs from git on Travis CI and packages it as an AppImage.]]
+- New packages:
+  - [[package:corfu][corfu]]: Completion Overlay Region FUnction
+  - [[package:vertico][vertico]]: VERTical Interactive COmpletion
+  - [[package:dream-theme][dream-theme]]: Maximalist Nordic/Zenburn-inspired color theme
+  - [[package:dune-format][dune-format]]: Reformat OCaml's dune files automatically
+  - [[package:dyncloze][dyncloze]]: Language alternatives self-testing
+  - [[package:eping][eping]]: Ping websites to check internet connectivity
+  - [[package:filetree][filetree]]: File tree view/manipulatation package
+  - [[package:merlin-ac][merlin-ac]]: Merlin and auto-complete integration.
+  - [[package:merlin-company][merlin-company]]: Merlin and company mode integration.
+  - [[package:merlin-iedit][merlin-iedit]]: Merlin and iedit integration.
+  - [[package:nix-modeline][nix-modeline]]: Info about in-progress Nix evaluations on your modeline
+  - [[package:openfoam][openfoam]]: OpenFOAM files and directories
+  - [[package:pyim-smzmdict][pyim-smzmdict]]: Sanma(triple) Zhengma dict for pyim
+
+Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2021-04][emacs-devel]].
+
 ** 2021-04-12 Emacs news
 :PROPERTIES:
 :POST_TAGS: emacs, emacs-news
@@ -19942,14 +20059,29 @@ above!
 (defun my/prepare-emacs-news (date parts)
   (interactive (list (org-read-date nil nil "-mon 0:00") '(refresh-packages reddit rss)))
   (setq date (substring date 0 10))
-  (let ((start-date date)
-        (end-date (substring (org-read-date nil nil "++1" nil (org-read-date nil t "-sun 0:00")) 0 10)))
+  (let* ((start-date date)
+         (end-date (substring (org-read-date nil nil "++1" nil (org-read-date nil t "-sun 0:00")) 0 10))
+         (year (substring end-date 0 4))
+         (month (substring end-date 5 7)))
     (when (member 'refresh-packages parts)
       (my/save-new-packages)
       (package-refresh-contents))
     (concat
-     "** " end-date " Emacs news\n"
-     ":PROPERTIES:\n:POST_TAGS: emacs, emacs-news\n:END:\n\n"
+     (format
+      "** %s Emacs news
+:PROPERTIES:
+:EXPORT_ELEVENTY_PERMALINK: /blog/%s/%s/%s-emacs-news/
+:EXPORT_ELEVENTY_FILE_NAME: posts/%s/%s/%s-emacs-news
+:EXPORT_DATE: %s
+:END:\n\n"
+      end-date
+      year
+      month
+      end-date
+      year
+      month
+      end-date
+      (format-time-string "%Y-%m-%d"))
      (if (member 'events parts)
          (concat
           "- Upcoming events:\n"
@@ -19990,6 +20122,11 @@ above!
                            "emacs-devel")
      ".")))
 #+end_src
+
+#+RESULTS: prepare-news
+:results:
+my/prepare-emacs-news
+:end:
 
 ** Collect Emacs News
 
@@ -20036,7 +20173,7 @@ above!
 
 #+NAME: detect-dupes
 #+begin_src emacs-lisp
-eex  (defun my/emacs-news-check-duplicates ()
+(defun my/emacs-news-check-duplicates ()
     (interactive)
     (let ((end (save-excursion (org-end-of-subtree)))
           (prompt-buffer (get-buffer-create "*Duplicate*"))
@@ -20057,50 +20194,52 @@ eex  (defun my/emacs-news-check-duplicates ()
           found
           done
           context)
-      (while (and (not done) (re-search-forward "- \\[\\[\\([^[]+\\)\\]\\[\\([^[]+\\)\\]" end t) )
-        (setq found nil search (match-string 1) start (match-beginning 0) description (match-string 2))
-        (goto-char (match-end 0))
-        (let ((p (point)))
-          ;; Search for the URL
-          (setq found (funcall search-fn (match-end 0) search description))
-          (while found
-            (goto-char found)
-            (setq context
-                  (concat
-                   (string-join (org-get-outline-path t) " > ") "\n"
-                   (buffer-substring (line-beginning-position) (line-end-position))))
-            (push-mark found)
-            (goto-char start)
-            (posframe-show prompt-buffer
-                           :string (concat context "\n(d)elete, (k)eep, (z)ap next one, e(x)change mark, (n)ext match, (q)quit?")
-                           :internal-border-width 2
-                           :internal-border-color "white"
-                           :position (point))
-            (let ((input (read-char)))
-              (cond
-               ((eq input ?k)
-                (forward-line 1)
-                (setq found nil))
-               ((eq input ?x)
+      (unwind-protect
+          (while (and (not done) (re-search-forward "- \\[\\[\\([^[]+\\)\\]\\[\\([^[]+\\)\\]" end t) )
+            (setq found nil search (match-string 1) start (match-beginning 0) description (match-string 2))
+            (goto-char (match-end 0))
+            (let ((p (point)))
+              ;; Search for the URL
+              (setq found (funcall search-fn (match-end 0) search description))
+              (while found
                 (goto-char found)
-                (setq done t found nil))
-               ((eq input ?z)
-                (goto-char found)
-                (delete-region (point-at-bol)
-                               (progn (forward-line 1) (point)))
+                (setq context
+                      (concat
+                       (string-join (org-get-outline-path t) " > ") "\n"
+                       (buffer-substring (line-beginning-position) (line-end-position))))
+                (push-mark found)
                 (goto-char start)
-                (setq found nil))
-               ((eq input ?d)
-                (delete-region (point-at-bol)
-                               (progn (forward-line 1) (point)))
-                (setq found nil))
-               ((eq input ?n)
-                ;; Look for the next match
-                (setq found (funcall search-fn (save-excursion (goto-char found) (line-end-position))
-                                     search description)))
-               ((eq input ?q)
-                (setq done t found nil)))))))
-      (posframe-delete prompt-buffer)))
+                (posframe-show prompt-buffer
+                               :string (concat context "\n(d)elete, (k)eep, (z)ap next one, e(x)change mark, (n)ext match, (q)quit?")
+                               :internal-border-width 2
+                               :internal-border-color "white"
+                               :position (point))
+                (let ((input (read-char)))
+                  (cond
+                   ((eq input ?k)
+                    (forward-line 1)
+                    (setq found nil))
+                   ((eq input ?x)
+                    (goto-char found)
+                    (setq done t found nil))
+                   ((eq input ?z)
+                    (goto-char found)
+                    (delete-region (point-at-bol)
+                                   (progn (forward-line 1) (point)))
+                    (goto-char start)
+                    (setq found nil))
+                   ((eq input ?d)
+                    (delete-region (point-at-bol)
+                                   (progn (forward-line 1) (point)))
+                    (setq found nil))
+                   ((eq input ?n)
+                    ;; Look for the next match
+                    (setq found (funcall search-fn (save-excursion (goto-char found) (line-end-position))
+                                         search description)))
+                   ((eq input ?q)
+                    (setq done t found nil))))
+                (posframe-hide prompt-buffer))))
+        (posframe-delete prompt-buffer))))
 #+end_src
 
 ** Making a numpad-based hydra for organizing Emacs News
