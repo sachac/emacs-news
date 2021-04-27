@@ -63,6 +63,95 @@ Actually generate the section:
 #+End_src
 
 #+RESULTS:
+** 2021-04-26 Emacs news
+  :PROPERTIES:
+  :EXPORT_ELEVENTY_PERMALINK: /blog/2021/04/2021-04-26-emacs-news/
+  :EXPORT_ELEVENTY_FILE_NAME: blog/2021/04/2021-04-26-emacs-news/
+  :EXPORT_DATE: 2021-04-26
+  :END:
+
+- Upcoming events:
+  - Emacs Berlin (virtual, in English) https://emacs-berlin.org/ Wed Apr 28 0930 Vancouver / 1130 Chicago / 1230 Toronto / 1630 GMT / 1830 Berlin / 2200 Kolkata -- Thu Apr 29 0030 Singapore
+  - EmacsNYC: Monthly Online Meetup - Lightning Talks https://www.meetup.com/New-York-Emacs-Meetup/events/277390026/ Mon May 3 1600 Vancouver / 1800 Chicago / 1900 Toronto / 2300 GMT -- Tue May 4 0100 Berlin / 0430 Kolkata / 0700 Singapore
+  - EmacsATX: TBD https://www.meetup.com/EmacsATX/events/hkckgsycchbhb/ Wed May 5 1630 Vancouver / 1830 Chicago / 1930 Toronto / 2330 GMT -- Thu May 6 0130 Berlin / 0500 Kolkata / 0730 Singapore
+  - M-x Research (virtual, contact them for passcode) https://m-x-research.github.io/ Thu May 6 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore
+  - Emacs Paris (virtual) https://www.emacs-doctor.com/emacs-paris-user-group/ Thu May 6 0830 Vancouver / 1030 Chicago / 1130 Toronto / 1530 GMT / 1730 Berlin / 2100 Kolkata / 2330 Singapore
+- Beginner:
+  - [[https://i.imgur.com/c4Mg18a.jpg][A tiny Emacs cheatsheet I printed for my pocket notebook.]] ([[https://reddit.com/r/emacs/comments/mur53v/a_tiny_emacs_cheatsheet_i_printed_for_my_pocket/][Reddit]])
+  - [[https://www.youtube.com/watch?v=r7XQ9S_mA_4][Introduzione ad Emacs]] (28:10)
+- Emacs configuration:
+  - [[http://mbork.pl/2021-04-26_Binding_a_command_to_what_is_normally_a_prefix_key][Marcin Borkowski: Binding a command to what is normally a prefix key]]
+  - [[https://emacsredux.com/blog/2013/07/17/make-use-of-the-super-key/][Make use of the Super key]] (2013)
+  - [[https://github.com/Aaron-Mann/.emacs.d][toaster-emacs: Toaster Emacs! A Simple, Fully Featured, and Evil Emacs Config.]]
+  - [[https://github.com/Aaron-Mann/toaster-emacs][Just got my first emacs config working!]] ([[https://reddit.com/r/emacs/comments/muhtod/just_got_my_first_emacs_config_working/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/myfdbw/elpaso_a_disintermediator_like_quelpa_straight/][Elpaso: A Disintermediator Like Quelpa, Straight]]
+  - [[https://github.com/mihaiolteanu/mugur][Mugur, an Emacs configurator for QMK compatible keyboards (v2.0)]]
+  - [[https://www.youtube.com/watch?v=hoP4I9ounyQ&feature=youtu.be][Leaving Doom Emacs For GNU Emacs? - DT Live]]
+- Emacs Lisp:
+  - [[https://github.com/rileyrg/el-docstring-sap][el-docstring-at-point: provide Emacs' elisp symbol documentation at point]]
+  - [[http://ruzkuku.com/texts/emacs-style.html][Good Style in modern Emacs Packages]]
+  - [[https://youtu.be/5HlImNxPEAE][My first Emacs video: Let's refactor some Emacs Lisp]] (1:12:39)
+  - [[https://endlessparentheses.com/understanding-letf-and-how-it-replaces-flet.html][Understanding letf and how it replaces flet · Endless Parentheses]] (2014)
+- Emacs development:
+  - *[[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=289000eee729689b0cf362a21baa40ac7f9506f6][Merge branch 'feature/native-comp' into into trunk]]* ([[https://www.reddit.com/r/emacs/comments/myej3z/the_nativecompilation_branch_was_just_merged_into/][Reddit]], [[https://news.ycombinator.com/item?id=26935401][HN]])
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=1fce52813219d325c7c6f758f082009879e2f234][Redesign and improve the help-for-help (C-h C-h) command]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=d753b39096320b45ba3414272f4445587f4e6e7f][Obsolete the TAB binding in xref buffers]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=1fd1ef176c6702e1504b425b9bcf506d99e060b0][* etc/NEWS: 'world-clock-mode' is no longer interactive.]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=804f5acda4bd947f058c6843e373797202314467][Revert "Remove the binding for xref-quit-and-goto-xref"]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=344f769491a84b6d47ee3722054b214167572219][Add support for using a TLS client certificate with 'erc-tls' (bug#47788)]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=522c34f0e80f60969861b0dc34bc7105249f9994][Remove the binding for xref-quit-and-goto-xref]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=846989498b66f94739e78ca274c8d1176c137591][Fix unclean "can't happen" error handling in read_minibuf_unwind]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=8c83231dae0f4701c2a6ddf140df13fe028b3612][* lisp/isearch.el (isearch-forward-thing-at-point): New command (bug#39512).]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=0eee48af9de308ef57a065ecd8b2c2c7b59012a0][Introduce `sxhash-equal-including-properties'.]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=afcdd4cab3d8c3450852405a3dd64a5316d38b85][Add new library transient.el]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=55db25b2579e5d84dfcf3a15957fc7a827abf25f][Introduce and use minibuffer-mode.  This fixes bug #47150]]
+- Appearance:
+  - [[https://i.redd.it/23l1n85egku61.png][Native Emojis In Emacs! Just Some Pure Fun (Instructions in comments)]] ([[https://reddit.com/r/emacs/comments/mvlid5/native_emojis_in_emacs_just_some_pure_fun/][Reddit]])
+  - [[https://gitlab.com/ideasman42/emacs-hl-prog-extra][[ANN] hl-prog-extra now on melpa! (extra highlighting for programming modes)]] ([[https://reddit.com/r/emacs/comments/mv8wwu/ann_hlprogextra_now_on_melpa_extra_highlighting/][Reddit]])
+  - [[https://www.reddit.com/gallery/mytev1][Release v0.6.0 of wilmersdorf-emacs-theme! An original theme with dark subtle syntax highlighting]]
+  - [[https://www.reddit.com/gallery/mux1s6][Tron Legacy Emacs Theme v2.6.0 Release! Improved tree-sitter highlighting and lsp-ui support]]
+  - [[https://www.unwoundstack.com/blog/switching-emacs-themes.html][Switching Emacs Themes]] (2020)
+- Navigation:
+  - [[https://www.youtube.com/watch?v=HRQhYAz3M-U&feature=youtu.be][Projects and Workspaces | Doom Emacs | 프로젝트와 워크스페이스]] (8:31)
+- Dired:
+  - [[https://www.youtube.com/watch?v=NrY3t3W0_cM&feature=youtu.be][Browse your images in Emacs using image-dired]] (12:16)
+  - [[https://github.com/ieure/diss][Diss: Dired Image Slideshow]] ([[https://reddit.com/r/emacs/comments/muszkw/diss_dired_image_slideshow/][Reddit]])
+  - [[https://github.com/stakemori/dired-hacks][dired-hacks: Collection of useful dired additions]]
+  - [[https://www.ramitmittal.com/blog/15-days-in-dired/][I used Emacs' Dired as my only file manager for 15 Days.]] ([[https://reddit.com/r/emacs/comments/mvgsej/i_used_emacs_dired_as_my_only_file_manager_for_15/][Reddit]])
+- Org Mode:
+  - *[[https://blog.tecosaur.com/tmio/2020-04-26-Welcome.html][This Month in Org: Welcome]]* ([[https://www.reddit.com/r/emacs/comments/mytra1/blog_announcement_this_month_in_org/][Reddit]])
+  - [[https://github.com/amno1/org-babel-hide-markers-mode][Hide markers for src blocks in org-mode (less clutter in init file)]] ([[https://reddit.com/r/emacs/comments/mvxyjo/hide_markers_for_src_blocks_in_orgmode_less/][Reddit]])
+  - [[https://lists.gnu.org/archive/html/emacs-orgmode/2021-04/msg00445.html][(Not so) Short note about citations in Org]]
+  - Import, export, and integration:
+    - [[https://www.reddit.com/r/emacs/comments/mvx8y1/org2blog_v1111_released/][Org2Blog v1.1.11 Released]]
+    - [[https://geeksocket.in/posts/elisp-ics-org-mode-list/][Writing Emacs Lisp to convert ICS to Org mode list · GeekSocket]]
+    - [[https://isamert.net/2021/04/21/managing-your-contacts-in-org-mode-and-syncing-them-to-your-phone-android-ios-whatever-.html][Managing your contacts in org-mode and syncing them to your phone (Android, iOS, whatever)]] ([[https://reddit.com/r/orgmode/comments/mvabze/managing_your_contacts_in_orgmode_and_syncing/][Reddit]])
+    - [[https://www.youtube.com/watch?v=E-g3Ls1GRz4][System Crafters Live! - Lisp Compiler Progress • Live Lisp Hacking • Q&A]] (02:19:50) - 0:49:56 org export to gemini
+    - [[https://www.unwoundstack.com/blog/org-capture-to-pinboard.html][Using org-capture to save links to Pinboard]] (2020)
+    - [[https://braintool.org/2021/04/21/My-BrainTool-orgmode-and-emacs-workflow.html][My BrainTool, org-mode and emacs workflow | BrainTool]] ([[https://www.reddit.com/r/emacs/comments/mwe8ik/a_topic_manager_for_chrome_and_emacs/][Reddit]])
+    - [[https://www.reddit.com/r/orgmode/comments/my6r8o/orgmode_support_in_gitjournal/][OrgMode support in GitJournal]]
+- Completion:
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2021-04/msg01097.html][[emacs-devel] RFC: Setting `minibuffer-completion-table` buffer-locally]]
+  - [[https://sachachua.com/blog/2021/04/emacs-hydra-allow-completion-when-i-can-t-remember-the-command-name/][Sacha Chua: Emacs Hydra: Allow completion when I can't remember the command name]]
+- Coding:
+  - [[http://puntoblogspot.blogspot.com/2021/04/fast-feedback-loop-with-emacs-lua.html][Raimon Grau: Fast feedback loop with emacs (Lua)]]
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/mujxm7/weekly_tipstricketc_thread/][Weekly tips/trick/etc/ thread]]
+- Other:
+  - [[https://www.reddit.com/r/emacs/comments/myqq63/gnu_hyperbole_v8_introduction_what_am_i_going_to/][GNU Hyperbole V8: Introduction - What am I going to do today?]]
+  - [[https://www.youtube.com/watch?v=fo-Px21AyTE][System Crafters Live! - I'm creating a new Lisp • Emacs News • Q&A]] (02:02:40)
+  - [[https://pmortensen.eu/world2/2020/11/11/building-emacs-from-source-on-ubuntu-20-04/][Building Emacs from source on Ubuntu 20.04 in 2020]] ([[https://reddit.com/r/planetemacs/comments/mx8wag/building_emacs_from_source_on_ubuntu_2004_in_2020/][Reddit]])
+  - [[https://geeksocket.in/posts/release-monitoring-notifications/][How to get notifications from release-monitoring.org · GeekSocket]]
+- New packages:
+  - [[package:auth-source-kwallet][auth-source-kwallet]]: KWallet integration for auth-source
+  - [[package:consult-lsp][consult-lsp]]: LSP-mode Consult integration
+  - [[package:counsel-mairix][counsel-mairix]]: Counsel interface for Mairix
+  - [[package:dired-view-data][dired-view-data]]: View data from dired via ESS and R
+  - [[package:hl-prog-extra][hl-prog-extra]]: Customizable highlighting for source-code
+  - [[package:ob-julia-vterm][ob-julia-vterm]]: Babel Functions for Julia in VTerm
+
+Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2021-04][emacs-devel]].
+
 ** 2021-04-19 Emacs news
 :PROPERTIES:
 :EXPORT_ELEVENTY_PERMALINK: /blog/2021/04/2021-04-19-emacs-news/
@@ -20071,7 +20160,7 @@ above!
       "** %s Emacs news
 :PROPERTIES:
 :EXPORT_ELEVENTY_PERMALINK: /blog/%s/%s/%s-emacs-news/
-:EXPORT_ELEVENTY_FILE_NAME: posts/%s/%s/%s-emacs-news
+:EXPORT_ELEVENTY_FILE_NAME: blog/%s/%s/%s-emacs-news/
 :EXPORT_DATE: %s
 :END:\n\n"
       end-date
@@ -20173,73 +20262,77 @@ my/prepare-emacs-news
 
 #+NAME: detect-dupes
 #+begin_src emacs-lisp
+(defvar my/emacs-news-check-duplicates-display 'minibuffer "minibuffer or posframe")
+
 (defun my/emacs-news-check-duplicates ()
-    (interactive)
-    (let ((end (save-excursion (org-end-of-subtree)))
-          (prompt-buffer (get-buffer-create "*Duplicate*"))
-          description
-          (search-fn (lambda (point search description)
-                       (save-excursion
-                         (goto-char point)
-                         (let (found)
-                           (if (re-search-forward (regexp-quote search) nil t)
-                               (setq found (point))
-                             ;; Does this look like a package name?
-                             (let ((case-fold-search nil))
-                               (when (string-match "^\\([-\\.a-z0-9]+?\\)\\(:\\|\\.el\\) " description)
-                                 (when (re-search-forward (concat "\\W" (regexp-quote (match-string 1 description))) nil t)
-                                   (setq found (point))))))
-                           found))))
-          search start
-          found
-          done
-          context)
-      (unwind-protect
-          (while (and (not done) (re-search-forward "- \\[\\[\\([^[]+\\)\\]\\[\\([^[]+\\)\\]" end t) )
-            (setq found nil search (match-string 1) start (match-beginning 0) description (match-string 2))
-            (goto-char (match-end 0))
-            (let ((p (point)))
-              ;; Search for the URL
-              (setq found (funcall search-fn (match-end 0) search description))
-              (while found
-                (goto-char found)
-                (setq context
-                      (concat
-                       (string-join (org-get-outline-path t) " > ") "\n"
-                       (buffer-substring (line-beginning-position) (line-end-position))))
-                (push-mark found)
-                (goto-char start)
+  (interactive)
+  (let ((end (save-excursion (org-end-of-subtree)))
+        (prompt-buffer (when (eq my/emacs-news-check-duplicates-display 'posframe) (get-buffer-create "*Duplicate*")))
+        description
+        (search-fn (lambda (point search description)
+                     (save-excursion
+                       (goto-char point)
+                       (let (found)
+                         (if (re-search-forward (regexp-quote search) nil t)
+                             (setq found (point))
+                           ;; Does this look like a package name?
+                           (let ((case-fold-search nil))
+                             (when (string-match "^\\([-\\.a-z0-9]+?\\)\\(:\\|\\.el\\) " description)
+                               (when (re-search-forward (concat "\\W" (regexp-quote (match-string 1 description))) nil t)
+                                 (setq found (point))))))
+                         found))))
+        search start
+        found
+        done
+        context)
+    (unwind-protect
+        (while (and (not done) (re-search-forward "- \\[\\[\\([^[]+\\)\\]\\[\\([^[]+\\)\\]" end t))
+          (setq found nil search (match-string 1) start (match-beginning 0) description (match-string 2))
+          (goto-char (match-end 0))
+          (let ((p (point)) prompt)
+            ;; Search for the URL
+            (setq found (funcall search-fn (match-end 0) search description))
+            (while found
+              (goto-char found)
+              (setq context
+                    (concat
+                     (string-join (org-get-outline-path t) " > ") "\n"
+                     (buffer-substring (line-beginning-position) (line-end-position))))
+              (push-mark found)
+              (goto-char start)
+              (setq prompt (concat context "\n(d)elete, (k)eep, (z)ap next one, e(x)change mark, (n)ext match, (q)quit?"))
+              (when (eq my/emacs-news-check-duplicates-display 'posframe)
                 (posframe-show prompt-buffer
-                               :string (concat context "\n(d)elete, (k)eep, (z)ap next one, e(x)change mark, (n)ext match, (q)quit?")
+                               :string prompt
                                :internal-border-width 2
                                :internal-border-color "white"
-                               :position (point))
-                (let ((input (read-char)))
-                  (cond
-                   ((eq input ?k)
-                    (forward-line 1)
-                    (setq found nil))
-                   ((eq input ?x)
-                    (goto-char found)
-                    (setq done t found nil))
-                   ((eq input ?z)
-                    (goto-char found)
-                    (delete-region (point-at-bol)
-                                   (progn (forward-line 1) (point)))
-                    (goto-char start)
-                    (setq found nil))
-                   ((eq input ?d)
-                    (delete-region (point-at-bol)
-                                   (progn (forward-line 1) (point)))
-                    (setq found nil))
-                   ((eq input ?n)
-                    ;; Look for the next match
-                    (setq found (funcall search-fn (save-excursion (goto-char found) (line-end-position))
-                                         search description)))
-                   ((eq input ?q)
-                    (setq done t found nil))))
-                (posframe-hide prompt-buffer))))
-        (posframe-delete prompt-buffer))))
+                               :position (point)))
+              (let ((input (read-char (when (eq my/emacs-news-check-duplicates-display 'minibuffer) prompt))))
+                (cond
+                 ((eq input ?k)
+                  (forward-line 1)
+                  (setq found nil))
+                 ((eq input ?x)
+                  (goto-char found)
+                  (setq done t found nil))
+                 ((eq input ?z)
+                  (goto-char found)
+                  (delete-region (point-at-bol)
+                                 (progn (forward-line 1) (point)))
+                  (goto-char start)
+                  (setq found nil))
+                 ((eq input ?d)
+                  (delete-region (point-at-bol)
+                                 (progn (forward-line 1) (point)))
+                  (setq found nil))
+                 ((eq input ?n)
+                  ;; Look for the next match
+                  (setq found (funcall search-fn (save-excursion (goto-char found) (line-end-position))
+                                       search description)))
+                 ((eq input ?q)
+                  (setq done t found nil))))
+              (when (eq my/emacs-news-check-duplicates-display 'posframe) (posframe-hide prompt-buffer)))))
+      (when (eq my/emacs-news-check-duplicates-display 'posframe) (posframe-delete prompt-buffer)))))
 #+end_src
 
 ** Making a numpad-based hydra for organizing Emacs News
