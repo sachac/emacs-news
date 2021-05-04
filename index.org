@@ -43,6 +43,7 @@ No feed available: http://ul.io/nb/, https://www.onwebsecurity.com/tag/emacs.htm
   <<git-news>>
   <<share-news>>
   <<prepare-news>>
+  <<twitter>>
   <<collect-news>>
   <<detect-dupes>>
 #+end_src
@@ -63,6 +64,85 @@ Actually generate the section:
 #+End_src
 
 #+RESULTS:
+** 2021-05-03 Emacs news
+  :PROPERTIES:
+  :EXPORT_ELEVENTY_FILE_NAME: blog/2021/05/2021-05-03-emacs-news/
+  :EXPORT_ELEVENTY_PERMALINK: /blog/2021/05/2021-05-03-emacs-news/
+  :EXPORT_DATE: 2021-05-03
+  :END:
+  :LOGBOOK:
+  CLOCK: [2021-05-03 Mon 23:08]--[2021-05-03 Mon 23:33] =>  0:25
+  CLOCK: [2021-05-03 Mon 19:51]--[2021-05-03 Mon 23:08] =>  3:17
+  :END:
+
+- Upcoming events:
+  - EmacsATX: TBD https://www.meetup.com/EmacsATX/events/277890138/ Wed May 5 1630 Vancouver / 1830 Chicago / 1930 Toronto / 2330 GMT -- Thu May 6 0130 Berlin / 0500 Kolkata / 0730 Singapore
+  - M-x Research (virtual, contact them for passcode) https://m-x-research.github.io/ Thu May 6 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore
+  - Emacs Paris (virtual) https://www.emacs-doctor.com/emacs-paris-user-group/ Thu May 6 0830 Vancouver / 1030 Chicago / 1130 Toronto / 1530 GMT / 1730 Berlin / 2100 Kolkata / 2330 Singapore
+- Beginner:
+  - [[https://www.youtube.com/watch?v=tV1_LcI_FDM][Imparare Emacs]] (26:27)
+- Emacs configuration:
+  - [[https://www.reddit.com/r/emacs/comments/n3d4vv/emacs_vs_vim_keybindings_for_emacs/][Emacs vs. Vim keybindings for Emacs]] - good write-up in the comments
+  - [[https://www.youtube.com/watch?v=-H2nU0rsUMY&feature=youtu.be][Hey Emacs, Don't Move My Windows! - Customizing display-buffer's behavior]]
+  - [[https://www.youtube.com/watch?v=QRmKpqDP5yE][Custom keybindings in Doom Emacs · Emacs Doomcasts 28]] (04:17)
+  - [[https://github.com/plexus/corgi][corgi: A minimalistic evil-based Emacs configuration that feels like a slimmed down version of Spacemacs.]]
+  - [[https://github.com/Maverobot/dot-spacemacs][dot-spacemacs: Spacemacs config for a daily c++ programmer.]]
+  - [[https://www.youtube.com/watch?v=BvHIHWhCkEI][Emacs Enthusiast - Centaur Emacs]] (18:30)
+- Emacs Lisp:
+  - [[http://puntoblogspot.blogspot.com/2021/05/wait-sec-did-i-just-ask-for-paredit.html][Raimon Grau: Wait a sec..., did I just ask for paredit-convolute-sexp?]]
+  - [[https://blog.lambda.cx/posts/emacs-buffers-to-stdout/][How to get all Emacs daemon buffers from a shell script]]
+  - [[https://hyperscope.link/3/7/1/3/3/RCD-Template-Interpolation-System-for-Emacs.html][RCD Template Interpolation System for Emacs]]
+  - [[https://hyperscope.link/3/7/1/3/6/Emacs-Lisp-interpolation-of-embedded-PostgreSQL-queries-within-plain-text.html][Emacs Lisp interpolation of embedded PostgreSQL queries within plain text]]
+  - [[https://karthinks.com/software/bridging-islands-in-emacs-1/][Bridging Islands in Emacs: re-builder and query-replace-regexp]] ([[https://reddit.com/r/emacs/comments/n0dtm7/bridging_islands_in_emacs_rebuilder_and/][Reddit]])
+  - [[https://www.youtube.com/watch?v=mu9TCRFrNN8][Let's write some Emacs Lisp - Refactoring Github helper functions, exploring URL package]] (36:34)
+  - [[https://www.youtube.com/watch?v=nlznwoYvxLs][Emacs Enthusiast - 5. - elisp]] (11:36)
+  - [[https://www.youtube.com/watch?v=kZeaRsJPNeQ][GNU Emacs. Часть 3. Конфигурация, пакеты и моды]] (14:24)
+- Emacs development:
+  - [[https://www.reddit.com/r/emacs/comments/n13v5l/what_is_the_next_big_feature_after_native_comp/][What is the next big feature, after native comp, that we can expect from emacs in near future?]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=6c1c3204e4761fd0d8bdbf22c6519d2328f60450][Add new help command 'describe-command']]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=0ce2f591ff9acd8cfb0944d0de95723e7db0d6f0][* lisp/minibuffer.el (completing-read-default): Fix bug#45474]]
+- Navigation:
+  - [[https://www.youtube.com/watch?v=Dq5UOt63Mms][Efficient Text Selection with Emacs Key Bindings - Emacs Essentials #3]] (28:34, [[https://reddit.com/r/emacs/comments/n0jge7/efficient_text_selection_with_emacs_key_bindings/][Reddit]])
+  - [[http://elpa.nongnu.org/nongnu/][NonGNU ELPA seems to be online and already searched with the latest Emacs.]] ([[https://reddit.com/r/emacs/comments/n33d85/not_sure_if_it_was_talked_already_here_briefly/][Reddit]])
+- Org Mode:
+  - [[https://www.reddit.com/r/emacs/comments/n1xake/this_month_in_org_april_2021/][This Month in Org: April 2021]]
+  - [[https://github.com/amno1/org-heading-checkbox][Checkboxes in Org-mode Headings - Testers Needed]]
+  - [[https://zerokspot.com/weblog/2021/04/28/disabling-outline-style-indentation-in-org-mode/][Disabling outline-style indentation in Org Mode - zerokspot.com]]
+  - [[https://sqrtminusone.xyz/posts/2021-05-01-org-python/][Replacing Jupyter Notebook with Org Mode]]
+  - Import, export, and integration:
+    - [[https://github.com/yuutayamada/bpe][bpe: Post blog article of org-mode to Blogger from Emacs]]
+    - [[https://jeffbowman.writeas.com/moving-to-writefreely][Moving to WriteFreely — Bowmansarrow]]
+    - [[https://www.dropboxforum.com/t5/Dropbox-ideas/View-org-mode-Orgzly-files-as-text/idi-p/276543#comments][Request for Dropbox to add support for previewing org-mode files]] ([[https://reddit.com/r/orgmode/comments/n2casl/request_for_dropbox_to_add_support_for_previewing/][Reddit]])
+- Completion:
+  - [[https://github.com/dfeich/helm-deft][helm-deft: A helm based emacs module to help search in a predetermined list of directories. Inspired by the deft module.]]
+  - [[https://www.youtube.com/watch?v=nyz4O7EwxIk][System Crafters Live! - Trying New Emacs Packages: Vertico and Corfu • Emacs Lisp Hacking • Q&A]] (02:11:27)
+- Coding:
+  - [[https://www.reddit.com/r/emacs/comments/n3u8gh/slurm_mode_in_emacs/][Slurm mode in emacs]]
+- Mail and news:
+  - [[https://i.redd.it/d25h0df2bnv61.png][Mu4e look and feel]] ([[https://reddit.com/r/emacs/comments/mzgsm0/mu4e_look_and_feel/][Reddit]])
+- EXWM:
+  - [[https://www.reddit.com/r/EXWM/comments/n2s6gt/exwm_move_window_to_workspace/][EXWM Move Window to Workspace]]
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/mzhrz8/weekly_tipstricketc_thread/][Weekly tips/trick/etc/ thread]]
+  - [[http://mbork.pl/2021-05-01_Emacs_Lisp_book_revived][Marcin Borkowski: Emacs Lisp book revived]]
+- Other:
+  - [[https://www.mattduck.com/emacs-fuzzy-launcher.html][Emacs as a fuzzy launcher and Alfred-replacement]] ([[https://reddit.com/r/planetemacs/comments/n18ksn/emacs_as_a_fuzzy_launcher_and_alfredreplacement/][Reddit]])
+  - [[https://www.mattduck.com/emacs-fuzzy-launcher-part-two.html][More Emacs fuzzy integrations]]: Org headlines, capture, clock; webserver; processes; directories and files
+  - [[https://www.reddit.com/r/emacs/comments/n1ysol/a_very_niche_functionpackage/][Display currently-playing song on BBC6]]
+  - [[https://emacspeak.blogspot.com/2021/05/announcing-emacspeak-540-ezdog.html][T. V. Raman: Announcing Emacspeak 54.0 (EZDog)]] ([[https://reddit.com/r/planetemacs/comments/n3df78/t_v_raman_announcing_emacspeak_540_ezdog/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/n3oqle/gnu_hyperbole_v8_rocket_through_your_information/][GNU Hyperbole V8: Rocket Through Your Information with Buttons]]
+  - [[https://www.reddit.com/r/emacs/comments/n0w8w3/prebuild_emacs_for_macos_on_nix/][(Pre)Build Emacs for MacOS, on Nix]]
+  - [[https://tech.toryanderson.com/2021/04/29/pdftools-cannot-open-libpoppler.so.108/][Tory Anderson: pdftools cannot open libpoppler.so.108]] - how to fix
+- New packages:
+  - [[package:cowsay][cowsay]]: Poorly drawn ASCII cartoons saying things
+  - [[package:electric-cursor][electric-cursor]]: Change cursor automatically
+  - [[package:geiser-stklos][geiser-stklos]]: STklos Scheme implementation of the geiser protocols
+  - [[package:pyim-cangjiedict][pyim-cangjiedict]]: Some cangjie dicts for pyim
+  - [[package:rbs-mode][rbs-mode]]: A major mode for RBS
+  - [[package:sway][sway]]: Communication with the Sway window manager
+
+Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]], [[https://emacslife.com/calendar/][Emacs Calendar]], and [[http://lists.gnu.org/archive/html/emacs-devel/2021-05][emacs-devel]].
+
 ** 2021-04-26 Emacs news
   :PROPERTIES:
   :EXPORT_ELEVENTY_PERMALINK: /blog/2021/04/2021-04-26-emacs-news/
@@ -20192,7 +20272,7 @@ above!
      "\n"
      (if (member 'reddit parts) (my/reddit-list-upvoted (substring date 0 10)) "")
      (if (member 'youtube parts)
-         (my/emacs-news-youtube-playlist my/emacs-news-playlist start-date end-date))
+         (my/emacs-news-youtube-playlist my/emacs-news-playlist start-date))
      "- New packages:\n"
      (my/list-new-packages date) 
      "\n\nLinks from "
@@ -20203,8 +20283,9 @@ above!
                   ("http://reddit.com/r/planetemacs" . "r/planetemacs")
                   ("https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story" . "Hacker News")
                   ("https://planet.emacslife.com" . "planet.emacslife.com")
-                  ("https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded" . "YouTube")
-                  ("http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS" . "the Emacs NEWS file"))
+                  ("https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt" . "YouTube")
+                  ("http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS" . "the Emacs NEWS file")
+                  ("https://emacslife.com/calendar/" . "Emacs Calendar"))
                 ", ")
      " and "
      (org-link-make-string (concat "http://lists.gnu.org/archive/html/emacs-devel/" (format-time-string "%Y-%m"))
@@ -20504,13 +20585,36 @@ easily define the menu in a variable. It seems to work fine so far.
            (switch-to-buffer "*Messages*")))
        "Show URL")
       ("-" kill-whole-line "Kill")
+      ("c"
+       (save-excursion
+         (re-search-forward "\\[\\[")
+         (my/caption-show (org-element-property :raw-link (org-element-context))))
+       "Caption")
       ("p" org-next-link "Previous link")
       ("n" org-next-link "Next link")
+      ("C-M-v" scroll-other-window :hint nil)
+      ("C-M-S-v" scroll-other-window-down :hint nil)
       ("h" (lambda () (interactive) (my/org-update-link-description "HN")) "Link HN")
       ("i" (lambda () (interactive) (my/org-update-link-description "Irreal")) "Link Irreal")
       ("." nil "Done")))
 #+end_src
 
 #+RESULTS: menu
-: my/org-categorize-emacs-news/body
+:results:
+my/org-categorize-emacs-news/body
+:end:
+** DONE Post Emacs News link to Twitter
+   CLOSED: [2021-05-04 Tue 00:53]
+   :LOGBOOK:
+   - State "DONE"       from "TODO"       [2021-05-04 Tue 00:53]
+   :END:
 
+#+NAME: twitter
+#+begin_src emacs-lisp
+(defun my/tweet-emacs-news ()
+  (interactive)
+  (call-process "t" nil nil nil "update" (concat (org-get-heading t t t t)
+                                                 " https://sachachua.com"
+                                                 (org-entry-get (point) "EXPORT_ELEVENTY_PERMALINK")))
+  (browse-url "https://tweetdeck.twitter.com"))
+#+end_src
