@@ -1,3 +1,4 @@
+
 #+STARTUP: showall
 #+ELEVENTY_COLLECTIONS: _posts
 #+ELEVENTY_BASE_DIR: ~/code/static-blog/content/posts/
@@ -64,6 +65,93 @@ Actually generate the section:
 #+End_src
 
 #+RESULTS:
+** 2021-05-10 Emacs news
+  :PROPERTIES:
+  :EXPORT_ELEVENTY_PERMALINK: /blog/2021/05/2021-05-10-emacs-news/
+  :EXPORT_ELEVENTY_FILE_NAME: blog/2021/05/2021-05-10-emacs-news/
+  :EXPORT_DATE: 2021-05-10
+  :END:
+
+- Upcoming events:
+  - EmacsSF: Emacs and the Debug Adapter Protocol; dap-mode debugging demo https://www.meetup.com/Emacs-SF/events/277985582/ Thu May 13 1000 Vancouver / 1200 Chicago / 1300 Toronto / 1700 GMT / 1900 Berlin / 2230 Kolkata -- Fri May 14 0100 Singapore
+  - M-x Research (virtual, contact them for passcode) https://m-x-research.github.io/ Thu May 20 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore
+  - Emacs APAC (virtual, in English) https://emacs-apac.gitlab.io/ Sat May 22 0130 Vancouver / 0330 Chicago / 0430 Toronto / 0830 GMT / 1030 Berlin / 1400 Kolkata / 1630 Singapore
+- Beginner:
+  - [[https://lucidmanager.org/tags/emacs/][New series of articles for beginners: More Productive with Emacs]] ([[https://reddit.com/r/emacs/comments/n7ng5q/new_series_of_articles_for_beginners_more/][Reddit]])
+  - [[https://www.youtube.com/watch?v=cuJSLuvbz8E][Emacs Enthusiast - 6. - copy/paste]] (06:17)
+- Emacs configuration:
+  - [[https://www.youtube.com/watch?v=9bL7DPQ83c8][System Crafters Live! - Should you use pre-made Emacs configs? • Emacs News]] (02:03:57)
+  - [[https://tech.toryanderson.com/2021/05/04/straight-change-repo/][Tory Anderson: straight change repo?]]
+  - [[https://gist.github.com/tttuuu888/267a8a56c207d725ea999e353646eec9][eye-candy for package loading time]] ([[https://reddit.com/r/emacs/comments/n8bvk8/eyecandy_for_package_loading_time/][Reddit]])
+  - [[https://github.com/AnthonyDiGirolamo/dot-all][dot-all: Personal dotfile repo with vim/emacs/shell and tools.]]
+- Emacs Lisp:
+  - [[https://youtu.be/nPUMHyEGHlU][Let's write some Emacs Lisp - Using URL and authinfo to get a list of PRs from Github]] ([[https://reddit.com/r/emacs/comments/n7zb0e/lets_write_some_emacs_lisp_using_url_and_authinfo/][Reddit]])
+  - [[http://ag91.github.io/blog/2021/05/09/becoming-glamorous-how-glamoroustoolkit-can-run-emacs-lisp][Andrea: Becoming Glamorous: how GlamorousToolkit can run Emacs Lisp.]]
+- Emacs development:
+  - [[https://arxiv.org/abs/2004.02504][Bringing GNU Emacs to Native Code (2020)]] ([[https://news.ycombinator.com/item?id=27011013][HN]], long discussion)
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=79e2d0486c89c6c452df33792976ea6fdf825185][Document native-compilation]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=048cc03290abc786f439ee9838c15a81541af2aa][Ensure `<menu-bar> <edit> <clear>' handles rectangular regions]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=220845be11acbb08f719d327c8088ea7a414ef59][Remove another variable alias obsolete since Emacs 23]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=b61c828ea37f6d875f9c2672a262482af5efedb4][Add a help option to the open large files prompt]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=b8bdf64377120d2c802e4ef13cfab1fec8c37a27][New option to confirm deletion in bookmark menu]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=60ff12a7d9dacbf971321da1ac1afd610417bd38][Fix doc marker for previous bookmark NEWS change]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=ab6cb65cb2b6d11a7b690dfcea8d98611290fad9][Fontify lines when setting a bookmark]]
+- Appearance:
+  - [[https://i.redd.it/xrazttexgzx61.png][I made emacs look like a better version of atom]] ([[https://reddit.com/r/emacs/comments/n81k4j/i_made_emacs_look_like_a_better_version_of_atom/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/n3q6s4/whats_your_favorite_font_for_emacs/][What's your favorite font for emacs?]]
+- Org Mode:
+  - [[https://isamert.net/2021/01/25/how-i-do-keep-my-days-organized-with-org-mode-and-emacs.html][How do I keep my days organized with org-mode?]] ([[https://reddit.com/r/orgmode/comments/n5b1zg/how_do_i_keep_my_days_organized_with_orgmode/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/n7tacw/for_those_of_us_who_want_to_have_public_and/][For those of us who want to have public and private org-roam directories]]
+  - [[https://github.com/tarsius/orglink][orglink: Use Org Mode links in other modes]]
+  - [[http://blog.binchen.org/posts/org-link-and-pdf-tools/][Chen Bin (redguardtoo): Org link and pdf-tools]]
+  - [[https://www.youtube.com/watch?v=p1WOevXLSJQ&feature=youtu.be][New Emacs package pamparam: flashcards with spaced repetition.]]
+  - [[https://git.sr.ht/~bzg/org-contrib][Contributed packages to Org in search for new maintainers]]
+  - Import, export, and integration:
+    - [[https://www.reddit.com/r/orgmode/comments/n5f687/new_package_orgdiagrams/][New package - org-diagrams]]
+    - [[https://www.reddit.com/r/emacs/comments/n6amm7/tangle_org_files_without_emacs_installed/][Tangle org files without emacs installed.]]
+    - [[https://oer.gitlab.io/org-re-reveal/Readme.html][Introduction to org-re-reveal]]
+    - [[https://isamert.net/2021/05/09/migrating-my-imdb-ratings-list-and-watch-list-into-org-mode.html][Migrating my IMDb ratings list and watch list into org-mode | isamert.net]]
+    - [[https://www.youtube.com/watch?v=kkqVTDbfYp4&feature=youtu.be][Emacs From Scratch #7 - Configure Everything with Org Babel]]
+    - [[https://github.com/aardsoft/ox-g-brief][ox-g-brief: g-brief2 exporter for org-mode]]
+- Completion:
+  - [[https://www.reddit.com/r/emacs/comments/n40lk8/poll_whats_your_ideal_minibuffer_completion_ui/][[POLL] What's your ideal minibuffer completion UI?]]
+  - [[https://isamert.net/2021/03/27/killing-copying-currently-selected-candidates-content-text-in-selectrum.html][Killing (copying) currently selected candidate's content/text in Selectrum | isamert.net]]
+  - [[https://rnchzn.github.io/helm/doc/helm-manual.html][Helm documentation]]
+- Coding:
+  - [[https://github.com/purcell/whitespace-cleanup-mode][whitespace-cleanup-mode: intelligently call whitespace-cleanup on save]]
+  - [[https://github.com/anticomputer/emacs-capstone][emacs-capstone: elisp bindings for the capstone disassembler]]
+  - [[https://github.com/mmontone/slime-doc-contribs][slime-doc-contribs: Documentation contribs for SLIME (the Superior Lisp Interaction Mode for Emacs)]]
+- Shells:
+  - [[https://www.reddit.com/r/emacs/comments/n8n5wr/eshell_tuning_with_wellknown_keybindings/][Eshell tuning with well-known keybindings]]
+  - [[https://github.com/TatriX/tshell][tshell: Experimental alternative shell for Emacs]]
+  - [[https://www.reddit.com/r/emacs/comments/n5midz/shelldon_a_different_take_on_shells_in_emacs/][Shelldon: a different take on shells in emacs]]
+- Math:
+  - [[https://www.reddit.com/r/emacs/comments/n63b07/mathatpoint_evaluate_a_math_expression_at_point/][math-at-point - Evaluate a math expression at point using calc-eval]]
+- Multimedia:
+  - [[https://github.com/progfolio/emp][emp: Emacs MPV integration]]
+- Doom Emacs:
+  - [[https://www.youtube.com/watch?v=pEvZ82Ii9Ys][Doom Emacs on a Pine Phone]] ([[https://reddit.com/r/emacs/comments/n79la1/doom_emacs_on_a_pine_phone/][Reddit]])
+- Community:
+  - [[https://www.libhunt.com/l/emacs-lisp][Emacs Lisp @ LibHunt - discover popular projects based on their mentions on Reddit]] ([[https://reddit.com/r/emacs/comments/n4ezp7/emacs_lisp_libhunt_discover_popular_projects/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/n4h9s7/weekly_tipstricketc_thread/][Weekly tips/trick/etc/ thread]]
+  - [[https://github.com/melpa/melpa/issues/7552][Need a hand for your Elisp package? A new contributor wants to help you.]] ([[https://reddit.com/r/emacs/comments/n5r4mo/need_a_hand_for_your_elisp_package_a_new/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/n7notf/embarrassing_emacs_confessions/][Embarrassing emacs confessions]]
+  - [[http://mbork.pl/2021-05-01_Emacs_Lisp_book_revived][Emacs Lisp book revived: Marcin Borkowski]] ([[https://news.ycombinator.com/item?id=27005000][HN]])
+- Other:
+  - [[https://www.reddit.com/r/emacs/comments/n7ofe0/endtoend_encrypted_filebuffer_sharing/][End-to-end encrypted file/buffer sharing]]
+  - [[https://www.reddit.com/r/emacs/comments/n8jd7z/emacs_msys2_windows_task_scheduler_a_love_story/][Emacs + MSYS2 + Windows Task Scheduler a love story untold]]
+  - [[https://ddavis.io/posts/emacs-native-centos7/][Emacs native-comp on CentOS 7]]
+  - [[https://www.reddit.com/r/emacs/comments/n6uxsk/osx_native_notifications_available_in_new/][OSX native notifications available in new homebrew tap]]
+- New packages:
+  - [[package:chembalance][chembalance]]: Balance chemical equations
+  - [[package:clhs][clhs]]: Access the Common Lisp HyperSpec (CLHS)
+  - [[package:orthodox-christian-new-calendar-holidays][orthodox-christian-new-calendar-holidays]]: Feasts (NS)
+  - [[package:rescript-mode][rescript-mode]]: A major mode for editing ReScript
+  - [[package:symbolist][symbolist]]: List and interactively unbind Emacs Lisp symbols
+  - [[package:weblio][weblio]]: Look up Japanese words on Weblio.jp
+
+Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]], [[https://emacslife.com/calendar/][Emacs Calendar]] and [[http://lists.gnu.org/archive/html/emacs-devel/2021-05][emacs-devel]].
+
 ** 2021-05-03 Emacs news
   :PROPERTIES:
   :EXPORT_ELEVENTY_FILE_NAME: blog/2021/05/2021-05-03-emacs-news/
@@ -10490,8 +10578,8 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 - Emacs Lisp:
   - [[https://github.com/melpa/melpa/blob/master/CONTRIBUTING.org][melpa/CONTRIBUTING.org: Read this if you want to include your package in MELPA.]]
   - [[https://www.reddit.com/r/emacs/comments/at3cnr/what_is_the_best_workflow_to_contributed_to_emacs/][What is the best workflow to contributed to Emacs package?]]
-  - [[https://github.com/tmalsburg/guess-language.el][ELPA: guess-language: Robust automatic language detection]]
   - [[https://www.reddit.com/r/emacs/comments/asxn89/linear_algebra_and_maths_in_elisp/][linear algebra (and maths) in elisp]]
+  - [[https://github.com/tmalsburg/guess-language.el][ELPA: guess-language: Robust automatic language detection]]
 - Emacs development:
   - [[https://lists.gnu.org/archive/html/emacs-devel/2019-02/msg00655.html][Emacs pretest 26.1.92 is out!]]
   - [[https://www.reddit.com/r/emacs/comments/at4dqg/how_to_contribute_to_emacs_documentation/][How to contribute to Emacs documentation?]]
@@ -20555,13 +20643,17 @@ easily define the menu in a variable. It seems to work fine so far.
           (recenter)))))
 
   (eval 
-   `(defhydra my/org-categorize-emacs-news (:foreign-keys nil)  
+   `(defhydra my/org-categorize-emacs-news (:foreign-keys nil)
+      "
+Default: %(my/emacs-news-guess-category)"
       ,@(mapcar
          (lambda (x)
            `(,(car x)
              (lambda () (interactive) (my/org-move-current-item-to-category ,(concat (cdr x) ":")))
              ,(cdr x)))
          my/org-categorize-emacs-news-menu)
+      ("RET"
+       (my/org-move-current-item-to-category (concat (my/emacs-news-guess-category) ":")))
       (","
        (lambda () (interactive)
          (my/org-move-current-item-to-category 
