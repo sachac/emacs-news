@@ -65,6 +65,84 @@ Actually generate the section:
 #+End_src
 
 #+RESULTS:
+** 2021-05-24 Emacs news
+  :PROPERTIES:
+  :EXPORT_ELEVENTY_PERMALINK: /blog/2021/05/2021-05-24-emacs-news/
+  :EXPORT_ELEVENTY_FILE_NAME: blog/2021/05/2021-05-24-emacs-news/
+  :EXPORT_DATE: 2021-05-24
+  :END:
+
+- Upcoming events:
+  - Singapore: Emacs & Never Code Alone SG https://www.meetup.com/Emacs-SG/events/268260076/ Wed May 26 0400 Vancouver / 0600 Chicago / 0700 Toronto / 1100 GMT / 1300 Berlin / 1630 Kolkata / 1900 Singapore
+  - Emacs Berlin (virtual, in English) https://emacs-berlin.org/ Wed May 26 0930 Vancouver / 1130 Chicago / 1230 Toronto / 1630 GMT / 1830 Berlin / 2200 Kolkata -- Thu May 27 0030 Singapore
+  - EmacsSF: Emacs Lisp: Cracking open compilation-mode https://www.meetup.com/Emacs-SF/events/278223393/ Thu May 27 1000 Vancouver / 1200 Chicago / 1300 Toronto / 1700 GMT / 1900 Berlin / 2230 Kolkata -- Fri May 28 0100 Singapore
+  - [[https://www.youtube.com/watch?v=-SA0269tjuw][Emacs Lisp Live Coding. Convert MM:SS to Seconds and Reverse]] (01:01:30)
+  - [[http://mbork.pl/2021-05-17_Updating_an_Emacs_buffer_in_real-time][Marcin Borkowski: Updating an Emacs buffer in real-time]]
+  - Emacs Paris (virtual) https://www.emacs-doctor.com/emacs-paris-user-group/ Tue Jun 1 0830 Vancouver / 1030 Chicago / 1130 Toronto / 1530 GMT / 1730 Berlin / 2100 Kolkata / 2330 Singapore
+  - EmacsATX: TBD https://www.meetup.com/EmacsATX/events/278009190/ Wed Jun 2 1630 Vancouver / 1830 Chicago / 1930 Toronto / 2330 GMT -- Thu Jun 3 0130 Berlin / 0500 Kolkata / 0730 Singapore
+  - M-x Research (virtual, contact them for passcode) https://m-x-research.github.io/ Thu Jun 3 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore
+- Emacs configuration:
+  - [[https://en.liujiacai.net/2021/05/21/emacs-package/][How to maintain your Emacs configuration - KeepCoding]] ([[https://www.reddit.com/r/emacs/comments/nhvtnt/how_to_maintain_your_emacs_configuration/][Reddit]])
+- Emacs Lisp:
+  - [[https://hyperscope.link/3/7/7/3/0/Your-hj%C3%A4lpsam-Package-Header-Assistant-37730.html][Emacs: package-header.el your hjälpsam Package Header Assistant]]
+- Emacs development:
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=099caace34867a716224eeba5b9901373b06df28][* lisp/dired-aux.el (dired-do-revert-buffer): New defcustom (bug#48456).]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=e0ebce5ce2ba76779a5a74dcffba60b83cf9df2f][* lisp/help.el (describe-bindings-outline): New defcustom (bug#45147).]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=1866e66a73083fa5466b040d2cc44ca73da891e9][* lisp/international/mule-cmds.el: Use group-function in read-char-by-name.]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=1f0f922ef279e29bc91642f4e8ff2b552064d07f][* lisp/simple.el (yank-from-kill-ring-rotate): New defcustom (bug#48478).]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=39b67c3ffe475107218adbd68a78d8eda6cc83c7][* doc/emacs/basic.texi (Repeating): Document repeat-exit-timeout (bug#48472).]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=dac20f08fa8f6b9fbdb8251af0652a909dee9fc8][Allow specifying the default archive types to compress to in Dired]]
+- Appearance:
+  - [[https://protesilaos.com/codelog/2021-05-19-modus-themes-status-update/][Protesilaos Stavrou: Status update on the Modus themes for Emacs (2021-05-19)]]
+  - [[https://christiantietze.de/posts/2021/05/macos-native-highlight-colors/][Christian Tietze: Use macOS Native Highlight Colors for Emacs hl-line]]
+- Navigation:
+  - [[https://www.youtube.com/watch?v=lBNCWZZjKwg][Emacs Enthusiast - 15. - swiper]] (08:02)
+- Org Mode:
+  - [[https://koenig-haunstetten.de/2021/05/23/fighting-procrastination-with-orgmode/][Fighting procrastination with orgmode]] ([[https://reddit.com/r/orgmode/comments/nj4na9/fighting_procrastination_with_orgmode/][Reddit]])
+  - [[https://www.youtube.com/watch?v=R2Pf6ma8PtA][Grazer Linuxtage 2021 - Emacs Org mode features you may not know]] (40:40)
+  - [[https://github.com/lepisma/oca][Org Capture Anywhere]] ([[https://reddit.com/r/emacs/comments/nj4099/org_capture_anywhere/][Reddit]])
+  - [[https://gitlab.com/Kaligule/org-to-pdf][A minimal setup to create pdfs from orgmode-files with nix]] ([[https://reddit.com/r/emacs/comments/ni0tc8/a_minimal_setup_to_create_pdfs_from_orgmodefiles/][Reddit]])
+- Completion:
+  - [[https://www.youtube.com/watch?v=J0OaRy85MOo][Streamline Your Emacs Completions with Vertico]] ([[https://reddit.com/r/emacs/comments/neh3d7/streamline_your_emacs_completions_with_vertico/][Reddit]])
+  - [[https://www.youtube.com/watch?v=UtqE-lR2HCA][System Crafters Live! - Replacing Ivy and Counsel with Vertico and Consult]] (01:59:18)
+- Coding:
+  - [[https://www.youtube.com/watch?v=5pwsqeU_ILc][EuroTcl2019: Tcl Digraphs, Emacs Tcl Minor Mode (Michael Kaelbling)]] (07:23)
+  - [[https://www.youtube.com/watch?v=vVkzTZCzX_M][System Crafters Live! - Building lsp-mode configurations • Emacs News]] (01:59:37)
+- Shells:
+  - [[http://www.nextpoint.se/?p=864][Use Bash Aliases from Emacs’s Minibuffer by Using Interactive Shell]] ([[https://reddit.com/r/emacs/comments/nff4uo/use_bash_aliases_from_emacss_minibuffer_by_using/][Reddit]])
+- Mail and news:
+  - [[https://jao.io/blog/2021-05-17-reading-and-searching-gmane-with-gnus-fast.html][jao: reading and searching gmane with gnus, fast]]
+  - [[https://christiantietze.de/posts/2021/05/notmuch-email-modus-themes/][Christian Tietze: Notmuch Mail and Compatible Emacs Theme Updates]]
+- Hyperbole:
+  - [[https://www.reddit.com/r/emacs/comments/nirwpk/my_understanding_of_gnu_hyperbole/][My Understanding of GNU Hyperbole.]]
+- EXWM:
+  - [[https://tech.toryanderson.com/2021/05/22/exwm-as-a-recognized-desktop-manager-my-kde-sddm/][Tory Anderson: exwm as a recognized desktop manager (my KDE SDDM)]]
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/ngbt2j/offer_collaboration/][Offer collaboration]] - looking for elisp projects to help with
+  - [[https://www.reddit.com/r/emacs/comments/ni2lmx/is_it_possible_to_use_gnuemacs_as_an_alternative/][Is it possible to use GNU/Emacs as an alternative of Libreoffice Writer/Ms Word/OnlyOffice?]]
+  - [[https://www.youtube.com/watch?v=M1n7vyPAVkY][Why I fell in Love with GNU Emacs]] (12:00)  ([[https://reddit.com/r/emacs/comments/nfexi9/i_made_video_on_emacs_just_because_i_love_emacs/][Reddit]])
+  - [[https://macowners.club/posts/favorite-apps-tools-2/][Favorite Apps & Tools #2 - Emacs]] ([[https://www.reddit.com/r/emacs/comments/nhdi9a/emacs_praises_and_ramblings/][Reddit]])
+- Other:
+  - [[https://takeonrules.com/2021/05/20/emacs-function-to-rename-hugo-blog-post/][Emacs Function to Rename Hugo Blog Post // Take on Rules]] ([[https://reddit.com/r/emacs/comments/nhasdo/emacs_function_to_rename_hugo_blog_post_take_on/][Reddit]])
+  - [[https://www.quora.com/Which-Emacs-commands-blow-your-mind-with-their-infinite-power][Which Emacs commands blow your mind with their infinite power?]] (2015, [[https://reddit.com/r/emacs/comments/nh7q3t/which_emacs_commands_blow_your_mind_with_their/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/ngulgt/ann_evilnumbers_v06_fixes_and_new_features/][[ANN] evil-numbers v0.6 (fixes and new features)]]
+  - [[http://xenodium.com/emacs-plus-with-native-comp][Alvaro Ramirez: Emacs plus --with-native-comp]]
+  - [[https://helpdeskheadesk.net/help-desk-head-desk/2021-05-19/][A Few TRAMP tricks · The Art of Not Asking Why]] ([[https://www.reddit.com/r/emacs/comments/nhei7d/quick_2_and_a_half_tricks_in_tramp_that_i_learned/][Reddit]])
+  - [[https://gist.github.com/akagr/18ec650bc5f7e0ef663af9a30ce02973][MacOS launch agent to start emacs daemon or attach to one]] ([[https://reddit.com/r/emacs/comments/nh30ft/macos_launch_agent_to_start_emacs_daemon_or/][Reddit]])
+  - [[http://angg.twu.net/2021-video-links.html][How to use the "[Video links:]" blocks in the "intro"s of eev]] ([[https://www.reddit.com/r/emacs/comments/nb7gwj/how_to_use_the_video_links_blocks_in_the_intros/][Reddit]])
+- New packages:
+  - [[package:isearch-mb][isearch-mb]]: Control Isearch from the minibuffer
+  - [[package:affe][affe]]: Asynchronous Fuzzy Finder for Emacs
+  - [[package:auth-source-keytar][auth-source-keytar]]: Integrate auth-source with keytar
+  - [[package:graphql-doc][graphql-doc]]: GraphQL Documentation Explorer
+  - [[package:keytar][keytar]]: Emacs Lisp interface for node-keytar
+  - [[package:mlscroll][mlscroll]]: A scroll bar for the modeline
+  - [[package:org-gamedb][org-gamedb]]: A game API client to work with org-mode
+  - [[package:persp-mode-project-bridge][persp-mode-project-bridge]]: Integration of persp-mode + project.el
+  - [[package:slurm-mode][slurm-mode]]: Interaction with the SLURM job scheduling system
+
+Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]], [[https://emacslife.com/calendar/][Emacs Calendar]] and [[http://lists.gnu.org/archive/html/emacs-devel/2021-05][emacs-devel]].
+
 ** 2021-05-17 Emacs news
   :PROPERTIES:
   :EXPORT_ELEVENTY_PERMALINK: /blog/2021/05/2021-05-17-emacs-news/
