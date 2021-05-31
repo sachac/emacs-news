@@ -65,6 +65,98 @@ Actually generate the section:
 #+End_src
 
 #+RESULTS:
+** 2021-05-31 Emacs news
+  :PROPERTIES:
+  :EXPORT_ELEVENTY_PERMALINK: /blog/2021/05/2021-05-31-emacs-news/
+  :EXPORT_ELEVENTY_FILE_NAME: blog/2021/05/2021-05-31-emacs-news/
+  :EXPORT_DATE: 2021-05-31
+  :END:
+
+- [[https://www.reddit.com/r/emacs/comments/nl70vo/emacs_is_on_liberachat/][#emacs is on libera.chat]] - also #emacs-beginners, #emacsconf, and #emacsconf-org
+- Upcoming events:
+  - Emacs Paris (virtual) https://www.emacs-doctor.com/emacs-paris-user-group/ Tue Jun 1 0830 Vancouver / 1030 Chicago / 1130 Toronto / 1530 GMT / 1730 Berlin / 2100 Kolkata / 2330 Singapore
+  - EmacsATX: TBD https://www.meetup.com/EmacsATX/events/278009190/ Wed Jun 2 1630 Vancouver / 1830 Chicago / 1930 Toronto / 2330 GMT -- Thu Jun 3 0130 Berlin / 0500 Kolkata / 0730 Singapore
+  - M-x Research (virtual, contact them for passcode) https://m-x-research.github.io/ Thu Jun 3 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore
+- Beginner:
+  - [[https://www.youtube.com/watch?v=iFTG4iAsrzE][The Invisible Man in Emacs -- The Mark]] (16:39)
+  - [[https://www.youtube.com/watch?v=HoaXsbrSrIg][Customization in Emacs]] (16:01)
+  - [[https://www.youtube.com/watch?v=HQjx3r8VW6w][Frames, Windows e Buffers in Emacs]] (39:09, Italian)
+- Emacs configuration:
+  - [[https://youtu.be/hHdM2wVM1PI][Doom Emacs or Spacemacs? Use both with Chemacs2!]] (25:37, [[https://reddit.com/r/emacs/comments/njz5qk/doom_emacs_or_spacemacs_use_both_with_chemacs2/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/nlmff5/what_do_people_use_cz_for/][What do people use C-z for?]]
+  - [[https://emacsair.me/2021/05/30/borg-3.2][Jonas Bernoulli: Borg 3.2 and Epkg 3.2 released]] ([[https://www.reddit.com/r/emacs/comments/noa9z6/borg_v32_and_epkg_v33_released/][Reddit]])
+- Emacs Lisp:
+  - [[https://xenodium.com/emacs-link-scraping-2021-edition][Emacs link scraping (2021 edition)]] ([[https://reddit.com/r/emacs/comments/nn2ceo/emacs_link_scraping_2021_edition/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/nm3965/elisp_show_docstring_for_symbol_at_point_my/][Elisp : Show docstring for symbol at point - my utility.]]
+  - [[https://youtu.be/t1c6Ogd7irE][Let's code some Emacs Lisp - Open an existing Github PR]]
+- Emacs development:
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=246a41759c4d2fab1705f40a228260dc5bb55369][* lisp/electric.el: Do auto-indent inside strings and comments by default]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=2e1510dd009a97e3952df6e6f6deb51aac854933][Mention the recent floating point reader changes in NEWS]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=a29a03c3bc8f16ab49fbc192567c1ee8428f34ea][* lisp/progmodes/sql.el: Turn `sql-*-statement-starters' to defvars.]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=0c7a7433dce1b93a685396986d3a560c9cc291f1][Try to not prioritise reading from lower file descriptors]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=ce2de3b50a2068cfe4db738756858f0e6f53226b][Further improvements to completion-list-mode-map]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=de9a11255d34a2635e61b150725cef242077bd06][Improve completion-list-mode-map]]
+- Appearance:
+  - [[https://i.redd.it/jtz61c0jt3171.png][SVG library for the creation of tags, progress bars and icons]] ([[https://reddit.com/r/emacs/comments/nk3i8d/svg_library_for_the_creation_of_tags_progress/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/nkaytb/mlscroll_a_lightweight_mode_line_scroll_bar/][MLScroll: a lightweight mode line scroll bar]]
+  - [[https://www.miskatonic.org/2021/05/29/prettifyruby/][William Denton: Pretty symbols in Ruby in Emacs]]
+  - [[https://blog.lambda.cx/posts/eamacs-improved-frame-title/][An Improved Emacs Frame Title Format]] ([[https://reddit.com/r/emacs/comments/nn7m4a/an_improved_emacs_frame_title_format/][Reddit]])
+  - [[https://www.youtube.com/watch?v=-AbYSiHZAPg][Exploring Emacs: What's new in emacs 27? Built in tab bar mode]] (06:00)
+  - [[https://www.reddit.com/r/emacs/comments/nn8nq4/introducing_spaceshipmode_and_tabblemode_two/][Introducing spaceship-mode and tabble-mode, two tools for making text/code alignment work with variable-width fonts]]
+  - [[https://babbagefiles.xyz/pdf-tools-dynamic-highlighting-colours/][Benjamin Slade: Dynamically set pdf-tools annotation colours]]
+  - [[https://www.reddit.com/r/emacs/comments/no5rrz/nanothemeel_i_split_this_from_nanoemacs/][nano-theme.el , I split this from nano-emacs.]]
+  - [[https://protesilaos.com/codelog/2021-05-25-modus-themes-1-4-0/][Protesilaos Stavrou: Modus themes 1.4.0 for GNU Emacs]]
+- Navigation:
+  - [[https://github.com/bbatsov/projectile/releases/tag/v2.4.0][Projectile 2.4 is out!]] ([[https://reddit.com/r/emacs/comments/nm88eb/projectile_24_is_out/][Reddit]])
+  - [[https://github.com/CIAvash/persp-mode-project-bridge][persp-mode + project.el integration]] ([[https://reddit.com/r/emacs/comments/njs2oi/perspmode_projectel_integration/][Reddit]])
+- Org Mode:
+  - [[https://blog.tecosaur.com/tmio/2021-04-30-export-plot.html][This Month in Org: April 2021]]
+  - [[https://orgmode.org/list/87blb3epey.fsf@gnu.org/][Org ELPA will be shutting down and Org contrib will be moving to NonGNU ELPA]] ([[https://reddit.com/r/emacs/comments/nmykrg/org_elpa_will_be_shutting_down_and_org_contrib/][Reddit]])
+  - [[https://www.youtube.com/watch?v=zqAYHWv36X0][Org Mode Time and Task Tools – Straightforward Emacs]] (11:31, [[https://reddit.com/r/emacs/comments/nls7mc/intro_to_org_mode_time_and_task_management/][Reddit]])
+  - [[https://coredumped.dev/2021/05/26/taking-org-roam-everywhere-with-logseq/][Taking org-roam everywhere with logseq]] ([[https://reddit.com/r/emacs/comments/nm9dcj/taking_orgroam_everywhere_with_logseq/][Reddit]])
+  - [[https://www.reddit.com/r/orgmode/comments/nmgs2i/hey_orgmode_users_show_us_your_org_capture/][Hey Org-Mode Users, show us your org capture templates]]
+  - [[https://www.mtsolitary.com/20210309194647-my-org-mode-setup/][My org mode setup]]
+- Completion:
+  - [[https://www.reddit.com/r/emacs/comments/noh7da/consult_08_and_marginalia_06_released_on_gnu_elpa/][Consult 0.8 and Marginalia 0.6 released on GNU ELPA]]
+  - [[http://mbork.pl/2021-05-24_Ivy_and_ignoring_the_order_of_tokens][Marcin Borkowski: Ivy and ignoring the order of tokens]]
+- Coding:
+  - [[https://www.youtube.com/watch?v=O6YWL7R2mVk][Clojure Emacs: Basic Comprehensive Clojure testing setup on a project 2021.004.29]] (58:25)
+  - [[https://www.reddit.com/r/emacs/comments/nndgs3/my_first_package_devdocsbrowser_browse_api_docs/][My first package: devdocs-browser: browse API docs inside emacs]]
+  - [[https://www.badykov.com/emacs/2021/05/29/emacs-cargo-mode/][Cargo mode for Emacs]] ([[https://reddit.com/r/emacs/comments/nnm6k5/cargo_mode_for_emacs/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/nl8l0h/dockerised_language_servers_for_emacs_and_other/][Dockerised language servers for Emacs (and other editors)]]
+  - [[http://ag91.github.io/blog/2021/05/26/moldable-emacs-make-everything-moldable-through-lisp][Andrea: Moldable Emacs: make everything moldable through Lisp!]] - tree-sitter duplicates to Org todo ([[https://reddit.com/r/emacs/comments/nn8r7s/moldable_emacs_make_everything_moldable_through/][Reddit]])
+  - Version control:
+    - [[https://emacsair.me/2021/05/25/magit-3.0][Jonas Bernoulli: Magit 3.0 released]] ([[https://www.reddit.com/r/emacs/comments/nkl3ll/finally_a_magit_release/][Reddit]])
+    - [[https://emacsair.me/2021/05/25/forge-0.2][Jonas Bernoulli: Forge 0.2 released]]
+    - [[https://www.youtube.com/watch?v=6X0iDFh83-Y][System Crafters Live! - Taking a look at Magit 3.0 • Streaming with Emacs Lisp]] (02:11:12)
+- Mail and news:
+  - [[https://unwoundstack.com/blog/elfeed-score-state.html][Unwound Stack: Where Should elfeed-score State Be Persisted?]]
+- Writing:
+  - [[https://www.reddit.com/r/emacs/comments/nlefvx/weekly_tips_and_tricks/][Weekly Tips and Tricks]]
+  - [[https://www.reddit.com/r/emacs/comments/nnk8vk/emacs_for_a_writer_looking_to_quit_libreoffice/][Emacs for a writer looking to quit LibreOffice Writer?]]
+  - [[https://orys.us/u7][What can Emacs give me in 2021? A response to the Mother of All Emacs Papers]] ([[https://reddit.com/r/emacs/comments/nnogg4/what_can_emacs_give_me_in_2021_a_response_to_the/][Reddit]])
+  - [[https://emacs-apac.gitlab.io/notes/april-2021/][Emacs APAC: Notes from Emacs Asia-Pacific (APAC) virtual meetup, April 2021]]
+  - [[https://emacs-apac.gitlab.io/notes/may-2021/][Emacs APAC: Notes from Emacs Asia-Pacific (APAC) virtual meetup, May 2021]]
+  - [[https://lars.ingebrigtsen.no/2021/05/26/8x10/][Lars Ingebrigtsen: 8x10%]]
+  - [[https://masscollabs.com/emacs/2021/05/31/hello-world/][masscollabs: Hello world!]]
+- Other:
+  - [[https://www.reddit.com/r/emacs/comments/nntu1n/this_is_what_happens_when_you_get_a_smart/][This is what happens when you get a smart induction hob]]
+  - [[https://www.reddit.com/r/emacs/comments/nk61hm/new_my_behaviour_in_emacs_28/][New M-y behaviour in emacs 28]]
+  - [[https://www.reddit.com/r/emacs/comments/nljkdd/hindi_transliteration_with_autosuggest_in_emacs/][Hindi transliteration with auto-suggest in Emacs]]
+  - [[https://www.fitzsim.org/blog/?p=431][Thomas Fitzsimmons: Excorporate 1.0.0]]
+  - [[http://mbork.pl/2021-05-30_Extending_subed-mode][Marcin Borkowski: Extending subed-mode]]
+  - [[https://www.reddit.com/r/emacs/comments/nnq1da/introducing_the_emacs_scratchpad_a_smart_way_to/][Introducing the Emacs Scratchpad, a smart way to integrate Emacs in every text interface you find.]]
+  - [[https://www.reddit.com/r/emacs/comments/nmljgl/emacsnativecomp_is_now_working_on_m1apple_silicon/][Emacs-native-comp is now working on M1/Apple Silicon]]
+  - [[https://www.philnewton.net/blog/atari-microemacs/][Phil Newton: MicroEMACS for the Atari ST]]
+- New packages:
+  - [[package:alectryon][alectryon]]: Toggle between Coq and reStructuredText
+  - [[package:buffer-ring][buffer-ring]]: Rings and tori for buffer navigation
+  - [[package:create-link][create-link]]: Smart format link generator
+  - [[package:langtool-ignore-fonts][langtool-ignore-fonts]]: Force langtool to ignore certain fonts
+  - [[package:lsp-ltex][lsp-ltex]]: LSP Clients for LTEX
+  - [[package:sculpture-themes][sculpture-themes]]: Themes with vivid colors
+
+Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]], [[https://emacslife.com/calendar/][Emacs Calendar]] and [[http://lists.gnu.org/archive/html/emacs-devel/2021-05][emacs-devel]].
 ** 2021-05-24 Emacs news
   :PROPERTIES:
   :EXPORT_ELEVENTY_PERMALINK: /blog/2021/05/2021-05-24-emacs-news/
