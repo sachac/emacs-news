@@ -65,6 +65,98 @@ Actually generate the section:
 #+End_src
 
 #+RESULTS:
+** 2021-06-07 Emacs news
+  :PROPERTIES:
+  :EXPORT_ELEVENTY_PERMALINK: /blog/2021/06/2021-06-07-emacs-news/
+  :EXPORT_ELEVENTY_FILE_NAME: blog/2021/06/2021-06-07-emacs-news/
+  :EXPORT_DATE: 2021-06-07
+  :END:
+
+- Upcoming events:
+  - Frankfurt: Emacs FFM Meetup! June 2021 https://www.meetup.com/emacs-ffm/events/278505192/ Wed Jun 16 1000 Vancouver / 1200 Chicago / 1300 Toronto / 1700 GMT / 1900 Berlin / 2230 Kolkata -- Thu Jun 17 0100 Singapore
+  - M-x Research (virtual, contact them for passcode) https://m-x-research.github.io/ Fri Jun 18 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore
+- Emacs configuration:
+  - [[https://tsdh.org/posts/2021-06-06-update-all-emacs-packages-from-the-command-line.html][Tassilo Horn: Update all emacs packages from the command line]]
+  - [[https://www.reddit.com/r/emacs/comments/np6ey4/how_packageel_works_with_use_package/][How package.el Works with Use Package]]
+  - [[https://www.reddit.com/r/emacs/comments/nr3cxv/what_are_your_very_useful_emacs_key_bindings_fast/][What are your very useful Emacs key bindings fast and efficiently?]]
+- Emacs Lisp:
+  - [[https://philjackson.github.io/elisp/evil-mc/smartparens/emacs/2021/06/05/smartparens-and-evil-mc/][Phil Jackson: Having Smartparens commands work with Evil-mc]]
+- Emacs development:
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2021-06/msg00175.html][New Garbage Collector proposal by Daniel Colascione]] ([[https://reddit.com/r/emacs/comments/ns4oaw/new_garbage_collector_proposal_by_daniel/][Reddit]])
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=82ccc3afcf9ed1f8b22ed5634e788879cd1af279]['grep-find-template' now includes the 'find' option '-H'.]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=5a8a5a990ae25cb65cfee424635f1f3b02b21f6a][Add support for Mercury (https://mercurylang.org) in 'etags']]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=2207f9adccc0411b7ad73a3703f16250d7f8e139][src/nsterm.m: fix window tabbing on macOS]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=58de11fe1339a1248f9b0bccb3a3601a9d8f56c6][Improved support for terminal emulators that encode the Meta flag.]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=8d5b7f519f18ed73f26adff275e3bd580bacf36c][Make icomplete less blinky and more responsive]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=9136c064d66a1d4ea69472ffe25662a8874f7ba6][Add a new `server-edit-abort' command]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=ee56a19873340c2e590fcb9ec8f2611e5ebbd794][* etc/NEWS: Add windmove keybindings (bug#41438)]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=16793dc35a5be4d05e3fa42ea8cf6aa1e67f1dc9][Add new user option to Gnus to allow `#' to toggle]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=05ab6e53e2cc82edb0b0916c880bdaa269267528][Improve icomplete-vertical-mode and fido-vertical-mode]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=062f5aa640db1b8208f9c45dd12fea08e85658d9][Allow packages to change the hl-line overlay priority]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=85e17196fa2b6333fbce7fdac1e2e17b045b91ae][Add a new command `mailcap-view-file']]
+- Appearance:
+  - [[https://philjackson.github.io/emacs/widescreen/2021/06/06/wide-screen-emacs/][Phil Jackson: Widescreen emacs and vertical splits]]
+  - [[https://christiantietze.de/posts/2021/06/emacs-center-window/][Christian Tietze: Automatically Center New Emacs Windows (Aka Frames) on Screen]]
+  - [[https://i.redd.it/z2jmgaz2g2371.png][N Λ N O Theme (as requested by several people)]] ([[https://reddit.com/r/emacs/comments/nrfpsq/n_λ_n_o_theme_as_requested_by_several_people/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/npiwmg/new_theme_bespokethemes_and_request_for_any_advice/][New Theme: Bespoke-themes (and request for any advice)]]
+  - [[https://www.reddit.com/r/emacs/comments/nttr36/not_another_theme_yes_another/][Not another theme! Yes, another.]] - timu-spacegrey-theme
+- Navigation:
+  - [[https://www.reddit.com/r/emacs/comments/ntnhkc/how_i_jump_around_emacs_with_betterjumper/][How I jump around Emacs with better-jumper]]
+  - [[https://tech.toryanderson.com/2021/06/04/anzu-mode-for-incremental-find-and-replace/][Tory Anderson: Anzu mode for incremental find-and-replace]]
+  - [[https://www.reddit.com/r/emacs/comments/ns55f0/mediator_a_very_simple_emacs_openwith_menu_for/][Mediator, a very simple Emacs open-with menu for GNU/linux]]
+  - [[https://www.reddit.com/r/emacs/comments/np3qko/yabai_emacs_window_movement/][Yabai + Emacs window movement]]
+- Writing:
+  - [[https://www.reddit.com/r/orgmode/comments/ntsghv/writers_what_are_your_favorite_underrated_packages/][Writers, what are your favorite underrated packages?]]
+- Org Mode:
+  - [[https://blog.tecosaur.com/tmio/2021-05-31-async.html][This Month in Org: May 2021]]
+  - [[https://www.mtsolitary.com/20210309194647-my-org-mode-setup/][My org mode setup]] ([[https://reddit.com/r/orgmode/comments/np796v/my_org_mode_setup/][Reddit]])
+  - [[https://i.redd.it/lcv6cvjj6r271.png][Starting my PhD and keeping my lab notebook in org-mode!]] ([[https://reddit.com/r/emacs/comments/nq9qgs/starting_my_phd_and_keeping_my_lab_notebook_in/][Reddit]])
+  - [[https://xenodium.com/emacs-dwim-do-what-i-mean][Emacs DWIM: do what ✨I✨ mean]] ([[https://reddit.com/r/emacs/comments/npu4k9/emacs_dwim_do_what_i_mean/][Reddit]]) - org-insert-link
+  - [[https://kisaragi-hiu.com/blog/2021-06-02-insert-key-double-key][Inserting a link after typing “[[” in Org]] ([[https://reddit.com/r/emacs/comments/nqnbvp/inserting_a_link_after_typing_in_org/][Reddit]])
+  - [[https://protesilaos.com/codelog/2021-06-02-modus-themes-org-agenda/][Protesilaos Stavrou: Introducing the variable modus-themes-org-agenda]]
+  - [[http://xenodium.com/emacs-org-block-completion-on-melpa][Alvaro Ramirez: Emacs org block completion on melpa]] ([[https://reddit.com/r/emacs/comments/ntj8gj/company_org_block_completion_now_on_melpa/][Reddit]])
+  - [[https://sidhartharya.github.io/exporting-org-roam-notes-to-hugo/][Exporting org roam notes to hugo]]
+  - [[https://youtube.com/watch?v=WNY1BfCqwV4&feature=share][Text-Clone Live-Sync Demo]] ([[https://reddit.com/r/emacs/comments/nrela9/textclone_livesync_demo/][Reddit]])
+  - [[https://www.reddit.com/r/orgmode/comments/ntidct/eurorg2020_public_pad/][EUROrg2020 Public Pad]]
+- Coding:
+  - [[https://philjackson.github.io/emacs/evil/cider/debugging/2021/06/06/using-the-cider-debugger-in-evil/][Phil Jackson: Using the CIDER debugger in Evil]]
+  - [[https://reddit.com/r/scheme/comments/ntyniq/simplify_switching_between_a_file_and_mit/][Simplify switching between a file and MIT interpreter in Emacs]] (Scheme)
+  - [[https://www.reddit.com/r/emacs/comments/npowjx/c_looking_like_python_fun_with_overlays/][C++ looking like Python: fun with overlays.]]
+  - [[https://www.youtube.com/watch?v=w6aI8-ijE68][Tutorial Rápido: GDB no Emacs para debuggar assembly]] (05:07)
+- Mail and news:
+  - [[https://www.reddit.com/r/emacs/comments/nq0y74/org_mode_linking_to_emails_in_thunderbird_and/][Org mode: Linking to Emails in Thunderbird and GNOME Evolution]]
+  - [[https://www.reddit.com/r/emacs/comments/npw2dq/mu4eviews_viewing_html_emails_with_xwidgets/][mu4e-views (viewing html emails with xwidgets) - filtering remote content]]
+  - [[/r/ProtonMail/comments/nu6val/experimental_mail_tag_support_for_mu4e_and/][Experimental mail tag support for mu4e and ProtonMail Bridge]] ([[https://reddit.com/r/emacs/comments/nu6vok/experimental_mail_tag_support_for_mu4e_and/][Reddit]])
+- Web:
+  - [[https://ag91.github.io/blog/2021/05/30/browsing-in-common-lisp-nyxt-and-emacs/][Browsing in Common Lisp: Nyxt and Emacs]] ([[https://reddit.com/r/emacs/comments/nrn39q/browsing_in_common_lisp_nyxt_and_emacs/][Reddit]])
+  - [[http://ag91.github.io/blog/2021/05/30/browsing-in-common-lisp-nyxt-and-emacs][Andrea: Browsing in Common Lisp: Nyxt and Emacs]]
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/nqgrpm/weekly_tips_tricks_c_thread/][Weekly Tips, Tricks, etc. Thread]]
+  - [[https://www.reddit.com/r/emacs/comments/ntjv76/things_you_wished_you_had_known/][Things you wished you had known]]
+  - [[http://mbork.pl/2021-06-05_Emacs_Lisp_book_update_%e2%80%93_what_the_book_is_going_to_look_like][Marcin Borkowski: Emacs Lisp book update - what the book is going to look like]]
+- Fun:
+  - [[https://github.com/elizagamedev/power-mode.el][Power Mode for Emacs (finally!)]] ([[https://reddit.com/r/emacs/comments/nrksk6/power_mode_for_emacs_finally/][Reddit]])
+  - [[https://github.com/MaximeWack/seriesTracker][A tv shows tracker for emacs!]] ([[https://reddit.com/r/emacs/comments/nq7lsj/a_tv_shows_tracker_for_emacs/][Reddit]])
+- Other:
+  - [[https://www.youtube.com/watch?v=qWHTZIYTA4s][Chat Like the 90's in Emacs with ERC]] (24:49, [[https://reddit.com/r/emacs/comments/npv95t/chat_like_the_90s_in_emacs_with_erc/][Reddit]])
+  - [[https://mac4translators.blogspot.com/2021/06/regex-with-elisp.html][[Beginner] emacs regex with emacs lisp: updating org-mode footnotes when merging files]]
+- New packages:
+  - [[package:buffer-env][buffer-env]]: Buffer-local process environments
+  - [[package:c-eval][c-eval]]: Compile and run one-off C code snippets
+  - [[package:cargo-mode][cargo-mode]]: Cargo Major Mode. Cargo is the Rust package manager
+  - [[package:company-org-block][company-org-block]]: Org blocks company backend
+  - [[package:consult-ghq][consult-ghq]]: Ghq interface using consult
+  - [[package:devdocs-browser][devdocs-browser]]: Browse devdocs.io documents using EWW
+  - [[package:loopy][loopy]]: A looping macro
+  - [[package:loopy-dash][loopy-dash]]: Dash destructuring for `loopy'
+  - [[package:lux-mode][lux-mode]]: Major mode for editing lux files
+  - [[package:package-loading-notifier][package-loading-notifier]]: Notify a package is being loaded
+  - [[package:smithers][smithers]]: A startup message featuring Mr C.M. Burns
+  - [[package:timu-spacegrey-theme][timu-spacegrey-theme]]: Color theme inspired by the Spacegray theme in Sublime Text
+  - [[package:zprint-format][zprint-format]]: Reformat Clojure code using zprint
+
+Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]], [[https://emacslife.com/calendar/][Emacs Calendar]] and [[http://lists.gnu.org/archive/html/emacs-devel/2021-06][emacs-devel]].
+
 ** 2021-05-31 Emacs news
   :PROPERTIES:
   :EXPORT_ELEVENTY_PERMALINK: /blog/2021/05/2021-05-31-emacs-news/
