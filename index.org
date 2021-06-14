@@ -55,16 +55,81 @@ Actually generate the section:
   (my/prepare-emacs-news (org-read-date nil nil "-mon")
                          '(
                            events
-                           refresh-packages
-                           reddit
-                           rss
-                           rss-es
-                           git
-                           youtube
+                           ;; refresh-packages
+                           ;; reddit
+                           ;; rss
+                           ;; rss-es
+                           ;; git
+                           ;; youtube
                            ))
 #+End_src
 
 #+RESULTS:
+** 2021-06-14 Emacs news
+  :PROPERTIES:
+  :EXPORT_ELEVENTY_PERMALINK: /blog/2021/06/2021-06-14-emacs-news/
+  :EXPORT_ELEVENTY_FILE_NAME: blog/2021/06/2021-06-14-emacs-news/
+  :EXPORT_DATE: 2021-06-14
+  :END:
+
+
+- Upcoming events:
+  - Frankfurt: Emacs FFM Meetup! June 2021 https://www.meetup.com/emacs-ffm/events/278505192/ Wed Jun 16 1000 Vancouver / 1200 Chicago / 1300 Toronto / 1700 GMT / 1900 Berlin / 2230 Kolkata -- Thu Jun 17 0100 Singapore
+  - M-x Research (virtual, contact them for passcode) https://m-x-research.github.io/ Fri Jun 18 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore
+  - Emacs APAC (virtual, in English) https://emacs-apac.gitlab.io/ Sat Jun 26 0130 Vancouver / 0330 Chicago / 0430 Toronto / 0830 GMT / 1030 Berlin / 1400 Kolkata / 1630 Singapore [[https://emacs-apac.gitlab.io/announcements/june-2021/][Announcement]]
+  - *EmacsConf 2021 public meeting* https://lists.gnu.org/archive/html/emacsconf-discuss/2021-06/msg00001.html Sat Jul 3 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore
+- Emacs configuration:
+  - [[https://tech.toryanderson.com/2021/06/10/two-modes-on-loading-a-file/][Tory Anderson: Two modes on loading a file]]
+- Emacs development:
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=407062c296677f8d370706c8a620d2526a83df97][Allow save-interprogram-paste-before-kill to be a number]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=00140ca6bfceda53eb4f504b859e283d04c2c67f][Rename/rewrite recently added option and function in window.el]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=b3dd0ce75ba9314eb7a682e5fcf8b4cfbc67655b][Provide new option `delete-window-set-selected' (Bug#47300)]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=a63587c546144b349122a2ec126167c2c10fc4d5][* etc/NEWS: New user option 'shell-has-auto-cd'.]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=4a1e97bea96a3ed075cfbc09f4268ba5be9e44fd][New user option for Git log switches]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=4888addd3061c2034ce0ef8bfdb2ce879fb355b0][Change the Gnus default to use `#' to toggle the process mark]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=f7d98dbba0dc7c7e9fea63d39fe88aefa4e9f66c][Revert "src/nsterm.m: fix window tabbing on macOS"]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=fcc827619f2cdac9d574f49e08ce4e5be41daf0a][Improve support of remote files in browse-url.el]]
+- Appearance:
+  - [[https://tech.toryanderson.com/2021/06/07/dired-no-hiline/][Tory Anderson: dired no hiline]]
+  - [[https://christiantietze.de/posts/2021/06/emacs-center-window-single-function/][Christian Tietze: Single Function to Center Emacs Window on Screen]]
+  - [[https://christiantietze.de/posts/2021/06/emacs-center-window-on-current-monitor/][Christian Tietze: Multi-Monitor Compatible Code to Center Emacs Frames on Screen]]
+- Navigation:
+  - [[https://www.reddit.com/r/emacs/comments/nyvtxv/atp_an_experimental_package_for_fast_and/][atp - an experimental package for fast and intuitive text editing]]
+- Org Mode:
+  - [[https://jft.home.blog/2019/07/17/use-unicode-symbol-to-display-org-mode-checkboxes/][Use unicode symbol to display org-mode checkboxes – JFT]] (2019)
+  - [[https://www.youtube.com/watch?v=loa1g9wwNlI][Is it ridiculous to want to export org tables? Let's see how... (INSIDE EMACS)]] ([[https://reddit.com/r/emacs/comments/nychlo/is_it_ridiculous_to_want_to_export_org_tables/][Reddit]])
+  - [[https://youtube.com/watch?v=JViI7u_PB9M&feature=share][Org-transclusion (alpha v0.2.0) Demo #8]] ([[https://reddit.com/r/emacs/comments/nyw1ei/orgtransclusion_alpha_v020_demo_8/][Reddit]])
+- Coding:
+  - [[https://modernduck.com/2018/02/gcloud-compute-ssh-improvements-emacs-tramp-mode/][Emacs Config for using Google Compute Engine]] (2018)
+  - [[https://github.com/redguardtoo/shellcop][shellcop: Analyze errors reported in Emacs builtin shell]]
+- Mail and news:
+  - [[https://tech.toryanderson.com/2021/06/07/tip-bbdb-mode-for-contact-management/][Tory Anderson: Tip: BBDB mode for contact management]]
+- Web:
+  - [[https://www.youtube.com/watch?v=IROIt1Y-xqs][Emacs running in the browser]] (0:25, [[https://reddit.com/r/emacs/comments/nz15gz/emacs_running_in_the_browser/][Reddit]])
+  - [[http://ag91.github.io/blog/2021/06/08/emacs-nyxt-and-engine-mode-how-to-browse-urls-via-nyxt-and-slime][Andrea: Emacs, Nyxt and Engine-mode: how to browse URLs via Nyxt and Slime]]
+  - [[https://tech.toryanderson.com/2021/06/09/how-to-get-readable-mode-in-emacs-w3m/][Tory Anderson: How to get readable mode in emacs w3m?]] ([[https://reddit.com/r/emacs/comments/nvvnz2/how_to_get_readable_mode_in_w3m/][Reddit]])
+- Shell:
+  - [[https://github.com/pjj/Emacs-nsh][Emacs-nsh: Bash shells in named emacs buffers; keeps separate histories for each shell in ~/Dropbox/nsh_history/]]
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/nvqkjp/weekly_tips_tricks_c_thread/][Weekly Tips, Tricks, &c. Thread]]
+  - [[https://takeonrules.com/2021/06/12/delving-further-into-the-why-of-emacs/][Jeremy Friesen: Delving Further into the Why of Emacs]]
+  - [[https://youtu.be/kRkp-uJTK7s][What Are The Benefits Of Emacs Over Vim?]] (29:44, [[https://reddit.com/r/emacs/comments/nxxoeo/what_are_the_benefits_of_emacs_over_vim/][Reddit]])
+  - [[https://www.youtube.com/watch?v=p1qCvpk4eMs][Like All-In-Ones? Use Emacs]] (10:27)
+- Other:
+  - [[http://emacsredux.com/blog/2021/06/08/emacs-as-your-calendar/][Emacs Redux: Emacs as Your Calendar]] ([[https://reddit.com/r/emacs/comments/nvv6hy/emacs_as_your_calendar/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/nxxnvg/basic_wysiwyg_printing_in_gnu_emacs/][Basic WYSIWYG printing in GNU Emacs]]
+  - [[https://blog.karssen.org/2016/03/02/fixing-emacs-tramp-mode-when-using-zsh/][Fixing Emacs tramp mode when using zsh – Lennart's weblog]] ([[https://reddit.com/r/planetemacs/comments/nx9e9s/fixing_emacs_tramp_mode_when_using_zsh_lennarts/][Reddit]])
+  - [[https://takeonrules.com/2021/06/07/molding-emacs-to-reinforce-habits-i-want-to-develop/][Molding Emacs to Reinforce Habits I Want to Develop // Take on Rules]] ([[https://reddit.com/r/emacs/comments/nufmhm/molding_emacs_to_reinforce_habits_i_want_to/][Reddit]]) - posting Hugo entries; [[https://takeonrules.com/2021/06/08/further-molding-emacs-to-reinforce-habits/][Follow-up]] ([[https://reddit.com/r/emacs/comments/nvlcvb/further_molding_emacs_to_reinforce_habits_take_on/][Reddit]])
+  - [[https://ritschmaster.github.io/2021/06/13/Using-telga-in-Windows-10.html][Using telega in Windows 10]]
+  - [[https://www.reddit.com/r/emacs/comments/nwd1se/emacs_in_flatpak_and_toolboxpodmandocker/][Emacs in Flatpak and Toolbox/Podman/Docker]]
+- New packages:
+  - [[package:elfeed-autotag][elfeed-autotag]]: Easy auto-tagging for elfeed
+  - [[package:flycheck-languagetool][flycheck-languagetool]]: Flycheck support for LanguageTool
+  - [[package:loopy][loopy]]: A looping macro
+  - [[package:loopy-dash][loopy-dash]]: Dash destructuring for `loopy'
+
+Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]], [[https://emacslife.com/calendar/][Emacs Calendar]] and [[http://lists.gnu.org/archive/html/emacs-devel/2021-06][emacs-devel]].
+
 ** 2021-06-07 Emacs news
   :PROPERTIES:
   :EXPORT_ELEVENTY_PERMALINK: /blog/2021/06/2021-06-07-emacs-news/
