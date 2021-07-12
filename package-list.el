@@ -1,4 +1,7 @@
-((uci-mode . "2021-07-05")
+((seriestracker . "2021-07-12")
+(ox-yaow . "2021-07-12")
+(750words . "2021-07-12")
+(uci-mode . "2021-07-05")
 (side-hustle . "2021-07-05")
 (flymake-languagetool . "2021-07-05")
 (citre . "2021-07-05")
