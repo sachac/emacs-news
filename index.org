@@ -25,6 +25,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
   :POST_TAGS: emacs, emacs-news
   :END:
   :LOGBOOK:
+  CLOCK: [2021-07-19 Mon 00:25]
   CLOCK: [2021-06-28 Mon 00:04]--[2021-06-28 Mon 22:42] => 22:38
   CLOCK: [2021-06-21 Mon 23:46]--[2021-06-22 Tue 01:06] =>  1:20
   - State "DONE"       from "STARTED"    [2021-02-23 Tue 00:18]
@@ -66,6 +67,104 @@ Actually generate the section:
 #+End_src
 
 #+RESULTS:
+** 2021-07-19 Emacs news
+  :PROPERTIES:
+  :EXPORT_ELEVENTY_PERMALINK: /blog/2021/07/2021-07-19-emacs-news/
+  :EXPORT_ELEVENTY_FILE_NAME: blog/2021/07/2021-07-19-emacs-news/
+  :EXPORT_DATE: 2021-07-19
+  :END:
+
+- Upcoming events:
+  - Frankfurt: Emacs FFM Meetup! July 2021 https://www.meetup.com/emacs-ffm/events/279408068/ Wed Jul 21 1000 Vancouver / 1200 Chicago / 1300 Toronto / 1700 GMT / 1900 Berlin / 2230 Kolkata -- Thu Jul 22 0100 Singapore
+  - Emacs APAC (virtual, in English) https://emacs-apac.gitlab.io/ Sat Jul 24 0130 Vancouver / 0330 Chicago / 0430 Toronto / 0830 GMT / 1030 Berlin / 1400 Kolkata / 1630 Singapore
+  - Emacs Berlin (virtual, in English) https://emacs-berlin.org/ Wed Jul 28 0930 Vancouver / 1130 Chicago / 1230 Toronto / 1630 GMT / 1830 Berlin / 2200 Kolkata -- Thu Jul 29 0030 Singapore
+- Emacs configuration:
+  - [[https://news.ycombinator.com/item?id=27817417][How I Write Code, Track Time and Tasks, Take Notes, and Stay Organized in Emacs | Hacker News]] ([[https://www.reddit.com/r/emacs/comments/oj7dv5/in_detail_my_workflows_for_programming_note/][Reddit]], [[https://news.ycombinator.com/item?id=27817417][HN]])
+  - [[https://www.youtube.com/watch?v=zWIByv8JOrg][System Crafters Live! - Do we really need use-package in Emacs?]] (1:58:00)
+- Emacs Lisp:
+  - [[https://github.com/alhassy/lf.el][lf.el: A Language Features library for Emacs Lisp]]
+  - [[https://www.youtube.com/playlist?list=PLydu3IE1lef0mMa3vvHrbYR1HSOrLpKJn][Geoffrey Lessel's Emacs Videos]] - Let's Write Some Emacs Lisp
+  - [[https://www.reddit.com/r/emacs/comments/okmtcs/looking_for_more_elisp_videos/][Looking for more elisp videos]]
+- Emacs development:
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/?id=ec3b108c1f91f7adb25db46ae6aacddff762ed8a][Add support for sourcehut to bug-reference.el]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=da200ab0491abe17cd98ad6363c1de4dbd704c0e][Allow ignoring local variable values permanently]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=c112f73668f201e8799d265e05874007fec78ca1][Make indent-tabs-mode into a regular mode instead of just a variable]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=9ee418b7b95e20fa4d8ae585f33e9b5d9316bc99][Add new function 'grep-file-at-point']]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=553ad9c9e8550416d38c50aa5ec188d0b4f4d5cf][Add lock-file-mode]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=9b601d8537422886250588fce22abc4e7ef6b100][Add new user option 'query-about-changed-file']]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=ceecac4c79df85a523a8a6bb3ace78105ff0ffe8][Add new user option to abbreviate file names in save-place]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=fbc9a509935f87e0627c3dba704108458f2b0389][Allow restoring the original order in 'tabulated-list-mode']]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=28e7b5104141225f997c82c168a5e60a80caaf3e][Rename shell-split-string to split-string-shell-command]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=4fb6cf3f38511f3ca9ceb350a41993015969bdc1][Add a new function 'shell-split-string']]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=210b10f3fe7d2b847f7af31276c05001c8fc0ed7][Add new function 'insert-into-buffer']]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=cce84822f72e6cd4af7bfa351a4da2c9bdc5bb81][Add remote-file-name-inhibit-locks]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=5afe27624f7168713611dc9c24043091f8f820b6][Add new user option to avoid piling on Dired buffers]]
+- Appearance:
+  - [[https://protesilaos.com/codelog/2021-07-15-modus-themes-1-5-0/][Protesilaos Stavrou: Modus themes 1.5.0 for GNU Emacs]] ([[https://reddit.com/r/emacs/comments/om8g0q/protesilaos_stavrou_modus_themes_150_for_gnu_emacs/][Reddit]])
+- Navigation:
+  - [[https://gitlab.com/nerding_it/emacs-registers-completing-read][emacs-registers-completing-read : This is wrapper for Emacs registers with completing-read function]] ([[https://www.reddit.com/r/emacs/comments/oisswr/use_completingread_function_to_insertjump_fromto/][Reddit]])
+  - [[https://tbaggery.com/2011/08/08/effortless-ctags-with-git.html][Effortless Ctags with Git]]
+- Dired:
+  - [[http://www.nextpoint.se/?p=883][Directories First in Dired on Windows]] ([[https://reddit.com/r/emacs/comments/ok4a12/directories_first_in_dired_on_windows/][Reddit]])
+  - [[https://www.manueluberti.eu//emacs/2021/07/14/dired/][Manuel Uberti: Reuse Dired buffers]]
+  - [[https://christiantietze.de/posts/2021/07/open-finder-window-in-dired-updates/][Christian Tietze: Two Improvements to Open macOS Finder Window in Emacs Dired + Automator Quick Action Downloads]]
+- Calc:
+  - [[https://github.com/Zacalot/helm-convert][helm-convert: Helm interface for unit conversions in Emacs]]
+  - [[https://www.remcycles.net/blog/calc.html][Emacs Calc Tricks: Comparing and Contrasting Curve fitting on spreadsheet columns using LibreOffice Calc and Emacs Calc]]
+  - [[https://youtu.be/afsBtpEfoG4][Calc formulas, all you need to know]] ([[https://reddit.com/r/emacs/comments/omnds3/calc_formulas_all_you_need_to_know/][Reddit]])
+  - [[http://mbork.pl/2021-07-12_Counting_business_days][Marcin Borkowski: Counting business days]]
+- Writing:
+  - [[https://www.youtube.com/watch?v=WexRlr4c_6U][Emacs For Writers | Count Words, Goals In Buffer]] (09:33)
+- Org Mode:
+  - [[https://irreal.org/blog/?p=9826][Irreal: See the Underlying Org Entry for an Agenda Item]]
+  - [[https://www.reddit.com/r/emacs/comments/oil7xw/i_made_a_thing_for_org_bespoke_completion_sparse/][I made a thing for org: bespoke completion & sparse tree view]]
+  - [[https://youtu.be/0HgoHiqboc4][Editing formulas at the speed of light - the Org Spreadsheet]] ([[https://reddit.com/r/emacs/comments/ok8tlq/editing_formulas_at_the_speed_of_light_the_org/][Reddit]])
+  - [[https://planeta.github.io/programming/emacs-can-spreadsheets/][How I achieved "named rows” in native org-table formulas]]
+  - [[https://www.reddit.com/r/emacs/comments/ojca7q/nicer_org_ids/][Nicer org ids]]
+  - [[https://lists.gnu.org/archive/html/emacs-orgmode/2021-07/msg00290.html][Citations merged into org-mode]] ([[https://reddit.com/r/emacs/comments/oiljph/citations_merged_into_orgmode/][Reddit]])
+  - [[https://lists.gnu.org/archive/html/emacs-orgmode/2021-07/msg00472.html][A quick preview of the next generation of 'org-ref' package]]
+  - [[https://dwim.nl/bagel-emacs-package-to-manage-links][bag.el: convert URLs to org links with tags]] ([[https://reddit.com/r/emacs/comments/oknesu/bagel_convert_urls_to_org_links_with_tags/][Reddit]])
+  - Import, export, and integration:
+    - [[https://www.r-bloggers.com/2012/03/hindidevanagari-presentations-using-orgmode-r-latex-and-beamer/amp/][Hindi/Devanagari presentations using orgmode, R, latex and beamer | R-bloggers]]
+    - [[https://github.com/Jason-S-Ross/ox-context/][ox-context: An Org Mode export backend for ConTeXt]] ([[https://reddit.com/r/planetemacs/comments/oitu7e/oxcontext_an_org_mode_export_backend_for_context/][Reddit]])
+    - [[https://reddit.com/r/orgmode/comments/omcc82/orggithooks_export_and_tangle_when_you_commit_new/][org-git-hooks - export and tangle when you commit (new project)]] ([[https://reddit.com/r/emacs/comments/omcd0h/orggithooks_export_and_tangle_when_you_commit_new/][Reddit]])
+    - [[https://lucidmanager.org/productivity/publishing-with-org-mode-export/][Publishing Articles and Books with Org Mode Export]] (May 2021)
+    - [[https://lists.gnu.org/archive/html/emacs-orgmode/2021-07/msg00375.html][export large cells in tables to odt and latex: list-->tables: org-mode-ox-odt]] ([[https://reddit.com/r/planetemacs/comments/oitpyx/export_large_cells_in_tables_to_odt_and_latex/][Reddit]])
+  - Org Roam:
+    - [[https://github.com/org-roam/org-roam-v1][Org-roam V1 will be deprecated soonish. This is a new repo (with installation instructions) with the current state of V1 while the users transition to V2.]] ([[https://reddit.com/r/OrgRoam/comments/oipzpo/orgroam_v1_will_be_deprecated_soonish_this_is_a/][Reddit]])
+    - [[https://blog.jethro.dev/posts/org_roam_v2/][Releasing Org-roam v2 - Jethro's blog]] ([[https://reddit.com/r/emacs/comments/om3fjm/releasing_orgroam_v2_jethros_blog/][Reddit]])
+    - [[https://www.reddit.com/r/emacs/comments/omxl6n/config_for_orgroam_v2/][Config for org-roam v2]]
+    - [[https://dev.arcology.garden/cce/consult-buffer-org-roam][Put all your org-roam files in your fingertips by extending 'consult-buffer"]]
+- Completion:
+  - [[https://macowners.club/posts/from-ivy-to-vertico/][From Ivy & Counsel to Vertico & Consult]] ([[https://reddit.com/r/emacs/comments/ol2luk/from_ivy_counsel_to_vertico_consult/][Reddit]])
+- Coding:
+  - [[https://github.com/iocanel/presentations/tree/master/2020-jhug-emacs-for-java-developers][presentations/2020-jhug-emacs-for-java-developers at master · iocanel/presentations · GitHub]]
+  - [[https://twitter.com/migueldeicaza/status/1415391434518171649][Open call for an ELisp hacker to bring GitHub Copilot to Emacs (yes, really)]] ([[https://reddit.com/r/emacs/comments/okcpf2/open_call_for_an_elisp_hacker_to_bring_github/][Reddit]])
+  - [[https://github.com/samrawal/emacs-secondmate][emacs-secondmate: An open-source, mini imitation of GitHub Copilot using EleutherAI GPT-Neo-2.7B for Emacs]] ([[https://reddit.com/r/emacs/comments/oio4a5/emacssecondmate_an_opensource_mini_imitation_of/][Reddit]])
+  - Magit:
+    - [[https://youtu.be/qPfJoeQCIvA][Everyday Git Workflow in Emacs with Magit]] ([[https://reddit.com/r/emacs/comments/ok7ra6/everyday_git_workflow_in_emacs_with_magit/][Reddit]])
+    - [[https://www.youtube.com/watch?v=qPfJoeQCIvA&feature=youtu.be][Everyday Git Workflow in Emacs with Magit - Part 2]]
+    - [[https://christiantietze.de/posts/2021/07/magit-from-terminal/][Christian Tietze: Open Magit for Current Repository from the Terminal]]
+    - [[https://emacspeak.blogspot.com/2020/05/github-standard-fork-and-pull-request.html][Simple explanation of magit-forge fork/pull request workflow]]
+- Web:
+  - [[https://alexschroeder.ch/wiki/2021-07-14_Elpher_as_the_universal_browser_for_Emacs][Alex Schroeder: Elpher as the universal browser for Emacs]]
+- TRAMP:
+  - [[https://martin.baillie.id/wrote/emacs-tramp-over-aws-ssm-apis/][Emacs TRAMP over AWS SSM APIs]] ([[https://reddit.com/r/emacs/comments/ojm71g/emacs_tramp_over_aws_ssm_apis/][Reddit]], [[https://news.ycombinator.com/item?id=27808531][HN]])
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/ojzv53/weekly_tips_tricks_c_thread/][Weekly Tips, Tricks, &c. Thread]]
+  - [[https://lars.ingebrigtsen.no/2021/07/13/9x10/][Lars Ingebrigtsen: 9×10% – Random Thoughts]] ([[https://reddit.com/r/emacs/comments/om8mjt/lars_ingebrigtsen_910_random_thoughts/][Reddit]])
+  - [[https://www.youtube.com/watch?v=A84ssjhj55w][Reading: Mastering Emacs: Chapter 2: The Way of Emacs (2/2)]] (39:07)
+- Other:
+  - [[https://github.com/SebastienWae/app-launcher][app-launcher: Launch application from Emacs]]
+  - [[https://www.reddit.com/r/emacs/comments/oksdhh/package_praise_prodigy_and_fancydabbrev/][Package praise: Prodigy and fancy-dabbrev]]
+  - [[http://ag91.github.io/blog/2021/07/16/moldable-emacs-capturing-text-from-open-images-with-an-ocr-mold][Andrea: Moldable Emacs: capturing text from open images with an OCR mold]]
+  - [[https://github.com/nfusionz/melpa-vis][Graph Visualization of MELPA with d3]] ([[https://reddit.com/r/emacs/comments/olpj69/graph_visualization_of_melpa_with_d3/][Reddit]])
+- New packages:
+  - [[package:capnp-mode][capnp-mode]]: Major mode for editing Capn' Proto Files
+  - [[package:logms][logms]]: Log message with clickable links to context
+
+Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]], [[https://emacslife.com/calendar/][Emacs Calendar]] and [[http://lists.gnu.org/archive/html/emacs-devel/2021-07][emacs-devel]].
+
 ** 2021-07-12 Emacs news
   :PROPERTIES:
   :EXPORT_ELEVENTY_PERMALINK: /blog/2021/07/2021-07-12-emacs-news/
@@ -20663,8 +20762,14 @@ This one exports links from https://www.reddit.com/user/emacsnews/upvoted.json .
                        (when (time-less-p threshold date)
                          (if (and (> num-comments 0) (not (string-match "reddit\\.com" url)))
                              (format "- %s (%s)\n"
-                                     (org-link-make-string (url-unhex-string url) title)
-                                     (org-link-make-string (url-unhex-string permalink) "Reddit"))
+                                     (org-link-make-string (url-unhex-string (if (string-match "^/" url)
+                                                                                 (concat "https://reddit.com" url)
+                                                                               url))
+                                                           title)
+                                     (org-link-make-string (url-unhex-string (if (string-match "^/" permalink)
+                                                                                 (concat "https://reddit.com" permalink)
+                                                                               permalink))
+                                                           "Reddit"))
                            (format "- %s\n" (org-link-make-string (url-unhex-string (if (string-match "^/" url)
                                                                                         (concat "https://reddit.com" url)
                                                                                       url))
@@ -20681,7 +20786,9 @@ This one exports links from https://www.reddit.com/user/emacsnews/upvoted.json .
 #+end_src
 
 #+RESULTS: reddit
-: my/reddit-list-upvoted
+:results:
+my/reddit-list-upvoted
+:end:
 
 ** Youtube
 
