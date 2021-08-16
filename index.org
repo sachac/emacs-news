@@ -75,6 +75,117 @@ Actually generate the section:
 #+End_src
 
 #+RESULTS:
+** 2021-08-16 Emacs news
+  :PROPERTIES:
+  :EXPORT_ELEVENTY_PERMALINK: /blog/2021/08/2021-08-16-emacs-news/
+  :EXPORT_ELEVENTY_FILE_NAME: blog/2021/08/2021-08-16-emacs-news/
+  :EXPORT_DATE: 2021-08-16
+  :END:
+  
+- Help wanted:
+  - [[https://emacsconf.org/2021/cfp/][EmacsConf 2021 Call for Proposals]] ([[https://reddit.com/r/emacs/comments/oyl40m/emacsconf_2021_call_for_proposals/][Reddit]], [[https://news.ycombinator.com/item?id=28075442][HN]]) until Sept 30
+  - [[https://protesilaos.com/news/2021-08-05-laptop-battery/][Prot's laptop is having a hard time]] ([[https://www.reddit.com/r/emacs/comments/p3ao4a/prot_laptop_is_having_a_hard_time/][Reddit]]) - Prot has a Paypal donation link at the bottom of the page
+  - [[https://lars.ingebrigtsen.no/2021/02/16/command-discovery-in-emacs/][Command Discovery in Emacs]] (Feb 2021) - might be a good way to start contributing to Emacs
+- Upcoming events:
+  - M-x Research (contact them for password): TBA https://m-x-research.github.io/ Fri Aug 20 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore
+  - Emacs Berlin (virtual, in English) https://emacs-berlin.org/ Wed Aug 25 0930 Vancouver / 1130 Chicago / 1230 Toronto / 1630 GMT / 1830 Berlin / 2200 Kolkata -- Thu Aug 26 0030 Singapore
+  - Emacs APAC (virtual, in English) https://emacs-apac.gitlab.io/ Sat Aug 28 0130 Vancouver / 0330 Chicago / 0430 Toronto / 0830 GMT / 1030 Berlin / 1400 Kolkata / 1630 Singapore
+- Beginner:
+  - [[https://kevinsjoberg.com/30-days-of-emacs-day-1][30 days of Emacs – Day 1]]: Installation using Homebrew on macOS, first steps, tutorial, use-package
+  - [[https://www.youtube.com/watch?v=UvA7UOsO5O8][A gentle introduction to Emacs for ex-ViM users]] (09:08)
+  - [[https://youtu.be/ZbxUJz6a9Io][The Modern Emacs - Andrew Tropin]] (1:33:38, [[https://www.reddit.com/r/emacs/comments/p2ig2f/the_modern_emacs_andrew_tropin/][Reddit]])
+- Emacs configuration:
+  - [[https://www.reddit.com/r/emacs/comments/p3o2h4/emacs_config_without_usepackage_an_experiment/][Emacs config without use-package - an experiment]]
+  - [[https://readingworldmagazine.com/emacs/2021-08-11-2021-08-11-emacs-snitch-and-how-to-improve-performance/][yuri tricys: Emacs Snitch and How to Improve Performance]]
+  - [[https://github.com/alphapapa/unpackaged.el#expand-all-options-documentation][unpackaged/custom-toggle-all-more-hide: Expand all options’ documentation]] ([[https://www.reddit.com/r/emacs/comments/p1ycf2/unpackagedcustomtoggleallmorehide_expand_all/][Reddit]]) - discussion of helm in the comments
+  - [[https://www.youtube.com/watch?v=EmLCTPwhC4I][System Crafters Live! - Emacs Package Potluck (Trying Your Suggestions!)]] (02:02:23)
+  - [[https://ahmadnazir.github.io/scribbles/emacs.html][ahmadnazir's Emacs config]] - Spacemacs, .NET, Helm
+- Emacs Lisp:
+  - [[https://emacsredux.com/blog/2021/08/11/submitting-a-package-to-nongnu-elpa/][Submitting a Package to NonGNU ELPA]] ([[https://www.reddit.com/r/emacs/comments/p2cn8x/submitting_a_package_to_nongnu_elpa/][Reddit]])
+  - [[https://github.com/alphapapa/plz.el][plz.el: An HTTP library for Emacs, using curl as a backend]]
+  - [[http://ag91.github.io/blog/2021/08/11/moldable-emacs-editing-your-file-via-treesitter-(or-how-i-fixed-my-css-with-a-playground)][Andrea: Moldable Emacs: editing your file via Treesitter (or, how I fixed my CSS with a Playground)]]
+  - [[https://www.reddit.com/r/emacs/comments/p4ezt7/first_time_writing_elisp_code_from_scratch/][First time writing elisp code from scratch - 1password handler]]
+- Emacs development:
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=7ec057458135eed0dd08e2de4089e4814d71e440][* lisp/simple.el (shift-select-mode): Add new choice 'permanent' (bug#50038).]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=d1dbf7fc9e64add642f3cfe22231afebac62cad2][Revert "Bind the GIT_LITERAL_PATHSPECS environment variable"]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=e91b574bf8b14c0d8cc33242570bffa8ddc38760][Add new functions for lax mail address splitting]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=37d48edf6d406a4730caa0393f7695de2bfadfcc][Fix merging of ambiguous nil maps]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=1bfbb2b706db6a7ca9420b27d22a737deccdd5b0][Add font-lock-doc-markup-face (bug#50041)]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=4d51c2c472963d6330925c06d59f16de370c6474][Add new face diff-changed-unspecified]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=a9ad3d477441feefa3bf6107d58281cb64e0e78a][Add save-some-buffers-root to save-some-buffers-default-predicate (bug#46374)]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=2f90fa19b8fdc70303232d389553afa524c72509][Add a `pcase-setq' macro]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=7dbbe6cbc54b9331f7b32aa8ce96f6eeadfb0dcd][Add new image-dired commands]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=8b645837d228102a04005b98d75a56f9b78cabae][Mark marked images in Image-Dired mode]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=c56e395edf5babdbcc65fa7bdb9fb462c674f156][Let image-dired-mouse-toggle-mark act on active region]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=a8e89964f3553f40b8807617c3b181f42cd22fd9][Use ### for outline headings in shell-script-mode]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=a6bd0490317371dd49d847a774c8ae73315fe6d1][Add support for outlining in shell-script-mode]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=877df4eb1ca008556572214a917fb3bef2b994b5][Add new user option `gnus-topic-prepare-topic']]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=ebaae4480eecb7e4757296d0a2b776ad0b960be8][Add a new command `revert-buffer-quick']]
+- Appearance:
+  - [[https://sr.ht/~tsdh/highlight-parentheses.el/][highlight-parentheses.el: Emacs: highlight surrounding parentheses]]
+  - [[https://www.reddit.com/r/emacs/comments/p0vqrq/basic_wysiwyg_printing_in_gnu_emacs_arabic_hebrew/][Basic WYSIWYG printing in GNU Emacs (Arabic & Hebrew)]]
+- Navigation:
+  - [[https://www.youtube.com/watch?v=YGOeXKlr10w][crux - a Collection of Ridiculously Useful eXtensions for Emacs]] (08:52)
+  - [[https://github.com/manateelazycat/thing-edit][thing-edit: Copy and paste anything under cursor.]] (2020)
+  - [[https://github.com/alphapapa/dogears.el][[ANN] dogears.el: Never lose your place in Emacs again]] ([[https://www.reddit.com/r/emacs/comments/p3mdyg/ann_dogearsel_never_lose_your_place_in_emacs_again/][Reddit]])
+  - [[https://www.manueluberti.eu//emacs/2021/08/14/switch-buffer/][Manuel Uberti: Switching buffers (Take 3)]]
+- Completion:
+  - [[https://github.com/karthink/consult-dir][consult-dir: switch directories in Emacs at any time]] ([[https://www.reddit.com/r/emacs/comments/p4wk1u/consultdir_switch_directories_in_emacs_at_any_time/][Reddit]])
+- Writing:
+  - [[https://github.com/condy0919/fanyi.el][fanyi.el: English-Chinese translator for Emacs.]]
+  - [[https://github.com/tongjie-chen/mw-dictionaries-emacs][mw-dictionaries: This is modified from mw-thesaurus.el with support for Learner dictionary]]
+- Org Mode:
+  - [[https://lucidmanager.org/productivity/ricing-org-mode/][Peter Prevos: Ricing Org Mode: A Beautiful Writing Environment]] ([[https://irreal.org/blog/?p=9910][Irreal]])
+  - [[https://alphaalgorithms.github.io/2019/05/17/emacs-agenda-views/][Emacs Agenda Views | DummyHead]] (2019)
+  - [[https://www.adventuresinwhy.com/post/org-mode-timekeeping/][Timekeeping with Emacs and Org-Mode]] (2020)
+  - [[https://irreal.org/blog/?p=9897][Irreal: Org-ref-cite Video]]
+  - [[https://alphapapa.github.io/org-almanac/#Parsing][Org parser libraries | org-almanac]] ([[https://www.reddit.com/r/orgmode/comments/p2711v/org_parser_libraries_orgalmanac/][Reddit]])
+  - [[https://v.redd.it/9uhk0rg2akg71][iOS: Improving org task rendering]] ([[https://www.reddit.com/r/emacs/comments/p1tii6/ios_improving_org_task_rendering/][Reddit]])
+  - Org Roam:
+    - [[https://zettelkasten.de/posts/org-roam-version-2/][org-roam (Emacs Zettelkasten Package) Version 2 Released • Zettelkasten Method]]
+    - [[https://youtu.be/YxgA5z2R08I][Capturing Notes Efficiently with Org Roam]] ([[https://www.reddit.com/r/emacs/comments/p1oqkg/capturing_notes_efficiently_with_org_roam/][Reddit]])
+    - [[https://lucidmanager.org/data-science/visualise-org-roam/][Peter Prevos: Visualise Org-Roam Networks With igraph and R]]
+    - [[https://babbagefiles.xyz/org-roam-auto-propertise/][Benjamin Slade: Automatically adding information to Org-roam file properties]] ([[https://www.reddit.com/r/planetemacs/comments/p25rx8/benjamin_slade_automatically_adding_information/][Reddit]])
+    - [[https://babbagefiles.xyz/org-roam-on-android/][Benjamin Slade: Org-roam on Android]]
+- Coding:
+  - [[https://sntag.github.io/post/2020-04-13-getting-emacs-and-julia-to-work/][Getting Emacs and Julia to work]]
+  - [[https://kevinsjoberg.com/30-days-of-emacs-day-2][30 days of Emacs - Day 2 — kevinsjoberg]] OCaml
+  - [[https://github.com/sebasmonia/datum][datum Query databases from the command line, via ODBC. Plays nicely with Emacs' SQLi mode]]
+  - [[https://git.sr.ht/~wklew/parcont/tree/main/item/parcont.el][parcont.el: Continuation-based sexp editing commands]]
+  - [[https://github.com/SidharthArya/comp-ide.el][comp-ide.el: A simple and efficient Emacs Competitive IDE.]] ([[https://www.youtube.com/watch?v=zY0gr3Tv3hU&feature=youtu.be][Youtube]])
+  - [[https://github.com/amno1/helm-git-branch][Fast switching between two git branches]] ([[https://www.reddit.com/r/emacs/comments/p4knug/fast_switching_between_two_git_branches/][Reddit]]) helm-git-branch
+- Math:
+  - [[https://github.com/ashok-khanna/math-hydras][Easy Entry of Math Symbols (Global Keybindings)]] ([[https://www.reddit.com/r/emacs/comments/p37g6b/easy_entry_of_math_symbols_global_keybindings/][Reddit]])
+- Mail and news:
+  - [[https://tsdh.org/posts/2021-08-12-make-your-rss-enjoyable-in-feed-readers-such-as-elfeed.html][Tassilo Horn: Make your RSS enjoyable in feed readers such as elfeed]]
+  - [[https://github.com/Alexander-Miller/mu4e-column-faces][[ANN] New package: mu4e-column-faces]] ([[https://www.reddit.com/r/emacs/comments/p0ynlj/ann_new_package_mu4ecolumnfaces/][Reddit]])
+- Web:
+  - [[https://gist.github.com/gregoryhugaerts/96aca36ad4da29dee0919d467db80bab][Switch nyxt buffers and run nyxt commands from emacs]] ([[https://www.reddit.com/r/emacs/comments/p28ehx/switch_nyxt_buffers_and_run_nyxt_commands_from/][Reddit]])
+  - [[http://ag91.github.io/blog/2021/08/09/following-wise-suggestions-making-emacs-with-nyxt-more-consistent][Andrea: Following wise suggestions: making emacs-with-nyxt more consistent]]
+- Spacemacs:
+  - [[https://semiosis.github.io/posts/gui-spacemacs-support-for-dockerized-pen-el/][GUI Spacemacs support for Dockerized Pen.el]]
+- Doom Emacs:
+  - [[https://www.reddit.com/r/DoomEmacs/comments/p1uq2u/one_year_of_doom_emacs_and_never_looked_back/][One year of doom emacs and never looked back]]
+  - [[https://hungyi.net/posts/use-emacs-tree-sitter-doom-emacs/][Use Emacs-Tree-Sitter for Highlighting in Doom Emacs]] (2020)
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/p28rl5/weekly_tips_tricks_c_thread/][Weekly Tips, Tricks, &c. Thread]]
+  - [[https://t.me/emacs_posts][Telegram @emacs_posts: Emacs News and Posts]] ([[https://www.reddit.com/r/emacs/comments/p50n8h/created_a_telegram_channel_with_posts_from_sacha/][Reddit]])
+  - [[https://lars.ingebrigtsen.no/2021/08/14/10x10/][Lars Ingebrigtsen: 10×10% – Random Thoughts (closing 45% of open Emacs bugs)]] ([[https://www.reddit.com/r/emacs/comments/p4e078/lars_ingebrigtsen_1010_random_thoughts_closing_45/][Reddit]], [[https://news.ycombinator.com/item?id=28181575][HN]])
+- Other:
+  - [[https://portal.mozz.us/gemini/gem.shom.dev/20210807_TermuxEmacs.gmi][Termux + Emacs]]
+  - [[https://www.reddit.com/r/emacs/comments/p45akt/how_to_run_multiple_emacs_daemon_instances/][How to run multiple Emacs daemon instances]]
+- New packages:
+  - [[package:consult-dir][consult-dir]]: Consult based directory picker
+  - [[package:efar][efar]]: FAR-like file manager
+  - [[package:evil-textobj-treesitter][evil-textobj-treesitter]]: Provides evil textobjects using treesitter
+  - [[package:gumshoe][gumshoe]]: Scoped spatial and temporal POINT movement tracking
+  - [[package:netease-cloud-music][netease-cloud-music]]: Netease Cloud Music client
+  - [[package:session-async][session-async]]: Asynchronous processing in a forked process session
+  - [[package:streamlink][streamlink]]: A major mode for streamlink output
+  - [[package:untappd][untappd]]: Display your latest Untappd feed
+
+Links from [[https://www.reddit.com/r/emacs][reddit.com/r/emacs]], [[https://www.reddit.com/r/orgmode][r/orgmode]], [[https://www.reddit.com/r/spacemacs][r/spacemacs]], [[https://www.reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]], [[https://emacslife.com/calendar/][Emacs Calendar]] and [[http://lists.gnu.org/archive/html/emacs-devel/2021-08][emacs-devel]].
+#+RESULTS:
 ** 2021-08-09 Emacs news
   :PROPERTIES:
   :EXPORT_ELEVENTY_PERMALINK: /blog/2021/08/2021-08-09-emacs-news/
@@ -20982,6 +21093,19 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 [[http://sachachua.com/blog/category/emacs-news][Past Emacs News round-ups]]
 
+* Notes for next yearly summary
+
+* Emacs News yearly update
+:PROPERTIES:
+:CREATED:  [2021-08-14 Sat 09:43]
+:END:
+
+Magit
+Org roam v2
+This month in Org
+Completion
+Appearance
+
 * Code
 
 ** Package links
@@ -21060,21 +21184,21 @@ This one exports links from https://www.reddit.com/user/emacsnews/upvoted.json .
                             (title (assoc-default 'title o))
                             (url (helm-html-decode-entities-string (assoc-default 'url o)))
                             (date (seconds-to-time (assoc-default 'created_utc o)))
-                            (permalink (concat "https://reddit.com" (assoc-default 'permalink o)))
+                            (permalink (concat "https://www.reddit.com" (assoc-default 'permalink o)))
                             (num-comments (assoc-default 'num_comments o 'eq 0)))
                        (when (time-less-p threshold date)
                          (if (and (> num-comments 0) (not (string-match "reddit\\.com" url)))
                              (format "- %s (%s)\n"
                                      (org-link-make-string (url-unhex-string (if (string-match "^/" url)
-                                                                                 (concat "https://reddit.com" url)
+                                                                                 (concat "https://www.reddit.com" url)
                                                                                url))
                                                            title)
                                      (org-link-make-string (url-unhex-string (if (string-match "^/" permalink)
-                                                                                 (concat "https://reddit.com" permalink)
+                                                                                 (concat "https://www.reddit.com" permalink)
                                                                                permalink))
                                                            "Reddit"))
                            (format "- %s\n" (org-link-make-string (url-unhex-string (if (string-match "^/" url)
-                                                                                        (concat "https://reddit.com" url)
+                                                                                        (concat "https://www.reddit.com" url)
                                                                                       url))
                                                                   title))))))
                    items "")))
@@ -21543,10 +21667,10 @@ above!
      (my/list-new-packages date) 
      "\n\nLinks from "
      (mapconcat (lambda (x) (org-link-make-string (car x) (cdr x)))
-                '(("http://reddit.com/r/emacs" . "reddit.com/r/emacs")
-                  ("http://reddit.com/r/orgmode" . "r/orgmode")
-                  ("http://reddit.com/r/spacemacs" . "r/spacemacs")
-                  ("http://reddit.com/r/planetemacs" . "r/planetemacs")
+                '(("https://www.reddit.com/r/emacs" . "reddit.com/r/emacs")
+                  ("https://www.reddit.com/r/orgmode" . "r/orgmode")
+                  ("https://www.reddit.com/r/spacemacs" . "r/spacemacs")
+                  ("https://www.reddit.com/r/planetemacs" . "r/planetemacs")
                   ("https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story" . "Hacker News")
                   ("https://planet.emacslife.com" . "planet.emacslife.com")
                   ("https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt" . "YouTube")
