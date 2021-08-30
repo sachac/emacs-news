@@ -68,13 +68,115 @@ Actually generate the section:
                            refresh-packages
                            reddit
                            rss
-                           rss-es
+;                           rss-es
                            git
                            youtube
                            ))
 #+End_src
 
 #+RESULTS:
+** 2021-08-30 Emacs news
+  :PROPERTIES:
+  :EXPORT_ELEVENTY_PERMALINK: /blog/2021/08/2021-08-30-emacs-news/
+  :EXPORT_ELEVENTY_FILE_NAME: blog/2021/08/2021-08-30-emacs-news/
+  :EXPORT_DATE: 2021-08-30
+  :END:
+
+- [[https://emacsconf.org/2021/cfp/][EmacsConf 2021 Call for Proposals]] ([[https://reddit.com/r/emacs/comments/oyl40m/emacsconf_2021_call_for_proposals/][Reddit]], [[https://news.ycombinator.com/item?id=28075442][HN]]) until Sept 30
+- Upcoming events:
+  - EmacsConf Office Hours: https://emacsconf.org/2021/office-hours/
+    - Tue Aug 31 1800 Vancouver / 2000 Chicago / 2100 Toronto -- Wed Sep 1 0100 GMT / 0300 Berlin / 0630 Kolkata / 0900 Singapore
+    - Fri Sep 3 2100 Vancouver / 2300 Chicago -- Sat Sep 4 0000 Toronto / 0400 GMT / 0600 Berlin / 0930 Kolkata / 1200 Singapore
+    - Sat Sep 4 0800 Vancouver / 1000 Chicago / 1100 Toronto / 1500 GMT / 1700 Berlin / 2030 Kolkata / 2300 Singapore
+    - Tue Sep 7 1800 Vancouver / 2000 Chicago / 2100 Toronto -- Wed Sep 8 0100 GMT / 0300 Berlin / 0630 Kolkata / 0900 Singapore
+    - Fri Sep 10 2100 Vancouver / 2300 Chicago -- Sat Sep 11 0000 Toronto / 0400 GMT / 0600 Berlin / 0930 Kolkata / 1200 Singapore
+    - Sat Sep 11 0800 Vancouver / 1000 Chicago / 1100 Toronto / 1500 GMT / 1700 Berlin / 2030 Kolkata / 2300 Singapore
+  - EmacsATX: Initialization Social https://www.meetup.com/EmacsATX/events/279983164/ Wed Sep 1 1630 Vancouver / 1830 Chicago / 1930 Toronto / 2330 GMT -- Thu Sep 2 0130 Berlin / 0500 Kolkata / 0730 Singapore
+  - M-x Research (contact them for password): TBA https://m-x-research.github.io/ Fri Sep 3 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1400 GMT / 1600 Berlin / 1930 Kolkata / 2200 Singapore
+- Emacs configuration:
+  - [[https://gitlab.com/ideasman42/emacs-sidecar-locals][[ANN] sidecar-locals (flexible dir-locals alternative) now in melpa]]
+  - [[https://www.reddit.com/r/emacs/comments/pcdw6r/what_is_your_most_productive_emacs_shortcut/][What is your most productive emacs shortcut?]]
+- Emacs Lisp:
+  - [[https://blog.tygr.info/emacs/eventuel.html][Notes from creating my first emacs package]] - eventuel ([[https://www.reddit.com/r/emacs/comments/pad7nu/notes_from_creating_my_first_emacs_package/][Reddit]])
+  - [[https://github.com/lambdart/lazy-load][lazy-load: An Elisp library that provides autoloads from pre-configured directories]]
+  - [[https://github.com/alphapapa/taxy.el][[ANN] alphapapa/taxy.el: Programmable taxonomical hierarchy for arbitrary objects]] ([[https://www.reddit.com/r/emacs/comments/pbcap8/ann_alphapapataxyel_programmable_taxonomical/][Reddit]])
+- Emacs development:
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2021-08/msg01134.html][Emacs-devel: Gitlab Migration Discussion]] ([[https://www.reddit.com/r/emacs/comments/pcpe2k/emacsdevel_gitlab_migration_discussion/][Reddit]])
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=670b423ebcc7b792381a9f59938b7a6ff6838bf9][Fix typo in kill-buffer-delete-auto-save-files NEWS entry]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=7dabcb15118674be4a6254f1d69d44a3db20c7c4][Make rfc2368 obsolete and add rfc6068]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=dce5f7aed6047b56bcec83cca36ba94b23d8f558][Add support for OSC 7 in comint (current directory tracking)]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=f1901fc3084e6bdd6c72f11dbae58ee2a0232224][Better document obsolescence of 'values']]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=692da8c6a82f8de376a2eec9304773b3e85205f3][* etc/NEWS: Document the recent xterm.el change for `\e[29~`]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=a573d6bd88afe9a60728f0b63a45f44a6ff98ce2][Replace flyspell-use-mouse-3-for-menu with context-menu-mode (bug#50067)]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=7db376e560448e61485ba054def8c82b21f33d6a][Make thingatpt respect fields]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=ab799500094fb36b3f26b9c8a4147848b204cf0a][Make `set-locale-environment' complete over locale names]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=630a13ac4631866889bab1177e06ca1d693708c1][Add support for OSC escape codes in comint]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=2c8657f4f63e6d2b6e1d0866dd597bc85b422430][Doc that dired-do-chmod no longer follows symlinks]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=8f43180f0dc5b3e25d8252950ea63e2e92d40611][Improve documentation of 'inhibit-mouse-event-check']]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=976594d905ceacc3c351735ba099ac71ea31f014][* lisp/mouse.el (context-menu-open): New command bound to [S-f10].]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=591b8bd87a30bda3dad680752b7f63da8b5b74bd][Add new variable 'kill-buffer/delete-auto-save-files']]
+- Appearance:
+  - [[https://helpdeskheadesk.net/help-desk-head-desk/20200528/][Customizing a Theme for Emacs]]
+  - [[https://www.reddit.com/r/emacs/comments/pcjrkq/draw_svg_in_gnu_emacs/][Draw SVG in GNU Emacs]] - improving svg.el to include cropping, drawing?
+  - [[https://github.com/RaminHAL9001/emacs-svg-clock][svg-clock-mode: an SVG analog clock for Emacs]] ([[https://www.reddit.com/r/emacs/comments/pcsusf/svgclockmode_an_svg_analog_clock_for_emacs/][Reddit]])
+- Navigation:
+  - [[https://www.youtube.com/watch?v=Nz76jSfkd8M][Emacs Search Multiple Words Under Point]] (00:30) - C-s C-w C-w ...
+- Dired:
+  - [[https://ashok-khanna.medium.com/introduction-to-dired-mode-91cecd3a06ff][A Beginner's Introduction to Dired Mode (If you don't already use Dired, just give it a chance)]] ([[https://www.reddit.com/r/emacs/comments/pbkp4p/a_beginners_introduction_to_dired_mode_if_you/][Reddit]])
+  - [[https://github.com/FrostyX/helm-dired-open][An "Open with" dialog for Dired]] ([[https://www.reddit.com/r/emacs/comments/pdytb1/an_open_with_dialog_for_dired/][Reddit]])
+  - [[https://github.com/alphapapa/taxy.el/blob/master/examples/README.org#diredy][taxy.el: Example application "Diredy", groups files in Dired buffer by size and type]] ([[https://www.reddit.com/r/emacs/comments/pcf2g7/taxyel_example_application_diredy_groups_files_in/][Reddit]])
+- Org Mode:
+  - [[https://www.youtube.com/watch?v=2pJESOo-z40][Emacs | Keeping a Journal In Org Mode]] (10:22)
+  - [[http://mbork.pl/2021-08-30_How_I_avoid_deleting_large_parts_of_Org_buffers_accidentally][Marcin Borkowski: How I avoid deleting large parts of Org buffers accidentally]]
+  - [[https://thibautbenjamin.github.io/emacs/org-icons][org-icons: Making org-mode pretty with icons]] ([[https://www.reddit.com/r/emacs/comments/pawpst/hacking_icons_into_orgmode/][Reddit]])
+  - [[https://www.youtube.com/watch?v=cnogX7l7aKw][Rewriting My Website In Org Mode]] (13:36) - Hugo
+  - [[https://www.lonecpluspluscoder.com/2021/08/25/til-org-mode-odt-exporter/][Timo Geusch: TIL that org-mode has an exporter for ODT]]
+  - [[https://github.com/krisajenkins/ob-browser][ob-browser: Render HTML inside Emacs' org-mode]] ([[https://www.reddit.com/r/planetemacs/comments/p9vayw/obbrowser_render_html_inside_emacs_orgmode/][Reddit]])
+  - Org Roam:
+    - [[https://systemcrafters.net/build-a-second-brain-in-emacs/keep-a-journal/][Keep a Journal in Emacs with Org Roam]]
+    - [[https://www.youtube.com/watch?v=3-sLBaJAtew][Org Roam: The Best Way to Keep a Journal in Emacs]] ([[https://www.reddit.com/r/emacs/comments/pank65/org_roam_the_best_way_to_keep_a_journal_in_emacs/][Reddit]])
+    - [[https://takeonrules.com/2021/08/23/diving-into-the-implementation-of-subject-menus-for-org-roam/][Diving into the Implementation of Subject Menus for Org Roam // Take on Rules]] ([[https://www.reddit.com/r/emacs/comments/pa01ai/diving_into_the_implementation_of_subject_menus/][Reddit]])
+    - [[https://www.badykov.com/common/2021/08/29/braindump/][My Braindump]] ([[https://www.reddit.com/r/emacs/comments/pdtxln/my_braindump/][Reddit]]) - org-roam and Hugo
+    - [[http://magicscience.info/20210821080707-how_to_embed_handwritten_content_in_your_org_roam_site.html][How to embed handwritten content in your org-roam site]] ([[https://www.reddit.com/r/emacs/comments/pcue1v/how_to_embed_handwritten_content_in_your_orgroam/][Reddit]])
+- Completion:
+  - [[https://www.reddit.com/r/emacs/comments/pcoyjs/new_package_consultbibtex/][New package consult-bibtex]]
+  - [[https://www.youtube.com/watch?v=FNZdHyWEoQY][Configurando emacs con org #2    ivy-posframe, ivy , counsel and swiper]] (17:48)
+- Coding:
+  - [[https://andrewjudson.com/emacs/2021/08/23/emacs.html][Using Emacs in an IDE world]] ([[https://www.reddit.com/r/emacs/comments/paqyth/using_emacs_in_an_ide_world/][Reddit]], [[https://news.ycombinator.com/item?id=28286042][HN]]) - ansi-term
+- Spacemacs:
+  - [[https://jeffreyfreeman.me/spacemacs-ultimate-cheatsheet/][Spacemacs Ultimate Cheatsheet]] (2020)
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/pb6w2z/weekly_tips_tricks_c_thread/][Weekly Tips, Tricks, &c. Thread]] - getting coordinates from a PDF, xdragon
+  - [[https://www.reddit.com/r/emacs/comments/pdfgs5/how_extensible_is_emacs/][How extensible is emacs?]]
+  - [[https://www.reddit.com/r/emacs/comments/padv22/if_you_could_change_one_thing_about_emacs_what/][If you could change one thing about Emacs what would it be?]] ([[https://news.ycombinator.com/item?id=28287228][also on HN]])
+  - [[http://ergoemacs.org/emacs/modernization.html][Emacs Modernization: Simple Changes Emacs Should Adopt]] (2006, [[https://news.ycombinator.com/item?id=28336724][HN]])
+  - [[https://den.dev/blog/user-hostile-software/][The Rise Of User-Hostile Software]] ([[https://www.reddit.com/r/emacs/comments/pc7k9g/the_rise_of_userhostile_software/][Reddit]])
+  - [[https://www.kindness.city/blog/2021-08-25-vi-vs-vim-vs-emacs.html][Vi vs Vim vs Emacs]] ([[https://irreal.org/blog/?p=9935][Irreal]])
+  - [[https://protesilaos.com/codelog/2021-08-29-emacs-community-new-pc/][The Emacs community bought Protesilaos (aka Prot) a new PC]] ([[https://www.reddit.com/r/emacs/comments/pdtrn3/the_emacs_community_bought_protesilaos_aka_prot_a/][Reddit]])
+  - [[https://www.youtube.com/watch?v=nMH3QXWxTGg][System Crafters bringing some light about the EXWM situation]] (2:04:54, [[https://www.reddit.com/r/emacs/comments/pd8prz/system_crafters_bringing_some_light_about_the/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/parzmf/new_moderator/][zaeph joined the mod team for r/emacs]]
+  - [[https://www.reddit.com/r/DoomEmacs/comments/pbntdh/hiring_a_doom_emacs_tutor/][Hiring a Doom Emacs tutor]]
+- Other:
+  - [[https://www.reddit.com/r/emacs/comments/pdi08v/crdtel_the_collaborative_editing_package_now_on/][crdt.el, the collaborative editing package, now on GNU ELPA!]] ([[https://news.ycombinator.com/item?id=28263314][related HN discussion]])
+  - [[https://schauderbasis.de/posts/reformat_paragraph][Reformat paragraph]] ([[https://www.reddit.com/r/emacs/comments/pcjb90/reformat_paragraph/][Reddit]]) - cycling through fill options, including putting sentences on separate lines
+  - [[https://takeonrules.com/2021/08/28/whipping-up-a-quick-emacs-helper-function-for-hugo/][Whipping Up a Quick Emacs Helper Function for Hugo // Take on Rules]]
+  - [[https://so.nwalsh.com/2021/08/29-xmlunicode][Norm: XML Unicode 1.25]]
+  - [[https://blog.tygr.info/emacs/eventuel.html][eventuel: A special minor mode for sending events from Emacs to an external REST API]]
+  - [[https://takeonrules.com/2021/08/26/adding-more-tag-rendering-functions-for-shr-in-emacs/][Adding More Tag Rendering Functions for SHR in Emacs // Take on Rules]] ([[https://www.reddit.com/r/emacs/comments/pby1cj/adding_more_tag_rendering_functions_for_shr_in/][Reddit]])
+  - [[https://github.com/mfxarc/elfeed-yt-dl][elfeed-yt-dl: Download your YouTube entries in elfeed as video/audio files]] ([[https://www.reddit.com/r/emacs/comments/pb1huo/elfeedytdl_download_your_youtube_entries_in/][Reddit]])
+- New packages:
+  - [[package:crdt][crdt]]: collaborative editing using Conflict-free Replicated Data Types
+  - [[package:taxy][taxy]]: Programmable taxonomical grouping for arbitrary objects
+  - [[package:vc-backup][vc-backup]]: VC backend for versioned backups
+  - [[package:finito][finito]]: View and collect books
+  - [[package:germanium][germanium]]: Generate image from source code using germanium
+  - [[package:lyrics-fetcher][lyrics-fetcher]]: Fetch song lyrics and album covers
+  - [[package:minibuffer-modifier-keys][minibuffer-modifier-keys]]: Use spacebar as a modifier key in the minibuffer
+  - [[package:puni][puni]]: Parentheses Universalistic
+  - [[package:sidecar-locals][sidecar-locals]]: A flexible alternative to built-in dir-locals
+
+Links from [[https://www.reddit.com/r/emacs][reddit.com/r/emacs]], [[https://www.reddit.com/r/orgmode][r/orgmode]], [[https://www.reddit.com/r/spacemacs][r/spacemacs]], [[https://www.reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]], [[https://emacslife.com/calendar/][Emacs Calendar]] and [[http://lists.gnu.org/archive/html/emacs-devel/2021-08][emacs-devel]].
+
 ** 2021-08-23 Emacs news
   :PROPERTIES:
   :EXPORT_ELEVENTY_PERMALINK: /blog/2021/08/2021-08-23-emacs-news/
