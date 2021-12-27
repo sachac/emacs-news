@@ -1,4 +1,6 @@
-((python-coverage . "2021-12-20")
+((vunit-mode . "2021-12-27")
+(preview-dvisvgm . "2021-12-27")
+(python-coverage . "2021-12-20")
 (eglot-java . "2021-12-20")
 (org-transclusion . "2021-12-20")
 (siri-shortcuts . "2021-12-20")

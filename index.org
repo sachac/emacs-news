@@ -25,6 +25,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
   :POST_TAGS: emacs, emacs-news
   :END:
   :LOGBOOK:
+  CLOCK: [2021-12-27 Mon 00:53]--[2021-12-27 Mon 01:03] =>  0:10
   - State "DONE"       from "STARTED"    [2021-12-13 Mon 01:57]
   - State "DONE"       from "STARTED"    [2021-12-13 Mon 01:57]
   CLOCK: [2021-09-27 Mon 10:09]--[2021-09-27 Mon 11:19] =>  1:10
@@ -79,6 +80,84 @@ Actually generate the section:
 #+End_src
 
 #+RESULTS:
+** 2021-12-27 Emacs news
+  :PROPERTIES:
+  :EXPORT_ELEVENTY_PERMALINK: /blog/2021/12/2021-12-27-emacs-news/
+  :EXPORT_ELEVENTY_FILE_NAME: blog/2021/12/2021-12-27-emacs-news/
+  :EXPORT_DATE: 2021-12-27T01:08:40-0500
+  :END:
+
+- Upcoming events:
+  - Emacs Berlin (virtual, in English) https://emacs-berlin.org/ Wed Dec 29 0930 Vancouver / 1130 Chicago / 1230 Toronto / 1730 GMT / 1830 Berlin / 2300 Kolkata -- Thu Dec 30 0130 Singapore
+  - EmacsATX: TBD https://www.meetup.com/EmacsATX/events/282436104/ Wed Jan 5 1630 Vancouver / 1830 Chicago / 1930 Toronto -- Thu Jan 6 0030 GMT / 0130 Berlin / 0600 Kolkata / 0830 Singapore
+  - Emacs Paris (virtual, in French) https://www.emacs-doctor.com/emacs-paris-user-group/ Thu Jan 6 0830 Vancouver / 1030 Chicago / 1130 Toronto / 1630 GMT / 1730 Berlin / 2200 Kolkata -- Fri Jan 7 0030 Singapore
+  - M-x Research (contact them for password): TBA https://m-x-research.github.io/ Fri Jan 7 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1500 GMT / 1600 Berlin / 2030 Kolkata / 2300 Singapore
+- Emacs configuration:
+  - [[https://www.reddit.com/r/emacs/comments/rlli0u/whats_your_favorite_defadvice/][What's your favorite defadvice?]]
+  - [[https://www.youtube.com/watch?v=Gi7yBMYZylU][A Tour of my Emacs Configuration]] (32:27)
+  - [[https://github.com/alexluigit/emacs-grandview][alexluigit's Emacs Config]]
+- Emacs Lisp:
+  - [[https://helpdeskheadesk.net/help-desk-head-desk/2021-12-19/][TAONAW: Learning Emacs Lisp]]
+  - [[http://gonsie.com/blorg/cl-deprecated.html][Elsa Gonsiorowski: Package cl is deprecated]]
+  - [[http://ag91.github.io/blog/2021/12/23/moldable-emacs-examples-for-docs-demos-and-ert-tests][Andrea: Moldable Emacs: examples for docs, demos and ERT tests!]]
+  - [[https://3e8.org/pub/scheme/doc/lisp-pointers/v5i3/p25-houser.pdf][Eoops: An Object-Oriented Programming System for Emacs-Lisp (1992) [PDF]​]] ([[https://www.reddit.com/r/emacs/comments/rm08db/eoops_an_objectoriented_programming_system_for/][Reddit]])
+- Appearance:
+  - [[https://emacsredux.com/blog/2021/12/22/check-if-a-font-is-available-with-emacs-lisp/][Emacs Redux: Check if a Font is Available with Emacs Lisp]]
+  - [[https://protesilaos.com/codelog/2021-12-24-modus-themes-2-0-0/][Protesilaos Stavrou: Modus themes 2.0.0 for GNU Emacs]]
+  - [[https://i.redd.it/oj7cb68tsk781.png][UwU Theme]] ([[https://www.reddit.com/r/emacs/comments/rnxjqq/uwu_theme/][Reddit]])
+- Navigation:
+  - [[https://www.reddit.com/r/emacs/comments/ro5ni2/whats_the_emacs_way_to_explore_a_new_project/][What's the Emacs way to explore a new project?]]
+  - [[https://karthinks.com/software/simple-folding-with-hideshow/][Karthik Chikmagalur: Simple folding with Hideshow]]
+  - [[https://github.com/NicholasBHubbard/consult-better-jumper][consult-better-jumper: Integrate better-jumper into consult]]
+- TRAMP:
+  - [[https://www.youtube.com/watch?v=O0_UazBser8][Edit Remote Files with Emacs]] (03:22)
+- Dired:
+  - [[https://www.reddit.com/r/emacs/comments/rm8hl1/dirvish_a_minimalistic_file_manager_based_on/][Dirvish: a minimalistic file manager based on dired. Such as ranger, vifm, lf.]]
+- Writing:
+  - [[https://www.youtube.com/watch?v=VM8J1zFPYt0][A Review of Emacs Markdown Mode]] (14:03)
+  - [[https://github.com/duckwork/titlecase.el][[ANN] Titlecase.el : Titlecase things in Emacs]] ([[https://www.reddit.com/r/emacs/comments/rpe8us/ann_titlecaseel_titlecase_things_in_emacs/][Reddit]])
+- Org Mode:
+  - [[https://blog.jethro.dev/posts/org_roam_2021/][Org-roam: A Year in Review]] ([[https://www.reddit.com/r/emacs/comments/rot1zz/orgroam_a_year_in_review/][Reddit]])
+  - [[https://irreal.org/blog/?p=10201][Irreal: Exporting Environments From Org-mode]]
+  - [[https://emacsnotes.wordpress.com/2021/12/22/use-starmath-not-latex-not-mathml-when-exporting-org-mode-files-to-libreoffice/][Emacs Notes: Use Starmath—NOT LaTeX, NOT MathML—when exporting Org mode files to LibreOffice]] ([[https://www.reddit.com/r/planetemacs/comments/rm2cta/emacs_notes_use_starmathnot_latex_not_mathmlwhen/][Reddit]], [[https://irreal.org/blog/?p=10208][Irreal]])
+  - [[https://emacsnotes.wordpress.com/2021/12/25/mix-starmath-and-latex-mix-english-and-tamil-in-same-org-file-or-how-to-conditionally-export-text-using-macros-and-drawers-in-org-mode/][Emacs Notes: Mix Starmath and LaTeX / Mix English and Tamil in same Org file (or) How to conditionally export text using Macros and Drawers in Org mode]]
+  - [[https://gitlab.com/dwt1/distro.tube][distro.tube : This is the source code for my website which is located at distro.tube. This site was created in Emacs and written in Org Mode]]
+- Completion:
+  - [[https://readingworldmagazine.com/emacs/2021-12-25-how-to-get-files-from-your-computer-with-emacs-1/][yuri tricys: How to Get Files From Your Computer With Emacs]]
+- Coding:
+  - [[https://metaredux.com/posts/2021/12/22/cider-1-2-nice.html][Meta Redux: CIDER 1.2 (Nice)]]
+  - [[https://hristos.co/blog/godot-engine-editing-gdscript-with-emacs/][Hristos N. Triantafillou: Godot Engine: Editing GDScript With Emacs]]
+  - [[https://www.youtube.com/watch?v=SVeiNWU4BBg][LSP-Mode on GNU/Emacs]] (05:24)
+  - [[https://www.reddit.com/r/emacs/comments/rl5dhz/support_to_code_review_bitbucket_cloud_prs/][Support to code review Bitbucket Cloud PRs]]
+  - [[https://github.com/kira-bruneau/kaitai-mode.el][kaitai-mode.el: Edit binary files in emacs using Kaitai Struct .ksy files]]
+  - [[https://gist.github.com/zk/30fc8403733f7f99f3fbacf148cd6807][redbean single-file distributable web server: how to edit as archive in emacs · GitHub]]
+- Shell:
+  - [[https://www.reddit.com/r/emacs/comments/rmziph/dtache_version_02/][Dtache - Version 0.2]]
+- EXWM:
+  - [[https://www.youtube.com/watch?v=bHSGDn1Nulo&feature=youtu.be][EXWM is love! (Emacs)]] (2020)
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/rm0kr9/weekly_tips_tricks_c_thread/][Weekly Tips, Tricks, &c. Thread]]
+  - [[https://www.reddit.com/r/emacs/comments/rnqsyo/how_can_i_get_the_novice_programmers_i_coach_to/][How can I get the novice programmers I coach to adopt Emacs?]]
+  - [[https://protesilaos.com/codelog/2021-12-21-emacsconf2021-freedom/][Protesilaos Stavrou: EmacsConf 2021: How Emacs made me appreciate software freedom]] ([[https://news.ycombinator.com/item?id=29638547][HN]])
+  - [[https://www.macadie.net/2021/12/22/2021-12-emacs-meetup-and-other-thoughts/][Eric MacAdie: 2021-12 Emacs Meetup and Other Thoughts]]
+- Other:
+  - [[https://git.sr.ht/~aimebertrand/org-mac-link][org-mac-link: Insert org-mode links to items selected in various Mac apps]]
+  - [[https://lifeofpenguin.blogspot.com/2021/12/embedding-gtk-applications-via-xembed-2.html][Embedding GTK applications via XEmbed - 2]] ([[https://www.reddit.com/r/emacs/comments/rmwity/multimedia_dashboard_in_gnu_emacs/][Reddit]])
+- Emacs development:
+  - [[https://www.reddit.com/r/emacs/comments/rlwipm/emacs_team_considering_including_sqlite/][Emacs team considering including SQLite]] (long discussion, merged into master)
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=1e7786437d3d471bffe48d91a067556f9223e9cf][read-multiple-choice: Add optional argument show-help]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=101bbd1392077e26e904c70fead7f7d7dce595f7][Add support for pinch gestures to the XI2 build]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=d54d8a88e9a2f12b69e820e9bb89e304521bc8c7][Allow window-text-pixel-size to measure pixels around a position]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=2001ae5898a1e48cae5b138828190ac2cba39b40][Revert back to using monospaced fonts in the mode line]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=28fff38eeb9e7641937bc3448d43c0a7d0eb6bbc][Allow automatic X-Message-SMTP-Method header insertion]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=4154a85d813d94726fbcc5adb824d42d234786c6][Disable by default and add NEWS entry to the new completion behavior]]
+  - [[http://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=a34650acff3740980ef23d900d35004bcfe2ef04][Fix sloppy base64 acceptance of some multibyte characters]]
+- New packages:
+  - [[package:preview-dvisvgm][preview-dvisvgm]]: SVG output for LaTeX preview
+  - [[package:vunit-mode][vunit-mode]]: VUnit Runner Interface
+
+Links from [[https://www.reddit.com/r/emacs][reddit.com/r/emacs]], [[https://www.reddit.com/r/orgmode][r/orgmode]], [[https://www.reddit.com/r/spacemacs][r/spacemacs]], [[https://www.reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]], [[https://emacslife.com/calendar/][Emacs Calendar]], [[http://lists.gnu.org/archive/html/emacs-devel/2021-12][emacs-devel]], and [[https://lemmy.ml/c/emacs][lemmy/c/emacs]].
+
 ** 2021-12-20 Emacs news
   :PROPERTIES:
   :EXPORT_ELEVENTY_PERMALINK: /blog/2021/12/2021-12-20-emacs-news/
@@ -22997,6 +23076,7 @@ This one exports links from https://www.reddit.com/user/emacsnews/upvoted.json .
       (while url
         (with-temp-buffer
           (url-insert-file-contents url)
+          (decode-coding-region (point-min) (point-max) 'utf-8)
           ;; (goto-char (point-min))
           ;; (re-search-forward "^$")
           (let* ((data (json-read))
@@ -23173,16 +23253,19 @@ and turn it into:
     ("Emacs Lisp" "emacs lisp")
     ("Appearance" "theme\\|theming")
     ("Navigation" "search\\|tab bar")
+    "TRAMP"
     ("Dired" "dired")
+    "Writing"
     ("Org Mode" "org[ -]?mode\\|\\<org\\>\\|\\<ox-")
     ("Completion" "company\\|helm\\|selectrum\\|completion")
     ("Coding" "java\\|php\\|sql\\|cider\\|git\\|programming\\|scala\\|python")
     "Math"
+    "Shells"
     ("Web" "eww")
     ("Mail and news" "gnus\\|rmail\\|mail\\|notmuch\\|mu4e\\|elfeed")
     ("Spacemacs" "spacemacs")
     ("Doom Emacs" "doom")
-    "Music"
+    "Multimedia"
     ("EXWM" "exwm")
     ("Community" "Weekly tips")
     "Other"
@@ -23467,7 +23550,7 @@ above!
       year
       month
       end-date
-      (format-time-string "%Y-%m-%d%T%z"))
+      (format-time-string "%Y-%m-%dT%T%z"))
      (if (member 'events parts)
          (concat
           "- Upcoming events:\n"
