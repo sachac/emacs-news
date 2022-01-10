@@ -27,6 +27,7 @@ https://www.youtube.com/results?search_query=emacs+%7C+%22org+mode%22+%7C+orgmod
   :POST_TAGS: emacs, emacs-news
   :END:
   :LOGBOOK:
+  CLOCK: [2022-01-10 Mon 00:06]--[2022-01-10 Mon 01:22] =>  1:16
   CLOCK: [2021-12-27 Mon 00:53]--[2021-12-27 Mon 01:03] =>  0:10
   - State "DONE"       from "STARTED"    [2021-12-13 Mon 01:57]
   - State "DONE"       from "STARTED"    [2021-12-13 Mon 01:57]
@@ -83,6 +84,96 @@ Actually generate the section:
 #+End_src
 
 #+RESULTS:
+** 2022-01-10 Emacs news
+  :PROPERTIES:
+  :EXPORT_ELEVENTY_PERMALINK: /blog/2022/01/2022-01-10-emacs-news/
+  :EXPORT_ELEVENTY_FILE_NAME: blog/2022/01/2022-01-10-emacs-news/
+  :EXPORT_DATE: 2022-01-10T00:07:17-0500
+  :END:
+
+- Upcoming events:
+  - [[https://emacs-apac.gitlab.io/announcements/january-2022/][Emacs APAC: Announcing Emacs Asia-Pacific (APAC) virtual meetup, Saturday, January 22, 2022]]
+  - M-x Research (contact them for password): TBA https://m-x-research.github.io/ Fri Jan 21 0700 Vancouver / 0900 Chicago / 1000 Toronto / 1500 GMT / 1600 Berlin / 2030 Kolkata / 2300 Singapore
+  - Emacs APAC (virtual, in English) https://emacs-apac.gitlab.io/ Sat Jan 22 0030 Vancouver / 0230 Chicago / 0330 Toronto / 0830 GMT / 0930 Berlin / 1400 Kolkata / 1630 Singapore
+- Beginner:
+  - [[https://www.youtube.com/watch?v=6QOK66zha8o][Learning Emacs guide and tips]] (12:24, [[https://www.reddit.com/r/emacs/comments/rw3ldh/teaching_emacs_on_my_channel/][Reddit]])
+  - [[https://www.youtube.com/watch?v=F8ZOnz0x9UM][Vim And Emacs Are The Most Important Skills You Should Learn]] (21:57)
+- Emacs configuration:
+  - [[https://ag91.github.io/blog/2022/01/05/how-to-steal-another-mode-keybindings-when-you-define-your-minor-mode/][How to steal another mode keybindings when you define your minor mode.]] ([[https://www.reddit.com/r/emacs/comments/rwzkk0/how_to_steal_another_mode_keybindings_when_you/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/ry4q0y/created_my_first_theme_and_configuration/][Created my first theme and configuration]]
+  - [[https://github.com/konrad1977/emacs][konrad1977's emacs configuration]]
+- Emacs Lisp:
+  - [[https://emacstil.com/til/2022/01/05/elisp-what-does-backquote-do/][Emacs TIL: Elisp: What does backquote ` do?]]
+  - [[https://emacstil.com/til/2022/01/06/elisp-string-interpolation/][Emacs TIL: Elisp: String interpolation]]
+  - [[https://zck.org/testing-buffer-modifying-emacs-code][Testing Emacs code that modifies buffers]]
+- Appearance:
+  - [[https://linuxhint.com/emacs_themes/][Customizing your Emacs Experience with Themes]]
+  - [[https://protesilaos.com/codelog/2022-01-08-emacs-face-remap-add-relative/][Protesilaos Stavrou: Emacs: buffer-local faces (face-remap-add-relative)]]
+  - [[https://protesilaos.com/codelog/2022-01-05-custom-face-org-emphasis-alist/][Protesilaos Stavrou: Emacs: custom faces for Org emphasis styles (org-emphasis-alist)]]
+  - [[https://protesilaos.com/codelog/2022-01-03-modus-themes-port-faq/][Protesilaos Stavrou: Re: VSCode or Vim ports of the Emacs modus-themes?]]
+  - [[https://github.com/cstby/fixed-pitch-mode][Fixed Pitch Mode: Use a proportional typeface globally while keeping a monospaced typeface for code in Emacs.]] ([[https://www.reddit.com/r/emacs/comments/rxfu4l/fixed_pitch_mode_use_a_proportional_typeface/][Reddit]])
+- Navigation:
+  - [[https://www.reddit.com/r/emacs/comments/rygvmg/filetree_v11/][Filetree v1.1]]
+- Writing:
+  - [[https://oylenshpeegul.gitlab.io/blog/posts/20220106/][Tim Heaney: Dictionaries]]
+  - [[https://github.com/ioah86/repetition_error_finder/blob/master/repetition-error.el][repetition-error.el --- Interactive tools to find repetition errors in the buffer.]] ([[https://www.reddit.com/r/emacs/comments/rvm5n0/repetition_error_finder_in_emacs/][Reddit]], [[https://irreal.org/blog/?p=10235][Irreal]])
+- Org Mode:
+  - [[https://karl-voit.at/2022/01/09/mobile-capture-process/][UOMF: My Current Mobile Capture Process]] ([[https://www.reddit.com/r/emacs/comments/rzvzki/uomf_my_current_mobile_capture_process/][Reddit]])
+  - [[http://ag91.github.io/blog/2022/01/03/how-to-count-your-org-agenda-tags][Andrea: How to count your Org Agenda tags]] ([[https://www.reddit.com/r/orgmode/comments/rv67ep/how_to_count_your_org_agenda_tags_with_an_elisp/][Reddit]], [[https://irreal.org/blog/?p=10231][Irreal]] has another approach)
+  - [[https://www.reddit.com/r/emacs/comments/rv676v/how_to_count_your_org_agenda_tags_with_an_elisp/][How to count your Org Agenda tags with an Elisp snippet]] 
+  - [[https://www.youtube.com/watch?v=R8HNtnLT2jI][Emacs OrgMode Embed Source Link Pic 2022_01_08_11:21:43]] (11:05)
+  - [[https://github.com/amno1/org-babel-hide-markers-mode][Hide src_block Markers in Org-mode]] ([[https://www.reddit.com/r/emacs/comments/ryvwfd/hide_src_block_markers_in_orgmode/][Reddit]]) - now installable with package.el
+  - [[https://isamert.net/2022/01/04/dealing-with-apis-jsons-and-databases-in-org-mode.html][Isa Mert Gurbuz: Dealing with APIs, JSONs and databases in org-mode]]
+  - Org Roam:
+    - [[https://www.youtube.com/watch?v=qJhlHmDj7BI][VP of Emacs: A Personal Wiki in Plain Text]] (06:44) - org-roam
+    - [[https://ag91.github.io/blog/2022/01/06/moldable-emacs-the-old-org-roam-buffer-as-a-mold/][The old Org-Roam buffer as a mold (with transclusion)!]]
+  - Import, export, and integration:
+    - [[https://blog.jiayipan.me/posts/orgmode-loves-music/][Org Mode ❤ Music: Writing with Sheet Music at Ease | 记录|Celeste]] - Lilypond
+    - [[https://www.reddit.com/r/emacs/comments/s02unr/owo_onenote_export_to_emacs_org_mode_and_more/][owo: OneNote Export to Emacs Org Mode, and More]]
+    - [[https://www.reddit.com/r/emacs/comments/ry3k2l/uomf_semiautomate_boring_tasks_replacing/][UOMF: Semi-Automate Boring Tasks: Replacing Twitter-Snippets]]
+- Completion:
+  - [[https://youtu.be/hPwDbx--Waw][Vertico extensions demo]] ([[https://www.reddit.com/r/emacs/comments/ryqfz1/vertico_extensions_demo/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/rvd2yi/dtache_consult/][Dtache Consult]]
+- Coding:
+  - [[https://www.youtube.com/watch?v=YS1ypnICSZs][emacs IDE #6 🚀 prettier and emmet [ES]​]] (09:23)
+  - [[https://github.com/Artawower/turbo-log][Turbo-log 2.0 has been released. Now it is based on tree-sitter and supports js/ts/c#/java/ruby/rust and flexible configs for other languages]] ([[https://www.reddit.com/r/emacs/comments/rzepac/trubolog_20_has_been_released_now_it_is_based_on/][Reddit]])
+  - [[https://www.mattduck.com/lsp-python-getting-started.html][Getting started with lsp-mode for Python]]
+  - [[https://github.com/astoff/devdocs.el][devdocs.el: Emacs viewer for DevDocs]]
+  - [[https://xenodium.com/swift-package-code-coverage/][Swift package code coverage (plus Emacs overlay)]]
+  - Version control:
+    - [[https://www.youtube.com/watch?t=206&v=9S2pMZ6U5Tc&feature=youtu.be][Emacs: resolve Git conflicts with SMERGE and EDIFF]]
+    - [[https://www.reddit.com/r/emacs/comments/rv0zhe/v006_code_review_release_bitbucket_cloud_support/][[v0.0.6] Code review release - Bitbucket Cloud support finally here!]]
+    - [[https://youtu.be/cxJeyPZQGNI][Magit: the productive Git client in Emacs (9:41)]] ([[https://www.reddit.com/r/emacs/comments/ryrprz/magit_the_productive_git_client_in_emacs_941/][Reddit]])
+- Math:
+  - [[https://youtu.be/993dmoDdybs][The GNU Emacs Calculator]] ([[https://www.reddit.com/r/emacs/comments/rzaj0d/the_gnu_emacs_calculator/][Reddit]])
+- Doom Emacs:
+  - [[https://www.rousette.org.uk/archives/hi-ho-hi-ho-it-s-back-to-doom-i-go/][But She's a Girl: Hi Ho Hi Ho it's back to Doom I go]]
+- EXWM:
+  - [[https://sqrtminusone.xyz/posts/2022-01-03-exwm/][Using EXWM and perspective.el on a multi-monitor setup]] ([[https://www.reddit.com/r/emacs/comments/ruzl0z/using_exwm_and_perspectiveel_on_a_multimonitor/][Reddit]])
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/rwhuoj/weekly_tips_tricks_c_thread/][Weekly Tips, Tricks, &c. Thread]]
+  - [[http://mbork.pl/2022-01-03_The_Emacs_Lisp_book_-_looking_back_and_into_the_future][Marcin Borkowski: The Emacs Lisp book - looking back and into the future]]
+- Other:
+  - [[https://github.com/arthurcgusmao/unmodified-buffer][unmodified-buffer-mode: automatically revert a buffer’s modified flag if its contents match the file on disk]] ([[https://www.reddit.com/r/emacs/comments/rwzb5f/unmodifiedbuffermode_automatically_revert_a/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/rzxtv4/emacs_pretest_2809x_build_for_fedora_with_native/][Emacs pretest 28.0.9x build for Fedora with native compilation enabled]]
+  - [[https://www.reddit.com/r/emacs/comments/rxg1s9/practicing_language_speaking_with_subed_in_emacs/][Practicing Language Speaking with subed in Emacs]]
+  - [[https://www.youtube.com/watch?v=0KhQILr0MEQ][GNU/Emacs - Snails ,Shell-Pop,Golden-Ratio,Volatile-Highlights,Multiple-Cursors]] (07:46)
+  - [[https://emacsredux.com/blog/2022/01/04/dealing-with-clipboard-issues-on-windows-11-wslg/][Emacs Redux: Dealing with Clipboard Issues on Windows 11 + WSLg]]
+- Emacs development:
+  - emacs-devel:
+    - [[https://lists.gnu.org/archive/html/emacs-devel/2022-01/msg00709.html][Multi image PDF continuous mode]]
+    - [[https://lists.gnu.org/archive/html/emacs-devel/2022-01/msg00544.html][NonGNU ELPA package quality]]
+    - [[https://lists.gnu.org/archive/html/emacs-devel/2022-01/msg00217.html][Default custom file]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=262a7c9ea0e9702cadd71146d2c9af8c75bdab35][New minor mode elide-head-mode]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=d76fb0c11e9859db0d03d6496f5a720d304f4ca9][Allow using GTK+ to handle input methods on X]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=1229bd811867cc2ba5f569aa08e798b17ac76daf][Allow controlling the X input method style]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=0d46683202e2bf4d7ae88efa0fc65ddd26a5e5fd][Add rcirc-when command]]
+- New packages:
+  - [[package:julia-formatter][julia-formatter]]: Use JuliaFormatter.jl for julia code
+  - [[package:the-matrix-theme][the-matrix-theme]]: Green-on-black dark theme inspired by "The Matrix" movie
+
+Links from [[https://www.reddit.com/r/emacs][reddit.com/r/emacs]], [[https://www.reddit.com/r/orgmode][r/orgmode]], [[https://www.reddit.com/r/spacemacs][r/spacemacs]], [[https://www.reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]], [[https://emacslife.com/calendar/][Emacs Calendar]], [[http://lists.gnu.org/archive/html/emacs-devel/2022-01][emacs-devel]], and [[https://lemmy.ml/c/emacs][lemmy/c/emacs]].
+
 ** 2022-01-03 Emacs news
 :PROPERTIES:
 :EXPORT_ELEVENTY_PERMALINK: /blog/2022/01/2022-01-03-emacs-news/
