@@ -1,4 +1,6 @@
-((zetteldesk-kb (("melpa" . "2022-05-30")))
+((ob-fricas (("melpa" . "2022-06-06")))
+(aircon-theme (("gnu" . "2022-06-06")))
+(zetteldesk-kb (("melpa" . "2022-05-30")))
 (org-contacts (("melpa" . "2022-05-30")))
 (fussy (("melpa" . "2022-05-30")))
 (frimacs (("melpa" . "2022-05-30")))
