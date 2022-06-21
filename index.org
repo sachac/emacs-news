@@ -81,7 +81,7 @@ Actually generate the section:
                            refresh-packages
                            reddit
                            rss
-                           rss-es
+                           ;; rss-es
                            git
                            git-org
                            youtube
@@ -89,6 +89,94 @@ Actually generate the section:
 #+End_src
 
 #+RESULTS:
+** 2022-06-20 Emacs news
+    :PROPERTIES:
+    :EXPORT_ELEVENTY_PERMALINK: /blog/2022/06/2022-06-20-emacs-news/
+    :EXPORT_ELEVENTY_FILE_NAME: blog/2022/06/2022-06-20-emacs-news/
+    :EXPORT_DATE: 2022-06-20T10:33:00-0400
+    :END:
+
+- Upcoming events:
+  - M-x Research (contact them for password): TBA https://m-x-research.github.io/ Tue Jun 21 0800 Vancouver / 1000 Chicago / 1100 Toronto / 1500 GMT / 1700 Berlin / 2030 Kolkata / 2300 Singapore
+  - Emacs APAC (virtual, in English) https://emacs-apac.gitlab.io/ Sat Jun 25 0130 Vancouver / 0330 Chicago / 0430 Toronto / 0830 GMT / 1030 Berlin / 1400 Kolkata / 1630 Singapore
+  - Emacs Berlin (virtual, in English) https://emacs-berlin.org/ Wed Jun 29 0930 Vancouver / 1130 Chicago / 1230 Toronto / 1630 GMT / 1830 Berlin / 2200 Kolkata -- Thu Jun 30 0030 Singapore
+  - Emacs FFM: Return of the Emacs FFM Meetup! https://www.meetup.com/emacs-ffm/events/286448683/ Wed Jun 29 1000 Vancouver / 1200 Chicago / 1300 Toronto / 1700 GMT / 1900 Berlin / 2230 Kolkata -- Thu Jun 30 0100 Singapore
+- Beginner:
+  - [[https://www.youtube.com/watch?v=ReYYGsLFaRM][Emacs Part I]] (15:32)
+  - [[https://www.youtube.com/watch?v=WrmT3rWsDkI][Emacs is Powerful Part I and II]] (01:03:48)
+- Emacs configuration:
+  - [[https://www.youtube.com/watch?v=RtvHKyvXrBg][A Meta-dot Of Your Emacs Dreams]] (03:59) - using the elpaso package manager
+  - [[https://kisaragi-hiu.com/2022-06-14-straight-dont-download-repo][Download packages without fetching repositories when using Straight*]] ([[https://www.reddit.com/r/emacs/comments/vbpiyi/download_packages_without_fetching_repositories/][Reddit]])
+- Emacs Lisp:
+  - [[https://scripter.co/emacs-lisp-advice-combinators/?utm_source=atom_feed][scripter.co | Emacs: Emacs Lisp: Advice Combinators]] - with diagrams
+  - [[https://kisaragi-hiu.com/performance-cl-lib-dash-seq][Performance comparison between cl-lib, dash, and seq - Kisaragi Hiu]]
+  - [[https://youtube.com/watch?v=_Y1_tSjcqPU&feature=share][How to build an editor with Emacs Lisp - 07 Basic Loops]] (16:42, [[https://www.reddit.com/r/emacs/comments/vfbr9p/how_to_build_an_editor_with_emacs_lisp_07_basic/][Reddit]])
+- Appearance:
+  - [[https://i.redd.it/rxx7p8izs7691.png][[ANN] info-variable-pitch: View Info with proportional fonts while keeping (most of) what needs to be monospace in mono]] ([[https://www.reddit.com/r/emacs/comments/vel3ix/ann_infovariablepitch_view_info_with_proportional/][Reddit]])
+  - [[https://irreal.org/blog/?p=10606][Irreal: Highlighting]]
+  - [[https://scripter.co/gujarati-fonts-in-emacs/?utm_source=atom_feed][scripter.co | Emacs: Gujarati fonts in Emacs]]
+- Writing:
+  - [[https://protesilaos.com/codelog/2022-06-18-denote-demo/][Protesilaos Stavrou: Emacs: demonstration of my Denote package (simple note-taking)]] (39:04, [[https://www.youtube.com/watch?v=mLzFJcLpDFI][YouTube]], [[https://www.reddit.com/r/emacs/comments/vfdnn7/introduction_to_denote_simple_notetaking/][Reddit]])
+- Org Mode:
+  - [[https://taonaw.com/2022-06-16/][TAONAW - Emacs: Another look at my Journal Capture Templates]]
+  - [[https://scripter.co/org-show-only-post-subtree-headings/?utm_source=atom_feed][scripter.co | Emacs: Org: Show only Post subtree headings]]
+  - [[https://jao.io/blog/2022-06-19-simple-note-taking.html][jao: simple note taking]]
+  - [[https://www.reddit.com/r/emacs/comments/veesun/orgroam_is_absolutely_fantastic/][org-roam is absolutely fantastic!]]
+  - [[https://github.com/DarkBuffalo/org-verse][org-verse - bible verse with backlinks]] ([[https://www.reddit.com/r/emacs/comments/vg6ig0/orgverse_bible_verse_with_backlinks/][Reddit]])
+  - [[https://www.youtube.com/watch?v=Hg-oljbwf40][Emacs org mode library in C++]] (45:36)
+  - Import, export, and integration:
+    - [[https://emacsnotes.wordpress.com/2022/06/20/how-to-create-a-table-with-multi-paragraph-content-spanned-cells-using-emacs-org-mode/][Emacs Notes: How to create a Table with multi-paragraph content & spanned cells using Emacs Org mode]] - transcluded tables using footnotes. Looks neat, wonder if HTML export can do it too.
+    - [[https://kristofferbalintona.me/posts/202206141852/][Citations in org-mode: Org-cite and Citar | Kristoffer Balintona]] ([[https://www.reddit.com/r/orgmode/comments/vchefn/guide_to_citations_in_orgmode/][Reddit]])
+    - [[https://qorg11.net/tech_posts/org_mode_as_ssg.xhtml][Org-mode as a Static Site Generator]] ([[https://www.reddit.com/r/emacs/comments/vcb804/orgmode_as_a_static_site_generator/][Reddit]])
+    - [[https://weakty.com/org-mode][How I run my wiki with org mode]] ([[https://www.reddit.com/r/orgmode/comments/vc7ys6/how_i_run_my_wiki_with_org_mode/][Reddit]])
+  - Org development:
+    - [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=9632401dc6affc09e573e4af7c8898990cd8f04c][Auto-Upcase/downcase #+begin/#+end in structure templates]]
+    - [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=226119124d3d434e6db1160b9f561d3ed0b45993][ob-core.el/babel: Special handling for attachment links in src block]]
+- Coding:
+  - [[https://metaredux.com/posts/2022/06/20/compliment-0-3-13.html][Meta Redux: Compliment 0.3.13]] - Clojure code completon
+- Fun:
+  - [[https://magnus.therning.org/2022-06-15-power-mode-in-spacemacs.html][Magnus: Power-mode in Spacemacs]] - fancy particles
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/vcpk6u/weekly_tips_tricks_c_thread/][Weekly Tips, Tricks, &c. Thread]]
+  - [[https://www.reddit.com/r/emacs/comments/vcbnht/most_visually_impressive_emacs_packages/][Most visually impressive emacs packages?]]
+- Emacs development:
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2022-06/msg01003.html][emacs-devel: Re: Tree-sitter integration on feature/tree-sitter]] - request for feedback on API, porting to use core treesitter API
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2022-06/msg00743.html][emacs-devel: Re: [Patch] Avoid recording chars when reading passwords]] - probably new default behavior, with the option to restore old behavior (passwords getting captured in lossage)
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2022-06/msg00764.html][emacs-devel: Explanation of difference between make distclean and make extraclean]]
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2022-06/msg00884.html][emacs-devel: Re: Exposing buffer text modifications to Lisp]] - technical details on markers, and suggestions for package developers to work more closely with core
+    - [[https://lists.gnu.org/archive/html/emacs-devel/2022-06/msg00880.html][also some details on how the Org parser works]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=c1453cd6f6b79e050db976bcdcfe68235e45e0a7][Make images found through `find-image' be handled like `create-image']]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=bd0b96d25295c1d29186d4a96a2215ab0239c64c][Allow using :width/:height as normal with xbm images]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=28bfd4db69c357b708e7b711c947122faf499368][Allow removing quotes around links in *Help* buffers]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=efc241f4020478122d506b3d42a815ad47f7910b][Let `dired-omit-mode' match lines, as well as file names]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=94d76adde1b4b2bd86168f8d703241f60d1749b2][Don't handle reverseVideo X resource specially]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=7e1f84fa3bc7dfd84415813889c91070c0759da2][Fix test failures due to 'xterm-select-active-regions']]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=0dc75daf1189d2327c6efa4d747fa98fcba03ea3][Filter out NS non-key events from `where-is-internal']]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=606275e91ec57cccabeb4ac2feb93753f734cb00][Allow pretty-printing results from `C-x C-e' in edebug]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=2cb5ed66c094cc1ea937c72eb7958c2dc674ac7f][Support `select-active-regions' with xterm]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=0d103e6f79d374766b64e56fb05e440076f4df5c][Extend 'e' in edebug to pretty-print the values]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=c1370d83cb229c9f3f1b077d1e623b1e9ada6b50][Delete another library obsolete since 24.1]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=6362f65474bad81c1d57b9b603c65686a0dd853e][Add new command `duplicate-line']]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=dc6157bef758cf5ba490219eebccaf33e14430d3][Cancel editing bookmark annotations with C-c C-k]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=17b3f8d56e254f8f0478ce583451f02e6034ed48][Delete most libraries obsolete since 24.1 and 24.3]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=feb654b4605cd84d1913d33a7d4c687bd4e71be7][Add new package.el commands for recompilation]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=82694cdb204ad61b4b08cc66e71d6526949d8e40][; * etc/NEWS: Add entry for recent minibuffer abbrev table changes.]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=a02bb84c80f63a7b1199f0e68d605f7d418167fd][Leave the contents on the *Backtrace* buffer on `q']]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=99cb3a7154cd1e1b751b7cdf84479cd850e7da17][* lisp/minibuffer.el (minibuffer-complete-history): New command.]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=e494222814585cffaafa2c7784a2e4d632b8cd2d][* lisp/simple.el (completion-auto-wrap): Rename from completion-wrap-movement.]]
+- New packages:
+  - [[package:ansilove][ansilove]]: Display buffers as PNG images using ansilove (MELPA)
+  - [[package:cargo-transient][cargo-transient]]: A transient for cargo (MELPA)
+  - [[package:ebnf-mode][ebnf-mode]]: Major mode for EBNF files (MELPA)
+  - [[package:insert-random][insert-random]]: Insert random characters from various character sets (MELPA)
+  - [[package:lingva][lingva]]: Access Google Translate via lingva.ml (MELPA)
+  - [[package:org-mac-link][org-mac-link]]: Insert org-mode links to items selected in various Mac apps (MELPA)
+  - [[package:ppcompile][ppcompile]]: Ping-pong compile projects on remote machines (MELPA)
+  - [[package:smithy-mode][smithy-mode]]: Major mode for editing Smithy IDL files (MELPA)
+  - [[package:zetteldesk-ref][zetteldesk-ref]]: A zetteldesk extension for interfacing with literature nodes (MELPA)
+
+Links from [[https://www.reddit.com/r/emacs][reddit.com/r/emacs]], [[https://www.reddit.com/r/orgmode][r/orgmode]], [[https://www.reddit.com/r/spacemacs][r/spacemacs]], [[https://www.reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]], [[https://emacslife.com/calendar/][Emacs Calendar]], [[http://lists.gnu.org/archive/html/emacs-devel/2022-06][emacs-devel]], and [[https://lemmy.ml/c/emacs][lemmy/c/emacs]]. Thanks to Andrés Ramírez for emacs-devel links!
+
 ** 2022-06-13 Emacs news
     :PROPERTIES:
     :EXPORT_ELEVENTY_PERMALINK: /blog/2022/06/2022-06-13-emacs-news/
@@ -141,7 +229,7 @@ Actually generate the section:
   - [[https://www.reddit.com/r/emacs/comments/va6c0q/quickactionsel_uniform_compilerundebug_across/][quick-actions.el: Uniform Compile/Run/Debug across programming languages]]
   - [[https://christiantietze.de/posts/2022/06/free-cmd-w-in-magit-close-buffer/][Christian Tietze: Free Cmd-W in Magit to Close the Buffer]]
 - Multimedia:
-  - [[https://github.com/karthink/elfeed-tube][Elfeed Tube - Youtube on your terms]] ([[https://www.reddit.com/r/emacs/comments/vap46x/elfeed_tube_youtube_on_your_terms/][Reddit]]) - transcript, skipping ads and sponsor info
+  - [[https://github.com/karthink/elfeed-tube][Elfeed Tube - Youtube on your terms]] ([[https://www.reddit.com/r/emacs/comments/vap46x/elfeed_tube_youtube_on_your_terms/][Reddit]], [[https://irreal.org/blog/?p=10598][Irreal]]) - transcript, skipping ads and sponsor info
 - Fun:
   - [[https://i.redd.it/lhpi0gdnvu491.png][Thinking about config changes I want to make in the middle of the workday like:]] ([[https://www.reddit.com/r/emacs/comments/v9h56x/thinking_about_config_changes_i_want_to_make_in/][Reddit]])
   - [[https://www.reddit.com/r/emacs/comments/v6khc1/want_to_hear_an_emacs_joke/][Want to hear an Emacs joke?]]
