@@ -89,6 +89,111 @@ Actually generate the section:
 #+End_src
 
 #+RESULTS:
+** 2022-07-11 Emacs news
+    :PROPERTIES:
+    :EXPORT_ELEVENTY_PERMALINK: /blog/2022/07/2022-07-11-emacs-news/
+    :EXPORT_ELEVENTY_FILE_NAME: blog/2022/07/2022-07-11-emacs-news/
+    :EXPORT_DATE: 2022-07-11T18:29:48-0400
+    :END:
+
+- Upcoming events:
+  - [[https://emacs-apac.gitlab.io/announcements/july-2022/][Emacs APAC: Announcing Emacs Asia-Pacific (APAC) virtual meetup, Saturday, July 23, 2022]]
+  - M-x Research (contact them for password): TBA https://m-x-research.github.io/ Tue Jul 19 0800 Vancouver / 1000 Chicago / 1100 Toronto / 1500 GMT / 1700 Berlin / 2030 Kolkata / 2300 Singapore
+  - Emacs APAC (virtual, in English) https://emacs-apac.gitlab.io/ Sat Jul 23 0130 Vancouver / 0330 Chicago / 0430 Toronto / 0830 GMT / 1030 Berlin / 1400 Kolkata / 1630 Singapore
+- Emacs configuration:
+  - [[https://karthinks.com/software/it-bears-repeating/][It Bears Repeating: Emacs 28 & Repeat Mode]] ([[https://www.reddit.com/r/emacs/comments/vs4jqm/it_bears_repeating_emacs_28_repeat_mode/][Reddit]])
+  - [[https://imgur.com/pr4ofMm][RFC: Literate emacs/system configuration using org-roam]] ([[https://www.reddit.com/r/emacs/comments/vsv0ma/rfc_literate_emacssystem_configuration_using/][Reddit]])
+  - [[https://magnus.therning.org/2022-07-09-playing-with-setting-up-emacs.html][Magnus: Playing with setting up Emacs]]
+  - [[https://www.youtube.com/watch?v=qYqwEmdaOy0][Configuring Rational Emacs with Guix Home]] (02:02:04)
+  - [[https://davinpearson.nz/screenshots/][Davin's Modifications to Elisp, i.e. dlisp.]] ([[https://lists.gnu.org/archive/html/emacs-devel/2022-07/msg00241.html][emacs-devel]])
+- Emacs Lisp:
+  - [[https://youtu.be/NocDm4zzToo][Learn Emacs Lisp - Mostly The Strange Parts]] (29:22, [[https://www.reddit.com/r/emacs/comments/vv64yx/learn_emaca_lisp_mostly_the_strange_parts/][Reddit]])
+  - [[https://www.masteringemacs.org/article/emacs-builtin-elisp-cheat-sheet][Emacs's Builtin Elisp Cheat Sheet - Mastering Emacs]] ([[https://news.ycombinator.com/item?id=31998244][HN]])
+  - [[https://github.com/rejeep/f.el][rejeep/f.el: Modern API for working with files and directories in Emacs]] (old, but recently discussed on [[https://news.ycombinator.com/item?id=31977233][HN]])
+- Appearance:
+  - [[https://protesilaos.com/codelog/2022-07-06-fontaine-0-3-0/][Protesilaos Stavrou: Emacs: fontaine version 0.3.0]]
+  - [[http://amitp.blogspot.com/2022/07/axial-name-highlighting.html][Amit Patel: Axial name highlighting]]
+  - [[http://gonsie.com/blorg/tab-bar.html][Elsa Gonsiorowski: Beautifying the Tab Bar]]
+  - [[https://github.com/erikbackman/mindre-theme][Mindre Theme]] ([[https://www.reddit.com/r/emacs/comments/vv82cq/mindre_theme/][Reddit]])
+- Navigation:
+  - [[http://yitang.uk/2022/07/05/move-between-window-using-builtin-package/][Yi Tang: Move Between Windows in Emacs using windmove]]
+  - [[https://francopasut.netlify.app/post/jump_vim_emacs/][D.V.F.P.: Jumping between matching pairs of characters and tags in Vim and Emacs]]
+  - [[https://www.youtube.com/watch?v=zWDqaXpLdXU][Emacs Symbol Definition Find 2022_07_11_17:49:15]] (06:51)
+- Writing:
+  - [[https://www.erichgrunewald.com/posts/emacs-lisp-functions-for-easy-bib-te-x-insertions/][Emacs Lisp Functions for Easy BibTeX Recording]] ([[https://www.reddit.com/r/emacs/comments/vvumc4/emacs_lisp_functions_for_easy_bibtex_recording/][Reddit]], [[https://news.ycombinator.com/item?id=32033482][HN]])
+  - [[https://yannherklotz.com/ebib-papers/][[ebib] Downloading Academic Papers Automatically]] ([[https://www.reddit.com/r/emacs/comments/vv8ndl/ebib_downloading_academic_papers_automatically/][Reddit]])
+  - [[https://protesilaos.com/codelog/2022-07-11-denote-0-3-0/][Protesilaos Stavrou: Emacs: denote version 0.3.0]] and [[https://protesilaos.com/codelog/2022-07-04-denote-0-2-0/][0.2.0]]
+  - [[https://www.youtube.com/watch?v=oPqcolG7As0][Emacs Transpose Character Words Sentences 2022_07_09_02:50:07]] (11:28)
+- Org Mode:
+  - [[https://www.bytedude.com/simple-inline-images-in-org-mode/][Simple Inline Images In Org-Mode]] ([[https://www.reddit.com/r/emacs/comments/vvsbrm/simple_inline_images_in_orgmode/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/vt0otx/using_the_power_of_zotero_in_emacs_orgmode_to/][Using the power of Zotero in Emacs org-mode to manage citations]]
+  - [[https://www.unwoundstack.com/blog/indieweb.html][Unwound Stack: The Indieweb]]
+  - Org development: [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=b3b17cdb66ea4aa12f13cd30ef32283377828218][oc-csl.el: Add support for nocite citations]]
+- Completion:
+  - [[http://www.masteringemacs.org/article/understanding-minibuffer-completion][Mickey Petersen: Understanding Minibuffer Completion]] ([[https://www.reddit.com/r/emacs/comments/vr81n6/understanding_minibuffer_completion/][Reddit]])
+- Coding:
+  - [[https://scripter.co/using-git-delta-with-magit/?utm_source=atom_feed][scripter.co | Emacs: Using Git Delta with Magit]] ([[https://irreal.org/blog/?p=10655][Irreal]])
+  - [[http://mbork.pl/2022-07-11_A_poor_man's_Emacs_-_Jira_integration][Marcin Borkowski: A poor man's Emacs - Jira integration]]
+- Shells:
+  - [[https://blog.shahinism.com/2022/07/10/simple-shell-pop-up-in-emacs/][Simple shell pop-up in Emacs]] ([[https://www.reddit.com/r/emacs/comments/vw0f2a/simple_shell_popup_in_emacs/][Reddit]])
+  - [[http://xenodium.com/emacs-dwim-shell-command][Alvaro Ramirez: Emacs DWIM shell-command]] ([[https://www.reddit.com/r/emacs/comments/vtdd0u/emacs_dwim_shellcommand/][Reddit]], [[https://irreal.org/blog/?p=10653][Irreal]])
+  - [[http://xenodium.com/emacs-dwim-shell-command-multi-language][Alvaro Ramirez: Emacs: DWIM shell command (multi-language)]]
+  - [[https://youtube.com/watch?v=X8c_TrGfYcM][Emacs as your terminal multiplexer]] (5:14, [[https://www.reddit.com/r/emacs/comments/vs3t76/emacs_as_your_terminal_multiplexer/][Reddit]], [[https://irreal.org/blog/?p=10651][Irreal]])
+- Mail and news:
+  - [[https://www.reddit.com/r/emacs/comments/vsjbxr/ann_dankmode_020_with_oauth_support/][[ANN] dank-mode 0.2.0 with OAuth support]] - Reddit
+- Fun:
+  - [[https://lifeofpenguin.blogspot.com/2022/07/chronicles-of-emacs-editor-and-t-shirt.html][Chronicles of Emacs : The Editor and the T-shirt]] ([[https://www.reddit.com/r/emacs/comments/vvljs9/chronicles_of_emacs_the_editor_and_the_tshirt/][Reddit]]) - generating a parametric SVG pattern for a T-shirt using Emacs Lisp
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/vskthv/weekly_tips_tricks_c_thread/][Weekly Tips, Tricks, &c. Thread]]
+  - [[https://metaredux.com/posts/2022/07/10/cider-turns-10.html][Meta Redux: CIDER Turns 10]]
+  - [[https://christiantietze.de/posts/2022/07/shift-click-in-emacs-to-select/][Christian Tietze: Shift-Click in Emacs to Select - A Simple Change With a Complex History]]
+- Other:
+  - [[https://www.youtube.com/watch?v=RlfFHTPq62A][I keep getting stuck in Emacs. Shoot my troubles.]] (17:52) - troubleshooting tips
+  - [[https://www.reddit.com/r/emacs/comments/vuugwo/pros_and_cons_of_contributing_to_elpa_nongnu_elpa/][Pros and cons of contributing to elpa, nongnu elpa, or melpa]]
+  - [[https://protesilaos.com/codelog/2022-07-07-emacs-tmr-0-4-0/][Protesilaos Stavrou: Emacs: tmr version 0.4.0]] - setting timers
+  - [[https://www.youtube.com/watch?v=hydy-IwXRT8][CSV mode is not bad]] (08:58)
+  - [[http://xenodium.com/emacs-password-protect-current-pdf-revisited][Alvaro Ramirez: Emacs: Password-protect current pdf (revisited)]] ([[https://www.reddit.com/r/emacs/comments/vv02fq/passwordprotect_current_pdf_revisited_link_in/][Reddit]])
+  - [[http://xenodium.com/png-to-icns-emacs-dwim-style][Alvaro Ramirez: png to icns (Emacs DWIM style)]] ([[https://www.reddit.com/r/emacs/comments/vv1eyd/png_to_icns_emacs_dwim_style_via_script_last_one/][Reddit]], [[https://irreal.org/blog/?p=10660][Irreal]])
+  - [[http://ag91.github.io/blog/2022/07/07/moldable-emacs-from-a-picture-to-a-clojurescript-react-native-svg][Andrea: Moldable Emacs: from a picture to a ClojureScript React-Native SVG]]
+  - [[https://protesilaos.com/codelog/2022-07-06-build-emacs-arch-linux/][Protesilaos Stavrou: How I build Emacs on Arch Linux]]
+- Emacs development:
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=6f57fb71a50a8b2ac8163828a2cecb394bb52d06][Improve behavior of `lost-selection-mode' with multiple buffers]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=96846877930f580e122e9af85b4653918c542f89][Rename 'longlines-breakpoint-chars' to 'longlines-break-chars']]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=29684a734253f289e649535b2190e8d2ca956e8b][Rename new option to browse-url-default-scheme]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=86dc875bf590c33d255af04d4e3249db05fca65d][Make browse-url.el support for plain "mozilla" obsolete]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=d74dad673b854b011b23853d298c9a8f86d2d6ad][Bind M-G unconditionally in Dired]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=35ae8d9f3b18c34a6e6c594afcc442e7aaa5fe29][Add new minor mode to deactivate the region once PRIMARY is lost]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=99c96f50ed2058bec44612134ccaf9aa51c9730e][Move dired-do-relsymlink from dired-x.el to dired.el]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=9abf841429257a3e1008bedc4d857ea7a25ab9a6][Stop ffap-machine-at-point from pinging random hosts]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=0e99046d62e71fb874cb9010e60ecfee289f84e9][Add new args MESSAGE and TIMEOUT to set-transient-map (bug#21634)]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=fe82c0743b3feecb9b80549ef4bb3dc8529891a8][Rename new option to remote-file-name-inhibit-auto-save-visited]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=3631355dcb97ccbf24dd7f7ca6efb97d78e0c511][New user option auto-save-visited-remote-files]] and [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=ac7f76528f2f2e2f6e77bc25e7040eb3b07e45c0][auto-save-visited-mode-predicate]]
+  - Obsolete:
+    - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=b3fd71ed10139ca37b78234def000b76dfb95516][; * etc/NEWS: Announce obsoletion of rlogin.el.]]
+    - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=5d7b92448f1996a77a22c9bb0f4b8906552b60b6][Delete obsolete variable tooltip-use-echo-area]], [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=76ca5f5eceda6c78f209588da0893bab5b42165c][font-lock-maximum-size]], and [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=ac7b90e323eb375d5ff48fb24df206dc6336e656][buffer-substring-filters]]
+    - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=707124d2b92780b4f21d72c7c62899e074fa8ced][Make 'run-dig' command obsolete in favor of 'dig']]
+    - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=739e3dbe050468e1d9aa0a48bfc656ae20fd8f9d][Remove many items obsolete since 24.1]]
+- New packages:
+  - [[package:bech32][bech32]]: Bech32 library (MELPA)
+  - [[package:cbor][cbor]]: CBOR utilities (MELPA)
+  - [[package:citar-embark][citar-embark]]: Citar/Embark integration (MELPA)
+  - [[package:cljstyle-format][cljstyle-format]]: Reformat Clojure code using cljstyle (MELPA)
+  - [[package:consult-dash][consult-dash]]: Consult front-end for dash-docs (MELPA)
+  - [[package:denote][denote]]: Simple notes with an efficient file-naming scheme (GNU ELPA)
+  - [[package:elfeed-tube-mpv][elfeed-tube-mpv]]: Control mpv from Elfeed (MELPA)
+  - [[package:lsp-cfn][lsp-cfn]]: LSP integration for cfn-lsp-extra (MELPA)
+  - [[package:mindre-theme][mindre-theme]]: Minimal, light theme (MELPA)
+  - [[package:my-repo-pins][my-repo-pins]]: Keep your git repositories organized (MELPA)
+  - [[package:org-hyperscheduler][org-hyperscheduler]]: UI (web) representation of org-agenda (MELPA)
+  - [[package:pip-frame][pip-frame]]: Display and manage a PIP frame (MELPA)
+  - [[package:repeat-help][repeat-help]]: Display keybindings for repeat-mode (MELPA)
+  - [[package:sideline-flycheck][sideline-flycheck]]: Show flycheck errors with sideline (MELPA)
+  - [[package:sideline][sideline]]: Show information on the side (MELPA)
+  - [[package:tree-sitter-ess-r][tree-sitter-ess-r]]: R with tree-sitter (MELPA)
+  - [[package:zk-luhmann][zk-luhmann]]: Support for Luhmann-style IDs in zk (MELPA)
+
+Links from [[https://www.reddit.com/r/emacs][reddit.com/r/emacs]], [[https://www.reddit.com/r/orgmode][r/orgmode]], [[https://www.reddit.com/r/spacemacs][r/spacemacs]], [[https://www.reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]], [[https://emacslife.com/calendar/][Emacs Calendar]], [[http://lists.gnu.org/archive/html/emacs-devel/2022-07][emacs-devel]], and [[https://lemmy.ml/c/emacs][lemmy/c/emacs]].
+
 ** 2022-07-04 Emacs news
     :PROPERTIES:
     :EXPORT_ELEVENTY_PERMALINK: /blog/2022/07/2022-07-04-emacs-news/
@@ -116,7 +221,7 @@ Actually generate the section:
   - [[http://lifeofpenguin.blogspot.com/2022/06/mission-control-in-gnu-emacs.html][Mission control in GNU Emacs]] ([[https://youtu.be/ETzo7vhFG58][YouTube]] 1:36, [[https://www.reddit.com/r/emacs/comments/voyntv/desktop_and_window_management_in_gnu_emacs/][Reddit]])
 - Org Mode:
   - [[https://www.labri.fr/perso/nrougier/GTD/index.html][Get Things Done with Emacs]] (2020, [[https://irreal.org/blog/?p=10641][Irreal]])
-  - [[https://emacsnotes.wordpress.com/2022/06/29/use-org-extra-emphasis-when-you-need-more-emphasis-markers-in-emacs-org-mode/][Emacs Notes: Use `org-extra-emphasis' , when you need more Emphasis Markers in Emacs Org mode]]
+  - [[https://emacsnotes.wordpress.com/2022/06/29/use-org-extra-emphasis-when-you-need-more-emphasis-markers-in-emacs-org-mode/][Emacs Notes: Use `org-extra-emphasis' , when you need more Emphasis Markers in Emacs Org mode]] ([[https://irreal.org/blog/?p=10649][Irreal]])
   - [[https://youtu.be/SCPoF1PTZpI][The Secrets of My Emacs Presentation Style]] (29:04, [[https://www.reddit.com/r/emacs/comments/vmm4y3/the_secrets_of_my_emacs_presentation_style/][Reddit]]) org-present
   - [[https://www.youtube.com/watch?v=A3QrKEB-9wc][Org-mode - copy paste tables]] (04:49)
   - [[https://benswift.me/blog/2019/03/09/mapping-over-table-rows-in-org-mode/][Mapping over table rows in org-mode | benswift.me]] (2019, [[https://www.reddit.com/r/emacs/comments/vm6jqd/mapping_over_table_rows_in_orgmode/][Reddit]], [[https://irreal.org/blog/?p=10635][Irreal]])
