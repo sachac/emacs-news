@@ -86,6 +86,109 @@ Actually generate the section:
 #+End_src
 
 #+RESULTS:
+** 2022-08-01 Emacs news
+    :PROPERTIES:
+    :EXPORT_ELEVENTY_PERMALINK: /blog/2022/08/2022-08-01-emacs-news/
+    :EXPORT_ELEVENTY_FILE_NAME: blog/2022/08/2022-08-01-emacs-news/
+    :EXPORT_DATE: 2022-08-01T18:40:02-0400
+    :END:
+
+- [[https://emacsconf.org/2022/cfp/][EmacsConf 2022 Call for Participation]] ([[https://www.reddit.com/r/emacs/comments/w1oe55/emacsconf_2022_call_for_participation/][Reddit]])
+- Upcoming events:
+  - M-x Research (contact them for password): Show and tell https://m-x-research.github.io/ Tue Aug 2 0800 Vancouver / 1000 Chicago / 1100 Toronto / 1500 GMT / 1700 Berlin / 2030 Kolkata / 2300 Singapore
+  - EmacsATX: Emacs Social https://www.meetup.com/emacsatx/events/287197567/ Wed Aug 3 1630 Vancouver / 1830 Chicago / 1930 Toronto / 2330 GMT -- Thu Aug 4 0130 Berlin / 0500 Kolkata / 0730 Singapore
+  - Emacs users group Slovenia https://emacs.si/ Thu Aug 4 1100 Vancouver / 1300 Chicago / 1400 Toronto / 1800 GMT / 2000 Berlin / 2330 Kolkata -- Fri Aug 5 0200 Singapore
+  - Atelier Emacs Montpellier (in person) https://lebib.org/date/atelier-emacs Fri Aug 12 0900 Vancouver / 1100 Chicago / 1200 Toronto / 1600 GMT / 1800 Berlin / 2130 Kolkata -- Sat Aug 13 0000 Singapore
+- Emacs configuration:
+  - [[https://www.reddit.com/r/emacs/comments/wcupae/lets_share_your_top_3_packages_that_you_cant_live/][Let's share your top 3 packages that you can't live without.]]
+  - [[https://www.youtube.com/watch?v=uIENytjaWI8][Emacs Kick Off Server From Your Initialization File 2022_07_30_02:56:05]] (03:50)
+  - [[https://www.reddit.com/r/emacs/comments/wdh64r/emacsgroundup_first_tagged_release/][emacs-groundup, first tagged release!]]
+- Emacs Lisp:
+  - [[https://www.youtube.com/watch?v=4ch5VaVsgqo][How to build an editor with Emacs Lisp - 09 Introduction to macros]] (25:26)
+  - [[https://www.youtube.com/watch?v=zmvOcNJS2GM][emacs lisp, command to insert-random-string, hexadecimal, uuid, base64, WolframLang base36]] (01:04:10)
+- Appearance:
+  - [[https://www.reddit.com/r/emacs/comments/wbaplg/mood_line/][Mood Line]]
+  - [[https://protesilaos.com/codelog/2022-07-26-modus-themes-color-override-demo/][Protesilaos Stavrou: Emacs: the Modus themes "Summertime" re-spin]]
+- Navigation:
+  - [[https://christiantietze.de/posts/2022/07/emacs-select-paragraph-or-org-element/][Christian Tietze: Key Binding to Select Paragraph or Org Element]]
+- Dired:
+  - [[http://yitang.uk/2022/07/31/mle-copy-files-to-local-machine/][Yi Tang: Machine Learning in Emacs - Copy Files from Remote Server to Local Machine]] - dired-rsync
+- Writing:
+  - [[https://v.redd.it/3hxzu0ratoe91][An accentuated Emacs experiment (à la macOS)]] ([[https://www.reddit.com/r/emacs/comments/wbuz2y/an_accentuated_emacs_experiment_à_la_macos/][Reddit]], [[https://news.ycombinator.com/item?id=32286531][HN]], [[https://lobste.rs/s/vixaop/accentuated_emacs_experiment_la_macos][lobste.rs]])
+  - [[https://simpleit.rocks/lisp/emacs/writing-in-emacs-checking-spelling-style-and-grammar/][Writing In Emacs Checking Spelling Style And Grammar | Simple IT 🤘 Rocks]] (2017)
+  - [[https://www.reddit.com/r/emacs/comments/w9lkzo/lookup_word_under_cursor_browse_synonyms_and/][Lookup word under cursor, browse synonyms, and insert selection (works with Embark actions)]]
+  - [[https://christiantietze.de/posts/2022/07/emacs-blogging-insert-tag-yaml-frontmatter-posts/][Christian Tietze: Emacs Blogging: Insert Tag from YAML Frontmatter Posts]]
+  - [[https://github.com/licht1stein/obsidian.el][GitHub - licht1stein/obsidian.el: Obsidian Notes for Emacs]] ([[https://www.reddit.com/r/emacs/comments/w82c8m/obsidianel_obsidian_notes_within_emacs/][Reddit]])
+  - [[https://lucidmanager.org/productivity/testing-denote-package/][Peter Prevos: Simulating Text Files with R to Test the Emacs Denote Package]]
+- Org Mode:
+  - [[https://www.reddit.com/r/emacs/comments/w9hxp3/is_there_some_escape_sequence_that_can_used_to/][Is there some escape sequence that can used to create line breaks when org tables are converted to HTML?]] - tip to use a macro
+  - [[https://www.youtube.com/watch?v=AVHBimmoY1o][Org-mode - Make REST calls using restclient in Emacs]] (09:52)
+  - [[https://m.youtube.com/watch?v=D89GjOWYyxY][Note-taking with Org-Roam on PinePhone (Emacs 28.1 GUI)]] (3:34, [[https://www.reddit.com/r/emacs/comments/wba7bz/notetaking_with_orgroam_on_pinephone_emacs_281_gui/][Reddit]])
+  - Org development:
+    - [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=97c7ad8bfcba4a8c3144adc3cc8055e959955818][* etc/ORG-NEWS: Document `org-icalendar-force-alarm']]
+    - [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=0b3c6a752f21256cdd583483c896ebcbaae1d1f4][* etc/ORG-NEWS (New options): Add new section]]
+    - [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=7e076118443ed6ccfa95390cdd17b3464859abd3][oc-csl.el: Add support for sub-bibliographies]]
+    - [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=785f003de527487d1557cb724dd4b8867b5ea657][org-fold-show-entry: Do not fold drawers unless requested]]
+- Completion:
+  - [[https://github.com/yilkalargaw/emacs-native-snippets][GitHub - yilkalargaw/emacs-native-snippets: a collection for snippets that use emacs's built in templating utilities]] ([[https://www.reddit.com/r/emacs/comments/wdbk34/emacss_native_templating_and_snippet_fuctionality/][Reddit]])
+  - [[https://masteringemacs.org/article/fuzzy-finding-emacs-instead-of-fzf][Fuzzy Finding with Emacs Instead of fzf]] ([[https://www.reddit.com/r/emacs/comments/w7oiub/fuzzy_finding_with_emacs_instead_of_fzf/][Reddit]], [[https://news.ycombinator.com/item?id=32236195][HN]])
+- Coding:
+  - [[https://ag91.github.io/blog/2022/07/28/a-yasnippet-to-make-it-easy-debugging-clojure-code-with-atoms/][Andrea: A YASnippet to make it easy debugging clojure code with atoms]]
+  - [[https://tsdh.org/posts/2022-08-01-difftastic-diffing-with-magit.html][Tassilo Horn: Difftastic diffing with Magit]]
+  - [[https://amodernist.com/texts/emacs-guix.html][Philip K.: Using Guix Environments in Emacs using buffer-env]]
+- Shells:
+  - [[https://v.redd.it/hz94vz44qde91][dwim-shell-command counters and other improvements (link in comments)]] ([[https://www.reddit.com/r/emacs/comments/wambwk/dwimshellcommand_counters_and_other_improvements/][Reddit]])
+  - [[https://v.redd.it/wkxd8l7enyd91][dwim-shell-command gives ya a reusable command history]] ([[https://www.reddit.com/r/emacs/comments/w8s2ov/dwimshellcommand_gives_ya_a_reusable_command/][Reddit]])
+  - [[http://xenodium.com/dwim-shell-command-improvements][Alvaro Ramirez: dwim-shell-command improvements]] ([[https://irreal.org/blog/?p=10703][Irreal]])
+  - [[https://camdez.com/blog/2022/07/29/emacs-running-shell-commands-on-the-current-file/][Cameron Desautels: Emacs: Running Shell Commands on the Current File]]
+  - [[https://www.reddit.com/r/emacs/comments/wc9i0z/terminal_emacs_keyinputs_success_story/][Terminal Emacs Key-inputs Success story!]] - term-keys
+- Multimedia:
+  - [[https://www.reddit.com/r/emacs/comments/wcksic/shenshou_subtitle_downloader_006_is_published/][shenshou (subtitle downloader) 0.0.6 is published]]
+  - [[http://xenodium.com/dwim-shell-command-video-streams][Alvaro Ramirez: dwim-shell-command video streams]]
+- Fun:
+  - [[http://mbork.pl/2022-08-01_Making_secrets_with_Emacs][Marcin Borkowski: Making secrets with Emacs]]
+  - [[https://lifeofpenguin.blogspot.com/2022/07/gnu-emacs-for-kids-matching-game.html][GNU Emacs for Kids: Matching game]]
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/w98yhr/weekly_tips_tricks_c_thread/][Weekly Tips, Tricks, &c. Thread]]
+  - [[https://www.reddit.com/r/emacs/comments/w9wph5/emacs_without_packages/][emacs without packages?]]
+  - [[https://www.youtube.com/watch?v=K2dAZ227GY8&t=1s][Why I use Emacs in 2022]] (4:42, [[https://www.reddit.com/r/emacs/comments/w9obpu/why_i_use_use_emacs_in_2022/][Reddit]], [[https://irreal.org/blog/?p=10698][Irreal]])
+  - [[https://macadie.info/2022/07/28/2022-07-austin-emacs-meetup/][Eric MacAdie: 2022-07 Austin Emacs Meetup]] - includes stories about how people got started
+  - [[https://karthinks.com/software/notmuch-ado-about-nothing/][Notmuch Ado About Nothing | Karthinks - Don't like how it works? You can change Emacs.]] ([[https://www.youtube.com/watch?v=UP2dFk5_ytY][YouTube]] 29:45, [[https://www.reddit.com/r/emacs/comments/wb7ebg/dont_like_how_it_works_you_can_change_emacs/][Reddit]], [[https://irreal.org/blog/?p=10705][Irreal]])
+  - [[https://gretzuni.com/articles/emacs-as-21stc-interdisciplinary-tool][Emacs as 21stC interdisciplinary tool | gretzuni]]
+  - [[https://i.redd.it/6ghj3kwwake91.png][EmacsConf 2022 (poster mockup)]] ([[https://www.reddit.com/r/emacs/comments/wbe2zt/emacsconf_2022_poster_mockup/][Reddit]])
+- Other:
+  - [[https://github.com/santifa/clockodo-el][GitHub - santifa/clockodo-el: A simple emacs integration of the clockodo api]]
+  - [[https://www.youtube.com/watch?v=6zvE2vZEPzs][Automating Tasks with Emacs Lisp - System Crafters Live!]] (02:08:31)
+  - [[https://i.redd.it/4i4d4856xie91.jpg][Note-taking with Emacs on PinePhone (linux-based smartphone)]] ([[https://www.reddit.com/r/emacs/comments/wb7d70/notetaking_with_emacs_on_pinephone_linuxbased/][Reddit]])
+- Emacs development:
+  - emacs-devel: [[https://lists.gnu.org/archive/html/emacs-devel/2022-07/msg00639.html][How to search emacs-devel and bug-gnu-emacs]]
+  - emacs-devel: [[https://lists.gnu.org/archive/html/emacs-devel/2022-07/msg00570.html][Update/help wanted on ebrowse, ecb]]
+  - emacs-devel: [[https://lists.gnu.org/archive/html/emacs-devel/2022-07/msg01155.html][transient vs repeat]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=7320a812e9e0624480406309a3cad18db38ff87a][Wrap around the search on typing a letter (bug#56535)]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=9d8a6c82838f2f24e76a67379b02956aa668d7cf][Fix the bytecode incompatibility due to the change to 'narrow-to-region'.]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=3b5c03eeb2bc559767555fbb5b9916721ce9f853][Make frame synchronization a frame parameter]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=107f832577123ea7ebe867cba55601d0142f546f][Delete additional items obsolete since 20, 21 and 22]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=a4cf4893d179d9eed774284ce1b427767da66730][Delete aliases obsolete since 21.1 and 22.1]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=5b29f8cd98c014b4b3e5844ef128ba97e65ea036][Delete redisplay-end-trigger-functions and related defuns]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=454c06a22c8b2ddb177d2e613807fc206ba29da7][Fix namespace use in bib-mode.el]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=acefbcf8351180b4eff46b30491ce758dcc42feb][On X, Emacs can optionally synchronize display with the graphics hardware.]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=db03eda6369a9d4af3c72a8ab6ec29e3cc58acc4][Merge branch 'feature/long-lines-and-font-locking']] ([[https://lists.gnu.org/archive/html/emacs-devel/2022-07/msg00582.html][emacs-devel]], [[https://www.reddit.com/r/emacs/comments/warqvg/emacs_29_seems_significantly_better_at_handling/][Reddit]])
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=d3c4833d1350e26a2ae35e00eaf2d6bef1724679][Add an optional 'lock' parameter to 'narrow-to-region']]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=6b96c630f7ae76bc0bd200097f7d9bf9e856f2db][Delete fast-lock.el and lazy-lock.el]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=d7e848ccdaab81fed187b415e95c436b6deb2657][Use icons in outline]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=601737d7506727d66953a65e68105cf7eb3ee044][Add support for user-customizable icons]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=04b9216b92a4ee1661e79da785cf87fc7c3a4c4e][Make quickurl.el obsolete (part 2/2)]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=f21feaf00e78087dc6bed930695f449a52541bee][Improve 'diff-whitespace-style' user option declaration]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=70341cab3eb26e2f49bbc13d6bca247ab9403abc][string-equal-ignore-case: new function]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=592ae7ffe20aa9b5508fa0ac51dcf0ba33881b3c][Add duplicate-dwim (bug#56418)]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=fc1b7b720b5771a330f36e9a52688d73b790e478][Teach 'network-lookup-address-info' to validate numeric addresses]]
+- New packages:
+  - [[package:cardano-wallet][cardano-wallet]]: Interact with cardano wallet (MELPA)
+  - [[package:encrypt-region][encrypt-region]]: Encrypts and decrypts regions (MELPA)
+  - [[package:org-notify][org-notify]]: Notifications for Org-mode (GNU ELPA)
+  - [[package:sideline-flymake][sideline-flymake]]: Show flymake errors with sideline (MELPA)
+
+Links from [[https://www.reddit.com/r/emacs][reddit.com/r/emacs]], [[https://www.reddit.com/r/orgmode][r/orgmode]], [[https://www.reddit.com/r/spacemacs][r/spacemacs]], [[https://www.reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://lobste.rs/search?q=emacs&what=stories&order=newest][lobste.rs]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]], [[https://emacslife.com/calendar/][Emacs Calendar]], [[http://lists.gnu.org/archive/html/emacs-devel/2022-08][emacs-devel]], and [[https://lemmy.ml/c/emacs][lemmy/c/emacs]]. Thanks to Andrés Ramírez for links!
 ** 2022-07-25 Emacs news
     :PROPERTIES:
     :EXPORT_ELEVENTY_PERMALINK: /blog/2022/07/2022-07-25-emacs-news/
@@ -136,7 +239,7 @@ Actually generate the section:
   - [[https://sr.ht/~niklaseklund/zuul.el/][zuul.el: Interface to Zuul from Emacs]] ([[https://www.reddit.com/r/emacs/comments/w3n8ec/ann_zuulel_an_interface_to_zuul_from_emacs/][Reddit]]) browse build output
   - [[https://metaredux.com/posts/2022/07/25/leiningen-adds-support-for-nrepl-s-unix-sockets.html][Meta Redux: Leiningen Adds Support for nREPL's Unix Sockets]]
 - Shells:
-  - [[http://xenodium.com/dwim-shell-command-on-melpa][Alvaro Ramirez: dwim-shell-command on Melpa]] ([[https://www.reddit.com/r/emacs/comments/w763tz/dwimshellcommand_on_melpa_any_minute_now_link_in/][Reddit]])
+  - [[http://xenodium.com/dwim-shell-command-on-melpa][Alvaro Ramirez: dwim-shell-command on Melpa]] ([[https://www.reddit.com/r/emacs/comments/w763tz/dwimshellcommand_on_melpa_any_minute_now_link_in/][Reddit]], [[https://irreal.org/blog/?p=10694][Irreal]])
   - [[https://www.masteringemacs.org/article/running-shells-in-emacs-overview][Running Shells and Terminal Emulators in Emacs]] (2019, [[https://www.reddit.com/r/emacs/comments/w2715j/running_shells_and_terminal_emulators_in_emacs/][Reddit]], [[https://irreal.org/blog/?p=10684][Irreal]])
 - Mail and news:
   - [[https://alexschroeder.ch/wiki/2022-07-24_Decrypting_MIME_multipart_messages_in_Rmail][Alex Schroeder: Decrypting MIME multipart messages in Rmail]]
@@ -23639,7 +23742,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
   - [[https://jakoblind.github.io/emacs/javascript/2016/10/16/automatically-import-js-files-from-you-project.html][Automatically import JavaScript files]] ([[https://www.reddit.com/r/emacs/comments/57r4l9/automatically_import_javascript_files/][Reddit]])
   - [[https://github.com/zallison/sauron-goodies][sauron-goodies: addition functions for the Sauron logger.]] ([[https://www.reddit.com/r/emacs/comments/57iu23/saurongoodies_addition_functions_for_the_sauron/][Reddit]])
   - [[https://www.youtube.com/playlist?list=PLdKXxqwRv6_y7rHHjbrK38E59t9ost3o3][Productive Emacs - Clojure and ClojureScript]] (playlist)
-- Emacs development and releases:
+- Emacs development and releases:  
   - [[http://endlessparentheses.com/emacs-25-is-out-what-are-the-new-features-and-what-were-my-predictions.html?source=rss][Emacs 25 is out! What are the new features and what were my predictions]] ([[https://www.reddit.com/r/emacs/comments/56xwmz/emacs_25_is_out_what_are_the_new_features_and/][Reddit]])
   - [[https://debbugs.gnu.org/cgi/bugreport.cgi?bug=24639#32][Eli Zaretskii: "I plan to release Emacs 25.2 very soon, like in a few weeks."]] ([[https://www.reddit.com/r/emacs/comments/57phjx/eli_zaretskii_i_plan_to_release_emacs_252_very/][Reddit]])
   - [[https://lists.gnu.org/archive/html/emacs-devel/2016-10/msg00251.html][John Wiegley: "many of my fears at the prospect of merging this (concurrency) branch" have been allayed]] ([[https://www.reddit.com/r/emacs/comments/5775mt/john_wiegley_many_of_my_fears_at_the_prospect_of/][Reddit]])
