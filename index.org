@@ -86,6 +86,97 @@ Actually generate the section:
 #+End_src
 
 #+RESULTS:
+** 2022-08-08 Emacs news
+    :PROPERTIES:
+    :EXPORT_ELEVENTY_PERMALINK: /blog/2022/08/2022-08-08-emacs-news/
+    :EXPORT_ELEVENTY_FILE_NAME: blog/2022/08/2022-08-08-emacs-news/
+    :EXPORT_DATE: 2022-08-08T11:50:30-0400
+    :END:
+
+- Upcoming events:
+  - Atelier Emacs Montpellier (in person) https://lebib.org/date/atelier-emacs Fri Aug 12 0900 Vancouver / 1100 Chicago / 1200 Toronto / 1600 GMT / 1800 Berlin / 2130 Kolkata -- Sat Aug 13 0000 Singapore
+- Beginner:
+  - [[https://www.youtube.com/watch?v=n15j9a_h_f0][introducción a EMACS (Tutorial)]] (15:00)
+- Emacs configuration:
+  - [[https://git.sr.ht/~swflint/time-block-command][Need to block distractions (like email, RSS, etc)? Announcing time-block-command, a configurable command blocker using block groups.]] ([[https://www.reddit.com/r/emacs/comments/whtths/need_to_block_distractions_like_email_rss_etc/][Reddit]])
+  - [[https://www.youtube.com/watch?v=jDy1gQOHyhs][Emacs Which Key Is A Damn Good Package To Have 2022_08_08_03:44:58]] (10:27)
+- Evil mode:
+  - [[http://frostyx.cz/posts/emacs-evil-set-option][FrostyX: Emacs - Evil :set option]]
+- Emacs Lisp:
+  - [[https://www.masteringemacs.org/article/evaluating-elisp-emacs][Evaluating Elisp in Emacs]] ([[https://www.reddit.com/r/emacs/comments/wel19m/evaluating_elisp_in_emacs/][Reddit]], [[https://irreal.org/blog/?p=10716][Irreal]])
+  - [[https://github.com/wpcarro/cycle.el][Cycle data structure exposing mutable and (coming soon!) immutable APIs.]] ([[https://www.reddit.com/r/emacs/comments/wfhar2/cycle_data_structure_exposing_mutable_and_coming/][Reddit]])
+  - [[https://www.youtube.com/watch?v=VBGvGFmo1ps][emacs regular expression, and in emacs lisp]] (01:02:00)
+- Appearance:
+  - [[https://github.com/thezeroalpha/vanish.el][vanish.el: hide parts of a buffer]] ([[https://www.reddit.com/r/emacs/comments/whwiuz/vanishel_hide_parts_of_a_buffer/][Reddit]])
+  - [[https://i.redd.it/b1pu8hb4x1g91.png][Minibuffer header line]] ([[https://www.reddit.com/r/emacs/comments/whj385/minibuffer_header_line/][Reddit]])
+  - [[https://github.com/codemicmaves/graphite-theme][GitHub - codemicmaves/graphite-theme]] ([[https://www.reddit.com/r/emacs/comments/wgwmsj/graphite_emacs_theme/][Reddit]])
+  - [[https://protesilaos.com/codelog/2022-08-03-modus-themes-2-5-0/][Protesilaos Stavrou: Modus themes 2.5.0 for GNU Emacs]]
+  - [[https://protesilaos.com/codelog/2022-08-04-doom-git-gutter-modus-themes/][Protesilaos Stavrou: The case of git-gutter, the modus-themes, and Doom Emacs]]
+  - [[https://www.youtube.com/watch?v=D92eX68kxjQ][Org-mode - Emacs customize face to change background colour]] (07:14)
+- Navigation:
+  - [[https://taonaw.com/2022-08-03/][TAONAW - Emacs: Of Grep and Finding Stuff]]
+  - [[https://manueluberti.eu//emacs/2022/08/07/emacs-ugrep/][Manuel Uberti: Ugrep in Emacs]]
+  - [[https://tony-zorman.com/posts/query-replace/2022-08-06-query-replace-many.html][How to query-replace multiple matches!]]
+- Org Mode:
+  - [[https://www.johndcook.com/blog/2022/08/02/org-babel-vs-jupyter/][John D. Cook: Org-mode as a lightweight notebook]] ([[https://irreal.org/blog/?p=10720][Irreal]])
+  - [[https://www.johndcook.com/blog/2022/08/03/inline-org-babel/][John D. Cook: Inline computed content in org-mode]]
+  - [[https://www.mattplm.fr/static/multi_file_sitemap_experiment/index.html][Org-mode: A multi page index via org-publish's sitemap]] ([[https://www.reddit.com/r/emacs/comments/whi7wy/orgmode_a_multi_page_index_via_orgpublishs_sitemap/][Reddit]])
+  - [[https://emacsnotes.wordpress.com/2022/08/04/create-an-excel-libreoffice-calc-spreadsheet-from-an-org-spreadsheet/][Emacs Notes: Create an `Excel' / `LibreOffice Calc' from an `Org' spreadsheet]]
+  - [[https://gist.github.com/zot/ddf1a89a567fea73bc3c8a209d48f527][org-roam-logseq.el - converter for logseq files stored in org-roam]] ([[https://www.reddit.com/r/orgmode/comments/wgemu9/converter_for_logseq_files_stored_in_orgroam/][Reddit]])
+  - [[https://www.reddit.com/r/orgmode/comments/whney4/module_flags_for_org_mode_in_doom_emacs/][Module flags for org mode in Doom Emacs]]
+  - Org development:
+    - [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=a303a794f8c6f880aa8dc46f10179890bfd27423][Support interactive editing of comment blocks]]
+    - [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=9cc60dee48851756dd95af46b37b7adc172952e2][lisp/ob-plantuml.el: Insert results in buffer]]
+    - [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=e3a05d09b7398b46e8ef724ae7609eeb8a35346e][ol.el: add description format parameter to org-link-parameters]]
+- Completion:
+  - [[https://jao.io/blog/2022-08-04-inline-snippets-and-grouping-in-consult-recoll.html][jao: inline snippets and grouping in consult-recoll]]
+- Coding:
+  - [[https://www.draketo.de/software/wisp][wisp: Whitespace to Lisp]] ([[https://lobste.rs/s/lvcskk/wisp_whitespace_lisp_alternate_lisp][lobste.rs]])
+  - [[https://idiomdrottning.org/sexpc][sexpc - convert a sexp into C syntax]] ([[https://lobste.rs/s/mfdofb/sexpc_c_as_s_expressions][lobste.rs]])
+- Math:
+  - [[https://www.johndcook.com/blog/2022/08/05/cdf/][John D. Cook: Naming probability functions]] - lower tail probability, upper tail probability
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/wf0t0d/weekly_tips_tricks_c_thread/][Weekly Tips, Tricks, &c. Thread]]
+  - [[https://www.reddit.com/r/emacs/comments/wf4u1r/what_primary_tasks_do_you_use_emacs_for_how_were/][What primary task(s) do you use emacs for? How were you introduced to using emacs? And since then already how long?]] ([[https://lemmy.ml/post/404056][lemmy]])
+  - [[https://macadie.info/2022/08/05/2022-08-austin-emacs-meetup/][Eric MacAdie: 2022-08 Austin Emacs Meetup]]
+  - [[https://www.jwz.org/doc/emacs-timeline.html][Emacs Timeline]] (2007; [[https://news.ycombinator.com/item?id=32294737][HN]], old thread on [[https://reddit.com/r/emacs/comments/f1twlg/emacs_timeline/][Reddit]])
+  - [[https://dspace.mit.edu/handle/1721.1/6329][EMACS Manual for ITS Users]] (1981, [[https://news.ycombinator.com/item?id=32374981][HN]])
+- Other:
+  - [[https://github.com/kisaragi-hiu/send-notification][[RFC] send-notification: one-function library to send desktop notifications on any platform; comes with a minor mode to notify if a Magit command fails in background]] ([[https://www.reddit.com/r/emacs/comments/wigxij/rfc_sendnotification_onefunction_library_to_send/][Reddit]])
+  - [[https://github.com/haji-ali/lp-transient][A transient menu for `lp` for easier printing from Emacs]] ([[https://www.reddit.com/r/emacs/comments/wg7pq9/a_transient_menu_for_lp_for_easier_printing_from/][Reddit]])
+  - [[https://lifeofpenguin.blogspot.com/2021/06/basic-wysiwyg-printing-in-gnu-emacs.html][Basic WYSIWYG printing in GNU Emacs]] ([[https://www.reddit.com/r/emacs/comments/wf9h0z/basic_wysiwyg_printing_in_gnu_emacs_jpg_to_pdf/][Reddit]]) - ps-print-buffer-with-faces
+  - [[https://zck.org/deleting-files-in-emacs][Deleting files in Emacs [OC]​]] ([[https://www.reddit.com/r/emacs/comments/weuiqs/deleting_files_in_emacs_oc/][Reddit]]) - deleting visited file
+  - [[https://www.youtube.com/watch?v=7H1Pe9HkJ7I][Emacs Multithreading: How Hard Could It Be?]] (04:13)
+  - [[https://github.com/SavchenkoValeriy/emacs-swift-module][GitHub - SavchenkoValeriy/emacs-swift-module: Write Emacs packages in Swift!]] ([[https://www.reddit.com/r/emacs/comments/wemj1z/writing_emacs_dynamic_modules_in_swift/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/wg9lah/emacs_gui_from_a_tty/][Emacs gui from a tty!]]
+  - [[https://v.redd.it/nppykdnflkf91][Emacs freebie: macOS emoji picker]] ([[https://www.reddit.com/r/emacs/comments/wfja3n/emacs_freebie_macos_emoji_picker/][Reddit]])
+  - [[https://jherrlin.github.io/posts/emacs-on-macos-monterey/][John Herrlin: Emacs on Macos Monterey]]
+- Emacs development:
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2022-08/msg00130.html][emacs-devel: long lines, widening, and font-locking performance]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=27599d8df838569e223bc8be4fb7c40cd75c1847][Add NEWS note about interactive-args]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=7c8332e096ab92546db38ae27b582971b26cfdfd][Fix namespacing problem in allout.el]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=4e59830bc0ab17cdbd85748b133c97837bed99e3][Add STREAM argument to 'process-tty-name']]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=d7b89ea4077d4fe677ba0577245328819ee79cdc][Allow creating processes where only one of stdin or stdout is a PTY]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=b70369c557efed3dcd86dc64a2e73e3480dea6af][time-convert): Deprecate calls without an explicit FORM arg]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=8810330f30ca1b251534106f9de7d5190c0cf633][Add obsolete-since header to netrc.el]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=22a2ad13f50f4a5f8e28ce93730d665a33964b80][Add obsolete-since line to autoload.el and adjust comments]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=f325b091c1589ec67347ac1ba82a1f82a7596093][; * etc/NEWS: Announce obsoletion of url-about.el.]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=ec22e923c0dab286cdcf18595e836f1013e9a9f1][Teach 'symbol-file' about .eln natively-compiled files]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=409b581b09e35e65a1cfee87968c2713e2d3b970][Delete obsolete variable nntp-authinfo-file]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=e5e840168c039f3daf9cce05e0b8ac4c49a450ec][Remove duplicate key definitions from keymaps]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=bd50df1efdb686ee22f4ec591839be3f3b21dd17][Delete function alias x-selection obsolete since 23.3]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=632b74efa3523683596a8efbc854824dc819bebf][Make url-dired.el obsolete (part 2/2)]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=7320a812e9e0624480406309a3cad18db38ff87a][Wrap around the search on typing a letter (bug#56535)]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=9d8a6c82838f2f24e76a67379b02956aa668d7cf][Fix the bytecode incompatibility due to the change to 'narrow-to-region'.]]
+- New packages:
+  - [[package:hammy][hammy]]: Programmable, interactive interval timers (MELPA)
+  - [[package:i3bar][i3bar]]: Display status from an i3status command in the tab bar (MELPA)
+  - [[package:minibuffer-header][minibuffer-header]]: Minibuffer header line (GNU ELPA)
+  - [[package:obsidian][obsidian]]: Obsidian Notes interface (MELPA)
+  - [[package:perl-doc][perl-doc]]: Read Perl documentation (GNU ELPA)
+  - [[package:websearch][websearch]]: Query search engines (MELPA)
+    
+Links from [[https://www.reddit.com/r/emacs][reddit.com/r/emacs]], [[https://www.reddit.com/r/orgmode][r/orgmode]], [[https://www.reddit.com/r/spacemacs][r/spacemacs]], [[https://www.reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://lobste.rs/search?q=emacs&what=stories&order=newest][lobste.rs]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]], [[https://emacslife.com/calendar/][Emacs Calendar]], [[http://lists.gnu.org/archive/html/emacs-devel/2022-08][emacs-devel]], and [[https://lemmy.ml/c/emacs][lemmy/c/emacs]]. Thanks to Andrés Ramírez for links!
 ** 2022-08-01 Emacs news
     :PROPERTIES:
     :EXPORT_ELEVENTY_PERMALINK: /blog/2022/08/2022-08-01-emacs-news/
@@ -112,7 +203,7 @@ Actually generate the section:
 - Navigation:
   - [[https://christiantietze.de/posts/2022/07/emacs-select-paragraph-or-org-element/][Christian Tietze: Key Binding to Select Paragraph or Org Element]]
 - Dired:
-  - [[http://yitang.uk/2022/07/31/mle-copy-files-to-local-machine/][Yi Tang: Machine Learning in Emacs - Copy Files from Remote Server to Local Machine]] - dired-rsync
+  - [[http://yitang.uk/2022/07/31/mle-copy-files-to-local-machine/][Yi Tang: Machine Learning in Emacs - Copy Files from Remote Server to Local Machine]] - dired-rsync ([[https://irreal.org/blog/?p=10712][Irreal]])
 - Writing:
   - [[https://v.redd.it/3hxzu0ratoe91][An accentuated Emacs experiment (à la macOS)]] ([[https://www.reddit.com/r/emacs/comments/wbuz2y/an_accentuated_emacs_experiment_à_la_macos/][Reddit]], [[https://news.ycombinator.com/item?id=32286531][HN]], [[https://lobste.rs/s/vixaop/accentuated_emacs_experiment_la_macos][lobste.rs]])
   - [[https://simpleit.rocks/lisp/emacs/writing-in-emacs-checking-spelling-style-and-grammar/][Writing In Emacs Checking Spelling Style And Grammar | Simple IT 🤘 Rocks]] (2017)
@@ -1110,7 +1201,7 @@ Links from [[https://www.reddit.com/r/emacs][reddit.com/r/emacs]], [[https://www
   - [[https://scripter.co/using-org-logbook-notes-to-record-blog-post-updates/?utm_source=atom_feed][scripter.co | Emacs: Using Org Logbook Notes to record blog post updates]]
   - [[https://scripter.co/building-org-development-version/?utm_source=atom_feed][scripter.co | Emacs: Building Org Development version (2022)]]
   - [[https://github.com/tonyaldon/posts/blob/master/posts.org#2022-05-11-wed-org-mode-links-in-2022-implementation-packages-articles-and-videos--this-is-emacs][org-mode links in 2022: implementation, packages, articles and videos | THIS IS EMACS]] ([[https://www.reddit.com/r/emacs/comments/une2d8/orgmode_links_in_2022_implementation_packages/][Reddit]])
-  - [[https://www.reddit.com/r/emacs/comments/uossq2/taking_orgroam_on_the_go_with_logseq/][Taking org-roam on the go with logseq]]
+  - [[https://coredumped.dev/2021/05/26/taking-org-roam-everywhere-with-logseq/][Taking org-roam everywhere with logseq • Core Dumped]] ([[https://www.reddit.com/r/emacs/comments/uossq2/taking_orgroam_on_the_go_with_logseq/][Reddit]])
   - Org development:
     - [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=2cb62c0798b48344683edc48418abd60e5ccbad7][news and manual: Mention ox-latex's engraved code]]
     - [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=b4e4b3c502691180c20a57b8b0598160f5ffdc3f][ox-latex: Replace `org-latex-listings']]
@@ -12114,7 +12205,7 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 - Community:
   - [[https://www.reddit.com/r/emacs/comments/f25er5/weekly_tipstricketc_thread/][Weekly tips/trick/etc/ thread]]
   - [[https://rssfeeds.cloudsite.builders/2020/02/12/anyone-interested-at-an-emacs-bof-at-lcu14/][Anyone Interested At An Emacs BoF At LCU14?]]
-  - [[https://www.jwz.org/doc/emacs-timeline.html][Emacs Timeline]] ([[https://reddit.com/r/emacs/comments/f1twlg/emacs_timeline/][Reddit]])
+  - [[https://www.jwz.org/doc/emacs-timeline.html][Emacs Timeline]] ([[https://reddit.com/r/emacs/comments/f1twlg/emacs_timeline/][Reddit]], [[https://news.ycombinator.com/item?id=32294737][HN]])
   - [[https://video.fosdem.org/2020/UD2.119/emacsthoughts.mp4][{mp4} FOSDEM 2020 - Emacs Should Be Emacs Lisp - Thoughts on the Future of Emacs | Tom Tromey]]
   - [[https://stackoverflow.blog/2020/02/05/the-2020-developer-survey-is-now-open/][{SO 2020 Survey} /r/emacs represent!]] ([[https://reddit.com/r/emacs/comments/f2r6q1/so_2020_survey_remacs_represent/][Reddit]])
 - Other:
