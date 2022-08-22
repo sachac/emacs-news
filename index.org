@@ -86,6 +86,84 @@ Actually generate the section:
 #+End_src
 
 #+RESULTS:
+** 2022-08-22 Emacs news
+    :PROPERTIES:
+    :EXPORT_ELEVENTY_PERMALINK: /blog/2022/08/2022-08-22-emacs-news/
+    :EXPORT_ELEVENTY_FILE_NAME: blog/2022/08/2022-08-22-emacs-news/
+    :EXPORT_DATE: 2022-08-22T01:28:32-0400
+    :END:
+
+- Upcoming events:
+  - Emacs APAC (virtual, in English) https://emacs-apac.gitlab.io/ Sat Aug 27 0130 Vancouver / 0330 Chicago / 0430 Toronto / 0830 GMT / 1030 Berlin / 1400 Kolkata / 1630 Singapore
+  - Emacs Berlin (virtual, in English) https://emacs-berlin.org/ Wed Aug 31 0930 Vancouver / 1130 Chicago / 1230 Toronto / 1630 GMT / 1830 Berlin / 2200 Kolkata -- Thu Sep 1 0030 Singapore
+  - Emacs Paris (virtual, in French) https://www.emacs-doctor.com/emacs-paris-user-group/ Thu Sep 1 0830 Vancouver / 1030 Chicago / 1130 Toronto / 1530 GMT / 1730 Berlin / 2100 Kolkata / 2330 Singapore
+  - Emacs users group Slovenia https://emacs.si/ Thu Sep 1 1100 Vancouver / 1300 Chicago / 1400 Toronto / 1800 GMT / 2000 Berlin / 2330 Kolkata -- Fri Sep 2 0200 Singapore
+- Beginner: (Looks like there's an ALX course that might include Emacs, so people are making tutorials. I might not list all of them.)
+  - [[https://www.youtube.com/watch?v=22VvosQXVLM][Command in Emacs on ALX projects]] (30:17)
+  - [[https://www.youtube.com/watch?v=P7bz9A2XTu4][Alx Project 0x02 Working with Emacs]] (41:07)
+  - [[https://www.youtube.com/watch?v=JYEXGUf_cp4][Understanding emacs navigation and commands]] (13:49)
+  - [[https://www.youtube.com/watch?v=w71ZVs-cX60][How to Install Emacs on Ubuntu for WSL]] (04:29)
+  - [[https://www.youtube.com/watch?v=3Er_H33kpkE][Install go-mode on Emacs via MELPA]] (06:46)
+  - [[https://www.youtube.com/watch?v=dOarPiPB3Pw][Org-mode + Emacs 入門ガイド: Emacsのインストール]] (08:21)
+- Appearance:
+  - [[https://protesilaos.com/codelog/2022-08-17-re-protect-eyes-coding/][Protesilaos Stavrou: Re: How do I protect my eyes when coding? (modus-themes, ef-themes)]]
+  - [[https://protesilaos.com/codelog/2022-08-18-ef-themes-demo/][Protesilaos Stavrou: Emacs: demonstration of my ef-themes]] ([[https://www.youtube.com/watch?v=h7VOd7CVz10][YouTube]] 31:10, [[https://www.reddit.com/r/emacs/comments/wrlfff/more_themes_developed_by_prot_efthemes/][Reddit]])
+- Navigation:
+  - [[https://www.reddit.com/gallery/wpazm8][Embar: Emacs bar and launcher combination]] ([[https://www.reddit.com/r/emacs/comments/wpazm8/embar_emacs_bar_and_launcher_combination/][Reddit]]) - no public repo yet
+- Writing:
+  - [[https://lifeofpenguin.blogspot.com/2022/08/compose-emoji-in-gnu-emacs.html][Compose Emoji in GNU Emacs]] ([[https://www.youtube.com/watch?v=Y3pGQqEQ8Q4][YouTube]], 00:32)
+- Org Mode:
+  - [[https://medium.com/@jakeb0x/straightforward-emacs-show-all-unchecked-org-mode-checkboxes-199f22e8524a][Straightforward Emacs: Show all unchecked Org Mode checkboxes]]
+  - [[https://www.reddit.com/r/orgmode/comments/wt5uzb/using_orgmode_for_work_on_book_writing_and/][Using Org-Mode for Work on Book Writing and Translation]] - tips in the comments
+  - [[https://gist.github.com/andras-simonyi/eda0daa0b677838022fd7c438b6eadfa][org-bibtex-misc.el - using zotra, citar, and org-cite]] ([[https://www.reddit.com/r/emacs/comments/wqjare/comment/iku77h0/][Reddit]])
+  - [[https://www.youtube.com/watch?v=P02FD63gGco][Emacs org-noter in 2022 screencast and demo.]] (08:25, [[https://www.reddit.com/r/orgmode/comments/wsse8l/orgnoter_screencastdemo/][Reddit]])
+  - [[https://github.com/chrisbarrett/nursery][Have some code: a spaced repetition (SRS) review system for org-roam, and better search]] ([[https://www.reddit.com/r/OrgRoam/comments/wqbf7b/have_some_code_a_spaced_repetition_srs_review/][Reddit]])
+  - [[https://www.johndcook.com/blog/2022/08/15/org-table-python/][John D. Cook: Keeping data and code together with org-mode]] ([[https://irreal.org/blog/?p=10744][Irreal]])
+  - Org development:
+    - [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=2cc2d8f1f6265d12c92b734931f2e3e417276b05][lisp/org-clock.el: Show file title in org-clock clocktable]]
+    - [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=243ded74ba9f894496cb2f3a0c0148caf5a27ea4][doc/org-manual.org: documentation for `org-latex-language-alist']]
+- Completion:
+  - [[https://www.youtube.com/watch?v=uBRxUnMYIjs][Emacs Snippets and Templates]] (37:51)
+- Coding:
+  - [[https://github.com/brotzeit/rustic/releases/tag/3.3][rustic 3.3: new command that looks up missing dependencies and adds them to Cargo.toml]] ([[https://www.reddit.com/r/emacs/comments/wrhi2t/rustic_33_new_command_that_looks_up_missing/][Reddit]])
+  - [[https://manueluberti.eu//emacs/2022/08/18/eglot-jdtls-data/][Manuel Uberti: Fix jdtls configuration for Eglot]]
+- Shells:
+  - [[https://www.masteringemacs.org/article/complete-guide-mastering-eshell][Mastering Eshell, Emacs's Elisp Shell]] ([[https://www.reddit.com/r/emacs/comments/wp1jit/mastering_eshell_emacss_elisp_shell/][Reddit]], [[https://news.ycombinator.com/item?id=32481533][HN]])
+  - [[http://xenodium.com/dwim-shell-command-with-template-prompts][Alvaro Ramirez: dwim-shell-command with template prompts]]
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/wqjare/weekly_tips_tricks_c_thread/][Weekly Tips, Tricks, &c. Thread]]
+  - [[https://github.com/LaurenceWarne/reddit-emacs-tips-n-tricks/blob/master/out.md][reddit-emacs-tips-n-tricks/out.md at master · LaurenceWarne/reddit-emacs-tips-n-tricks · GitHub]]
+  - [[https://www.youtube.com/watch?v=j0GmFP9hDCc][Distilling the Essence of Emacs - System Crafters Live!]] (01:34:02, [[https://www.youtube.com/watch?v=T_HtnfwRHRM][part 2 11:34]])
+  - [[https://www.jwz.org/blog/2022/08/lucid-emacs-was-released-30-years-ago/][Lucid Emacs was released 30 years ago]] ([[https://www.reddit.com/r/emacs/comments/wu20qu/lucid_emacs_was_released_30_years_ago/][Reddit]])
+- Other:
+  - [[https://www.reddit.com/r/emacs/comments/wovyj9/qpdfel_a_transient_emacs_wrapper_for_qpdf/][qpdf.el: A transient Emacs wrapper for qpdf]]
+  - [[https://emacsnotes.wordpress.com/2022/08/16/who-stole-c-c-and-possibly-other-keys-from-my-emacs/][Emacs Notes: Who stole "C-.", "C-;" and possibly other keys from my Emacs?]] - dealing with desktop environments
+  - [[https://www.youtube.com/watch?v=1sQnx4uVe7s][Emacs: Cursores Múltiples, Árbol de Deshacer, Use Package (español argentino)]] (01:34:11)
+- Emacs development:
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2022-08/msg00752.html][emacs-devel: long discussion on the abysmal state of the GTK build]]
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2022-08/msg00463.html][emacs-devel: discussion on Elisp performance]]
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2022-08/msg00702.html][emacs-devel: master f117b5df4d: Add new functions eol and bol]] - lots of thought goes into the naming of functions
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=6ddcf67052545a0f77233f1a952dc90e296cda35][Make it possible to mark generalized variables as obsolete]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=2614e5321639008dc75f740236769d1e9213aae2][Rename newly-added eol/bol functions to pos-eol/pos-bol]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=043ae1f53a29d69f2573356715861ec54d626b56][Delete two functions obsolete since Emacs 23]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=f117b5df4dc69a38a5568c5926c1e417a35314eb][Add new functions eol and bol]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=0dc9c9a68f5a137fd71d7aca356d08fd52b16d52][New command image-transform-set-percent]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=a6412b96e72c32ee981f469a564c8d2155d575aa][Move dired-guess commands from dired-x to dired]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=b87400c78b047d242ae188c46c621e0e8a8e69b2][Make the bookmark fringe icon look like a bookmark]]
+- New packages:
+  - [[package:calc-prog-utils][calc-prog-utils]]: Calc programmers utilities (MELPA)
+  - [[package:citar-org-roam][citar-org-roam]]: Citar/org-roam integration (MELPA)
+  - [[package:codespaces][codespaces]]: Connect to GitHub Codespaces via TRAMP (MELPA)
+  - [[package:cyanometric-theme][cyanometric-theme]]: A Theme with overwhelming bias towards cyan (MELPA)
+  - [[package:ef-themes][ef-themes]]: Colorful and legible themes (GNU ELPA)
+  - [[package:orangey-bits-theme][orangey-bits-theme]]: A Theme with smashing orangey bits (MELPA)
+  - [[package:power-mode][power-mode]]: Imbue Emacs with power! (MELPA)
+  - [[package:sakura-theme][sakura-theme]]: Filled with cherry blossoms (MELPA)
+  - [[package:time-block][time-block]]: Block running commands using time (MELPA)
+  - [[package:vegetative-theme][vegetative-theme]]: A Theme based on green CRT terminals (MELPA)
+
+Links from [[https://www.reddit.com/r/emacs][reddit.com/r/emacs]], [[https://www.reddit.com/r/orgmode][r/orgmode]], [[https://www.reddit.com/r/spacemacs][r/spacemacs]], [[https://www.reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://lobste.rs/search?q=emacs&what=stories&order=newest][lobste.rs]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]], [[https://emacslife.com/calendar/][Emacs Calendar]], [[http://lists.gnu.org/archive/html/emacs-devel/2022-08][emacs-devel]], and [[https://lemmy.ml/c/emacs][lemmy/c/emacs]].
+
 ** 2022-08-15 Emacs news
     :PROPERTIES:
     :EXPORT_ELEVENTY_PERMALINK: /blog/2022/08/2022-08-15-emacs-news/
@@ -115,7 +193,7 @@ Actually generate the section:
   - [[https://github.com/wdavew/org-excalidraw/][org-excalidraw: manage excalidraw drawings from org-mode]] ([[https://www.reddit.com/r/emacs/comments/wo71u3/orgexcalidraw_manage_excalidraw_drawings_from/][Reddit]])
 - Shells:
   - [[https://www.reddit.com/r/emacs/comments/wkwdbl/announcing_shell_underscore_use_the_output_of_the/][Announcing Shell Underscore - Use the output of the last shell command in other commands]]
-  - [[https://v.redd.it/juhegw7nioh91][Seamless command-line utils]] ([[https://www.reddit.com/r/emacs/comments/wo65zt/seamless_commandline_utils/][Reddit]]) joining images into a PDF with dwim-shell-command
+  - [[https://v.redd.it/juhegw7nioh91][Seamless command-line utils]] ([[https://www.reddit.com/r/emacs/comments/wo65zt/seamless_commandline_utils/][Reddit]], [[https://irreal.org/blog/?p=10742][Irreal]]) joining images into a PDF with dwim-shell-command
   - [[https://youtu.be/crHOK6XHDHc][Emacs as terminal multiplexer: Speed]] (6:16, [[https://www.reddit.com/r/emacs/comments/wkdhdf/emacs_as_terminal_multiplexer_speed/][Reddit]])
 - Mail and news:
   - [[https://www.youtube.com/watch?v=SedCG6Al7rk][Emacs Mu4E Email Interface Shortcuts 2022_08_09_12:49:06]] (07:27)
