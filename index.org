@@ -8,7 +8,7 @@
 
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2018-01][emacs-devel]].
 
-[[~/code/emacs-calendar/README.org][~/code/emacs-calendar/README.org]]
+[[~/code/emacs-calendar/README.org][~/proj/emacs-calendar/README.org]]
 
 https://www.youtube.com/results?search_query=emacs+%7C+%22org+mode%22+%7C+orgmode+%7C+eshell&sp=CAI%253D
 
@@ -19,7 +19,6 @@ SCHEDULED: <2022-01-31 Mon .+1w>
   :QUANTIFIED: Emacs
   :CLOCK_MODELINE_TOTAL: today
   :LAST_REPEAT: [2022-01-24 Mon 01:29]
-  :ID:       o2b:ef27b244-48a5-4227-9a01-30228a81ebee
   :CATEGORY: emacs-news
   :POST_TAGS: emacs, emacs-news
   :END:
@@ -85,10 +84,215 @@ Actually generate the section:
                            ))
 #+end_src
 
-https://hackaday.com/2023/04/22/build-your-own-bootable-emacs-environment/
-https://stewart123579.github.io/blog/posts/emacs/emacs-on-windows-getting-tramp-to-work/
-https://macroexpand.net/pages/git-related.html
 #+RESULTS:
+** 2023-05-08 Emacs news
+    :PROPERTIES:
+    :EXPORT_ELEVENTY_PERMALINK: /blog/2023/05/2023-05-08-emacs-news/
+    :EXPORT_ELEVENTY_FILE_NAME: blog/2023/05/2023-05-08-emacs-news/
+    :EXPORT_DATE: 2023-05-08T09:13:28-0400
+    :END:
+
+- Upcoming events:
+  - Emacs.si (in person): Emacs.si meetup #5 2023 (v zivo) https://dogodki.kompot.si/events/c1ecfef6-f7c4-4df2-99ef-4a7fd78c8cd6 Wed May 10 2000 CET
+  - Atelier Emacs Montpellier (in person) https://lebib.org/date/atelier-emacs Fri May 12 1800 Europe/Paris
+  - Mastering Emacs book club https://susam.net/maze/meet/mastering-emacs/ Fri May 12 1200 America/Vancouver - 1400 America/Chicago - 1500 America/Toronto - 1900 Etc/GMT - 2100 Europe/Berlin -- Sat May 13 0030 Asia/Kolkata - 0300 Asia/Singapore
+  - Mastering Emacs book club https://susam.net/maze/meet/mastering-emacs/ Sat May 13 0200 America/Vancouver - 0400 America/Chicago - 0500 America/Toronto - 0900 Etc/GMT - 1100 Europe/Berlin - 1430 Asia/Kolkata - 1700 Asia/Singapore
+  - EmacsSF (in person): coffee.el: calm and civilized, actually https://www.meetup.com/emacs-sf/events/293234996/ Sat May 13 1100 America/Los_Angeles
+  - Mastering Emacs book club https://susam.net/maze/meet/mastering-emacs/ Sun May 14 0200 America/Vancouver - 0400 America/Chicago - 0500 America/Toronto - 0900 Etc/GMT - 1100 Europe/Berlin - 1430 Asia/Kolkata - 1700 Asia/Singapore
+  - M-x Research (contact them for password): TBA https://m-x-research.github.io/ Wed May 17 0800 America/Vancouver - 1000 America/Chicago - 1100 America/Toronto - 1500 Etc/GMT - 1700 Europe/Berlin - 2030 Asia/Kolkata - 2300 Asia/Singapore
+- Emacs configuration:
+  - [[https://medium.com/helpshift-engineering/configuring-emacs-from-scratch-intro-3157bed9d040][Configuring Emacs from Scratch — Intro | by Suvrat Apte | helpshift-engineering | Medium]]
+  - [[https://github.com/susam/devil][Devil Mode: A twisted key sequence translator for modifier-free editing experience]] ([[https://www.reddit.com/r/emacs/comments/13aj99j/devil_mode_a_twisted_key_sequence_translator_for/][Reddit]], [[https://news.ycombinator.com/item?id=35849788][HN]], [[https://lobste.rs/s/xaqsox/devil_mode_twisted_key_sequence][lobste.rs]])
+  - [[https://www.reddit.com/r/emacs/comments/139k4bb/repohydrael_easily_define_and_call_git_repo/][repo-hydra.el — easily define and call git repo specific hydras]]
+- Emacs Lisp:
+  - [[https://howardism.org/Technical/Emacs/query-data-structures.html][Querying Data Structures in Lisp]]
+  - [[https://www.classcentral.com/report/best-lisp-courses/][15 Best Lisp Courses to Take in 2023, for Emacs Lisp, Common Lisp, Scheme and Racket, by ClassCentral -featuring System Crafters]] ([[https://www.reddit.com/r/emacs/comments/136y6gx/15_best_lisp_courses_to_take_in_2023_for_emacs/][Reddit]])
+- Appearance:
+  - [[https://github.com/egstatsml/emacs_fancy_logos][emacs_fancy_logos: Fancy logos for Emacs/XEmacs/GNUs]]
+  - [[https://www.reddit.com/r/emacs/comments/13a2pua/customized_scratch_text_for_some_eye_candy_on/][Customized scratch text for some eye candy on startup]]
+  - [[https://www.reddit.com/r/emacs/comments/139jy6t/new_minimalistic_dashboard/][New minimalistic dashboard.]]
+  - [[https://www.reddit.com/r/emacs/comments/138wsan/psa_run_nerdiconsinstallfonts_if_your/][PSA: Run nerd-icons-install-fonts if your modeline/dashboard is broken]]
+- Navigation:
+  - [[https://github.com/thread314/intuitive-tab-line-mode#readme][intuitive-tab-line-mode]]
+  - [[https://www.youtube.com/watch?v=uyMdDzjQFMU][Declutter Your Buffer Lists in Emacs with Perspective.el]]
+- Org Mode:
+  - [[https://i.redd.it/rre5ggpx9jya1.png][Tags are functions of Org sections (•̀ᴗ•́)و]] ([[https://www.reddit.com/r/emacs/comments/13bdlck/tags_are_functions_of_org_sections_ᴗو/][Reddit]])
+  - Org Roam:
+    - [[https://www.reddit.com/r/emacs/comments/135dhh5/code_snippet_to_switch_between_multiple/][Code snippet to switch between multiple Zettlekasten with org-roam]]
+    - [[https://github.com/aatmunbaxi/org-roam-pygraph][org-roam-pygraph: Build a graph of your org-roam collection for use in Python]] ([[https://www.reddit.com/r/orgmode/comments/13b9er3/orgroampygraph_build_a_graph_of_your_orgroam/][Reddit]])
+  - Import, export, and integration:
+    - [[https://jeffkreeftmeijer.com/ox-html-stable-ids/][ox-html-stable-ids.el: Stable IDs for ox-html.el]]
+    - [[https://www.youtube.com/watch?v=ov1w2g-Rihc][Org-mode - LaTex default image width]] (03:32)
+    - [[https://www.youtube.com/watch?v=EnI_7A3GWqA][Org-mode - Display bullets one by one in beamer]] (03:18)
+    - [[https://osiux.com/2023-02-24-automate-blog-from-org-mode-to-html-markdown-gemini-using-docker-alpine-org2blog-and-gitlab-ci.html][Automate conversion of blog from /org-mode/ to /Html/, /Markdown/ and /Gemini/ using /Docker image/ =alpine-org2blog= and /GitLab CI/]]
+    - [[https://jeffkreeftmeijer.com/org-readme/][Generate repository README files from Org documents]]
+    - [[https://github.com/jonno-l-r/org_notebook_renderer][jonno-l-r/org_notebook_renderer: Blog-style notebook indexer and renderer for org documents]] ([[https://www.reddit.com/r/emacs/comments/134n9ky/personal_project_simple_blogging_system_for/][Reddit]]) - PHP
+    - [[https://jeffkreeftmeijer.com/ox-md-title/][ox-md-title: Document titles for ox-md.el]]
+    - [[https://www.reddit.com/r/emacs/comments/134s5be/integrate_zotero_pdf_notes_with_org_roam/][Integrate Zotero pdf notes with org roam]]
+    - [[https://www.reddit.com/r/emacs/comments/135d1t7/reading_keybindings_from_an_orgtable_and_generate/][Reading keybindings from an org-table and generate relevant elisp code.]]
+- Completion:
+  - [[https://www.reddit.com/r/emacs/comments/13bdcg0/lam_manage_buffer_local_abbrevs_at_the_speed_of/][lam: Manage buffer local abbrevs at the speed of light]]
+  - [[https://takeonrules.com/2023/05/07/completion-at-point-function-capf-for-org-mode-links/][Jeremy Friesen: Completion at Point Function (CAPF) for Org-Mode Links]]
+- Coding:
+  - [[https://mihamina.rktmb.org/2023/04/emacs-pulumi-lsp.html][Emacs Pulumi LSP]]
+- Mail, news, and chat:
+  - [[https://d-s.sh/2023/moving-my-rss-reading-to-emacs-with-elfeed/][Moving My RSS Reading to Emacs With Elfeed]] ([[https://www.reddit.com/r/emacs/comments/139x17j/moving_my_rss_reading_to_emacs_with_elfeed/][Reddit]], [[https://irreal.org/blog/?p=11338][Irreal]])
+  - [[https://lambdaland.org/posts/2023-05-03_email_with_outlook/][Lambda Land: Using a Real Mail Client with Outlook]] - mu4e
+- Doom Emacs:
+  - [[https://www.youtube.com/watch?v=1P8DIxG4gBE][Comment installer Doom Emacs]] (30:20)
+- Multimedia:
+  - [[https://mbork.pl/2023-05-06_Juggling_playlists_in_EMMS][Marcin Borkowski: Juggling playlists in EMMS]]
+- AI:
+  - [[https://www.reddit.com/r/emacs/comments/137wsio/eshell_command/][?? eshell command]]
+  - [[https://dindi.garjola.net/ai-assistants.html][Garjola Dindi: AI assistants in Emacs. Don't use ChatGPT. Help Open Science.]]
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/136ec3v/weekly_tips_tricks_c_thread/][Weekly Tips, Tricks, &c. Thread]]
+  - [[https://www.reddit.com/r/emacs/comments/138kr5m/whats_that_email_client_doing_here/][What's that email client doing here?]] ([[https://irreal.org/blog/?p=11336][Irreal]])
+  - [[https://protesilaos.com/cn/coach/][私人培训教学课程：Emacs, Linux 和人生 | Protesilaos Stavrou]]
+  - [[https://irreal.org/blog/?p=11326][Irreal: A Hopeless Addict]]
+  - [[https://irreal.org/blog/?p=11328][Irreal: An Apostate Comes Home]]
+  - [[https://www.youtube.com/watch?v=v8NaZV1LdN8][Live: General Emacs maintenance work]] (01:36:49)
+  - [[https://expe.lille.inria.fr/limesurvey/index.php/526753?lang=en&community=emacs][Survey studying how users automate frequent actions in daily use of interactive software (Emacs, Blender, etc.)]] ([[https://www.reddit.com/r/emacs/comments/13bjfvi/survey_on_using_and_designing_automated_actions/][Reddit]]) - 30-45min, non-libre JS
+- Other:
+  - [[https://emacspeak.blogspot.com/2023/05/emacspeak-580-ergodog-unleashed.html][T. V. Raman: Emacspeak 58.0 (ErgoDog) Unleashed]]
+  - [[https://www.youtube.com/watch?v=cSzj8dLS9Iw][Emacs Meta Dot And CTRL C CTRL D Are Super Useful 2023_05_07_22:48:48]] (12:29)
+  - [[https://www.reddit.com/r/emacs/comments/135kkx5/fyi_ch_typebreakmode/][FYI: C-h type-break-mode]]
+  - [[https://www.youtube.com/watch?v=1yHmGpix-bE][Emacs long line demo: operating a file with a 10MB long line!]]
+  - [[https://apps.bram85.nl/git/bram/gists/src/commit/31ac3363da925daafa2420b7f96c67612ca28241/gists/dwim-0x0-upload.el][dwim-shell-command for uploading files to 0x0.st]]
+  - [[https://qiita.com/mhangyo/items/e5fe6f4761f2a845d216][Mastering Emacs in Japaneseを入手する方法 - Qiita]]
+  - [[https://www.youtube.com/watch?v=02lXjHy9fKI][Текстовой редактор emacs]] (01:01:35)
+- Emacs development:
+  - emacs-devel:
+    - [[https://lists.gnu.org/archive/html/emacs-devel/2023-05/msg00176.html][Discussion about how to update or upgrade built-in packages]]
+    - [[https://lists.gnu.org/archive/html/emacs-devel/2023-05/msg00150.html][Discussion of possible improvements to timeclock.el]]
+    - [[https://lists.gnu.org/archive/html/emacs-devel/2023-05/msg00086.html][Re: [PATCH] Reviving qmail with X-Message-SMTP-Method in Gnus]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=40d66095635ead025b33dc693a19b463f70eb9ce][Use connection-aware functions when getting the UID/GID in Eshell]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=7acb3f1c060872b1802e7548d991ca8a9f0fef01][Add the function declaration and property `important-return-value`]]
+- New packages:
+  - [[package:bencode][bencode]]: Bencode encoding / decoding (MELPA)
+  - [[package:devil][devil]]: Minor mode for Devil-like command entering (MELPA)
+  - [[package:mame][mame]]: A MAME front-end (MELPA)
+  - [[package:python-view-data][python-view-data]]: View data in python (MELPA)
+  - [[package:tree-inspector][tree-inspector]]: Inspector tool for Emacs Lisp object that uses a treeview (GNU ELPA)
+  - [[package:zone-tmux-clock][zone-tmux-clock]]: Zone out with a tmux style clock (MELPA)
+    
+Links from [[https://www.reddit.com/r/emacs][reddit.com/r/emacs]], [[https://www.reddit.com/r/orgmode][r/orgmode]], [[https://www.reddit.com/r/spacemacs][r/spacemacs]], [[https://www.reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://lobste.rs/search?q=emacs&what=stories&order=newest][lobste.rs]], [[https://lemmy.ml/c/emacs][lemmy]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]], [[https://emacslife.com/calendar/][Emacs Calendar]], and [[http://lists.gnu.org/archive/html/emacs-devel/2023-05][emacs-devel]]. Thanks to Andrés Ramírez for emacs-devel links. Do you have an Emacs-related link or announcement? Please e-mail me at [[mailto:sacha@sachachua.com][sacha@sachachua.com]]. Thank you!
+
+#+RESULTS:
+** 2023-05-01 Emacs news
+    :PROPERTIES:
+    :EXPORT_ELEVENTY_PERMALINK: /blog/2023/05/2023-05-01-emacs-news/
+    :EXPORT_ELEVENTY_FILE_NAME: blog/2023/05/2023-05-01-emacs-news/
+    :EXPORT_DATE: 2023-05-01T08:43:18-0400
+    :Effort:   0:15
+    :END:
+    :LOGBOOK:
+    CLOCK: [2023-05-01 Mon 09:06]--[2023-05-02 Tue 10:05] => 24:59
+    :END:
+
+- Upcoming events:
+  - EmacsATX: Emacs Social https://www.meetup.com/emacsatx/events/291143201/ Wed May 3 1630 America/Vancouver - 1830 America/Chicago - 1930 America/Toronto - 2330 Etc/GMT -- Thu May 4 0130 Europe/Berlin - 0500 Asia/Kolkata - 0730 Asia/Singapore
+  - Emacs Paris (virtual, in French) https://www.emacs-doctor.com/emacs-paris-user-group/ Thu May 4 0830 America/Vancouver - 1030 America/Chicago - 1130 America/Toronto - 1530 Etc/GMT - 1730 Europe/Berlin - 2100 Asia/Kolkata - 2330 Asia/Singapore
+  - M-x Research (contact them for password): TBA https://m-x-research.github.io/ Fri May 5 0800 America/Vancouver - 1000 America/Chicago - 1100 America/Toronto - 1500 Etc/GMT - 1700 Europe/Berlin - 2030 Asia/Kolkata - 2300 Asia/Singapore
+  - Mastering Emacs book club https://susam.net/maze/meet/mastering-emacs/ Fri May 5 1200 America/Vancouver - 1400 America/Chicago - 1500 America/Toronto - 1900 Etc/GMT - 2100 Europe/Berlin -- Sat May 6 0030 Asia/Kolkata - 0300 Asia/Singapore
+  - Mastering Emacs book club https://susam.net/maze/meet/mastering-emacs/ Sat May 6 0200 America/Vancouver - 0400 America/Chicago - 0500 America/Toronto - 0900 Etc/GMT - 1100 Europe/Berlin - 1430 Asia/Kolkata - 1700 Asia/Singapore
+  - Mastering Emacs book club https://susam.net/maze/meet/mastering-emacs/ Sun May 7 0200 America/Vancouver - 0400 America/Chicago - 0500 America/Toronto - 0900 Etc/GMT - 1100 Europe/Berlin - 1430 Asia/Kolkata - 1700 Asia/Singapore
+  - Emacs.si (in person): Emacs.si meetup #5 2023 (v zivo) https://dogodki.kompot.si/events/c1ecfef6-f7c4-4df2-99ef-4a7fd78c8cd6 Wed May 10 2000 CET
+  - Atelier Emacs Montpellier (in person) https://lebib.org/date/atelier-emacs Fri May 12 1800 Europe/Paris
+  - EmacsSF (in person): coffee.el: calm and civilized, actually https://www.meetup.com/emacs-sf/events/293234996/ Sat May 13 1100 America/Los_Angeles
+- Emacs configuration:
+  - [[https://francopasut.netlify.app/post/emacs_portable_use-package_straight/][D.V.F.P.: Emacs, portable configurazione with "use-package" and "straight"]]
+  - [[https://rossabaker.com/configs/emacs/][Ross A. Baker's Emacs config]]
+  - [[https://github.com/benthamite/dotfiles/blob/master/emacs/config.org][Pablo’s Emacs config]]
+  - [[https://www.reddit.com/r/emacs/comments/1333621/wrote_a_custom_modeline_with_some_help_from/][Wrote a custom mode-line with some help from chatgpt. Shaved some time off init time by removing doom-modeline.]]
+  - [[https://github.com/kborling/emacs-config][kborling's Emacs config]]
+  - [[https://github.com/kchanqvq/.emacs.d][My emacs config, with README.org index generated from init.el]] ([[https://www.reddit.com/r/emacs/comments/13045x0/my_emacs_config_with_readmeorg_index_generated/][Reddit]])
+  - [[https://www.youtube.com/live/hoP4I9ounyQ?feature=share][Leaving Doom Emacs For GNU Emacs?]]
+- Emacs Lisp:
+  - [[https://emacstil.com/til/2023/04/27/how-to-define-an-interactive-function-with-multiple-prompts/][Emacs TIL: How to define an interactive function with multiple prompts]]
+- Appearance:
+  - [[https://www.reddit.com/r/emacs/comments/134k63v/pair_programming_code_snippet_what_i_use_to_pair/][Pair Programming Code Snippet (what I use to pair program)]]
+  - [[https://tony-zorman.com/images/emacs-potpourri/pixel-scroll-precision-mode.mp4][[mp4] Pixel Scroll Precision Mode]]
+  - [[https://emacs.dyerdwelling.family/emacs/20230406200632-emacs--cursor-blinking-rate/][James Dyer: Cursor Blinking Rate]]
+  - [[https://github.com/rainstormstudio/nerd-icons.el][nerd-icons.el: A Library for Nerd Font icons]]
+  - [[https://github.com/rougier/nano-dialog][nano-dialog: Emacs native dialog box]]
+  - [[https://www.reddit.com/r/emacs/comments/12y8tz6/hima_a_minimal_light_theme_with_pretty_colors/][Hima - A minimal light theme with pretty colors]]
+- Navigation:
+  - [[https://blog.jmthornton.net/p/emacs-project-override][Overriding project.el project root in Emacs]]
+  - [[https://macowners.club/posts/custom-functions-5-navigation/][Aimé Bertrand: Custom functions No. 5 - Navigation]] ([[https://irreal.org/blog/?p=11330][Irreal]])
+- Writing:
+  - [[https://www.youtube.com/watch?v=6-zdJenPcmc][LaTeX previews in emacs]] (03:22)
+  - [[https://www.reddit.com/r/emacs/comments/12ysu9l/emacspowerthesaurus_040_is_out/][emacs-powerthesaurus 0.4.0 is out]]
+- Org Mode:
+  - [[https://www.youtube.com/watch?v=ucuiyL7Q27E][Emacs + Orgmode synergy]] (05:28)
+  - [[https://www.youtube.com/watch?v=dzd1ZV3Zm3U][MAXIMUM FOCUS | Org Mode Deep Work Log Updated and Improved! (Based On Feedback)]] (06:00)
+  - [[https://www.wisdomandwonder.com/emacs/13972/org-mode-table-data-%e2%87%92-code-%e2%87%92-results][Grant Rettke: Org mode: Table Data -> Code -> Results]] ([[https://irreal.org/blog/?p=11321][Irreal]])
+  - [[https://taonaw-blog.netlify.app/2022-03-13/][Org ID, Org Attach & Better Folder Names · The Art of Not Asking Why]]
+  - [[http://xenodium.com/generating-elisp-org-docs][Alvaro Ramirez: Generating elisp org docs]]
+  - [[https://macadie.info/2023/04/20/alternatives-to-org-that-i-will-not-be-using/][Alternatives to Org (that I will not be using) – MacAdie Web Blog]] ([[https://irreal.org/blog/?p=11317][Irreal]])
+  - Import, export, and integration:
+    - [[https://www.youtube.com/watch?v=LS0JMOdQw-s][Emacs | How To Create Beautiful HTML Documents With Org Mode]] (28:05)
+    - [[https://github.com/novoid/postprocess_Org-mode_iCal_export][postprocess_Org-mode_iCal_export: Adding reminder alarms (defined as Org-mode tags) to your iCalendar export file]]
+    - [[https://github.com/punchagan/zulip-helpers.el][zulip-helpers.el: Some helpers to post from my org-mode file to Zulip]]
+    - [[https://osiux.com/2023-03-06-how-to-automate-graphviz-generate-image-from-dot-file-using-alpine-org2blog.html][How To automate GraphViz generate image from dot file using alpine]]
+    - [[https://github.com/novoid/exchange2org][exchange2org: Connects to your Exchange server and extracts data in Org-mode format]]
+    - [[https://www.youtube.com/watch?v=HaiqWMG78WA][Org-mode - Change beamer colours]] (07:15)
+- Coding:
+  - [[https://www.youtube.com/watch?v=JmmTUIahB1U][Emacs, Pyright & Eglot make an excellent Python IDE]] (11:04, [[https://www.reddit.com/r/emacs/comments/131ovtw/emacs_pyright_eglot_make_an_excellent_python_ide/][Reddit]])
+  - [[https://lifeofpenguin.blogspot.com/2023/04/gnu-emacs-as-lightweight-ide-assembly.html][GNU Emacs as a lightweight IDE - Assembly]] ([[https://www.reddit.com/r/emacs/comments/12zcop7/gnu_emacs_as_a_lightweight_ide_assembly/][Reddit]]) - CEDET
+  - [[https://www.youtube.com/watch?v=W5_mEolJ_Bs][emacs lispy meow clojure programming screencast]] (01:31:24)
+  - [[https://macroexpand.net/pages/git-related.html][Git commits as a way to find related files]]
+- Mail, news, and chat:
+  - [[https://mike.puddingtime.org/posts/2023-04-17-succumbed-to-mu-dot/][Succumbed to mu]]
+  - [[https://mike.puddingtime.org/posts/2023-04-20-quick-mu4e-notes/][Quick mu4e notes]]
+  - [[https://irreal.org/blog/?p=11323][Irreal: Fixing Mu4e Forcing Opening In Full Frame]]
+- Doom Emacs:
+  - [[https://www.youtube.com/watch?v=h0oWdOrjjHQ][سری ویدیو های Emacs | نصب و راه اندازی doom emacs]] (05:57)
+- AI:
+  - [[http://xenodium.com/chatgpt-shell-available-on-melpa][chatgpt-shell on MELPA + feature rundown]] ([[https://www.reddit.com/r/emacs/comments/12ydzp5/chatgptshell_on_melpa_feature_rundown/][Reddit]])
+  - [[http://xenodium.com/chatgpt-shell-siblings-now-on-melpa-also][chatgpt-shell siblings now on MELPA too]] ([[https://www.reddit.com/r/emacs/comments/134iqn8/chatgptshell_siblings_now_on_melpa_too/][Reddit]])
+  - [[https://v.redd.it/xjyjiwjmphwa1][ChatGPT inline insertion in latest chatgpt-shell (C-u chatgpt-shell-prompt)]] ([[https://www.reddit.com/r/orgmode/comments/1316klb/chatgpt_inline_insertion_in_latest_chatgptshell/][Reddit]])
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/12zaqju/weekly_tips_tricks_c_thread/][Weekly Tips, Tricks, &c. Thread]]
+  - [[https://www.reddit.com/r/emacs/comments/12xha1k/how_to_lock_myself_out_of_my_config/][How to lock myself out of my config?]]
+  - [[https://www.youtube.com/watch?v=w8KCrpqOsrc][The Principles of System Crafting - System Crafters Live!]] (02:04:35)
+- Other:
+  - [[https://www.reddit.com/r/emacs/comments/1342xh4/ann_svgbatteryindicator/][[ANN] svg-battery-indicator]]
+  - [[https://www.reddit.com/r/emacs/comments/12xs2e8/new_package_sayregionel/][New Package: say-region.el]]
+  - [[https://xenodium.com/recordscreenshot-windows-the-lazy-way/][Recording and screenshotting windows: the lazy way]] ([[https://irreal.org/blog/?p=11315][Irreal]]) - Mac
+  - [[https://www.reddit.com/r/emacs/comments/131354i/guide_compile_your_own_emacs_to_make_it_really/][[Guide] Compile your own Emacs to make it really really fast, on Windows]]
+  - [[https://www.reddit.com/r/emacs/comments/131qmkk/custombuilt_emacs_vs_prebuilt_emacs_benchmarks/][Custom-built Emacs vs Pre-built Emacs benchmarks (v30.0.50) and current Emacs performance on Windows]]
+  - [[https://www.reddit.com/r/emacs/comments/12xbt17/if_youre_having_trouble_getting_emacs29_to_run/][If you're having trouble getting Emacs-29 to run under SystemD in Fedora....]]
+  - [[https://hackaday.com/2023/04/22/build-your-own-bootable-emacs-environment/][Build Your Own Bootable Emacs Environment]]
+  - [[https://github.com/Restif1975/bel-compiler][Restif1975/bel-compiler: A Bel compiler to Emacs Lisp bytecode]]
+- Emacs development:
+  - emacs-devel:
+    - [[https://lists.gnu.org/archive/html/emacs-devel/2023-04/msg00777.html][Copy and paste from Emacs 29 to Thunderbird doesn’t work]]
+    - [[https://lists.gnu.org/archive/html/emacs-devel/2023-04/msg00684.html][Continued discussion of CVEs]]
+    - [[https://lists.gnu.org/archive/html/emacs-devel/2023-04/msg00772.html][Discussion of package.el and stability of core packages]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=022f50ebe616e04bb34487a26d529ca08954d287][New command 'tramp-cleanup-some-buffers']]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=c7fc4c811923725b961cfbf7e6a2051ae08c1eea][eww: Provide completions for bookmarks and suggested URIs.]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=df6cc4d33b63880a270297ac321a0ae338274cd7][eww: Enable completion in URL/keyword prompt.]]
+- New packages:
+  - [[package:async-job-queue][async-job-queue]]: Dispatch queue of async jobs to a fixed number of slots (MELPA)
+  - [[package:bbww][bbww]]: Improved word-jumping functions (MELPA)
+  - [[package:bind][bind]]: Bind commands to keys (MELPA)
+  - [[package:bitpack][bitpack]]: Bit packing functions (MELPA)
+  - [[package:blackjack][blackjack]]: The game of Blackjack (MELPA)
+  - [[package:dall-e-shell][dall-e-shell]]: Interaction mode for DALL-E (MELPA)
+  - [[package:hima-theme][hima-theme]]: A minimal theme with pretty colors (MELPA)
+  - [[package:nerd-icons-completion][nerd-icons-completion]]: Add icons to completion candidates (MELPA)
+  - [[package:ob-chatgpt-shell][ob-chatgpt-shell]]: Org babel functions for ChatGPT evaluation (MELPA)
+  - [[package:ob-dall-e-shell][ob-dall-e-shell]]: Org babel functions for DALL-E evaluation (MELPA)
+  - [[package:org-assistant][org-assistant]]: Org babel extension for Chat Assistant APIs (MELPA)
+  - [[package:org-change][org-change]]: Annotate changes in org-mode files (MELPA)
+  - [[package:projection][projection]]: Project specific compilation commands (MELPA)
+  - [[package:rewriting-pcase][rewriting-pcase]]: Support for rewriting sexps in source code (MELPA)
+  - [[package:treemacs-nerd-icons][treemacs-nerd-icons]]: Emacs Nerd Font Icons theme for treemacs (MELPA)
+  - [[package:typst-mode][typst-mode]]: A major mode for working with Typst typesetting system (MELPA)
+
+Links from [[https://www.reddit.com/r/emacs][reddit.com/r/emacs]], [[https://www.reddit.com/r/orgmode][r/orgmode]], [[https://www.reddit.com/r/spacemacs][r/spacemacs]], [[https://www.reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://lobste.rs/search?q=emacs&what=stories&order=newest][lobste.rs]], [[https://lemmy.ml/c/emacs][lemmy]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]], [[https://emacslife.com/calendar/][Emacs Calendar]], and [[http://lists.gnu.org/archive/html/emacs-devel/2023-05][emacs-devel]]. Thanks to Andrés Ramírez for emacs-devel links. Do you have an Emacs-related link or announcement? Please e-mail me at [[mailto:sacha@sachachua.com][sacha@sachachua.com]]. Thank you!
+
 ** 2023-04-24 Emacs news
     :PROPERTIES:
     :EXPORT_ELEVENTY_PERMALINK: /blog/2023/04/2023-04-24-emacs-news/
@@ -262,7 +466,7 @@ Links from [[https://www.reddit.com/r/emacs][reddit.com/r/emacs]], [[https://www
   - [[https://lgmoneda.github.io/2023/04/08/semantic-search-for-org-roam.html][Semantic search for Org-Roam using LLM. Demo: https://youtu.be/vHamsOQW_N4]] ([[https://www.reddit.com/r/OrgRoam/comments/12im81z/semantic_search_for_orgroam_using_llm_demo/][Reddit]])
 - Community:
   - [[https://www.reddit.com/r/emacs/comments/12jexep/weekly_tips_tricks_c_thread/][Weekly Tips, Tricks, &c. Thread]]
-  - [[https://sqrtminusone.xyz/posts/2023-04-13-emacs/][916 days of Emacs]] ([[https://www.reddit.com/r/emacs/comments/12km8el/916_days_of_emacs/][Reddit]], [[https://news.ycombinator.com/item?id=35555481][HN]]) - nice graphs, including time breakdowns
+  - [[https://sqrtminusone.xyz/posts/2023-04-13-emacs/][916 days of Emacs]] ([[https://www.reddit.com/r/emacs/comments/12km8el/916_days_of_emacs/][Reddit]], [[https://news.ycombinator.com/item?id=35555481][HN]], [[https://irreal.org/blog/?p=11311][Irreal]]) - nice graphs, including time breakdowns
   - [[https://mike.puddingtime.org/posts/2023-04-03-daily-notes-for-2023-04-03/#vimari-and-my-emacs-origin-story][Vimari and my Emacs origin story]]
   - [[https://www.reddit.com/r/emacs/comments/12nnssx/i_left_emacs_and_orgmode_8_months_ago_and/][I left Emacs and Org-Mode 8 months ago and switched to more modern note-taking tools. But yesterday I came back to it, and now I feel at home.]]
   - [[https://www.reddit.com/r/emacs/comments/12jq6pr/new_posttonyaldoncom/][[NEW] post.tonyaldon.com]]
@@ -352,7 +556,7 @@ Links from [[https://www.reddit.com/r/emacs][reddit.com/r/emacs]], [[https://www
 		- [[https://www.unwoundstack.com/blog/indie-org.sh.html][Unwound Stack: indie-org.sh]] - demonstration site for indieweb publishing
 		- [[https://sachachua.com/blog/2023/04/using-org-mode-tables-and-emacs-lisp-to-create-minecraft-java-json-command-books/][Sacha Chua: Using Org Mode tables and Emacs Lisp to create Minecraft Java JSON command books]]
 	- Other apps:
-		- [[http://yummymelon.com/captee/][Captee for macOS released - sharing as Org or Markdown]]
+		- [[http://yummymelon.com/captee/][Captee for macOS released - sharing as Org or Markdown]] ([[https://irreal.org/blog/?p=11334][Irreal]])
 		- [[http://xenodium.com/flat-habits-114-released][Flat Habits 1.1.4 released (org based file store)]] iOS ([[https://www.reddit.com/r/orgmode/comments/12dccuf/flat_habits_114_released_org_based_file_store/][Reddit]])
   - Org development:
     - [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=ddd8281e62cab09bfb3cf1e49581940aea831f40][lisp/org.el: Allow limiting inline image width]]
@@ -10743,7 +10947,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 ** 2021-04-12 Emacs news
 :PROPERTIES:
 :POST_TAGS: emacs, emacs-news
-:ID:       o2b:245accf4-b8f1-40c4-9310-71a157d252f2
 :POST_DATE: [2021-04-12 Mon 00:58]
 :BLOG:     sacha
 :POSTID:   29716
@@ -10823,7 +11026,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 ** 2021-04-05 Emacs news
 :PROPERTIES:
 :POST_TAGS: emacs, emacs-news
-:ID:       o2b:e8160c78-f9a9-4d72-a640-ff177527c518
 :POST_DATE: [2021-04-05 Mon 22:22]
 :BLOG:     sacha
 :POSTID:   29709
@@ -10927,7 +11129,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 ** 2021-03-29 Emacs news
 :PROPERTIES:
 :POST_TAGS: emacs, emacs-news
-:ID:       o2b:16ed4d89-5c32-42e1-a7aa-ffe7ad4bbd26
 :POST_DATE: [2021-03-29 Mon 01:01]
 :BLOG:     sacha
 :POSTID:   29702
@@ -11028,7 +11229,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 ** 2021-03-22 Emacs news
 :PROPERTIES:
 :POST_TAGS: emacs, emacs-news
-:ID:       o2b:f8ffdb03-ea6f-43a3-acd6-7e5108aa16a9
 :POST_DATE: [2021-03-22 Mon 20:14]
 :BLOG:     sacha
 :POSTID:   29690
@@ -11146,7 +11346,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 ** 2021-03-15 Emacs news
 :PROPERTIES:
 :POST_TAGS: emacs, emacs-news
-:ID:       o2b:d78b1623-110b-4468-8ed7-fd54e4a4d805
 :POST_DATE: [2021-03-15 Mon 00:41]
 :BLOG:     sacha
 :POSTID:   29684
@@ -11244,7 +11443,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 ** 2021-03-08 Emacs news
 :PROPERTIES:
 :POST_TAGS: emacs, emacs-news
-:ID:       o2b:61402fd9-1201-4f49-b5ab-45c33d2651de
 :POST_DATE: [2021-03-08 Mon 10:44]
 :BLOG:     sacha
 :POSTID:   29682
@@ -11346,7 +11544,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 
 ** 2021-03-01 Emacs news
    :PROPERTIES:
-   :ID:       o2b:0bc6c7b8-fb09-4959-9d8d-a90a5ba2a114
    :POST_DATE: [2021-03-01 Mon 09:24]
    :BLOG:     sacha
    :POSTID:   29679
@@ -11431,7 +11628,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 
 ** 2021-02-22 Emacs news
    :PROPERTIES:
-   :ID:       o2b:3ff9ecc9-02c8-461f-aee9-b20b532a35b6
    :POST_DATE: [2021-02-22 Mon 23:47]
    :BLOG:     sacha
    :POSTID:   29677
@@ -11548,7 +11744,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 
 ** 2021-02-15 Emacs news
    :PROPERTIES:
-   :ID:       o2b:d0316c31-14fe-4eca-ae6c-48f57110ec75
    :POST_DATE: [2021-02-15 Mon 00:29]
    :BLOG:     sacha
    :POSTID:   29675
@@ -11674,7 +11869,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 
 ** 2021-02-08 Emacs news  :emacs:
    :PROPERTIES:
-   :ID:       o2b:3ba056c5-5870-4e93-b33b-fa4ea70cdf6d
    :POST_DATE: [2021-02-08 Mon 00:34]
    :BLOG:     sacha
    :POSTID:   29673
@@ -11779,7 +11973,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2021-02][emacs-devel]].
 ** 2021-02-01 Emacs news
    :PROPERTIES:
-   :ID:       o2b:4ac2a914-0e6a-4ef4-8423-4191de35309a
    :POST_DATE: [2021-02-01 Mon 16:20]
    :BLOG:     sacha
    :POSTID:   29665
@@ -11881,7 +12074,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 
 ** 2021-01-25 Emacs news
    :PROPERTIES:
-   :ID:       o2b:b1d5bfb6-57a8-4be1-997d-6379242836a6
    :POST_DATE: [2021-01-25 Mon 23:16]
    :BLOG:     sacha
    :POSTID:   29662
@@ -11985,7 +12177,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 
 ** 2021-01-18 Emacs news
    :PROPERTIES:
-   :ID:       o2b:2ccb8430-1ed6-4e45-a305-89855aaedd9d
    :POST_DATE: [2021-01-18 Mon 01:29]
    :POSTID:   29661
    :BLOG:     sacha
@@ -12066,7 +12257,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 
 ** 2021-01-11 Emacs news
    :PROPERTIES:
-   :ID:       o2b:fcf89dcf-e918-4b4c-87c7-4917203b8b49
    :POST_DATE: [2021-01-11 Mon 01:20]
    :BLOG:     sacha
    :POSTID:   29660
@@ -12160,7 +12350,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2021-01][emacs-devel]].
 ** 2021-01-04 Emacs news
    :PROPERTIES:
-   :ID:       o2b:383a6254-427c-4400-a24a-f0d1ad733135
    :POST_DATE: [2021-01-05 Tue 01:11]
    :BLOG:     sacha
    :POSTID:   29658
@@ -12261,7 +12450,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 #+RESULTS:
 ** 2020-12-28 Emacs news
    :PROPERTIES:
-   :ID:       o2b:a11d3727-29ef-4ebf-bcfe-18ce73d05656
    :POST_DATE: [2020-12-28 Mon 01:18]
    :BLOG:     sacha
    :POSTID:   29656
@@ -12356,7 +12544,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 
 ** 2020-12-21 Emacs news
    :PROPERTIES:
-   :ID:       o2b:af4b0bba-68bb-4a84-8197-c9d597a99479
    :POST_DATE: [2020-12-21 Mon 01:45]
    :BLOG:     sacha
    :POSTID:   29655
@@ -12449,7 +12636,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-12][emacs-devel]].
 ** 2020-12-14 Emacs news
    :PROPERTIES:
-   :ID:       o2b:056b6201-efb1-4abd-ae05-b0d04e1ab6a0
    :POST_DATE: [2020-12-15 Tue 00:53]
    :BLOG:     sacha
    :POSTID:   29654
@@ -12575,7 +12761,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 
 ** 2020-12-07 Emacs news
    :PROPERTIES:
-   :ID:       o2b:4c95392e-ffde-41e6-b50e-0ef7decd204e
    :POST_DATE: [2020-12-07 Mon 23:36]
    :BLOG:     sacha
    :POSTID:   29643
@@ -12674,7 +12859,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 
 ** 2020-11-30 Emacs news
    :PROPERTIES:
-   :ID:       o2b:c03777e3-064f-4218-9a1a-8218b7bd48c4
    :POST_DATE: [2020-11-30 Mon 11:18]
    :POSTID:   29640
    :BLOG:     sacha
@@ -12762,7 +12946,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-11][emacs-devel]].
 ** 2020-11-23 Emacs news
    :PROPERTIES:
-   :ID:       o2b:d6391745-da60-400b-90e6-50a9648e8e75
    :POST_DATE: [2020-11-24 Tue 01:12]
    :POSTID:   29639
    :BLOG:     sacha
@@ -12837,7 +13020,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 
 ** 2020-11-16 Emacs news
    :PROPERTIES:
-   :ID:       o2b:7582f2a3-51bf-45c4-a4c1-c7e99ae092c3
    :POST_DATE: [2020-11-16 Mon 22:35]
    :POSTID:   29637
    :BLOG:     sacha
@@ -12906,7 +13088,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 
 ** 2020-11-09 Emacs news
    :PROPERTIES:
-   :ID:       o2b:bfb71375-ef5e-4504-a770-85f3e58e418e
    :POST_DATE: [2020-11-09 Mon 22:55]
    :POSTID:   29636
    :BLOG:     sacha
@@ -12985,7 +13166,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-11][emacs-devel]].
 ** 2020-11-02 Emacs news
    :PROPERTIES:
-   :ID:       o2b:e4c9c6a9-2eb4-4c61-a3e0-1171a0c3abfd
    :POST_DATE: [2020-11-02 Mon 22:26]
    :POSTID:   29635
    :BLOG:     sacha
@@ -13081,7 +13261,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-11][emacs-devel]].
 ** 2020-10-26 Emacs news
    :PROPERTIES:
-   :ID:       o2b:ad8ff751-d4bb-4de2-8797-b9ee56629652
    :POST_DATE: [2020-10-26 Mon 22:33]
    :POSTID:   29634
    :BLOG:     sacha
@@ -13155,7 +13334,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 
 ** 2020-10-19 Emacs news
    :PROPERTIES:
-   :ID:       o2b:f1f46a1a-24fc-4ed7-905a-9e9d7a6319af
    :POST_DATE: [2020-10-20 Tue 00:04]
    :POSTID:   29633
    :BLOG:     sacha
@@ -13254,7 +13432,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 
 ** 2020-10-12 Emacs news
    :PROPERTIES:
-   :ID:       o2b:1b7fdaec-c4a6-4bfb-8fd6-390b22b4946a
    :POST_DATE: [2020-10-12 Mon 23:21]
    :POSTID:   29632
    :BLOG:     sacha
@@ -13346,7 +13523,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-10][emacs-devel]].
 ** 2020-10-05 Emacs news
    :PROPERTIES:
-   :ID:       o2b:24e30f9e-4957-4074-8e14-3589d1d84f91
    :POST_DATE: [2020-10-05 Mon 23:05]
    :POSTID:   29631
    :BLOG:     sacha
@@ -13425,7 +13601,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-10][emacs-devel]].
 ** 2020-09-28 Emacs news
    :PROPERTIES:
-   :ID:       o2b:2c86ab6b-1f7a-405a-94f2-5c8ac5b42f64
    :POST_DATE: [2020-09-28 Mon 23:03]
    :POSTID:   29630
    :BLOG:     sacha
@@ -13517,7 +13692,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-09][emacs-devel]].
 ** 2020-09-21 Emacs news
    :PROPERTIES:
-   :ID:       o2b:fc9bfdc3-b299-48cc-be77-b7819bd45caa
    :POST_DATE: [2020-09-21 Mon 23:52]
    :POSTID:   29629
    :BLOG:     sacha
@@ -13621,7 +13795,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-09][emacs-devel]].
 ** 2020-09-14 Emacs news
    :PROPERTIES:
-   :ID:       o2b:ec6f0a08-eb2d-4903-935c-495eff0b5ccc
    :POST_DATE: [2020-09-15 Tue 01:05]
    :POSTID:   29628
    :BLOG:     sacha
@@ -13726,7 +13899,6 @@ Please encourage someone you'd like to hear from! =)
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-09][emacs-devel]].
 ** 2020-09-07 Emacs news
    :PROPERTIES:
-   :ID:       o2b:16739eda-ef26-4680-b893-cd01dea9e377
    :POST_DATE: [2020-09-07 Mon 00:39]
    :POSTID:   29624
    :BLOG:     sacha
@@ -13808,7 +13980,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-09][emacs-devel]].
 ** 2020-08-31 Emacs news
    :PROPERTIES:
-   :ID:       o2b:d628d9c1-23b6-4426-8e14-cf4b443e9c98
    :POST_DATE: [2020-09-01 Tue 00:55]
    :POSTID:   29621
    :BLOG:     sacha
@@ -13895,7 +14066,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-08][emacs-devel]].
 ** 2020-08-24 Emacs news
    :PROPERTIES:
-   :ID:       o2b:565016ec-8999-497f-a80d-acfc769a138d
    :POST_DATE: [2020-08-25 Tue 00:39]
    :POSTID:   29617
    :BLOG:     sacha
@@ -13990,7 +14160,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-08][emacs-devel]].
 ** 2020-08-17 Emacs news
    :PROPERTIES:
-   :ID:       o2b:7332992f-7387-492d-9242-3dab9a644e8a
    :POST_DATE: [2020-08-17 Mon 23:06]
    :POSTID:   29616
    :BLOG:     sacha
@@ -14090,7 +14259,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-08][emacs-devel]].
 ** 2020-08-10 Emacs news
    :PROPERTIES:
-   :ID:       o2b:6346eeff-974a-449e-8f0c-8d71291789e3
    :POST_DATE: [2020-08-10 Mon 23:58]
    :POSTID:   29613
    :BLOG:     sacha
@@ -14200,7 +14368,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-08][emacs-devel]].
 ** 2020-08-03 Emacs news
    :PROPERTIES:
-   :ID:       o2b:44255253-ad1f-4605-999e-30f1a62cd0e8
    :POST_DATE: [2020-08-03 Mon 22:25]
    :POSTID:   29612
    :BLOG:     sacha
@@ -14290,7 +14457,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-08][emacs-devel]].
 ** 2020-07-27 Emacs news
    :PROPERTIES:
-   :ID:       o2b:47509643-c131-4285-9fde-389c3fd405de
    :POST_DATE: [2020-07-28 Tue 00:01]
    :POSTID:   29607
    :BLOG:     sacha
@@ -14368,7 +14534,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 
 ** 2020-07-20 Emacs news
    :PROPERTIES:
-   :ID:       o2b:f035b513-adb4-4ced-b9f6-4b2adc7712b6
    :POST_DATE: [2020-07-20 Mon 23:34]
    :POSTID:   29606
    :BLOG:     sacha
@@ -14449,7 +14614,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-07][emacs-devel]].
 ** 2020-07-13 Emacs news
    :PROPERTIES:
-   :ID:       o2b:cf40b4df-4424-4a01-8769-58924c4d4ecc
    :POST_DATE: [2020-07-13 Mon 22:51]
    :POSTID:   29600
    :BLOG:     sacha
@@ -14525,7 +14689,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-07][emacs-devel]].
 ** 2020-07-06 Emacs news
    :PROPERTIES:
-   :ID:       o2b:dff0806b-b4e0-445c-8a5c-612f8f6754ab
    :POST_DATE: [2020-07-06 Mon 14:30]
    :POSTID:   29595
    :BLOG:     sacha
@@ -14596,7 +14759,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-07][emacs-devel]].
 ** 2020-06-29 Emacs news
    :PROPERTIES:
-   :ID:       o2b:2c32dc24-e34c-40f6-9b0e-a7a36519d0c7
    :POST_DATE: [2020-06-29 Mon 00:35]
    :POSTID:   29589
    :BLOG:     sacha
@@ -14662,7 +14824,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 
 ** 2020-06-22 Emacs news
    :PROPERTIES:
-   :ID:       o2b:f9c3b226-f7ef-421c-b2fe-2c106dfee9e6
    :POST_DATE: [2020-06-23 Tue 01:16]
    :POSTID:   29587
    :BLOG:     sacha
@@ -14745,7 +14906,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 
 ** 2020-06-15 Emacs news
    :PROPERTIES:
-   :ID:       o2b:e64746c4-42f8-403e-a8a2-1eb5d8cd8470
    :POST_DATE: [2020-06-15 Mon 23:00]
    :POSTID:   29582
    :BLOG:     sacha
@@ -14830,7 +14990,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-06][emacs-devel]].
 ** 2020-06-08 Emacs news
    :PROPERTIES:
-   :ID:       o2b:d8b3d1cb-92b7-435f-98a8-86cc2bded74f
    :POST_DATE: [2020-06-08 Mon 23:08]
    :POSTID:   29581
    :BLOG:     sacha
@@ -14918,7 +15077,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-06][emacs-devel]].
 ** 2020-06-01 Emacs news
    :PROPERTIES:
-   :ID:       o2b:f274f4dc-0b8b-4567-8181-db0dcf59418e
    :POST_DATE: [2020-06-01 Mon 23:29]
    :POSTID:   29567
    :BLOG:     sacha
@@ -15059,7 +15217,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-06][emacs-devel]].
 ** 2020-05-25 Emacs news
    :PROPERTIES:
-   :ID:       o2b:fba0969d-6a98-4e03-b104-2705b7899949
    :POST_DATE: [2020-05-25 Mon 21:26]
    :POSTID:   29566
    :BLOG:     sacha
@@ -15149,7 +15306,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 
 ** 2020-05-18 Emacs news
    :PROPERTIES:
-   :ID:       o2b:77159072-568e-4153-b4cd-248ba2d7435b
    :POST_DATE: [2020-05-18 Mon 20:25]
    :POSTID:   29564
    :BLOG:     sacha
@@ -15253,7 +15409,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-05][emacs-devel]].
 ** 2020-05-11 Emacs news
    :PROPERTIES:
-   :ID:       o2b:c3411764-597f-4d50-9d14-f77952636e4f
    :POST_DATE: [2020-05-11 Mon 21:52]
    :POSTID:   29563
    :BLOG:     sacha
@@ -15337,7 +15492,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-05][emacs-devel]].
 ** 2020-05-04 Emacs news
    :PROPERTIES:
-   :ID:       o2b:0b445a58-fc9b-4644-9170-70c73c2ddd66
    :POST_DATE: [2020-05-04 Mon 22:06]
    :POSTID:   29561
    :BLOG:     sacha
@@ -15435,7 +15589,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 
 ** 2020-04-27 Emacs news
    :PROPERTIES:
-   :ID:       o2b:14447896-8428-4e98-9329-16bd6c4a649e
    :POST_DATE: [2020-04-27 Mon 19:30]
    :POSTID:   29558
    :BLOG:     sacha
@@ -15519,7 +15672,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-04][emacs-devel]].
 ** 2020-04-20 Emacs news
    :PROPERTIES:
-   :ID:       o2b:5da60e67-6836-4627-a63e-5f5b6119361d
    :POST_DATE: [2020-04-20 Mon 07:48]
    :POSTID:   29557
    :BLOG:     sacha
@@ -15603,7 +15755,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-04][emacs-devel]].
 ** 2020-04-13 Emacs news
    :PROPERTIES:
-   :ID:       o2b:98be1864-f069-4e1a-917a-60d1cba25600
    :POST_DATE: [2020-04-14 Tue 00:01]
    :POSTID:   29556
    :BLOG:     sacha
@@ -15748,7 +15899,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-04][emacs-devel]].
 ** 2020-03-30 Emacs news
    :PROPERTIES:
-   :ID:       o2b:7096fe25-4bb4-4ead-87b9-0a60faffc1db
    :POST_DATE: [2020-03-30 Mon 19:57]
    :POSTID:   29546
    :BLOG:     sacha
@@ -15830,7 +15980,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-03][emacs-devel]].
 ** 2020-03-23 Emacs news
    :PROPERTIES:
-   :ID:       o2b:d38a631b-9b06-4f7e-86ac-1b43746d2560
    :POST_DATE: [2020-03-23 Mon 23:36]
    :POSTID:   29545
    :BLOG:     sacha
@@ -15910,7 +16059,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 
 ** 2020-03-16 Emacs news
    :PROPERTIES:
-   :ID:       o2b:8f969ca2-174c-4dc1-9662-b6dba2e0dc92
    :POST_DATE: [2020-03-16 Mon 20:08]
    :POSTID:   29544
    :BLOG:     sacha
@@ -15982,7 +16130,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-03][emacs-devel]].
 ** 2020-03-09 Emacs news
    :PROPERTIES:
-   :ID:       o2b:11293ba0-c097-4fe3-a50a-898d5864a3b4
    :POST_DATE: [2020-03-09 Mon 21:58]
    :POSTID:   29543
    :BLOG:     sacha
@@ -16052,7 +16199,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-03][emacs-devel]].
 ** 2020-03-02 Emacs news
    :PROPERTIES:
-   :ID:       o2b:e0bcf0de-555e-4f66-b293-ce82f79f5a7b
    :POST_DATE: [2020-03-02 Mon 19:47]
    :POSTID:   29541
    :BLOG:     sacha
@@ -16115,7 +16261,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-03][emacs-devel]].
 ** 2020-02-24 Emacs news
    :PROPERTIES:
-   :ID:       o2b:33d65c68-8318-456e-9785-ad1847ce3b99
    :POST_DATE: [2020-02-24 Mon 11:10]
    :POSTID:   29540
    :BLOG:     sacha
@@ -16188,7 +16333,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-02][emacs-devel]].
 ** 2020-02-17 Emacs news
    :PROPERTIES:
-   :ID:       o2b:c8aaac14-2c5c-4d50-a256-f2ffb5fb4067
    :POST_DATE: [2020-02-17 Mon 21:15]
    :POSTID:   29539
    :BLOG:     sacha
@@ -16274,7 +16418,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-02][emacs-devel]].
 ** 2020-02-10 Emacs news
    :PROPERTIES:
-   :ID:       o2b:4ae8ede9-cc6f-4d57-bd20-f96c582f27a4
    :POST_DATE: [2020-02-10 Mon 11:31]
    :POSTID:   29538
    :BLOG:     sacha
@@ -16354,7 +16497,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-02][emacs-devel]].
 ** 2020-02-03 Emacs news
    :PROPERTIES:
-   :ID:       o2b:7bb81d45-adf1-48c2-9d7f-7c2aef164169
    :POST_DATE: [2020-02-03 Mon 11:32]
    :POSTID:   29524
    :BLOG:     sacha
@@ -16442,7 +16584,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-02][emacs-devel]].
 ** 2020-01-27 Emacs news
    :PROPERTIES:
-   :ID:       o2b:9f50eb0b-5e81-4a92-bc9e-d66b8daa94f6
    :POST_DATE: [2020-01-27 Mon 19:33]
    :POSTID:   29516
    :BLOG:     sacha
@@ -16531,7 +16672,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-01][emacs-devel]].
 ** 2020-01-20 Emacs news
    :PROPERTIES:
-   :ID:       o2b:ea0d62ff-d940-43e5-ab44-7c8d02cf5b6f
    :POST_DATE: [2020-01-20 Mon 11:35]
    :POSTID:   29514
    :BLOG:     sacha
@@ -16615,7 +16755,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-01][emacs-devel]].
 ** 2020-01-13 Emacs news
    :PROPERTIES:
-   :ID:       o2b:f2ad83ed-102a-4ad8-943c-de7fdbdefa51
    :POST_DATE: [2020-01-13 Mon 11:14]
    :POSTID:   29513
    :BLOG:     sacha
@@ -16699,7 +16838,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2020-01][emacs-devel]].
 ** 2020-01-06 Emacs news
    :PROPERTIES:
-   :ID:       o2b:5bf4812f-a441-464c-a841-cc39cb3fc517
    :POST_DATE: [2020-01-06 Mon 14:33]
    :POSTID:   29507
    :BLOG:     sacha
@@ -16791,7 +16929,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 ** 2019-12-30 Emacs news
    CLOSED: [2019-12-30 Mon 08:07]
    :PROPERTIES:
-   :ID:       o2b:25564b6e-6a83-49ae-b4ab-245634f33dce
    :POSTID:   29506
    :BLOG:     sacha
    :END:
@@ -16867,7 +17004,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 
 ** 2019-12-23 Emacs news
    :PROPERTIES:
-   :ID:       o2b:fd80a85d-9dd4-4643-bebb-7d8fb22de636
    :POST_DATE: [2019-12-24 Tue 06:12]
    :POSTID:   29505
    :BLOG:     sacha
@@ -16965,7 +17101,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 
 ** 2019-12-16 Emacs news
    :PROPERTIES:
-   :ID:       o2b:6543b449-b5fd-480e-81f1-661d0766ab6c
    :POST_DATE: [2019-12-16 Mon 11:46]
    :POSTID:   29504
    :BLOG:     sacha
@@ -17056,7 +17191,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2019-12][emacs-devel]].
 ** 2019-12-09 Emacs news
    :PROPERTIES:
-   :ID:       o2b:77f0a0da-96b9-4ecf-84b5-5fae659f4dc3
    :POST_DATE: [2019-12-09 Mon 11:34]
    :POSTID:   29503
    :BLOG:     sacha
@@ -17132,7 +17266,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2019-12][emacs-devel]].
 ** 2019-12-02 Emacs news
    :PROPERTIES:
-   :ID:       o2b:d358ba4a-c0d8-48a3-8a2b-20c34d674a84
    :POST_DATE: [2019-12-02 Mon 20:13]
    :POSTID:   29501
    :BLOG:     sacha
@@ -17203,7 +17336,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2019-12][emacs-devel]].
 ** 2019-11-25 Emacs news
    :PROPERTIES:
-   :ID:       o2b:fed6b38f-1b68-442d-961c-231fdb9439b6
    :POST_DATE: [2019-11-25 Mon 11:31]
    :POSTID:   29498
    :BLOG:     sacha
@@ -17283,7 +17415,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 
 ** 2019-11-18 Emacs news
    :PROPERTIES:
-   :ID:       o2b:9d13967b-0916-43dd-8537-9272575bf8b4
    :POST_DATE: [2019-11-18 Mon 11:34]
    :POSTID:   29494
    :BLOG:     sacha
@@ -17359,7 +17490,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2019-11][emacs-devel]].
 ** 2019-11-11 Emacs news
    :PROPERTIES:
-   :ID:       o2b:a5f5f8ae-c1e9-462e-b174-b301c639b0f9
    :POST_DATE: [2019-11-11 Mon 11:33]
    :POSTID:   29492
    :BLOG:     sacha
@@ -17442,7 +17572,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 
 ** 2019-11-04 Emacs news
    :PROPERTIES:
-   :ID:       o2b:0b42c63f-bc65-4fba-a524-c77e509608d4
    :POST_DATE: [2019-11-04 Mon 11:32]
    :POSTID:   29484
    :BLOG:     sacha
@@ -17535,7 +17664,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2019-11][emacs-devel]].
 ** 2019-10-28 Emacs news
    :PROPERTIES:
-   :ID:       o2b:8fc3573e-f905-49a4-9050-968c9e8d9bf0
    :POST_DATE: [2019-10-28 Mon 07:31]
    :POSTID:   29483
    :BLOG:     sacha
@@ -17588,7 +17716,6 @@ Nov 2: [[https://emacsconf.org/2019/schedule][EmacsConf 2019 Schedule]] ([[https
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2019-10][emacs-devel]].
 ** 2019-10-21 Emacs news
    :PROPERTIES:
-   :ID:       o2b:781854f7-c5d5-4a99-b658-3a058fd65baa
    :POST_DATE: [2019-10-21 Mon 21:55]
    :POSTID:   29478
    :BLOG:     sacha
@@ -17671,7 +17798,6 @@ Nov 2: [[https://emacsconf.org/2019/schedule][EmacsConf 2019 Schedule]] ([[https
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2019-10][emacs-devel]].
 ** 2019-10-14 Emacs news
    :PROPERTIES:
-   :ID:       o2b:8cd8d2e0-cce9-43be-a93b-8488274e9756
    :POST_DATE: [2019-10-15 Tue 10:55]
    :POSTID:   29477
    :BLOG:     sacha
@@ -17769,7 +17895,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2019-10][emacs-devel]].
 ** 2019-10-07 Emacs news
    :PROPERTIES:
-   :ID:       o2b:f6c1ad34-6d00-4b2c-98eb-92dded116adf
    :POST_DATE: [2019-10-08 Tue 13:44]
    :POSTID:   29476
    :BLOG:     sacha
@@ -17853,7 +17978,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2019-10][emacs-devel]].
 ** 2019-09-30 Emacs news
    :PROPERTIES:
-   :ID:       o2b:4015bc2f-d854-4019-96b4-096583cab613
    :POST_DATE: [2019-09-30 Mon 22:08]
    :POSTID:   29470
    :BLOG:     sacha
@@ -17942,7 +18066,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2019-09][emacs-devel]].
 ** 2019-09-23 Emacs news
    :PROPERTIES:
-   :ID:       o2b:156dcc15-6783-4e23-bbf4-a015e5865010
    :POST_DATE: [2019-09-23 Mon 07:20]
    :POSTID:   29469
    :BLOG:     sacha
@@ -18050,7 +18173,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2019-09][emacs-devel]].
 ** 2019-09-16 Emacs news
    :PROPERTIES:
-   :ID:       o2b:c8141e97-9782-4423-b4cd-e0633647cdae
    :POST_DATE: [2019-09-16 Mon 07:16]
    :POSTID:   29468
    :BLOG:     sacha
@@ -18123,7 +18245,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2019-09][emacs-devel]].
 ** 2019-09-09 Emacs news
    :PROPERTIES:
-   :ID:       o2b:3999c89a-b24f-40db-8ffe-f33cd3e91475
    :POST_DATE: [2019-09-10 Tue 14:47]
    :POSTID:   29467
    :BLOG:     sacha
@@ -18197,7 +18318,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2019-09][emacs-devel]].
 ** 2019-09-02 Emacs news
   :PROPERTIES:
-   :ID:       o2b:a477277d-143d-4642-9c36-856a06fabc0d
    :POST_DATE: [2019-09-03 Tue 03:35]
    :POSTID:   29466
    :BLOG:     sacha
@@ -18265,7 +18385,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2019-09][emacs-devel]].
 ** 2019-08-26 Emacs news
    :PROPERTIES:
-   :ID:       o2b:c8bf665c-67eb-4384-a25b-6c716c8ffc4c
    :POST_DATE: [2019-08-27 Tue 22:10]
    :POSTID:   29457
    :BLOG:     sacha
@@ -18352,7 +18471,6 @@ Share ideas: https://emacsconf.org/2019/ideas
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2019-08][emacs-devel]].
 ** 2019-08-19 Emacs news
     :PROPERTIES:
-   :ID:       o2b:347ecf65-bab1-433b-b6ef-c73825edcee5
    :POST_DATE: [2019-08-20 Tue 05:49]
    :POSTID:   29456
    :BLOG:     sacha
@@ -18461,7 +18579,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2019-08][emacs-devel]].
 ** 2019-08-12 Emacs news
    :PROPERTIES:
-   :ID:       o2b:cdc866bb-6773-4b58-b697-3aa13b268394
    :POST_DATE: [2019-08-15 Thu 05:27]
    :POSTID:   29455
    :BLOG:     sacha
@@ -18565,7 +18682,6 @@ Share ideas: https://emacsconf.org/2019/ideas
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2019-08][emacs-devel]].
 ** 2019-08-05 Emacs news
    :PROPERTIES:
-   :ID:       o2b:c85c27b3-e6a1-404e-aab7-53a6288f8897
    :POST_DATE: [2019-08-05 Mon 23:33]
    :POSTID:   29454
    :BLOG:     sacha
@@ -18647,7 +18763,6 @@ Share ideas: https://emacsconf.org/2019/ideas
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2019-08][emacs-devel]].
 ** 2019-07-29 Emacs news
    :PROPERTIES:
-   :ID:       o2b:a7013860-7605-4da8-b7d8-0c1476aa4425
    :POST_DATE: [2019-07-30 Tue 17:47]
    :POSTID:   29453
    :BLOG:     sacha
@@ -18750,7 +18865,6 @@ Share ideas: https://emacsconf.org/2019/ideas
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2019-07][emacs-devel]].
 ** 2019-07-22 Emacs news
    :PROPERTIES:
-   :ID:       o2b:52d89acd-e8d3-48da-95b9-1ccd206e674d
    :POST_DATE: [2019-07-24 Wed 15:14]
    :POSTID:   29452
    :BLOG:     sacha
@@ -18868,7 +18982,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://reddit.com/r/planetemacs][/r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2019-07][emacs-devel]].
 ** 2019-07-15 Emacs news
    :PROPERTIES:
-   :ID:       o2b:fe974fd9-8bb7-4bbc-bacd-a1dfafd9d206
    :POST_DATE: [2019-07-15 Mon 23:58]
    :POSTID:   29451
    :BLOG:     sacha
@@ -18970,7 +19083,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][r/orgmode]], [[http://reddit.com/r/spacemacs][r/spacemacs]], [[http://reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]] and [[http://lists.gnu.org/archive/html/emacs-devel/2019-07][emacs-devel]].
 ** 2019-07-08 Emacs news
    :PROPERTIES:
-   :ID:       o2b:d7eef687-ece6-4ca8-965e-a14229d547fe
    :POSTID:   29448
    :BLOG:     sacha
    :END:
@@ -19044,7 +19156,6 @@ Links from [[http://reddit.com/r/emacs][reddit.com/r/emacs]], [[http://reddit.co
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://reddit.com/r/planetemacs][/r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2019-07][emacs-devel]].
 ** 2019-07-01 Emacs news
    :PROPERTIES:
-   :ID:       o2b:365e7712-4900-488c-8098-2dbee9b7370f
    :POST_DATE: [2019-07-01 Mon 19:48]
    :POSTID:   29443
    :BLOG:     sacha
@@ -19153,7 +19264,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://reddit.com/r/planetemacs][/r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2019-07][emacs-devel]].
 ** 2019-06-24 Emacs news
    :PROPERTIES:
-   :ID:       o2b:beeab560-d4c7-40f9-b1ed-fd7990007985
    :POST_DATE: [2019-06-24 Mon 22:38]
    :POSTID:   29441
    :BLOG:     sacha
@@ -19253,7 +19363,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2019-06-17 Emacs news
    :PROPERTIES:
-   :ID:       o2b:0871a73f-52af-4fa7-bbed-2236bac35572
    :POST_DATE: [2019-06-16 Sun 23:28]
    :POSTID:   29440
    :BLOG:     sacha
@@ -19342,7 +19451,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2019-06-10 Emacs news
    :PROPERTIES:
-   :ID:       o2b:3422a59c-3288-408e-ba88-2a920e283be5
    :POST_DATE: [2019-06-10 Mon 15:50]
    :POSTID:   29428
    :BLOG:     sacha
@@ -19414,7 +19522,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://reddit.com/r/planetemacs][/r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2019-06][emacs-devel]].
 ** 2019-06-03 Emacs news
    :PROPERTIES:
-   :ID:       o2b:983c7208-7723-4d03-bc27-9d365dff18fd
    :POST_DATE: [2019-06-03 Mon 19:05]
    :POSTID:   29418
    :BLOG:     sacha
@@ -19534,7 +19641,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2019-05-27 Emacs news
    :PROPERTIES:
-   :ID:       o2b:024088fa-89ea-4512-aff5-0c98c2f97bab
    :POST_DATE: [2019-05-27 Mon 23:44]
    :POSTID:   29409
    :BLOG:     sacha
@@ -19628,7 +19734,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2019-05-20 Emacs news
    :PROPERTIES:
-   :ID:       o2b:a12f0644-b14f-4f1e-8f9b-0bd6cd68df5c
    :POST_DATE: [2019-05-20 Mon 19:20]
    :POSTID:   29406
    :BLOG:     sacha
@@ -19735,7 +19840,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://reddit.com/r/planetemacs][/r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2019-05][emacs-devel]].
 ** 2019-05-13 Emacs news
    :PROPERTIES:
-   :ID:       o2b:0b42c386-a262-42d8-8a38-c9b60d01d5b9
    :POST_DATE: [2019-05-13 Mon 21:53]
    :POSTID:   29401
    :BLOG:     sacha
@@ -19858,7 +19962,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 ** 2019-05-06 Emacs news
    CLOSED: [2019-05-08 Wed 10:47]
    :PROPERTIES:
-   :ID:       o2b:82a01656-cee0-4244-88e4-6c885ccdcbcf
    :POSTID:   29399
    :BLOG:     sacha
    :END:
@@ -19956,7 +20059,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://reddit.com/r/planetemacs][/r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2019-05][emacs-devel]].
 ** 2019-04-29 Emacs news
    :PROPERTIES:
-   :ID:       o2b:9b0e8577-7cef-4ab2-8062-4ed5a16fd02d
    :POST_DATE: [2019-04-30 Tue 04:44]
    :POSTID:   29398
    :BLOG:     sacha
@@ -20072,7 +20174,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2019-04-22 Emacs news
    :PROPERTIES:
-   :ID:       o2b:1b55ff77-2fe4-4793-bd29-3450a878d677
    :POST_DATE: [2019-04-22 Mon 11:40]
    :POSTID:   29395
    :BLOG:     sacha
@@ -20182,7 +20283,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2019-04-15 Emacs news
    :PROPERTIES:
-   :ID:       o2b:4f98486d-b561-4a12-a63c-f7fe5f4ee4fb
    :POST_DATE: [2019-04-16 Tue 20:39]
    :POSTID:   29391
    :BLOG:     sacha
@@ -20312,7 +20412,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2019-04-08 Emacs news
    :PROPERTIES:
-   :ID:       o2b:6177d03c-dc25-4d0d-bf2f-78d2ae30923b
    :POST_DATE: [2019-04-09 Tue 22:10]
    :POSTID:   29389
    :BLOG:     sacha
@@ -20426,7 +20525,6 @@ changes to the [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs
 
 ** 2019-04-01 Emacs news
    :PROPERTIES:
-   :ID:       o2b:92c2f40e-723b-4928-a1a7-0862227b79d8
    :POST_DATE: [2019-04-01 Mon 15:42]
    :POSTID:   29386
    :BLOG:     sacha
@@ -20544,7 +20642,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2019-03-25 Emacs news
    :PROPERTIES:
-   :ID:       o2b:e03e1f30-f8d7-4c76-9a22-336476d9d1b7
    :POST_DATE: [2019-03-25 Mon 18:22]
    :POSTID:   29384
    :BLOG:     sacha
@@ -20653,7 +20750,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2019-03-18 Emacs news
    :PROPERTIES:
-   :ID:       o2b:0b4bf8ba-d69f-4c8f-bcab-aad7c4912869
    :POST_DATE: [2019-03-18 Mon 00:40]
    :POSTID:   29377
    :BLOG:     sacha
@@ -20730,7 +20826,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2019-03-11 Emacs news
    :PROPERTIES:
-   :ID:       o2b:e7f3ae0b-2f58-49bb-9c6d-3123767fd54f
    :POST_DATE: [2019-03-12 Tue 00:48]
    :POSTID:   29374
    :BLOG:     sacha
@@ -20780,7 +20875,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** [#A] 2019-03-04 Emacs news
    :PROPERTIES:
-   :ID:       o2b:097b986b-438f-48b5-91f8-59fa71e8f6c1
    :POST_DATE: [2019-03-04 Mon 20:15]
    :POSTID:   29371
    :BLOG:     sacha
@@ -20875,7 +20969,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2019-02-25 Emacs news
    :PROPERTIES:
-   :ID:       o2b:5b121743-5b8e-407a-a28f-0646327e2891
    :POST_DATE: [2019-02-25 Mon 23:58]
    :POSTID:   29369
    :BLOG:     sacha
@@ -20981,7 +21074,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2019-02-18 Emacs news
    :PROPERTIES:
-   :ID:       o2b:e2229560-b6bd-466a-bceb-8f340a790477
    :POST_DATE: [2019-02-18 Mon 23:16]
    :POSTID:   29365
    :BLOG:     sacha
@@ -21078,7 +21170,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://reddit.com/r/planetemacs][/r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2019-02][emacs-devel]].
 ** 2019-02-11 Emacs news
    :PROPERTIES:
-   :ID:       o2b:d6e590e4-4ac9-4205-a7a7-2356ae03ffbd
    :POST_DATE: [2019-02-12 Tue 08:23]
    :POSTID:   29364
    :BLOG:     sacha
@@ -21148,7 +21239,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://reddit.com/r/planetemacs][/r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2019-02][emacs-devel]].
 ** 2019-02-04 Emacs news
    :PROPERTIES:
-   :ID:       o2b:0fb19ba9-da78-4cdb-b0b7-b6e66186158d
    :POST_DATE: [2019-02-05 Tue 00:13]
    :POSTID:   29363
    :BLOG:     sacha
@@ -21232,7 +21322,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://reddit.com/r/planetemacs][/r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2019-02][emacs-devel]].
 ** 2019-01-28 Emacs news
    :PROPERTIES:
-   :ID:       o2b:87c47611-db94-4cf2-8673-fc147a8509a3
    :POST_DATE: [2019-01-29 Tue 00:11]
    :POSTID:   29360
    :BLOG:     sacha
@@ -21278,7 +21367,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2019-01-21 Emacs news
    :PROPERTIES:
-   :ID:       o2b:c86099a4-6fc6-4e1c-a169-0a31974731d4
    :POST_DATE: [2019-01-21 Mon 00:14]
    :POSTID:   29359
    :BLOG:     sacha
@@ -21323,7 +21411,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2019-01-14 Emacs news
    :PROPERTIES:
-   :ID:       o2b:0cc69efe-e08f-4656-8484-500b992cca32
    :POST_DATE: [2019-01-15 Tue 00:28]
    :POSTID:   29358
    :BLOG:     sacha
@@ -21384,7 +21471,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2019-01-07 Emacs news
    :PROPERTIES:
-   :ID:       o2b:bb3a6c36-1933-4669-ba8c-cb3eaeead98d
    :POST_DATE: [2019-01-07 Mon 23:20]
    :POSTID:   29355
    :BLOG:     sacha
@@ -21468,7 +21554,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://reddit.com/r/planetemacs][/r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2019-01][emacs-devel]].
 ** 2018-12-31 Emacs news
    :PROPERTIES:
-   :ID:       o2b:c85c3268-9438-414d-810f-f7dbe9377117
    :POST_DATE: [2018-12-31 Mon 23:31]
    :POSTID:   29351
    :BLOG:     sacha
@@ -21536,7 +21621,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-12-24 Emacs news
    :PROPERTIES:
-   :ID:       o2b:0af604c9-f172-4d36-b197-e88f18d47713
    :POST_DATE: [2018-12-24 Mon 23:33]
    :POSTID:   29349
    :BLOG:     sacha
@@ -21596,7 +21680,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-12-17 Emacs news
    :PROPERTIES:
-   :ID:       o2b:97b2243d-061c-48f7-b00c-5dc778bbbdb7
    :POST_DATE: [2018-12-17 Mon 15:20]
    :POSTID:   29346
    :BLOG:     sacha
@@ -21655,7 +21738,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-12-10 Emacs news
    :PROPERTIES:
-   :ID:       o2b:accb3236-8819-4635-bc35-378d62715e2e
    :POST_DATE: [2018-12-10 Mon 19:20]
    :POSTID:   29342
    :BLOG:     sacha
@@ -21717,7 +21799,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-12-03 Emacs news
    :PROPERTIES:
-   :ID:       o2b:6ae63069-2ee8-42b7-bada-a9b01476fda6
    :POST_DATE: [2018-12-03 Mon 00:31]
    :POSTID:   29341
    :BLOG:     sacha
@@ -21778,7 +21859,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-11-26 Emacs news
    :PROPERTIES:
-   :ID:       o2b:1c07a20f-c1ad-4a14-95ea-b9f924122aee
    :POST_DATE: [2018-11-26 Mon 00:44]
    :POSTID:   29339
    :BLOG:     sacha
@@ -21838,7 +21918,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-11-19 Emacs news
    :PROPERTIES:
-   :ID:       o2b:03f4edbc-aba8-4681-8e2f-70a53519822d
    :POST_DATE: [2018-11-19 Mon 15:14]
    :POSTID:   29337
    :BLOG:     sacha
@@ -21898,7 +21977,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2018-11][emacs-devel]].
 ** 2018-11-12 Emacs news
    :PROPERTIES:
-   :ID:       o2b:561fdec8-b393-4e12-9aa8-07019d29c60a
    :POST_DATE: [2018-11-12 Mon 11:16]
    :POSTID:   29335
    :BLOG:     sacha
@@ -21976,7 +22054,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-11-05 Emacs news
    :PROPERTIES:
-   :ID:       o2b:a279df91-5322-42dd-9d7f-bd534ae97b88
    :POST_DATE: [2018-11-05 Mon 23:27]
    :POSTID:   29331
    :BLOG:     sacha
@@ -22033,7 +22110,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-10-29 Emacs news
    :PROPERTIES:
-   :ID:       o2b:9122cd34-31ec-4e5e-8a91-6bfc37379198
    :POST_DATE: [2018-10-29 Mon 08:59]
    :POSTID:   29329
    :BLOG:     sacha
@@ -22083,7 +22159,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-10-22 Emacs news
    :PROPERTIES:
-   :ID:       o2b:592e3818-ad29-4b90-ad79-e889750b9be6
    :POST_DATE: [2018-10-22 Mon 08:52]
    :POSTID:   29328
    :BLOG:     sacha
@@ -22140,7 +22215,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-10-15 Emacs news
    :PROPERTIES:
-   :ID:       o2b:fea219b3-2ab2-491d-9703-7376f38aaebe
    :POST_DATE: [2018-10-15 Mon 22:53]
    :POSTID:   29326
    :BLOG:     sacha
@@ -22187,7 +22261,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2018-10][emacs-devel]].
 ** 2018-10-08 Emacs news
    :PROPERTIES:
-   :ID:       o2b:94577c32-408f-4cbf-be8c-950a8aaaacf1
    :POST_DATE: [2018-10-08 Mon 15:55]
    :POSTID:   29324
    :BLOG:     sacha
@@ -22235,7 +22308,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-10-01 Emacs news
    :PROPERTIES:
-   :ID:       o2b:0d57aa74-3213-4635-83be-f207f7b5303e
    :POST_DATE: [2018-10-01 Mon 20:37]
    :POSTID:   29320
    :BLOG:     sacha
@@ -22303,7 +22375,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-09-24 Emacs news
    :PROPERTIES:
-   :ID:       o2b:c11668cc-6b9a-4a2c-b05d-bd30cdd2587a
    :POST_DATE: [2018-09-24 Mon 15:41]
    :POSTID:   29313
    :BLOG:     sacha
@@ -22355,7 +22426,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-09-17 Emacs news
    :PROPERTIES:
-   :ID:       o2b:2d6bc84d-3c15-449c-98cc-d450d1be53a9
    :POST_DATE: [2018-09-17 Mon 15:49]
    :POSTID:   29312
    :BLOG:     sacha
@@ -22401,7 +22471,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-09-03 Emacs news
    :PROPERTIES:
-   :ID:       o2b:03d5467a-b42e-48d1-a165-eda816c65419
    :POST_DATE: [2018-09-03 Mon 09:41]
    :POSTID:   29308
    :BLOG:     sacha
@@ -22503,7 +22572,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2018-09][emacs-devel]].
 ** 2018-08-27 Emacs news
    :PROPERTIES:
-   :ID:       o2b:4f619e39-cdde-4620-b167-f8a630bdd0c3
    :POST_DATE: [2018-08-27 Mon 22:58]
    :POSTID:   29304
    :BLOG:     sacha
@@ -22543,7 +22611,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-08-20 Emacs news
    :PROPERTIES:
-   :ID:       o2b:9da09c9b-799e-460a-abb3-7af98c524082
    :POST_DATE: [2018-08-20 Mon 00:30]
    :POSTID:   29301
    :BLOG:     sacha
@@ -22584,7 +22651,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-08-13 Emacs news
    :PROPERTIES:
-   :ID:       o2b:2395babd-56be-446e-9c73-5119f9be5cb2
    :POST_DATE: [2018-08-13 Mon 04:59]
    :POSTID:   29296
    :BLOG:     sacha
@@ -22628,7 +22694,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-08-06 Emacs news
    :PROPERTIES:
-   :ID:       o2b:0e91635f-150f-4fcb-a77a-b84571c0d27e
    :POST_DATE: [2018-08-06 Mon 02:11]
    :POSTID:   29288
    :BLOG:     sacha
@@ -22671,7 +22736,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-07-30 Emacs news
    :PROPERTIES:
-   :ID:       o2b:1c41a582-fd79-4ce7-94cc-ea8a6c42c039
    :POSTID:   29284
    :BLOG:     sacha
    :END:
@@ -22714,7 +22778,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-07-23 Emacs news
    :PROPERTIES:
-   :ID:       o2b:9aa1e634-1904-4c00-99fb-88c13b48f349
    :POST_DATE: [2018-07-23 Mon 01:03]
    :END:
 
@@ -22757,7 +22820,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 ** 2018-07-16 Emacs news
    :PROPERTIES:
    :Effort:   0:15
-   :ID:       o2b:414611a0-d5f2-4d7a-b525-86c7431c814f
    :POST_DATE: [2018-07-16 Mon 12:04]
    :POSTID:   29267
    :BLOG:     sacha
@@ -22800,7 +22862,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2018-07][emacs-devel]].
 ** 2018-07-09 Emacs news
    :PROPERTIES:
-   :ID:       o2b:20b20e35-8582-4ecf-9349-b47f23806780
    :POST_DATE: [2018-07-09 Mon 00:30]
    :POSTID:   29263
    :BLOG:     sacha
@@ -22853,7 +22914,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-07-02 Emacs news
    :PROPERTIES:
-   :ID:       o2b:c2c93b69-8047-4228-a35c-04e223d8a4be
    :POST_DATE: [2018-07-02 Mon 17:27]
    :POSTID:   29258
    :BLOG:     sacha
@@ -22897,7 +22957,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 ** 2018-06-25 Emacs news
    :PROPERTIES:
    :Effort:   0:15
-   :ID:       o2b:bf1c6b1e-a40b-4eea-b30e-e689160edc9b
    :POSTID:   29251
    :BLOG:     sacha
    :END:
@@ -22955,7 +23014,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-06-18 Emacs news
    :PROPERTIES:
-   :ID:       o2b:549fae19-2980-484f-a08c-42c6ce68497a
    :POST_DATE: [2018-06-19 Tue 00:37]
    :POSTID:   29248
    :BLOG:     sacha
@@ -23010,7 +23068,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 ** 2018-06-11 Emacs news
    :PROPERTIES:
    :Effort:   0:15
-   :ID:       o2b:d859cd90-c9b9-4f89-b5a9-22fd4099f6c7
    :POST_DATE: [2018-06-11 Mon 01:27]
    :POSTID:   29238
    :BLOG:     sacha
@@ -23061,7 +23118,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-06-04 Emacs news
    :PROPERTIES:
-   :ID:       o2b:86688513-931a-4b4f-8f54-a11cc2842748
    :POST_DATE: [2018-06-04 Mon 10:33]
    :POSTID:   29236
    :BLOG:     sacha
@@ -23137,7 +23193,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 ** 2018-05-28 Emacs news
    CLOSED: [2018-05-28 Mon 20:39]
    :PROPERTIES:
-   :ID:       o2b:155aa86f-44b9-4d2a-a3f2-54235857eeed
    :POST_DATE: [2018-05-28 Mon 20:38]
    :POSTID:   29233
    :BLOG:     sacha
@@ -23186,7 +23241,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-05-21 Emacs news
    :PROPERTIES:
-   :ID:       o2b:f48abc7a-11e2-47a5-bcf7-9938c8f89595
    :POST_DATE: [2018-05-21 Mon 21:59]
    :POSTID:   29230
    :BLOG:     sacha
@@ -23238,7 +23292,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-05-14 Emacs news
    :PROPERTIES:
-   :ID:       o2b:bcb70a0f-d49b-43bb-b14e-7759f37c0205
    :POST_DATE: [2018-05-14 Mon 00:21]
    :POSTID:   29225
    :BLOG:     sacha
@@ -23285,7 +23338,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-05-07 Emacs news
    :PROPERTIES:
-   :ID:       o2b:2d75d1de-aaf1-4384-a1c2-dd0cb1be48a3
    :POST_DATE: [2018-05-07 Mon 10:39]
    :POSTID:   29221
    :BLOG:     sacha
@@ -23335,7 +23387,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-04-30 Emacs news
    :PROPERTIES:
-   :ID:       o2b:add11f4e-6336-4d66-8fb5-efc99b4210b9
    :POST_DATE: [2018-04-30 Mon 17:31]
    :POSTID:   29218
    :BLOG:     sacha
@@ -23395,7 +23446,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-04-23 Emacs news
    :PROPERTIES:
-   :ID:       o2b:5540af32-0ced-432b-8849-ff13aba62085
    :POST_DATE: [2018-04-23 Mon 06:19]
    :POSTID:   29213
    :BLOG:     sacha
@@ -23456,7 +23506,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 ** 2018-04-16 Emacs news
    :PROPERTIES:
    :Effort:   0:15
-   :ID:       o2b:aa821ef5-04ea-499b-b881-b77933bfeee9
    :POSTID:   29209
    :BLOG:     sacha
    :END:
@@ -23508,7 +23557,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2018-04][emacs-devel]].
 ** 2018-04-09 Emacs news
    :PROPERTIES:
-   :ID:       o2b:906c7e9f-6fe5-4282-bf0a-c9a5a28561e3
    :POST_DATE: [2018-04-09 Mon 10:31]
    :POSTID:   29205
    :BLOG:     sacha
@@ -23570,7 +23618,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddit.com/r/orgmode][/r/orgmode]], [[http://reddit.com/r/spacemacs][/r/spacemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[http://planet.emacsen.org][planet.emacsen.org]], [[https://www.youtube.com/results?search_query=emacs&search_sort=video_date_uploaded][YouTube]], the changes to the [[https://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][Emacs NEWS file]], and [[http://lists.gnu.org/archive/html/emacs-devel/2018-04][emacs-devel]].
 ** 2018-04-02 Emacs news
    :PROPERTIES:
-   :ID:       o2b:2df86197-bd9a-41fe-aa80-e3ce0f21fd04
    :POST_DATE: [2018-04-02 Mon 02:22]
    :POSTID:   29201
    :BLOG:     sacha
@@ -23607,7 +23654,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 ** 2018-03-26 Emacs news
    CLOSED: [2018-03-25 Sun 23:59]
    :PROPERTIES:
-   :ID:       o2b:42a8bdd6-b4d4-4e1f-bc50-eaed16667159
    :POSTID:   29195
    :BLOG:     sacha
    :END:
@@ -23650,7 +23696,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-03-20 Emacs news
    :PROPERTIES:
-   :ID:       o2b:074d82cc-477c-44f9-aa7f-826697b3e924
    :POST_DATE: [2018-03-19 Mon 12:32]
    :POSTID:   29185
    :BLOG:     sacha
@@ -23697,7 +23742,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-03-12 Emacs news
    :PROPERTIES:
-   :ID:       o2b:e89ab164-858a-4da0-a6dc-08c894f0127d
    :POST_DATE: [2018-03-12 Mon 03:00]
    :POSTID:   29178
    :BLOG:     sacha
@@ -23755,7 +23799,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-03-04 Emacs news
   :PROPERTIES:
-  :ID:       o2b:05b111fc-79f0-461f-af4b-32b1231e6d09
   :POST_DATE: [2018-03-04 Sun 19:16]
   :POSTID:   29173
   :BLOG:     sacha
@@ -23829,7 +23872,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-02-26 Emacs news
    :PROPERTIES:
-   :ID:       o2b:289e0917-eaf2-4641-ada6-13a917bc5d98
    :POST_DATE: [2018-02-26 Mon 10:19]
    :POSTID:   29168
    :BLOG:     sacha
@@ -23870,7 +23912,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-02-19 Emacs news
   :PROPERTIES:
-  :ID:       o2b:84774603-e8e3-47ae-a34e-1ba440a17d15
   :POST_DATE: [2018-02-19 Mon 18:14]
   :POSTID:   29163
   :BLOG:     sacha
@@ -24008,7 +24049,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-02-15 Emacs News
    :PROPERTIES:
-   :ID:       o2b:6d4ddb2e-c573-48ae-bacf-6efc04b7a544
    :POST_DATE: [2016-02-15 Mon 13:07]
    :POSTID:   28622
    :BLOG:     sacha
@@ -24085,7 +24125,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-02-08 Emacs News
    :PROPERTIES:
-   :ID:       o2b:d100bb15-52d1-4a0d-b2e9-634bdcdc2ceb
    :POST_DATE: [2016-02-08 Mon 12:04]
    :POSTID:   28619
    :BLOG:     sacha
@@ -24165,7 +24204,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-02-01 Emacs News
    :PROPERTIES:
-   :ID:       o2b:e893effd-30a8-4cae-93b9-1a5138ca0efe
    :POST_DATE: [2016-02-01 Mon 13:01]
    :POSTID:   28598
    :BLOG:     sacha
@@ -24241,7 +24279,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-01-25 Emacs News
    :PROPERTIES:
-   :ID:       o2b:98ff5caf-c90c-49dc-88b7-84f224a30ecc
    :POST_DATE: [2016-01-25 Mon 12:25]
    :POSTID:   28587
    :BLOG:     sacha
@@ -24318,7 +24355,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-01-18 Emacs News
    :PROPERTIES:
-   :ID:       o2b:d4262192-3b84-49e6-9c7b-0dbb1f469fd2
    :POST_DATE: [2016-01-18 Mon 14:09]
    :POSTID:   28571
    :BLOG:     sacha
@@ -24376,7 +24412,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-01-11 Emacs News
    :PROPERTIES:
-   :ID:       o2b:c32e4198-ad59-4978-b33e-0b6ebd15105d
    :POST_DATE: [2016-01-11 Mon 09:33]
    :POSTID:   28564
    :BLOG:     sacha
@@ -24451,7 +24486,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-02-12 Emacs news
   :PROPERTIES:
-  :ID:       o2b:f8fbcff4-30d9-4365-8d61-eda82aa4d86a
   :POST_DATE: [2018-02-12 Mon 18:35]
   :POSTID:   29160
   :BLOG:     sacha
@@ -24490,7 +24524,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-02-05 Emacs news
   :PROPERTIES:
-  :ID:       o2b:19e7a370-8c1e-47ef-bd5f-498036da58f7
   :POST_DATE: [2018-02-05 Mon 11:09]
   :POSTID:   29155
   :BLOG:     sacha
@@ -24558,7 +24591,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-01-29 Emacs news
   :PROPERTIES:
-  :ID:       o2b:0b2a0cfd-5f1d-4216-89dd-628f9e8f762c
   :POST_DATE: [2018-01-29 Mon 17:44]
   :POSTID:   29149
   :BLOG:     sacha
@@ -24603,7 +24635,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-01-23 Emacs news
   :PROPERTIES:
-  :ID:       o2b:a3451cdb-7648-4ef5-9a6e-4bd38dd91c8d
   :POST_DATE: [2018-01-23 Tue 00:20]
   :POSTID:   29147
   :BLOG:     sacha
@@ -24670,7 +24701,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-01-15 Emacs news
   :PROPERTIES:
-  :ID:       o2b:efeca511-1949-408b-8a7a-615b7047911c
   :POST_DATE: [2018-01-16 Tue 00:51]
   :POSTID:   29142
   :BLOG:     sacha
@@ -24706,7 +24736,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-01-09 Emacs news
   :PROPERTIES:
-  :ID:       o2b:4034de4c-6b6e-4885-b9e7-9de58248903c
   :POST_DATE: [2018-01-09 Tue 23:43]
   :POSTID:   29139
   :BLOG:     sacha
@@ -24754,7 +24783,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2018-01-01 Emacs news
   :PROPERTIES:
-  :ID:       o2b:991b45fa-49b0-49ac-8c78-45f044987522
   :POST_DATE: [2018-01-02 Tue 09:57]
   :POSTID:   29137
   :BLOG:     sacha
@@ -24795,7 +24823,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-12-26 Emacs news
   :PROPERTIES:
-  :ID:       o2b:c3b75a42-50e0-4a35-88e6-556903e9fe17
   :POST_DATE: [2017-12-26 Tue 00:55]
   :POSTID:   29134
   :BLOG:     sacha
@@ -24842,7 +24869,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-12-19 Emacs news
   :PROPERTIES:
-  :ID:       o2b:8998b8b3-d111-4b89-a9f9-344173c02703
   :POST_DATE: [2017-12-21 Thu 04:58]
   :POSTID:   29131
   :BLOG:     sacha
@@ -24891,7 +24917,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-12-11 Emacs news
   :PROPERTIES:
-  :ID:       o2b:2f65244e-836d-4802-80f8-be468fd02f98
   :POST_DATE: [2017-12-11 Mon 04:24]
   :POSTID:   29126
   :BLOG:     sacha
@@ -24929,7 +24954,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-12-04 Emacs news
   :PROPERTIES:
-  :ID:       o2b:b0caa99b-a789-43ea-aedf-0dfd404f7aa5
   :POST_DATE: [2017-12-04 Mon 12:00]
   :POSTID:   29112
   :BLOG:     sacha
@@ -24988,7 +25012,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-11-27 Emacs news
   :PROPERTIES:
-  :ID:       o2b:262c12c9-3f8e-471c-ad70-b043e77a3190
   :POST_DATE: [2017-11-27 Mon 03:59]
   :POSTID:   29108
   :BLOG:     sacha
@@ -25027,7 +25050,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-11-20 Emacs news
   :PROPERTIES:
-  :ID:       o2b:5529e0d3-0934-4b51-a724-b3a2d616607a
   :POST_DATE: [2017-11-20 Mon 02:48]
   :POSTID:   29106
   :BLOG:     sacha
@@ -25078,7 +25100,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-11-13 Emacs news
   :PROPERTIES:
-  :ID:       o2b:7921f338-1f2a-433e-b300-f6ef0f1f5049
   :POST_DATE: [2017-11-14 Tue 01:48]
   :POSTID:   29100
   :BLOG:     sacha
@@ -25133,7 +25154,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-11-06 Emacs news
   :PROPERTIES:
-  :ID:       o2b:e0e599f5-1dfb-433d-807f-fb3d0031ccca
   :POST_DATE: [2017-11-06 Mon 03:50]
   :POSTID:   29096
   :BLOG:     sacha
@@ -25187,7 +25207,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-10-30 Emacs news
   :PROPERTIES:
-  :ID:       o2b:5b8535a4-b30a-464b-b64f-1800d16807c6
   :POST_DATE: [2017-10-30 Mon 03:58]
   :POSTID:   29094
   :BLOG:     sacha
@@ -25234,7 +25253,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-10-23 Emacs news
   :PROPERTIES:
-  :ID:       o2b:2650d022-0b0e-43c6-9ed5-c9bdb486c81f
   :POST_DATE: [2017-10-23 Mon 02:14]
   :POSTID:   29092
   :BLOG:     sacha
@@ -25281,7 +25299,6 @@ Thanks for your patience!
 
 ** 2017-08-21 Emacs news
   :PROPERTIES:
-  :ID:       o2b:819dcb67-0805-4574-998d-fb0ce495dfe4
   :POST_DATE: [2017-08-21 Mon 03:16]
   :POSTID:   29072
   :BLOG:     sacha
@@ -25343,7 +25360,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-08-14 Emacs news
   :PROPERTIES:
-  :ID:       o2b:3bde8fec-99e8-450c-8816-16b1efae4be6
   :POST_DATE: [2017-08-14 Mon 02:33]
   :POSTID:   29067
   :BLOG:     sacha
@@ -25419,7 +25435,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-08-07 Emacs news
   :PROPERTIES:
-  :ID:       o2b:865d2d78-3987-421b-bb11-038f17fb5942
   :POST_DATE: [2017-08-10 Thu 02:05]
   :POSTID:   29063
   :BLOG:     sacha
@@ -25468,7 +25483,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-07-31 Emacs news
   :PROPERTIES:
-  :ID:       o2b:0f6d3979-5847-42d7-bef1-ffedd2e63430
   :POST_DATE: [2017-07-31 Mon 02:37]
   :POSTID:   29059
   :BLOG:     sacha
@@ -25545,7 +25559,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-07-24 Emacs news
   :PROPERTIES:
-  :ID:       o2b:1e57d387-555f-4199-9273-843821ad068e
   :POST_DATE: [2017-07-24 Mon 01:59]
   :POSTID:   29055
   :BLOG:     sacha
@@ -25617,7 +25630,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-07-17 Emacs news
   :PROPERTIES:
-  :ID:       o2b:e672011a-f373-4162-b559-efeff1a413b6
   :POST_DATE: [2017-07-17 Mon 03:27]
   :POSTID:   29047
   :BLOG:     sacha
@@ -25694,7 +25706,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-07-10 Emacs news
   :PROPERTIES:
-  :ID:       o2b:8c0fb889-4291-4196-ba26-405ef6e69c27
   :POST_DATE: [2017-07-10 Mon 02:45]
   :POSTID:   29046
   :BLOG:     sacha
@@ -25764,7 +25775,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-07-03 Emacs news
   :PROPERTIES:
-  :ID:       o2b:7f38e0be-76b3-4d6c-9bf0-587c32019fb3
   :POST_DATE: [2017-07-03 Mon 02:25]
   :POSTID:   29042
   :BLOG:     sacha
@@ -25820,7 +25830,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-06-26 Emacs news
   :PROPERTIES:
-  :ID:       o2b:ff94b8fd-5ac5-483f-a06f-c793403a3c7c
   :POST_DATE: [2017-06-26 Mon 01:53]
   :POSTID:   29028
   :BLOG:     sacha
@@ -25894,7 +25903,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-06-19 Emacs news
   :PROPERTIES:
-  :ID:       o2b:b608e014-547e-4c0e-ac6c-441f82acf99b
   :POST_DATE: [2017-06-19 Mon 01:24]
   :POSTID:   29024
   :BLOG:     sacha
@@ -25935,7 +25943,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-06-12 Emacs news
   :PROPERTIES:
-  :ID:       o2b:c0db2e81-90f3-4c79-a86b-a57637b88b6e
   :POST_DATE: [2017-06-12 Mon 02:21]
   :POSTID:   29020
   :BLOG:     sacha
@@ -25979,7 +25986,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-06-05 Emacs news
   :PROPERTIES:
-  :ID:       o2b:80168f46-4aa6-4a5f-9cc1-029282359317
   :POST_DATE: [2017-06-10 Sat 02:14]
   :POSTID:   29016
   :BLOG:     sacha
@@ -26033,7 +26039,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
     
 ** 2017-05-29 Emacs news
   :PROPERTIES:
-  :ID:       o2b:62e07738-376d-410e-aae2-9d515d7af0ae
   :POST_DATE: [2017-05-29 Mon 02:01]
   :POSTID:   29004
   :BLOG:     sacha
@@ -26086,7 +26091,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-05-22 Emacs news
   :PROPERTIES:
-  :ID:       o2b:c259c62a-d576-422d-a05c-13fe2c85e21c
   :POST_DATE: [2017-05-22 Mon 03:49]
   :POSTID:   28999
   :BLOG:     sacha
@@ -26141,7 +26145,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-05-15 Emacs news
   :PROPERTIES:
-  :ID:       o2b:7350b9bf-6c29-4824-b9d1-5758a2d34718
   :POST_DATE: [2017-05-15 Mon 02:35]
   :POSTID:   28992
   :BLOG:     sacha
@@ -26198,7 +26201,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-05-08 Emacs news
   :PROPERTIES:
-  :ID:       o2b:04eb5414-2444-4d73-b64a-aa10437e9407
   :POST_DATE: [2017-05-08 Mon 02:00]
   :POSTID:   28985
   :BLOG:     sacha
@@ -26259,7 +26261,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-05-01 Emacs news
   :PROPERTIES:
-  :ID:       o2b:20590a2a-bba8-4c81-a6d6-c5ac77781257
   :POST_DATE: [2017-05-02 Tue 00:35]
   :POSTID:   28980
   :BLOG:     sacha
@@ -26313,7 +26314,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-04-24 Emacs news
   :PROPERTIES:
-  :ID:       o2b:213752c3-d7f6-4a82-836e-bd68bf0e38d8
   :POST_DATE: [2017-04-24 Mon 23:28]
   :POSTID:   28976
   :BLOG:     sacha
@@ -26364,7 +26364,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-04-17 Emacs news
   :PROPERTIES:
-  :ID:       o2b:7aeb1e6c-2b18-44d5-8fff-6dd3df707d4a
   :POST_DATE: [2017-04-17 Mon 01:55]
   :POSTID:   28968
   :BLOG:     sacha
@@ -26418,7 +26417,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-04-10 Emacs news
   :PROPERTIES:
-  :ID:       o2b:26ecfe1a-1759-41f5-97f5-7c2736e69477
   :POST_DATE: [2017-04-12 Wed 01:23]
   :POSTID:   28965
   :BLOG:     sacha
@@ -26479,7 +26477,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-04-03 Emacs news
   :PROPERTIES:
-  :ID:       o2b:2aa7e8aa-6a24-44fd-89b2-0acd03845e10
   :POST_DATE: [2017-04-03 Mon 22:38]
   :POSTID:   28958
   :BLOG:     sacha
@@ -26535,7 +26532,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-03-27 Emacs news
   :PROPERTIES:
-  :ID:       o2b:389ee11b-d6ff-41ad-9810-8ed1508f1c5c
   :POST_DATE: [2017-03-27 Mon 00:50]
   :POSTID:   28949
   :BLOG:     sacha
@@ -26586,7 +26582,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-03-20 Emacs news
   :PROPERTIES:
-  :ID:       o2b:9cb0695e-c685-42a2-8dc9-b2a1ae9d76b0
   :POST_DATE: [2017-03-23 Thu 01:48]
   :POSTID:   28945
   :BLOG:     sacha
@@ -26648,7 +26643,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-03-13 Emacs news
   :PROPERTIES:
-  :ID:       o2b:37e06044-d2db-457a-8f37-d13d8c97b5f8
   :POST_DATE: [2017-03-13 Mon 01:13]
   :POSTID:   28941
   :BLOG:     sacha
@@ -26711,7 +26705,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 ** 2017-03-06 Emacs news
   CLOSED: [2017-03-07 Tue 01:19]
   :PROPERTIES:
-  :ID:       o2b:9621cb42-c81f-4de8-8a12-eb38a75b0b5d
   :POSTID:   28936
   :BLOG:     sacha
   :END:
@@ -26774,7 +26767,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-02-27 Emacs News
   :PROPERTIES:
-  :ID:       o2b:de20a75f-5e45-49b9-a7af-80834d7d649b
   :POST_DATE: [2017-03-01 Wed 02:46]
   :POSTID:   28928
   :BLOG:     sacha
@@ -26840,7 +26832,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-02-20 Emacs news
   :PROPERTIES:
-  :ID:       o2b:41eefaff-c5a1-4881-a25c-af3e717867bc
   :POST_DATE: [2017-02-20 Mon 22:11]
   :POSTID:   28923
   :BLOG:     sacha
@@ -26895,7 +26886,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-01-13 Emacs News
   :PROPERTIES:
-  :ID:       o2b:b1e74277-71ea-4522-a6de-92d118bb0844
   :POST_DATE: [2017-02-15 Wed 02:21]
   :POSTID:   28916
   :BLOG:     sacha
@@ -26969,7 +26959,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-02-06 Emacs News
   :PROPERTIES:
-  :ID:       o2b:5aae07fb-55b3-4855-8a37-89c3e6456177
   :POST_DATE: [2017-02-07 Tue 00:49]
   :POSTID:   28910
   :BLOG:     sacha
@@ -27013,7 +27002,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-01-30 Emacs News
   :PROPERTIES:
-  :ID:       o2b:85959f39-8faf-4b52-b89e-c1c33c636828
   :POST_DATE: [2017-01-30 Mon 23:13]
   :POSTID:   28905
   :BLOG:     sacha
@@ -27065,7 +27053,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-01-23 Emacs News
   :PROPERTIES:
-  :ID:       o2b:6710839b-f4ee-49dc-b34f-fd2c2b247ec7
   :POST_DATE: [2017-01-24 Tue 07:22]
   :POSTID:   28901
   :BLOG:     sacha
@@ -27129,7 +27116,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-01-16 Emacs News
   :PROPERTIES:
-  :ID:       o2b:090a71b7-66ff-424e-9063-8f433652d759
   :POST_DATE: [2017-01-16 Mon 01:09]
   :POSTID:   28893
   :BLOG:     sacha
@@ -27180,7 +27166,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-01-09 Emacs News
   :PROPERTIES:
-  :ID:       o2b:6efba43a-21f1-4a68-8d2a-390d93012db3
   :POST_DATE: [2017-01-10 Tue 14:15]
   :POSTID:   28881
   :BLOG:     sacha
@@ -27234,7 +27219,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2017-01-02 Emacs News
   :PROPERTIES:
-  :ID:       o2b:a202a906-9bf9-4ee2-bd31-286636a4b96a
   :POST_DATE: [2017-01-03 Tue 02:21]
   :POSTID:   28869
   :BLOG:     sacha
@@ -27279,7 +27263,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-12-26 Emacs News
   :PROPERTIES:
-  :ID:       o2b:d956b955-19ef-452b-aefb-31b773e47567
   :POST_DATE: [2016-12-26 Mon 20:45]
   :POSTID:   28859
   :BLOG:     sacha
@@ -27336,7 +27319,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-12-19 Emacs News
   :PROPERTIES:
-  :ID:       o2b:b78b4c80-f764-40c8-9ea6-2e6e271d3552
   :POST_DATE: [2016-12-21 Wed 02:37]
   :POSTID:   28855
   :BLOG:     sacha
@@ -27399,7 +27381,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-12-12 Emacs News
   :PROPERTIES:
-  :ID:       o2b:68dfda7b-a5ed-4c22-b254-70eab1e86bb3
   :POST_DATE: [2016-12-14 Wed 07:41]
   :POSTID:   28839
   :BLOG:     sacha
@@ -27455,7 +27436,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-12-05 Emacs News
   :PROPERTIES:
-  :ID:       o2b:266759df-a92d-45c9-ab1e-c2e137177ed7
   :POST_DATE: [2016-12-07 Wed 18:05]
   :POSTID:   28838
   :BLOG:     sacha
@@ -27511,7 +27491,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-11-28 Emacs News
   :PROPERTIES:
-  :ID:       o2b:9b93708f-c678-474d-bbc1-842a72f318e5
   :POST_DATE: [2016-11-28 Mon 13:24]
   :POSTID:   28830
   :BLOG:     sacha
@@ -27559,7 +27538,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-11-21 Emacs News
   :PROPERTIES:
-  :ID:       o2b:f4f88ad2-9ec1-4514-96b9-63c636f4c6b0
   :POST_DATE: [2016-11-21 Mon 14:48]
   :POSTID:   28829
   :BLOG:     sacha
@@ -27614,7 +27592,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-11-14 Emacs News
   :PROPERTIES:
-  :ID:       o2b:270d0094-2162-4f35-a54c-32c9501a4187
   :POST_DATE: [2016-11-14 Mon 21:58]
   :POSTID:   28827
   :BLOG:     sacha
@@ -27685,7 +27662,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-11-07 Emacs News
   :PROPERTIES:
-  :ID:       o2b:86e41677-0437-4f50-9b59-5dfbef8a82ba
   :POST_DATE: [2016-11-07 Mon 23:51]
   :POSTID:   28817
   :BLOG:     sacha
@@ -27743,7 +27719,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-10-31 Emacs News
   :PROPERTIES:
-  :ID:       o2b:e25d5cb0-f5ab-427f-8962-a946546b6a68
   :POST_DATE: [2016-11-01 Tue 21:52]
   :POSTID:   28813
   :BLOG:     sacha
@@ -27796,7 +27771,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-10-24 Emacs News
   :PROPERTIES:
-  :ID:       o2b:cbb031c7-8170-4d24-9ce5-4adbe4884e86
   :POST_DATE: [2016-10-24 Mon 01:32]
   :POSTID:   28812
   :BLOG:     sacha
@@ -27850,7 +27824,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-10-17 Emacs News
   :PROPERTIES:
-  :ID:       o2b:1f714cad-fd9a-4991-b170-c26925fa9c82
   :POST_DATE: [2016-10-17 Mon 01:10]
   :POSTID:   28808
   :BLOG:     sacha
@@ -27903,7 +27876,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-10-10 Emacs News
   :PROPERTIES:
-  :ID:       o2b:b36309d9-53e1-46b0-b78c-631736d2cfd4
   :POST_DATE: [2016-10-10 Mon 01:20]
   :POSTID:   28804
   :BLOG:     sacha
@@ -27954,7 +27926,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-09-26 Emacs News
   :PROPERTIES:
-  :ID:       o2b:c36fb219-4ce8-421c-b3db-d82ed683e312
   :POST_DATE: [2016-09-26 Mon 23:13]
   :POSTID:   28789
   :BLOG:     sacha
@@ -28005,7 +27976,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-10-03 Emacs News
   :PROPERTIES:
-  :ID:       o2b:f03e457c-eb27-4d9a-999d-d5febedd2f21
   :POST_DATE: [2016-10-03 Mon 01:50]
   :POSTID:   28800
   :BLOG:     sacha
@@ -28065,7 +28035,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-09-19 Emacs News
   :PROPERTIES:
-  :ID:       o2b:47c92e19-f115-49d8-b275-c8ae9c736ca0
   :POST_DATE: [2016-09-19 Mon 23:34]
   :POSTID:   28782
   :BLOG:     sacha
@@ -28124,7 +28093,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-09-12 Emacs News
   :PROPERTIES:
-  :ID:       o2b:ce8e08e5-89aa-4a29-b607-55e26a492c0a
   :POST_DATE: [2016-09-12 Mon 01:18]
   :POSTID:   28777
   :BLOG:     sacha
@@ -28168,7 +28136,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-09-05 Emacs News
   :PROPERTIES:
-  :ID:       o2b:e75df4b0-2049-489b-bdf5-715db4640940
   :POST_DATE: [2016-09-05 Mon 22:12]
   :POSTID:   28773
   :BLOG:     sacha
@@ -28218,7 +28185,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-08-29 Emacs News
   :PROPERTIES:
-  :ID:       o2b:45a373fb-d932-422f-8d99-23280493f643
   :POST_DATE: [2016-08-29 Mon 23:14]
   :POSTID:   28769
   :BLOG:     sacha
@@ -28345,7 +28311,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-08-15 Emacs News
   :PROPERTIES:
-  :ID:       o2b:ccbb479e-6c5a-4bba-8297-e50c00d95aaa
   :POST_DATE: [2016-08-15 Mon 11:57]
   :POSTID:   28755
   :BLOG:     sacha
@@ -28379,7 +28344,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-08-08 Emacs News
   :PROPERTIES:
-  :ID:       o2b:af8e7666-7ab0-4180-bc79-eb0c8450232e
   :POST_DATE: [2016-08-08 Mon 23:18]
   :POSTID:   28751
   :BLOG:     sacha
@@ -28415,7 +28379,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-08-01 Emacs News
   :PROPERTIES:
-  :ID:       o2b:80b54afb-2435-495b-9222-044a75d71400
   :POST_DATE: [2016-08-01 Mon 16:24]
   :POSTID:   28747
   :BLOG:     sacha
@@ -28465,7 +28428,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-07-25 Emacs News
   :PROPERTIES:
-  :ID:       o2b:b92871da-57bf-4fed-b253-368819fbcf32
   :POST_DATE: [2016-07-25 Mon 19:57]
   :POSTID:   28743
   :BLOG:     sacha
@@ -28517,7 +28479,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-07-18 Emacs News
   :PROPERTIES:
-  :ID:       o2b:c699dca8-5e04-4c9f-8ce5-2afb9cebaf67
   :POST_DATE: [2016-07-18 Mon 11:43]
   :POSTID:   28739
   :BLOG:     sacha
@@ -28562,7 +28523,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-07-10 Emacs News
   :PROPERTIES:
-  :ID:       o2b:db86cee9-7954-4585-8062-61a60c8e4dd2
   :POST_DATE: [2016-07-11 Mon 12:19]
   :POSTID:   28732
   :BLOG:     sacha
@@ -28611,7 +28571,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-07-04 Emacs News
   :PROPERTIES:
-  :ID:       o2b:36df931e-9382-4910-9efd-22c3ab98161f
   :POST_DATE: [2016-07-04 Mon 17:53]
   :POSTID:   28731
   :BLOG:     sacha
@@ -28679,7 +28638,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-06-27 Emacs News
   :PROPERTIES:
-  :ID:       o2b:eae60e75-e689-46b9-a75d-166a6bee1e12
   :POST_DATE: [2016-06-27 Mon 11:15]
   :POSTID:   28723
   :BLOG:     sacha
@@ -28731,7 +28689,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-06-20 Emacs News 
   :PROPERTIES:
-  :ID:       o2b:314eb6c5-a553-4b1c-8181-a5170c71c79c
   :POST_DATE: [2016-06-20 Mon 17:44]
   :POSTID:   28722
   :BLOG:     sacha
@@ -28782,7 +28739,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-06-13 Emacs News
   :PROPERTIES:
-  :ID:       o2b:c9abd34b-d51d-401c-9c22-70f6190364b9
+
   :POST_DATE: [2016-06-13 Mon 15:44]
   :POSTID:   28715
   :BLOG:     sacha
@@ -28834,7 +28791,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-06-06 Emacs News
   :PROPERTIES:
-  :ID:       o2b:397c3de5-5ccf-4638-869d-1e1f7a3a07af
   :POST_DATE: [2016-06-06 Mon 12:04]
   :POSTID:   28711
   :BLOG:     sacha
@@ -28879,7 +28835,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-05-30 Emacs News
   :PROPERTIES:
-  :ID:       o2b:352cfddf-d94f-4b5f-b70f-f9586771116e
   :POST_DATE: [2016-05-30 Mon 09:52]
   :POSTID:   28702
   :BLOG:     sacha
@@ -28936,7 +28891,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-05-23 Emacs News
   :PROPERTIES:
-  :ID:       o2b:8cf07afb-ee9b-403e-9e00-74a0b6fda4ab
   :POST_DATE: [2016-05-23 Mon 12:41]
   :POSTID:   28698
   :BLOG:     sacha
@@ -29000,7 +28954,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-05-16 Emacs News
   :PROPERTIES:
-  :ID:       o2b:da1bb4f3-e281-4f1f-a730-0fa176886d23
   :POST_DATE: [2016-05-16 Mon 12:34]
   :POSTID:   28696
   :BLOG:     sacha
@@ -29064,7 +29017,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-05-09 Emacs News
   :PROPERTIES:
-  :ID:       o2b:1fd4d5a1-540c-40c4-8bb3-dd6b41b9f1e3
   :POST_DATE: [2016-05-09 Mon 11:41]
   :POSTID:   28692
   :BLOG:     sacha
@@ -29142,7 +29094,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-05-02 Emacs News
   :PROPERTIES:
-  :ID:       o2b:dc1f8e41-9e56-4d8a-b5e9-3d2118e1d7e0
   :POST_DATE: [2016-05-02 Mon 10:48]
   :POSTID:   28680
   :BLOG:     sacha
@@ -29209,7 +29160,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-04-25 Emacs News
   :PROPERTIES:
-  :ID:       o2b:7f7974c0-8331-407e-9a2b-bdfef7d83261
   :POST_DATE: [2016-04-25 Mon 10:28]
   :POSTID:   28678
   :BLOG:     sacha
@@ -29269,7 +29219,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-04-18 Emacs News                                               :emacs:
   :PROPERTIES:
-  :ID:       o2b:b5d06ac6-ac46-429f-869d-1b6bd5489082
   :POST_DATE: [2016-04-18 Mon 11:07]
   :POSTID:   28671
   :BLOG:     sacha
@@ -29322,7 +29271,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-04-11 Emacs News
   :PROPERTIES:
-  :ID:       o2b:6d8966ea-1344-4f54-a4f8-90a41b0f4977
   :POST_DATE: [2016-04-11 Mon 12:54]
   :POSTID:   28669
   :BLOG:     sacha
@@ -29382,7 +29330,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-04-04 Emacs News
   :PROPERTIES:
-  :ID:       o2b:e410912e-61b6-4069-b546-217f635c3d1a
   :POST_DATE: [2016-04-04 Mon 11:20]
   :POSTID:   28662
   :BLOG:     sacha
@@ -29445,7 +29392,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-03-28 Emacs News
   :PROPERTIES:
-  :ID:       o2b:6ba62443-5279-4088-a6ad-32811ca4d165
   :POST_DATE: [2016-03-28 Mon 15:26]
   :POSTID:   28655
   :BLOG:     sacha
@@ -29513,7 +29459,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-03-21 Emacs News
   :PROPERTIES:
-  :ID:       o2b:9e9d242f-f16f-4f9b-b7d8-d9261c6fc84b
   :POST_DATE: [2016-03-21 Mon 11:39]
   :POSTID:   28654
   :BLOG:     sacha
@@ -29572,7 +29517,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-03-14 Emacs News
   :PROPERTIES:
-  :ID:       o2b:81fa0741-5614-4c75-8a07-34402537b9c8
   :POST_DATE: [2016-03-14 Mon 08:24]
   :POSTID:   28647
   :BLOG:     sacha
@@ -29685,7 +29629,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-02-15 Emacs News
   :PROPERTIES:
-  :ID:       o2b:6d4ddb2e-c573-48ae-bacf-6efc04b7a544
   :POST_DATE: [2016-02-15 Mon 13:07]
   :POSTID:   28622
   :BLOG:     sacha
@@ -29761,7 +29704,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-02-08 Emacs News
   :PROPERTIES:
-  :ID:       o2b:d100bb15-52d1-4a0d-b2e9-634bdcdc2ceb
   :POST_DATE: [2016-02-08 Mon 12:04]
   :POSTID:   28619
   :BLOG:     sacha
@@ -29840,7 +29782,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-02-01 Emacs News
   :PROPERTIES:
-  :ID:       o2b:e893effd-30a8-4cae-93b9-1a5138ca0efe
   :POST_DATE: [2016-02-01 Mon 13:01]
   :POSTID:   28598
   :BLOG:     sacha
@@ -29916,7 +29857,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-01-25 Emacs News
   :PROPERTIES:
-  :ID:       o2b:98ff5caf-c90c-49dc-88b7-84f224a30ecc
   :POST_DATE: [2016-01-25 Mon 12:25]
   :POSTID:   28587
   :BLOG:     sacha
@@ -29992,7 +29932,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-01-18 Emacs News
   :PROPERTIES:
-  :ID:       o2b:d4262192-3b84-49e6-9c7b-0dbb1f469fd2
   :POST_DATE: [2016-01-18 Mon 14:09]
   :POSTID:   28571
   :BLOG:     sacha
@@ -30050,7 +29989,6 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 ** 2016-01-11 Emacs News
   :PROPERTIES:
-  :ID:       o2b:c32e4198-ad59-4978-b33e-0b6ebd15105d
   :POST_DATE: [2016-01-11 Mon 09:33]
   :POSTID:   28564
   :BLOG:     sacha
@@ -30335,7 +30273,6 @@ my-emacs-news-youtube-playlist
 
 ** Sorting Org Mode lists using a sequence of regular expressions :emacs:org:
    :PROPERTIES:
-   :ID:       o2b:ab84dc77-bea4-4e71-ae7f-e91fb34bfa28
    :POST_DATE: [2017-12-21 Thu 12:08]
    :POSTID:   29132
    :BLOG:     sacha
@@ -30698,7 +30635,6 @@ my-insert-org-news-from-git
 
 ** DONE Publishing Emacs News as plain text, HTML, and attached Org file
    :PROPERTIES:
-   :ID:       o2b:0a59c00b-7c40-48d5-a8c4-7a0d67e6e479
    :POST_DATE: [2016-02-01 Mon 21:25]
    :POSTID:   28599
    :BLOG:     sacha
@@ -30870,7 +30806,7 @@ above!
                   ("https://www.reddit.com/r/planetemacs" . "r/planetemacs")
                   ("https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story" . "Hacker News")
                   ("https://lobste.rs/search?q=emacs&what=stories&order=newest" . "lobste.rs")
-									("https://lemmy.ml/c/emacs" "lemmy")
+									("https://lemmy.ml/c/emacs" . "lemmy")
                   ("https://planet.emacslife.com" . "planet.emacslife.com")
                   ("https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt" . "YouTube")
                   ("http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS" . "the Emacs NEWS file")
@@ -30937,7 +30873,7 @@ my-emacs-news-collect-entries
 
 #+NAME: detect-dupes
 #+begin_src emacs-lisp
-(defvar my-emacs-news-check-duplicates-display 'minibuffer "minibuffer or posframe")
+(defvar my-emacs-news-check-duplicates-display 'minibuffer "*minibuffer or posframe")
 
 (defun my-emacs-news-check-duplicates ()
   (interactive)
@@ -31017,7 +30953,6 @@ my-emacs-news-check-duplicates
 
 ** Making a numpad-based hydra for organizing Emacs News
    :PROPERTIES:
-   :ID:       o2b:04eca1e8-ed55-4aec-bc0b-ba4547a1a655
    :POST_DATE: [2019-06-04 Tue 23:54]
    :POSTID:   29420
    :BLOG:     sacha
