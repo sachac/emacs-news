@@ -58,6 +58,11 @@ SCHEDULED: <2022-01-31 Mon .+1w>
   <<twitter>>
   <<collect-news>>
   <<detect-dupes>>
+<<my-update-package-list>>
+<<my-get-current-packages>>
+<<my-describe-packages>>
+<<my-announce-elpa-package>>
+<<my-list-new-packages>>
 #+end_src
 
 To post:
@@ -31643,52 +31648,6 @@ Appearance
 
 * Code
 
-** Package links
-
-#+NAME: packages
-#+begin_src emacs-lisp 
-  (defun my-org-package-open (package-name)
-    (interactive "MPackage name: ")
-    (describe-package (intern package-name)))
-
-  (ert-deftest my-org-package-export ()
-    (should
-     (string=
-      (my-org-package-export "transcribe" "transcribe" 'html)
-      "<a target=\"_blank\" href=\"https://elpa.gnu.org/packages/transcribe.html\">transcribe</a>"
-      ))
-    (should
-     (string=
-      (my-org-package-export "fireplace" "fireplace" 'html)
-      "<a target=\"_blank\" href=\"https://melpa.org/#/fireplace\">fireplace</a>"
-      )))
-  (defun my-org-package-export (link description format)
-    (let* ((package-info (car (assoc-default (intern link) package-archive-contents)))
-           (package-source (package-desc-archive package-info))
-           (path (format
-                  (cond
-                   ((string= package-source "gnu") "https://elpa.gnu.org/packages/%s.html")
-                   ((string= package-source "nongnu") "https://elpa.nongnu.org/nongnu/%s.html")
-                   ((string= package-source "melpa") "https://melpa.org/#/%s")
-                   (t (throw 'unknown-source)))
-                  link))
-           (desc (or description link)))
-      (cond
-       ((eq format '11ty) (format "<a target=\"_blank\" href=\"%s\">%s</a>" path desc))
-       ((eq format 'html) (format "<a target=\"_blank\" href=\"%s\">%s</a>" path desc))
-       ((eq format 'wp) (format "<a target=\"_blank\" href=\"%s\">%s</a>" path desc))
-       ((eq format 'latex) (format "\\href{%s}{%s}" path desc))
-       ((eq format 'texinfo) (format "@uref{%s,%s}" path desc))
-       ((eq format 'ascii) (format "%s <%s>" desc path))
-       (t path))))
-
-  (org-link-set-parameters "package" :follow 'my-org-package-open :export 'my-org-package-export)
-#+end_src
-
-#+RESULTS: packages
-:results:
-(:follow my-org-package-open :export my-org-package-export)
-:end:
 
 ** ASCII export
 
@@ -31968,6 +31927,298 @@ my-emacs-news-auto-categorize
 :end:
 
 One more little thing automated...
+** How I keep track of new Emacs packages  :emacs:
+:PROPERTIES:
+:EXPORT_DATE: 2023-09-03T21:01:23-0400
+:EXPORT_ELEVENTY_PERMALINK: /blog/2023/09/how-i-keep-track-of-new-emacs-packages/
+:EXPORT_ELEVENTY_FILE_NAME: blog/2023/09/how-i-keep-track-of-new-emacs-packages/
+:CUSTOM_ID: tracking-new-packages
+:END:
+
+One of the things I like about preparing Emacs News is seeing the new
+packages that people have added to Emacs. It's pretty awesome! The
+package archives don't seem to include the date that a new package has
+been added, but that's easy to work around by saving the data and then
+comparing new archive contents with the old list. The code for this is
+somewhere in the very long [[https://raw.githubusercontent.com/sachac/emacs-news/master/index.org][index.org]] in the [[https://github.com/sachac/emacs-news][Emacs News]] repository, so
+I thought I'd add comments to it and post it as a blog post as well.
+
+#+TOC: headlines 2 local
+
+The overall function that prepares a draft of Emacs News is
+=my-prepare-emacs-news=, and the code specifically related to packages
+is:
+
+#+begin_src emacs-lisp  :eval-no
+(package-refresh-contents)
+(my-update-package-list date)
+#+end_src
+*** Loading saved package data
+:PROPERTIES:
+:CUSTOM_ID: saved-packages
+:END:
+Here, we load a list of packages and dates, and we compare them with the packages loaded from =archive-contents=.
+
+#+NAME: my-update-package-list
+#+begin_src emacs-lisp
+(defvar my-package-list-file "~/sync/emacs-news/package-list.el")
+
+(defun my-read-sexp-from-file (filename)
+  (with-temp-buffer (insert-file-contents filename)
+                    (goto-char (point-min)) (read (current-buffer))))
+
+(defun my-update-package-list (&optional date)
+	"Update the list of packages. Mark new packages with DATE."
+  (interactive (list (format-time-string "%Y-%m-%d")))
+	(setq date (or date (format-time-string "%Y-%m-%d")))
+  (let* ((archives (my-get-current-packages date))
+         (old-list (my-read-sexp-from-file my-package-list-file)))
+    (mapc (lambda (o)
+            (let* ((old-entry (assoc-default (car o) old-list))
+                   (new-archives
+                    (seq-difference
+                     (mapcar 'cadr (cdr o))
+                     (mapcar 'car (car (assoc-default (car o) old-list))))))
+              (cond
+               ((null (assoc (car o) old-list))
+                ;; new package, add it to the list
+                (setq old-list
+                      (cons (list (car o)
+                                  (mapcar
+                                   (lambda (entry) (cons (cadr entry) date))
+                                   (cdr o)))
+                            old-list)))
+               (new-archives
+								;; existing package added to a different repository
+                (setf old-entry
+                      (append
+                       (mapcar (lambda (archive) (cons archive date))
+                               new-archives)
+                       old-entry
+                       nil))))))
+          archives)
+		;; Save to file, one package per line
+    (with-temp-file my-package-list-file
+      (insert "("
+              (mapconcat #'prin1-to-string
+                         old-list
+                         "\n")
+              ")"))
+    old-list))
+#+end_src
+
+The function above loads a list of packages and dates from
+=my-package-list-file=, which is [[https://raw.githubusercontent.com/sachac/emacs-news/master/package-list.el][package-list.el]] in my repository.
+It's a list of lists storing the package name, the repositories it's
+available from, and the dates I noticed it was in the repository. Each
+entry looks something like this:
+
+#+begin_src emacs-lisp
+(vhdl-ts-mode (("melpa" . "2023-08-21")))
+#+end_src
+
+*** Reading archive contents
+:PROPERTIES:
+:CUSTOM_ID: archive-contents
+:END:
+
+#+NAME: my-get-current-packages
+#+begin_src emacs-lisp
+(defun my-get-current-packages (date)
+  "Return a list of package symbols with the package archive and DATE.
+Example entry: `(ack (ack \"gnu\" \"2023-09-03\"))`"
+  (seq-group-by 'car
+                (seq-mapcat (lambda (f)
+                              (let ((base (file-name-base f)))
+                                (mapcar
+                                 (lambda (entry)
+                                   (list (car entry) base date))
+                                 (cdr
+                                  (with-temp-buffer
+                                    (insert-file-contents
+                                     (expand-file-name "archive-contents" f))
+                                    (goto-char (point-min))
+                                    (read (current-buffer)))))))
+                            (directory-files
+                             (expand-file-name "archives" package-user-dir) t
+                             directory-files-no-dot-files-regexp))))
+#+end_src
+
+*** Getting new packages
+:PROPERTIES:
+:CUSTOM_ID: new-packages
+:END:
+
+Then I can filter the list to get only the new packages.
+
+#+NAME: my-list-new-packages
+#+begin_src emacs-lisp
+(defun my-packages-between (from-date &optional to-date)
+	(seq-filter
+   (lambda (o)
+     (and
+			(or (not from-date) (not (string< (cdar (cadr o)) from-date)))
+			(or (not to-date) (string< (cdar (cadr o)) to-date))))
+   (my-read-sexp-from-file my-package-list-file)))
+
+(defun my-list-new-packages (&optional date)
+  (interactive)
+  (let ((packages
+         (my-describe-packages
+          (seq-filter
+           (lambda (o)
+             (seq-remove (lambda (archive) (string< (cdr archive) date))
+                         (cadr o)))
+           (my-read-sexp-from-file my-package-list-file)))))
+    (if (called-interactively-p 'any)
+        (insert packages)
+      packages)))
+#+end_src
+*** Formatting new package entries
+:PROPERTIES:
+:CUSTOM_ID: formatting-packages
+:END:
+Formatting the entry in Emacs News is mostly a matter of grabbing the package description.
+
+#+NAME: my-describe-packages
+#+begin_src emacs-lisp
+(defun my-describe-packages (list)
+  "Return an Org list of package descriptions for LIST."
+  (mapconcat
+   (lambda (entry)
+     (let* ((symbol (car entry))
+            (package-desc (assoc symbol package-archive-contents)))
+       (if package-desc
+           (format "  - %s: %s (%s)"
+                   (org-link-make-string (concat "package:" (symbol-name symbol))
+                                         (symbol-name symbol))
+                   (package-desc-summary (cadr package-desc))
+                   (mapconcat
+                    (lambda (archive)
+                      (pcase (car archive)
+                        ("gnu" "GNU ELPA")
+                        ("nongnu" "NonGNU ELPA")
+                        ("melpa" "MELPA")))
+                    (cadr entry)
+                    ", "))
+         "")))
+   list
+   "\n"))
+#+end_src
+
+I want package links to call =describe-package= when I'm exploring
+them inside Emacs, and I want them to export as links to the
+appropriate repository page when I publish Emacs News as HTML or
+ASCII. This is handled by a custom link.
+
+#+NAME: packages
+#+begin_src emacs-lisp 
+  (defun my-org-package-open (package-name)
+    (interactive "MPackage name: ")
+    (describe-package (intern package-name)))
+
+  (defun my-org-package-export (link description format)
+    (let* ((package-info (car (assoc-default (intern link) package-archive-contents)))
+           (package-source (package-desc-archive package-info))
+           (path (format
+                  (cond
+                   ((string= package-source "gnu") "https://elpa.gnu.org/packages/%s.html")
+                   ((string= package-source "nongnu") "https://elpa.nongnu.org/nongnu/%s.html")
+                   ((string= package-source "melpa") "https://melpa.org/#/%s")
+                   (t (throw 'unknown-source)))
+                  link))
+           (desc (or description link)))
+      (cond
+       ((eq format '11ty) (format "<a target=\"_blank\" href=\"%s\">%s</a>" path desc))
+       ((eq format 'html) (format "<a target=\"_blank\" href=\"%s\">%s</a>" path desc))
+       ((eq format 'wp) (format "<a target=\"_blank\" href=\"%s\">%s</a>" path desc))
+       ((eq format 'ascii) (format "%s <%s>" desc path))
+       (t path))))
+
+  (org-link-set-parameters "package" :follow 'my-org-package-open :export 'my-org-package-export)
+
+  (ert-deftest my-org-package-export ()
+    (should
+     (string=
+      (my-org-package-export "transcribe" "transcribe" 'html)
+      "<a target=\"_blank\" href=\"https://elpa.gnu.org/packages/transcribe.html\">transcribe</a>"
+      ))
+    (should
+     (string=
+      (my-org-package-export "fireplace" "fireplace" 'html)
+      "<a target=\"_blank\" href=\"https://melpa.org/#/fireplace\">fireplace</a>"
+      )))
+#+end_src
+*** Announcing new GNU ELPA packages by e-mail
+:PROPERTIES:
+:CUSTOM_ID: announcing-gnu-elpa
+:END:
+
+I announce new GNU ELPA packages on the [[https://lists.gnu.org/mailman/listinfo/info-gnu-emacs][info-gnu-emacs@gnu.org mailing
+list]]. I decided to leave this as partially automated instead of
+fully automating it, since it involves e-mails that go out to lots of
+people.
+
+Whenever I prepare Emacs News, I look at the list of new packages for
+ones in the GNU ELPA repository. Then I use this function to draft the
+e-mail that announces it. To reduce the risk of errors, I default to
+the symbol at point, and I use only ELPA packages for completion.
+
+#+NAME: my-announce-elpa-package
+#+begin_src emacs-lisp
+(defun my-announce-elpa-package (package-name)
+	"Compose an announcement for PACKAGE-NAME for info-gnu-emacs."
+  (interactive (let* ((guess (or (function-called-at-point)
+                                 (symbol-at-point))))
+                 (require 'finder-inf nil t)
+                 ;; Load the package list if necessary (but don't activate them).
+                 (unless package--initialized
+                   (package-initialize t))
+                 (let ((packages
+                        (mapcar #'car
+                                (seq-filter
+                                 (lambda (p)
+																	 (seq-find (lambda (entry)
+																							 (string= (package-desc-archive entry)
+																												"gnu"))
+																						 (cdr p)))
+                                 package-archive-contents))))
+                   (unless (memq guess packages)
+                     (setq guess nil))
+                   (setq packages (mapcar #'symbol-name packages))
+                   (let ((val
+                          (completing-read (format-prompt "Describe package" guess)
+                                           packages nil t nil nil (when guess
+                                                                    (symbol-name guess)))))
+                     (list (and (> (length val) 0) (intern val)))))))
+  (let ((package (car (assoc-default package-name package-archive-contents))))
+    (compose-mail "info-gnu-emacs@gnu.org"
+                  (format "New GNU ELPA package: %s - %s"
+                          (package-desc-name package)
+                          (package-desc-summary package)))
+    (message-goto-body)
+    (describe-package-1 package-name)
+    (message-goto-body)
+    (delete-region (point)
+                   (progn (re-search-forward " *Summary:") (match-beginning 0)))
+    (save-excursion
+  		(goto-char (point-max))
+	  	(insert "\n\n---------\nYou are receiving this message via the info-gnu-emacs@gnu.org mailing list.\nList info/preferences: https://lists.gnu.org/mailman/listinfo/info-gnu-emacs")
+			(goto-char (point-min))
+      (when (re-search-forward "Maintainer: \\(.+\\)" nil t)
+        (message-add-header (concat "Reply-To: " user-mail-address ", " (match-string 1))
+                            (concat "Mail-Followup-To: " user-mail-address ", " (match-string 1)))))))
+#+end_src
+*** Ideas for future stuff
+:PROPERTIES:
+:CUSTOM_ID: package-processing-ideas
+:END:
+
+It might be nice to use this information to publish an RSS feed of new
+packages, look up the package homepages for screenshots/GIFs/videos,
+or cross-reference blog posts and community discussions.
+
+Anyway, that's how I keep track of new Emacs packages!
 
 ** Other functions
 
@@ -32022,149 +32273,7 @@ One more little thing automated...
                                     (xml-get-children (car (xml-get-children (car feed) 'channel)) 'item))))
                  ""))))
 
-(defun my-describe-packages (list)
-  "Return an Org list of package descriptions for LIST."
-  (mapconcat
-   (lambda (entry)
-     (let* ((symbol (car entry))
-            (package-desc (assoc symbol package-archive-contents)))
-       (if package-desc
-           (format "  - %s: %s (%s)"
-                   (org-link-make-string (concat "package:" (symbol-name symbol))
-                                         (symbol-name symbol))
-                   (package-desc-summary (cadr package-desc))
-                   (mapconcat
-                    (lambda (archive)
-                      (pcase (car archive)
-                        ("gnu" "GNU ELPA")
-                        ("nongnu" "NonGNU ELPA")
-                        ("melpa" "MELPA")))
-                    (cadr entry)
-                    ", "))
-         "")))
-   list
-   "\n"))
 
-(defun my-get-current-packages (date)
-  (seq-group-by 'car
-                (seq-mapcat (lambda (f)
-                              (let ((base (file-name-base f)))
-                                (mapcar
-                                 (lambda (entry)
-                                   (list (car entry) base date))
-                                 (cdr
-                                  (with-temp-buffer
-                                    (insert-file-contents
-                                     (expand-file-name "archive-contents" f))
-                                    (goto-char (point-min))
-                                    (read (current-buffer)))))))
-                            (directory-files
-                             (expand-file-name "archives" package-user-dir) t
-                             directory-files-no-dot-files-regexp))))
-
-(defvar my-package-list-file "~/sync/emacs-news/package-list.el")
-(defun my-read-sexp-from-file (filename)
-  (with-temp-buffer (insert-file-contents filename)
-                    (goto-char (point-min)) (read (current-buffer))))
-
-(defun my-update-package-list (date)
-  (interactive (list (format-time-string "%Y-%m-%d")))
-  (let* ((archives (my-get-current-packages date))
-         (old-list (my-read-sexp-from-file my-package-list-file)))
-    (mapc (lambda (o)
-            (let* ((old-entry (assoc-default (car o) old-list))
-                   (new-archives
-                    (seq-difference
-                     (mapcar 'cadr (cdr o))
-                     (mapcar 'car (car (assoc-default (car o) old-list))))))
-              (cond
-               ((null (assoc (car o) old-list))
-                ;; not there yet, add it
-                (setq old-list
-                      (cons (list (car o)
-                                  (mapcar
-                                   (lambda (entry) (cons (cadr entry) date))
-                                   (cdr o)))
-                            old-list)))
-               (new-archives
-                (setf old-entry
-                      (append
-                       (mapcar (lambda (archive) (cons archive date))
-                               new-archives)
-                       old-entry
-                       nil))))))
-          archives)
-    (with-temp-file my-package-list-file
-      (insert "("
-              (mapconcat #'prin1-to-string
-                         old-list
-                         "\n")
-              ")"))
-    old-list))
-
-(defun my-packages-between (from-date &optional to-date)
-	(seq-filter
-   (lambda (o)
-     (and
-			(or (not from-date) (not (string< (cdar (cadr o)) from-date)))
-			(or (not to-date) (string< (cdar (cadr o)) to-date))))
-   (my-read-sexp-from-file my-package-list-file)))
-
-(defun my-list-new-packages (&optional date)
-  (interactive)
-  (let ((packages
-         (my-describe-packages
-          (seq-filter
-           (lambda (o)
-             (seq-remove (lambda (archive) (string< (cdr archive) date))
-                         (cadr o)))
-           (my-read-sexp-from-file my-package-list-file)))))
-    (if (called-interactively-p 'any)
-        (insert packages)
-      packages)))
-
-(defun my-announce-elpa-package (package-name)
-  (interactive (let* ((guess (or (function-called-at-point)
-                                 (symbol-at-point))))
-                 (require 'finder-inf nil t)
-                 ;; Load the package list if necessary (but don't activate them).
-                 (unless package--initialized
-                   (package-initialize t))
-                 (let ((packages
-                        (mapcar #'car
-                                (seq-filter
-                                 (lambda (p)
-																	 (seq-find (lambda (entry)
-																							 (string= (package-desc-archive entry)
-																												"gnu"))
-																						 (cdr p)))
-                                 package-archive-contents))))
-                   (unless (memq guess packages)
-                     (setq guess nil))
-                   (setq packages (mapcar #'symbol-name packages))
-                   (let ((val
-                          (completing-read (format-prompt "Describe package" guess)
-                                           packages nil t nil nil (when guess
-                                                                    (symbol-name guess)))))
-                     (list (and (> (length val) 0) (intern val)))))))
-  (let ((package (car (assoc-default package-name package-archive-contents))))
-    (compose-mail "info-gnu-emacs@gnu.org"
-                  (format "New GNU ELPA package: %s - %s"
-                          (package-desc-name package)
-                          (package-desc-summary package)))
-    (message-goto-body)
-    (describe-package-1 package-name)
-    (message-goto-body)
-    (delete-region (point)
-                   (progn (re-search-forward " *Summary:") (match-beginning 0)))
-    (save-excursion
-  		(goto-char (point-max))
-	  	(insert "\n\n---------\nYou are receiving this message via the info-gnu-emacs@gnu.org mailing list.\nList info/preferences: https://lists.gnu.org/mailman/listinfo/info-gnu-emacs")
-			(goto-char (point-min))
-      (when (re-search-forward "Maintainer: \\(.+\\)" nil t)
-        (message-add-header (concat "Reply-To: " user-mail-address ", " (match-string 1))
-                            (concat "Mail-Followup-To: " user-mail-address ", " (match-string 1)))))
-    ))
 #+end_src
 
 #+RESULTS: link-description
