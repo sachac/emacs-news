@@ -32459,7 +32459,8 @@ text/html, with text/x-org attached. The heavy lifting is done with
           (org-html-toplevel-hlevel 3)
           (title (org-get-heading))
           output)
-    	(my-magit-stage-all-and-commit title)
+			(when (magit-anything-unstaged-p)
+    		(my-magit-stage-all-and-commit title))
 			(setq output
             (apply
              'format
