@@ -33072,23 +33072,13 @@ text/html, with text/x-org attached. The heavy lifting is done with
              "<#multipart type=alternative>
 <#part type=\"text/plain\" disposition=inline>
 %s
-
-You're receiving this message via the Emacs Tangents mailing list.
-View list info/unsubscribe: https://lists.gnu.org/mailman/listinfo/emacs-tangents
 <#/part>
 <#part type=\"text/html\" disposition=inline>
 %s
-
-<p>You're receiving this message via the Emacs Tangents mailing list.<br />
-<a href=\"https://lists.gnu.org/mailman/listinfo/emacs-tangents\">View list info/unsubscribe</a></p>
-
 <#/part>
 <#/multipart>
 <#part type=\"text/x-org\" disposition=attachment name=\"emacs-news.org\">
 %s
-
-You're receiving this message via the Emacs Tangents mailing list.
-[[https://lists.gnu.org/mailman/listinfo/emacs-tangents][View list info/unsubscribe]]
 <#/part>
 "
              (mapcar
