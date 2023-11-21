@@ -33686,10 +33686,22 @@ text/html, with text/x-org attached. The heavy lifting is done with
 
 #+NAME: share-news
 #+begin_src emacs-lisp :eval never-export
+(defun my-emacs-news-commit-and-push (&optional title)
+	(when (magit-anything-unstaged-p)
+		(my-magit-stage-all-and-commit (or title "update")))
+	(magit-push-current "codeberg/master" nil)
+	(magit-push-current "sourcehut/master" nil))
+
 (defun my-share-emacs-news ()
   "Prepare emacs-tangents e-mail of post, and commit to Git."
   (interactive)
 	(require 'magit)
+	(let ((html (org-export-as 'html))
+				(text (org-export-as 'ascii nil nil t)))
+		(with-temp-file "index.html"
+			(insert html))
+		(with-temp-file "index.txt"
+			(insert text)))
   ;; Draft Gnus article
   (save-restriction
     (org-narrow-to-subtree)
@@ -33697,9 +33709,7 @@ text/html, with text/x-org attached. The heavy lifting is done with
           (org-html-toplevel-hlevel 3)
           (title (org-get-heading))
           output)
-			(when (magit-anything-unstaged-p)
-    		(my-magit-stage-all-and-commit title))
-			(magit-push-current "codeberg/master" nil)
+			(my-emacs-news-commit-and-push title)
 			(setq output
             (apply
              'format
@@ -34229,3 +34239,18 @@ Ideas:
 
        (gnus-group-prefixed-name "~/tmp/2022-02" 'mbox)
 (gnus-group-make-doc-group "~/tmp/2022-02" 'mbox)
+** Post item as most recent
+
+#+NAME: export-most-recent
+#+begin_src emacs-lisp :eval never-export
+(defun my-emacs-news-post-as-recent ()
+	(interactive)
+	(let ((formats '((ascii . "txt")
+									 (html . "html")
+									 (org . "org"))))
+		(dolist (format formats)
+			(let ((data (org-export-as (car format) t nil (eq (car format) 'ascii))))
+				(with-temp-file (concat "most-recent." (cdr format))
+					(insert data))))
+		(my-emacs-news-commit-and-push (org-get-heading))))
+#+end_src
