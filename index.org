@@ -12,7 +12,7 @@ Links from [[http://reddit.com/r/emacs/new][reddit.com/r/emacs]], [[http://reddi
 
 https://www.youtube.com/results?search_query=emacs+%7C+%22org+mode%22+%7C+orgmode+%7C+eshell&sp=CAI%253D
 
-* TODO [#A] Do another Emacs News review   
+* TODO [#A] Do another Emacs News review
 SCHEDULED: <2022-01-31 Mon .+1w>
   :PROPERTIES:
   :Effort:   1:30
@@ -45,7 +45,7 @@ SCHEDULED: <2022-01-31 Mon .+1w>
   :END:
 
   #+NAME: defs
-#+begin_src emacs-lisp :results none :noweb yes
+#+begin_src emacs-lisp :results none :noweb yes :eval never-export
   <<menu>>
   <<packages>>
   <<reddit>>
@@ -74,7 +74,7 @@ To post:
   
 Actually generate the section:
 
-#+begin_src emacs-lisp :results raw :noweb yes
+#+begin_src emacs-lisp :exports none :results raw :noweb yes :eval never-export
   <<defs>>
   (my-prepare-emacs-news (org-read-date nil nil "-mon")
                          '(
@@ -90,6 +90,116 @@ Actually generate the section:
 #+end_src
 
 #+RESULTS:
+** 2023-11-20 Emacs news
+    :PROPERTIES:
+    :EXPORT_ELEVENTY_PERMALINK: /blog/2023/11/2023-11-20-emacs-news/
+    :EXPORT_ELEVENTY_FILE_NAME: blog/2023/11/2023-11-20-emacs-news/
+    :EXPORT_DATE: 2023-11-20T11:24:40-0500
+    :END:
+		:LOGBOOK:
+		- State "DONE"       from              [2023-11-21 Tue 08:13]
+		:END:
+
+- Upcoming events:
+  - Mastering Emacs book club https://susam.net/maze/meet/mastering-emacs/ Fri Nov 24 1200 America/Vancouver - 1400 America/Chicago - 1500 America/Toronto - 2000 Etc/GMT - 2100 Europe/Berlin -- Sat Nov 25 0130 Asia/Kolkata - 0400 Asia/Singapore
+  - Emacs APAC (virtual) https://emacs-apac.gitlab.io/ Sat Nov 25 0030 America/Vancouver - 0230 America/Chicago - 0330 America/Toronto - 0830 Etc/GMT - 0930 Europe/Berlin - 1400 Asia/Kolkata - 1630 Asia/Singapore
+  - Mastering Emacs book club https://susam.net/maze/meet/mastering-emacs/ Sat Nov 25 0200 America/Vancouver - 0400 America/Chicago - 0500 America/Toronto - 1000 Etc/GMT - 1100 Europe/Berlin - 1530 Asia/Kolkata - 1800 Asia/Singapore
+  - Mastering Emacs book club https://susam.net/maze/meet/mastering-emacs/ Sun Nov 26 0200 America/Vancouver - 0400 America/Chicago - 0500 America/Toronto - 1000 Etc/GMT - 1100 Europe/Berlin - 1530 Asia/Kolkata - 1800 Asia/Singapore
+  - Tbilisi Emacs Meetup (in person) https://akater.gitlab.io/emacs-tbilisi-meetup-page - 15:30 Georgia Time
+  - Emacs Berlin (virtual, in English) https://emacs-berlin.org/ Wed Nov 29 0930 America/Vancouver - 1130 America/Chicago - 1230 America/Toronto - 1730 Etc/GMT - 1830 Europe/Berlin - 2300 Asia/Kolkata -- Thu Nov 30 0130 Asia/Singapore
+  - M-x Research (contact them for password): TBA https://m-x-research.github.io/ Fri Dec 1 0800 America/Vancouver - 1000 America/Chicago - 1100 America/Toronto - 1600 Etc/GMT - 1700 Europe/Berlin - 2130 Asia/Kolkata -- Sat Dec 2 0000 Asia/Singapore
+- Emacs configuration:
+  - [[http://tsengf.blogspot.com/2023/11/using-use-package-to-bootstrap-quelpa.html][Anything goes: Using use-package to bootstrap quelpa and quelpa-use-package]]
+  - [[https://github.com/acanimal/dotfiles][acanimal's dotfiles: These are my dotfiles. If you don’t like them I have others.]]
+- Emacs Lisp:
+  - [[https://franciscosanudo.com/posts/elisp/][Emacs: Enough elisp to get you started]]
+  - [[https://github.com/caiorss/Emacs-Elisp-Programming][Emacs-Elisp-Programming: Tutorial about programming Elisp and Emacs text editor customization.]] (2018)
+  - [[https://youtube.com/watch?v=ufVldIrUOBg&si=ZT4WIT3IIjtZr5_0][Defalias: a quick guide to making an alias in Emacs]] (3:19, [[https://www.reddit.com/r/emacs/comments/17zdhtt/defalias_a_quick_guide_to_making_an_alias_in_emacs/][Reddit]])
+  - [[https://dl.acm.org/doi/10.1145/147135.147248][Eoops: an object-oriented programming system for Emacs-Lisp: ACM SIGPLAN Lisp Pointers: Vol V, No 3]] (1992, [[https://www.reddit.com/r/emacs/comments/17xuf0z/eoops_an_objectoriented_programming_system_for/][Reddit]], [[https://news.ycombinator.com/item?id=38316915][HN]])
+  - [[https://emacs.ch/@fomosapien/111432826874276112][tip on using advice-add and org-edit-special]]
+- Appearance:
+  - [[https://github.com/balloneij/selection-highlight-mode][selection-highlight-mode - A minor mode for highlighting matches to the selection (inspired by VS Code)]] ([[https://www.reddit.com/r/emacs/comments/17wy4xk/selectionhighlightmode_a_minor_mode_for/][Reddit]])
+  - [[https://protesilaos.com/codelog/2023-11-15-spacious-padding-extra-ui-dev/][Protesilaos Stavrou: Emacs: "spacious-padding" covers more User Interface elements]] ([[https://baty.net/2023/11/spacious-padding-emacs-package/][Jack Baty]])
+  - [[https://andreyor.st/posts/2023-11-17-overcolorization/][Andrey Listopadov: Overcolorization]]
+  - [[https://www.reddit.com/r/emacs/comments/n8jyuz/cannot_get_emacs_to_display_roboto_mono_font_in/][To get Roboto Mono to display italics in Linux Emacs, edit the vendor ID in the .ttf files]] ([[https://emacs.ch/@wirthy/111432144110538827][@wirthy@emacs.ch]])
+- Navigation:
+  - [[https://codelearn.me/2023/11/15/emacs-ibuffer.html][Ruslan Bekenev: Did you know about IBuffer?]] ([[https://irreal.org/blog/?p=11782][Irreal]])
+  - [[https://idiomdrottning.org/ready-made-regexp][Ready-made regexp replacers]] ([[https://irreal.org/blog/?p=11771][Irreal]])
+  - [[https://emacs.ch/@cragg/111429021363076682][Tips for renaming variables using query-replace-regexp]]
+  - [[https://github.com/aki2o/emacs-pophint][emacs-pophint: Provide navigation like the Vimperator/KeySnail Hint Mode of Firefox]]
+  - [[https://github.com/liushihao456/symbols-outline.el][symbols-outline.el: Display symbols (functions, variables, etc) in a side window.]]
+  - [[https://protesilaos.com/codelog/2023-11-17-beframe-1-0-0/][Protesilaos Stavrou: Emacs: beframe version 1.0.0]]
+  - [[https://gist.github.com/jdtsmith/75d76bee292357cbfe18d7eb4a25c9a9][maximize-window-vertically in emacs]]
+  - [[https://janusworx.com/blog/having-my-emacs-tasks-and-notes-ready/][Mario Jason Braganza: Having My Emacs Tasks and Notes Ready]] ([[https://irreal.org/blog/?p=11778][Irreal]] and [[https://janusworx.com/blog/on-how-emacs-adapts/][response]])
+  - [[https://www.youtube.com/watch?v=i0EbxeSqAS8][A Smarter Other Window #shorts #emacs]] (00:30)
+  - [[https://protesilaos.com/codelog/2023-11-17-emacs-ediff-basics/][Protesilaos Stavrou: Emacs: ediff basics]] (15:49, [[https://www.youtube.com/watch?v=pSvsAutseO0][YouTube]], [[https://irreal.org/blog/?p=11780][Irreal]])
+- Dired:
+  - [[https://www.reddit.com/r/emacs/comments/17z4kfo/using_dired_with_only_one_hand_for_browsing_dired/][Using Dired with only one hand (for browsing dired and files while relaxing) Super cool.]]
+  - [[https://tech.toryanderson.com/2023/11/17/mass-file-conversion-using-find-and-exec/][Tory Anderson: Mass file conversion using find and exec]] - mention of dired-toggle-read-only
+- Writing:
+  - [[https://michaelneuper.com/posts/efficient-latex-editing-with-emacs/][My LaTeX setup with emacs]] ([[https://www.reddit.com/r/emacs/comments/17wv8jo/my_latex_setup_with_emacs/][Reddit]])
+- Org Mode:
+  - [[https://poview.org/posts/20231116-emacs-for-basb/][GNU Emacs to manage actionable items when Building a Second Brain  | Poview]] - together with Denote
+  - [[https://emacs.dyerdwelling.family/emacs/20231014134633-emacs--quick-search-through-org-headers-using-consult-outline/][James Dyer: Quick Search Through Org Headers using Consult Outline]]
+  - [[https://www.miskatonic.org/2023/11/15/minted/][William Denton: Exporting Org source code blocks to LaTeX with minted]]
+  - [[https://ochicken.net/projects/workspace/][Emacs Workspace: IDE + Yet Another Jupyter]] ([[https://www.reddit.com/r/emacs/comments/17xhbvi/emacs_workspace_ide_yet_another_jupyter/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/17zm3qq/orgroam_automatically_log_modified_nodes_in_daily/][org-roam: Automatically log modified nodes in daily note]]
+  - [[https://github.com/cpbotha/org-roam-canvas][cpbotha/org-roam-canvas: render org-roam nodes as part of the obsidian canvas]] ([[https://emacs.ch/@cpbotha/111437200289217309][@cpbotha@emacs.ch]])
+  - [[https://www.youtube.com/watch?v=H4FW1vTEUU0][20231119 org roam canvas ors-get-link]] (00:51)
+  - [[https://about.org-note.com][OrgNote - mobile app inspired by org-roam and org-roam-ui (early beta)]] ([[https://www.reddit.com/r/emacs/comments/17v427x/orgnote_mobile_app_inspired_by_orgroam_and/][Reddit]])
+- Denote:
+  - [[https://protesilaos.com/emacs/denote][Denote (denote.el) version 2.1.0 released!]] ([[https://www.reddit.com/r/emacs/comments/17u52ig/denote_denoteel_version_210_released/][Reddit]])
+- Completion:
+  - [[https://www.p-snow.org/posts/20231119_1024/][TempEL, an Emacs package for managing templates : .dot life — p-snow a.k.a. こなゆき]]
+- Coding:
+  - [[https://magnus.therning.org/2023-11-16-using-the-golang-mode-shipped-with-emacs.html][Using the golang mode shipped with Emacs]] ([[https://www.reddit.com/r/emacs/comments/17wgpsp/using_the_golang_mode_shipped_with_emacs/][Reddit]])
+  - [[https://www.youtube.com/watch?v=YKkyfz4cU8g][Debug multi threaded Python apps with Emacs, eglot and dape]] ([[https://www.reddit.com/r/emacs/comments/17wx1h4/debug_multi_threaded_python_apps_with_emacs_eglot/][Reddit]])
+  - [[https://dev.to/veer66/pseudo-repl-driven-programming-in-rust-2c6m][Pseudo-REPL-driven programming in Rust with Evcxr and Emacs]]
+  - [[https://tony-zorman.com/posts/xmonad-on-nixos.html][Tony Zorman: Using XMonad with NixOS]] - including basic Emacs support for C-c C-c
+  - [[https://github.com/fargiolas/clangd-inactive-regions.el][clangd-inactive-regions.el: Emacs Eglot support for clangd inactiveRegions LSP extension. Make ifdef code semitransparent following build time flags and defines.]]
+  - [[https://www.reddit.com/r/emacs/comments/17ydxhr/im_bumping_treesitauto_to_v10/][I'm bumping `treesit-auto` to v1.0]]
+- Shells:
+  - [[https://magnus.therning.org/2023-11-19-making-emacs-without-terminal-emulator-a-little-more-usable.html][Making Emacs without terminal emulator a little more usable]] ([[https://www.reddit.com/r/emacs/comments/17yshfc/making_emacs_without_terminal_emulator_a_little/][Reddit]])
+  - [[https://irreal.org/blog/?p=11769][Irreal: Eat: A Preliminary Report]]
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/17vp0o1/weekly_tips_tricks_c_thread/][Weekly Tips, Tricks, &c. Thread]]
+  - [[https://qiita.com/advent-calendar/2023/emacs][Emacs Advent Calendar 2023]] - sign-ups and a calendar of upcoming blog posts in Japanese
+  - [[https://macadie.info/2023/11/19/2023-11-austin-emacs-meetup/][Eric MacAdie: 2023-11 Austin Emacs Meetup]]
+  - [[https://akater.gitlab.io/emacs-tbilisi-meetup-page][New in-person meetup - Tbilisi Emacs]]
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2023-11/msg00949.html][In a thread about pcase]], Po Lu describes polling 34 coworkers "all in some capacity involved in the maintenance of Emacs Lisp" (C programmers who use Emacs for programming). Neat!
+- Other:
+  - [[https://www.youtube.com/watch?v=n02zSVxQ8Vc][⚡Talking about Emacs for 11 minutes - Aidan H]] (11:08)
+  - [[https://emacs.ch/@Anoncheg/111398751659805906][Anoncheg: "#Emacs : Ways to handle long lines("Line Wrap"): …" - Emacs.ch]]
+  - [[https://www.youtube.com/watch?amp;amp;t=20s&v=UtSu3ydxKJ4][Some new Emacs packages I tried: Denote, zoom-frm, visual-regex, zzz-to-char, and more]]
+  - [[https://www.reddit.com/r/emacs/comments/17zdgxw/a_notsosimple_function_and_keybinding_for/][A not-so-simple function and keybinding for querying the user during keyboard macros]]
+  - [[https://www.reddit.com/r/emacs/comments/17vrmrk/emt_emacs_macos_tokenizer_for_enhanced_cjk_word/][EMT - Emacs MacOS Tokenizer for enhanced CJK word operations]]
+  - [[https://janusworx.com/blog/getting-emacs-windows-to-not-be-shy/][Mario Jason Braganza: Getting Emacs Windows to Not Be Shy]] - xdotool and emacsclient
+  - [[https://www.linuxjournal.com/content/navigating-linux-textscape-using-vim-and-emacs][Navigating the Linux Textscape using Vim and Emacs]]
+  - [[https://focusonlinux.podigee.io/70-emacs][Emacs - FOCUS ON: Linux - Podcast]] (in German)
+- Emacs development:
+  - emacs-devel:
+    - [[https://lists.gnu.org/archive/html/emacs-devel/2023-11/msg00781.html][Idea about having a cond-let]]
+    - [[https://lists.gnu.org/archive/html/emacs-devel/2023-11/msg00988.html][Ideas for improving 'pcase' documentation]]
+    - [[https://lists.gnu.org/archive/html/emacs-devel/2023-11/msg00748.html][why pcase is complicated]]
+    - [[https://lists.gnu.org/archive/html/emacs-devel/2023-11/msg00968.html][on the use of pcase on different scenarios]]
+    - [[https://lists.gnu.org/archive/html/emacs-devel/2023-11/msg00943.html][explanation of backquotes and commas in pcase]]
+    - [[https://lists.gnu.org/archive/html/emacs-devel/2023-11/msg00830.html][Other issues with complex specifications]]
+    - [[https://lists.gnu.org/archive/html/emacs-devel/2023-11/msg00671.html][watching out for the XY problem]]; good idea to start with "what are you trying to do?"
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=53bd2d57f34af1efd88c6d189ab15e6f44866333][Recognize shebang lines that pass '-S/--split-string' to 'env']]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=41b837b41377754ef0ebddd5fcbbaaad7590a3c8][Add key translations 'C-x 8 a e' and 'C-x 8 A E'.]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=7b7a37ec7bbfc64f88b261dd170330b4860cdf64][; * etc/NEWS: Add entry about new input methods.  (Bug#66470)]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=cfb117fee18cd14111066f308d09b8b737491ead][* etc/NEWS: Mention incompatible change in `pp` (bug#67180)]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=4194f9bd8705b7ccc23f49aa5795af228dab26bb][Merge branch 'derived-mode-add-parents']]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=e82d807a2845673e2d55a27915661b2f1374b89a][Add Completion Preview mode]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=6a6c2058f1907b9ec0c32079f0f9ab28d01cf3f7][; * etc/NEWS: Use setopt not setq for project-switch-commands.]]
+- New packages:
+  - [[package:easky][easky]]: Control the Eask command-line interface (MELPA)
+  - [[package:llvm-ts-mode][llvm-ts-mode]]: LLVM major mode using tree-sitter (MELPA)
+  - [[package:ruff-format][ruff-format]]: Ruff format Python source (MELPA)
+  - [[package:sequential-yank][sequential-yank]]: Minor mode to copy and paste strings sequentially (MELPA)
+  - [[package:tab-bar-notch][tab-bar-notch]]: Adjust tab-bar height for MacBook Pro notch (MELPA)
+
+Links from [[https://www.reddit.com/r/emacs][reddit.com/r/emacs]], [[https://www.reddit.com/r/orgmode][r/orgmode]], [[https://www.reddit.com/r/spacemacs][r/spacemacs]], [[https://www.reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://lobste.rs/search?q=emacs&what=stories&order=newest][lobste.rs]], [[https://kbin.social/m/emacs/newest][kbin]], [[https://programming.dev/c/emacs?dataType=Post&page=1&sort=New][programming.dev]], [[https://lemmy.ml/c/emacs?dataType=Post&page=1&sort=New][lemmy]], [[https://communick.news/c/emacs?dataType=Post&page=1&sort=New][communick.news]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]], [[https://emacslife.com/calendar/][Emacs Calendar]], and [[http://lists.gnu.org/archive/html/emacs-devel/2023-11][emacs-devel]]. Thanks to Andrés Ramírez for emacs-devel links. Do you have an Emacs-related link or announcement? Please e-mail me at [[mailto:sacha@sachachua.com][sacha@sachachua.com]]. Thank you!
 ** 2023-11-13 Emacs news
     :PROPERTIES:
     :EXPORT_ELEVENTY_PERMALINK: /blog/2023/11/2023-11-13-emacs-news/
@@ -117,7 +227,7 @@ Actually generate the section:
 	- [[https://indieweb.social/@xenodium/111374474259777517][tip: benchmark-progn, benchmark-run]]
 - Appearance:
   - [[https://jdhao.github.io/2021/09/30/emacs_custom_tabline/][Customize Tabline in Emacs]]
-  - [[https://mbork.pl/2023-11-13_Coloring_CamelCase][Marcin Borkowski: Coloring CamelCase]]
+  - [[https://mbork.pl/2023-11-13_Coloring_CamelCase][Marcin Borkowski: Coloring CamelCase]] ([[https://irreal.org/blog/?p=11776][Irreal]])
 - Navigation:
   - [[https://www.youtube.com/watch?v=Gs230xpkFwI][Emacs winner-mode to restore your window layouts]] (12:09)
 - Hyperbole:
@@ -208,7 +318,7 @@ Links from [[https://www.reddit.com/r/emacs][reddit.com/r/emacs]], [[https://www
   - M-x Research (contact them for password): TBA https://m-x-research.github.io/ Wed Nov 15 0800 America/Vancouver - 1000 America/Chicago - 1100 America/Toronto - 1600 Etc/GMT - 1700 Europe/Berlin - 2130 Asia/Kolkata -- Thu Nov 16 0000 Asia/Singapore
 - Emacs configuration:
   - [[https://www.reddit.com/r/emacs/comments/17jrsmv/share_how_did_you_make_emacs_faster/][Share how did you make Emacs faster.]]
-  - [[https://github.com/meedstrom/massmapper][New package: massmapper! Bind lots of new default keys, e.g. prepopulate Super with everything that was under Ctl-Meta]]
+  - [[https://github.com/meedstrom/massmapper][New package: massmapper! Bind lots of new default keys, e.g. prepopulate Super with everything that was under Ctl-Meta]] ([[https://irreal.org/blog/?p=11774][Irreal]])
   - [[https://github.com/0x60df/loophole/][[Package of the day] Loophole - set temporarily keybindings]] ([[https://www.reddit.com/r/emacs/comments/17mw1kj/package_of_the_day_loophole_set_temporarily/][Reddit]])
 - Emacs Lisp:
   - [[https://cestlaz.github.io/post/learning-elisp-12/][Mike Zamansky: Learning Elisp 12 - Emoji Replace part 2]] ([[https://www.reddit.com/r/emacs/comments/17jzcjt/learning_elisp_part_12_using_hooks/][Reddit]], [[https://irreal.org/blog/?p=11740][Irreal]]) - using hooks
@@ -3109,7 +3219,6 @@ Links from [[https://www.reddit.com/r/emacs][reddit.com/r/emacs]], [[https://www
   - [[package:projection][projection]]: Project specific compilation commands (MELPA)
   - [[package:rewriting-pcase][rewriting-pcase]]: Support for rewriting sexps in source code (MELPA)
   - [[package:treemacs-nerd-icons][treemacs-nerd-icons]]: Emacs Nerd Font Icons theme for treemacs (MELPA)
-  - [[package:typst-mode][typst-mode]]: A major mode for working with Typst typesetting system (MELPA)
 
 Links from [[https://www.reddit.com/r/emacs][reddit.com/r/emacs]], [[https://www.reddit.com/r/orgmode][r/orgmode]], [[https://www.reddit.com/r/spacemacs][r/spacemacs]], [[https://www.reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://lobste.rs/search?q=emacs&what=stories&order=newest][lobste.rs]], [[https://lemmy.ml/c/emacs][lemmy]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]], [[https://emacslife.com/calendar/][Emacs Calendar]], and [[http://lists.gnu.org/archive/html/emacs-devel/2023-05][emacs-devel]]. Thanks to Andrés Ramírez for emacs-devel links. Do you have an Emacs-related link or announcement? Please e-mail me at [[mailto:sacha@sachachua.com][sacha@sachachua.com]]. Thank you!
 
@@ -5126,7 +5235,6 @@ Links from [[https://www.reddit.com/r/emacs][reddit.com/r/emacs]], [[https://www
   - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=2bbc554db63cc5cc140ade5bfcbbf53ecd18f5ae][New user option 'ruby-method-params-indent'.]]
 - New packages:
   - [[package:adwaita-dark-theme][adwaita-dark-theme]]: A dark color scheme inspired by Adwaita (MELPA)
-  - [[package:binky-mode][binky-mode]]: Jump between points like a rabbit (MELPA)
   - [[package:citar-denote][citar-denote]]: Minor mode to integrate Citar and Denote (MELPA)
   - [[package:consult-codesearch][consult-codesearch]]: Consult interface for codesearch (MELPA)
   - [[package:define-scratch][define-scratch]]: Define new commands to make scratch buffers (MELPA)
@@ -6459,7 +6567,6 @@ Links from [[https://www.reddit.com/r/emacs][reddit.com/r/emacs]], [[https://www
   - [[package:org-tagged][org-tagged]]: Dynamic block for tagged org-mode todos (MELPA)
   - [[package:sweeprolog][sweeprolog]]: Embedded SWI-Prolog (NonGNU ELPA)
   - [[package:tesouro][tesouro]]: Brazilian Portuguese synonym search in dicio.com.br (MELPA)
-  - [[package:xit-mode][xit-mode]]: A [x]it! major mode (MELPA)
 
 Links from [[https://www.reddit.com/r/emacs][reddit.com/r/emacs]], [[https://www.reddit.com/r/orgmode][r/orgmode]], [[https://www.reddit.com/r/spacemacs][r/spacemacs]], [[https://www.reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://lobste.rs/search?q=emacs&what=stories&order=newest][lobste.rs]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]], [[https://emacslife.com/calendar/][Emacs Calendar]], [[http://lists.gnu.org/archive/html/emacs-devel/2022-10][emacs-devel]], and [[https://lemmy.ml/c/emacs][lemmy/c/emacs]].
 
@@ -32899,21 +33006,16 @@ Appearance
 This setting puts Org ASCII export links right after the text instead of in a separate section:
 
 #+NAME: export-ascii
-#+begin_src emacs-lisp 
+#+begin_src emacs-lisp :results silent :eval never-export
 (setq org-ascii-links-to-notes nil)
 #+end_src
-
-#+RESULTS: export-ascii
-:results:
-nil
-:end:
 
 ** Reddit
 
 This one exports links from https://www.reddit.com/user/emacsnews/upvoted.json .
 
 #+NAME: reddit
-#+begin_src emacs-lisp 
+#+begin_src emacs-lisp :results silent  :eval never-export
   (defvar my-reddit-upvoted-json "https://www.reddit.com/user/emacsnews/upvoted.json" "JSON for upvoted posts.")
   (require 'helm-utils)
   (defun my-reddit-list-upvoted (date)
@@ -32973,7 +33075,7 @@ my-reddit-list-upvoted
 ** Youtube
 
 #+NAME: youtube
-#+begin_src emacs-lisp
+#+begin_src emacs-lisp :results silent  :eval never-export
 (defvar my-emacs-news-playlist "https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt"
   "Public playlist with recent videos to include in Emacs News.")
 
@@ -33090,7 +33192,7 @@ and turn it into:
 #+end_example
 
 #+NAME: sort
-#+begin_src emacs-lisp 
+#+begin_src emacs-lisp  :results silent :eval never-export
 (defun my-org-sort-list-in-custom-order (order)
   "Sort the current Org list so that items are in the specified order.
   ORDER is a list of regexps."
@@ -33194,7 +33296,7 @@ The overall function that prepares a draft of Emacs News is
 =my-prepare-emacs-news=, and the code specifically related to packages
 is:
 
-#+begin_src emacs-lisp  :eval-no
+#+begin_src emacs-lisp  :eval no  :results silent :eval never-export
 (package-refresh-contents)
 (my-update-package-list date)
 #+end_src
@@ -33205,7 +33307,7 @@ is:
 Here, we load a list of packages and dates, and we compare them with the packages loaded from =archive-contents=.
 
 #+NAME: my-update-package-list
-#+begin_src emacs-lisp
+#+begin_src emacs-lisp :results silent :eval never-export
 (defvar my-package-list-file "~/sync/emacs-news/package-list.el")
 
 (defun my-read-sexp-from-file (filename)
@@ -33258,7 +33360,7 @@ It's a list of lists storing the package name, the repositories it's
 available from, and the dates I noticed it was in the repository. Each
 entry looks something like this:
 
-#+begin_src emacs-lisp
+#+begin_src emacs-lisp :eval no
 (vhdl-ts-mode (("melpa" . "2023-08-21")))
 #+end_src
 
@@ -33268,7 +33370,7 @@ entry looks something like this:
 :END:
 
 #+NAME: my-get-current-packages
-#+begin_src emacs-lisp
+#+begin_src emacs-lisp :eval never-export
 (defun my-get-current-packages (date)
   "Return a list of package symbols with the package archive and DATE.
 Example entry: `(ack (ack \"gnu\" \"2023-09-03\"))`"
@@ -33297,7 +33399,7 @@ Example entry: `(ack (ack \"gnu\" \"2023-09-03\"))`"
 Then I can filter the list to get only the new packages.
 
 #+NAME: my-list-new-packages
-#+begin_src emacs-lisp
+#+begin_src emacs-lisp :eval never-export
 (defun my-packages-between (from-date &optional to-date)
 	(seq-filter
    (lambda (o)
@@ -33326,7 +33428,7 @@ Then I can filter the list to get only the new packages.
 Formatting the entry in Emacs News is mostly a matter of grabbing the package description.
 
 #+NAME: my-describe-packages
-#+begin_src emacs-lisp
+#+begin_src emacs-lisp :eval never-export
 (defun my-describe-packages (list)
   "Return an Org list of package descriptions for LIST."
   (mapconcat
@@ -33357,28 +33459,33 @@ appropriate repository page when I publish Emacs News as HTML or
 ASCII. This is handled by a custom link.
 
 #+NAME: packages
-#+begin_src emacs-lisp 
+#+begin_src emacs-lisp :eval never-export
   (defun my-org-package-open (package-name)
     (interactive "MPackage name: ")
     (describe-package (intern package-name)))
 
-  (defun my-org-package-export (link description format)
-    (let* ((package-info (car (assoc-default (intern link) package-archive-contents)))
-           (package-source (package-desc-archive package-info))
-           (path (format
-                  (cond
-                   ((string= package-source "gnu") "https://elpa.gnu.org/packages/%s.html")
-                   ((string= package-source "nongnu") "https://elpa.nongnu.org/nongnu/%s.html")
-                   ((string= package-source "melpa") "https://melpa.org/#/%s")
-                   (t (throw 'unknown-source)))
-                  link))
-           (desc (or description link)))
-      (cond
-       ((eq format '11ty) (format "<a target=\"_blank\" href=\"%s\">%s</a>" path desc))
-       ((eq format 'html) (format "<a target=\"_blank\" href=\"%s\">%s</a>" path desc))
-       ((eq format 'wp) (format "<a target=\"_blank\" href=\"%s\">%s</a>" path desc))
-       ((eq format 'ascii) (format "%s <%s>" desc path))
-       (t path))))
+(defun my-org-package-export (link description format &optional arg)
+  (let* ((package-info (car (assoc-default (intern link) package-archive-contents)))
+         (package-source (and package-info (package-desc-archive package-info)))
+         (path (format
+                (cond
+								 ((null package-source) link)
+                 ((string= package-source "gnu") "https://elpa.gnu.org/packages/%s.html")
+                 ((string= package-source "melpa") "http://melpa.org/#/%s")
+                 ((string= package-source "nongnu") "https://elpa.nongnu.org/nongnu/%s.html")
+                 (t (error 'unknown-source)))
+                link))
+         (desc (or description link)))
+		(if package-source
+				(cond
+				 ((eq format '11ty) (format "<a target=\"_blank\" href=\"%s\">%s</a>" path desc))
+				 ((eq format 'html) (format "<a target=\"_blank\" href=\"%s\">%s</a>" path desc))
+				 ((eq format 'wp) (format "<a target=\"_blank\" href=\"%s\">%s</a>" path desc))
+				 ((eq format 'latex) (format "\\href{%s}{%s}" path desc))
+				 ((eq format 'texinfo) (format "@uref{%s,%s}" path desc))
+				 ((eq format 'ascii) (format "%s <%s>" desc path))
+				 (t path))
+			desc)))
 
   (org-link-set-parameters "package" :follow 'my-org-package-open :export 'my-org-package-export)
 
@@ -33410,7 +33517,7 @@ e-mail that announces it. To reduce the risk of errors, I default to
 the symbol at point, and I use only ELPA packages for completion.
 
 #+NAME: my-announce-elpa-package
-#+begin_src emacs-lisp
+#+begin_src emacs-lisp :eval never-export
 (defun my-announce-elpa-package (package-name)
 	"Compose an announcement for PACKAGE-NAME for info-gnu-emacs."
   (interactive (let* ((guess (or (function-called-at-point)
@@ -33466,7 +33573,7 @@ Anyway, that's how I keep track of new Emacs packages!
 ** Other functions
 
 #+NAME: link-description
-#+begin_src emacs-lisp 
+#+begin_src emacs-lisp :eval never-export
 (defun my-emacs-news-escape-link-description (s)
   (let ((replace-map '(("\\[" . "")
                        ("\\]" . ":"))))
@@ -33527,7 +33634,7 @@ my-announce-elpa-package
 ** Get info from the Emacs NEWS file in the git repository
 
 #+NAME: git-news
-#+begin_src emacs-lisp 
+#+begin_src emacs-lisp :eval never-export
   (defun my-insert-emacs-news-from-git (date &optional directory)
     (interactive (list (org-read-date)))
     (let ((result 
@@ -33578,7 +33685,7 @@ text/html, with text/x-org attached. The heavy lifting is done with
 =org-export-string-as=, which exports into different formats.
 
 #+NAME: share-news
-#+begin_src emacs-lisp 
+#+begin_src emacs-lisp :eval never-export
 (defun my-share-emacs-news ()
   "Prepare emacs-tangents e-mail of post, and commit to Git."
   (interactive)
@@ -33637,7 +33744,7 @@ above!
 ** TODO Prepare Emacs News
 
 #+NAME: prepare-news
-#+begin_src emacs-lisp 
+#+begin_src emacs-lisp :eval never-export
 (defvar my-emacs-calendar-csv "~/code/emacs-calendar/events.csv")
 
 (defun my-emacs-calendar-list ()
@@ -33744,7 +33851,7 @@ my-prepare-emacs-news
 ** Collect Emacs News
 
 #+NAME: collect-news
-#+begin_src emacs-lisp
+#+begin_src emacs-lisp :eval never-export
   (defun my-emacs-news-collect-entries ()
     "Collect Emacs News by category and put them in another buffer."
     (interactive)
@@ -33790,7 +33897,7 @@ my-emacs-news-collect-entries
      :END:
 
 #+NAME: detect-dupes
-#+begin_src emacs-lisp
+#+begin_src emacs-lisp :eval never-export
 (defvar my-emacs-news-check-duplicates-display 'overlay "*minibuffer or posframe or overlay")
 (defvar my-emacs-news-duplicate-overlay nil)
 (defun my-emacs-news-check-duplicates ()
@@ -33932,7 +34039,7 @@ defining a hydra using =eval= and =defmacro= so that I could more
 easily define the menu in a variable. It seems to work fine so far.
 
 #+NAME: menu
-#+begin_src emacs-lisp
+#+begin_src emacs-lisp :eval never-export
 (defvar my-org-categorize-emacs-news-menu
   '(("0" . "Other")
     ("1" . "Emacs Lisp")
@@ -34094,7 +34201,7 @@ my-org-categorize-emacs-news/body
    :END:
 
 #+NAME: twitter
-#+begin_src emacs-lisp
+#+begin_src emacs-lisp :eval never-export
 (defvar my-t-executable "t" "Twitter command-line tool")
 (defun my-tweet-emacs-news ()
   (interactive)
@@ -34119,13 +34226,6 @@ Ideas:
   
        *: nndoc+/home/sacha/tmp/2022-02:2022-02
 
-       #+begin_src emacs-lisp :var filename="~/tmp/2022-02"
-       #+end_src
-
-       #+RESULTS:
-       :results:
-       nil
-       :end:
 
        (gnus-group-prefixed-name "~/tmp/2022-02" 'mbox)
 (gnus-group-make-doc-group "~/tmp/2022-02" 'mbox)
