@@ -11,13 +11,117 @@ TODO Do another Emacs News review
 =================================
 
   To post:
-  1. export the subtree
-  2. cd ~/code/static-blog; make generate-all
-  3. `M-x my-share-emacs-news' to post by NNTP
+  1. export the subtree to 11ty with `C-c C-e s 1 1'
+  2. publish-my-blog
+  3. `M-x my-share-emacs-news' to post to emacs-tangents, commit and push to VCs, etc.
   4. `M-x my-tweet-emacs-news'
-  5. Commit and upload
 
   Actually generate the section:
+
+
+2024-01-01 Emacs news
+~~~~~~~~~~~~~~~~~~~~~
+
+  - Upcoming events:
+    - EmacsATX: Emacs Social <https://www.meetup.com/emacsatx/events/297487956/> Wed Jan 3 1630 America/Vancouver - 1830 America/Chicago - 1930 America/Toronto -- Thu Jan 4 0030 Etc/GMT - 0130 Europe/Berlin - 0600 Asia/Kolkata - 0830 Asia/Singapore
+    - Emacs Paris: S: Emacs workshop in Paris (online) <https://emacs-doctor.com/> Thu Jan 4 1730 Europe/Paris
+    - M-x Research: 9th talk on (e)lisp <https://m-x-research.github.io/> Wed Jan 10 0800 America/Vancouver - 1000 America/Chicago - 1100 America/Toronto - 1600 Etc/GMT - 1700 Europe/Berlin - 2130 Asia/Kolkata -- Thu Jan 11 0000 Asia/Singapore
+    - Atelier Emacs Montpellier (in person) <https://lebib.org/date/atelier-emacs> Fri Jan 12 1800 Europe/Paris
+  - Emacs configuration:
+    - [Emacs From Scratch Part Two: Projects and Keybindings] (<https://arne.me/articles/emacs-from-scratch-part-two>) ([HN] (<https://news.ycombinator.com/item?id=38800008>))
+    - [[RDE release] 0.5.0 is out! — sourcehut lists] (<https://lists.sr.ht/~abcdw/rde-announce/%3C874jg1gtrz.fsf%40trop.in%3E>) ([@abcdw@fosstodon.org] (<https://fosstodon.org/@abcdw/111663445267193585>))
+    - [danijelcamdzic/dotemacs: Contains Emacs configuration files (init.el and custom elisp files)] (<https://github.com/danijelcamdzic/dotemacs/>) ([Reddit] (<https://www.reddit.com/r/emacs/comments/18tqpfb/sharing_my_emacs_workflow_and_dotfiles/>)) - also tip on using menus in Android
+    - [LionyxML/lemacs: The LEmacs Emacs config - Same experience, both on TUI and GUI] (<https://github.com/LionyxML/lemacs>) ([Reddit] (<https://www.reddit.com/r/emacs/comments/18toziz/introducing_lemacs_a_config_not_a_distro/>))
+    - [Icy-Thought's Emacs Config] (<https://github.com/Icy-Thought/emacs.d/tree/main/irkalla>)
+    - [chamoda's Emacs Config] (<https://github.com/chamoda/.emacs.d>)
+    - [mitch's Emacs Config] (<https://git.mitchmarq42.xyz/mitch/vimcolors>)
+  - Emacs Lisp:
+    - [Elisp Idiosyncrasies] (<https://www.youtube.com/watch?v=D8391afYiRs&feature=youtu.be>)
+    - [Emacs at Lunch: Time & Dates] (<https://www.youtube.com/watch?v=bMKxS-M9nYM>) (16:37)
+    - [Lección 4: Dinámicos | Curso de UI Emacs Lisp] (<https://programadorwebvalencia.com/ui-en-emacs-creando-un-buscador/>) ([@andros@hostux.social] (<https://hostux.social/@andros/111664309966161080>)) - widgets
+    - [UI EN EMACS, SUMAR 2 NÚMEROS] (<https://programadorwebvalencia.com/ui-en-emacs-sumar-2-numeros/>) - using widgets
+  - Appearance:
+    - [Irreal: Marking The Active Window Redux] (<https://irreal.org/blog/?p=11874>)
+    - [fancy tab-bar with svg] (<https://www.reddit.com/r/emacs/comments/18v02tc/fancy_tabbar_with_svg/>)
+    - [svg-lib 0.3, now with interactive buttons] (<https://i.redd.it/wk8zg598r79c1.gif>) ([Reddit] (<https://www.reddit.com/r/emacs/comments/18tkeuu/svglib_03_now_with_interactive_buttons/>), [@rougier@toot.aquilenet.fr] (<https://toot.aquilenet.fr/@rougier/111663809949109547>))
+    - [NANO agenda rewrite (WIP)] (<https://i.redd.it/dqxx467z8h9c1.png>) ([Reddit] (<https://www.reddit.com/r/emacs/comments/18umexf/nano_agenda_rewrite_wip/>))
+    - [nano vertico minor mode] (<https://i.redd.it/7nfja6y7qm8c1.png>) ([Reddit] (<https://www.reddit.com/r/emacs/comments/18r6pyv/nano_vertico_minor_mode/>))
+    - [pdf-tools continuous scrolling] (<https://github.com/vedang/pdf-tools/pull/224>) ([@rahguzar@emacs.ch] (<https://emacs.ch/@rahguzar/111663947187653619>))
+    - [rec-edit.el: recursive edit enhancements to show the level] (<https://www.emacswiki.org/emacs/download/rec-edit.el>)
+    - [zzamboni's custom splash screens made for Doom Emacs] (<https://gitlab.com/zzamboni/dot-doom/-/tree/master/splash?ref_type=heads>)
+    - [Protesilaos Stavrou: Emacs: ef-arbutus is now part of the ef-themes collection] (<https://protesilaos.com/codelog/2023-12-29-ef-arbutus/>)
+  - Navigation:
+    - [Gumshoe: A smart POINT tracker] (<https://github.com/Overdr0ne/gumshoe>)
+  - Org Mode:
+    - [12 Week Year in Emacs] (<https://www.youtube.com/watch?v=WgZL3TwrKUA>) (08:39, [Reddit] (<https://www.reddit.com/r/emacs/comments/18t0fl1/how_i_use_12_week_year_productivity_framework_in/>))
+    - [Interactive Runbook | Technical Blog] (<https://nathanielhoag.com/blog/2022/interactive-runbook/>) (2022)
+    - [Making Org Agenda Look Beautiful] (<https://www.youtube.com/watch?v=a_WNtuefREM>) (21:46)
+    - [Sacha Chua: Automatically refiling Org Mode headings based on tags] (<https://sachachua.com/blog/2023/12/automatically-refiling-org-mode-headings-based-on-tags/>)
+    - [Using Emacs and Org-mode for managing a thesis] (<https://www.youtube.com/watch?v=KvR6PsY9d60>) (17:48)
+    - [Medical Physics Dissertation with Emacs and Orgmode] (<https://github.com/reconmaster/thesis>) (2018, [Reddit] (<https://www.reddit.com/r/emacs/comments/18v3u9h/medical_physics_dissertation_with_emacs_and/>))
+    - [scimax - screenshot, tesseract, pngpaste and ox-clip] (<https://www.youtube.com/watch?v=rGGAr1AWkTc>) (2021)
+    - [Jeremy Friesen: Amongst the Org-Mode Archipelago] (<https://takeonrules.com/2023/12/28/amongst-the-org-mode-archipelago/>) ([Irreal] (<https://irreal.org/blog/?p=11876>))
+    - [orgro 2023 update summary] (<https://mastodon.social/@amake/111662774894831512>) ()
+    - Org development:
+      - [ob-python: Changed options for default Python command] (<https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=9239b0e8d1c317f3bd21211832feb3b10d29dc94>)
+      - [lisp/ox-odt.el: Do not open the generated exported file in the background] (<https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=69e746c1e42bbf2eb0afe6306bb32af759c2c3e0>)
+  - Coding:
+    - [python-ts-mode extended fontification] (<https://gist.github.com/dvzubarev/1d1d4b68a8b7d0bf27fc5ed73a23eea5>)
+    - [Pymacs: New home for Emacs to Python interface] (<https://github.com/pymacs2/Pymacs>)
+    - [Another Emacs setup (with GIFs) to enjoy Clojure] (<https://www.freshcodeit.com/blog/another-emacs-setup-with-gifs-to-enjoy-clojure>)
+  - Shells:
+    - [I've written a package for parsing command line help, and would appreciate feedback!] (<https://github.com/andykuszyk/noman.el>) ([Reddit] (<https://www.reddit.com/r/emacs/comments/18rxn71/ive_written_a_package_for_parsing_command_line/>))
+  - Web:
+    - [url-rewrite.git - url-rewrite is an elisp library for rewriting URLs] (<https://g.ypei.me/url-rewrite.git/about/>) ()
+  - Multimedia:
+    - [Sacha Chua: Using subed-record in Emacs to edit audio and clean up oopses] (<https://sachachua.com/blog/2023/12/using-subed-record-in-emacs-to-edit-audio-and-clean-up-oopses/>)
+    - [Sacha Chua: EmacsConf backstage: Trimming the BigBlueButton recordings based on YouTube duration] (<https://sachachua.com/blog/2023/12/emacsconf-backstage-trimming-the-bigbluebutton-recordings/>)
+  - Fun:
+    - [igb/epanorthosis: inject an epanorthosis using a sequence of "^H" characters to indicate an attempt to delete the previous word.] (<https://github.com/igb/epanorthosis>) ([@igb@mastodon.hccp.org] (<https://mastodon.hccp.org/@igb/111666934137486140>))
+  - AI:
+    - [jart/emacs-copilot: Large language model code completion for Emacs] (<https://github.com/jart/emacs-copilot>) ([Reddit] (<https://www.reddit.com/r/emacs/comments/18varm1/jartemacscopilot_large_language_model_code/>), [HN] (<https://news.ycombinator.com/item?id=38822164>))
+    - [Alvaro Ramirez: A chatgpt-shell compose ux experiment] (<http://xenodium.com/a-chatgpt-shell-compose-ux-experiment>)
+    - [illgenr/llm: An EMACS porcelain for LLM] (<https://github.com/illgenr/llm>)
+    - [AIPIKHAL intro - YouTube] (<https://youtube.com/watch?v=1II5UfBacK0&si=AX24NcnOZTi-M4iH>) () - AI Prompts I Know and Love; shows using Org Mode to manage a collection of llm prompts for gptel inside Emacs
+    - [Emacs Copilot Demo] (<https://www.youtube.com/watch?v=_Y-e5HL_4qY>) (00:48)
+    - [Every LLM in Emacs, with gptel] (<https://www.youtube.com/watch?v=bsRnh_brggM>) (17:56, [Reddit] (<https://www.reddit.com/r/emacs/comments/18s45of/every_llm_in_emacs_with_gptel/>))
+  - Community:
+    - [Weekly Tips, Tricks, &c. Thread] (<https://www.reddit.com/r/emacs/comments/18rvq33/weekly_tips_tricks_c_thread/>)
+    - [[Michał Sapka's website] My "whys" for Emacs] (<https://michal.sapka.me/emacs/whys-of-emacs/>)
+    - [From Fill Prefix to TRAMP - Highlights from Mastering Emacs Book Club] (<https://susam.net/maze/from-fill-prefix-to-tramp.html>) ([Reddit] (<https://www.reddit.com/r/emacs/comments/18v5wx3/from_fill_prefix_to_tramp_highlights_from/>))
+    - [Mario Jason Braganza: Emacs, Three and a Half Years On] (<https://janusworx.com/blog/emacs-three-and-a-half-years-on/>)
+    - [Eric MacAdie: Emacs Commands I Got By With For Years] (<https://macadie.info/2023/12/30/emacs-commands-i-got-by-with-for-years/>) - Eric's story of starting with Emacs and learning how to use it, and beginner tips sprinkled throughout
+    - [@publicvoit's experience demoing Emacs and Org Mode on the ArtPlayStage at 37C3] (<https://graz.social/@publicvoit/111661348660523369>)
+    - [@jameshowell: the shift from having to learn to code to "the more I learn to code, the more I get out of free software] (<https://emacs.ch/@jameshowell/111638022647583440>) ()
+    - Yearly reviews:
+      - [My Coding Adventures in 2023 - Susam's Maze] (<https://susam.net/maze/code-2023.html>) - devil, emacs4cl, emfy ([lobste.rs] (<https://lobste.rs/s/mzul7s/retrospective_my_personal_open_source>), [@susam@mastodon.social] (<https://mastodon.social/@susam/111652185711420768>))
+      - [2023 Retrospective and 2024 Plans - System Crafters Live!] (<https://www.youtube.com/watch?v=BM_xFmfwfRg>) (01:17:08)
+      - [Kisaragi Hiu: 2023 review] (<https://kisaragi-hiu.com/2023-review/>)
+      - [Reviving the site (and our community) - 2023 summary and plans for 2024 | M-x Research] (<https://m-x-research.github.io/2023/12/30/reviving-site.html>) ([@Mx_Research@emacs.ch] (<https://emacs.ch/@Mx_Research/111671274973702263>)) - and new videos posted to [YouTube] (<https://www.youtube.com/channel/UCNup6IsUwrqiDpl3aIlOV6A>)
+  - Other:
+    - [Emacs: Not a text editor, still awesome!] (<https://www.youtube.com/watch?v=_H9TXKokNQ8>) (28:59, [Reddit] (<https://www.reddit.com/r/emacs/comments/18rtdfy/emacs_not_a_text_editor_still_awesome/>), [Irreal] (<https://irreal.org/blog/?p=11869>))
+    - [Emacs repeat-mode #shorts #emacs] (<https://www.youtube.com/watch?v=Tlm-Xaef_8I>) (00:58)
+    - [Emacs，程序员的终极代码编辑器 泪雪网] (<https://www.youtube.com/watch?v=y1cYKyMD6d0>) (02:04)
+    - [casouri/collab-mode: Cross-editor collaboration (WIP)] (<https://github.com/casouri/collab-mode>) ([emacs-devel] (<https://lists.gnu.org/archive/html/emacs-devel/2023-12/msg00927.html>)) - collab; uses operational transforms
+    - [Time in Elisp. NYE setup for Champagne at the end] (<https://youtu.be/bMKxS-M9nYM>) ([Reddit] (<https://www.reddit.com/r/emacs/comments/18v7m6c/time_in_elisp_nye_setup_for_champagne_at_the_end/>))
+    - [Anand Tamariya: GNU Emacs as a Shopping App] (<https://lifeofpenguin.blogspot.com/2023/12/gnu-emacs-as-shopping-app.html>) ([Reddit] (<https://www.reddit.com/r/emacs/comments/18uyxty/gnu_emacs_as_a_shopping_app/>))
+    - [Sacha Chua: Yay, I can get live speech recognition results from Emacs to Etherpad] (<https://sachachua.com/blog/2023/12/yay-i-can-get-live-speech-recognition-results-from-emacs-to-etherpad/>)
+    - [Building a custom Emacs auth-source] (<https://www.emoses.org/posts/emacs-custom-auth-source/>) ([Reddit] (<https://www.reddit.com/r/emacs/comments/18vcsb7/building_a_custom_emacs_authsource/>), [@emoses@hachyderm.io] (<https://hachyderm.io/@emoses/111673681198037776>))
+    - [Yi Tang: GPG in Emacs - First Step Towards Data Security] (<http://yitang.uk/2023/12/28/gpg-in-emacs-first-step-towards-data-security/>)
+    - [Peter J. Jones: Pinning GnuPG with nixpkgs] (<https://freerangebits.com/posts/2023/12/gnupg-broke-emacs/>)
+    - [EAF nix packaging] (<https://gist.github.com/adisbladis/c605d40c3e06f4c4af4bed94233c4d1e>) - Emacs Application Framework
+    - [Printing PostScript from Emacs in macOS Sonoma] (<https://goykhman.ca/gene/blog/2023/2023-12-23-postscript-printing-in-sonoma.html>)
+  - Emacs development:
+    - emacs-devel:
+      - [discussion about how to include small compilable programs in (Non?)GNU ELPA packages] (<https://lists.gnu.org/archive/html/emacs-devel/2023-12/msg00893.html>)
+      - [pointers to discussions about translating doc strings and manuals] (<https://lists.gnu.org/archive/html/emacs-devel/2023-12/msg00847.html>) (also [@jchelary's resources] (<https://emacs.ch/@jchelary/111667340242925816>))
+      - [new bicep-ts-mode for handling infrastructure as code] (<https://lists.gnu.org/archive/html/emacs-devel/2023-12/msg00616.html>)
+      - [discussion about attaching extra information to errors] (<https://lists.gnu.org/archive/html/emacs-devel/2023-12/msg00625.html>)
+    - [Document icomplete-in-buffer incompatible changes] (<https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=5f80541fbc46a7854da00b0f8e67c0daa89d454a>)
+    - [(require-with-check): New function (bug#67696)] (<https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=2a8e6c8c84ed33674e525625644d5ce84ee8c59a>)
+    - [Abbreviate the VC revision in vc-annotate's buffer name] (<https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=ea4cbb3aae3c7f72ef04337bc2db7292909ca9a1>)
+
+  Links from [reddit.com/r/emacs] (<https://www.reddit.com/r/emacs>), [r/orgmode] (<https://www.reddit.com/r/orgmode>), [r/spacemacs] (<https://www.reddit.com/r/spacemacs>), [r/planetemacs] (<https://www.reddit.com/r/planetemacs>), [Hacker News] (<https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story>), [lobste.rs] (<https://lobste.rs/search?q=emacs&what=stories&order=newest>), [kbin] (<https://kbin.social/m/emacs/newest>), [programming.dev] (<https://programming.dev/c/emacs?dataType=Post&page=1&sort=New>), [lemmy] (<https://lemmy.ml/c/emacs?dataType=Post&page=1&sort=New>), [communick.news] (<https://communick.news/c/emacs?dataType=Post&page=1&sort=New>), [planet.emacslife.com] (<https://planet.emacslife.com>), [YouTube] (<https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt>), [the Emacs NEWS file] (<http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS>), [Emacs Calendar] (<https://emacslife.com/calendar/>), and [emacs-devel] (<http://lists.gnu.org/archive/html/emacs-devel/2024-01>). Thanks to Andrés Ramírez for emacs-devel links. Do you have an Emacs-related link or announcement? Please e-mail me at [sacha@sachachua.com] (<mailto:sacha@sachachua.com>). Thank you!
 
 
 2023-12-25 Emacs news
@@ -35,7 +139,7 @@ TODO Do another Emacs News review
     - [Que es GNU EMACS El editor de texto extensible y mucho mas] (<https://www.youtube.com/watch?v=zAxlQ7nlz5o>) (05:02)
   - Emacs configuration:
     - [Emacs From Scratch, Part 1: Foundations] (<https://arne.me/articles/emacs-from-scratch-part-one-foundations>)
-    - [Norm: Primarily emacs] (<https://so.nwalsh.com/2023/12/25-emacs>) - defining custom command-line flags
+    - [Norm: Primarily emacs] (<https://so.nwalsh.com/2023/12/25-emacs>) - defining custom command-line flags ([Irreal] (<https://irreal.org/blog/?p=11865>))
     - [Discover interesting packages by sorting MELPA by descending order of downloads] (<https://melpa.org/#/?sort=downloads&asc=false>) ([@aksharvarma@mathstodon.xyz] (<https://mathstodon.xyz/@aksharvarma/111616925897384755>))
     - [Why Emacs Keys are Painful] (<http://xahlee.info/emacs/emacs/emacs_kb_shortcuts_pain.html>) (2019, [HN] (<https://news.ycombinator.com/item?id=38730012>))
     - [Emacs: advanced Org literate configuration] (<https://www.youtube.com/watch?v=ycyxytk1NAQ>) ([Reddit] (<https://www.reddit.com/r/emacs/comments/18lx4py/emacs_advanced_org_literate_configuration/>), [Irreal] (<https://irreal.org/blog/?p=11852>)) - Prot
