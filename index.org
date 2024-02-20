@@ -91,6 +91,109 @@ Actually generate the section:
 #+end_src
 
 #+RESULTS:
+** 2024-02-19 Emacs news
+    :PROPERTIES:
+    :EXPORT_ELEVENTY_PERMALINK: /blog/2024/02/2024-02-19-emacs-news/
+    :EXPORT_ELEVENTY_FILE_NAME: blog/2024/02/2024-02-19-emacs-news/
+    :EXPORT_DATE: 2024-02-19T08:41:17-0500
+    :END:
+
+- Upcoming events:
+  - M-x Research: TBA https://m-x-research.github.io/ Wed Feb 21 0800 America/Vancouver - 1000 America/Chicago - 1100 America/Toronto - 1600 Etc/GMT - 1700 Europe/Berlin - 2130 Asia/Kolkata -- Thu Feb 22 0000 Asia/Singapore
+  - EmacsSF (in person): Emacs Lisp Hacking Night https://www.meetup.com/emacs-sf/events/299082479/ Thu Feb 22 1800 America/Los_Angeles
+  - Emacs APAC (virtual) https://emacs-apac.gitlab.io/ Sat Feb 24 0030 America/Vancouver - 0230 America/Chicago - 0330 America/Toronto - 0830 Etc/GMT - 0930 Europe/Berlin - 1400 Asia/Kolkata - 1630 Asia/Singapore
+  - Emacs Berlin (virtual, in English) https://emacs-berlin.org/ Wed Feb 28 0930 America/Vancouver - 1130 America/Chicago - 1230 America/Toronto - 1730 Etc/GMT - 1830 Europe/Berlin - 2300 Asia/Kolkata -- Thu Feb 29 0130 Asia/Singapore
+  - M-x Research: TBA https://m-x-research.github.io/ Fri Mar 1 0800 America/Vancouver - 1000 America/Chicago - 1100 America/Toronto - 1600 Etc/GMT - 1700 Europe/Berlin - 2130 Asia/Kolkata -- Sat Mar 2 0000 Asia/Singapore
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2024-02/msg00660.html][European Lisp Symposium 2024]] (May 6-7, Vienna) - Andrea Corallo wants to know if anyone wants to meet up
+- Beginner:
+  - [[https://batsov.com/articles/2011/11/30/the-ultimate-collection-of-emacs-resources/][The Ultimate Collection of Emacs Resources]] (2011, [[https://www.reddit.com/r/emacs/comments/1aq7hu8/the_ultimate_collection_of_emacs_resources/][Reddit]])
+  - [[https://janusworx.com/blog/note-to-self-emacs-help-stuff/][Mario Jason Braganza: Note to Self, Emacs Help Stuff]]
+  - [[https://emacsredux.com/blog/2024/02/18/describe-symbol/][Lookup the Documentation of Functions, Variables and Faces]]
+- Emacs configuration:
+  - [[https://www.reddit.com/r/emacs/comments/1ata6ag/what_are_the_best_practices_in_laying_out_an/][What are the best practices in laying out an init.el that won't turn into spaghetti after a year or two?]]
+  - [[https://gist.github.com/lesliesrussell/0befc9b479dfc0e227be3fd58c540ab8][Temporarily rebind a key with automatic restore]]
+  - [[https://github.com/MiniApollo/kickstart.emacs][Kickstart.emacs is now Stable!]] ([[https://www.reddit.com/r/emacs/comments/1aq3x7x/kickstartemacs_is_now_stable/][Reddit]])
+  - [[https://gitlab.com/greenbeast/dotfiles/-/blob/work-setup/init.org][greenbeast's Emacs Config]] - treesitter, dirvish, meow, dashboard, svg-tag, ...
+  - [[https://gitlab.com/manueljlin/emacs-config/][manueljlin's Emacs Config]] - Potato Emacs: elpaca, meow + Canary Ortho, lsp, drt-indent, corfu, ...
+  - [[https://github.com/masukomi/masuconfigs/blob/master/.doom.d/config.el][masukomi's Doom Emacs Config]] - includes copilot
+  - [[https://github.com/TanbinIslam43/mydotfiles/tree/main/.doom.d][TanbinIslam43's Doom Emacs Config]] - short
+- Emacs Lisp:
+  - [[https://box.matto.nl/lessons-learned-from-creating-my-first-elpa-package.html][Lessons learned from creating my first ELPA package - box.matto.nl]] ([[https://emacs.ch/@pkal/111943199193812005][@pkal@emacs.ch]])
+  - [[https://github.com/brandelune/brandelune.github.io/blob/1ce686edc8ab3df7a78e02a5a16b87df71391cc1/adventuresintechland.el#L227][Finding the maximum number of days in a month]] ([[https://emacs.ch/@jchelary/111957325115392939][@jchelary@emacs.ch]]) - monthMaxDay, hardcoded
+  - [[https://www.reddit.com/r/emacs/comments/1ap9azk/til_to_use_clcallf_to_toggle_a_var_without/][TIL to use cl-callf to toggle a var without repeating the name]] ([[https://irreal.org/blog/?p=11980][Irreal]])
+  - [[https://emacsredux.com/blog/2024/02/19/replacing-dash-el-with-built-in-emacs-apis/][Emacs Redux: Replacing dash.el with Built-in Emacs APIs]]
+  - [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Byte-Packing.html][TIL: Emacs has a very nice built-in binary data library]] ([[https://www.reddit.com/r/emacs/comments/1at1iy0/til_emacs_has_a_very_nice_builtin_binary_data/][Reddit]])
+  - [[https://programadorwebvalencia.com/elisp-testing-example/][Elisp testing example | Programador Web Valencia]] ([[https://hostux.social/@andros/111930907819208480][@andros@hostux.social]])
+- Appearance:
+  - [[https://www.gonsie.com/blorg/modeline.html][Beautifying the Mode Line]] ([[https://mastodon.social/@ifiinlist/111940659471450955][@ifiinlist@mastodon.social]])
+  - [[https://i.redd.it/4bo5crbx36ic1.gif][[auto-dark] 0.12 - Now supports emacs-mac (MacOS) and allows 'default' Emacs theme]] ([[https://www.reddit.com/r/emacs/comments/1ap213j/autodark_012_now_supports_emacsmac_macos_and/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/1asfzfm/pushing_the_lmits/][NANO: hacking tab-line-mode to display under the mode-line, putting mode-line info in the header]]
+- Navigation:
+  - [[http://yummymelon.com/devnull/cc-isearch-menu-now-on-melpa.html][Charles Choi: cc-isearch-menu now on MELPA]]
+- Dired:
+  - [[https://mbork.pl/2024-02-17_Opening_external_drives_in_Dired][Marcin Borkowski: Opening external drives in Dired]] ([[https://irreal.org/blog/?p=11984][Irreal]])
+  - [[https://github.com/amno1/dired-auto-readme][Update to dired-auto-readme-mode]] ([[https://www.reddit.com/r/emacs/comments/1au6j6p/update_to_diredautoreadmemode/][Reddit]])
+- Writing:
+  - [[https://gist.github.com/lgatto/f54888e7f16968f853346c67b232cae0][Create and yank bibtex entry from a DOI]]
+- Org Mode:
+  - [[https://howardism.org/Technical/Emacs/capturing-intro.html][Org Capturing Introduction - Howardism]] ([[https://www.reddit.com/r/emacs/comments/1apbwin/org_capturing_introduction_howardism/][Reddit]])
+  - [[https://fluca1978.github.io/2021/09/16/Emacs_Org_Encrypt.html][Encrypting the content of Emacs Org files]] (2021)
+  - [[https://github.com/amno1/org-view-mode][A small update to org-view-mode]] ([[https://www.reddit.com/r/emacs/comments/1au2nh3/a_small_update_to_orgviewmode/][Reddit]])
+  - [[https://svbck.org/blog/2024-02-14-a-small-but-useful-agenda-tweak.html][A small, but useful org-agenda tweak - jumping to narrowed subtrees]] ([[https://fosstodon.org/@svbck/111945739870788047][@svbck@fosstodon.org]])
+  - [[https://github.com/legalnonsense/reorg][[WIP/RFC] Reorg: reorganize your life]] ([[https://www.reddit.com/r/emacs/comments/1ary91e/wiprfc_reorg_reorganize_your_life/][Reddit]])
+  - [[http://yummymelon.com/devnull/computing-truth-tables-in-org.html][Charles Choi: Computing Truth Tables in Org]]
+  - [[https://karthinks.com/software/reftex-in-org-mode/][Karthik Chikmagalur: For Your Reference: RefTeX in Org Mode]]
+  - Org development:
+    - [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=388ba5b5c415ef75adc79a2553d5f5ae06c044af][org-insert-link: Do not expand path arg when `org-link-file-path-type' is a function]]
+    - [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=b8ee1315a1cd80fb92f2577f480c475486a71907][ox-org: Do not process citations by default]]
+- Denote:
+  - [[https://mike.puddingtime.org/posts/2024-02-14-daily-notes/][Adding Denote files to the Org agenda by filename]] ([[https://social.lol/@mph/111933365042595236][@mph@social.lol]])
+- Completion:
+  - [[https://protesilaos.com/codelog/2024-02-17-emacs-modern-minibuffer-packages/][Protesilaos Stavrou: Emacs: modern minibuffer packages (Vertico, Consult, etc.)]] (44:01 [[https://www.youtube.com/watch?v=d3aaxOqwHhI][YouTube]], [[https://www.reddit.com/r/emacs/comments/1ata3o3/emacs_modern_minibuffer_packages_vertico_consult/][Reddit]])
+  - [[https://www.youtube.com/watch?v=ep5CK6armPM][Vertico: Minimalist Vertical Interactive Completion in Emacs]] (07:04)
+  - [[https://www.youtube.com/watch?v=_KYiTlYepzw][Emacs Helm Essentials]] (10:11)
+- Coding:
+  - [[https://cestlaz.github.io/post/using-emacs-82-conda-direnv/][Mike Zamansky: Using Emacs 82 - Conda and Direnv]] ([[https://www.reddit.com/r/emacs/comments/1apzg00/using_emacs_with_conda_and_direnv/][Reddit]], [[https://irreal.org/blog/?p=11978][Irreal]])
+  - [[https://metaredux.com/posts/2024/02/19/cider-preliminary-support-for-clojure-ts-mode.html][Meta Redux: CIDER: Preliminary Support for clojure-ts-mode]]
+  - [[https://metaredux.com/posts/2024/02/19/configuring-fixed-tonsky-indentation-in-clojure-mode.html][Meta Redux: Configuring fixed/tonsky indentation in clojure-mode]]
+  - [[https://metaredux.com/posts/2024/02/19/flycheck-updates.html][Meta Redux: Flycheck Updates: A new Stable Release and Way More]]
+  - [[https://github.com/alphapapa/magit-todos/releases/tag/1.7.1][Release 1.7.1 · alphapapa/magit-todos]]
+  - [[https://emacs.ch/@graywolf/111942871762441228][Summarizing debbugs patch acceptance]]
+- Mail, news, and chat:
+  - [[https://wwwcip.cs.fau.de/~oj14ozun/src+etc/rcirc-voirc.el][rcirc-voirc.el - VoIRC for rcirc]] ([[https://emacs.ch/@pkal/111947774047299320][@pkal@emacs.ch]]) - very compressed voice over IRC
+  - [[https://lemmy.ml/post/12116284][lem.el 0.16 update - Lemmy]]
+  - [[https://irreal.org/blog/?p=11982][Irreal: OPML and RSS]]
+- Web:
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2024-02/msg00684.html][[RFC] Proposed change to EWW history navigation]]
+- Fun:
+  - [[https://camdez.com/blog/2024/02/12/chinese-zodiac-time-for-emacs/][Chinese Zodiac Time for Your Emacs Mode Line]] ([[https://www.reddit.com/r/emacs/comments/1apltpr/chinese_zodiac_time_for_your_emacs_mode_line/][Reddit]])
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/1aqhyay/weekly_tips_tricks_c_thread/][Weekly Tips, Tricks, &c. Thread]]
+  - [[https://metaredux.com/posts/2024/02/15/cider-community-impact.html][Meta Redux: CIDER: Community Impact]]
+  - [[https://www.youtube.com/watch?v=scBBjZcy6fc][Why No One Can Answer The "Vim Versus Emacs" Question]] (13:44)
+- Other:
+  - [[https://emacsconf.org/2023/talks/emacsen/][EmacsConf - 2023 - talks - The Emacsen family, the design of an Emacs and the importance of Lisp]] (2023, [[https://news.ycombinator.com/item?id=39397942][HN]])
+  - [[https://github.com/CeleritasCelery/rune][CeleritasCelery/rune: Rust VM for Emacs]] ([[https://mastodon.social/@jnpn/111942584368937491][@jnpn@mastodon.social]])
+- Emacs development:
+  - [[https://coredumped.dev/2022/05/19/a-vision-of-a-multi-threaded-emacs/][A vision of a multi-threaded Emacs • Core Dumped]] (2022, [[https://news.ycombinator.com/item?id=39408162][HN]])
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2024-02/msg00668.html][Re: Moving packages out of core to ELPA]] discussion about lisp/obsolete and others
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2024-02/msg00557.html][Re: Some thoughts about Emacs performance]] randomness and sorting, and also this thread is nice =)
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=6477be93bd8a29cba8ce383f9ea3fba23c45f225][Make key selection method configurable in EPA.]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=60cff1ac9d216e5abcb350ea5e623ab0b377c131][Add support for reading/writing IELM input history (bug#67000)]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=fbef8ff2a4106ff7f0f3d026071fb8096280cc61][titdic-cnv.el: Bring all definitions under the `tit-` namespace]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=371ccf09fea26892a2fada028d27fb4b596636df][Add 'custom-variable' command]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=3b90e5052ce1eea47430c85c0c35741e25269ce2][Tree-sitter support for outline-minor-mode (bug#68824)]]
+- New packages:
+  - [[package:cc-isearch-menu][cc-isearch-menu]]: A Transient menu for isearch (MELPA)
+  - [[package:eglot-signature-eldoc-talkative][eglot-signature-eldoc-talkative]]: Make Eglot make ElDoc echo docs (MELPA)
+  - [[package:iso-639][iso-639]]: ISO 639 (MELPA)
+  - [[package:org-cite-overlay][org-cite-overlay]]: Overlays for org-cite citations (MELPA)
+  - [[package:org-cite-overlay-sidecar][org-cite-overlay-sidecar]]: Show Sidecar for overlaid org-cite citations (MELPA)
+  - [[package:org-nix-shell][org-nix-shell]]: Org local nix-shell (MELPA)
+  - [[package:pinyin-isearch][pinyin-isearch]]: Pinyin mode for isearch (MELPA)
+  - [[package:rcirc-sqlite][rcirc-sqlite]]: rcirc logging in SQLite (GNU ELPA)
+
+Links from [[https://www.reddit.com/r/emacs][reddit.com/r/emacs]], [[https://www.reddit.com/r/orgmode][r/orgmode]], [[https://www.reddit.com/r/spacemacs][r/spacemacs]], [[https://www.reddit.com/r/planetemacs][r/planetemacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://lobste.rs/search?q=emacs&what=stories&order=newest][lobste.rs]], [[https://kbin.social/m/emacs/newest][kbin]], [[https://programming.dev/c/emacs?dataType=Post&page=1&sort=New][programming.dev]], [[https://lemmy.ml/c/emacs?dataType=Post&page=1&sort=New][lemmy]], [[https://communick.news/c/emacs?dataType=Post&page=1&sort=New][communick.news]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]], [[https://emacslife.com/calendar/][Emacs Calendar]], and [[http://lists.gnu.org/archive/html/emacs-devel/2024-02][emacs-devel]]. Thanks to Andrés Ramírez for emacs-devel links. Do you have an Emacs-related link or announcement? Please e-mail me at [[mailto:sacha@sachachua.com][sacha@sachachua.com]]. Thank you!
 ** 2024-02-12 Emacs news
     :PROPERTIES:
     :EXPORT_ELEVENTY_PERMALINK: /blog/2024/02/2024-02-12-emacs-news/
@@ -120,7 +223,7 @@ Actually generate the section:
   - [[https://lifeofpenguin.blogspot.com/2024/02/just-in-time-lazy-loading.html][Anand Tamariya: Just In Time Lazy-Loading]]
   - [[https://lists.gnu.org/archive/html/emacs-devel/2024-02/msg00363.html][Test your ELisp knowledge]]: (their-fun (/ my-x 0))
 - Appearance:
-  - [[https://emacs.dyerdwelling.family/emacs/20240208164549-emacs-selected-window-accent-mode-now-on-melpa/][James Dyer: selected-window-accent-mode now on MELPA]]
+  - [[https://emacs.dyerdwelling.family/emacs/20240208164549-emacs-selected-window-accent-mode-now-on-melpa/][James Dyer: selected-window-accent-mode now on MELPA]] ([[https://irreal.org/blog/?p=11974][Irreal]])
   - [[https://i.redd.it/4bo5crbx36ic1.gif][[auto-dark] 0.12 - Now supports emacs-mac (MacOS) and allows 'default' Emacs theme]] ([[https://www.reddit.com/r/emacs/comments/1ap213j/autodark_012_now_supports_emacsmac_macos_and/][Reddit]])
 - Navigation:
   - [[https://gist.github.com/lesliesrussell/46302d413fcf49e9717eeea57fdadcbf][Emacs movement by thing]]
@@ -258,7 +361,7 @@ Links from [[https://www.reddit.com/r/emacs][reddit.com/r/emacs]], [[https://www
     - [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=14acf626fe1fef25a854cf0df772b2899bf26a3c][org: Fontify whole table rows with `org-table-row' face]]
     - [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=03b383df8bf4c2fb631ada030cabad564a7101e2][ox-latex: Remove org-latex-line-break-safe]]
 - Denote:
-  - [[https://www.youtube.com/watch?v=5R0Dg5QfooI][Emacs Note Taking Recommendation: Denote (re-edit)]] (04:17)
+  - [[https://www.youtube.com/watch?v=5R0Dg5QfooI][Emacs Note Taking Recommendation: Denote (re-edit)]] (04:17, [[https://irreal.org/blog/?p=11976][Irreal]])
 - Coding:
   - [[https://www.youtube.com/watch?v=PMkJaCuDidk][Exploring Emacs (Prelude) ... for web development]] (01:10:25)
   - [[https://github.com/rajasegar/vite.el][An Emacs plugin for Vite]] ([[https://www.reddit.com/r/emacs/comments/1aj9oq7/an_emacs_plugin_for_vite/][Reddit]]) - JS web development
@@ -34420,55 +34523,55 @@ This one exports links from https://www.reddit.com/user/emacsnews/upvoted.json .
 
 #+NAME: reddit
 #+begin_src emacs-lisp :results silent  :eval never-export
-  (defvar my-reddit-upvoted-json "https://www.reddit.com/user/emacsnews/upvoted.json" "JSON for upvoted posts.")
-  (require 'helm-utils)
-  (defun my-reddit-list-upvoted (date)
-    (interactive (list (org-read-date)))
-    (let ((threshold (org-read-date nil t (concat (substring date 0 (min (length date) 10)) " 0:00")))
-          (url my-reddit-upvoted-json)
-          results)
-      (while url
-        (with-temp-buffer
-          (url-insert-file-contents url)
-          (decode-coding-region (point-min) (point-max) 'utf-8)
-          ;; (goto-char (point-min))
-          ;; (re-search-forward "^$")
-          (let* ((data (json-read))
-                 (items (assoc-default 'children (assoc-default 'data data)))
-                 (after (assoc-default 'after (assoc-default 'data data)))
-                 (result
-                  (mapconcat
-                   (lambda (item)
-                     (let* ((o (assoc-default 'data item))
-                            (title (assoc-default 'title o))
-                            (url (helm-html-decode-entities-string (assoc-default 'url o)))
-                            (date (seconds-to-time (assoc-default 'created_utc o)))
-                            (permalink (concat "https://www.reddit.com" (assoc-default 'permalink o)))
-                            (num-comments (assoc-default 'num_comments o 'eq 0)))
-                       (when (time-less-p threshold date)
-                         (if (and (> num-comments 0) (not (string-match "reddit\\.com" url)))
-                             (format "- %s (%s)\n"
-                                     (org-link-make-string (url-unhex-string (if (string-match "^/" url)
-                                                                                 (concat "https://www.reddit.com" url)
-                                                                               url))
-                                                           title)
-                                     (org-link-make-string (url-unhex-string (if (string-match "^/" permalink)
-                                                                                 (concat "https://www.reddit.com" permalink)
-                                                                               permalink))
-                                                           "Reddit"))
-                           (format "- %s\n" (org-link-make-string (url-unhex-string (if (string-match "^/" url)
-                                                                                        (concat "https://www.reddit.com" url)
-                                                                                      url))
-                                                                  title))))))
-                   items "")))
+(defvar my-reddit-upvoted-json "https://www.reddit.com/user/emacsnews/upvoted.json" "JSON for upvoted posts.")
+(require 'helm-utils)
+(defun my-reddit-list-upvoted (date)
+  (interactive (list (org-read-date)))
+  (let ((threshold (org-read-date nil t (concat (substring date 0 (min (length date) 10)) " 0:00")))
+        (url my-reddit-upvoted-json)
+        results)
+    (while url
+      (with-temp-buffer
+        (url-insert-file-contents url)
+        (decode-coding-region (point-min) (point-max) 'utf-8)
+        ;; (goto-char (point-min))
+        ;; (re-search-forward "^$")
+        (let* ((data (json-read))
+               (items (assoc-default 'children (assoc-default 'data data)))
+               (after (assoc-default 'after (assoc-default 'data data)))
+               (result
+                (mapconcat
+                 (lambda (item)
+                   (let* ((o (assoc-default 'data item))
+                          (title (assoc-default 'title o))
+                          (url (helm-html-decode-entities-string (assoc-default 'url o)))
+                          (date (seconds-to-time (assoc-default 'created_utc o)))
+                          (permalink (concat "https://www.reddit.com" (assoc-default 'permalink o)))
+                          (num-comments (assoc-default 'num_comments o 'eq 0)))
+                     (when (time-less-p threshold date)
+                       (if (and (> num-comments 0) (not (string-match "reddit\\.com" url)))
+                           (format "- %s (%s)\n"
+                                   (org-link-make-string (url-unhex-string (if (string-match "^/" url)
+                                                                               (concat "https://www.reddit.com" url)
+                                                                             url))
+                                                         title)
+                                   (org-link-make-string (url-unhex-string (if (string-match "^/" permalink)
+                                                                               (concat "https://www.reddit.com" permalink)
+                                                                             permalink))
+                                                         "Reddit"))
+                         (format "- %s\n" (org-link-make-string (url-unhex-string (if (string-match "^/" url)
+                                                                                      (concat "https://www.reddit.com" url)
+                                                                                    url))
+                                                                title))))))
+                 items "")))
 
-            (setq results (concat result "\n" results))
-            (setq url
-                  (if (and after (> (length result) 0))
-                      (concat my-reddit-upvoted-json "?after=" after)
-                    nil)))))
-      results))
-  ;;  (my-reddit-list-upvoted "-mon")
+          (setq results (concat result "\n" results))
+          (setq url
+                (if (and after (> (length result) 0))
+                    (concat my-reddit-upvoted-json "?after=" after)
+                  nil)))))
+    results))
+;;  (my-reddit-list-upvoted "-mon")
 #+end_src
 
 #+RESULTS: reddit
