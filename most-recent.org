@@ -1,87 +1,84 @@
-# Created 2024-07-15 Mon 17:50
-#+title: 2024-07-15 Emacs news
-#+date: 2024-07-15T09:54:51-0400
+# Created 2024-07-22 Mon 18:28
+#+title: 2024-07-22 Emacs news
+#+date: 2024-07-22T10:53:14-0400
 #+author: Sacha Chua
 - Upcoming events:
-  - [[https://emacs-apac.gitlab.io/announcements/july-2024/][Emacs APAC: Announcing Emacs Asia-Pacific (APAC) virtual meetup, Saturday, July 27, 2024]]
-  - M-x Research: TBA https://m-x-research.github.io/ Wed Jul 17 0800 America/Vancouver - 1000 America/Chicago - 1100 America/Toronto - 1500 Etc/GMT - 1700 Europe/Berlin - 2030 Asia/Kolkata - 2300 Asia/Singapore
-  - EmacsSF: Emacs Lisp Hacking Night: Parsers! (Hybrid) https://www.meetup.com/emacs-sf/events/302146884/ Thu Jul 18 1800 America/Vancouver - 2000 America/Chicago - 2100 America/Toronto -- Fri Jul 19 0100 Etc/GMT - 0300 Europe/Berlin - 0630 Asia/Kolkata - 0900 Asia/Singapore
   - Emacs APAC (virtual) https://emacs-apac.gitlab.io/ Sat Jul 27 0130 America/Vancouver - 0330 America/Chicago - 0430 America/Toronto - 0830 Etc/GMT - 1030 Europe/Berlin - 1400 Asia/Kolkata - 1630 Asia/Singapore
-- Beginner:
-  - [[https://www.youtube.com/watch?v=tXgNiCBGgGc&feature=youtu.be][Know Thy Emacs 2024_07_11_04:30:20]] - finding out more about Emacs
+  - Emacs Berlin (virtual, in English) https://emacs-berlin.org/ Wed Jul 31 0930 America/Vancouver - 1130 America/Chicago - 1230 America/Toronto - 1630 Etc/GMT - 1830 Europe/Berlin - 2200 Asia/Kolkata -- Thu Aug 1 0030 Asia/Singapore
+  - M-x Research: TBA https://m-x-research.github.io/ Fri Aug 2 0800 America/Vancouver - 1000 America/Chicago - 1100 America/Toronto - 1500 Etc/GMT - 1700 Europe/Berlin - 2030 Asia/Kolkata - 2300 Asia/Singapore
+- Emacs configuration:
+  - [[http://anggtwu.net/2024-find-dot-emacs-links.html][~/.emacs for beginners]]
+  - [[https://www.rousette.org.uk/archives/devilish-fun-with-a-modeless-modal-editor/][Devilish fun with a modeless modal editing mode]] ([[https://www.reddit.com/r/emacs/comments/1e832e1/devilish_fun_with_a_modeless_modal_editing_mode/][Reddit]])
+  - [[https://www.youtube.com/watch?v=bCz_Pl3rBic][[AO VIVO] Configurando o Emacs do zero - parte 1]] (01:35:22)
+  - [[https://www.youtube.com/watch?v=k9xyamQ5k-M][[AO VIVO] Configurando o Emacs do zero - parte 2]] (01:37:19)
+  - [[https://www.youtube.com/watch?v=GdAI6lBb3x8][[AO VIVO] Configurando o Emacs do zero - parte 3]] (01:19:56)
+  - [[https://github.com/ovistoica/emacs][ovistoica's Emacs Config]]
 - Emacs Lisp:
-  - [[https://xenodium.com/inline-previous-result-and-why-you-should-edebug/][Alvaro Ramirez: Inline previous result and why you should edebug]] ([[https://www.reddit.com/r/emacs/comments/1dz1n42/alvaro_ramirez_inline_previous_result_and_why_you/][Reddit]], [[https://irreal.org/blog/?p=12300][Irreal]])
-  - [[https://lars.ingebrigtsen.no/2024/07/08/i-should-have-implemented-the-emacs-inputs-correctly-the-first-time/][Lars Ingebrigtsen: I Should Have Implemented The Emacs Inputs Correctly The First Time]]
-  - [[https://github.com/nohzafk/cli2eli][Wrap any command -line tool into Emacs commands]] ([[https://www.reddit.com/r/emacs/comments/1e36zze/wrap_any_command_line_tool_into_emacs_commands/][Reddit]])
-  - [[https://www.youtube.com/watch?v=rSi9iYXcTNk][Lightning Talk: Compiling Emacs Lisp to Native Code]] (06:49)
-  - [[https://www.youtube.com/watch?v=4IShah_YJ9w][Lightning Talk: Visual Stepper for Emacs Lisp]] (05:44)
-  - [[https://www.gnu.org/software/emacs/casting-spels-emacs/][Casting Spels in Emacs]] ([[https://emacs.ch/@pkal/112790880021925578][@pkal@emacs.ch]])
+  - [[https://www.omarpolo.com/post/writing-a-major-mode.html][Writing a simple Emacs major-mode]] (2021)
+  - [[http://yummymelon.com/devnull/announcing-casual-re-builder.html][Announcing Casual RE-Builder]] ([[https://www.reddit.com/r/emacs/comments/1e3zbfu/announcing_casual_rebuilder/][Reddit]], [[https://irreal.org/blog/?p=12313][Irreal]])
+  - [[http://yummymelon.com/devnull/emacs-regexps-the-small-print.html][Emacs Regexps: The Small Print]] ([[https://www.reddit.com/r/emacs/comments/1e6mk6k/emacs_regexps_the_small_print/][Reddit]], [[https://irreal.org/blog/?p=12324][Irreal]])
+  - [[https://eshelyaron.com/posts/2024-07-15-on-buglet-bindings.html][The right way to handle case-insensitive inputs with `completing-read`]]
+  - [[https://lists.gnu.org/archive/html/emacs-devel/2024-07/msg00865.html][A number of Emacs Lisp math libraries]]
+  - [[https://github.com/jamescherti/elispcomp][Introducing elispcomp: Compiling Elisp code directly from the command line]] ([[https://www.reddit.com/r/emacs/comments/1e73jvi/introducing_elispcomp_compiling_elisp_code/][Reddit]])
+  - [[https://www.youtube.com/watch?v=zLVDOUMSpDM][Xah Talk Show Ep563, Emacs Lisp Coding move-html-text-block and random chat]] (01:12:20)
+  - [[https://www.unwoundstack.com/blog/fill-column-indicator.html][Unwound Stack: fill-column-indicator]] - use display-fill-column-indicator-mode instead
 - Appearance:
-  - [[https://aatmunbaxi.netlify.app/comp/dyn_custom_palette_access_technicolor/][Consistent, Dynamic Access to Your Current Emacs Theme's Palette]] ([[https://www.reddit.com/r/emacs/comments/1dzvth2/consistent_dynamic_access_to_your_current_emacs/][Reddit]])
-  - [[https://genehack.blog/2024/07/i-have-this-thing-where-i-get-older-but-just-never-wiser/][Running different themes on GUI Emacs and TTY emacsclient, in the same process]] ([[https://www.reddit.com/r/emacs/comments/1dzpps9/running_different_themes_on_gui_emacs_and_tty/][Reddit]], [[https://dementedandsadbut.social/@genehack/112760922285274588][@genehack@dementedandsadbut.social]])
+  - [[https://emacs.dyerdwelling.family/emacs/20240718103550-emacs--selected-window-accent-mode-v-0-8-0/][James Dyer: Selected Window Accent Mode v0.8.0]]
 - Navigation:
-  - [[https://www.reddit.com/r/emacs/comments/1e18toz/using_new_emacs_features_to_replicate_other/][Using new emacs features to replicate other packages: tree-sitter + transient + repeat-mode = expand-region]]
-  - [[https://magnus.therning.org/2024-07-13-a-function-for-jumping-to-a-project-todo-file.html][Magnus: A function for jumping to a project TODO file]]
-  - [[https://www.reddit.com/r/emacs/comments/1dzdlqt/onetabperproject_aka_otpp_workspace_management/][`one-tab-per-project` (aka. `otpp`), workspace management via a thin layer between built-in `project` and `tab-bar`]]
-  - [[http://yummymelon.com/devnull/announcing-casual-ibuffer.html][Announcing Casual IBuffer]] ([[https://www.reddit.com/r/emacs/comments/1dykvxr/announcing_casual_ibuffer/][Reddit]], [[https://irreal.org/blog/?p=12298][Irreal]])
-  - [[https://mbork.pl/2024-07-13_Dedicated_windows][Marcin Borkowski: Dedicated windows]]
-  - [[https://lmno.lol/alvaro/its-all-up-for-grabs-and-it-compounds][Feed symbol overlays to multiple cursors]] ([[https://www.reddit.com/r/emacs/comments/1e3c5gm/feed_symbol_overlays_to_multiple_cursors/][Reddit]])
-  - [[https://lmno.lol/alvaro/inserting-numbers-with-emacs-multiple-cursors][Inserting numbers with Emacs multiple cursors]] (2019)
-  - [[https://lmno.lol/alvaro/emacss-counsel-m-x-meets-multiple-cursors][Emacs's counsel-M-x meets multiple cursors]] (2020)
+  - [[https://www.jamescherti.com/outline-mode-enhance-move-subtree-up-down/][Emacs: Enhancing up and down subtree movement in outline-mode and outline-minor-mode]] ([[https://www.reddit.com/r/emacs/comments/1e7z5fb/emacs_enhancing_up_and_down_subtree_movement_in/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/1e9bqy8/perspproject_projectel_integration_for/][persp-project - project.el integration for perspective.el]]
+  - [[https://www.youtube.com/watch?v=TAkOPqGWxq0][Emacs Buffer Transpose 2024_07_20_03:20:45]] (04:27)
 - Writing:
-  - [[https://github.com/gigamonkey/writing][Some useful Elisp for writing prose]] ([[https://www.reddit.com/r/emacs/comments/1e1imxd/some_useful_elisp_for_writing_prose/][Reddit]])
-  - [[https://github.com/lorniu/go-translate][Package go-translate update to v3]] ([[https://www.reddit.com/r/emacs/comments/1e0bad4/package_gotranslate_update_to_v3/][Reddit]])
-  - [[https://emacs.dyerdwelling.family/emacs/20240712082430-emacs--spelling-powerthesaurus/][James Dyer: Creating a Spelling Transient]] ([[https://irreal.org/blog/?p=12308][Irreal]])
+  - [[https://michaelneuper.com/posts/efficient-latex-editing-with-emacs/][Efficient LaTeX Editing With Emacs - Michael]] (2023, [[https://news.ycombinator.com/item?id=41021173][HN]])
+  - [[https://onlisp.co.uk/preview_002dauto-in-LaTeX-buffers.html][J.e.r.e.m.y B.r.y.a.n.t: preview-auto in LaTeX buffers]]
 - Org Mode:
-  - [[https://www.youtube.com/watch?v=UwfYn9lTm74][Emacs. But why?]] (51:20)
-  - [[https://www.youtube.com/watch?v=25HBEqIPoH8][Automating Org Mode Tasks with Emacs Lisp - System Crafters Live!]] (02:00:53)
-  - [[https://www.luisquintanilla.me/feed/love-plain-text-org-mode-clocktable?utm_medium=feed][Clock Tables - Org Mode, Plain Text, and AI]]
-  - [[https://www.reddit.com/r/orgmode/comments/1dzrndg/contact_management_with_emacs_orgmode_orgcontacts/][Contact management with Emacs, org-mode, org-contacts, notmuch and org-roam]]
-  - [[https://kitchingroup.cheme.cmu.edu/blog/2015/10/05/A-checkbox-list-in-org-mode-with-one-value/][A checkbox list in org-mode with one value]] (2015)
-  - [[https://ag91.github.io/blog/2024/07/09/i-am-keeping-an-up-to-date-ob-http-fork/][I am keeping an up to date ob-http fork]] ([[https://www.reddit.com/r/emacs/comments/1dzfzto/i_am_keeping_an_up_to_date_obhttp_fork/][Reddit]])
-  - [[https://protesilaos.com/codelog/2024-07-12-emacs-org-open-externally/][Protesilaos Stavrou: Emacs: Tell Org which linked files to open externally]]
-  - Org development:
-    - [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=486ebe118bc8f281758d4f94d0b4bdff6cd5ac23][org-refile: Push point to Org mark ring before jumping]]
-    - [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=50e34dde10ba6d88615b2892e2b33ac7a02e1366][ox-beamer: Allow setting frame subtitle with headline property]]
-    - [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=e0924db3c55a44c8aa8d126fbb9b42cfc54f104c][orgtbl-to-generic: Retain special rows in code block table output]]
-    - [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=90d4ae92ebaf4de75c63a6390150a59199b40b8e][ox: New custom option to disable macro replacement]]
+  - [[https://weblog.masukomi.org/2024/07/19/using-org-mode-with-hugo/][Using Org Mode With Hugo · weblog.masukomi.org]] ([[https://www.reddit.com/r/emacs/comments/1e7ach0/tips_advice_on_using_oxhugo_to_blog_with_orgmode/][Reddit]])
 - Completion:
-  - [[https://www.reddit.com/r/emacs/comments/1e0w6r0/confused_implementing_programmed_completion_a/][Confused implementing programmed completion? A snippet to get you started]]
-  - [[https://lifeofpenguin.blogspot.com/2024/07/annotate-completion-candidates-gnu-emacs.html][Anand Tamariya: Annotate completion candidates (GNU Emacs)]] ([[https://www.reddit.com/r/emacs/comments/1e2y513/annotate_completion_candidates_gnu_emacs/][Reddit]])
+  - [[https://mastodon.catgirl.cloud/@mekeor/112816088995281572][How to make consult-history work for git commits and ERC buffers]]
+  - [[https://github.com/armindarvish/consult-omni][Announcing consult-omni: A powerful omni-search and launcher in Emacs (like Spotlight or Alfred but in Emacs)]] ([[https://www.reddit.com/r/emacs/comments/1e6qhpf/announcing_consultomni_a_powerful_omnisearch_and/][Reddit]])
 - Coding:
-  - [[https://github.com/sshaw/git-link/issues/30#issuecomment-2227218012][linking to a different git branch]] ([[https://mastodon.xyz/@dotemacs/112783558940104414][@dotemacs@mastodon.xyz]])
-  - [[https://www.rahuljuliato.com/posts/eslint-on-emacs][Making Emacs Work with Project's ESLint]]
-  - [[https://youtu.be/vRDNkAk9Obo][Emacs Scala Eglot TreeSitter Nix setup using Home Manager in 2024 - roast my video]] (13:09, [[https://www.reddit.com/r/emacs/comments/1e1iko1/emacs_scala_eglot_treesitter_nix_setup_using_home/][Reddit]])
-  - [[https://youtu.be/QGhZuPRVtVI?si=-YT91qEFurL2jJ5H][Emacs Flutter + Dart Eglot TreeSitter Nix setup using Home Manager]]
+  - [[https://www.reddit.com/r/emacs/comments/1e6qyuw/cognitivecomplexity_a_treesitbased_package_to/][cognitive-complexity: a treesit-based package to display cognitive complexity of code in Emacs (port of the tree-sitter based codemetrics)]]
+  - [[https://salsa.debian.org/debacle/devhelp2.el][Martin / devhelp2.el · GitLab - read devhelp in Emacs]] ([[https://framapiaf.org/@debacle/112824517498480270][@debacle@framapiaf.org]])
+  - [[https://www.youtube.com/watch?v=k4ls9lM4Fuo][A Fair Trial of Emacs' Version Control Mode - System Crafters Live!]] (02:02:14)
+- Mail, news, and chat:
+  - [[https://michal.sapka.me/cool-emacs/read-email-notmuch/][Read email with Notmuch | Cool Emacs]] (2023)
+  - [[https://magnus.therning.org/2024-07-21-emacs-via-nix-with-mu4e.html][Magnus: Emacs via Nix with mu4e]]
 - Evil mode:
-  - [[https://www.jamescherti.com/emacs-evil-disable-automatic-removal-of-spaces-after-leaving-insert-mode/][Emacs Evil: Disabling the automatic removal of spaces after leaving Insert mode]] ([[https://www.reddit.com/r/emacs/comments/1e2behg/emacs_evil_disabling_the_automatic_removal_of/][Reddit]])
+  - [[https://gist.github.com/amirrajan/b3e4af5e06ad46e1b390aae2d0a44e47][init-evil.el · GitHub]]
+  - [[https://gist.github.com/amirrajan/195c3c87d811586126e85c5e3dbf7a06][Minimal Emacs configuration for Windows and Mac (Vim bindings and leader key) · GitHub]]
+- Doom Emacs:
+  - [[https://www.youtube.com/watch?v=PDNfLMQ6oAc][Doom Emacs on WSL FULL GUIDE]] (03:26)
+  - [[https://www.youtube.com/watch?v=trQ2DlMoXJA][Replay - Writing elisp for doom emacs config | emacs-evil]] (01:06:36)
+  - [[https://www.youtube.com/watch?v=QJshNWXSZmA][[Emacs] Instalação do Doom Emacs e projetos]] (02:01:21, [[https://bolha.tube/videos/watch/f0bc87ea-1dc8-425d-b165-c836a6f251c0][bolha.tube]])
 - Multimedia:
-  - [[https://i.redd.it/e2nvbgfj4dbd1.gif][Ready Player Mode update]] ([[https://www.reddit.com/r/emacs/comments/1dyknxd/ready_player_mode_update/][Reddit]])
+  - [[https://lmno.lol/alvaro/real-player-mode-now-on-melpa][Never fear mistakingly opening media files ;) Ready Player Mode now on MELPA]] ([[https://www.reddit.com/r/emacs/comments/1e8sy9v/never_fear_mistakingly_opening_media_files_ready/][Reddit]])
+  - [[https://lor.sh/@tennoseremel/112823464921505189][subed code for moving start time and jumping to it]]
 - AI:
-  - [[https://www.reddit.com/r/emacs/comments/1e37cer/elisa_100/][elisa 1.0.0]] - ellama retrieval-augmented generation
-  - [[https://www.reddit.com/r/emacs/comments/1e34so2/code_assist_with_google_gemini_for_emacsen/][Code Assist with Google Gemini for Emacsen]]
-  - [[https://github.com/chep/copilot-chat.el][Github copilot chat in emacs]] ([[https://www.reddit.com/r/emacs/comments/1e0jtdi/github_copilot_chat_in_emacs/][Reddit]])
-  - [[https://www.youtube.com/watch?v=XzBVxmIvw90&feature=youtu.be][Create your own Emacs ChatGPT in less than 100 LOC!]]
+  - [[https://www.reddit.com/r/emacs/comments/1e90v2i/ekg_version_060_now_with_llm_context/][ekg version 0.6.0: now with LLM context]]
 - Community:
-  - [[https://www.reddit.com/r/emacs/comments/1dzqf8g/weekly_tips_tricks_c_thread/][Weekly Tips, Tricks, &c. Thread]] - buffer-local keys, precision-scroll-mode
-  - [[https://www.reddit.com/r/emacs/comments/1e1dksm/how_is_emacs_used_in_a_professional_setting/][How is Emacs used in a professional setting?]]
-  - [[https://www.reddit.com/r/emacs/comments/1e1k8jn/fun_fact_about_calendarel/][Fun fact about calendar.el]] - Calendrical Calculations
-  - [[https://gist.github.com/lispm/8c6783be2f5a3d41b7592ba3b2c453ea][GLS in 2007 about the earliest EMACS development]]
+  - [[https://www.reddit.com/r/emacs/comments/1e5ctk2/weekly_tips_tricks_c_thread/][Weekly Tips, Tricks, &c. Thread]]
+  - [[https://irreal.org/blog/?p=12317][Irreal: Learn Vim or Emacs]]
+  - [[https://emacs.dyerdwelling.family/emacs/20240713203037-emacs--local-elpa-melpa-org-revisited-2yr-anniversary/][James Dyer: Emacs Blog 2 Year Anniversary - First Post Revisit - Create Local Offline ELPA MELPA ORG]]
 - Other:
-  - [[https://framapiaf.org/@brab/112756574791525072][Alternative backward-delete-word that doesn't use the kill ring]]
-  - [[https://lmno.lol/alvaro/rewriting-dates-with-emacs-multiple-cursors][Rewriting dates with Emacs multiple cursors]] (2019)
-  - [[https://www.youtube.com/watch?si=eL_HEiqqE_1PI3Ek&v=ZjCRxAMPdNc&feature=youtu.be][Unlock the Power of the Daemon with emacsclient]]
+  - [[https://www.masteringemacs.org/article/the-emacs-29-edition-of-mastering-emacs-out-now][Mickey Petersen: The Emacs 29 Edition of Mastering Emacs is out now]] ([[https://news.ycombinator.com/item?id=41035785][HN]])
+  - [[https://lmno.lol/alvaro/ocr-those-buffers][Alvaro Ramirez: OCR those buffers]] ([[https://www.reddit.com/r/emacs/comments/1e5np2n/ocr_those_buffers/][Reddit]])
+  - [[https://www.linux-community.de/ausgaben/linuxuser/2024/08/makros-in-vim-und-emacs-regex-teil-3/][Makros in Vim und Emacs (Regex, Teil 3) - LinuxCommunity]] ([[https://mastodon.social/@hofmannedv/112808048050397624][@hofmannedv@mastodon.social]])
+  - [[https://www.reddit.com/r/emacs/comments/1e57kzy/a_solution_for_getting_emacs_to_compile_with/][A solution for getting Emacs to compile with tree-sitter on Fedora]]
+  - [[https://www.reddit.com/r/emacs/comments/1e47b4i/emacs_too_slow/][Emacs too slow.]] - Windows; some tips in the discussion ([[https://www.reddit.com/r/emacs/comments/1e5qdzd/emacs_slowness/][More tips]])
+  - [[https://news.mynavi.jp/article/osxhack-253/][Catalina and Emacs]]
+  - [[https://gist.github.com/ghosty141/c93f21d6cd476417d4a9814eb71dd46e][Buttery Smooth Emacs - Mirror of Daniel Colasciones great blog post about emacs' inner workings · GitHub]] (2016)
 - Emacs development:
   - emacs-devel:
-    - [[https://lists.gnu.org/archive/html/emacs-devel/2024-07/msg00646.html][MPS: which threads need to be registered and how?]]
-    - [[https://lists.gnu.org/archive/html/emacs-devel/2024-07/msg00603.html][Re: moving xwidget-webkit to WPE]]
-    - [[https://lists.gnu.org/archive/html/emacs-devel/2024-07/msg00589.html][CI testing of Emacs for Fedora]] - now built and tested with Koschei
-    - [[https://lists.gnu.org/archive/html/emacs-devel/2024-07/msg00653.html][Input method for Tifinagh (alphabet of the Berber language)]]
-  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=8e46f44ea0eb761e24beda8c5cdbc8fcca87307a][Improve Eshell's behavior when waiting for processes]]
-  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=551a71c313be26d067e59fa11c79e4ef5c550e92][Support interactive D-Bus authorization]]
+    - [[https://lists.gnu.org/archive/html/emacs-devel/2024-07/msg00732.html][Long discussion about including a mathematical library]], possibly exposing more functions from libm
+    - [[https://lists.gnu.org/archive/html/emacs-devel/2024-07/msg00815.html][Re: Markers in a gap array]] - status of scratch/igc branch with MPC
+    - [[https://lists.gnu.org/archive/html/emacs-devel/2024-07/msg00721.html][Re: MPS: assertion failed: header_type (h) != IGC_OBJ_FWD]] - more info on symbol alignment
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=f249c81f868e8fea9d2a05ce258b3ebefba6620f][Add commands to run unit tests in 'go-ts-mode']]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=9f4fc6608212191e1a9e07bf89f38ba9e4ea786c][Work around GCC bug 58416 on 32-bit x86]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=99b360bb5aabf324cf038c27ac76ac1513319754][Allow specifying stdout/stderr separately in some Eshell commands]]
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=a1f29998bf49c85c2eddc1201657639fdd494ef2][Add history variables for find-func entry points]]
 - New packages:
-  - http://melpa.org/#/casual-re-builder: Transient UI for RE-Builder (MELPA)
-  - http://melpa.org/#/communinfo: Community maintained Info-url-alist (MELPA)
-  - http://melpa.org/#/slurpbarf: Commands for slurping and barfing (MELPA)
+  - http://melpa.org/#/evil-neo: Minor mode for using the Neo keyboard layout with Evil (MELPA)
+  - http://melpa.org/#/helm-roam: Helm command for org-roam (MELPA)
+  - http://melpa.org/#/ready-player: Open media files in ready-player major mode (MELPA)
 
-Links from [[https://www.reddit.com/r/emacs][reddit.com/r/emacs]], [[https://www.reddit.com/r/orgmode][r/orgmode]], [[https://www.reddit.com/r/spacemacs][r/spacemacs]], [[https://www.reddit.com/r/planetemacs][r/planetemacs]], [[https://emacs.ch/deck/tags/emacs][Mastodon #emacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://lobste.rs/search?q=emacs&what=stories&order=newest][lobste.rs]], [[https://programming.dev/c/emacs?dataType=Post&page=1&sort=New][programming.dev]], [[https://lemmy.ml/c/emacs?dataType=Post&page=1&sort=New][lemmy]], [[https://communick.news/c/emacs?dataType=Post&page=1&sort=New][communick.news]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]], [[https://emacslife.com/calendar/][Emacs Calendar]], and [[http://lists.gnu.org/archive/html/emacs-devel/2024-07][emacs-devel]]. Thanks to Andrés Ramírez for emacs-devel links. Do you have an Emacs-related link or announcement? Please e-mail me at [[mailto:sacha@sachachua.com][sacha@sachachua.com]]. Thank you!
+Links from [[https://www.reddit.com/r/emacs][reddit.com/r/emacs]], [[https://www.reddit.com/r/orgmode][r/orgmode]], [[https://www.reddit.com/r/spacemacs][r/spacemacs]], [[https://www.reddit.com/r/planetemacs][r/planetemacs]],  [[https://emacs.ch/deck/tags/emacs][Mastodon #emacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://lobste.rs/search?q=emacs&what=stories&order=newest][lobste.rs]], [[https://programming.dev/c/emacs?dataType=Post&page=1&sort=New][programming.dev]], [[https://lemmy.ml/c/emacs?dataType=Post&page=1&sort=New][lemmy]], [[https://communick.news/c/emacs?dataType=Post&page=1&sort=New][communick.news]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]], [[https://emacslife.com/calendar/][Emacs Calendar]], and [[http://lists.gnu.org/archive/html/emacs-devel/2024-07][emacs-devel]]. Thanks to Andrés Ramírez for emacs-devel links. Do you have an Emacs-related link or announcement? Please e-mail me at [[mailto:sacha@sachachua.com][sacha@sachachua.com]]. Thank you!
