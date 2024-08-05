@@ -1,4 +1,6 @@
-((nixfmt (("melpa" . "2024-07-22")))
+((vsh-mode (("melpa" . "2024-07-29")))
+(outline-indent (("melpa" . "2024-07-29")))
+(nixfmt (("melpa" . "2024-07-22")))
 (helix-theme (("melpa" . "2024-07-22")))
 (easysession (("melpa" . "2024-07-22")))
 (casual-bookmarks (("melpa" . "2024-07-22")))
