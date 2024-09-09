@@ -1,4 +1,6 @@
-((otpp (("melpa" . "2024-08-26")))
+((haskell-ts-mode (("nongnu" . "2024-09-02")))
+(casual-symbol-overlay (("melpa" . "2024-09-02")))
+(otpp (("melpa" . "2024-08-26")))
 (org-node (("melpa" . "2024-08-26")))
 (flymake-bashate (("melpa" . "2024-08-26")))
 (evangelion-theme (("melpa" . "2024-08-26")))
