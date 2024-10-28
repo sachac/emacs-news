@@ -1,4 +1,6 @@
-((tp (("melpa" . "2024-10-14") ("nongnu" . "2024-10-14")))
+((visual-replace (("melpa" . "2024-10-21")))
+(earl (("melpa" . "2024-10-21")))
+(tp (("melpa" . "2024-10-14") ("nongnu" . "2024-10-14")))
 (just-ts-mode (("melpa" . "2024-10-14")))
 (wollok-mode (("melpa" . "2024-10-07")))
 (uniline (("melpa" . "2024-10-07")))
