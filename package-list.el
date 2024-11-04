@@ -1,4 +1,7 @@
-((visual-replace (("melpa" . "2024-10-21")))
+((dumber-jump (("melpa" . "2024-10-28")))
+(coc-dc (("melpa" . "2024-10-28")))
+(claudia (("melpa" . "2024-10-28")))
+(visual-replace (("melpa" . "2024-10-21")))
 (earl (("melpa" . "2024-10-21")))
 (tp (("melpa" . "2024-10-14") ("nongnu" . "2024-10-14")))
 (just-ts-mode (("melpa" . "2024-10-14")))
