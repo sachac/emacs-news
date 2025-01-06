@@ -1,4 +1,5 @@
-((selected-window-contrast (("melpa" . "2024-12-23")))
+((romanian-holidays (("melpa" . "2024-12-30")))
+(selected-window-contrast (("melpa" . "2024-12-23")))
 (portage-modes (("melpa" . "2024-12-23")))
 (org-shortcut (("melpa" . "2024-12-23")))
 (hyprlang-ts-mode (("melpa" . "2024-12-23")))
