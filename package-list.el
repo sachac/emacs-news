@@ -1,4 +1,6 @@
-((xmltokf (("melpa" . "2025-01-20")))
+((stillness-mode (("melpa" . "2025-01-27")))
+(pif (("melpa" . "2025-01-27")))
+(xmltokf (("melpa" . "2025-01-20")))
 (typespec-ts-mode (("melpa" . "2025-01-20")))
 (minuet (("melpa" . "2025-01-20")))
 (locs-and-refs (("melpa" . "2025-01-20")))
