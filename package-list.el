@@ -1,4 +1,5 @@
-((zathura (("melpa" . "2025-07-21")))
+((magit-prime (("melpa" . "2025-07-28")))
+(zathura (("melpa" . "2025-07-21")))
 (scratch-plus (("melpa" . "2025-07-21")))
 (outli (("melpa" . "2025-07-21")))
 (org-agenda-dock (("melpa" . "2025-07-21")))
