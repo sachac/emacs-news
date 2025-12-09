@@ -1,4 +1,5 @@
-((structurizr (("melpa" . "2025-11-17")))
+((tramp-hlo (("gnu" . "2025-12-01")))
+(structurizr (("melpa" . "2025-11-17")))
 (sparkweather (("melpa" . "2025-11-17")))
 (real-mono-themes (("melpa" . "2025-11-17")))
 (kirigami (("melpa" . "2025-11-17")))
