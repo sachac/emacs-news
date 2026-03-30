@@ -16,7 +16,7 @@
 
 This setting puts Org ASCII export links right after the text instead of in a separate section:
 
-#+NAME: export-ascii
+#+NAME: export-asciis
 #+begin_src emacs-lisp :results silent :eval never-export
 (setq org-ascii-links-to-notes nil)
 #+end_src
@@ -1632,4 +1632,327 @@ emacs-news-bluesky-emacs
 	(re-search-forward
 	 (regexp-quote
 		(spookfox-js-injection-eval-in-active-tab "window.location.href" t))))
+#+end_src
+* SOMEDAY Categorizing Emacs News items by voice in Org Mode :speech:SpeechRecognition:emacs:org:
+:PROPERTIES:
+:CUSTOM_ID: categorizing-emacs-news-items-by-voice-in-org-mode
+:EXPORT_DATE: 2026-03-23T21:19:29-0400
+:EXPORT_ELEVENTY_PERMALINK: /blog/2026/03/categorizing-emacs-news-items-by-voice-in-org-mode/
+:EXPORT_ELEVENTY_FILE_NAME: blog/2026/03/categorizing-emacs-news-items-by-voice-in-org-mode/
+:EXPORT_MASTODON: https://social.sachachua.com/@sacha/statuses/01KMER8FH7NZT56ENT0NHE36Q0
+:END:
+
+I'm having fun exploring which things might actually be easier to do by voice than by typing. For example, after I wrote some code to [[dotemacs:writing-and-editing-speech-recognition-expanding-yasnippet-by-voice][expand yasnippets by voice]], I realized that it was easier to:
+
+1. press my shortcut,
+2. say "okay, define interactive function",
+3. and then press my shortcut again,
+
+than to:
+
+1. mentally say it,
+2. get the first initials,
+3. type in "dfi",
+4. and press Tab to expand.
+
+Another area where I do this kind of mental translation for keyboard shortcuts is when I categorize dozens of Emacs-related links each week for [[https://sachachua.com/blog/category/emacs-news][Emacs News]]. I used to do this by hand. Then I wrote a function to try to guess the category based on regular expressions (=my-emacs-news-guess-category= in [[https://raw.githubusercontent.com/sachac/emacs-news/refs/heads/master/index.org][emacs-news/index.org]], which is large). Then I set up a menu that lets me [[https://sachachua.com/blog/2019/06/making-a-numpad-based-hydra-for-categorizing-org-list-items/][press numbers corresponding to the most frequent categories]] and use tab completion for the rest. 1 is Emacs Lisp, 2 is Emacs development, 3 is Emacs configuration, 4 is appearance, 5 is navigation, and so on. It's not very efficient, but some of it has at least gotten into muscle memory, which is also part of why it's hard to change the mapping. I don't come across that many links for Emacs development or Spacemacs, and I could probably change them to something else, but... Anyway.
+
+#+CAPTION: Screenshot of my menu for categorizing links
+[[file:~/recordings/2026-03-23_20-38-33.png][file:~/recordings/2026-03-23_20-38-33.png]]
+
+I wanted to see if I could categorize links by voice instead. I might not always be able to count on being able to type a lot, and it's always fun to experiment with other modes of input. Here's a demonstration showing how Emacs can automatically open the URLs, wait for voice input, and categorize the links using a reasonably close match. The =*Messages*= buffer displays the recognized output to help with debugging.
+
+#+begin_media-post
+[[video:~/recordings/2026-03-23-compressed.webm?caption=Screencast with audio: categorizing links by voice]]
+#+end_media-post
+
+This is how it works:
+
+1. It starts an =ffmpeg= recording process.
+2. It starts [[https://github.com/snakers4/silero-vad][Silero voice activity detection]].
+3. When it detects that speech has ended, it use =curl= to send the WAV to an OpenAI-compatible server (in my case, [[https://speaches.ai/][Speaches]] with the =Systran/faster-whisper-base.en= model) for transcription, along with a prompt to try to influence the recognition.
+4. It compares the result with the candidates using =string-distance= for an approximate match. It calls the code to move the current item to the right category, creating the category if needed.
+
+Since this doesn't always result in the right match, I added an Undo command. I also have a Delete command for removing the current item, Scroll Up and Scroll Down, and a way to quit.
+
+** Initial thoughts
+:PROPERTIES:
+:CUSTOM_ID: categorizing-emacs-news-items-by-voice-in-org-mode-initial-thoughts
+:END:
+
+I used it to categorize lots of links in this week's Emacs News, and I think it's promising. I loved the way my hands didn't have to hover over the number keys or move between those and the characters. Using voice activity detection meant that I could just keep dictating categories instead of pressing keyboard shortcuts or using the foot pedal I recently dusted off. There's a slight delay, of course, but I think it's worth it. If this settles down and becomes a solid part of my workflow, I might even be able to knit or hand-sew while doing this step, or simply do some stretching exercises.
+
+*What about using streaming speech recognition?* I've written some code to [[dotemacs:writing-and-editing-speech-recognition-streaming-speech-recognition-into-emacs-using-google-chrome-web-speech-api][use streaming speech recognition]], but the performance wasn't good enough when I tried it on my laptop (Lenovo P52 released in 2018, no configured GPU under Linux). The streaming server dropped audio segments in order to try to catch up. I'd rather have everything transcribed at the level of the model I want, even if I have to wait a little while. I also tried [[https://sachachua.com/dotemacs/index.html#writing-and-editing-speech-recognition-streaming-speech-recognition-into-emacs-using-google-chrome-web-speech-api][using the Web Speech API in Google Chrome for real-time speech transcription]], but it's a little finicky. I'm happy with the performance I get from either [[https://sachachua.com/blog/2026/01/queue-multiple-transcriptions-with-whisper-el-speech-recognition/][manually queueing speech segments]] or [[https://sachachua.com/blog/2026/01/using-silero-voice-activity-detection-to-automatically-queue-multiple-transcriptions-with-natrys-whisper-el/][using VAD]] and then using batch speech recognition with a model that's kept in memory (which is why I use a local server instead of a command-line tool). Come to think of it, I should try this with a higher-quality model like medium or large, just in case the latency turns out to be not that much more for this use case.
+
+*What about external voice control systems* like [[https://talonvoice.com/][Talon Voice]] or [[https://www.cursorless.org/][Cursorless]]? They seem like neat ideas and lots of people use them. I think hacking something into Emacs with full access to its internals could be lots of fun too.
+
+A /lot/ of people have experimented with voice input for Emacs over the years. It could be fun to pick up ideas for commands and grammars. Some examples:
+
+- [[https://www.youtube.com/watch?v=8SkdfdXWYaI][Using Python to Code by Voice - YouTube]] (2013)
+- [[https://github.com/jgarvin/mandimus][jgarvin/mandimus: Use speech recognition to command your computer and Emacs. · GitHub]]
+- [[https://github.com/ErikPrantare/cursorfree.el][ErikPrantare/cursorfree.el: Edit and navigate from anywhere in the buffer · GitHub]]
+- [[https://git.sr.ht/~lepisma/emacs-speech-input/tree/master/item/README.org][~lepisma/emacs-speech-input]] - uses the idea of a voice cursor, uses an LLM to execute editing instructions
+
+*What about automating myself out of this loop?* I've considered training a classifier or sending the list to a large language model to categorize links in order to set more reasonable defaults, but I think I'd still want manual control, since the fun is in getting a sense of all the cool things that people are tinkering around with in the Emacs community. I found that with voice control, it was easier for me to say the category than to look for the category it suggested and then say "Okay" to accept the default. If I display the suggested category in a buffer with very large text (and possibly category-specific background colours), then I can quickly glance at it or use my peripheral vision. But yeah, it's probably easier to look at a page and say "Org Mode" than to look at the page, look at the default text, see if it matches Org Mode, and then say okay if it is.
+
+** Ideas for next steps
+:PROPERTIES:
+:CUSTOM_ID: categorizing-emacs-news-items-by-voice-in-org-mode-ideas-for-next-steps
+:END:
+
+I wonder how to line up several categories. I could probably rattle off a few without waiting for the next one to load, and just pause when I'm not sure. Maybe while there's a reasonably good match within the first 1-3 words, I'll take candidates from the front of the queue. Or I could delimit it with another easily-recognized word, like "next".
+
+I want to make a more synchronous version of this idea so that I can have a speech-enabled drop-in replacement that I can use as my =y-or-n-p= while still being able to type =y= or =n=. This probably involves using =sit-for= and polling to see if it's done. And then I can use that to play Twenty Questions, but also to do more serious stuff. It would also be nice to have replacements for =read-string= and =completing-read=, since those block Emacs until the user enters something.
+
+I might take a side-trip into a conversational interface for M-x doctor and M-x dunnet, because why not. Naturally, it also makes sense to voice-enable [[https://github.com/xenodium/agent-shell][agent-shell]] and [[https://github.com/karthink/gptel][gptel]] interactions.
+
+I'd like to figure out a number- or word-based completion mechanism so that I can control Reddit link replacement as well, since I want to select from a list of links from the page. Maybe something similar to the way [[https://github.com/jcaw/voicemacs][voicemacs adds numbers to helm and company]] or how [[http://www.cb1.com/~john/computing/emacs/handsfree/flexi-choose.html][flexi-choose.el]] works.
+
+I'm also thinking about how I can shift seamlessly between typing and speaking, like when I want to edit a link title. Maybe I can check if I'm in the minibuffer and what kind of minibuffer I'm in, perhaps like the way [[https://github.com/oantolin/embark][Embark]] does.
+
+It would be really cool to define speech commands by reusing the keymap structure that menus also use. This is how to [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Easy-Menu.html][define a menu]] in Emacs Lisp:
+
+#+begin_src emacs-lisp :eval no :tangle no
+(easy-menu-define words-menu global-map
+  "Menu for word navigation commands."
+  '("Words"
+     ["Forward word" forward-word]
+     ["Backward word" backward-word]))
+#+end_src
+
+and this is how to [[https://www.gnu.org/software/emacs/manual/html_node/elisp/Modifying-Menus.html][set just one binding]]:
+
+#+begin_src emacs-lisp :eval no :tangle no
+(keymap-set-after my-menu "<drink>"
+  '("Drink" . drink-command) 'eat)
+#+end_src
+
+That makes sense to reuse for speech commands. I'd also like to be able to specify aliases while hiding them or collapsing them for a "What can I say" help view... Also, if keymaps work, then maybe minor modes or transient maps could work? This sort of feels like it should be the voice equivalent of a transient map.
+
+** The code so far
+:PROPERTIES:
+:CUSTOM_ID: categorizing-emacs-news-items-by-voice-in-org-mode-the-code-so-far
+:END:
+
+#+begin_src emacs-lisp
+
+(defun my-emacs-news-categorize-with-voice (&optional skip-browse)
+  (interactive (list current-prefix-arg))
+  (unless skip-browse
+    (my-spookfox-browse))
+  (speech-input-cancel-recording)
+  (let ((default (if (fboundp 'my-emacs-news-guess-category) (my-emacs-news-guess-category)))
+        continue)
+    (speech-input-multiple-from-list
+     nil
+     '(("Org Mode" "Org" "Org Mode")
+       "Other"
+       "Emacs Lisp"
+       "Coding"
+       ("Emacs configuration" "Config" "Configuration")
+       ("Emacs development" "Emacs development" "Development")
+       ("Appearance" "Appearance")
+       ("Default" "Okay" "Default")
+       "Community"
+       "AI"
+       "Beginner"
+       "Writing"
+       ("Reddit" "Read it" "Reddit")
+       ("Shells" "Shells" "Shell")
+       "Navigation"
+       "Fun"
+       ("Dired" "Directory" "Dir ed")
+       ("Mail, news, and chat" "News" "Mail" "Chat")
+       "Web"
+       "Multimedia"
+       "Scroll down"
+       "Scroll up"
+       "Web"
+       "Denote"
+       "TRAMP"
+       "Delete"
+       "Skip"
+       "Undo"
+       ("Quit" "Quit" "Cancel" "All done"))
+     (lambda (result text)
+       (message "Recognized %s original %s" result text)
+       (pcase result
+         ("Undo"
+          (undo)
+          (setq continue 'skip))
+         ("Skip"
+          (forward-line)
+          (setq continue 'open))
+         ("Quit"
+          (message "All done.")
+          (speech-input-cancel-recording))
+         ("Reddit"
+          (my-emacs-news-replace-reddit-link)
+          (setq continue 'skip))
+         ("Scroll down"
+          (my-spookfox-scroll-down)
+          (setq continue 'skip))
+         ("Scroll up"
+          (my-spookfox-scroll-up)
+          (setq continue 'skip))
+         ("Delete"
+          (delete-line)
+          (undo-boundary)
+          (setq continue 'open))
+         ("Default"
+          (my-org-move-current-item-to-category
+           (concat default ":"))
+          (undo-boundary)
+          (setq continue 'open))
+         (_
+          (my-org-move-current-item-to-category
+           (concat result ":"))
+          (undo-boundary)
+          (setq continue 'open))))
+     (lambda (&rest _)
+       ;; after everything
+       (when continue
+         (my-emacs-news-categorize-with-voice (eq continue 'skip))))
+     t)))
+#+end_src
+
+It uses [[dotemacs:spookfox][Spookfox to control Firefox from Emacs]]:
+
+[[my-include:/home/sacha/sync/emacs/Sacha.org?name=my-spookfox-scroll]]
+
+[[my-include:/home/sacha/sync/emacs/Sacha.org?name=my-spookfox-background-tab]]
+
+It also uses these functions for [[dotemacs:digital-index-piles-with-emacs][categorizing Org Mode items]]:
+
+[[my-include:/home/sacha/sync/emacs/Sacha.org?name=my-org-move-current-item-to-category]]
+
+For the =speech-input= functions, experimental code is at https://codeberg.org/sachac/speech-input .
+** Moving Irreal links to parenthetical notes
+
+#+begin_src emacs-lisp
+(defun my-emacs-news-process-irreal-link ()
+  "Process an irreal.org link to extract referenced URLs and add them to Org notes."
+  (interactive)
+  (let* ((url (progn
+                (unless (org-in-regexp org-link-bracket-re 1)
+                  (re-search-forward org-link-bracket-re (line-end-position)))
+                (org-element-property :raw-link (org-element-context)))))
+    (when (string-match "irreal.org" url)
+      (let ((body (plz 'get url))
+            dom article links regexp found)
+        (with-temp-buffer
+          (insert body)
+          (setq dom (libxml-parse-html-region (point-min) (point-max)))
+          (setq article (dom-search dom (lambda (o)
+                                          (and (eq (dom-tag o) 'div)
+                                               (string= (dom-attr o 'class) "entry-content")))))
+          (setq links
+                (mapcar (lambda (o) (dom-attr o 'href))
+                        (dom-by-tag article 'a)))
+          (setq regexp (regexp-opt links)))
+        (if (save-excursion (re-search-forward regexp nil t))
+            (progn
+              (delete-region (line-beginning-position) (1+ (line-end-position)))
+              (re-search-forward regexp nil t)
+              (if (re-search-forward " *(\\([^)]*\\)) *$" (line-end-position) t) ; existing parens
+                  (progn
+                    (goto-char (match-end 1))
+                    (insert ", " (org-link-make-string url "Irreal")))
+                (goto-char (line-end-position))
+                (insert " (" (org-link-make-string url "Irreal") ")")))
+          (message "No matching link."))))))
+#+end_src
+** Summarize Mastodon
+
+#+begin_src emacs-lisp
+(defun my-mastodon-get-note-info ()
+	"Return (:handle ... :url ... :links ... :text) for the current subtree."
+	(let ((url (let ((title (org-entry-get (point) "ITEM")))
+							 (if (string-match org-link-any-re title)
+									 (or
+										(match-string 7 title)
+										(match-string 2 title)))))
+				beg end
+				handle)
+		(save-excursion
+			(org-back-to-heading)
+			(org-end-of-meta-data)
+			(setq beg (point))
+			(setq end (org-end-of-subtree))
+      (unless url
+        (goto-char beg)
+        (when (re-search-forward org-any-link-re end t)
+          (setq url (org-element-property :raw-link (org-element-context)))))
+			(cond
+       ((string-match "\\[\\[https://bsky\\.app/.+?\\]\\[\\(.+\\)\\]\\]" url)
+				(setq handle (match-string 1 url)))
+			 ((string-match "https://\\(.+?\\)/\\(@.+?\\)/" url)
+				(setq handle (concat
+											(match-string 2 url) "@" (match-string 1 url))))
+			 ((string-match "https://\\(.+?\\)/\\(.+?\\)/p/[0-9]+\\.[0-9]+" url)
+				(setq handle (concat
+											"@" (match-string 2 url) "@" (match-string 1 url)))))
+			(list
+			 :handle handle
+			 :url (if (string-match org-link-bracket-re url) (match-string 1 url) url)
+			 :links (reverse (mapcar (lambda (o) (org-element-property :raw-link o))
+															 (my-org-get-links-in-region beg end)))
+			 :text (string-trim (buffer-substring-no-properties beg end))))))
+
+(defun my-org-get-links-in-region (beg end)
+  (save-excursion
+    (let (results)
+      (goto-char (min beg end))
+      (while (re-search-forward org-any-link-re (max beg end) t)
+        (add-to-list 'results (org-element-context)))
+      results)))
+
+(defun my-page-title (url)
+	"Get the page title for URL. Simplify some titles."
+	(condition-case nil
+			(pcase url
+				((rx "reddit.com") "Reddit")
+				((rx "news.ycombinator.com") "HN")
+				((rx "lobste.rs") "lobste.rs")
+				(_
+				 (with-current-buffer (url-retrieve-synchronously url)
+					 (string-trim
+						(replace-regexp-in-string
+						 "[ \n]+" " "
+						 (replace-regexp-in-string
+							"\\(^Github - \\|:: Sacha Chua\\)" ""
+							(or
+							 (dom-texts (car
+													 (dom-by-tag (libxml-parse-html-region
+																				(point-min)
+																				(point-max))
+																			 'title)))
+							 "")))))))
+		(error nil)))
+
+(defun my-emacs-news-summarize-mastodon-items ()
+	(interactive)
+	(while (not (eobp))
+		(let* ((info (my-mastodon-get-note-info))
+					 (title (when (car (plist-get info :links))
+										(my-page-title (car (plist-get info :links)))))
+					 (summary (read-string
+										 (if title
+												 (format "Summary (%s): " title)
+											 "Summary: ")
+										 title)))
+			(org-cut-subtree)
+			(unless (string= summary "")
+				(insert "- " (org-link-make-string
+											(or (car (plist-get info :links))
+													(plist-get info :url))
+											summary)
+								(if (and (car (plist-get info :links))
+												 (plist-get info :handle))
+										(concat " (" (org-link-make-string (plist-get info :url)
+																											 (plist-get info :handle))
+														")")
+									"")
+								"\n")))
+    (undo-boundary)))
 #+end_src

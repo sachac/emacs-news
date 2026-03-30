@@ -1256,3 +1256,76 @@ Default: %(my-emacs-news-guess-category)"
 	 (regexp-quote
 		(spookfox-js-injection-eval-in-active-tab "window.location.href" t))))
 ;; Looking up Andres's notes:1 ends here
+
+;; [[file:emacs-news-code.org::#categorizing-emacs-news-items-by-voice-in-org-mode-the-code-so-far][The code so far:1]]
+(defun my-emacs-news-categorize-with-voice (&optional skip-browse)
+  (interactive (list current-prefix-arg))
+  (unless skip-browse
+    (my-spookfox-browse))
+  (speech-input-cancel-recording)
+  (let ((default (if (fboundp 'my-emacs-news-guess-category) (my-emacs-news-guess-category))))
+    (speech-input-from-list
+     (if default
+         (format "Category (%s): " default)
+       "Category: ")
+     '(("Org Mode" "Org" "Org Mode")
+       "Other"
+       "Emacs Lisp"
+       "Coding"
+       ("Emacs configuration" "Config" "Configuration")
+       ("Appearance" "Appearance")
+       ("Default" "Okay" "Default")
+       "Community"
+       "AI"
+       "Writing"
+       ("Reddit" "Read it" "Reddit")
+       "Shells"
+       "Navigation"
+       "Fun"
+       ("Dired" "Directory" "Dir ed")
+       ("Mail, news, and chat" "News" "Mail" "Chat")
+       "Multimedia"
+       "Scroll down"
+       "Scroll up"
+       "Web"
+       "Delete"
+       "Skip"
+       "Undo"
+       ("Quit" "Quit" "Cancel" "All done"))
+     (lambda (result text)
+       (message "Recognized %s original %s" result text)
+       (pcase result
+         ("Undo"
+          (undo)
+          (my-emacs-news-categorize-with-voice t))
+         ("Skip"
+          (forward-line)
+          (my-emacs-news-categorize-with-voice))
+         ("Quit"
+          (message "All done.")
+          (speech-input-cancel-recording))
+         ("Reddit"
+          (my-emacs-news-replace-reddit-link)
+          (my-emacs-news-categorize-with-voice t))
+         ("Scroll down"
+          (my-spookfox-scroll-down)
+          (my-emacs-news-categorize-with-voice t))
+         ("Scroll up"
+          (my-spookfox-scroll-up)
+          (my-emacs-news-categorize-with-voice t))
+         ("Delete"
+          (delete-line)
+          (undo-boundary)
+          (my-emacs-news-categorize-with-voice))
+         ("Default"
+          (my-org-move-current-item-to-category
+           (concat default ":"))
+          (undo-boundary)
+          (my-emacs-news-categorize-with-voice))
+         (_
+          (my-org-move-current-item-to-category
+           (concat result ":"))
+          (undo-boundary)
+          (my-emacs-news-categorize-with-voice))))
+     t)))
+;; The code so far:1 ends here
