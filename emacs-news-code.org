@@ -13,10 +13,13 @@
 
 
 ** ASCII export
+:PROPERTIES:
+:CUSTOM_ID: code-ascii-export
+:END:
 
 This setting puts Org ASCII export links right after the text instead of in a separate section:
 
-#+NAME: export-asciis
+#+NAME: export-ascii
 #+begin_src emacs-lisp :results silent :eval never-export
 (setq org-ascii-links-to-notes nil)
 #+end_src
@@ -134,6 +137,9 @@ my-reddit-list-upvoted
 :end:
 
 ** Youtube
+:PROPERTIES:
+:CUSTOM_ID: code-youtube
+:END:
 
 #+NAME: youtube
 #+begin_src emacs-lisp :results silent  :eval never-export
@@ -311,6 +317,9 @@ and turn it into:
   (my-org-sort-list-in-custom-order (my-emacs-news-sort-order-headings)))
 #+end_src
 ** Experimenting with using LLMs for link categorization
+:PROPERTIES:
+:CUSTOM_ID: code-experimenting-with-using-llms-for-link-categorization
+:END:
 
 #+begin_src emacs-lisp  :results silent :eval never-export
 (defvar my-emacs-news-link-categories nil
@@ -708,6 +717,9 @@ or cross-reference blog posts and community discussions.
 Anyway, that's how I keep track of new Emacs packages!
 
 ** Other functions
+:PROPERTIES:
+:CUSTOM_ID: code-other-functions
+:END:
 
 #+NAME: link-description
 #+begin_src emacs-lisp :eval never-export
@@ -772,6 +784,9 @@ my-org-list-from-rss
 :end:
 
 ** Get info from the Emacs NEWS file in the git repository
+:PROPERTIES:
+:CUSTOM_ID: code-get-info-from-the-emacs-news-file-in-the-git-repository
+:END:
 
 #+NAME: git-news
 #+begin_src emacs-lisp :eval never-export
@@ -809,6 +824,7 @@ my-insert-org-news-from-git
    :POST_DATE: [2016-02-01 Mon 21:25]
    :POSTID:   28599
    :BLOG:     sacha
+   :CUSTOM_ID: code-publishing-emacs-news-as-plain-text-html-and-attached-org-file
    :END:
 
 I've been publishing these weekly summaries of Emacs-related links on
@@ -959,6 +975,9 @@ about it, but I can't seem to find it. Anyway, there's my little hack
 above!
 
 ** TODO Prepare Emacs News
+:PROPERTIES:
+:CUSTOM_ID: code-prepare-emacs-news
+:END:
 
 #+NAME: prepare-news
 #+begin_src emacs-lisp :eval never-export
@@ -1085,6 +1104,9 @@ my-prepare-emacs-news
 :end:
 
 ** Collect Emacs News
+:PROPERTIES:
+:CUSTOM_ID: code-collect-emacs-news
+:END:
 
 #+NAME: collect-news
 #+begin_src emacs-lisp :eval never-export
@@ -1134,6 +1156,9 @@ my-emacs-news-collect-entries
 
 ** DONE Detect duplicates
    CLOSED: [2019-05-29 Wed 11:42]
+   :PROPERTIES:
+   :CUSTOM_ID: code-detect-duplicates
+   :END:
      :LOGBOOK:
      - State "DONE"       from "TODO"       [2019-05-29 Wed 11:42]
      :END:
@@ -1446,6 +1471,9 @@ Default: %(my-emacs-news-guess-category)"
 my-org-categorize-emacs-news/body
 :end:
 ** Rewrite Reddit links
+:PROPERTIES:
+:CUSTOM_ID: code-rewrite-reddit-links
+:END:
 
 #+NAME: my-emacs-news-replace-reddit-link
 #+begin_src emacs-lisp
@@ -1484,6 +1512,9 @@ my-emacs-news-replace-reddit-link
 :end:
 
 ** Post item as most recent
+:PROPERTIES:
+:CUSTOM_ID: code-post-item-as-most-recent
+:END:
 
 #+NAME: export-most-recent
 #+begin_src emacs-lisp :eval never-export :results silent
@@ -1500,6 +1531,9 @@ my-emacs-news-replace-reddit-link
 
 ** DONE Post Emacs News link to Twitter
    CLOSED: [2021-05-04 Tue 00:53]
+   :PROPERTIES:
+   :CUSTOM_ID: code-post-emacs-news-link-to-twitter
+   :END:
    :LOGBOOK:
    - State "DONE"       from "TODO"       [2021-05-04 Tue 00:53]
    :END:
@@ -1524,6 +1558,9 @@ my-emacs-news-replace-reddit-link
 my-tweet-emacs-news
 :end:
 ** Filter through mailing list stuff?
+:PROPERTIES:
+:CUSTOM_ID: code-filter-through-mailing-list-stuff
+:END:
 
 Example MBOX: https://lists.gnu.org/archive/mbox/emacs-devel/2022-02
 Ideas:
@@ -1536,6 +1573,9 @@ Ideas:
        (gnus-group-prefixed-name "~/tmp/2022-02" 'mbox)
 (gnus-group-make-doc-group "~/tmp/2022-02" 'mbox)
 ** Spookfox
+:PROPERTIES:
+:CUSTOM_ID: code-spookfox
+:END:
 
 #+begin_src emacs-lisp
 (defun my-emacs-news-spookfox-insert-current-link ()
@@ -1545,6 +1585,9 @@ Ideas:
 		(insert "- " (org-link-make-string (aref info 0) (aref info 1)) "\n")))
 #+end_src
 ** Parsing pages
+:PROPERTIES:
+:CUSTOM_ID: code-parsing-pages
+:END:
 http://gem.librehacker.com/gemlog/starlog/
 
 #+NAME: librehacker
@@ -1569,6 +1612,9 @@ http://gem.librehacker.com/gemlog/starlog/
 								 links ""))))
 #+end_src
 ** Insert string
+:PROPERTIES:
+:CUSTOM_ID: code-insert-string
+:END:
 Sometimes inserting strings is a little weird.
 #+begin_src emacs-lisp
 (defun my-insert-string (s)
@@ -1576,6 +1622,9 @@ Sometimes inserting strings is a little weird.
 	(insert s))
 #+end_src
 ** Bluesky
+:PROPERTIES:
+:CUSTOM_ID: code-bluesky
+:END:
 
 #+NAME: bluesky
 #+begin_src emacs-lisp
@@ -1624,6 +1673,9 @@ emacs-news-bluesky-emacs
 :end:
 
 ** Looking up Andres's notes
+:PROPERTIES:
+:CUSTOM_ID: code-looking-up-andres-s-notes
+:END:
 
 #+begin_src emacs-lisp
 (defun emacs-news-find-notes-for-url ()
@@ -1828,6 +1880,9 @@ It also uses these functions for [[dotemacs:digital-index-piles-with-emacs][cate
 
 For the =speech-input= functions, experimental code is at https://codeberg.org/sachac/speech-input .
 ** Moving Irreal links to parenthetical notes
+:PROPERTIES:
+:CUSTOM_ID: categorizing-emacs-news-items-by-voice-in-org-mode-moving-irreal-links-to-parenthetical-notes
+:END:
 
 #+begin_src emacs-lisp
 (defun my-emacs-news-process-irreal-link ()
@@ -1863,6 +1918,9 @@ For the =speech-input= functions, experimental code is at https://codeberg.org/s
           (message "No matching link."))))))
 #+end_src
 ** Summarize Mastodon
+:PROPERTIES:
+:CUSTOM_ID: categorizing-emacs-news-items-by-voice-in-org-mode-summarize-mastodon
+:END:
 
 #+begin_src emacs-lisp
 (defun my-mastodon-get-note-info ()

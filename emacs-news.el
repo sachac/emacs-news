@@ -220,7 +220,7 @@ AFTER: fullname of a thing for pagination (e.g., 't3_abc123')"
   (my-org-sort-list-in-custom-order (my-emacs-news-sort-order-headings)))
 ;; sort ends here
 
-;; [[file:emacs-news-code.org::*Experimenting with using LLMs for link categorization][Experimenting with using LLMs for link categorization:1]]
+;; [[file:emacs-news-code.org::#code-experimenting-with-using-llms-for-link-categorization][Experimenting with using LLMs for link categorization:1]]
 (defvar my-emacs-news-link-categories nil
   "List of (url category).")
 
@@ -299,7 +299,7 @@ Example mappings:
          (car (assoc-default url my-emacs-news-link-categories 'string=)))))))
 ;; Experimenting with using LLMs for link categorization:1 ends here
 
-;; [[file:emacs-news-code.org::*Experimenting with using LLMs for link categorization][Experimenting with using LLMs for link categorization:2]]
+;; [[file:emacs-news-code.org::#code-experimenting-with-using-llms-for-link-categorization][Experimenting with using LLMs for link categorization:2]]
 (defun my-emacs-news-auto-categorize ()
   (interactive)
   (while (and (looking-at "^- \\[\\[") (not (looking-at "^- New package")))
@@ -1173,7 +1173,7 @@ Default: %(my-emacs-news-guess-category)"
     (browse-url "https://bsky.app")))
 ;; twitter ends here
 
-;; [[file:emacs-news-code.org::*Spookfox][Spookfox:1]]
+;; [[file:emacs-news-code.org::#code-spookfox][Spookfox:1]]
 (defun my-emacs-news-spookfox-insert-current-link ()
 	(interactive)
 	(let ((info (spookfox-js-injection-eval-in-active-tab
@@ -1202,7 +1202,7 @@ Default: %(my-emacs-news-guess-category)"
 								 links ""))))
 ;; librehacker ends here
 
-;; [[file:emacs-news-code.org::*Insert string][Insert string:1]]
+;; [[file:emacs-news-code.org::#code-insert-string][Insert string:1]]
 (defun my-insert-string (s)
 	(interactive "MString: ")
 	(insert s))
@@ -1248,7 +1248,7 @@ Default: %(my-emacs-news-guess-category)"
 		(switch-to-buffer (current-buffer))))
 ;; bluesky ends here
 
-;; [[file:emacs-news-code.org::*Looking up Andres's notes][Looking up Andres's notes:1]]
+;; [[file:emacs-news-code.org::#code-looking-up-andres-s-notes][Looking up Andres's notes:1]]
 (defun emacs-news-find-notes-for-url ()
 	(interactive)
 	(goto-char (point-min))
@@ -1263,31 +1263,35 @@ Default: %(my-emacs-news-guess-category)"
   (unless skip-browse
     (my-spookfox-browse))
   (speech-input-cancel-recording)
-  (let ((default (if (fboundp 'my-emacs-news-guess-category) (my-emacs-news-guess-category))))
-    (speech-input-from-list
-     (if default
-         (format "Category (%s): " default)
-       "Category: ")
+  (let ((default (if (fboundp 'my-emacs-news-guess-category) (my-emacs-news-guess-category)))
+        continue)
+    (speech-input-multiple-from-list
+     nil
      '(("Org Mode" "Org" "Org Mode")
        "Other"
        "Emacs Lisp"
        "Coding"
        ("Emacs configuration" "Config" "Configuration")
+       ("Emacs development" "Emacs development" "Development")
        ("Appearance" "Appearance")
        ("Default" "Okay" "Default")
        "Community"
        "AI"
+       "Beginner"
        "Writing"
        ("Reddit" "Read it" "Reddit")
-       "Shells"
+       ("Shells" "Shells" "Shell")
        "Navigation"
        "Fun"
        ("Dired" "Directory" "Dir ed")
        ("Mail, news, and chat" "News" "Mail" "Chat")
+       "Web"
        "Multimedia"
        "Scroll down"
        "Scroll up"
        "Web"
+       "Denote"
+       "TRAMP"
        "Delete"
        "Skip"
        "Undo"
@@ -1297,35 +1301,166 @@ Default: %(my-emacs-news-guess-category)"
        (pcase result
          ("Undo"
           (undo)
-          (my-emacs-news-categorize-with-voice t))
+          (setq continue 'skip))
          ("Skip"
           (forward-line)
-          (my-emacs-news-categorize-with-voice))
+          (setq continue 'open))
          ("Quit"
           (message "All done.")
           (speech-input-cancel-recording))
          ("Reddit"
           (my-emacs-news-replace-reddit-link)
-          (my-emacs-news-categorize-with-voice t))
+          (setq continue 'skip))
          ("Scroll down"
           (my-spookfox-scroll-down)
-          (my-emacs-news-categorize-with-voice t))
+          (setq continue 'skip))
          ("Scroll up"
           (my-spookfox-scroll-up)
-          (my-emacs-news-categorize-with-voice t))
+          (setq continue 'skip))
          ("Delete"
           (delete-line)
           (undo-boundary)
-          (my-emacs-news-categorize-with-voice))
+          (setq continue 'open))
          ("Default"
           (my-org-move-current-item-to-category
            (concat default ":"))
           (undo-boundary)
-          (my-emacs-news-categorize-with-voice))
+          (setq continue 'open))
          (_
           (my-org-move-current-item-to-category
            (concat result ":"))
           (undo-boundary)
-          (my-emacs-news-categorize-with-voice))))
+          (setq continue 'open))))
+     (lambda (&rest _)
+       ;; after everything
+       (when continue
+         (my-emacs-news-categorize-with-voice (eq continue 'skip))))
      t)))
 ;; The code so far:1 ends here
+
+;; [[file:emacs-news-code.org::#categorizing-emacs-news-items-by-voice-in-org-mode-moving-irreal-links-to-parenthetical-notes][Moving Irreal links to parenthetical notes:1]]
+(defun my-emacs-news-process-irreal-link ()
+  "Process an irreal.org link to extract referenced URLs and add them to Org notes."
+  (interactive)
+  (let* ((url (progn
+                (unless (org-in-regexp org-link-bracket-re 1)
+                  (re-search-forward org-link-bracket-re (line-end-position)))
+                (org-element-property :raw-link (org-element-context)))))
+    (when (string-match "irreal.org" url)
+      (let ((body (plz 'get url))
+            dom article links regexp found)
+        (with-temp-buffer
+          (insert body)
+          (setq dom (libxml-parse-html-region (point-min) (point-max)))
+          (setq article (dom-search dom (lambda (o)
+                                          (and (eq (dom-tag o) 'div)
+                                               (string= (dom-attr o 'class) "entry-content")))))
+          (setq links
+                (mapcar (lambda (o) (dom-attr o 'href))
+                        (dom-by-tag article 'a)))
+          (setq regexp (regexp-opt links)))
+        (if (save-excursion (re-search-forward regexp nil t))
+            (progn
+              (delete-region (line-beginning-position) (1+ (line-end-position)))
+              (re-search-forward regexp nil t)
+              (if (re-search-forward " *(\\([^)]*\\)) *$" (line-end-position) t) ; existing parens
+                  (progn
+                    (goto-char (match-end 1))
+                    (insert ", " (org-link-make-string url "Irreal")))
+                (goto-char (line-end-position))
+                (insert " (" (org-link-make-string url "Irreal") ")")))
+          (message "No matching link."))))))
+;; Moving Irreal links to parenthetical notes:1 ends here
+
+;; [[file:emacs-news-code.org::#categorizing-emacs-news-items-by-voice-in-org-mode-summarize-mastodon][Summarize Mastodon:1]]
+(defun my-mastodon-get-note-info ()
+	"Return (:handle ... :url ... :links ... :text) for the current subtree."
+	(let ((url (let ((title (org-entry-get (point) "ITEM")))
+							 (if (string-match org-link-any-re title)
+									 (or
+										(match-string 7 title)
+										(match-string 2 title)))))
+				beg end
+				handle)
+		(save-excursion
+			(org-back-to-heading)
+			(org-end-of-meta-data)
+			(setq beg (point))
+			(setq end (org-end-of-subtree))
+      (unless url
+        (goto-char beg)
+        (when (re-search-forward org-any-link-re end t)
+          (setq url (org-element-property :raw-link (org-element-context)))))
+			(cond
+       ((string-match "\\[\\[https://bsky\\.app/.+?\\]\\[\\(.+\\)\\]\\]" url)
+				(setq handle (match-string 1 url)))
+			 ((string-match "https://\\(.+?\\)/\\(@.+?\\)/" url)
+				(setq handle (concat
+											(match-string 2 url) "@" (match-string 1 url))))
+			 ((string-match "https://\\(.+?\\)/\\(.+?\\)/p/[0-9]+\\.[0-9]+" url)
+				(setq handle (concat
+											"@" (match-string 2 url) "@" (match-string 1 url)))))
+			(list
+			 :handle handle
+			 :url (if (string-match org-link-bracket-re url) (match-string 1 url) url)
+			 :links (reverse (mapcar (lambda (o) (org-element-property :raw-link o))
+															 (my-org-get-links-in-region beg end)))
+			 :text (string-trim (buffer-substring-no-properties beg end))))))
+
+(defun my-org-get-links-in-region (beg end)
+  (save-excursion
+    (let (results)
+      (goto-char (min beg end))
+      (while (re-search-forward org-any-link-re (max beg end) t)
+        (add-to-list 'results (org-element-context)))
+      results)))
+
+(defun my-page-title (url)
+	"Get the page title for URL. Simplify some titles."
+	(condition-case nil
+			(pcase url
+				((rx "reddit.com") "Reddit")
+				((rx "news.ycombinator.com") "HN")
+				((rx "lobste.rs") "lobste.rs")
+				(_
+				 (with-current-buffer (url-retrieve-synchronously url)
+					 (string-trim
+						(replace-regexp-in-string
+						 "[ \n]+" " "
+						 (replace-regexp-in-string
+							"\\(^Github - \\|:: Sacha Chua\\)" ""
+							(or
+							 (dom-texts (car
+													 (dom-by-tag (libxml-parse-html-region
+																				(point-min)
+																				(point-max))
+																			 'title)))
+							 "")))))))
+		(error nil)))
+
+(defun my-emacs-news-summarize-mastodon-items ()
+	(interactive)
+	(while (not (eobp))
+		(let* ((info (my-mastodon-get-note-info))
+					 (title (when (car (plist-get info :links))
+										(my-page-title (car (plist-get info :links)))))
+					 (summary (read-string
+										 (if title
+												 (format "Summary (%s): " title)
+											 "Summary: ")
+										 title)))
+			(org-cut-subtree)
+			(unless (string= summary "")
+				(insert "- " (org-link-make-string
+											(or (car (plist-get info :links))
+													(plist-get info :url))
+											summary)
+								(if (and (car (plist-get info :links))
+												 (plist-get info :handle))
+										(concat " (" (org-link-make-string (plist-get info :url)
+																											 (plist-get info :handle))
+														")")
+									"")
+								"\n")))
+    (undo-boundary)))
+;; Summarize Mastodon:1 ends here
