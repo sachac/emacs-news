@@ -127,6 +127,7 @@ AFTER: fullname of a thing for pagination (e.g., 't3_abc123')"
 				(if (or (string= page "") (null after))
 						(throw 'done results))
 				(setq results (concat page "\n" results))))
+    (when (called-interactively-p 'any) (insert results))
     results))
 ;;  (my-reddit-list-upvoted "-mon")
 #+end_src
@@ -1787,14 +1788,12 @@ That makes sense to reuse for speech commands. I'd also like to be able to speci
 :END:
 
 #+begin_src emacs-lisp
-
 (defun my-emacs-news-categorize-with-voice (&optional skip-browse)
   (interactive (list current-prefix-arg))
   (unless skip-browse
     (my-spookfox-browse))
   (speech-input-cancel-recording)
-  (let ((default (if (fboundp 'my-emacs-news-guess-category) (my-emacs-news-guess-category)))
-        continue)
+  (let (continue)
     (speech-input-multiple-from-list
      nil
      '(("Org Mode" "Org" "Org Mode")
@@ -1856,16 +1855,23 @@ That makes sense to reuse for speech commands. I'd also like to be able to speci
            (concat default ":"))
           (undo-boundary)
           (setq continue 'open))
+         ('nil
+          (message "Skipping unrecognized speech")
+          (setq continue 'open))
          (_
           (my-org-move-current-item-to-category
            (concat result ":"))
           (undo-boundary)
           (setq continue 'open))))
-     (lambda (&rest _)
+     (lambda (commands text)
        ;; after everything
-       (when continue
+       (cond
+        ((null (car commands))
+         (message "Skipping: %s" text)
+         (my-emacs-news-categorize-with-voice (eq continue 'skip)))
+        (continue
          (my-emacs-news-categorize-with-voice (eq continue 'skip))))
-     t)))
+       ))))
 #+end_src
 
 It uses [[dotemacs:spookfox][Spookfox to control Firefox from Emacs]]:

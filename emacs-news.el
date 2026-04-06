@@ -1334,8 +1334,7 @@ Default: %(my-emacs-news-guess-category)"
      (lambda (&rest _)
        ;; after everything
        (when continue
-         (my-emacs-news-categorize-with-voice (eq continue 'skip))))
-     t)))
+         (my-emacs-news-categorize-with-voice (eq continue 'skip)))))))
 ;; The code so far:1 ends here
 
 ;; [[file:emacs-news-code.org::#categorizing-emacs-news-items-by-voice-in-org-mode-moving-irreal-links-to-parenthetical-notes][Moving Irreal links to parenthetical notes:1]]
