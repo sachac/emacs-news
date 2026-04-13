@@ -3,60 +3,60 @@
 ;; export-ascii ends here
 
 ;; [[file:emacs-news-code.org::reddit][reddit]]
-(defvar my-reddit-upvoted-json "https://www.reddit.com/user/emacsnews/upvoted.json" "JSON for upvoted posts.")
+(defvar emacs-news-reddit-upvoted-json "https://www.reddit.com/user/emacsnews/upvoted.json" "JSON for upvoted posts.")
 (require 'helm-utils)
 
-(defvar my-emacs-news-reddit-client-id "your-client-id")
-(defvar my-emacs-news-reddit-client-secret "your-client-secret")
-(defvar my-emacs-news-reddit-username "your-username")
-(defvar my-emacs-news-reddit-password "your-password")
-(defvar my-emacs-news-reddit-user-agent "EmacsNews/1.0 by u/sachac")
-(defvar my-emacs-news-reddit-access-token nil)
-(defvar my-emacs-news-reddit-token-expires nil)
+(defvar emacs-news-reddit-client-id "your-client-id")
+(defvar emacs-news-reddit-client-secret "your-client-secret")
+(defvar emacs-news-reddit-username "your-username")
+(defvar emacs-news-reddit-password "your-password")
+(defvar emacs-news-reddit-user-agent "EmacsNews/1.0 by u/sachac")
+(defvar emacs-news-reddit-access-token nil)
+(defvar emacs-news-reddit-token-expires nil)
 
-(defun my-emacs-news-reddit-authenticate ()
+(defun emacs-news-reddit-authenticate ()
   "Authenticate with Reddit using OAuth password grant"
-  (let* ((auth-string (concat my-emacs-news-reddit-client-id ":" my-emacs-news-reddit-client-secret))
+  (let* ((auth-string (concat emacs-news-reddit-client-id ":" emacs-news-reddit-client-secret))
          (encoded-auth (base64-encode-string auth-string))
          (url-request-method "POST")
          (url-request-data
           (concat "grant_type=password"
-                  "&username=" (url-hexify-string my-emacs-news-reddit-username)
-                  "&password=" (url-hexify-string my-emacs-news-reddit-password)))
+                  "&username=" (url-hexify-string emacs-news-reddit-username)
+                  "&password=" (url-hexify-string emacs-news-reddit-password)))
          (url-request-extra-headers
           `(("Authorization" . ,(concat "Basic " encoded-auth))
             ("Content-Type" . "application/x-www-form-urlencoded")
-            ("User-Agent" . ,my-emacs-news-reddit-user-agent))))
+            ("User-Agent" . ,emacs-news-reddit-user-agent))))
     (with-current-buffer
         (url-retrieve-synchronously "https://www.reddit.com/api/v1/access_token")
       (goto-char url-http-end-of-headers)
       (let* ((response (json-read))
              (token (cdr (assoc 'access_token response)))
              (expires-in (cdr (assoc 'expires_in response))))
-        (setq my-emacs-news-reddit-access-token token)
-        (setq my-emacs-news-reddit-token-expires (+ (float-time) expires-in))
+        (setq emacs-news-reddit-access-token token)
+        (setq emacs-news-reddit-token-expires (+ (float-time) expires-in))
         (message "Reddit authentication successful")))))
 
-(defun my-emacs-news-reddit-get-upvoted-posts (&optional limit after)
+(defun emacs-news-reddit-get-upvoted-posts (&optional limit after)
   "Get your upvoted posts using OAuth
 LIMIT: number of posts to retrieve (default 25, max 100)
 AFTER: fullname of a thing for pagination (e.g., 't3_abc123')"
-  (unless (and my-emacs-news-reddit-access-token
-               (< (float-time) my-emacs-news-reddit-token-expires))
-    (my-emacs-news-reddit-authenticate))
+  (unless (and emacs-news-reddit-access-token
+               (< (float-time) emacs-news-reddit-token-expires))
+    (emacs-news-reddit-authenticate))
   (let* ((url-request-method "GET")
          (url-request-extra-headers
-          `(("Authorization" . ,(concat "Bearer " my-emacs-news-reddit-access-token))
-            ("User-Agent" . ,my-emacs-news-reddit-user-agent)))
+          `(("Authorization" . ,(concat "Bearer " emacs-news-reddit-access-token))
+            ("User-Agent" . ,emacs-news-reddit-user-agent)))
          (query-params
           (concat "?limit=" (number-to-string (or limit 25))
                   (when after (concat "&after=" (url-hexify-string after)))))
-         (url (concat "https://oauth.reddit.com/user/" my-emacs-news-reddit-username "/upvoted" query-params)))
+         (url (concat "https://oauth.reddit.com/user/" emacs-news-reddit-username "/upvoted" query-params)))
     (with-current-buffer (url-retrieve-synchronously url)
       (goto-char url-http-end-of-headers)
       (json-read))))
 
-(defun my-reddit-list-upvoted (date)
+(defun emacs-news-reddit-list-upvoted (date)
   (interactive (list (org-read-date)))
   (let ((threshold (org-read-date nil t (concat (substring date 0 (min (length date) 10)) " 0:00")))
 				after
@@ -66,7 +66,7 @@ AFTER: fullname of a thing for pagination (e.g., 't3_abc123')"
         results)
 		(catch 'done
 			(while t
-				(setq data (assoc-default "data" (my-emacs-news-reddit-get-upvoted-posts 50 after) 'string=))
+				(setq data (assoc-default "data" (emacs-news-reddit-get-upvoted-posts 50 after) 'string=))
 				(setq page
 							(mapconcat
 							 (lambda (item)
@@ -96,28 +96,29 @@ AFTER: fullname of a thing for pagination (e.g., 't3_abc123')"
 				(if (or (string= page "") (null after))
 						(throw 'done results))
 				(setq results (concat page "\n" results))))
+    (when (called-interactively-p 'any) (insert results))
     results))
-;;  (my-reddit-list-upvoted "-mon")
+;;  (emacs-news-reddit-list-upvoted "-mon")
 ;; reddit ends here
 
 ;; [[file:emacs-news-code.org::youtube][youtube]]
-(defvar my-emacs-news-playlist "https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt"
+(defvar emacs-news-playlist "https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt"
   "Public playlist with recent videos to include in Emacs News.")
 
-(defun my-emacs-news-get-videos (playlist)
+(defun emacs-news-get-videos (playlist)
   (json-parse-string
        (concat "["
                (mapconcat
                 'identity
                 (split-string
                  (shell-command-to-string
-                  (concat "yt-dlp -j --flat-playlist " (shell-quote-argument my-emacs-news-playlist) " 2> /dev/null"))
+                  (concat "yt-dlp -j --flat-playlist " (shell-quote-argument emacs-news-playlist) " 2> /dev/null"))
                  "\n" t)
                 ",")
                "]")
        :object-type 'plist))
 
-(defun my-save-new-items (file alist)
+(defun emacs-news-save-new-items (file alist)
   (with-current-buffer (find-file-noselect file)
     (goto-char (point-min))
     (let* ((old-list (read (current-buffer)))
@@ -137,9 +138,9 @@ AFTER: fullname of a thing for pagination (e.g., 't3_abc123')"
       (save-buffer)
       combined)))
 
-(defun my-emacs-news-youtube-playlist (playlist &optional start-date end-date)
-  (let* ((videos (my-emacs-news-get-videos playlist))
-         (combined (my-save-new-items "video-list.el"
+(defun emacs-news-youtube-playlist (playlist &optional start-date end-date)
+  (let* ((videos (emacs-news-get-videos playlist))
+         (combined (emacs-news-save-new-items "video-list.el"
                                       (mapcar (lambda (o) (cons (plist-get o :id) o))
                                               videos))))
     (mapconcat
@@ -161,10 +162,11 @@ AFTER: fullname of a thing for pagination (e.g., 't3_abc123')"
                                       (or (null end-date) (string< (cadr o) end-date))))
                          combined))
      "")))
+
 ;; youtube ends here
 
 ;; [[file:emacs-news-code.org::sort][sort]]
-(defun my-org-sort-list-in-custom-order (order)
+(defun emacs-news-org-sort-list-in-custom-order (order)
   "Sort the current Org list so that items are in the specified order.
   ORDER is a list of regexps."
   (org-sort-list
@@ -177,7 +179,7 @@ AFTER: fullname of a thing for pagination (e.g., 't3_abc123')"
        (or (cl-position item order :test (lambda (a b) (string-match b a))) (1+ (length order)))))
    '<))
 
-(defvar my-emacs-news-sort-order
+(defvar emacs-news-sort-order
   '("Help wanted"
 		"Security"
     ("Upcoming events" "meetup")
@@ -212,27 +214,27 @@ AFTER: fullname of a thing for pagination (e.g., 't3_abc123')"
     "Discussion"
     "Outside Emacs"
     "New packages"))
-(defun my-emacs-news-sort-order-headings ()
-  (mapcar (lambda (o) (if (stringp o) o (car o))) my-emacs-news-sort-order))
-(defun my-emacs-news-sort-list ()
+(defun emacs-news-org-sort-order-headings ()
+  (mapcar (lambda (o) (if (stringp o) o (car o))) emacs-news-sort-order))
+(defun emacs-news-sort-list ()
   (interactive)
   (goto-char (org-list-get-top-point (org-list-struct)))
-  (my-org-sort-list-in-custom-order (my-emacs-news-sort-order-headings)))
+  (emacs-news-org-sort-list-in-custom-order (emacs-news-org-sort-order-headings)))
 ;; sort ends here
 
 ;; [[file:emacs-news-code.org::#code-experimenting-with-using-llms-for-link-categorization][Experimenting with using LLMs for link categorization:1]]
-(defvar my-emacs-news-link-categories nil
+(defvar emacs-news-link-categories nil
   "List of (url category).")
 
-(defun my-emacs-news-read-categories ()
+(defun emacs-news-read-categories ()
   (interactive)
-  (setq my-emacs-news-link-categories (json-read)))
+  (setq emacs-news-link-categories (json-read)))
 
-(defun my-emacs-news-get-categories-from-spookfox ()
+(defun emacs-news-get-categories-from-spookfox ()
   (interactive)
-  (setq my-emacs-news-link-categories (my-spookfox-ai-parse-latest-json)))
+  (setq emacs-news-link-categories (learn-lang-spookfox-ai-parse-latest-json)))
 
-(defvar my-emacs-news-categorize-prompt
+(defvar emacs-news-categorize-prompt
   "Categorize links into standardized categories in Org Mode format. Input: Raw list of Emacs-related links. Output: JSON array of [URL, category] pairs, where each URL is mapped to exactly one category from the given list. Standard categories:
 
 - Beginner: Basic tutorials, introductory resources
@@ -272,17 +274,17 @@ Example mappings:
 ]
 ")
 
-(defun my-emacs-news-spookfox-ai-categorize (&optional read-answer)
+(defun emacs-news-spookfox-ai-categorize (&optional read-answer)
   (interactive (list current-prefix-arg))
-  (setq my-emacs-news-link-categories
+  (setq emacs-news-link-categories
         (if read-answer
-            (my-spookfox-ai-parse-latest-json)
-          (my-spookfox-ai-send-text-and-get-json
-           (concat my-emacs-news-categorize-prompt
+            (learn-lang-spookfox-ai-parse-latest-json)
+          (learn-lang-spookfox-ai-send-text-and-get-json
+           (concat emacs-news-categorize-prompt
                    "\n\n###\n\n"
                    (my-org-subtree-text))))))
 
-(defun my-emacs-news-guess-category ()
+(defun emacs-news-guess-category ()
   (save-excursion
     (when (re-search-forward org-any-link-re (line-end-position) t)
       (let* ((link (org-element-context))
@@ -295,34 +297,34 @@ Example mappings:
          (car (seq-find (lambda (o)
                           (and (listp o)
                                (string-match (cadr o) description)))
-                        my-emacs-news-sort-order))
-         (car (assoc-default url my-emacs-news-link-categories 'string=)))))))
+                        emacs-news-sort-order))
+         (car (assoc-default url emacs-news-link-categories 'string=)))))))
 ;; Experimenting with using LLMs for link categorization:1 ends here
 
 ;; [[file:emacs-news-code.org::#code-experimenting-with-using-llms-for-link-categorization][Experimenting with using LLMs for link categorization:2]]
-(defun my-emacs-news-auto-categorize ()
+(defun emacs-news-auto-categorize ()
   (interactive)
   (while (and (looking-at "^- \\[\\[") (not (looking-at "^- New package")))
-    (let ((category (my-emacs-news-guess-category)))
+    (let ((category (emacs-news-guess-category)))
       (if category
-          (my-org-move-current-item-to-category (concat category ":"))
+          (sacha-org-move-current-item-to-category (concat category ":"))
         (forward-line 1)
         (goto-char (line-beginning-position))))))
 ;; Experimenting with using LLMs for link categorization:2 ends here
 
-;; [[file:emacs-news-code.org::my-update-package-list][my-update-package-list]]
-(defvar my-package-list-file "~/sync/emacs-news/package-list.el")
+;; [[file:emacs-news-code.org::emacs-news-update-package-list][emacs-news-update-package-list]]
+(defvar emacs-news-package-list-file "~/sync/emacs-news/package-list.el")
 
-(defun my-read-sexp-from-file (filename)
+(defun emacs-news-read-sexp-from-file (filename)
   (with-temp-buffer (insert-file-contents filename)
                     (goto-char (point-min)) (read (current-buffer))))
 
-(defun my-update-package-list (&optional date)
+(defun emacs-news-update-package-list (&optional date)
 	"Update the list of packages. Mark new packages with DATE."
   (interactive (list (format-time-string "%Y-%m-%d")))
 	(setq date (or date (format-time-string "%Y-%m-%d")))
-  (let* ((archives (my-get-current-packages date))
-         (old-list (my-read-sexp-from-file my-package-list-file)))
+  (let* ((archives (emacs-news-get-current-packages date))
+         (old-list (emacs-news-read-sexp-from-file emacs-news-package-list-file)))
     (mapc (lambda (o)
             (let* ((old-entry (assoc-default (car o) old-list))
                    (new-archives
@@ -348,17 +350,17 @@ Example mappings:
                        nil))))))
           archives)
 		;; Save to file, one package per line
-    (with-temp-file my-package-list-file
+    (with-temp-file emacs-news-package-list-file
       (insert "("
               (mapconcat #'prin1-to-string
                          old-list
                          "\n")
               ")"))
     old-list))
-;; my-update-package-list ends here
+;; emacs-news-update-package-list ends here
 
-;; [[file:emacs-news-code.org::my-get-current-packages][my-get-current-packages]]
-(defun my-get-current-packages (date)
+;; [[file:emacs-news-code.org::emacs-news-get-current-packages][emacs-news-get-current-packages]]
+(defun emacs-news-get-current-packages (date)
   "Return a list of package symbols with the package archive and DATE.
 Example entry: `(ack (ack \"gnu\" \"2023-09-03\"))`"
   (seq-group-by 'car
@@ -376,33 +378,33 @@ Example entry: `(ack (ack \"gnu\" \"2023-09-03\"))`"
                             (directory-files
                              (expand-file-name "archives" package-user-dir) t
                              directory-files-no-dot-files-regexp))))
-;; my-get-current-packages ends here
+;; emacs-news-get-current-packages ends here
 
-;; [[file:emacs-news-code.org::my-list-new-packages][my-list-new-packages]]
-(defun my-packages-between (from-date &optional to-date)
+;; [[file:emacs-news-code.org::emacs-news-list-new-packages][emacs-news-list-new-packages]]
+(defun emacs-news-packages-between (from-date &optional to-date)
 	(seq-filter
    (lambda (o)
      (and
 			(or (not from-date) (not (string< (cdar (cadr o)) from-date)))
 			(or (not to-date) (string< (cdar (cadr o)) to-date))))
-   (my-read-sexp-from-file my-package-list-file)))
+   (emacs-news-read-sexp-from-file emacs-news-package-list-file)))
 
-(defun my-list-new-packages (&optional date)
+(defun emacs-news-list-new-packages (&optional date)
   (interactive)
   (let ((packages
-         (my-describe-packages
+         (emacs-news-describe-packages
           (seq-filter
            (lambda (o)
              (seq-remove (lambda (archive) (string< (cdr archive) date))
                          (cadr o)))
-           (my-read-sexp-from-file my-package-list-file)))))
+           (emacs-news-read-sexp-from-file emacs-news-package-list-file)))))
     (if (called-interactively-p 'any)
         (insert packages)
       packages)))
-;; my-list-new-packages ends here
+;; emacs-news-list-new-packages ends here
 
-;; [[file:emacs-news-code.org::my-describe-packages][my-describe-packages]]
-(defun my-describe-packages (list)
+;; [[file:emacs-news-code.org::emacs-news-describe-packages][emacs-news-describe-packages]]
+(defun emacs-news-describe-packages (list)
   "Return an Org list of package descriptions for LIST."
   (mapconcat
    (lambda (entry)
@@ -424,14 +426,14 @@ Example entry: `(ack (ack \"gnu\" \"2023-09-03\"))`"
          "")))
    list
    "\n"))
-;; my-describe-packages ends here
+;; emacs-news-describe-packages ends here
 
 ;; [[file:emacs-news-code.org::packages][packages]]
-  (defun my-org-package-open (package-name)
-    (interactive "MPackage name: ")
-    (describe-package (intern package-name)))
+(defun sacha-org-package-open (package-name)
+  (interactive "MPackage name: ")
+  (describe-package (intern package-name)))
 
-(defun my-org-package-export (link description format &optional arg)
+(defun sacha-org-package-export (link description format &optional arg)
   (let* ((package-info (car (assoc-default (intern link) package-archive-contents)))
          (package-source (and package-info (package-desc-archive package-info)))
          (path (format
@@ -454,23 +456,25 @@ Example entry: `(ack (ack \"gnu\" \"2023-09-03\"))`"
 				 (t path))
 			desc)))
 
-  (org-link-set-parameters "package" :follow 'my-org-package-open :export 'my-org-package-export)
-
-  (ert-deftest my-org-package-export ()
+  (ert-deftest sacha-org-package-export ()
     (should
      (string=
-      (my-org-package-export "transcribe" "transcribe" 'html)
+      (sacha-org-package-export "transcribe" "transcribe" 'html)
       "<a target=\"_blank\" href=\"https://elpa.gnu.org/packages/transcribe.html\">transcribe</a>"
       ))
     (should
      (string=
-      (my-org-package-export "fireplace" "fireplace" 'html)
+      (sacha-org-package-export "fireplace" "fireplace" 'html)
       "<a target=\"_blank\" href=\"https://melpa.org/#/fireplace\">fireplace</a>"
       )))
 ;; packages ends here
 
-;; [[file:emacs-news-code.org::my-announce-elpa-package][my-announce-elpa-package]]
-(defun my-announce-elpa-package (package-name)
+;; [[file:emacs-news-code.org::#formatting-packages][Formatting new package entries:3]]
+(org-link-set-parameters "package" :follow 'sacha-org-package-open :export 'sacha-org-package-export)
+;; Formatting new package entries:3 ends here
+
+;; [[file:emacs-news-code.org::emacs-news-announce-elpa-package][emacs-news-announce-elpa-package]]
+(defun emacs-news-announce-elpa-package (package-name)
 	"Compose an announcement for PACKAGE-NAME for info-gnu-emacs."
   (interactive (let* ((guess (or (function-called-at-point)
                                  (symbol-at-point))))
@@ -510,10 +514,10 @@ Example entry: `(ack (ack \"gnu\" \"2023-09-03\"))`"
       (when (re-search-forward "Maintainer: \\(.+\\)" nil t)
         (message-add-header (concat "Reply-To: " user-mail-address ", " (match-string 1))
                             (concat "Mail-Followup-To: " user-mail-address ", " (match-string 1)))))))
-;; my-announce-elpa-package ends here
+;; emacs-news-announce-elpa-package ends here
 
 ;; [[file:emacs-news-code.org::link-description][link-description]]
-(defun my-emacs-news-escape-link-description (s)
+(defun emacs-news-escape-link-description (s)
   (let ((replace-map '(("\\[" . "")
                        ("\\]" . ":"))))
     (mapc (lambda (rule)
@@ -522,7 +526,7 @@ Example entry: `(ack (ack \"gnu\" \"2023-09-03\"))`"
     s))
 (use-package xml-rpc)
 
-(defun my-org-list-from-rss (url from-date &optional to-date)
+(defun emacs-news-org-list-from-rss (url from-date &optional to-date)
   "Convert URL to an Org list. Return entries between FROM-DATE and TO-DATE.
 FROM-DATE and TO-DATE should be strings of the form YYYY-MM-DD."
 	(condition-case nil
@@ -569,7 +573,7 @@ FROM-DATE and TO-DATE should be strings of the form YYYY-MM-DD."
 ;; link-description ends here
 
 ;; [[file:emacs-news-code.org::git-news][git-news]]
-  (defun my-insert-emacs-news-from-git (date &optional directory)
+  (defun emacs-news-insert-emacs-news-from-git (date &optional directory)
     (interactive (list (org-read-date)))
     (let ((result
            (shell-command-to-string (format "cd ~/vendor/emacs; git pull > /dev/null; git log --pretty=oneline --after=%s etc/NEWS" (substring date 0 10)))))
@@ -580,7 +584,7 @@ FROM-DATE and TO-DATE should be strings of the form YYYY-MM-DD."
           (replace-match "  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=\\1][\\2]]"))
         (setq result (buffer-string)))
       (if (called-interactively-p 'any) (insert result) result)))
-(defun my-insert-org-news-from-git (date &optional directory)
+(defun emacs-news-insert-org-news-from-git (date &optional directory)
     (interactive (list (org-read-date)))
     (let ((result
            (shell-command-to-string (format "cd ~/vendor/org-mode; git pull > /dev/null; git log --pretty=oneline --after=%s etc/ORG-NEWS" (substring date 0 10)))))
@@ -594,21 +598,21 @@ FROM-DATE and TO-DATE should be strings of the form YYYY-MM-DD."
 ;; git-news ends here
 
 ;; [[file:emacs-news-code.org::share-news][share-news]]
-(defun my-emacs-news-commit-and-push (&optional title)
+(defun emacs-news-commit-and-push (&optional title)
 	(interactive)
 	(when (magit-anything-unstaged-p)
-		(my-magit-stage-all-and-commit (or title "update")))
+		(emacs-news-magit-stage-all-and-commit (or title "update")))
 	(unwind-protect (magit-push-current-to-pushremote (magit-push-arguments))))
 
-(defvar my-emacs-news-target "info-gnu-emacs@gnu.org")
-(defvar my-emacs-news-headers `(("Reply-To" . ,user-mail-address)
+(defvar emacs-news-target "info-gnu-emacs@gnu.org")
+(defvar emacs-news-headers `(("Reply-To" . ,user-mail-address)
 																("Mail-Followup-To" . ,user-mail-address)
 																("Mail-Reply-To" . ,user-mail-address)))
-(defvar my-emacs-news-send-immediately nil "Non-nil means send the e-mail without waiting.")
+(defvar emacs-news-send-immediately nil "Non-nil means send the e-mail without waiting.")
 
-(defun my-emacs-news-email (&optional target send-immediately)
+(defun emacs-news-email (&optional target send-immediately)
 	(interactive)
-	(setq target (or target my-emacs-news-target))
+	(setq target (or target emacs-news-target))
   ;; Draft article
 	(let ((org-export-html-preamble nil)
 				(org-html-toplevel-hlevel 3)
@@ -634,23 +638,23 @@ This is the plain-text version. There's also an HTML version that might be easie
 %s
 <#/part>
 "
-						 (org-export-string-as text 'my-plain-text t)
+						 (org-export-string-as text 'emacs-news-plain-text t)
 						 (org-export-string-as text 'html t)
 						 (substring title 0 10)
 						 (org-export-string-as text 'org t))))
-		(compose-mail target title my-emacs-news-headers)
+		(compose-mail target title emacs-news-headers)
 		(message-goto-body)
 		(insert output)
 		(when send-immediately
 			(message-send-and-exit))))
 
-(defun my-share-emacs-news ()
+(defun emacs-news-share-emacs-news ()
   "Prepare emacs-tangents e-mail of post, and commit to Git."
   (interactive)
 	(require 'magit)
-	(my-emacs-news-post-as-recent)
+	(emacs-news-post-as-recent)
 	(let ((html (org-export-as 'html))
-				(text (org-export-as 'my-plain-text nil nil t))
+				(text (org-export-as 'emacs-news-plain-text nil nil t))
 				(org-export-html-preamble nil)
 				(org-html-toplevel-hlevel 3)
 				(title (org-get-heading)))
@@ -658,11 +662,11 @@ This is the plain-text version. There's also an HTML version that might be easie
 			(insert html))
 		(with-temp-file "index.txt"
 			(insert text))
-		(my-emacs-news-commit-and-push title)
-		(my-emacs-news-email)))
+		(emacs-news-commit-and-push title)
+		(emacs-news-email)))
 
 
-(defun my-plain-text-link (link contents info)
+(defun emacs-news-plain-text-link (link contents info)
   "Custom link transcoder: 'description URL' format."
   (let* ((type (org-element-property :type link))
          (path (org-element-property :path link))
@@ -676,47 +680,47 @@ This is the plain-text version. There's also an HTML version that might be easie
                ((string= type "file") path)
                (t raw-link))))
 		(cond
-     ((org-export-custom-protocol-maybe link description 'my-plain-text info))
+     ((org-export-custom-protocol-maybe link description 'emacs-news-plain-text info))
      (t
 			(if description
 					(format "%s %s" description url)
 				url)))))
 
-(defun my-plain-text-item (item contents info)
+(defun emacs-news-plain-text-item (item contents info)
   "Transcode an ITEM element with 4-space indentation.
 CONTENTS is the contents of the item.
 INFO is a plist used as a communication channel."
 	(replace-regexp-in-string "^\\(  \\)+" "\\1\\1" (org-ascii-item item contents info)))
 
 ;; Define the custom backend
-(org-export-define-derived-backend 'my-plain-text 'ascii
-  :translate-alist '((link . my-plain-text-link)
-                     (item . my-plain-text-item))
+(org-export-define-derived-backend 'emacs-news-plain-text 'ascii
+  :translate-alist '((link . emacs-news-plain-text-link)
+                     (item . emacs-news-plain-text-item))
   :menu-entry '(?p "Export to Custom Plain Text"
-									 ((?p "As plain text buffer" my-plain-text-export-to-buffer))))
+									 ((?p "As plain text buffer" emacs-news-plain-text-export-to-buffer))))
 
-(defun my-plain-text-export-to-buffer (&optional async subtreep visible-only body-only ext-plist)
+(defun emacs-news-plain-text-export-to-buffer (&optional async subtreep visible-only body-only ext-plist)
   "Export current buffer to plain text buffer."
   (interactive)
-  (org-export-to-buffer 'my-plain-text "*My Plain Text Export*"
+  (org-export-to-buffer 'emacs-news-plain-text "*My Plain Text Export*"
     async subtreep visible-only body-only ext-plist))
 
-(defun my-plain-text-export-to-file (&optional async subtreep visible-only body-only ext-plist)
+(defun emacs-news-plain-text-export-to-file (&optional async subtreep visible-only body-only ext-plist)
   "Export current buffer to plain text file."
   (interactive)
   (let ((file (org-export-output-file-name ".txt" subtreep)))
-    (org-export-to-file 'my-plain-text file
+    (org-export-to-file 'emacs-news-plain-text file
       async subtreep visible-only body-only ext-plist)))
-(add-to-list 'org-export-backends 'my-plain-text)
+(add-to-list 'org-export-backends 'emacs-news-plain-text)
 ;; share-news ends here
 
 ;; [[file:emacs-news-code.org::prepare-news][prepare-news]]
 (defcustom emacs-news-rss-feeds nil "List of Emacs feeds"
   :type '(repeat string)
   :group 'emacs-news)
-(defvar my-emacs-calendar-csv "~/sync/emacs-calendar/events.csv")
+(defvar emacs-news-emacs-calendar-csv "~/sync/emacs-calendar/events.csv")
 
-(defun my-emacs-calendar-list ()
+(defun emacs-news-emacs-calendar-list ()
   (let ((before-limit (time-add (current-time) (seconds-to-time (* 14 24 60 60)))))
     (mapconcat 'cdr
                (sort
@@ -731,11 +735,11 @@ INFO is a plist used as a communication channel."
                                (and (time-less-p (current-time) time)
                                     (time-less-p time before-limit)
                                     (cons time (alist-get 'TEXT o)))))
-                           (my-org-table-as-alist (pcsv-parse-file my-emacs-calendar-csv))))
+                           (sacha-org-table-as-alist (pcsv-parse-file emacs-news-emacs-calendar-csv))))
                 (lambda (a b) (time-less-p (car a) (car b))))
                "\n")))
 
-(defun my-prepare-emacs-news (date parts)
+(defun emacs-news-prepare (date parts)
   (interactive (list (org-read-date nil nil "-mon 0:00") '(refresh-packages reddit rss)))
   (setq date (substring date 0 10))
   (let* ((start-date date)
@@ -744,7 +748,7 @@ INFO is a plist used as a communication channel."
          (month (substring end-date 5 7)))
     (when (member 'refresh-packages parts)
       (package-refresh-contents)
-      (my-update-package-list date)
+      (emacs-news-update-package-list date)
       )
     (concat
      (format
@@ -765,45 +769,45 @@ INFO is a plist used as a communication channel."
      (if (member 'events parts)
          (concat
           "- Upcoming events ([[https://emacslife.com/calendar/emacs-calendar.ics][iCal file]], [[https://emacslife.com/calendar/][Org]]):\n"
-          (replace-regexp-in-string "^" "  " (my-emacs-calendar-list))
+          (replace-regexp-in-string "^" "  " (emacs-news-emacs-calendar-list))
           "\n")
        "")
      (if (member 'git parts)
          (concat
           "- Emacs development:\n"
-          (my-insert-emacs-news-from-git date)
+          (emacs-news-insert-emacs-news-from-git date)
           "\n"
           )
        "")
      (if (member 'git-org parts)
          (concat
           "- Org Mode:\n  - Org development:\n"
-          (my-insert-org-news-from-git date)
+          (emacs-news-insert-org-news-from-git date)
           "\n"
           ))
      "- Other:\n"
      (if (member 'worg parts)
-         (my-org-list-from-rss "https://tracker.orgmode.org/news.rss" (substring date 0 10))
+         (emacs-news-org-list-from-rss "https://tracker.orgmode.org/news.rss" (substring date 0 10))
        "")
      (if (member 'rss parts)
          (mapconcat (lambda (feed)
-                      (my-org-list-from-rss feed (substring date 0 1)))
+                      (emacs-news-org-list-from-rss feed (substring date 0 1)))
                     emacs-news-rss-feeds
                     "")
        "")
 
      (if (member 'rss-es parts)
-         (my-org-list-from-rss "https://planet.emacs-es.org/atom.xml" (substring date 0 10))
+         (emacs-news-org-list-from-rss "https://planet.emacs-es.org/atom.xml" (substring date 0 10))
        "")
      "\n"
-     (if (member 'reddit parts) (my-reddit-list-upvoted (substring date 0 10)) "")
+     (if (member 'reddit parts) (emacs-news-reddit-list-upvoted (substring date 0 10)) "")
      (if (member 'youtube parts)
-         (my-emacs-news-youtube-playlist my-emacs-news-playlist start-date))
+         (emacs-news-youtube-playlist emacs-news-playlist start-date))
 		 (if (member 'librehacker parts)
-				 (my-emacs-news-parse-gem-librehacker-com date)
+				 (emacs-news-parse-gem-librehacker-com date)
 			 "")
      "- New packages:\n"
-     (my-list-new-packages date)
+     (emacs-news-list-new-packages date)
      "\n\nLinks from "
      (mapconcat (lambda (x) (org-link-make-string (car x) (cdr x)))
                 '(("https://www.reddit.com/r/emacs" . "reddit.com/r/emacs")
@@ -829,7 +833,7 @@ INFO is a plist used as a communication channel."
 ;; prepare-news ends here
 
 ;; [[file:emacs-news-code.org::collect-news][collect-news]]
-  (defun my-emacs-news-collect-entries (&optional category-filter)
+  (defun emacs-news-collect-entries (&optional category-filter)
     "Collect Emacs News by category and put them in another buffer."
     (interactive (list (when current-prefix-arg (read-string "Category: "))))
     (let ((parsed (org-element-parse-buffer))
@@ -869,12 +873,12 @@ INFO is a plist used as a communication channel."
 ;; collect-news ends here
 
 ;; [[file:emacs-news-code.org::detect-dupes][detect-dupes]]
-(defvar my-emacs-news-check-duplicates-display 'overlay "*minibuffer or posframe or overlay")
-(defvar my-emacs-news-duplicate-overlay nil)
-(defun my-emacs-news-check-duplicates ()
+(defvar emacs-news-check-duplicates-display 'overlay "*minibuffer or posframe or overlay")
+(defvar emacs-news-duplicate-overlay nil)
+(defun emacs-news-check-duplicates ()
   (interactive)
   (let ((end (save-excursion (org-end-of-subtree)))
-        (prompt-buffer (when (eq my-emacs-news-check-duplicates-display 'posframe) (get-buffer-create "*Duplicate*")))
+        (prompt-buffer (when (eq emacs-news-check-duplicates-display 'posframe) (get-buffer-create "*Duplicate*")))
         description
         (search-fn (lambda (point search description)
                      (save-excursion
@@ -909,9 +913,9 @@ INFO is a plist used as a communication channel."
               (push-mark found)
               (goto-char start)
               (setq prompt (concat context "\n(d)elete, (k)eep, (z)ap next one, e(x)change mark, (n)ext match, (q)quit?"))
-							(pcase my-emacs-news-check-duplicates-display
+							(pcase emacs-news-check-duplicates-display
 								('posframe
-								 ;; (when (eq my-emacs-news-check-duplicates-display 'posframe) (posframe-hide prompt-buffer))
+								 ;; (when (eq emacs-news-check-duplicates-display 'posframe) (posframe-hide prompt-buffer))
 								 (posframe-show prompt-buffer
 																:string prompt
 																:internal-border-width 2
@@ -921,10 +925,10 @@ INFO is a plist used as a communication channel."
 								('minibuffer
 								 (setq input (read-char prompt)))
 								('overlay
-								 (if (overlayp my-emacs-news-duplicate-overlay)
-										 (move-overlay my-emacs-news-duplicate-overlay (line-beginning-position) (line-end-position))
-									 (setq my-emacs-news-duplicate-overlay (make-overlay (line-beginning-position) (line-end-position))))
-								 (overlay-put my-emacs-news-duplicate-overlay 'after-string
+								 (if (overlayp emacs-news-duplicate-overlay)
+										 (move-overlay emacs-news-duplicate-overlay (line-beginning-position) (line-end-position))
+									 (setq emacs-news-duplicate-overlay (make-overlay (line-beginning-position) (line-end-position))))
+								 (overlay-put emacs-news-duplicate-overlay 'after-string
 															(propertize
 															 (concat "\n" prompt)
 															 'face '(:box t)))
@@ -944,7 +948,7 @@ INFO is a plist used as a communication channel."
                  (goto-char start)
                  (setq found nil))
                 (?i
-                 (my-emacs-news-process-irreal-link))
+                 (emacs-news-process-irreal-link))
 								(?d
                  (delete-region (point-at-bol)
 																(progn (forward-line 1) (point)))
@@ -957,14 +961,14 @@ INFO is a plist used as a communication channel."
                  (setq done t found nil)))
               (setq pos (point))
               (undo-boundary))))
-			(pcase my-emacs-news-check-duplicates-display
+			(pcase emacs-news-check-duplicates-display
 				('posframe (posframe-delete prompt-buffer))
-				('overlay (delete-overlay my-emacs-news-duplicate-overlay))))
+				('overlay (delete-overlay emacs-news-duplicate-overlay))))
     (goto-char pos)))
 ;; detect-dupes ends here
 
 ;; [[file:emacs-news-code.org::menu][menu]]
-(defvar my-org-categorize-emacs-news-menu
+(defvar emacs-news-org-categorize-menu
   '(("0" . "Other")
     ("1" . "Emacs Lisp")
     ("2" . "Emacs development")
@@ -976,7 +980,7 @@ INFO is a plist used as a communication channel."
     ("8" . "Community")
     ("9" . "Spacemacs")))
 
-(defun my-org-get-list-categories ()
+(defun sacha-org-get-list-categories ()
   "Return a list of (category indent matching-regexp sample).
 List categories are items that don't contain links."
   (let ((list (org-list-struct)) last-category results)
@@ -1025,12 +1029,12 @@ List categories are items that don't contain links."
        list))
     (append '(("x" 2 "^$" nil)) results)))
 
-(defun my-org-move-current-item-to-category (category)
+(defun sacha-org-move-current-item-to-category (category)
   "Move current list item under CATEGORY earlier in the list.
   CATEGORY can be a string or a list of the form (text indent regexp).
   Point should be on the next line to process, even if a new category
   has been inserted."
-  (interactive (list (completing-read "Category: " (my-org-get-list-categories))))
+  (interactive (list (completing-read "Category: " (sacha-org-get-list-categories))))
   (when category
     (let* ((beg (line-beginning-position))
            (end (line-end-position))
@@ -1051,39 +1055,39 @@ List categories are items that don't contain links."
                 string "\n")
         (goto-char (+ pos (length string) category-indent 1))
         (recenter)))))
-(defun my-spookfox-browse ()
+(defun emacs-news-spookfox-browse ()
 	(interactive)
 	(save-excursion
     (re-search-forward "\\[\\[")
-		(let ((browse-url-browser-function 'my-spookfox-background-tab)
+		(let ((browse-url-browser-function 'sacha-spookfox-background-tab)
           (browse-url-handlers nil))
 			(org-open-at-point))))
 
 (eval
- `(defhydra my-org-categorize-emacs-news (:foreign-keys nil)
+ `(defhydra emacs-news-org-categorize (:foreign-keys nil)
     "
-Default: %(my-emacs-news-guess-category)"
+Default: %(emacs-news-guess-category)"
     ,@(mapcar
        (lambda (x)
          `(,(car x)
-           (lambda () (interactive) (my-org-move-current-item-to-category ,(concat (cdr x) ":")))
+           (lambda () (interactive) (sacha-org-move-current-item-to-category ,(concat (cdr x) ":")))
            ,(cdr x)))
-       my-org-categorize-emacs-news-menu)
+       emacs-news-org-categorize-menu)
     ("RET"
-     (my-org-move-current-item-to-category (concat (my-emacs-news-guess-category) ":")))
+     (sacha-org-move-current-item-to-category (concat (emacs-news-guess-category) ":")))
     (","
      (lambda () (interactive)
-       (my-org-move-current-item-to-category
+       (sacha-org-move-current-item-to-category
         (completing-read
          "Category: "
-         (append (mapcar (lambda (o) (concat o ":")) (my-emacs-news-sort-order-headings))
-                 (mapcar 'car (my-org-get-list-categories))))))
+         (append (mapcar (lambda (o) (concat o ":")) (emacs-news-org-sort-order-headings))
+                 (mapcar 'car (sacha-org-get-list-categories))))))
      "By string")
-		("l" my-spookfox-open-link-from-page "Open link")
-		("L" my-spookfox-insert-link-from-page "Insert link")
-    ("r" my-emacs-news-replace-reddit-link "Reddit")
-		("u" my-spookfox-insert-link-to-tab "Insert tab")
-    ("/" my-spookfox-browse "Open bg")
+		("l" sacha-spookfox-open-link-from-page "Open link")
+		("L" sacha-spookfox-insert-link-from-page "Insert link")
+    ("r" emacs-news-replace-reddit-link "Reddit")
+		("u" sacha-spookfox-insert-link-to-tab "Insert tab")
+    ("/" emacs-news-spookfox-browse "Open bg")
     ("?" (lambda () (interactive)
            (save-excursion
              (re-search-forward "\\[\\[")
@@ -1103,22 +1107,22 @@ Default: %(my-emacs-news-guess-category)"
      (save-excursion
        (re-search-forward "\\[\\[")
        (elfeed-tube-fetch (org-element-property :raw-link (org-element-context)))
-       ;; (my-caption-show (org-element-property :raw-link (org-element-context)))
+       ;; (emacs-news-caption-show (org-element-property :raw-link (org-element-context)))
        )
      "Caption")
     ("p" org-next-link "Previous link")
     ("n" org-next-link "Next link")
-		("v" my-spookfox-scroll-down "Scroll FF down")
-		("V" my-spookfox-scroll-up "Scroll FF up")
+		("v" sacha-spookfox-scroll-down "Scroll FF down")
+		("V" sacha-spookfox-scroll-up "Scroll FF up")
     ("C-M-v" scroll-other-window :hint nil)
     ("C-M-S-v" scroll-other-window-down :hint nil)
-    ("h" (lambda () (interactive) (my-org-update-link-description "HN")) "Link HN")
-    ("i" my-emacs-news-process-irreal-link "Irreal")
+    ("h" (lambda () (interactive) (sacha-org-update-link-description "HN")) "Link HN")
+    ("i" emacs-news-process-irreal-link "Irreal")
     ("." nil "Done")))
 ;; menu ends here
 
-;; [[file:emacs-news-code.org::my-emacs-news-replace-reddit-link][my-emacs-news-replace-reddit-link]]
-(defun my-emacs-news-replace-reddit-link ()
+;; [[file:emacs-news-code.org::emacs-news-replace-reddit-link][emacs-news-replace-reddit-link]]
+(defun emacs-news-replace-reddit-link ()
   "Replace the current link with a better link and move the Reddit link to parentheses."
   (interactive)
   (save-excursion
@@ -1136,19 +1140,19 @@ Default: %(my-emacs-news-guess-category)"
               (setq link (spookfox-eval-js-in-active-tab
                           "window.location.href"
                           t)))
-            (setq new-link (my-spookfox-complete-link))
+            (setq new-link (emacs-news-spookfox-complete-link))
             (delete-region (org-element-begin elem)
                            (org-element-end elem))
             (insert (org-link-make-string new-link
-                                          (my-page-title new-link))
+                                          (emacs-news-page-title new-link))
                     " ("
                     (org-link-make-string link "Reddit")
                     ")"))
         (message "Not a Reddit link.")))))
-;; my-emacs-news-replace-reddit-link ends here
+;; emacs-news-replace-reddit-link ends here
 
 ;; [[file:emacs-news-code.org::export-most-recent][export-most-recent]]
-(defun my-emacs-news-post-as-recent ()
+(defun emacs-news-post-as-recent ()
 	(interactive)
 	(let ((formats '((ascii . "txt")
 									 (html . "html")
@@ -1160,21 +1164,21 @@ Default: %(my-emacs-news-guess-category)"
 ;; export-most-recent ends here
 
 ;; [[file:emacs-news-code.org::twitter][twitter]]
-(defvar my-t-executable "t" "Twitter command-line tool")
-(defun my-tweet-emacs-news ()
+(defvar emacs-news-t-executable "t" "Twitter command-line tool")
+(defun emacs-news-tweet-emacs-news ()
   (interactive)
   (let ((text (concat (org-get-heading t t t t)
 											" https://sachachua.com"
 											(org-entry-get (point) "EXPORT_ELEVENTY_PERMALINK")
 											" #emacs #EmacsNews")))
-    (my-mastodon-toot-public-string text)
+    (emacs-news-mastodon-toot-public-string text)
     (kill-new text)
 		(browse-url "https://www.twitter.com")
     (browse-url "https://bsky.app")))
 ;; twitter ends here
 
 ;; [[file:emacs-news-code.org::#code-spookfox][Spookfox:1]]
-(defun my-emacs-news-spookfox-insert-current-link ()
+(defun emacs-news-spookfox-insert-current-link ()
 	(interactive)
 	(let ((info (spookfox-js-injection-eval-in-active-tab
 							 "[window.location.href, document.querySelector('title').textContent]" t)))
@@ -1182,7 +1186,7 @@ Default: %(my-emacs-news-guess-category)"
 ;; Spookfox:1 ends here
 
 ;; [[file:emacs-news-code.org::librehacker][librehacker]]
-(defun my-emacs-news-parse-gem-librehacker-com (date)
+(defun emacs-news-parse-gem-librehacker-com (date)
 	(with-current-buffer (url-retrieve-synchronously "http://gem.librehacker.com/gemlog/starlog/")
 		(goto-char (point-min))
 		(re-search-forward "^$")
@@ -1203,7 +1207,7 @@ Default: %(my-emacs-news-guess-category)"
 ;; librehacker ends here
 
 ;; [[file:emacs-news-code.org::#code-insert-string][Insert string:1]]
-(defun my-insert-string (s)
+(defun emacs-news-insert-string (s)
 	(interactive "MString: ")
 	(insert s))
 ;; Insert string:1 ends here
@@ -1258,13 +1262,12 @@ Default: %(my-emacs-news-guess-category)"
 ;; Looking up Andres's notes:1 ends here
 
 ;; [[file:emacs-news-code.org::#categorizing-emacs-news-items-by-voice-in-org-mode-the-code-so-far][The code so far:1]]
-(defun my-emacs-news-categorize-with-voice (&optional skip-browse)
+(defun emacs-news-categorize-with-voice (&optional skip-browse)
   (interactive (list current-prefix-arg))
   (unless skip-browse
-    (my-spookfox-browse))
+    (emacs-news-spookfox-browse))
   (speech-input-cancel-recording)
-  (let ((default (if (fboundp 'my-emacs-news-guess-category) (my-emacs-news-guess-category)))
-        continue)
+  (let (continue)
     (speech-input-multiple-from-list
      nil
      '(("Org Mode" "Org" "Org Mode")
@@ -1309,36 +1312,44 @@ Default: %(my-emacs-news-guess-category)"
           (message "All done.")
           (speech-input-cancel-recording))
          ("Reddit"
-          (my-emacs-news-replace-reddit-link)
+          (emacs-news-replace-reddit-link)
           (setq continue 'skip))
          ("Scroll down"
-          (my-spookfox-scroll-down)
+          (sacha-spookfox-scroll-down)
           (setq continue 'skip))
          ("Scroll up"
-          (my-spookfox-scroll-up)
+          (emacs-news-spookfox-scroll-up)
           (setq continue 'skip))
          ("Delete"
           (delete-line)
           (undo-boundary)
           (setq continue 'open))
          ("Default"
-          (my-org-move-current-item-to-category
+          (sacha-org-move-current-item-to-category
            (concat default ":"))
           (undo-boundary)
           (setq continue 'open))
+         ('nil
+          (message "Skipping unrecognized speech")
+          (setq continue 'open))
          (_
-          (my-org-move-current-item-to-category
+          (sacha-org-move-current-item-to-category
            (concat result ":"))
           (undo-boundary)
           (setq continue 'open))))
-     (lambda (&rest _)
+     (lambda (commands text)
        ;; after everything
-       (when continue
-         (my-emacs-news-categorize-with-voice (eq continue 'skip)))))))
+       (cond
+        ((null (car commands))
+         (message "Skipping: %s" text)
+         (emacs-news-categorize-with-voice (eq continue 'skip)))
+        (continue
+         (emacs-news-categorize-with-voice (eq continue 'skip))))
+       ))))
 ;; The code so far:1 ends here
 
 ;; [[file:emacs-news-code.org::#categorizing-emacs-news-items-by-voice-in-org-mode-moving-irreal-links-to-parenthetical-notes][Moving Irreal links to parenthetical notes:1]]
-(defun my-emacs-news-process-irreal-link ()
+(defun emacs-news-process-irreal-link ()
   "Process an irreal.org link to extract referenced URLs and add them to Org notes."
   (interactive)
   (let* ((url (progn
@@ -1372,7 +1383,7 @@ Default: %(my-emacs-news-guess-category)"
 ;; Moving Irreal links to parenthetical notes:1 ends here
 
 ;; [[file:emacs-news-code.org::#categorizing-emacs-news-items-by-voice-in-org-mode-summarize-mastodon][Summarize Mastodon:1]]
-(defun my-mastodon-get-note-info ()
+(defun emacs-news-mastodon-get-note-info ()
 	"Return (:handle ... :url ... :links ... :text) for the current subtree."
 	(let ((url (let ((title (org-entry-get (point) "ITEM")))
 							 (if (string-match org-link-any-re title)
@@ -1403,10 +1414,10 @@ Default: %(my-emacs-news-guess-category)"
 			 :handle handle
 			 :url (if (string-match org-link-bracket-re url) (match-string 1 url) url)
 			 :links (reverse (mapcar (lambda (o) (org-element-property :raw-link o))
-															 (my-org-get-links-in-region beg end)))
+															 (emacs-news-org-get-links-in-region beg end)))
 			 :text (string-trim (buffer-substring-no-properties beg end))))))
 
-(defun my-org-get-links-in-region (beg end)
+(defun emacs-news-org-get-links-in-region (beg end)
   (save-excursion
     (let (results)
       (goto-char (min beg end))
@@ -1414,7 +1425,7 @@ Default: %(my-emacs-news-guess-category)"
         (add-to-list 'results (org-element-context)))
       results)))
 
-(defun my-page-title (url)
+(defun emacs-news-page-title (url)
 	"Get the page title for URL. Simplify some titles."
 	(condition-case nil
 			(pcase url
@@ -1437,12 +1448,12 @@ Default: %(my-emacs-news-guess-category)"
 							 "")))))))
 		(error nil)))
 
-(defun my-emacs-news-summarize-mastodon-items ()
+(defun emacs-news-summarize-mastodon-items ()
 	(interactive)
 	(while (not (eobp))
-		(let* ((info (my-mastodon-get-note-info))
+		(let* ((info (emacs-news-mastodon-get-note-info))
 					 (title (when (car (plist-get info :links))
-										(my-page-title (car (plist-get info :links)))))
+										(emacs-news-page-title (car (plist-get info :links)))))
 					 (summary (read-string
 										 (if title
 												 (format "Summary (%s): " title)
