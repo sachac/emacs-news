@@ -601,7 +601,7 @@ FROM-DATE and TO-DATE should be strings of the form YYYY-MM-DD."
 (defun emacs-news-commit-and-push (&optional title)
 	(interactive)
 	(when (magit-anything-unstaged-p)
-		(emacs-news-magit-stage-all-and-commit (or title "update")))
+		(sacha-magit-stage-all-and-commit (or title "update")))
 	(unwind-protect (magit-push-current-to-pushremote (magit-push-arguments))))
 
 (defvar emacs-news-target "info-gnu-emacs@gnu.org")
@@ -648,7 +648,7 @@ This is the plain-text version. There's also an HTML version that might be easie
 		(when send-immediately
 			(message-send-and-exit))))
 
-(defun emacs-news-share-emacs-news ()
+(defun emacs-news-share ()
   "Prepare emacs-tangents e-mail of post, and commit to Git."
   (interactive)
 	(require 'magit)
@@ -1129,8 +1129,11 @@ Default: %(emacs-news-guess-category)"
     (unless (eq (org-element-type (org-element-context)) 'link)
       (re-search-forward org-any-link-re (line-end-position))
       (goto-char (match-beginning 0)))
-
     (let* ((elem (org-element-context))
+           (old-title
+            (buffer-substring
+             (org-element-contents-begin elem)
+             (org-element-contents-end elem)))
            (link (org-element-property :raw-link elem))
            new-link)
       (if (string-match "redd\\.?it" link)
@@ -1140,14 +1143,20 @@ Default: %(emacs-news-guess-category)"
               (setq link (spookfox-eval-js-in-active-tab
                           "window.location.href"
                           t)))
-            (setq new-link (emacs-news-spookfox-complete-link))
+            (setq new-link (sacha-spookfox-complete-link))
             (delete-region (org-element-begin elem)
                            (org-element-end elem))
-            (insert (org-link-make-string new-link
-                                          (emacs-news-page-title new-link))
-                    " ("
-                    (org-link-make-string link "Reddit")
-                    ")"))
+            (insert (org-link-make-string
+                     new-link
+                     old-title)
+                    (if (save-excursion
+                          (re-search-forward
+                           "\\[Reddit\\]" (line-end-position) t))
+                        " "
+                      (concat
+                       " ("
+                       (org-link-make-string link "Reddit")
+                       ")"))))
         (message "Not a Reddit link.")))))
 ;; emacs-news-replace-reddit-link ends here
 
