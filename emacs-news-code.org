@@ -1559,7 +1559,7 @@ emacs-news-replace-reddit-link
 											" https://sachachua.com"
 											(org-entry-get (point) "EXPORT_ELEVENTY_PERMALINK")
 											" #emacs #EmacsNews")))
-    (emacs-news-mastodon-toot-public-string text)
+    (sacha-mastodon-toot-public-string text)
     (kill-new text)
 		(browse-url "https://www.twitter.com")
     (browse-url "https://bsky.app")))
