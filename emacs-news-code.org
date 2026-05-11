@@ -885,7 +885,7 @@ This is the plain-text version. There's also an HTML version that might be easie
 %s
 <#/part>
 "
-						 (org-export-string-as text 'emacs-news-plain-text t)
+						 (org-export-string-as text 'sacha-plain-text t)
 						 (org-export-string-as text 'html t)
 						 (substring title 0 10)
 						 (org-export-string-as text 'org t))))

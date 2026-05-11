@@ -638,7 +638,7 @@ This is the plain-text version. There's also an HTML version that might be easie
 %s
 <#/part>
 "
-						 (org-export-string-as text 'emacs-news-plain-text t)
+						 (org-export-string-as text 'sacha-plain-text t)
 						 (org-export-string-as text 'html t)
 						 (substring title 0 10)
 						 (org-export-string-as text 'org t))))
@@ -654,7 +654,7 @@ This is the plain-text version. There's also an HTML version that might be easie
 	(require 'magit)
 	(emacs-news-post-as-recent)
 	(let ((html (org-export-as 'html))
-				(text (org-export-as 'emacs-news-plain-text nil nil t))
+				(text (org-export-as 'sacha-plain-text nil nil t))
 				(org-export-html-preamble nil)
 				(org-html-toplevel-hlevel 3)
 				(title (org-get-heading)))
@@ -1112,6 +1112,8 @@ Default: %(emacs-news-guess-category)"
      "Caption")
     ("p" org-next-link "Previous link")
     ("n" org-next-link "Next link")
+		("SPC" sacha-spookfox-scroll-down "Scroll FF down")
+		("DEL" sacha-spookfox-scroll-up "Scroll FF up")
 		("v" sacha-spookfox-scroll-down "Scroll FF down")
 		("V" sacha-spookfox-scroll-up "Scroll FF up")
     ("C-M-v" scroll-other-window :hint nil)
@@ -1180,7 +1182,7 @@ Default: %(emacs-news-guess-category)"
 											" https://sachachua.com"
 											(org-entry-get (point) "EXPORT_ELEVENTY_PERMALINK")
 											" #emacs #EmacsNews")))
-    (emacs-news-mastodon-toot-public-string text)
+    (sacha-mastodon-toot-public-string text)
     (kill-new text)
 		(browse-url "https://www.twitter.com")
     (browse-url "https://bsky.app")))
