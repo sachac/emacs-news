@@ -2033,3 +2033,16 @@ For the =speech-input= functions, experimental code is at https://codeberg.org/s
 								"\n")))
     (undo-boundary)))
 #+end_src
+** Merge parenthetical notes on lines
+
+#+begin_src emacs-lisp :tangle emacs-news.el
+;;;###autoload
+(defun emacs-news-merge-with-next-line ()
+  "Merge this line with the next line.
+ Combine parenthetical notes."
+  (interactive)
+	(goto-char (line-beginning-position))
+	(when (looking-at "^\\( +- .+?\\) (\\(.+?\\))\n +- \\(.+?\\) (\\(.+?\\))")
+		(replace-match "\\1 (\\2, \\4)")
+  ))
+#+end_src

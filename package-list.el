@@ -1,4 +1,5 @@
-((verdict-dart (("melpa" . "2026-05-04")))
+((rare-words (("melpa" . "2026-05-11")))
+(verdict-dart (("melpa" . "2026-05-04")))
 (shannon-max (("melpa" . "2026-05-04")))
 (nucleo-completion (("melpa" . "2026-05-04")))
 (indigo (("melpa" . "2026-05-04")))
