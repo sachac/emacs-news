@@ -1,4 +1,6 @@
-((flamegraph (("nongnu" . "2026-06-01")))
+((shexc-ts-mode (("melpa" . "2026-06-08")))
+(pure-light-theme (("melpa" . "2026-06-08")))
+(flamegraph (("nongnu" . "2026-06-01")))
 (sleek-modeline (("melpa" . "2026-06-01")))
 (desert-theme (("melpa" . "2026-06-01")))
 (cui (("melpa" . "2026-06-01")))
