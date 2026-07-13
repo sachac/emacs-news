@@ -120,6 +120,92 @@ Actually generate the section:
 #+end_src
 
 #+RESULTS: generate
+** 2026-07-13 Emacs news
+:PROPERTIES:
+:EXPORT_ELEVENTY_PERMALINK: /blog/2026/07/2026-07-13-emacs-news/
+:EXPORT_ELEVENTY_FILE_NAME: blog/2026/07/2026-07-13-emacs-news/
+:EXPORT_DATE: 2026-07-13T13:45:19-0400
+:END:
+
+There's some more buzz about spell-checking with Jinx ([[https://emacsredux.com/blog/2026/07/13/replacing-flyspell-with-jinx/][Bozhidar Batsov]], [[https://mbork.pl/2026-07-11_Fast_spell-checking_in_Emacs_with_Jinx][Marcin Borkowski]]). Also, quite a few people have signed up for the [[https://human-emacs.org/][Human Emacs initiative]].
+
+- Upcoming events ([[https://emacslife.com/calendar/emacs-calendar.ics][iCal file]], [[https://emacslife.com/calendar/][Org]]):
+  - London Emacs (in person): Emacs London meetup https://www.meetup.com/london-emacs-hacking/events/315050696/ Tue Jul 14 1800 Europe/London
+  - Emacs Berlin: In-Person-Only Emacs-Berlin Stammtisch https://emacs-berlin.org/ Tue Jul 14 1900 Europe/Berlin
+  - M-x Research: TBA https://m-x-research.github.io/ Wed Jul 15 0800 America/Vancouver - 1000 America/Chicago - 1100 America/Toronto - 1500 Etc/UTC - 1700 Europe/Berlin - 2030 Asia/Kolkata - 2300 Asia/Singapore
+  - OrgDevMeetup https://bbb.emacsverse.org/rooms/orgdevmeetup Sat Jul 18 0100 America/Vancouver - 0300 America/Chicago - 0400 America/Toronto - 0800 Etc/UTC - 1000 Europe/Berlin - 1330 Asia/Kolkata - 1600 Asia/Singapore
+  - Emacs APAC: Emacs APAC meetup (virtual) https://emacs-apac.gitlab.io/announcements/ Sat Jul 25 0130 America/Vancouver - 0330 America/Chicago - 0430 America/Toronto - 0830 Etc/UTC - 1030 Europe/Berlin - 1400 Asia/Kolkata - 1630 Asia/Singapore
+- Beginner:
+  - [[https://youtu.be/btAOBkcLEkg][Learning Vanilla Emacs from Scratch with Prot as a Neovim User]] ([[https://www.reddit.com/r/emacs/comments/1uoxip0/learning_vanilla_emacs_from_scratch_with_prot_as/][Reddit]])
+    - [[https://linkarzu.com/posts/emacs/prot-1st-session/][Summary of the keymaps and lessons learned in the first coaching session | linkarzu]]
+- Emacs configuration:
+  - [[https://coyotetracks.org/blog/emacs-overwrite/][Bring back the Insert key on Emacs]] ([[https://irreal.org/blog/?p=13931][Irreal]])
+  - [[https://protesilaos.com/codelog/2026-07-08-emacs-global-keybinding-overrides/][Protesilaos: Emacs: global keybinding overrides]] ([[https://www.youtube.com/watch?v=D99GB591Vgo][YouTube]] 12:46, [[https://irreal.org/blog/?p=13933][Irreal]])
+  - [[https://github.com/anuvyklack/hel][Hel — Helix emulation layer for Emacs]] ([[https://www.reddit.com/r/emacs/comments/1uruwjy/hel_helix_emulation_layer_for_emacs/][Reddit]])
+  - [[https://kristofferbalintona.me/posts/202607080055/][Kristoffer Balintona: emacs-guix-starter: I’m glad this exists]]
+  - [[https://github.com/zHaOdANiuu/.emacs.d][Elegant Emacs]] ([[https://www.reddit.com/r/u_Potential_Spend_6730/comments/1usfi0l/elegant_emacs/][Reddit]])
+  - [[https://github.com/skunkdog/emacs-config/tree/main][My emacs config.]] ([[https://www.reddit.com/r/emacs/comments/1uqqrcg/my_emacs_config/][Reddit]])
+- Emacs Lisp:
+  - [[https://www.reddit.com/r/emacs/comments/1uu43j1/til_removehook_is_interactive/][TIL `remove-hook` is interactive!]]
+  - [[http://yummymelon.com/devnull/in-emacs-everything-looks-like-a-service.html][In Emacs, Everything Looks Like a Service]] ([[https://www.reddit.com/r/emacs/comments/1usfzjh/in_emacs_everything_looks_like_a_service/][Reddit]], [[https://news.ycombinator.com/item?id=48857230][HN]])
+  - [[https://emacsredux.com/blog/2026/07/06/reading-syntax-ppss-state/][Emacs Redux: Reading syntax-ppss State Without the Magic Numbers]]
+- Appearance:
+  - [[https://protesilaos.com/codelog/2026-07-12-emacs-doric-themes-1-2-0/][Protesilaos: Emacs: doric-themes version 1.2.0]]
+- Navigation:
+  - [[https://www.reddit.com/r/emacs/comments/1uqppwi/how_to_search_among_all_files_in_or_below_a/][How to search among all files in, or below, a directory]] find-name-dired, consult-find-fd, fzfa
+  - [[https://srijan.ch/notes/2026-07-12-001][Srijan Choudhary: 2026-07-12-001 tip about global mark ring]], C-x C-SPC, consult-global-mark
+  - [[https://www.draketo.de/software/wisp#emacs-sexp-movement][wisp: Whitespace to Lisp]] now supports sexp-movement
+- Writing:
+  - [[https://mbork.pl/2026-07-11_Fast_spell-checking_in_Emacs_with_Jinx][Marcin Borkowski: Fast spell-checking in Emacs with Jinx]]
+  - [[https://emacsredux.com/blog/2026/07/13/replacing-flyspell-with-jinx/][Emacs Redux: Replacing Flyspell with Jinx]] ([[https://irreal.org/blog/?p=13939][Irreal]])
+  - [[https://www.chiply.dev/post-hyperbole-hywiki][HyWiki: Zero Markup Hypertext]] ([[https://www.youtube.com/watch?v=3zG3lRmi3Zg][YouTube]] 23:24,  [[https://www.reddit.com/r/emacs/comments/1upt5r6/hywiki_zero_markup_hypertext/][r/emacs]], [[https://www.reddit.com/r/orgmode/comments/1upt68f/hywiki_zero_markup_hypertext/][r/orgmode]])
+- Org Mode:
+  - Help wanted:
+    - [[https://list.orgmode.org/orgmode/m24ikrb2yq.fsf@mail.utoledo.edu/][Feedback requested: minor mode for precise editing of hidden text]]
+    - [[https://list.orgmode.org/orgmode/CAO48Bk9C1x+jCDzhHXJGDTavtzvP0LTn6i540-FMF1jghKA7fg@mail.gmail.com/][Org Mode requests: [FR] Re: [DISCUSSION] Restructuring LaTeX output: the bigger picture => a) ox-beamer.]]
+    - [[https://list.orgmode.org/87tsq6937o.fsf@localhost][Org Mode requests: [RFC] Help with PDF/UA2 accessibility tests for ox-latex]]
+  - [[https://www.youtube.com/watch?v=Crp2e5D_Q78][[02] Vanilla Emacs with Prot: I’ll Repent for My Markdown Sins - YouTube]] ([[https://protesilaos.com/codelog/2026-07-09-emacs-live-linkarzu-org-basics/][Protesilaos]]) Beginner coaching session
+  - [[https://sachachua.com/blog/2026/07/chatting-with-john-wiegley-about-personal-information-management-and-karthik-chikmagalur/][Sacha Chua: Chatting with John Wiegley about personal information management and Karthik Chikmagalur]] ([[https://mathstodon.xyz/@oantolin/116910783839317967][@oantolin@mathstodon.xyz]]) dealing with 40,000 entries, of which 818 are open TODOs
+  - [[https://ray-on-emacs.blogspot.com/2026/07/numeric-priorities-in-org-mode.html][Raymond Zeitler: Numeric Priorities in Org Mode]]
+    - [[https://ray-on-emacs.blogspot.com/2026/07/one-hundred-times-highest-priority.html][Raymond Zeitler: One Hundred Times the Highest Priority]] ([[https://irreal.org/blog/?p=13937][Irreal]])
+  - [[https://taonaw.com/2026/07/13/a-quick-orgmode-internal-links.html][TAONAW - Emacs and Org Mode: A Quick org-mode Internal Links Reference]]
+  - Import, export, and integration:
+    - [[https://chrismaiorana.com/org-gantt/][Chris Maiorana: Org mode as a gantt chart generator]]
+    - [[https://ray-on-emacs.blogspot.com/2026/07/comment-on-org-source-blocks.html][Raymond Zeitler: Comment on Org Source Blocks]] ([[https://irreal.org/blog/?p=13928][Irreal]])
+    - [[https://randyridenour.net/posts/2026-07-07-beamerstyle-typst-slides-using-org-mode.html][Randy Ridenour: Beamer-Style Typst Slides Using Org Mode]] ([[https://zirk.us/@randyridenour/116880181776127458][@randyridenour@zirk.us]])
+    - [[https://www.reddit.com/r/emacs/comments/1upmv1q/vulpea_sync_is_finally_actually_async_optin/][Vulpea sync is finally, actually async (opt-in)]]
+- Completion:
+  - [[https://github.com/zHaOdANiuu/.emacs.d/blob/main/extension/nn-fido-frame/nn-fido-frame.el][emacs fido frame]] ([[https://www.reddit.com/r/emacs/comments/1uv8c9z/emacs_fido_frame/][Reddit]])
+- Coding:
+  - [[https://github.com/gnufied/treeview-magit][A Emacs library to display magit changes in treemacs view]] ([[https://www.reddit.com/r/emacs/comments/1ut1058/a_emacs_library_to_display_magit_changes_in/][Reddit]])
+  - [[https://emacs.dyerdwelling.family/emacs/20260514140413-emacs--vc-shuttle-advice-based-git-sync-for-air-gapped-emacs/][James Dyer: VC Shuttle: Advice-Based Git Sync for Air-Gapped Emacs]]
+- Math:
+  - [[https://www.reddit.com/r/emacs/comments/1upaqm5/underappreciated_emacs_builtins_emacs_calc/][Underappreciated Emacs built-ins: Emacs calc embedded]]
+- Shells:
+  - [[https://github.com/dakra/ghostel/releases/tag/v0.43.0][Ghostel 0.43.0 released: native Windows support]] ([[https://www.reddit.com/r/emacs/comments/1utm08h/ghostel_0430_released_native_windows_support/][Reddit]], [[https://fosstodon.org/@dakra/116902323170477052][@dakra@fosstodon.org]])
+- Mail, news, and chat:
+  - [[https://macowners.club/posts/preserve-email-dates-mu4e-mbsync/][Aimé Bertrand: Preserving email dates when moving messages in Mu4e]]
+- LLMs:
+  - [[https://github.com/wandersoncferreira/agent-shell-dashboard][agent-shell-dashboard]] ([[https://www.reddit.com/r/emacs/comments/1usncgd/agentshelldashboard/][Reddit]])
+  - [[https://github.com/alchenerd/orga][OrgA, An LLM agent's logic, knowledge, and chat all in one file]] ([[https://www.reddit.com/r/emacs/comments/1uuhrdi/orga_an_llm_agents_logic_knowledge_and_chat_all/][Reddit]])
+- Community:
+  - [[https://human-emacs.org/][Human Emacs]] ([[https://hey.hagelb.org/@technomancy/statuses/01KXBPDZCN2KN1BE4SQ0SGNDT7][@technomancy@hey.hagelb.org]], [[https://lobste.rs/s/t0aqzy/human_emacs][lobste.rs]])
+  - [[https://www.youtube.com/watch?v=ZRoT-3yAMUQ][Emacs ATX meetup. July 2026. pi; gptel; completion-preview; prisma; remoto.]] (02:06:40)
+  - [[https://www.youtube.com/watch?v=iLQEBbOT9KU][History of Emacs the Text Editor/Operative System]] (14:47)
+  - [[http://en.andros.dev/blog/a70bbaf3/an-alternative-to-webmentions-for-the-emacs-carnival/][Andros Fenollosa: An alternative to Webmentions for the Emacs Carnival]] ([[https://activity.andros.dev/@andros/statuses/01KWXYACREQ4VT4HCAKH81SDWN][@andros@activity.andros.dev]]) org-social
+- Other:
+  - [[https://www.chiply.dev/post-july-emacs-carnival][A Tree and a Server Walk Into a Core... (July Emacs Carnival)]]
+  - [[https://v.redd.it/eq6zl8kx0jch1][Jetpacs: A Jetpack Compose GUI wrapper for Emacs — Quick Showcase]] ([[https://www.reddit.com/r/emacs/comments/1uta4of/jetpacs_a_jetpack_compose_gui_wrapper_for_emacs/][Reddit]])
+  - [[https://www.reddit.com/r/emacs/comments/1uusdqi/emacsurlapp_lets_emacs_open_local_or_remote_files/][EmacsURL.app lets Emacs open local or remote files via URL on the Mac]]
+- Emacs development:
+  - [[https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=0f043af4dd072639a99dcf2336e33a8601943ee0][Make woman-topic-history an obsolete alias]]
+- New packages:
+  - [[package:folio-theme][folio-theme]]: Warm paper-like theme built on Modus and Ef (MELPA)
+  - [[package:mise-tasks][mise-tasks]]: Run mise tasks and highlight lockfiles (MELPA)
+  - [[package:ox-mom][ox-mom]]: Groff MOM Macro Back-End for Org Export Engine (MELPA)
+  - [[package:synaxis][synaxis]]: Feed reader with SQLite storage (MELPA)
+
+Links from [[https://www.reddit.com/r/emacs][reddit.com/r/emacs]], [[https://www.reddit.com/r/orgmode][r/orgmode]], [[https://www.reddit.com/r/spacemacs][r/spacemacs]], [[https://mastodon.social/tags/emacs][Mastodon #emacs]], [[https://bsky.app/hashtag/emacs][Bluesky #emacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://lobste.rs/search?q=emacs&what=stories&order=newest][lobste.rs]], [[https://programming.dev/c/emacs?dataType=Post&page=1&sort=New][programming.dev]], [[https://lemmy.world/c/emacs][lemmy.world]], [[https://lemmy.ml/c/emacs?dataType=Post&page=1&sort=New][lemmy.ml]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]], [[https://emacslife.com/calendar/][Emacs Calendar]], and [[https://lists.gnu.org/archive/html/emacs-devel/2026-07][emacs-devel]]. Thanks to Andrés Ramírez for emacs-devel links. Do you have an Emacs-related link or announcement? Please e-mail me at [[mailto:sacha@sachachua.com][sacha@sachachua.com]]. Thank you!
 ** 2026-07-06 Emacs news
 :PROPERTIES:
 :EXPORT_ELEVENTY_PERMALINK: /blog/2026/07/2026-07-06-emacs-news/

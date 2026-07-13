@@ -207,7 +207,7 @@ AFTER: fullname of a thing for pagination (e.g., 't3_abc123')"
     "Multimedia"
     ("EXWM" "exwm")
     "Fun"
-		("AI" "chatgpt\\|\\bai\\b\\|\\bllm\\b\\|openai\\|gemini")
+		("LLMs" "chatgpt\\|\\bai\\b\\|\\bllm\\b\\|openai\\|gemini")
     ("Community" "Weekly tips")
     "Other"
     "Emacs development"
@@ -252,7 +252,7 @@ AFTER: fullname of a thing for pagination (e.g., 't3_abc123')"
 - Web: EWW browser, web browsing in Emacs, working with web browsers
 - Mail, news, and chat: Email clients (mu4e, gnus), RSS (elfeed), messaging (Signal, Slack)
 - Multimedia: Audio, video, speech-to-text,, image handling
-- AI: LLM integration, AI assistants (Ollama, Claude, GPT), AI-powered tools
+- LLMs: LLM integration, AI assistants (Ollama, Claude, GPT), AI-powered tools
 - Fun: Games, entertainment, amusements
 - Community: People-related
 - Other: Miscellaneous items
@@ -1120,6 +1120,7 @@ Default: %(emacs-news-guess-category)"
     ("C-M-S-v" scroll-other-window-down :hint nil)
     ("h" (lambda () (interactive) (sacha-org-update-link-description "HN")) "Link HN")
     ("i" emacs-news-process-irreal-link "Irreal")
+    ("m" emacs-news-mpv-play-url "MPV")
     ("." nil "Done")))
 ;; menu ends here
 
@@ -1290,7 +1291,7 @@ Default: %(emacs-news-guess-category)"
        ("Appearance" "Appearance")
        ("Default" "Okay" "Default")
        "Community"
-       "AI"
+       "LLMs"
        "Beginner"
        "Writing"
        ("Reddit" "Read it" "Reddit")
@@ -1358,6 +1359,18 @@ Default: %(emacs-news-guess-category)"
          (emacs-news-categorize-with-voice (eq continue 'skip))))
        ))))
 ;; The code so far:1 ends here
+
+;; [[file:emacs-news-code.org::*Open YouTube links in MPV][Open YouTube links in MPV:1]]
+;;;###autoload
+(defun emacs-news-mpv-play-url ()
+  "Play the video using MPV."
+  (interactive)
+	(let* ((url (progn
+                (unless (org-in-regexp org-link-bracket-re 1)
+                  (re-search-forward org-link-bracket-re (line-end-position)))
+                (org-element-property :raw-link (org-element-context)))))
+		(mpv-play-url url)))
+;; Open YouTube links in MPV:1 ends here
 
 ;; [[file:emacs-news-code.org::#categorizing-emacs-news-items-by-voice-in-org-mode-moving-irreal-links-to-parenthetical-notes][Moving Irreal links to parenthetical notes:1]]
 (defun emacs-news-process-irreal-link ()
@@ -1485,3 +1498,15 @@ Default: %(emacs-news-guess-category)"
 								"\n")))
     (undo-boundary)))
 ;; Summarize Mastodon:1 ends here
+
+;; [[file:emacs-news-code.org::*Merge parenthetical notes on lines][Merge parenthetical notes on lines:1]]
+;;;###autoload
+(defun emacs-news-merge-with-next-line ()
+  "Merge this line with the next line.
+ Combine parenthetical notes."
+  (interactive)
+	(goto-char (line-beginning-position))
+	(when (looking-at "^\\( +- .+?\\) (\\(.+?\\))\n +- \\(.+?\\) (\\(.+?\\))")
+		(replace-match "\\1 (\\2, \\4)")
+  ))
+;; Merge parenthetical notes on lines:1 ends here
