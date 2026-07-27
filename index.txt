@@ -41,23 +41,129 @@ STARTED Do another Emacs News review
   Actually generate the section:
 
 
+2026-07-27 Emacs news
+~~~~~~~~~~~~~~~~~~~~~
+
+  Lots of discussion around Emacs is a Lispboard https://en.andros.dev/blog/06bfd107/emacs-is-a-lispboard/ (HN https://news.ycombinator.com/item?id=49021786) and Malleable Computing, Emacs, and You http://yummymelon.com/devnull/malleable-computing-emacs-and-you.html (HN https://news.ycombinator.com/item?id=49013538). Also, last call for Emacs Carnival posts for June (theme: Programming https://plaindrops.de/blog/2026/emacscarnival2607/). The theme for August is The Search for Knowledge https://www.chiply.dev/post-august-emacs-carnival. Enjoy!
+
+  - Emacs 31:
+      - Emacs 31.0.91 pretest is available https://lists.gnu.org/archive/html/emacs-devel/2026-07/msg00270.html (Irreal https://irreal.org/blog/?p=13966)
+  - Upcoming events (iCal file https://emacslife.com/calendar/emacs-calendar.ics, Org https://emacslife.com/calendar/):
+      - Emacs Berlin: Emacs-Berlin Hybrid Meetup https://emacs-berlin.org/ Wed Jul 29 1000 America/Vancouver - 1200 America/Chicago - 1300 America/Toronto - 1700 Etc/UTC - 1900 Europe/Berlin - 2230 Asia/Kolkata -- Thu Jul 30 0100 Asia/Singapore
+      - Emacs.si (in person): Emacs.si meetup #8 2026 (v #živo) https://dogodki.kompot.si/events/3944ee8f-6da1-4720-b086-b9217e4f5c7b Mon Aug 3 1900 CET
+      - EmacsATX: Emacs Social https://www.meetup.com/emacsatx/events/315091679/ Thu Aug 6 1600 America/Vancouver - 1800 America/Chicago - 1900 America/Toronto - 2300 Etc/UTC -- Fri Aug 7 0100 Europe/Berlin - 0430 Asia/Kolkata - 0700 Asia/Singapore
+      - M-x Research: TBA https://m-x-research.github.io/ Fri Aug 7 0800 America/Vancouver - 1000 America/Chicago - 1100 America/Toronto - 1500 Etc/UTC - 1700 Europe/Berlin - 2030 Asia/Kolkata - 2300 Asia/Singapore
+  - Emacs configuration:
+      - TAONAW - Emacs and Org Mode: Emacs Config Gems - Part 1 https://taonaw.com/2026/07/23/emacs-config-gems-part.html (Irreal https://irreal.org/blog/?p=13968)
+      - Emacs Redux: CIDER and Projectile Meet Embark https://emacsredux.com/blog/2026/07/25/cider-and-projectile-meet-embark/
+      - An emacs config https://codeberg.org/wwr/dotfiles (Reddit https://www.reddit.com/r/emacs/comments/1v45329/an_emacs_config/)
+  - Emacs Lisp:
+      - Shuffle filenames (@FoxFunction@tech.lgbt) https://tech.lgbt/@FoxFunction/116976647059275676
+      - Color picker for emacs https://github.com/zHaOdANiuu/color-picker.el (Reddit https://www.reddit.com/r/emacs/comments/1v4gz87/color_picker_for_emacs/)
+  - Appearance:
+      - Emacs Redux: Right-aligned Mode Line Elements https://emacsredux.com/blog/2026/07/21/right-aligned-mode-line-elements/ (Irreal https://irreal.org/blog/?p=13962)
+      - Mode line maker https://github.com/rougier/mode-line-maker (Reddit https://www.reddit.com/r/emacs/comments/1v49r2n/mode_line_maker/)
+      - Arthur A. Gleckler: mode-line-path https://speechcode.com/blog/mode-line-path
+      - Introducing trailing-newline-indicator: Visual clarity for file-ending newlines in Emacs https://github.com/saulotoledo/trailing-newline-indicator (Reddit https://www.reddit.com/r/emacs/comments/1v3ol5w/introducing_trailingnewlineindicator_visual/)
+      - New Emacs icon theme package (out of the box, supports dired, ibuffer, speedbar) with 1200+ SVG icons https://github.com/zHaOdANiuu/material-icon.el (Reddit https://www.reddit.com/r/emacs/comments/1v1pp4n/new_emacs_icon_theme_package_out_of_the_box/)
+      - Protesilaos: Emacs: pulsar version 1.4.0 https://protesilaos.com/codelog/2026-07-22-emacs-pulsar-1-4-0/
+  - Navigation:
+      - Marcin Borkowski: Hideshow mode https://mbork.pl/2026-07-20_Hideshow_mode
+      - Emacs Redux: Dedicate Windows with toggle-window-dedicated https://emacsredux.com/blog/2026/07/22/dedicate-windows-with-toggle-window-dedicated/ (Irreal https://irreal.org/blog/?p=13964)
+      - Meta Redux: Projectile 3.3 https://metaredux.com/posts/2026/07/27/projectile-3-3.html
+      - Emacs | Project.el https://www.youtube.com/watch?v=na_zxYz87xY (16:57)
+  - Dired:
+      - My Emacs configuration (Dired) https://eugene-andrienko.com/2026-07-05-my-emacs-configuration-dired.html (HN https://news.ycombinator.com/item?id=49035561)
+      - James Dyer: Borrowing from Jasspa MicroEmacs: Dired Sort Keybindings https://emacs.dyerdwelling.family/emacs/20260721093224-emacs--borrowing-from-jasspa-microemacs-dired-sort-keybindings/
+      - TAONAW: Dragging and dropping into Dired copies files https://taonaw.com/2026/07/23/interesting-trick-discovered-by-mistake.html
+      - Tip: (setq dired-mouse-drag-files t) (@gijs@post.hillenius.net) https://post.hillenius.net/social/gijs/p/1785054109.530148
+  - Writing:
+      - md-mode: Org-style structural editing and same-buffer rendering for Markdown https://github.com/yibie/md-mode (Reddit https://www.reddit.com/r/emacs/comments/1v4vkbh/mdmode_orgstyle_structural_editing_and_samebuffer/)
+      - Irreal: A Small Jinx Tweak https://irreal.org/blog/?p=13958
+  - Org Mode:
+      - Org Mode requests: [TODO] Fix obsolete/wrong info in worg/org-faq.org https://list.orgmode.org/87h5loojk4.fsf@bzg.fr
+      - Org Mode requests: [RFC] org-agenda: combine Clocked and Closed entries https://list.orgmode.org/87ldaxub2y.fsf@gmail.com
+      - Org Mode requests: [RFC] PDF document tagging: language code https://list.orgmode.org/87h5ll4wez.fsf@localhost
+      - Org Mode requests: [RFC] Font control as of today https://list.orgmode.org/CAO48Bk8F1MaAk6X4U-FS+wrG_7f2fcQui_-Xwb0NUQ+Qr7T0aw@mail.gmail.com
+      - Org Mode requests: [RFC] Small restriction in BEAMER_HEADER: WDYT? https://list.orgmode.org/CAO48Bk-ROBEEznUWRANL8tzd1HkQEERU+YqQqj6Y_pQzAVNbmA@mail.gmail.com
+      - Show current tasks after init (@FoxFunction@tech.lgbt) https://tech.lgbt/@FoxFunction/116952748826844100
+      - Raymond Zeitler: The Problem With Tags Lists https://ray-on-emacs.blogspot.com/2026/07/the-problem-with-tags-lists.html
+      - Reviewing finished tasks from last week in org-agenda and emacs https://ashishpanigrahi.com/blog/done-items-org-agenda/ (@paniash@mas.to https://mas.to/@paniash/116982944417387397)
+      - org-block-wrap: fix unsightly notches in org blocks https://gitlab.com/vegasharmon/org-block-wrap (Reddit https://www.reddit.com/r/emacs/comments/1v1wnhc/orgblockwrap_fix_unsightly_notches_in_org_blocks/)
+      - Kalender von Emacs Org-mode in Thunderbird exportieren - GNU/Linux.ch https://gnulinux.ch/kalender-von-emacs-org-mode-in-thunderbird-exportieren (@Verfassungklage@troet.cafe https://troet.cafe/@Verfassungklage/116976747772374047)
+      - Org development:
+      - org-odt-verse-block: Fix invalid tab indentation alignment https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=6e8663ef2f9fb68881aff153457c364b214c46ce
+      - lisp/ox-html: New export option for file links https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=646d42398999d9c45c633c14a15b97108d5d0b79
+      - ox-beamer.el: Move Beamer theme definition right after documentclass https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=3192babfe9442e331eb434fdf5259404d3da2ecd
+      - ox-latex: Add org-latex-default-example-options https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=90c612177dbf723910acf6518135249bc47f6cc5
+  - Completion:
+      - `flex-x: built-in flex completion with AND filtering, history-aware sorting, and migemo/pyim support` https://github.com/kn66/flex-x (Reddit https://www.reddit.com/r/emacs/comments/1v1ywkd/flexx_builtin_flex_completion_with_and_filtering/)
+  - Coding:
+      - ryanprior/xc.el: Integrate the xc task runner with Emacs - Codeberg.org https://codeberg.org/ryanprior/xc.el (@ryanprior https://mastodon.social/@ryanprior/116988945802001598)
+      - jsonschema-treesit: JSON object key completion using JSON Schema and treesit https://github.com/lina-bh/jsonschema-treesit/
+      - Seamless Lombok, JaCoCo, and Other Java Agent Integration in Emacs with JAL https://github.com/saulotoledo/java-agent-loader (Reddit https://www.reddit.com/r/emacs/comments/1v3n8vr/seamless_lombok_jacoco_and_other_java_agent/)
+      - Meta Redux: Making CIDER More Discoverable https://metaredux.com/posts/2026/07/23/making-cider-more-discoverable.html
+      - Meta Redux: Modernizing CIDER’s Completion https://metaredux.com/posts/2026/07/25/modernizing-cider-completion.html
+      - Meta Redux: Closing the Find-Usages Gap in CIDER https://metaredux.com/posts/2026/07/27/closing-the-find-usages-gap-in-cider.html
+  - Web:
+      - Raymond Zeitler: How to Copy the Link at Point -- an Undocumented Feature in EWW https://ray-on-emacs.blogspot.com/2026/07/how-to-copy-link-at-point-undocumented.html (Irreal https://irreal.org/blog/?p=13971)
+      - How to enable ace-link for elpher (@zrzz@fosstodon.org) https://fosstodon.org/@zrzz/116984063583605089
+  - Mail, news, and chat:
+      - Aimé Bertrand: iMessage in Emacs https://macowners.club/posts/imessage-in-emacs/
+      - my-jabber-esperanto-conversation - enable input methods based on chat participants (@tennoseremel@gts.skobk.in) https://gts.skobk.in/@tennoseremel/statuses/01KYF82ZCKN1ZGB710YG1CBDGG
+  - LLMs:
+      - emacs-semantic: Semantic search for all GNU Emacs functions. Find functions by describing what you want to do in plain English. https://sr.ht/~hajovonta/emacs-semantic/ (@hajovonta@mastodon.online https://mastodon.online/@hajovonta/116959064524892884)
+      - llm-buddy demo: automatic error detection and fixing in Emacs! https://www.youtube.com/watch?v=_z6_df9s2Fs (10:26)
+      - Alvaro Ramirez: agent-shell 0.63 updates https://xenodium.com/agent-shell-0-63-updates (Reddit https://www.reddit.com/r/emacs/comments/1v3d56z/agentshell_063_updates/, lobste.rs https://lobste.rs/s/oscswl/agent_shell_0_63_updates)
+  - Community:
+      - Charlie Holland: The Search for Knowledge: Emacs Carnival August 2026 https://www.chiply.dev/post-august-emacs-carnival
+      - What do you NOT use Emacs for, that Emacs is (reasonably) capable of doing? https://www.reddit.com/r/emacs/comments/1v5bvwz/what_do_you_not_use_emacs_for_that_emacs_is/
+      - My Experience Using Emacs for a Month as a Long-Time Neovim User https://www.reddit.com/r/emacs/comments/1v3n5vx/my_experience_using_emacs_for_a_month_as_a/
+  - Other:
+      - Emacs is a Lispboard https://en.andros.dev/blog/06bfd107/emacs-is-a-lispboard/ (Reddit https://www.reddit.com/r/emacs/comments/1v5fny0/emacs_is_a_lispboard/, HN https://news.ycombinator.com/item?id=49021786)
+      - Malleable Computing, Emacs, and You http://yummymelon.com/devnull/malleable-computing-emacs-and-you.html (Reddit https://www.reddit.com/r/emacs/comments/1v3th69/malleable_computing_emacs_and_you/, HN https://news.ycombinator.com/item?id=49013538)
+      - bartbunting/emacspeak-support: Speech enabling emacs packages · GitHub https://github.com/bartbunting/emacspeak-support (@pixelate@tweesecake.social https://tweesecake.social/@pixelate/116976786206662064)
+      - Emacs on the iPad: first release (v0.1.0, sideloadable .ipa) https://codeberg.org/mclearc/emacs-ipad (Reddit https://www.reddit.com/r/emacs/comments/1v429ln/emacs_on_the_ipad_first_release_v010_sideloadable/)
+      - A light-weight Clojure-like language that runs directly in Emacs Lisp https://github.com/borkdude/cljbang.el (Reddit https://www.reddit.com/r/emacs/comments/1v2u4ai/a_lightweight_clojurelike_language_that_runs/)
+      - Raymond Zeitler: Modeling Browser History in Emacs https://ray-on-emacs.blogspot.com/2026/07/modeling-browser-history-in-emacs.html
+      - Lars Ingebrigtsen: It’s time to wake up: An Emacs alarm clock https://lars.ingebrigtsen.no/2026/07/22/its-time-to-wake-up-an-emacs-alarm-clock/
+      - Protesilaos: Emacs: Substitute version 0.5.0 https://protesilaos.com/codelog/2026-07-24-emacs-substitute-0-6-0/
+      - Chung-hong Chan: Emacs Writing Machine https://chainsawriot.com/postmannheim/2026/07/25/writeredeck.html (lobste.rs https://lobste.rs/s/pqkfur/emacs_writing_machine)
+      - TAONAW - Emacs and Org Mode: Emacs Config Gems - Part 2 https://taonaw.com/2026/07/26/emacs-config-gems-part.html
+  - Emacs development:
+      - vc-dir: Don't resolve DIR to truename unnecessarily https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=0a714557ebd1c88a01e006fc1419b61d9807a76a (reworded https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=6f5bcd19b27839a0fab530d9a6a33037d132a4df)
+      - current-time-list now defaults to nil https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=57c5967828f0415604a393b244bd62be93262f30
+      - timeclock: Optionally use 24-hour clock https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=074cdea573ed21c8b92d45e4aca5cd2b9e05bbaf
+  - New packages:
+      - https://melpa.org/#/fnm: Manage Node versions using fnm (MELPA)
+      - https://melpa.org/#/grpclient: Grpcurl interactive builder (MELPA)
+      - https://melpa.org/#/gruber-darker-ayu-theme: Gruber Darker + Ayu Dark color theme (MELPA)
+      - https://melpa.org/#/keycoach: Learn keybindings (MELPA)
+      - https://elpa.gnu.org/packages/mode-line-maker.html: Mode-line helper tools (GNU ELPA)
+      - https://melpa.org/#/project-x: Extra convenience features for project.el (MELPA)
+      - https://melpa.org/#/smali-mode: Major mode for editing Smali/Baksmali files (MELPA)
+      - https://melpa.org/#/snippy: Vscode snippet support with Yasnippet (MELPA)
+
+  Links from reddit.com/r/emacs https://www.reddit.com/r/emacs, r/orgmode https://www.reddit.com/r/orgmode, r/spacemacs https://www.reddit.com/r/spacemacs, Mastodon #emacs https://mastodon.social/tags/emacs, Bluesky #emacs https://bsky.app/hashtag/emacs, Hacker News https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story, lobste.rs https://lobste.rs/search?q=emacs&what=stories&order=newest, programming.dev https://programming.dev/c/emacs?dataType=Post&page=1&sort=New, lemmy.world https://lemmy.world/c/emacs, lemmy.ml https://lemmy.ml/c/emacs?dataType=Post&page=1&sort=New, planet.emacslife.com https://planet.emacslife.com, YouTube https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt, the Emacs NEWS file http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS, Emacs Calendar https://emacslife.com/calendar/, and emacs-devel https://lists.gnu.org/archive/html/emacs-devel/2026-07. Thanks to Andrés Ramírez for emacs-devel links. Do you have an Emacs-related link or announcement? Please e-mail me at sacha@sachachua.com mailto:sacha@sachachua.com. Thank you!
+
+
 2026-07-20 Emacs news
 ~~~~~~~~~~~~~~~~~~~~~
 
-  Completion seems to be the topic of the day. Check out the new videos and resources people have shared on both completion in buffer and in the mini-buffer. Also, there's been lots of discussion for or against Human Emacs; links are in the Community section.
+  Completion seems to be the topic of the day. Check out the new videos and resources people have shared on both completion in buffer and in the mini-buffer. Also, there's been lots of discussion for or against Human Emacs; links are in the Community sectio.
 
   - Upcoming events (iCal file https://emacslife.com/calendar/emacs-calendar.ics, Org https://emacslife.com/calendar/):
       - Emacs APAC: Emacs APAC meetup (virtual) https://emacs-apac.gitlab.io/announcements/ Sat Jul 25 0130 America/Vancouver - 0330 America/Chicago - 0430 America/Toronto - 0830 Etc/UTC - 1030 Europe/Berlin - 1400 Asia/Kolkata - 1630 Asia/Singapore
-      - Emacs Berlin: Emacs-Berlin Hybrid Meetup https://emacs-berlin.org/ Wed Jul 29 1000 America/Vancouver - 1200 America/Chicago - 1300 America/Toronto - 1700 Etc/UTC - 1900 Europe/Berlin - 2230 Asia/Kolkata -- Thu Jul 30 0100 Asia/Singapore
-      - Sacha Chua: 6 aôut: Emacs Chat: Richard Bonichon https://sachachua.com/blog/2026/08/6-aout-emacs-chat-richard-bonichon/
-      - Sacha Chua: 20 aôut: Emacs Chat: Abdallah Maouche https://sachachua.com/blog/2026/08/20-aout-emacs-chat-abdallah-maouche/
+      - Emacs Berlin: Emacs-Berlin Hybrid Meetup https://emacs-berlin.org/ Wed Jul 29 1000 America/Vancouver - 1200 America/Chicago - 1300 America/Toronto - 1700 Etc/UTC - 1900 Europe/Berlin - 2230 Asia/Kolkata -- Thu Jul 30 0100 Asia/SrEingapore
+      - Sacha Chua: 6 août: Emacs Chat: Richard Bonichon https://sachachua.com/blog/2026/08/6-aout-emacs-chat-richard-bonichon/
+      - Sacha Chua: 20 août: Emacs Chat: Abdallah Maouche https://sachachua.com/blog/2026/08/20-aout-emacs-chat-abdallah-maouche/
   - Beginner:
       - Emacs Docs: The modern documentation website Emacs deserves https://emacsdocs.org (Reddit https://www.reddit.com/r/emacs/comments/1ux6cv5/emacs_docs_the_modern_documentation_website_emacs/, lobste.rs https://lobste.rs/s/fvupsy/emacs_docs_modern_documentation_website, HN https://news.ycombinator.com/item?id=48911283)
       - How to Undo in Emacs https://www.youtube.com/watch?v=kOw5cqtcmUg (01:24)
       - How to Find and Replace Text in Emacs https://www.youtube.com/watch?v=AUY6CkcfGHE (02:52)
       - One shot modifiers, then emacs tutorial https://www.youtube.com/watch?v=18-s7UdMIG0 (02:08:22)
       - Let's Finally Finish the Emacs Tutorial https://www.youtube.com/watch?v=jCKLY3xH7SY (02:03:47)
-      - New to Emacs? Learning Vanilla Emacs with Protesilaos | Coaching Session #2 https://i.redd.it/k5fh8z6ma1dh1.png (Reddit https://www.reddit.com/r/emacs/comments/1uvirxn/new_to_emacs_learning_vanilla_emacs_with/)
+      - New to Emacs? Learning Vanilla Emacs with Protesilaos | Coaching Session #2 https://youtube.com/live/Crp2e5D_Q78 (Reddit https://www.reddit.com/r/emacs/comments/1uvirxn/new_to_emacs_learning_vanilla_emacs_with/)
   - Emacs configuration:
       - Emacs Redux: which-key is Now Built-in https://emacsredux.com/blog/2026/07/18/which-key-is-now-built-in/
       - Stop Installing Every Emacs Package You See https://www.youtube.com/watch?v=vyLzOD6eQgM (04:07)
@@ -104,7 +210,7 @@ STARTED Do another Emacs News review
       - Notes from #2 OrgDevMeetup on Sat, July 18, 11:00 UTC+3 https://list.orgmode.org/87tspw1cwz.fsf@localhost/T/#u (video https://archive.org/details/2-org-dev-meetup-on-sat-july-18-11-00-utc-3, Reddit https://www.reddit.com/r/orgmode/comments/1v00i9c/video_2_orgdevmeetup_on_sat_july_18_1100_utc3/, @yantar92@fosstodon.org https://fosstodon.org/@yantar92/116941937158323918) -
   - Completion:
       - [Article] Guide to Modern Emacs Completion: vertico, corfu & friends https://jneidel.com/guide/emacs-completion/ (Reddit https://www.reddit.com/r/emacs/comments/1uvu6t6/article_guide_to_modern_emacs_completion_vertico/)
-      - Protesilaos: Emacs: Completion in the buffer with completion-at-point-functions https://protesilaos.com/codelog/2026-07-19-emacs-completion-at-point-functions/ (YouTube https://www.youtube.com/watch?v=x3rqjpNm3e0, 22:53)
+      - Protesilaos: Emacs: Completion in the buffer with completion-at-point-functions https://protesilaos.com/codelog/2026-07-19-emacs-completion-at-point-functions/ (YouTube https://www.youtube.com/watch?v=x3rqjpNm3e0, 22:53, Reddit https://www.reddit.com/r/emacs/comments/1v2dia1/prot_new_video/)
       - Emacs Redux: Inline Completion with completion-preview-mode https://emacsredux.com/blog/2026/07/17/inline-completion-with-completion-preview-mode/
       - Emacs Redux: Cape: Corfu’s Best Friend https://emacsredux.com/blog/2026/07/13/cape-corfus-best-friend/
       - Vadzim Shender: Making backspace in vertico behave like ido https://shender.org/vertico-backspace-like-ido/
@@ -122,9 +228,9 @@ STARTED Do another Emacs News review
       - Pair of functions to send things to the tap inspector in clerk and clojure (@otfrom@functional.cafe) https://functional.cafe/@otfrom/116895003080164056
       - Meta Redux: Stepping Through Macros in CIDER https://metaredux.com/posts/2026/07/17/stepping-through-macros-in-cider.html
       - Meta Redux: Sayid 0.8 https://metaredux.com/posts/2026/07/18/sayid-0-8.html
-      - Emacs Redux: Flymake Can Now Show Diagnostics at the End of the Line https://emacsredux.com/blog/2026/07/20/flymake-can-now-show-diagnostics-at-the-end-of-the-line/
+      - Emacs Redux: Flymake Can Now Show Diagnostics at the End of the Line https://emacsredux.com/blog/2026/07/20/flymake-can-now-show-diagnostics-at-the-end-of-the-line/ (Irreal https://irreal.org/blog/?p=13960)
       - Hide module imports in Scheme buffers using an overlay (@ryuslash@goto.ryuslash.org) https://goto.ryuslash.org/@ryuslash/statuses/01KXFTV84R9HJCSW2ZBTT16EEY
-      - Emacs Eglot for Scala and Kotlin (JVM) and some nifty workarounds for day-to-day usage https://jointhefreeworld.org/blog/articles/emacs/emacs-eglot-scala-kotlin/index.html (Reddit https://www.reddit.com/r/emacs/comments/1v1iee4/emacs_eglot_for_scala_and_kotlin_jvm_and_some/)
+      - Emacs Eglot for Scala and Kotlin (JVM) and some nifty workarounds for day-to-day usage https://jointhefreeworld.org/blog/articles/emacs/emacs-eglot-scala-kotlin/index.html (Reddit https://www.reddit.com/r/emacs/comments/1v1iee4/emacs_eglot_for_scala_and_kotlin_jvm_and_some/, HN https://news.ycombinator.com/item?id=48990219, lobste.rs https://lobste.rs/s/ivtjcv/escape_intellij_scala_kotlin_lsps_on)
       - gemmaro/cwmrc-mode: Emacs major mode and Flymake backend for cwmrc format. - Codeberg.org https://codeberg.org/gemmaro/cwmrc-mode (@gemmaro https://mastodon.social/@gemmaro/116878099212547986)
   - Mail, news, and chat:
       - Gnus: Call custom functions when formatting message lines in summary buffers (@lhp) https://mastodon.social/@lhp/116920177655368500
@@ -44767,7 +44873,7 @@ DONE 2024-07-29 Emacs news
       - https://melpa.org/#/reverse-im: Reverse mapping for keyboard layouts other than english
       - https://melpa.org/#/salesforce-utils: simple utilities for Salesforce
       - https://melpa.org/#/scribble-mode: Major mode for editing Scribble documents
-      - smali-mode: Major mode for editing Smali/Baksmali files
+      - https://melpa.org/#/smali-mode: Major mode for editing Smali/Baksmali files
       - https://melpa.org/#/smart-dash: Smart-Dash minor mode
       - https://melpa.org/#/spice-mode: Major mode for SPICE
       - https://melpa.org/#/transfer-sh: Simple interface for sending buffer contents to transfer.sh
