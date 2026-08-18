@@ -901,6 +901,7 @@ This is the plain-text version. There's also an HTML version that might be easie
 	(emacs-news-post-as-recent)
 	(let ((html (org-export-as 'html))
 				(text (org-export-as 'sacha-plain-text nil nil t))
+				(sacha-org-export-warning-regexp nil)
 				(org-export-html-preamble nil)
 				(org-html-toplevel-hlevel 3)
 				(title (org-get-heading)))
