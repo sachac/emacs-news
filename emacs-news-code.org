@@ -1394,7 +1394,7 @@ List categories are items that don't contain links."
            s)
       (delete-region beg (min (1+ end) (point-max)))
       (unless (string= category-text "x")
-        (if (re-search-backward category-regexp nil t)
+        (if (re-search-backward (concat "^\\(?: *- +\\)" category-regexp) nil t)
             (forward-line 1)
           (setq s (concat "- " category-text "\n"))
           (insert s)
