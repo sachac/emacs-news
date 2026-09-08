@@ -41,16 +41,136 @@ STARTED Do another Emacs News review
   Actually generate the section:
 
 
+2026-09-07 Emacs news
+~~~~~~~~~~~~~~~~~~~~~
+
+  The Emacs Carnival theme for September is "Games https://www.emacswiki.org/emacs/CarnivalSeptember2026". Enjoy! Other really cool uses of graphics in Emacs: org-timegrid https://github.com/Gleek/org-timegrid, poimap https://github.com/florommel/poimap, canvas-minimap https://github.com/Daskeladden/canvas-minimap.
+
+  Also, public service announcement: doomemacs.com is not affiliated with doomemacs.org https://doomemacs.org (see this Github discussion https://github.com/orgs/doomemacs/discussions/129). Just in case someone reading this happens to be the person who made doomemacs.com, please consider setting up a redirect to doomemacs.org for more awesomeness and less confusion. Thank you!
+
+  And a reminder: EmacsConf - 2026 - Call for Participation https://emacsconf.org/2026/cfp/ target date for proposals Sept 18, conference is online Dec 12-13. Hope to see you there!
+
+  - Upcoming events (iCal file https://emacslife.com/calendar/emacs-calendar.ics, Org https://emacslife.com/calendar/):
+      - London Emacs (in person): Emacs London meetup https://www.meetup.com/london-emacs-hacking/events/316294538/ Tue Sep 8 1800 Europe/London
+      - Emacs Berlin: In-Person-Only Emacs-Berlin Stammtisch https://emacs-berlin.org/ Tue Sep 8 1900 Europe/Berlin
+      - OrgMeetup (virtual) https://orgmode.org/worg/orgmeetup.html Wed Sep 9 0900 America/Vancouver - 1100 America/Chicago - 1200 America/Toronto - 1600 Etc/UTC - 1800 Europe/Berlin - 2130 Asia/Kolkata -- Thu Sep 10 0000 Asia/Singapore
+      - Atelier Emacs Montpellier (in person) https://lebib.org/date/atelier-emacs Fri Sep 11 1800 Europe/Paris
+      - PDX Emacs (in person) https://pdx.social/@howard/117147689957341583 - Tue Sept 15 6:00 pm in Portland, OR
+      - M-x Research: TBA https://m-x-research.github.io/ Wed Sep 16 0800 America/Vancouver - 1000 America/Chicago - 1100 America/Toronto - 1500 Etc/UTC - 1700 Europe/Berlin - 2030 Asia/Kolkata - 2300 Asia/Singapore
+  - Beginner:
+      - What's in the Emacs newcomers-presets theme? https://sachachua.com/blog/2026/04/what-s-in-the-emacs-newcomers-presets-theme/ (April 2026, Irreal https://irreal.org/blog/?p=14056)
+  - Emacs configuration:
+      - Guide to Deferred Package Loading with use-package (Optimizing Emacs Startup) https://www.jamescherti.com/emacs-startup-defer-use-package-performance/ (Reddit https://www.reddit.com/r/emacs/comments/1w6d1zw/guide_to_deferred_package_loading_with_usepackage/, Irreal https://irreal.org/blog/?p=14062)
+      - auto-side-windows now on MELPA https://github.com/MArpogaus/auto-side-windows (Reddit https://www.reddit.com/r/emacs/comments/1w70jid/autosidewindows_now_on_melpa/)
+      - Emacs Meep-mode Model Editing https://www.youtube.com/watch?v=Ha_67hACw5M (57:41) modal editing
+      - Casual Suite 3.0 https://melpa.org/#/?q=casual (@kickingvegas@sfba.social https://sfba.social/@kickingvegas/117197418834344945)
+      - wakib-emacs: Emacs for the rest of us: v2 released! https://github.com/darkstego/wakib-emacs/releases/tag/v2.0.0 (Reddit https://www.reddit.com/r/emacs/comments/1w3m1qt/wakibemacs_emacs_for_the_rest_of_us_v2_released/)
+      - Bedrock 2.0 released! https://lambdaland.org/posts/2026-09-06-bedrock-v2/ (Reddit https://www.reddit.com/r/emacs/comments/1wa31fa/bedrock_20_released/)
+  - Emacs Lisp:
+      - Extending imenu for elisp https://github.com/benleis1/ilist-plus (YouTube https://www.youtube.com/watch?v=NU2WcX4dDiU, Reddit https://www.reddit.com/r/emacs/comments/1w6nmre/extending_imenu_for_elisp/, @benleis@mathstodon.xyz https://mathstodon.xyz/@benleis/117216149493983366)
+  - Appearance:
+      - Zoom in/out slider on the modeline https://github.com/benleis1/emacs-init/blob/13b61e43c6baad043af71cad385c68787340d9a6/modeline.el#L805 (Reddit https://www.reddit.com/r/emacs/comments/1wa0b2q/zoom_inout_slider_on_the_modeline/)
+      - the emacs theme I use: N Λ N O Theme https://www.youtube.com/watch?v=Dlm7sxDB6h8 (06:24)
+      - [Theme] Vulkanite: 26 atmospheric dark theme variants for Emacs with Kanagawa-inspired balance https://github.com/Meskour/vulkanite-theme-emacs (Reddit https://www.reddit.com/r/emacs/comments/1w9bmyi/theme_vulkanite_26_atmospheric_dark_theme/)
+      - Protesilaos: Emacs: doric-themes version 1.3.0 https://protesilaos.com/codelog/2026-09-04-doric-themes-1-3-0/ (Irreal https://irreal.org/blog/?p=14064)
+  - Navigation:
+      - windmove tinkering (@ljwrites@writeout.ink) https://writeout.ink/@ljwrites/117200269254705677
+      - auto-tab-groups: tab groups that open and close with your commands (now on MELPA) https://github.com/MArpogaus/auto-tab-groups (Reddit https://www.reddit.com/r/emacs/comments/1w9n1tl/autotabgroups_tab_groups_that_open_and_close_with/)
+      - poimap.el - Visual buffer map with points of interest https://github.com/florommel/poimap (Reddit https://www.reddit.com/r/emacs/comments/1w94mey/poimapel_visual_buffer_map_with_points_of_interest/)
+      - canvas-minimap: a pixel-based minimap using Emacs 32's canvas image type https://github.com/Daskeladden/canvas-minimap (Reddit https://www.reddit.com/r/emacs/comments/1w8cp2v/canvasminimap_a_pixelbased_minimap_using_emacs/)
+  - Writing:
+      - Lars Ingebrigtsen: Emacs Canz Spell Goodly Know https://lars.ingebrigtsen.no/2026/09/07/emacs-canz-spell-goodly-know/
+      - Thysrael/markdown-ts-appear: Reveal Markdown source at point and preview math in Emacs markdown-ts-mode · GitHub https://github.com/Thysrael/markdown-ts-appear (@thysrael https://mastodon.social/@thysrael/117206746884931257)
+  - Org Mode:
+      - My Note Taking Setup With Emacs Org-Mode https://www.youtube.com/watch?v=LL5K5Fb8hFc (33:26)
+      - Writing year in review: My 2022 writing habit on Emacs | Semi-author-ized writer https://ljwrites.blog/posts/2022-writing-review/ (@ljwrites@writeout.ink https://writeout.ink/@ljwrites/117227169775105757)
+      - A beautiful SVG weekly calendar for Emacs, backed by Org files, with full mouse and keyboard support and an optional day strip for Org Agenda https://github.com/Gleek/org-timegrid (Reddit https://www.reddit.com/r/emacs/comments/1w519nv/a_beautiful_svg_weekly_calendar_for_emacs_backed/)
+      - Emacs Org-Mode PDF Quicksheet now available in PEL https://pierre-rouleau.github.io/pel/pel-table-based-documentation1/mode-org-mode.pdf (Reddit https://www.reddit.com/r/emacs/comments/1w6lxq5/emacs_orgmode_pdf_quicksheet_now_available_in_pel/)
+      - org-draw is now available on MELPA! https://github.com/larrasket/org-draw (YouTube https://youtu.be/04zbf-tosNQ, Reddit https://www.reddit.com/r/emacs/comments/1w63wry/orgdraw_is_now_available_on_melpa/)
+      - Improving the styling of emacs tables with tabularray https://www.reddit.com/r/emacs/comments/1w599dx/improving_the_styling_of_emacs_tables_with/ (programming.dev https://programming.dev/post/55958138?scrollToComments=true)
+      - org-table-widget: I finally found a way to make Org tables easier to read without changing how I edit them https://github.com/yibie/org-table-widget (Reddit https://www.reddit.com/r/emacs/comments/1w9ur57/orgtablewidget_i_finally_found_a_way_to_make_org/)
+      - Org development:
+      - Factor out export-and-show in ox-latex.el and ox-beamer.el https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=adb342777a06dc46901683c5e58ae3c5926c0e4d
+  - Coding:
+      - James Dyer: Git Worktrees Without Leaving Built-in VC https://emacs.dyerdwelling.family/emacs/20260905090959-emacs--git-worktrees-and-branch-surgery-in-built-in-vc/
+      - Emacs Redux: Working with Git Worktrees in Magit https://emacsredux.com/blog/2026/09/02/working-with-git-worktrees-in-magit/
+      - Dave Pearson: next-gh-pr.el v1.1.0 https://blog.davep.org/2026/09/03/next-gh-pr-el-v1-1-0.html
+      - Joar von Arndt: Emacs does not need LSP https://joarvarndt.se/emacs-lsp.html
+      - Magnus: Emacs salmagundi, 2026-09-06 https://magnus.therning.org/2026-09-06-emacs-salmagundi,-2026-09-06.html emacs-multi-compile, consult-kith for jumping to tests/etc.
+      - Xdebug for PHP on Emacs with Dape | Artful Robot https://artfulrobot.uk/blog/xdebug-for-php-on-emacs-with-dape/ (@artfulrobot@floss.social https://floss.social/@artfulrobot/117213333747912541)
+      - gaudy-cl: Colorful semantic font-locking for Common Lisp https://codeberg.org/zshaftel/gaudy-cl (Reddit https://www.reddit.com/r/emacs/comments/1w3sixr/gaudycl_colorful_semantic_fontlocking_for_common/)
+  - Shells:
+      - cooked - a comint based terminal emulator https://github.com/vodik/cooked (Reddit https://www.reddit.com/r/emacs/comments/1w9b9bh/cooked_a_comint_based_terminal_emulator/)
+  - Evil mode:
+      - evil-twin: key-chords that actually behave under evil-mode https://github.com/teeann/evil-twin (Reddit https://www.reddit.com/r/emacs/comments/1w4foe6/eviltwin_keychords_that_actually_behave_under/)
+  - Multimedia:
+      - New package: supersonic.el (Music player for subsonic-compatible servers) https://github.com/systemfreund/supersonic.el (Reddit https://www.reddit.com/r/emacs/comments/1wa1aok/new_package_supersonicel_music_player_for/)
+      - Integrating Emacs with Music Player https://www.youtube.com/watch?v=580DxF2M7EE (01:32:18)
+      - Bioscoop demo: split screen to visualize color grading - YouTube https://www.youtube.com/watch?v=xoFdxP-MTn4 (@danielsz.bsky.social https://bsky.app/profile/danielsz.bsky.social/post/3mujq4qrpvc2b)
+  - Fun:
+      - andros/nonogram.el: Play nonogram puzzles (also known as picross, griddlers or hanjie) in Emacs https://git.andros.dev/andros/nonogram.el (@andros@activity.andros.dev https://activity.andros.dev/@andros/statuses/01M1XDA1DYE0BBEWJEH831MZ1Q)
+      - Raymond Zeitler: Games: The Emacs Carnival Post For September 2026 https://ray-on-emacs.blogspot.com/2026/09/games-emacs-carnival-post-for-september.html
+      - Sacha Chua: Emacs Carnival September 2026: Games https://sachachua.com/blog/2026/09/emacs-carnival-september-2026-games/
+      - Playing with Emacs | Dilip's Log https://idlip.in/posts/playing-emacs/
+      - Process Footage: Randomized Greeting from Dipskits Greets Me at My Terminal https://www.youtube.com/watch?v=wsVoHPL1C6g (05:23)
+  - LLMs:
+      - Pimacs - An Emacs UI for Pi · Anantha Kumaran https://ananthakumaran.in/2026/08/30/pimacs.html
+      - El Yayster — a resident LLM that inhabits Emacs https://github.com/yayster/yayster.el (HN https://news.ycombinator.com/item?id=49602258)
+  - Community:
+      - BEWARE: doomemacs.com is not associated with doomemacs https://github.com/orgs/doomemacs/discussions/129 (Reddit https://www.reddit.com/r/emacs/comments/1w7h191/beware_doomemacscom_is_not_associated_with/)
+      - Question about things that surprised you about Emacs. https://www.reddit.com/r/emacs/comments/1w4knk3/question_about_things_that_surprised_you_about/
+      - Emacs in fifty keystrokes five years later (2026 edition featuring meow and agent-shell) https://enzuru.medium.com/emacs-in-fifty-keystrokes-five-years-later-2026-edition-featuring-meow-and-agent-shell-3d656f273989?source=friends_link&sk=4e1a8ba56819a67c1798cc34b40b8a29
+      - Sacha Chua: Emacs Chat 30: Fabrice Niessen (en français, partie 2) https://sachachua.com/blog/2026/08/27-aout-emacs-chat-fabrice-niessen-en-francais-partie-2/ (YouTube https://www.youtube.com/watch?v=4m0G_ASLUXY, 01:05:56)
+      - Talking About Stuff I Use on Linux (not a dev, just a human perspective) https://www.youtube.com/watch?v=bWfl8nDgb8o (01:00:02) Doom Emacs at 15:24
+  - Other:
+      - Jeremy Friesen: How I’m Feeling Emacs Command https://takeonrules.com/2026/09/01/how-im-feeling-emacs-package/
+      - The Emacs Security Settings that might Silently Compromise your System https://www.jamescherti.com/emacs-security-settings/ (Reddit https://www.reddit.com/r/emacs/comments/1w4ems0/the_emacs_security_settings_that_might_silently/)
+      - I finally got Emacs to render Markdown tables properly (md-mode 0.4.1) — and I think the same trick can work for Org tables https://github.com/yibie/md-mode/releases/tag/v0.4.1 (Reddit https://www.reddit.com/r/emacs/comments/1w9l680/i_finally_got_emacs_to_render_markdown_tables/)
+      - epub-reader: an EPUB reader for Emacs that reflows, breaks CJK lines properly, and keeps highlights across re-layout https://github.com/yibie/epub-reader (Reddit https://www.reddit.com/r/emacs/comments/1w51gyl/epubreader_an_epub_reader_for_emacs_that_reflows/)
+      - Marcin Borkowski: Pasting primary selection from keyboard https://mbork.pl/2026-09-07_Pasting_primary_selection_from_keyboard
+      - thkoch2001/rau: Emacs/Wayland based Window Manager in pure elisp with the help of River https://github.com/thkoch2001/rau (HN https://news.ycombinator.com/item?id=49593319)
+      - Building Emacs into a systemd-sysext — Alex Carney https://www.alcarney.me/blog/2026/building-emacs-into-a-systemd-sysext/ (@alcarney@mastodon.social https://mastodon.social/@alcarney/117197558126253320)
+  - Emacs development:
+      - emacs-devel:
+      - Re: master e630bc4fd72: ; Fix some recently added docs. - Dmitry Gutov https://yhetil.org/emacs-devel/4cebf24a-9c7d-435f-a90f-51257cc8a3bf@gutov.dev/ - xref docs?
+      - Improve presentation of query-replace-show-preview https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=ab1d6868ed32c2a06b7a4aa21cef84d560cc2aca
+      - Let 'query-replace-show-preview' be a function (bug#81583) https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=3b721dd39afd435021d45c046f1f54b5512b7236
+      - Make log-edit-headers-separator inherit from separator-line https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=8e23cbb85fcde872aa154086e41f9947fe86d783
+      - Merge branch 'xref-find-by-kind' https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=9e05c0360c5f94ad9c5375b2bd9f84d453ab4f22
+  - New packages:
+      - https://melpa.org/#/agent-shell-math-renderer: Display-math rendering for agent-shell (MELPA)
+      - https://melpa.org/#/api-credit: AI API balance in the modeline (MELPA)
+      - https://melpa.org/#/auto-tab-groups: Simple auto tab group creator for specified commands (MELPA)
+      - https://melpa.org/#/cursorfree: Complex editing through voice (MELPA)
+      - https://melpa.org/#/material-icons: Material Icon Theme integration (MELPA)
+      - https://melpa.org/#/metropolis-light-theme: Light theme based on the Metropolis Beamer palette (MELPA)
+      - https://melpa.org/#/mode-line-path: Abbreviate file paths in the mode line (MELPA)
+      - https://melpa.org/#/nix3: Frontend to experimental commands of Nix (MELPA)
+      - https://melpa.org/#/org-roam-gt: Improvements for org-roam (MELPA)
+      - https://melpa.org/#/pilish: Emacs frontend for pi coding agent (MELPA)
+      - https://melpa.org/#/surveyor: Survey your code with LLM-generated diagrams (MELPA)
+
+  Links from reddit.com/r/emacs https://www.reddit.com/r/emacs, r/orgmode https://www.reddit.com/r/orgmode, r/spacemacs https://www.reddit.com/r/spacemacs, Mastodon #emacs https://mastodon.social/tags/emacs, Bluesky #emacs https://bsky.app/hashtag/emacs, Hacker News https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story, lobste.rs https://lobste.rs/search?q=emacs&what=stories&order=newest, programming.dev https://programming.dev/c/emacs?dataType=Post&page=1&sort=New, lemmy.world https://lemmy.world/c/emacs, lemmy.ml https://lemmy.ml/c/emacs?dataType=Post&page=1&sort=New, planet.emacslife.com https://planet.emacslife.com, YouTube https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt, the Emacs NEWS file http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS, Emacs Calendar https://emacslife.com/calendar/, and emacs-devel https://lists.gnu.org/archive/html/emacs-devel/2026-09. Thanks to Andrés Ramírez for emacs-devel links. Do you have an Emacs-related link or announcement? Please e-mail me at sacha@sachachua.com mailto:sacha@sachachua.com. Thank you!
+
+
 2026-08-31 Emacs news
 ~~~~~~~~~~~~~~~~~~~~~
 
-  Lexical binding: If you've recently updated to Emacs 31 and you've gotten warnings about lexical-binding, add:
+  Lexical binding: If you've recently updated to Emacs 31, you might have gotten warnings about `lexical-binding' in your packages or personal Emacs Lisp configuration. You can check your packages to see if the package authors have updated them. For your personal Emacs Lisp configuration, consider adding
 
   ,----
   | ;;; -*- lexical-binding: t -*-
   `----
 
-  to the very top of your Emacs configuration files. Alternatively, you can suppress the warning with something like `(add-to-list 'warning-suppress-types '(files missing-lexbind-cookie))'. There are more details on lexical-binding https://www.gnu.org/software/emacs/manual/html_node/elisp/Selecting-Lisp-Dialect.html in the Elisp info manual.
+  to the top line. If that makes your code stop working correctly when you restart Emacs, set it to `nil' instead with:
+
+  ,----
+  | ;;; -*- lexical-binding: nil -*-
+  `----
+
+  to get it to work for now. Additional resources:
+  - Selecting Lisp Dialect https://www.gnu.org/software/emacs/manual/html_node/elisp/Selecting-Lisp-Dialect.html in the Elisp info manual
+  - Lexical scoping and dynamic scoping in Emacs Lisp | Yoo Box https://yoo2080.wordpress.com/2011/12/31/lexical-scoping-and-dynamic-scoping-in-emacs-lisp/
 
   Emacs Carnival: Check out the entries for August in "The Search for Knowledge" https://www.chiply.dev/post-august-emacs-carnival and stay tuned for September's topic, "Games."
 
@@ -95,7 +215,7 @@ STARTED Do another Emacs News review
   - Dired:
       - James Cherti: Fixing Emacs Dired Defaults: Settings for Better File Management https://www.jamescherti.com/emacs-dired-configuration/ (Reddit https://www.reddit.com/r/emacs/comments/1w1pyhs/practical_emacs_dired_tweaks/)
   - Writing:
-      - TAONAW - Emacs and Org Mode: Emacs Config Gems - Part 5 https://taonaw.com/2026/08/29/emacs-config-gems-part.html dict, hippie-expand, ispell
+      - TAONAW - Emacs and Org Mode: Emacs Config Gems - Part 5 https://taonaw.com/2026/08/29/emacs-config-gems-part.html dict, hippie-expand, ispell (Irreal https://irreal.org/blog/?p=14053)
       - An unofficial guide to markdown-ts-mode on Emacs 31 https://rahuljuliato.com/posts/markdown-ts-mode-emacs-31 (Reddit https://www.reddit.com/r/emacs/comments/1vzcv1a/an_unofficial_guide_to_markdowntsmode_on_emacs_31/, HN https://news.ycombinator.com/item?id=49464543)
       - Emacs Treesitter Markdown Mode - First Impressions https://www.youtube.com/watch?v=I4zn3NTpe5c (17:47)
       - mado/emado update: static binaries, fuzzy matching, and more https://github.com/laserattack/emado (Reddit https://www.reddit.com/r/emacs/comments/1vz3dkh/madoemado_update_static_binaries_fuzzy_matching/) - markdown organizer for Emacs
@@ -3390,6 +3510,7 @@ STARTED 2026-02-23 Emacs news
       - PIMacs: A Modular, Documented, and Reproducible Doom Emacs Layer | PIPRIME.FR BLOG https://blog.piprime.fr/en/pimacs-modular-documented-reproducible-doom-emacs-layer/ (@_PI_@fosstodon.org https://fosstodon.org/@_PI_/116036210838461002)
   - Fun:
       - A SimCity clone in Emacs Lisp https://github.com/vkazanov/elcity (Reddit https://www.reddit.com/r/emacs/comments/1qwfjku/a_simcity_clone_in_emacs_lisp/, HN https://news.ycombinator.com/item?id=46897332)
+  - Multimedia:
       - New version of the setup script for getting Emacspeak and Elmud working on Termux https://www.dropbox.com/scl/fi/nn0bwdfegnjn1qnyfb440/setup-emacspeak-termux.sh?rlkey=k3999ra8l57722nqobsvvwz8k&dl=1 (@pixelate@tweesecake.social https://tweesecake.social/@pixelate/116023218389080353)
   - AI:
       - ElleNajt/agent-shell-to-go https://github.com/ElleNajt/agent-shell-to-go (Reddit https://www.reddit.com/r/emacs/comments/1qv58oq/interact_with_agentshell_sessions_from_your/)
@@ -3912,7 +4033,7 @@ STARTED 2026-02-23 Emacs news
       - https://melpa.org/#/life-calendar: Display your life in weeks (MELPA)
       - https://melpa.org/#/mock-fs: Virtual filesystem for Emacs Lisp tests (MELPA)
       - https://melpa.org/#/pdffontetc: Display `pdffont' and other PDF information (MELPA)
-      - https://melpa.org/#/pi-coding-agent: Emacs frontend for pi coding agent (MELPA)
+      - pi-coding-agent: Emacs frontend for pi coding agent (MELPA)
       - https://melpa.org/#/show-inactive-region: Highlight the inactive region (MELPA)
       - https://melpa.org/#/vulpea-journal: Daily note interface for vulpea (MELPA)
 
@@ -6925,7 +7046,7 @@ STARTED 2025-07-14 Emacs news
       - Improve repeat-continue property handling https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=3a0def802cf576902faafde404d15f079786a2f8
       - Clean up text properties in 'visual-wrap-prefix-mode' https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=90c0c9a01ed11944c5502f809817a028a1096ee6
   - New packages:
-      - https://melpa.org/#/magik-company: Magik backend for company-mode (MELPA)
+      - magik-company: Magik backend for company-mode (MELPA)
       - https://melpa.org/#/mcp-server-lib: Model Context Protocol server library (MELPA)
       - https://melpa.org/#/ordered-set: Insertion-order sets (MELPA)
 
@@ -39174,7 +39295,7 @@ DONE 2024-07-29 Emacs news
   - New packages:
       - https://melpa.org/#/agtags: A frontend to GNU Global
       - https://melpa.org/#/dashboard-hackernews: Display Hacker News on dashboard
-      - https://melpa.org/#/flymake-diagnostic-at-point: Display flymake diagnostics at point
+      - flymake-diagnostic-at-point: Display flymake diagnostics at point
       - https://melpa.org/#/k8s-mode: Major mode for Kubernetes configuration file
       - https://melpa.org/#/literate-elisp: literate program to write elisp codes in org mode
       - ms-python: A lsp client for microsoft python language server.
@@ -42946,7 +43067,7 @@ DONE 2024-07-29 Emacs news
   - New packages:
       - https://melpa.org/#/a: Associative data structure functions
       - https://melpa.org/#/csound-mode: A major mode for interacting and coding Csound
-      - https://melpa.org/#/docker-compose-mode: major mode for editing docker-compose files
+      - docker-compose-mode: major mode for editing docker-compose files
       - https://melpa.org/#/dut-mode: Major mode for the Dut programming language
       - https://melpa.org/#/eve-mode: Major mode for editing Eve documents.
       - https://melpa.org/#/gitpatch: Git-format patch toolkit
