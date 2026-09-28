@@ -41,6 +41,98 @@ STARTED Do another Emacs News review
   Actually generate the section:
 
 
+2026-09-28 Emacs news
+~~~~~~~~~~~~~~~~~~~~~
+
+  There's a nice long video about Org mode https://www.youtube.com/watch?v=KQEZBGkImII with plenty of tips for beginners. Also, it's the end of the month, so check out the submissions for the Emacs Carnival https://www.emacswiki.org/emacs/Carnival for September ("Games" https://www.emacswiki.org/emacs/CarnivalSeptember2026) and consider volunteering to host the next one!
+
+  - Upcoming events (iCal file https://emacslife.com/calendar/emacs-calendar.ics, Org https://emacslife.com/calendar/):
+      - Emacs Berlin: Emacs-Berlin Hybrid Meetup https://emacs-berlin.org/ Wed Sep 30 1000 America/Vancouver - 1200 America/Chicago - 1300 America/Toronto - 1700 Etc/UTC - 1900 Europe/Berlin - 2230 Asia/Kolkata -- Thu Oct 1 0100 Asia/Singapore
+      - EmacsATX: Emacs Social https://www.meetup.com/emacsatx/events/316464079/ Thu Oct 1 1600 America/Vancouver - 1800 America/Chicago - 1900 America/Toronto - 2300 Etc/UTC -- Fri Oct 2 0100 Europe/Berlin - 0430 Asia/Kolkata - 0700 Asia/Singapore
+      - Sacha Chua: Oct 2 - Emacs Chat 31: Pedro A. Aranda Gutierrez https://sachachua.com/blog/2026/10/oct-2-emacs-chat-31-pedro-a-aranda-gutierrez/ (Protesilaos https://protesilaos.com/codelog/2026-09-25-emacs-live-sacha-pedro/, YouTube https://www.youtube.com/watch?v=aEnacESU-DU)
+      - M-x Research: TBA https://m-x-research.github.io/ Fri Oct 2 0800 America/Vancouver - 1000 America/Chicago - 1100 America/Toronto - 1500 Etc/UTC - 1700 Europe/Berlin - 2030 Asia/Kolkata - 2300 Asia/Singapore
+      - Emacs.si (in person): Emacs.si meetup #10 2026 (v #živo) https://dogodki.kompot.si/events/df5d39f6-4d78-4841-b207-ef2c9e60bd5c Mon Oct 5 1900 CET
+      - Atelier Emacs Montpellier (in person) https://lebib.org/date/atelier-emacs Fri Oct 9 1800 Europe/Paris
+  - Emacs configuration:
+      - Discussion about confirm-kill-emacs https://www.reddit.com/r/emacs/comments/1wl2rhp/confirmkillemacs_should_be_a_boolean/ (Irreal https://irreal.org/blog/?p=14104)
+  - Emacs Lisp:
+      - Charles Choi: Announcing restlib - a utility library for building Emacs REST clients http://yummymelon.com/devnull/announcing-restlib.html
+  - Appearance:
+      - Tip about changing the default font size (@lispwizard@techhub.social) https://techhub.social/@lispwizard/117348649189858245
+      - Per-mode themes https://github.com/masukomi/doom_config/blob/main/config.org#per-mode-themes (@masukomi@connectified.com https://connectified.com/@masukomi/117337835482059211)
+  - Navigation:
+      - Marcin Borkowski: forward-paragraph in Magit https://mbork.pl/2026-09-21_forward-paragraph_in_Magit
+      - jadedctrl/bookmark-groups.el: Easily manage separate Emacs bookmark files - Kodujo Ŝɪɴᴏɴᴏᴍᴇ https://kod.ujo.moe/jadedctrl/bookmark-groups.el (@jadedctrl@jam.xwx.moe https://jam.xwx.moe/objects/24911119-eaa5-4ba4-9d4b-c8dbd7c57ff3)
+      - Some updates on my package ilist-plus https://github.com/benleis1/ilist-plus (Reddit https://www.reddit.com/r/emacs/comments/1wooper/some_updates_on_my_package_ilistplus/) extensions to imenu-list
+  - Hyperbole:
+      - Crie botões no Emacs https://www.youtube.com/watch?v=o27oIxbSpBQ (10:36)
+  - Dired:
+      - C-u M-x dired to pass flags to ls command (@lispwizard@techhub.social) https://techhub.social/@lispwizard/117328387866174436
+      - Charles Choi: Binding the SPC key in Dired and IBuffer http://yummymelon.com/devnull/binding-the-spc-key-in-dired-and-ibuffer.html (Irreal https://irreal.org/blog/?p=14106)
+  - Writing:
+      - TIL about Remember mode - built-in persistent-scratch https://www.reddit.com/r/emacs/comments/1ws28im/til_about_remember_mode_builtin_persistentscratch/
+      - How Emacs does things: flyspell's way of tracking misspelled words https://utcc.utoronto.ca/~cks/space/blog/programming/EmacsFlyspellWordTracking (@chris_siebenmann@robot.villas https://utcc.utoronto.ca/~cks/space/blog/programming/EmacsFlyspellWordTracking)
+  - Denote:
+      - Protesilaos: Emacs: find a file in the ‘denote-directory’ https://protesilaos.com/codelog/2026-09-25-emacs-denote-find-file/
+      - Protesilaos: Emacs: I am experimenting with a Denote cache https://protesilaos.com/codelog/2026-09-26-emacs-experiment-denote-cache/
+  - Org Mode:
+      - How I Actually Use Org Mode - Emacs Everywhere #3 https://www.youtube.com/watch?v=KQEZBGkImII (01:00:42)
+      - Spacemacs | What kind of notes I take? | Productivity https://www.youtube.com/watch?v=HqV_l5lry00 (07:04, in French)
+      - org for creator - turn your thought from graphs into meaningful posts https://www.youtube.com/watch?v=YvFS1O2Oqvs (13:43)
+      - org per creatori - i tuoi pensieri in grafi che creano storie https://www.youtube.com/watch?v=ZTsmHx7yoGo (12:55)
+      - James Dyer: Copy Only What You See: Teaching M-w a Prefix Argument https://emacs.dyerdwelling.family/emacs/20260924135500-emacs--copy-only-what-you-see-teaching-m-w-a-prefix-argument/ (Irreal https://irreal.org/blog/?p=14108)
+      - org-table-widget 0.3.0: long Org tables now scroll like ordinary text https://github.com/yibie/org-table-widget (Reddit https://www.reddit.com/r/emacs/comments/1wow52y/orgtablewidget_030_long_org_tables_now_scroll/)
+      - Org tangle and run https://www.reddit.com/r/emacs/comments/1wo1som/a_small_featurenot_sure_if_its_useful_but_its_a/
+      - Supertag V2: I rebuilt a note-taking system, and what I learned https://v.redd.it/r82fm3ayg1rh1 (Reddit https://www.reddit.com/r/emacs/comments/1wn4hy7/supertag_v2_i_rebuilt_a_notetaking_system_and/)
+      - Chai 2.1: read, highlight, search and ask your Org book library, with notes you can carry out https://github.com/yibie/chai (Reddit https://www.reddit.com/r/emacs/comments/1wph5b1/chai_21_read_highlight_search_and_ask_your_org/)
+      - Org development:
+      - Add OTHER_LANGUAGES to the metadata https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=10814296c77681fbbf708f0d898fa88cbaa7ccce
+      - ox-latex: add :alt attribute for images https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=578c2650bcd17d74658b7a3fdfc9fd4917eb159d
+  - Coding:
+      - Emacs: clangd and lsp-mode -> diagnostic lag while typing, and an on-demand solution https://www.reddit.com/r/emacs/comments/1wpuk2f/emacs_clangd_and_lspmode_diagnostic_lag_while/
+      - Protesilaos: Emacs: sxhkdrc-mode version 1.3.0 https://protesilaos.com/codelog/2026-09-23-emacs-sxhkdrc-mode-1-3-0/
+      - Varhammer 1.1.8 "Midnight" - Portable Common Lisp for Windows https://www.reddit.com/r/lisp/comments/1wozt4o/varhammer_118_midnight/ (Reddit https://www.reddit.com/r/emacs/comments/1wquz2p/varhammer_118_midnight/)
+  - Math:
+      - Tip: latex-math-mode minor mode has a menu of symbols (@aethor@fosstodon.org) https://fosstodon.org/@aethor/117310180115101422
+  - Shells:
+      - send-invisible: Handle password prompts in shells or comint when not properly detected (@lispwizard@techhub.social) https://techhub.social/@lispwizard/117343857396819133
+  - Web:
+      - andros/termweb.el: Reformat web pages so they read well in EWW, the Emacs browser https://git.andros.dev/andros/termweb.el (@andros@activity.andros.dev https://activity.andros.dev/@andros/statuses/01M34VJZBRYMZGAX9H8BJFDZD4)
+      - Einar Mostad: EWW in Emacs 31 would not use browse-url-generic as browse-url-secondary-browser-function https://einar.codeberg.page/eww-in-emacs-31-would-not-use-browse-url-generic-as-browse-url-secondary-browser-function.html
+  - Mail, news, and chat:
+      - GitHub - guibor/teams4e: A mu4e-inspired Microsoft Teams client for Emacs. https://github.com/guibor/teams4e (Reddit https://www.reddit.com/r/emacs/comments/1wpw4fb/github_guiborteams4e_a_mu4einspired_microsoft/)
+  - Multimedia:
+      - Playing around with OBS, Emacs, and speech commands https://www.youtube.com/watch?v=j2YSbH6OMD8 (01:54)
+  - LLMs:
+      - llm package support for jev / laya-style quick decisions https://github.com/ahyatt/llm/tree/decision (Reddit https://www.reddit.com/r/emacs/comments/1ws60sw/llm_package_support_for_jev_layastyle_quick/)
+      - Brainiac v3.0 released https://moxnet.eu/braindump/brainiac-v3-0-released (Reddit https://www.reddit.com/r/emacs/comments/1wncjh2/brainiac_v30_released/)
+      - Alvaro Ramirez: agent-shell 0.78 updates https://xenodium.com/agent-shell-0-78-updates (Reddit https://www.reddit.com/r/emacs/comments/1wn768h/agentshell_078_updates/)
+      - Fazendo gambiarra com Emacs e Remux https://www.youtube.com/watch?v=mzba_LQQCLM (55:31)
+  - Community:
+      - Fortnightly Tips, Tricks, and Questions — 2026-09-22 / week 38 https://www.reddit.com/r/emacs/comments/1wmxqol/fortnightly_tips_tricks_and_questions_20260922/
+      - Everyday Emacs 2026-2027 Series - 1 https://www.youtube.com/watch?v=3hBdSrqdXqs (02:11) - Series of videos in Turkish; live-coding?
+  - Other:
+      - The Emacs Cat: Running Emacs in microVM https://olddeuteronomy.github.io/post/running-emacs-in-microvm/
+  - Emacs development:
+      - emacs-devel:
+      - Detecting and warning about homoglyph attacks https://lists.gnu.org/archive/html/emacs-devel/2026-09/msg00430.html
+      - Improve directory-files-recursively https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=cc7a4dfbf175a361aecb4c0696ded20e02d6a8aa
+      - Fix creation of commit message from ChangeLog (bug#81909) https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=193785af9fb7c269dfadfdbf96d3418e03787cc2
+      - New option vc-dir-simple-unmark-all-files https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=70662bc0ff44c36674adf4ea9fd52e87a76a576a
+      - New option vc-quick-select-current-working-tree https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=7b578f7d886b5dc5ef1a22b2b20a52ea443ed708
+      - New command diff-goto-old-source https://git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=b41af68695860eefacbae0a05c03798aee2f99c1
+  - New packages:
+      - https://melpa.org/#/adif: Major mode for viewing and editing ADIF log files (MELPA)
+      - https://melpa.org/#/aqui: Location update (optimized for macOS) (MELPA)
+      - https://melpa.org/#/consult-ghostel: Consult integration for ghostel (MELPA)
+      - https://melpa.org/#/consult-zoxide: Jump to zoxide directories with Consult (MELPA)
+      - https://melpa.org/#/dharmamitra: Sanskrit/Pāli/Tibetan/Chinese analysis via dharmamitra.org (MELPA)
+      - https://melpa.org/#/latex-to-svg-for-markdown: Preview Markdown LaTeX math as SVG (MELPA)
+      - https://melpa.org/#/preview-tab: Temporary file buffers, like VS Code's preview tab (MELPA)
+
+  Links from reddit.com/r/emacs https://www.reddit.com/r/emacs, r/orgmode https://www.reddit.com/r/orgmode, r/spacemacs https://www.reddit.com/r/spacemacs, Mastodon #emacs https://mastodon.social/tags/emacs, Bluesky #emacs https://bsky.app/hashtag/emacs, Hacker News https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story, lobste.rs https://lobste.rs/search?q=emacs&what=stories&order=newest, programming.dev https://programming.dev/c/emacs?dataType=Post&page=1&sort=New, lemmy.world https://lemmy.world/c/emacs, lemmy.ml https://lemmy.ml/c/emacs?dataType=Post&page=1&sort=New, planet.emacslife.com https://planet.emacslife.com, YouTube https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt, the Emacs NEWS file http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS, Emacs Calendar https://emacslife.com/calendar/, and emacs-devel https://lists.gnu.org/archive/html/emacs-devel/2026-09. Thanks to Andrés Ramírez for emacs-devel links. Do you have an Emacs-related link or announcement? Please e-mail me at sacha@sachachua.com mailto:sacha@sachachua.com. Thank you!
+
+
 2026-09-21 Emacs news
 ~~~~~~~~~~~~~~~~~~~~~
 
@@ -83,7 +175,7 @@ STARTED Do another Emacs News review
       - Why Your Emacs Terminal is Slow and How to Fix It (vterm, eat, ghostel, term, and ansi-term) https://www.jamescherti.com/emacs-terminal-performance-vterm-eat-ansi-term-ghostel/ (Reddit https://www.reddit.com/r/emacs/comments/1wg5zrw/why_your_emacs_terminal_is_slow_and_how_to_fix_it/, Irreal https://irreal.org/blog/?p=14085)
   - Mail, news, and chat:
       - Microsoft outlook OAuth authentication with mu4e https://www.macs.hw.ac.uk/~rs46/posts/2022-01-11-mu4e-oauth.html (Reddit https://www.reddit.com/r/emacs/comments/1wir2yy/microsoft_outlook_oauth_authentication_with_mu4e/) - updated to use Thunderbird client ID
-      - Using an existing Microsoft 365 MCP login to get Outlook mail into mu4e https://www.reddit.com/r/emacs/comments/1wkzx7r/using_an_existing_microsoft_365_mcp_login_to_get/
+      - Using an existing Microsoft 365 MCP login to get Outlook mail into mu4e https://www.reddit.com/r/emacs/comments/1wkzx7r/using_an_existing_microsoft_365_mcp_login_to_get/ (Irreal https://irreal.org/blog/?p=14110)
       - andros/presence.el: See when your friends are online, away or offline, and send and read simple messages, right from Emacs https://git.andros.dev/andros/presence.el
   - Doom Emacs:
       - ¿Por qué Doom Emacs es el secreto de los expertos? https://www.youtube.com/watch?v=LumS4REqIjs (22:25)
