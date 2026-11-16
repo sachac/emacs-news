@@ -617,6 +617,7 @@ FROM-DATE and TO-DATE should be strings of the form YYYY-MM-DD."
 	(let ((org-export-html-preamble nil)
 				(org-html-toplevel-hlevel 3)
 				(title (org-get-heading))
+				(sacha-org-export-warning-regexp nil)
 				text
 				output)
 		(save-restriction
@@ -652,19 +653,19 @@ This is the plain-text version. There's also an HTML version that might be easie
   "Prepare emacs-tangents e-mail of post, and commit to Git."
   (interactive)
 	(require 'magit)
-	(emacs-news-post-as-recent)
-	(let ((html (org-export-as 'html))
-				(text (org-export-as 'sacha-plain-text nil nil t))
-				(sacha-org-export-warning-regexp nil)
-				(org-export-html-preamble nil)
-				(org-html-toplevel-hlevel 3)
-				(title (org-get-heading)))
-		(with-temp-file "index.html"
-			(insert html))
-		(with-temp-file "index.txt"
-			(insert text))
-		(emacs-news-commit-and-push title)
-		(emacs-news-email)))
+	(let ((sacha-org-export-warning-regexp nil))
+		(emacs-news-post-as-recent)
+		(let ((html (org-export-as 'html))
+					(text (org-export-as 'sacha-plain-text nil nil t))
+					(sacha-org-export-warning-regexp nil)
+					(org-html-toplevel-hlevel 3)
+					(title (org-get-heading)))
+			(with-temp-file "index.html"
+				(insert html))
+			(with-temp-file "index.txt"
+				(insert text))
+			(emacs-news-commit-and-push title)
+			(emacs-news-email))))
 
 
 (defun emacs-news-plain-text-link (link contents info)
