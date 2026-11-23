@@ -1362,6 +1362,17 @@ Default: %(emacs-news-guess-category)"
        ))))
 ;; The code so far:1 ends here
 
+;; [[file:emacs-news-code.org::*Search for current Spookfox link][Search for current Spookfox link:1]]
+;;;###autoload
+(defun emacs-news-spookfox-find-link ()
+  "Start looking for the current link."
+  (interactive)
+	(goto-char (point-min))
+	(re-search-forward
+	 (regexp-quote
+		(spookfox-js-injection-eval-in-active-tab "window.location.href" t))))
+;; Search for current Spookfox link:1 ends here
+
 ;; [[file:emacs-news-code.org::*Open YouTube links in MPV][Open YouTube links in MPV:1]]
 ;;;###autoload
 (defun emacs-news-mpv-play-url ()

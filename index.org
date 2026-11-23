@@ -122,12 +122,126 @@ Actually generate the section:
 #+end_src
 
 #+RESULTS: generate
+** 2026-11-23 Emacs news
+:PROPERTIES:
+:EXPORT_ELEVENTY_PERMALINK: /blog/2026/11/2026-11-23-emacs-news/
+:EXPORT_ELEVENTY_FILE_NAME: blog/2026/11/2026-11-23-emacs-news/
+:EXPORT_DATE: 2026-11-23T09:24:11-0500
+:END:
+
+I really liked two things in this week's newsletter.
+First, Ihor Radchenko has posted his talk on [[https://emacsconf.org/2026/talks/tasks][task management]], Which he prepared for [[https://emacsconf.org/2026][EmacsConf 2026]], coming up this Dec 12 and 13.
+He's okay with posting it early so that people can start thinking about the ideas in advance and make the most of the live Q&A during the conference itself, so check out how he deals with tens of thousands of items.
+Similarly, the [[https://emacsconf.org/2026/talks/community][panel that he organized on Emacs community]] is now public, so you can take a look at it too.
+That one is a long one, and I'd love to hear your thoughts.
+
+The second thing that I thought was really fun was [[file:~/sync/emacs/Sacha.org::whisper-insert-text-at-point-functions][Ethermacs]], which uses web sockets for synchronous editing, so now people who aren't using Emacs and people who are can still edit the same Etherpad together. (And using Emacs means no JavaScript needed, which is good news for our non-JS community members!) And after a little bit of tweaking, I've been able to use it to edit the etherpads that we have for EmacsConf. Whee!
+
+(You might be able to tell that I have EmacsConf on the brain. =) )
+
+- Upcoming events ([[https://emacslife.com/calendar/emacs-calendar.ics][iCal file]], [[https://emacslife.com/calendar/][Org]]):
+  - Emacs Berlin: Emacs-Berlin Hybrid Meetup https://emacs-berlin.org/ Wed Nov 25 1000 America/Vancouver - 1200 America/Chicago - 1300 America/Toronto - 1800 Etc/UTC - 1900 Europe/Berlin - 2330 Asia/Kolkata -- Thu Nov 26 0200 Asia/Singapore
+  - Emacs APAC: Emacs APAC meetup (virtual) https://emacs-apac.gitlab.io/announcements/ Sat Nov 28 0030 America/Vancouver - 0230 America/Chicago - 0330 America/Toronto - 0830 Etc/UTC - 0930 Europe/Berlin - 1400 Asia/Kolkata - 1630 Asia/Singapore
+  - EmacsATX: Emacs Social https://www.meetup.com/emacsatx/events/316464085/ Thu Dec 3 1600 America/Vancouver - 1800 America/Chicago - 1900 America/Toronto -- Fri Dec 4 0000 Etc/UTC - 0100 Europe/Berlin - 0530 Asia/Kolkata - 0800 Asia/Singapore
+  - M-x Research: TBA https://m-x-research.github.io/ Fri Dec 4 0800 America/Vancouver - 1000 America/Chicago - 1100 America/Toronto - 1600 Etc/UTC - 1700 Europe/Berlin - 2130 Asia/Kolkata -- Sat Dec 5 0000 Asia/Singapore
+  - * Emacs.si (in person): Emacs.si meetup #12 2026 (v #živo) https://dogodki.kompot.si/events/148efe99-a8bf-42d6-b613-01ce8a3b5f8e Mon Dec 7 1900 CET
+  - London Emacs (in person): Emacs London meetup https://www.meetup.com/london-emacs-hacking/events/317439240/ Tue Dec 8 1800 Europe/London
+  - Emacs Berlin: In-Person-Only Emacs-Berlin Stammtisch https://emacs-berlin.org/ Tue Dec 8 1900 Europe/Berlin
+  - OrgMeetup (virtual) https://orgmode.org/worg/orgmeetup.html Wed Dec 9 0800 America/Vancouver - 1000 America/Chicago - 1100 America/Toronto - 1600 Etc/UTC - 1700 Europe/Berlin - 2130 Asia/Kolkata -- Thu Dec 10 0000 Asia/Singapore
+  - Atelier Emacs Montpellier (in person) https://lebib.org/date/atelier-emacs Fri Dec 11 1800 Europe/Paris
+- Beginner:
+  - [[https://youtube.com/playlist?list=PLMmhTdy0v7ps&si=RQZUCzX85Ux-b_NY][Learn Emacs - YouTube]] (video series, looks LLM-generated)
+    - [[https://youtube.com/playlist?list=PLaLibpa4c61s&si=3r_IJhk3BuWpbBOD][Aprende Emacs - YouTube]]
+- Emacs configuration:
+  - [[https://klez.me/en/2026/11/19/emacs-configurazione-come-documento/][The Emacs configuration as a document | Alessandro ‘kLeZ’ Accardo]] ([[https://mastodon.uno/@klez/117649596589280160][@klez@mastodon.uno]])
+    - [[https://klez.me/2026/11/19/emacs-configurazione-come-documento/][La configurazione di Emacs come documento]] ([[https://mastodon.uno/@klez/117649596589280160][@klez@mastodon.uno]])
+  - [[https://codeberg.org/mehrad/.emacs.d-minimal-config][mehrad/.emacs.d-minimal-config: This is a minimal Emacs config that I use as backup for when my main config has issues. - Codeberg.org]] ([[https://fosstodon.org/@Mehrad/117638603394024095][@Mehrad@fosstodon.org]])
+  - [[https://github.com/lobovit/dotfiles/tree/main/emacs/windows/.emacs.d][dotfiles/emacs/windows/.emacs.d at main · lobovit/dotfiles · GitHub]] ([[https://hachyderm.io/@lobocode/117631935616394633][@lobocode@hachyderm.io]])
+- Emacs Lisp:
+  - [[https://bookwyrm.social/user/len/review/13117340][Len's review of Emacs Lisp Elements - BookWyrm]] ([[https://bookwyrm.social/user/len/review/13117340][@len@bookwyrm.social]])
+  - [[https://mbork.pl/2026-11-16_Copying_the_current_location_improved_again][Marcin Borkowski: Copying the current location improved again]]
+  - [[https://www.reddit.com/r/emacs/comments/1y2mli9/question_to_package_authors_how_do_you_deal_with/][Question to package authors: how do you deal with long names and scoping?]]
+  - [[https://modeverv.github.io/elisp-react-youtube-similar/][I built a web development ecosystem with Emacs Lisp]] ([[https://www.reddit.com/r/emacs/comments/1xzdsxu/i_built_a_web_development_ecosystem_with_emacs/][Reddit]]) LLM-assisted
+- Appearance:
+  - [[https://protesilaos.com/codelog/2026-11-18-emacs-ef-themes-2-3-0/][Protesilaos: Emacs: ef-themes version 2.3.0]]
+- Navigation:
+  - [[https://ray-on-emacs.blogspot.com/2026/11/emacs-windows-management-with-windmove.html][Raymond Zeitler: Emacs Windows Management With windmove]] ([[https://irreal.org/blog/?p=14234][Irreal]])
+  - [[https://mastodon.social/@jamescherti/117632546032219352][Equivalent of :tab split - set tab-bar-new-tab-choice to 'window (@jamescherti)]]
+  - [[https://github.com/benleis1/emacs-init/blob/main/docs/speedbar.md][Configuring speedbar to run in window-mode]] ([[https://www.reddit.com/r/emacs/comments/1y258re/configuring_speedbar_to_run_in_windowmode/][Reddit]])
+- Dired:
+  - [[https://taonaw.com/2026/11/20/dired-classic-technique-for-manualvisual.html][TAONAW: Dired: Classic Technique for Manual-Visual Search]] ([[https://irreal.org/blog/?p=14232][Irreal]])
+- Writing:
+  - [[https://pablomurad.com/linked-notes-emacs-denote-org-roam-org-node/][Linked notes in Emacs: Denote, org-roam and org-node · Pablo Murad]]
+  - [[https://github.com/kode-tar-gz/compuni/][Easier unicode and emoji insertion in emacs]] ([[https://www.reddit.com/r/emacs/comments/1xzvjdn/easier_unicode_and_emoji_insertion_in_emacs/][Reddit]])
+- Denote:
+  - [[https://protesilaos.com/codelog/2026-11-19-emacs-denote-4-3-0][Protesilaos: Emacs: Denote version 4.3.0]] ([[https://www.reddit.com/r/emacs/comments/1y31423/protesilaos_emacs_denote_version_430/][Reddit]])
+- Org Mode:
+  - [[https://list.orgmode.org/87o6bgu9jq.fsf@localhost][Org Mode requests: [TASK] make Org code pass all linters and integrate linting into make test (was: Funny regex in 'org-beamer--insert-theme')]]
+  - [[https://emacsconf.org/2026/talks/tasks/][EmacsConf - 2026 - talks - Personal task management under stress (with Org mode)]] ([[https://fosstodon.org/@yantar92/117661194232431625][@yantar92@fosstodon.org]])
+  - [[https://protesilaos.com/codelog/2026-11-17-emacs-live-org-custom-link-extras/][Protesilaos: Emacs live Org custom link type and more today 2026-11-17 at 16:00 Europe/Athens]]
+  - [[https://blog.isaiah-harvey.com/posts/2026-11-10-how-this-blog-is-built/?ref=mastodon][How this blog is built]] ([[https://mastodon.social/@isaiah_harvey/117631634003833461][@isaiah_harvey]])
+  - [[https://pablomurad.com/org-mode-digital-garden/][Org mode as a digital garden · Pablo Murad]]
+  - [[https://zzamboni.org/post/using-blowfish-admonitions-with-org-mode-and-hugo/][Using Blowfish admonitions with Org mode and Hugo · zzamboni.org]]
+  - [[https://list.orgmode.org/87ik1qnsp2.fsf@localhost/T/#u][[EVENT] Notes from #6 OrgDevMeetup on Sat, November 21, 11:00 UTC+3]] ([[https://fosstodon.org/@yantar92/117655009316299969][@yantar92@fosstodon.org]])
+  - Org development:
+    - [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=766064c792d0a85f5544868bed017c9c73a512c5][org-element: Store and use FILETAGS in parser instead of buffer-local variable]]
+    - [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=6db5248d73368b43639c89c77c5e409fd1731dae][org-element: Parse in-buffer link abbreviations within parser]]
+    - [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=0dd1e85409a0ef1d66225cdbf48ffb6199a9b487][org-element-cache: Re-parse org-data when buffer keywords are changed]]
+    - [[https://git.savannah.gnu.org/cgit/emacs/org-mode.git/commit/etc/ORG-NEWS?id=8bcb5756518149e33dd25dbb0e4e45c978789c22][org-element: Parse in-buffer todo keywords within the org-element parser]]
+- Coding:
+  - [[https://martianh.codeberg.page/blog/fj.el-release-0.54.html][fj.el release 0.54 - forgejo/codeberg client]] ([[https://todon.nl/@mousebot/117642688324525479][@mousebot@todon.nl]])
+  - [[https://github.com/tortoise10h/lzdockel][lzdockel: A lazydocker-inspired Docker UI built natively in Emacs]] ([[https://www.reddit.com/r/emacs/comments/1y3dwz4/lzdockel_a_lazydockerinspired_docker_ui_built/][Reddit]])
+  - [[https://nrw.social/@HaraldKi/117654217693966061][better Emacs error parsing for Java stack traces (@HaraldKi@nrw.social)]]
+- Shells:
+  - [[https://www.reddit.com/r/emacs/comments/1xzf3sg/terminal_multiplexer_tmuxrex_in_emacs_and_ghostel/][Terminal multiplexer (Tmux/Rex) in Emacs and Ghostel updates]]
+- Web:
+  - [[https://codeberg.org/zzkt/ethermacs][zzkt/ethermacs: An Emacs interface for editing Etherpad pads - Codeberg.org]] ([[https://fff.fo.am/objects/a866926e-2f91-4718-b256-531e02f41307][@nik@fo.am]])
+- Mail, news, and chat:
+  - [[https://git.andros.dev/andros/hackernews-modern-el][andros/hackernews-modern-el: Emacs client for Hacker News - Forgejo: Beyond coding. We forge.]] ([[https://activity.andros.dev/@andros/statuses/01M7MP2HVCP4SZY660NTYMXGC1][@andros@activity.andros.dev]])
+- Multimedia:
+  - [[https://willemvandenende.com/blog/engineering/i-just-made-a-habit-of-talking-to-my-notes][I just made a habit of talking to my notes — Willem van den Ende]] ([[https://mastodon.social/@mostalive/117643216600815086][@mostalive]])
+  - [[https://www.youtube.com/live/Myks3oJDIpQ][Linux Saloon 228 | Open Mic Night - Michael demonstrates dictation and voice control of Emacs]] ([[https://cubiclenate.com/2026/11/21/linux-saloon-228-open-mic-night-ai-tools-discussion/][Show notes]])
+  - [[https://www.youtube.com/watch?v=haxIef37j0c][Yay Emacs 60: speech recognition: let's add a voice cursor!]] (01:25:01)
+  - [[https://www.youtube.com/watch?v=PpJq8To4bFI][Emacs as a Video Editor - Why Sacha Chua Cuts Videos by Editing Text]] (13:50)
+  - [[https://github.com/thndrbrrr/earwig][[ANN] Earwig: modern dictation and voice commands for Emacs]] ([[https://www.reddit.com/r/emacs/comments/1y1g6y2/ann_earwig_modern_dictation_and_voice_commands/][Reddit]])
+- Fun:
+  - [[https://lars.ingebrigtsen.no/2026/11/19/herp-derp-i-eat-paste/][Lars Ingebrigtsen: Herp derp I eat paste]] - Emacs can run on tiny computers
+- LLMs:
+  - [[https://commandlinesystems.com/magic.txt][Emacs in the age of magic]] - continued discussion on [[https://www.reddit.com/r/emacs/comments/1xydykw/emacs_in_the_age_of_magic_a_different_take_on/][Reddit]]
+  - [[https://github.com/offline-ant/phimacs][My Emacs setup for running coding agents]] ([[https://www.reddit.com/r/emacs/comments/1y095yp/my_emacs_setup_for_running_coding_agents/][Reddit]])
+  - [[https://xenodium.com/agent-shell-0-98-updates][agent-shell 0.98 updates]] ([[https://www.reddit.com/r/emacs/comments/1y0wq6s/agentshell_098_updates/][Reddit]]) - DeepSeek harness, Antigravity updates, lots of other changes
+  - [[https://github.com/yibie/superchat/releases/tag/v2.0.0][Superchat 2.0: an Emacs agent that runs in your Emacs, keeps a record of its work, and learns skills from what worked]] ([[https://www.reddit.com/r/emacs/comments/1y2jgcb/superchat_20_an_emacs_agent_that_runs_in_your/][Reddit]])
+- Community:
+  - [[https://www.reddit.com/r/emacs/comments/1xy9c0b/fortnightly_tips_tricks_and_questions_20261117/][Fortnightly Tips, Tricks, and Questions — 2026-11-17 / week 46]]
+  - [[https://www.reddit.com/r/emacs/comments/1y17xvw/thank_you_emacs_teamdevs/][Thank you Emacs team/devs]]
+  - [[https://www.reddit.com/r/emacs/comments/1y2l2v3/vimneovims_hype_dying_while_emacs_still_lives_on/][Vim/Neovim's hype dying while Emacs still lives on?]]
+- Other:
+  - [[https://social.coop/@cwebber/117649189966474459][Make Emacs cooperate better with tiling wms (@cwebber@social.coop)]]
+  - [[https://github.com/benleis1/emacs-init/blob/70361158357e9322983106a0da48ec9cc4e0737c/init.el#L1099][my-show-nerd-icon-for-file]]
+  - [[https://yummymelon.com/devnull/opening-texinfo-web-pages-in-emacs-info.html][Charles Choi: Opening Texinfo Web Pages in Emacs Info]] ([[https://www.reddit.com/r/emacs/comments/1y0kupf/charles_choi_opening_texinfo_web_pages_in_emacs/][Reddit]], [[https://irreal.org/blog/?p=14228][Irreal]])
+  - [[https://www.youtube.com/watch?v=1XiNm8MFKO4][Portal Update: slides, better terminal... and a secret teaser of upcoming awesomeness]] ([[https://www.reddit.com/r/emacs/comments/1xy7jtm/portal_update_slides_better_terminal_and_a_secret/][Reddit]]) - Mac-only
+- Emacs development:
+  - [[https://cgit.git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=d10878011d78821254a8ed31b5b7c97f7f6fa647][Document 'nnimap-native-utf8' in the Gnus manual]]
+  - [[https://cgit.git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=5b057aace29665ec7ea10feb3ba84cc34283e35b][Non-ASCII search queries in nnimap, via RFC 9755]]
+- New packages:
+  - [[package:au-themes][au-themes]]: Sensory-safe themes for autism and neurodivergence (NonGNU ELPA)
+  - [[package:efzf][efzf]]: Fzf-like command-line selector using completing-read (MELPA)
+  - [[package:ert-gwt][ert-gwt]]: GWT-style BDD testing for ERT (MELPA)
+  - [[package:macos-notifications][macos-notifications]]: Native macOS notifications with click callbacks (MELPA)
+  - [[package:yas-autoinsert][yas-autoinsert]]: Autoinsert trigger for YASnippet (MELPA)
+
+Links from [[https://www.reddit.com/r/emacs][reddit.com/r/emacs]], [[https://www.reddit.com/r/orgmode][r/orgmode]], [[https://www.reddit.com/r/spacemacs][r/spacemacs]], [[https://mastodon.social/tags/emacs][Mastodon #emacs]], [[https://bsky.app/hashtag/emacs][Bluesky #emacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://lobste.rs/search?q=emacs&what=stories&order=newest][lobste.rs]], [[https://programming.dev/c/emacs?dataType=Post&page=1&sort=New][programming.dev]], [[https://lemmy.world/c/emacs][lemmy.world]], [[https://lemmy.ml/c/emacs?dataType=Post&page=1&sort=New][lemmy.ml]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]], [[https://emacslife.com/calendar/][Emacs Calendar]], and [[https://lists.gnu.org/archive/html/emacs-devel/2026-11][emacs-devel]]. Thanks to Andrés Ramírez for emacs-devel links. Do you have an Emacs-related link or announcement? Please e-mail me at [[mailto:sacha@sachachua.com][sacha@sachachua.com]]. Thank you!
 ** 2026-11-16 Emacs news
 :PROPERTIES:
 :EXPORT_ELEVENTY_PERMALINK: /blog/2026/11/2026-11-16-emacs-news/
 :EXPORT_ELEVENTY_FILE_NAME: blog/2026/11/2026-11-16-emacs-news/
 :EXPORT_DATE: 2026-11-16T08:07:30-0500
+:EXPORT_MODIFIED: 2026-11-18T08:17:02-0500
 :END:
+
+#+begin_update
+[2026-11-18]: Added OrgDevMeetup on Nov 21
+#+end_update
 
 I liked reading the [[https://www.emacswiki.org/emacs/CarnivalNovember2026][Emacs Carnival posts]] about how people discover new
 features and what things they've tried lately. Feel free to share your story.
@@ -138,6 +252,7 @@ Also, the [[https://lists.gnu.org/archive/html/emacs-devel/2026-11/msg00210.html
   - [[https://lists.gnu.org/archive/html/emacs-devel/2026-11/msg00210.html][Emacs 31.1.90 pretest is available]] ([[https://irreal.org/blog/?p=14208][Irreal]])
 - Upcoming events ([[https://emacslife.com/calendar/emacs-calendar.ics][iCal file]], [[https://emacslife.com/calendar/][Org]]):
   - M-x Research: TBA https://m-x-research.github.io/ Wed Nov 18 0800 America/Vancouver - 1000 America/Chicago - 1100 America/Toronto - 1600 Etc/UTC - 1700 Europe/Berlin - 2130 Asia/Kolkata -- Thu Nov 19 0000 Asia/Singapore
+  - OrgDevMeetup: [EVENT] #6 OrgDevMeetup on Sat, November 21, 11:00 UTC+3 https://orgmode.org/worg/orgdevmeetup.html Sat Nov 21 0000 America/Vancouver - 0200 America/Chicago - 0300 America/Toronto - 0800 Etc/UTC - 0900 Europe/Berlin - 1330 Asia/Kolkata - 1600 Asia/Singapore
   - Emacs Berlin: Emacs-Berlin Hybrid Meetup https://emacs-berlin.org/ Wed Nov 25 1000 America/Vancouver - 1200 America/Chicago - 1300 America/Toronto - 1800 Etc/UTC - 1900 Europe/Berlin - 2330 Asia/Kolkata -- Thu Nov 26 0200 Asia/Singapore
   - Emacs APAC: Emacs APAC meetup (virtual) https://emacs-apac.gitlab.io/announcements/ Sat Nov 28 0030 America/Vancouver - 0230 America/Chicago - 0330 America/Toronto - 0830 Etc/UTC - 0930 Europe/Berlin - 1400 Asia/Kolkata - 1630 Asia/Singapore
 - Beginner:
@@ -206,7 +321,7 @@ Also, the [[https://lists.gnu.org/archive/html/emacs-devel/2026-11/msg00210.html
   - [[https://lambdafoo.com/posts/2026-11-15-curry-mode.html][curry: a modern Emacs mode for Haskell · Perpetually Curious]] ([[https://bsky.app/profile/tsmc.purely-functional.com/post/3n2ckjyqjhc2t][@tsmc.purely-functional.com on Bluesky]])
   - [[https://github.com/saulotoledo/java-agent-loader][java-agent-loader (JAL) v3.0.0 – now works with plain lsp-mode and built-in eglot – Looking for testers]] ([[https://www.reddit.com/r/emacs/comments/1xw7ceu/javaagentloader_jal_v300_now_works_with_plain/][Reddit]])
 - Web:
-  - [[https://joshblais.com/blog/emacs-as-my-browser/][Emacs is my browser - The Universe of Joshua Blais]] ([[https://news.ycombinator.com/item?id=50507553][HN]])
+  - [[https://joshblais.com/blog/emacs-as-my-browser/][Emacs is my browser - The Universe of Joshua Blais]] ([[https://news.ycombinator.com/item?id=50507553][HN]], [[https://irreal.org/blog/?p=14222][Irreal]])
 - Mail, news, and chat:
   - [[https://tony-zorman.com/posts/elfeed-latex.html][Tony Zorman: LaTeX Previews for Elfeed]]
 - Multimedia:
@@ -230,7 +345,7 @@ Also, the [[https://lists.gnu.org/archive/html/emacs-devel/2026-11/msg00210.html
   - [[https://pozzi.dev/posts/emacs-carnival-nov-26/][Emacs Carnival for November 2026]]: Fabio Pozzi
 - Community:
   - [[https://www.reddit.com/r/emacs/comments/1xvvhqs/confessions_of_a_vim_user/][Confessions of a Vim User]] ([[https://irreal.org/blog/?p=14220][Irreal]])
-  - [[https://i.redd.it/h2x6cn5m6s1i1.png][My Emacs 31 contributions]] ([[https://www.reddit.com/r/emacs/comments/1xww80c/my_emacs_31_contributions/][Reddit]])
+  - [[https://xenodium.com/my-emacs-31-contributions][My Emacs 31 contributions]] ([[https://www.reddit.com/r/emacs/comments/1xww80c/my_emacs_31_contributions/][Reddit]], [[https://news.ycombinator.com/item?id=50517929][HN]], [[https://lobste.rs/s/cezfqe/my_emacs_31_contributions][lobste.rs]], [[https://irreal.org/blog/?p=14224][Irreal]])
   - r/emacs: [[https://www.reddit.com/r/emacs/comments/1xus4xa/goodbye_from_the_rss_users/][Goodbye from the rss users]]
     - [[https://www.reddit.com/r/emacs/comments/1xv1enu/a_mastodon_rss_feed_for_tag_emacs_can_be_an/][A Mastodon RSS feed, for tag #emacs, can be an alternative to Reddit]]
   - [[https://www.shemshak.org/~amin/emacsconf-2026-community-panel-comments.html][Amin Bandali: EmacsConf 2026 community panel - my comments]]

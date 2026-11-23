@@ -1900,6 +1900,19 @@ It also uses these functions for [[dotemacs:digital-index-piles-with-emacs][cate
 [[emacs-news-include:/home/sacha/sync/emacs/Sacha.org?name=emacs-news-org-move-current-item-to-category]]
 
 For the =speech-input= functions, experimental code is at https://codeberg.org/sachac/speech-input .
+** Search for current Spookfox link
+
+#+begin_src emacs-lisp
+;;;###autoload
+(defun emacs-news-spookfox-find-link ()
+  "Start looking for the current link."
+  (interactive)
+	(goto-char (point-min))
+	(re-search-forward
+	 (regexp-quote
+		(spookfox-js-injection-eval-in-active-tab "window.location.href" t))))
+#+end_src
+
 ** Open YouTube links in MPV
 
 #+begin_src emacs-lisp
