@@ -1,4 +1,4 @@
-# Created 2026-11-23 Mon 15:05
+# Created 2026-11-23 Mon 15:11
 #+title: 2026-11-23 Emacs news
 #+date: 2026-11-23T09:24:11-0500
 #+author: Sacha Chua
@@ -8,7 +8,7 @@ He's okay with posting it early so that people can start thinking about the idea
 Similarly, the [[https://emacsconf.org/2026/talks/community][panel that he organized on Emacs community]] is now public, so you can take a look at it too.
 That one is a long one, and I'd love to hear your thoughts.
 
-The second thing that I thought was really fun was [[file:~/sync/emacs/Sacha.org::whisper-insert-text-at-point-functions][Ethermacs]], which uses web sockets for synchronous editing, so now people who aren't using Emacs and people who are can still edit the same Etherpad together. (And using Emacs means no JavaScript needed, which is good news for our non-JS community members!) And after a little bit of tweaking, I've been able to use it to edit the etherpads that we have for EmacsConf. Whee!
+The second thing that I thought was really fun was [[https://codeberg.org/zzkt/ethermacs][Ethermacs]], which uses web sockets for synchronous editing, so now people who aren't using Emacs and people who are can still edit the same Etherpad together. (And using Emacs means no JavaScript needed, which is good news for our non-JS community members!) And after a little bit of tweaking, I've been able to use it to edit the etherpads that we have for EmacsConf. Whee!
 
 (You might be able to tell that I have EmacsConf on the brain. =) )
 
@@ -98,9 +98,9 @@ The second thing that I thought was really fun was [[file:~/sync/emacs/Sacha.org
   - [[https://cgit.git.savannah.gnu.org/cgit/emacs.git/commit/etc/NEWS?id=5b057aace29665ec7ea10feb3ba84cc34283e35b][Non-ASCII search queries in nnimap, via RFC 9755]]
 - New packages:
   - https://elpa.nongnu.org/nongnu/au-themes.html: Sensory-safe themes for autism and neurodivergence (NonGNU ELPA)
-  - efzf: Fzf-like command-line selector using completing-read (MELPA)
-  - ert-gwt: GWT-style BDD testing for ERT (MELPA)
-  - macos-notifications: Native macOS notifications with click callbacks (MELPA)
-  - yas-autoinsert: Autoinsert trigger for YASnippet (MELPA)
+  - https://melpa.org/#/efzf: Fzf-like command-line selector using completing-read (MELPA)
+  - https://melpa.org/#/ert-gwt: GWT-style BDD testing for ERT (MELPA)
+  - https://melpa.org/#/macos-notifications: Native macOS notifications with click callbacks (MELPA)
+  - https://melpa.org/#/yas-autoinsert: Autoinsert trigger for YASnippet (MELPA)
 
 Links from [[https://www.reddit.com/r/emacs][reddit.com/r/emacs]], [[https://www.reddit.com/r/orgmode][r/orgmode]], [[https://www.reddit.com/r/spacemacs][r/spacemacs]], [[https://mastodon.social/tags/emacs][Mastodon #emacs]], [[https://bsky.app/hashtag/emacs][Bluesky #emacs]], [[https://hn.algolia.com/?query=emacs&sort=byDate&prefix&page=0&dateRange=all&type=story][Hacker News]], [[https://lobste.rs/search?q=emacs&what=stories&order=newest][lobste.rs]], [[https://programming.dev/c/emacs?dataType=Post&page=1&sort=New][programming.dev]], [[https://lemmy.world/c/emacs][lemmy.world]], [[https://lemmy.ml/c/emacs?dataType=Post&page=1&sort=New][lemmy.ml]], [[https://planet.emacslife.com][planet.emacslife.com]], [[https://www.youtube.com/playlist?list=PL4th0AZixyREOtvxDpdxC9oMuX7Ar7Sdt][YouTube]], [[http://git.savannah.gnu.org/cgit/emacs.git/log/etc/NEWS][the Emacs NEWS file]], [[https://emacslife.com/calendar/][Emacs Calendar]], and [[https://lists.gnu.org/archive/html/emacs-devel/2026-11][emacs-devel]]. Thanks to Andrés Ramírez for emacs-devel links. Do you have an Emacs-related link or announcement? Please e-mail me at [[mailto:sacha@sachachua.com][sacha@sachachua.com]]. Thank you!
